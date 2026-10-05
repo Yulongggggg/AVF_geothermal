@@ -1,0 +1,72 @@
+{
+  "logk_rmse": {
+    "mean": 0.6244230162538589,
+    "sample_sd": 0.1306000608132781,
+    "standard_error": 0.05331725156149734
+  },
+  "temperature_field_rmse": {
+    "mean": 6.6152983101008,
+    "sample_sd": 1.657363759948374,
+    "standard_error": 0.676615921675684
+  },
+  "pressure_field_rmse": {
+    "mean": 0.6540062871464852,
+    "sample_sd": 0.4260060175189025,
+    "standard_error": 0.17391622837941043
+  },
+  "temperature_mae": {
+    "mean": 0.8062919411394334,
+    "sample_sd": 0.6802855557008423,
+    "standard_error": 0.27772541514212795
+  },
+  "temperature_width": {
+    "mean": 3.674793938795725,
+    "sample_sd": 2.8033760218741834,
+    "standard_error": 1.1444734684575206
+  },
+  "pressure_mae": {
+    "mean": 0.48391271227349836,
+    "sample_sd": 0.34433106053702156,
+    "standard_error": 0.140572566817848
+  },
+  "pressure_width": {
+    "mean": 1.5427822470664978,
+    "sample_sd": 0.6622694785006192,
+    "standard_error": 0.2703703824242719
+  },
+  "rank_rhat_max": {
+    "mean": 1.0118054635533873,
+    "sample_sd": 0.005356364678288336,
+    "standard_error": 0.002186726723012233
+  },
+  "bulk_ess_min": {
+    "mean": 938.4091432040926,
+    "sample_sd": 423.8308723135706,
+    "standard_error": 173.02822906782302
+  },
+  "tail_ess_min": {
+    "mean": 1182.3256973645402,
+    "sample_sd": 485.6770619683356,
+    "standard_error": 198.2768302660847
+  },
+  "divergences": {
+    "mean": 0.0,
+    "sample_sd": 0.0,
+    "standard_error": 0.0
+  },
+  "seconds": {
+    "mean": 52373.58530432793,
+    "sample_sd": 38.24132963337946,
+    "standard_error": 15.61195744789223
+  },
+  "potential_evaluations": {
+    "mean": 775479.3333333334,
+    "sample_sd": 739.2608921528763,
+    "standard_error": 301.80199542820196
+  },
+  "retained_depth_cap_fraction": {
+    "mean": 1.0,
+    "sample_sd": 0.0,
+    "standard_error": 0.0
+  }
+}

@@ -1,0 +1,19 @@
+# Environment of the reported inference runs (CPU wheels shown; use the CUDA 12.8 wheel for GPU NUTS).
+name: geouno
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cpu
+      - torch==2.8.0
+      - numpy==2.4.6
+      - scipy==1.15.3
+      - pyro-ppl==1.9.1
+      - arviz==0.22.0
+      - tqdm==4.70.1
+      - iterative-ensemble-smoother==1.1.0
+      - matplotlib
+      - pytest
+      - -e .

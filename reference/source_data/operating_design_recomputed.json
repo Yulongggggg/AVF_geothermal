@@ -1,0 +1,278 @@
+{
+  "initial_temperature_K": 350.02735849056603,
+  "initial_pressure_MPa": 32.467924528301886,
+  "candidates": [
+    {
+      "group": 0,
+      "control": 0,
+      "FE": {
+        "objective": 60.91280360851647,
+        "pressure_p90_MPa": 51.51388152140491,
+        "feasible": false
+      },
+      "operator": {
+        "objective": 60.3171937051809,
+        "pressure_p90_MPa": 53.23955309885853,
+        "feasible": false
+      }
+    },
+    {
+      "group": 0,
+      "control": 1,
+      "FE": {
+        "objective": 60.912651020625844,
+        "pressure_p90_MPa": 45.67821369665973,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 60.399068016151205,
+        "pressure_p90_MPa": 47.10394936102741,
+        "feasible": true
+      }
+    },
+    {
+      "group": 0,
+      "control": 2,
+      "FE": {
+        "objective": 40.91542812023522,
+        "pressure_p90_MPa": 51.370514278591806,
+        "feasible": false
+      },
+      "operator": {
+        "objective": 40.36810751591088,
+        "pressure_p90_MPa": 53.43739688891285,
+        "feasible": false
+      }
+    },
+    {
+      "group": 0,
+      "control": 3,
+      "FE": {
+        "objective": 40.916503864864126,
+        "pressure_p90_MPa": 45.53251297968738,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 40.3775066915548,
+        "pressure_p90_MPa": 47.619889478863406,
+        "feasible": true
+      }
+    },
+    {
+      "group": 0,
+      "control": 4,
+      "FE": {
+        "objective": 85.91200097965742,
+        "pressure_p90_MPa": 61.46254489916675,
+        "feasible": false
+      },
+      "operator": {
+        "objective": 84.6052672164395,
+        "pressure_p90_MPa": 63.60999644297474,
+        "feasible": false
+      }
+    },
+    {
+      "group": 0,
+      "control": 5,
+      "FE": {
+        "objective": 85.87966913151288,
+        "pressure_p90_MPa": 55.70014956492298,
+        "feasible": false
+      },
+      "operator": {
+        "objective": 84.56959041523481,
+        "pressure_p90_MPa": 57.92403820055836,
+        "feasible": false
+      }
+    },
+    {
+      "group": 0,
+      "control": 6,
+      "FE": {
+        "objective": 57.980381716962114,
+        "pressure_p90_MPa": 61.11850097674244,
+        "feasible": false
+      },
+      "operator": {
+        "objective": 57.011238040204304,
+        "pressure_p90_MPa": 63.19265692728871,
+        "feasible": false
+      }
+    },
+    {
+      "group": 0,
+      "control": 7,
+      "FE": {
+        "objective": 57.95008996891524,
+        "pressure_p90_MPa": 55.350221519650155,
+        "feasible": false
+      },
+      "operator": {
+        "objective": 56.94993273186232,
+        "pressure_p90_MPa": 57.87413042086475,
+        "feasible": false
+      }
+    },
+    {
+      "group": 0,
+      "control": 8,
+      "FE": {
+        "objective": 61.979086254047886,
+        "pressure_p90_MPa": 53.36804607409351,
+        "feasible": false
+      },
+      "operator": {
+        "objective": 60.96641666691257,
+        "pressure_p90_MPa": 55.63210509318226,
+        "feasible": false
+      }
+    },
+    {
+      "group": 1,
+      "control": 0,
+      "FE": {
+        "objective": 60.63007350597741,
+        "pressure_p90_MPa": 41.02216774720066,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 60.651850301364675,
+        "pressure_p90_MPa": 40.95201602476948,
+        "feasible": true
+      }
+    },
+    {
+      "group": 1,
+      "control": 1,
+      "FE": {
+        "objective": 60.62356563244225,
+        "pressure_p90_MPa": 35.131938498200114,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 60.7064068499601,
+        "pressure_p90_MPa": 35.11097989577168,
+        "feasible": true
+      }
+    },
+    {
+      "group": 1,
+      "control": 2,
+      "FE": {
+        "objective": 40.650566059688344,
+        "pressure_p90_MPa": 39.97627662915104,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 40.7482639137304,
+        "pressure_p90_MPa": 40.145080750168496,
+        "feasible": true
+      }
+    },
+    {
+      "group": 1,
+      "control": 3,
+      "FE": {
+        "objective": 40.64399715099694,
+        "pressure_p90_MPa": 34.068040071905784,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 40.72534801397683,
+        "pressure_p90_MPa": 34.365656476200755,
+        "feasible": true
+      }
+    },
+    {
+      "group": 1,
+      "control": 4,
+      "FE": {
+        "objective": 85.56277002262618,
+        "pressure_p90_MPa": 47.3902060081374,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 85.5904033319905,
+        "pressure_p90_MPa": 47.17601593035572,
+        "feasible": true
+      }
+    },
+    {
+      "group": 1,
+      "control": 5,
+      "FE": {
+        "objective": 85.53558648991134,
+        "pressure_p90_MPa": 41.55514359969013,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 85.58334359097029,
+        "pressure_p90_MPa": 41.53820570010059,
+        "feasible": true
+      }
+    },
+    {
+      "group": 1,
+      "control": 6,
+      "FE": {
+        "objective": 57.681875552411334,
+        "pressure_p90_MPa": 45.630259113491704,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 57.83921818899657,
+        "pressure_p90_MPa": 45.51787164706104,
+        "feasible": true
+      }
+    },
+    {
+      "group": 1,
+      "control": 7,
+      "FE": {
+        "objective": 57.65375207829024,
+        "pressure_p90_MPa": 39.766369389475514,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 57.74496469664122,
+        "pressure_p90_MPa": 39.93486564654224,
+        "feasible": true
+      }
+    },
+    {
+      "group": 1,
+      "control": 8,
+      "FE": {
+        "objective": 61.34471735756351,
+        "pressure_p90_MPa": 40.43278650540226,
+        "feasible": true
+      },
+      "operator": {
+        "objective": 61.338361523556244,
+        "pressure_p90_MPa": 40.48944949406498,
+        "feasible": true
+      }
+    }
+  ],
+  "selection": [
+    {
+      "group": 0,
+      "FE_selected_control": 1,
+      "operator_selected_control": 1,
+      "FE_regret": 0.0,
+      "objective_spearman": 0.9833333333333333,
+      "feasibility_agreement": 9
+    },
+    {
+      "group": 1,
+      "FE_selected_control": 4,
+      "operator_selected_control": 4,
+      "FE_regret": 0.0,
+      "objective_spearman": 0.9833333333333333,
+      "feasibility_agreement": 9
+    }
+  ],
+  "differences": [],
+  "scope": "All 72 stored FE and operator field arrays; re-extracted identical block readouts. No new FE solves."
+}

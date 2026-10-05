@@ -1,0 +1,2877 @@
+{
+  "block_local_variance": [
+    [
+      4.825472632168956e-05,
+      0.009636783311650042
+    ],
+    [
+      9.962245116100729e-05,
+      0.014061342343064887
+    ],
+    [
+      0.00245739040540315,
+      0.005954400982106904
+    ],
+    [
+      0.021103386474454092,
+      0.0038281830953353934
+    ],
+    [
+      0.036033999160157454,
+      0.0029528429724824273
+    ],
+    [
+      0.07795992406909243,
+      0.0028563313942746435
+    ],
+    [
+      0.1574452237070775,
+      0.0030817328090730753
+    ],
+    [
+      0.22593918847523306,
+      0.003317810002074259
+    ],
+    [
+      0.23015869577868697,
+      0.0037443267819380227
+    ],
+    [
+      0.4444569952948539,
+      0.004588139432667903
+    ],
+    [
+      0.41021054229219633,
+      0.005832634231631134
+    ]
+  ],
+  "pressure_common_variance": [
+    0.0017302503168424301,
+    0.008076257295267017,
+    0.03423325841997338,
+    0.23691916646986233,
+    0.5269718855688125,
+    0.5323682996351483,
+    0.5434962977697295,
+    0.5598462461624255,
+    0.5838587998170671,
+    0.5998841641172658,
+    0.620521131858783
+  ],
+  "field_variance": [
+    [
+      0.0001463322951773686,
+      0.011545512576897938
+    ],
+    [
+      0.0026403211395518156,
+      0.022523458922902743
+    ],
+    [
+      0.018047091038897633,
+      0.04036015313855993
+    ],
+    [
+      0.02565514009911567,
+      0.24109054983758446
+    ],
+    [
+      0.04138805774661402,
+      0.5303437071898467
+    ],
+    [
+      0.08338498848800859,
+      0.5356044168504013
+    ],
+    [
+      0.16211644674961764,
+      0.5470070498583178
+    ],
+    [
+      0.22898209225386382,
+      0.5636181754991412
+    ],
+    [
+      0.24035647995769976,
+      0.5880525125879407
+    ],
+    [
+      0.4568014288942019,
+      0.6049171100850799
+    ],
+    [
+      0.4176578789949417,
+      0.626748630432121
+    ]
+  ],
+  "qoi_variance": [
+    [
+      [
+        0.0003506941488394442,
+        0.07069160783523394
+      ],
+      [
+        0.3510332768546204,
+        0.0050755603527779325
+      ]
+    ],
+    [
+      [
+        0.002021967806222162,
+        2.151221686304606
+      ],
+      [
+        0.2831741072180234,
+        0.016647242953904757
+      ]
+    ],
+    [
+      [
+        0.013393070818797714,
+        31.049819626757117
+      ],
+      [
+        0.3013495696239189,
+        0.039824580545653396
+      ]
+    ],
+    [
+      [
+        0.09000016415574368,
+        2.2603511279758854
+      ],
+      [
+        0.8772262565463058,
+        0.23929982603235914
+      ]
+    ],
+    [
+      [
+        0.23015323054172127,
+        0.06227361938036514
+      ],
+      [
+        1.689634408327691,
+        0.5186143566221327
+      ]
+    ],
+    [
+      [
+        0.2142470944953336,
+        0.04358416027579703
+      ],
+      [
+        1.7703131022302387,
+        0.5332797889422548
+      ]
+    ],
+    [
+      [
+        0.41649509516378397,
+        0.051810171986812745
+      ],
+      [
+        1.8895449867492953,
+        0.5496134973377276
+      ]
+    ],
+    [
+      [
+        0.7000735872529792,
+        0.03904643460788672
+      ],
+      [
+        1.9289650140845045,
+        0.5704436252127507
+      ]
+    ],
+    [
+      [
+        1.1959159240670814,
+        0.03999407145931855
+      ],
+      [
+        1.93594471089703,
+        0.5999934255385518
+      ]
+    ],
+    [
+      [
+        1.86236787490815,
+        0.050940135466104645
+      ],
+      [
+        1.9595823040563696,
+        0.6208467372074928
+      ]
+    ],
+    [
+      [
+        2.22824848818171,
+        0.03995067758097169
+      ],
+      [
+        1.8894372942832798,
+        0.6456330165822763
+      ]
+    ]
+  ],
+  "checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e",
+  "checkpoint_hashes": {
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20260930/model.pt": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e"
+  },
+  "entries": [
+    {
+      "scenario": "v4m02218",
+      "case_id": "v4m02218_r004",
+      "row": 35997,
+      "split": "val",
+      "label": "calibration_01",
+      "prior_seed": 510000,
+      "observation_seed": 610000,
+      "member": 0
+    },
+    {
+      "scenario": "v4m02218",
+      "case_id": "v4m02218_r017",
+      "row": 36010,
+      "split": "val",
+      "label": "calibration_01",
+      "prior_seed": 510000,
+      "observation_seed": 610000,
+      "member": 1
+    },
+    {
+      "scenario": "v4m02218",
+      "case_id": "v4m02218_r011",
+      "row": 36004,
+      "split": "val",
+      "label": "calibration_01",
+      "prior_seed": 510000,
+      "observation_seed": 610000,
+      "member": 2
+    },
+    {
+      "scenario": "v4m02218",
+      "case_id": "v4m02218_r008",
+      "row": 36001,
+      "split": "val",
+      "label": "calibration_01",
+      "prior_seed": 510000,
+      "observation_seed": 610000,
+      "member": 3
+    },
+    {
+      "scenario": "v4n00100",
+      "case_id": "v4n00100_r005",
+      "row": 47958,
+      "split": "val",
+      "label": "calibration_02",
+      "prior_seed": 510001,
+      "observation_seed": 610001,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00100",
+      "case_id": "v4n00100_r001",
+      "row": 47954,
+      "split": "val",
+      "label": "calibration_02",
+      "prior_seed": 510001,
+      "observation_seed": 610001,
+      "member": 1
+    },
+    {
+      "scenario": "v4n00100",
+      "case_id": "v4n00100_r000",
+      "row": 47953,
+      "split": "val",
+      "label": "calibration_02",
+      "prior_seed": 510001,
+      "observation_seed": 610001,
+      "member": 2
+    },
+    {
+      "scenario": "v4n00100",
+      "case_id": "v4n00100_r004",
+      "row": 47957,
+      "split": "val",
+      "label": "calibration_02",
+      "prior_seed": 510001,
+      "observation_seed": 610001,
+      "member": 3
+    },
+    {
+      "scenario": "v4m01041",
+      "case_id": "v4m01041_r013",
+      "row": 22721,
+      "split": "val",
+      "label": "calibration_03",
+      "prior_seed": 510002,
+      "observation_seed": 610002,
+      "member": 0
+    },
+    {
+      "scenario": "v4m01041",
+      "case_id": "v4m01041_r017",
+      "row": 22725,
+      "split": "val",
+      "label": "calibration_03",
+      "prior_seed": 510002,
+      "observation_seed": 610002,
+      "member": 1
+    },
+    {
+      "scenario": "v4m01041",
+      "case_id": "v4m01041_r007",
+      "row": 22715,
+      "split": "val",
+      "label": "calibration_03",
+      "prior_seed": 510002,
+      "observation_seed": 610002,
+      "member": 2
+    },
+    {
+      "scenario": "v4m01041",
+      "case_id": "v4m01041_r005",
+      "row": 22713,
+      "split": "val",
+      "label": "calibration_03",
+      "prior_seed": 510002,
+      "observation_seed": 610002,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00053",
+      "case_id": "v4m00053_r008",
+      "row": 10726,
+      "split": "val",
+      "label": "calibration_04",
+      "prior_seed": 510003,
+      "observation_seed": 610003,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00053",
+      "case_id": "v4m00053_r012",
+      "row": 10730,
+      "split": "val",
+      "label": "calibration_04",
+      "prior_seed": 510003,
+      "observation_seed": 610003,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00053",
+      "case_id": "v4m00053_r019",
+      "row": 10737,
+      "split": "val",
+      "label": "calibration_04",
+      "prior_seed": 510003,
+      "observation_seed": 610003,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00053",
+      "case_id": "v4m00053_r000",
+      "row": 10718,
+      "split": "val",
+      "label": "calibration_04",
+      "prior_seed": 510003,
+      "observation_seed": 610003,
+      "member": 3
+    },
+    {
+      "scenario": "v4n00144",
+      "case_id": "v4n00144_r006",
+      "row": 48307,
+      "split": "val",
+      "label": "calibration_05",
+      "prior_seed": 510004,
+      "observation_seed": 610004,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00144",
+      "case_id": "v4n00144_r001",
+      "row": 48302,
+      "split": "val",
+      "label": "calibration_05",
+      "prior_seed": 510004,
+      "observation_seed": 610004,
+      "member": 1
+    },
+    {
+      "scenario": "v4n00144",
+      "case_id": "v4n00144_r005",
+      "row": 48306,
+      "split": "val",
+      "label": "calibration_05",
+      "prior_seed": 510004,
+      "observation_seed": 610004,
+      "member": 2
+    },
+    {
+      "scenario": "v4n00144",
+      "case_id": "v4n00144_r003",
+      "row": 48304,
+      "split": "val",
+      "label": "calibration_05",
+      "prior_seed": 510004,
+      "observation_seed": 610004,
+      "member": 3
+    },
+    {
+      "scenario": "v4n01106",
+      "case_id": "v4n01106_r001",
+      "row": 55888,
+      "split": "val",
+      "label": "calibration_06",
+      "prior_seed": 510005,
+      "observation_seed": 610005,
+      "member": 0
+    },
+    {
+      "scenario": "v4n01106",
+      "case_id": "v4n01106_r000",
+      "row": 55887,
+      "split": "val",
+      "label": "calibration_06",
+      "prior_seed": 510005,
+      "observation_seed": 610005,
+      "member": 1
+    },
+    {
+      "scenario": "v4n01106",
+      "case_id": "v4n01106_r003",
+      "row": 55890,
+      "split": "val",
+      "label": "calibration_06",
+      "prior_seed": 510005,
+      "observation_seed": 610005,
+      "member": 2
+    },
+    {
+      "scenario": "v4n01106",
+      "case_id": "v4n01106_r002",
+      "row": 55889,
+      "split": "val",
+      "label": "calibration_06",
+      "prior_seed": 510005,
+      "observation_seed": 610005,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00264",
+      "case_id": "v4m00264_r018",
+      "row": 13019,
+      "split": "val",
+      "label": "calibration_07",
+      "prior_seed": 510006,
+      "observation_seed": 610006,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00264",
+      "case_id": "v4m00264_r005",
+      "row": 13006,
+      "split": "val",
+      "label": "calibration_07",
+      "prior_seed": 510006,
+      "observation_seed": 610006,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00264",
+      "case_id": "v4m00264_r016",
+      "row": 13017,
+      "split": "val",
+      "label": "calibration_07",
+      "prior_seed": 510006,
+      "observation_seed": 610006,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00264",
+      "case_id": "v4m00264_r017",
+      "row": 13018,
+      "split": "val",
+      "label": "calibration_07",
+      "prior_seed": 510006,
+      "observation_seed": 610006,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00871",
+      "case_id": "v4m00871_r011",
+      "row": 20353,
+      "split": "val",
+      "label": "calibration_08",
+      "prior_seed": 510007,
+      "observation_seed": 610007,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00871",
+      "case_id": "v4m00871_r002",
+      "row": 20344,
+      "split": "val",
+      "label": "calibration_08",
+      "prior_seed": 510007,
+      "observation_seed": 610007,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00871",
+      "case_id": "v4m00871_r018",
+      "row": 20360,
+      "split": "val",
+      "label": "calibration_08",
+      "prior_seed": 510007,
+      "observation_seed": 610007,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00871",
+      "case_id": "v4m00871_r019",
+      "row": 20361,
+      "split": "val",
+      "label": "calibration_08",
+      "prior_seed": 510007,
+      "observation_seed": 610007,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00764",
+      "case_id": "v4m00764_r006",
+      "row": 19394,
+      "split": "val",
+      "label": "calibration_09",
+      "prior_seed": 510008,
+      "observation_seed": 610008,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00764",
+      "case_id": "v4m00764_r012",
+      "row": 19400,
+      "split": "val",
+      "label": "calibration_09",
+      "prior_seed": 510008,
+      "observation_seed": 610008,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00764",
+      "case_id": "v4m00764_r011",
+      "row": 19399,
+      "split": "val",
+      "label": "calibration_09",
+      "prior_seed": 510008,
+      "observation_seed": 610008,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00764",
+      "case_id": "v4m00764_r004",
+      "row": 19392,
+      "split": "val",
+      "label": "calibration_09",
+      "prior_seed": 510008,
+      "observation_seed": 610008,
+      "member": 3
+    },
+    {
+      "scenario": "v4n01127",
+      "case_id": "v4n01127_r004",
+      "row": 56056,
+      "split": "val",
+      "label": "calibration_10",
+      "prior_seed": 510009,
+      "observation_seed": 610009,
+      "member": 0
+    },
+    {
+      "scenario": "v4n01127",
+      "case_id": "v4n01127_r003",
+      "row": 56055,
+      "split": "val",
+      "label": "calibration_10",
+      "prior_seed": 510009,
+      "observation_seed": 610009,
+      "member": 1
+    },
+    {
+      "scenario": "v4n01127",
+      "case_id": "v4n01127_r005",
+      "row": 56057,
+      "split": "val",
+      "label": "calibration_10",
+      "prior_seed": 510009,
+      "observation_seed": 610009,
+      "member": 2
+    },
+    {
+      "scenario": "v4n01127",
+      "case_id": "v4n01127_r001",
+      "row": 56054,
+      "split": "val",
+      "label": "calibration_10",
+      "prior_seed": 510009,
+      "observation_seed": 610009,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00460",
+      "case_id": "v4m00460_r009",
+      "row": 15519,
+      "split": "val",
+      "label": "calibration_11",
+      "prior_seed": 510010,
+      "observation_seed": 610010,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00460",
+      "case_id": "v4m00460_r018",
+      "row": 15528,
+      "split": "val",
+      "label": "calibration_11",
+      "prior_seed": 510010,
+      "observation_seed": 610010,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00460",
+      "case_id": "v4m00460_r001",
+      "row": 15511,
+      "split": "val",
+      "label": "calibration_11",
+      "prior_seed": 510010,
+      "observation_seed": 610010,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00460",
+      "case_id": "v4m00460_r019",
+      "row": 15529,
+      "split": "val",
+      "label": "calibration_11",
+      "prior_seed": 510010,
+      "observation_seed": 610010,
+      "member": 3
+    },
+    {
+      "scenario": "v4m03031",
+      "case_id": "v4m03031_r000",
+      "row": 42355,
+      "split": "val",
+      "label": "calibration_12",
+      "prior_seed": 510011,
+      "observation_seed": 610011,
+      "member": 0
+    },
+    {
+      "scenario": "v4m03031",
+      "case_id": "v4m03031_r018",
+      "row": 42362,
+      "split": "val",
+      "label": "calibration_12",
+      "prior_seed": 510011,
+      "observation_seed": 610011,
+      "member": 1
+    },
+    {
+      "scenario": "v4m03031",
+      "case_id": "v4m03031_r001",
+      "row": 42356,
+      "split": "val",
+      "label": "calibration_12",
+      "prior_seed": 510011,
+      "observation_seed": 610011,
+      "member": 2
+    },
+    {
+      "scenario": "v4m03031",
+      "case_id": "v4m03031_r015",
+      "row": 42359,
+      "split": "val",
+      "label": "calibration_12",
+      "prior_seed": 510011,
+      "observation_seed": 610011,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00739",
+      "case_id": "v4m00739_r010",
+      "row": 18877,
+      "split": "val",
+      "label": "calibration_13",
+      "prior_seed": 510012,
+      "observation_seed": 610012,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00739",
+      "case_id": "v4m00739_r015",
+      "row": 18882,
+      "split": "val",
+      "label": "calibration_13",
+      "prior_seed": 510012,
+      "observation_seed": 610012,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00739",
+      "case_id": "v4m00739_r013",
+      "row": 18880,
+      "split": "val",
+      "label": "calibration_13",
+      "prior_seed": 510012,
+      "observation_seed": 610012,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00739",
+      "case_id": "v4m00739_r006",
+      "row": 18873,
+      "split": "val",
+      "label": "calibration_13",
+      "prior_seed": 510012,
+      "observation_seed": 610012,
+      "member": 3
+    },
+    {
+      "scenario": "v4n00915",
+      "case_id": "v4n00915_r006",
+      "row": 54394,
+      "split": "val",
+      "label": "calibration_14",
+      "prior_seed": 510013,
+      "observation_seed": 610013,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00915",
+      "case_id": "v4n00915_r004",
+      "row": 54392,
+      "split": "val",
+      "label": "calibration_14",
+      "prior_seed": 510013,
+      "observation_seed": 610013,
+      "member": 1
+    },
+    {
+      "scenario": "v4n00915",
+      "case_id": "v4n00915_r001",
+      "row": 54389,
+      "split": "val",
+      "label": "calibration_14",
+      "prior_seed": 510013,
+      "observation_seed": 610013,
+      "member": 2
+    },
+    {
+      "scenario": "v4n00915",
+      "case_id": "v4n00915_r000",
+      "row": 54388,
+      "split": "val",
+      "label": "calibration_14",
+      "prior_seed": 510013,
+      "observation_seed": 610013,
+      "member": 3
+    },
+    {
+      "scenario": "v4m02896",
+      "case_id": "v4m02896_r010",
+      "row": 41385,
+      "split": "val",
+      "label": "calibration_15",
+      "prior_seed": 510014,
+      "observation_seed": 610014,
+      "member": 0
+    },
+    {
+      "scenario": "v4m02896",
+      "case_id": "v4m02896_r011",
+      "row": 41386,
+      "split": "val",
+      "label": "calibration_15",
+      "prior_seed": 510014,
+      "observation_seed": 610014,
+      "member": 1
+    },
+    {
+      "scenario": "v4m02896",
+      "case_id": "v4m02896_r019",
+      "row": 41394,
+      "split": "val",
+      "label": "calibration_15",
+      "prior_seed": 510014,
+      "observation_seed": 610014,
+      "member": 2
+    },
+    {
+      "scenario": "v4m02896",
+      "case_id": "v4m02896_r012",
+      "row": 41387,
+      "split": "val",
+      "label": "calibration_15",
+      "prior_seed": 510014,
+      "observation_seed": 610014,
+      "member": 3
+    },
+    {
+      "scenario": "v4m02464",
+      "case_id": "v4m02464_r017",
+      "row": 37726,
+      "split": "val",
+      "label": "calibration_16",
+      "prior_seed": 510015,
+      "observation_seed": 610015,
+      "member": 0
+    },
+    {
+      "scenario": "v4m02464",
+      "case_id": "v4m02464_r001",
+      "row": 37710,
+      "split": "val",
+      "label": "calibration_16",
+      "prior_seed": 510015,
+      "observation_seed": 610015,
+      "member": 1
+    },
+    {
+      "scenario": "v4m02464",
+      "case_id": "v4m02464_r010",
+      "row": 37719,
+      "split": "val",
+      "label": "calibration_16",
+      "prior_seed": 510015,
+      "observation_seed": 610015,
+      "member": 2
+    },
+    {
+      "scenario": "v4m02464",
+      "case_id": "v4m02464_r015",
+      "row": 37724,
+      "split": "val",
+      "label": "calibration_16",
+      "prior_seed": 510015,
+      "observation_seed": 610015,
+      "member": 3
+    },
+    {
+      "scenario": "v4m01008",
+      "case_id": "v4m01008_r008",
+      "row": 21929,
+      "split": "val",
+      "label": "calibration_17",
+      "prior_seed": 510016,
+      "observation_seed": 610016,
+      "member": 0
+    },
+    {
+      "scenario": "v4m01008",
+      "case_id": "v4m01008_r004",
+      "row": 21925,
+      "split": "val",
+      "label": "calibration_17",
+      "prior_seed": 510016,
+      "observation_seed": 610016,
+      "member": 1
+    },
+    {
+      "scenario": "v4m01008",
+      "case_id": "v4m01008_r002",
+      "row": 21923,
+      "split": "val",
+      "label": "calibration_17",
+      "prior_seed": 510016,
+      "observation_seed": 610016,
+      "member": 2
+    },
+    {
+      "scenario": "v4m01008",
+      "case_id": "v4m01008_r012",
+      "row": 21933,
+      "split": "val",
+      "label": "calibration_17",
+      "prior_seed": 510016,
+      "observation_seed": 610016,
+      "member": 3
+    },
+    {
+      "scenario": "v4n00866",
+      "case_id": "v4n00866_r000",
+      "row": 54002,
+      "split": "val",
+      "label": "calibration_18",
+      "prior_seed": 510017,
+      "observation_seed": 610017,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00866",
+      "case_id": "v4n00866_r002",
+      "row": 54004,
+      "split": "val",
+      "label": "calibration_18",
+      "prior_seed": 510017,
+      "observation_seed": 610017,
+      "member": 1
+    },
+    {
+      "scenario": "v4n00866",
+      "case_id": "v4n00866_r004",
+      "row": 54006,
+      "split": "val",
+      "label": "calibration_18",
+      "prior_seed": 510017,
+      "observation_seed": 610017,
+      "member": 2
+    },
+    {
+      "scenario": "v4n00866",
+      "case_id": "v4n00866_r006",
+      "row": 54008,
+      "split": "val",
+      "label": "calibration_18",
+      "prior_seed": 510017,
+      "observation_seed": 610017,
+      "member": 3
+    },
+    {
+      "scenario": "v4n01219",
+      "case_id": "v4n01219_r004",
+      "row": 56786,
+      "split": "val",
+      "label": "calibration_19",
+      "prior_seed": 510018,
+      "observation_seed": 610018,
+      "member": 0
+    },
+    {
+      "scenario": "v4n01219",
+      "case_id": "v4n01219_r002",
+      "row": 56784,
+      "split": "val",
+      "label": "calibration_19",
+      "prior_seed": 510018,
+      "observation_seed": 610018,
+      "member": 1
+    },
+    {
+      "scenario": "v4n01219",
+      "case_id": "v4n01219_r001",
+      "row": 56783,
+      "split": "val",
+      "label": "calibration_19",
+      "prior_seed": 510018,
+      "observation_seed": 610018,
+      "member": 2
+    },
+    {
+      "scenario": "v4n01219",
+      "case_id": "v4n01219_r000",
+      "row": 56782,
+      "split": "val",
+      "label": "calibration_19",
+      "prior_seed": 510018,
+      "observation_seed": 610018,
+      "member": 3
+    },
+    {
+      "scenario": "v4m01782",
+      "case_id": "v4m01782_r019",
+      "row": 31812,
+      "split": "val",
+      "label": "calibration_20",
+      "prior_seed": 510019,
+      "observation_seed": 610019,
+      "member": 0
+    },
+    {
+      "scenario": "v4m01782",
+      "case_id": "v4m01782_r000",
+      "row": 31793,
+      "split": "val",
+      "label": "calibration_20",
+      "prior_seed": 510019,
+      "observation_seed": 610019,
+      "member": 1
+    },
+    {
+      "scenario": "v4m01782",
+      "case_id": "v4m01782_r007",
+      "row": 31800,
+      "split": "val",
+      "label": "calibration_20",
+      "prior_seed": 510019,
+      "observation_seed": 610019,
+      "member": 2
+    },
+    {
+      "scenario": "v4m01782",
+      "case_id": "v4m01782_r016",
+      "row": 31809,
+      "split": "val",
+      "label": "calibration_20",
+      "prior_seed": 510019,
+      "observation_seed": 610019,
+      "member": 3
+    },
+    {
+      "scenario": "v4m01206",
+      "case_id": "v4m01206_r005",
+      "row": 24852,
+      "split": "val",
+      "label": "calibration_21",
+      "prior_seed": 510020,
+      "observation_seed": 610020,
+      "member": 0
+    },
+    {
+      "scenario": "v4m01206",
+      "case_id": "v4m01206_r004",
+      "row": 24851,
+      "split": "val",
+      "label": "calibration_21",
+      "prior_seed": 510020,
+      "observation_seed": 610020,
+      "member": 1
+    },
+    {
+      "scenario": "v4m01206",
+      "case_id": "v4m01206_r008",
+      "row": 24855,
+      "split": "val",
+      "label": "calibration_21",
+      "prior_seed": 510020,
+      "observation_seed": 610020,
+      "member": 2
+    },
+    {
+      "scenario": "v4m01206",
+      "case_id": "v4m01206_r015",
+      "row": 24861,
+      "split": "val",
+      "label": "calibration_21",
+      "prior_seed": 510020,
+      "observation_seed": 610020,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00765",
+      "case_id": "v4m00765_r014",
+      "row": 19423,
+      "split": "val",
+      "label": "calibration_22",
+      "prior_seed": 510021,
+      "observation_seed": 610021,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00765",
+      "case_id": "v4m00765_r016",
+      "row": 19425,
+      "split": "val",
+      "label": "calibration_22",
+      "prior_seed": 510021,
+      "observation_seed": 610021,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00765",
+      "case_id": "v4m00765_r017",
+      "row": 19426,
+      "split": "val",
+      "label": "calibration_22",
+      "prior_seed": 510021,
+      "observation_seed": 610021,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00765",
+      "case_id": "v4m00765_r011",
+      "row": 19420,
+      "split": "val",
+      "label": "calibration_22",
+      "prior_seed": 510021,
+      "observation_seed": 610021,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00363",
+      "case_id": "v4m00363_r013",
+      "row": 14773,
+      "split": "val",
+      "label": "calibration_23",
+      "prior_seed": 510022,
+      "observation_seed": 610022,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00363",
+      "case_id": "v4m00363_r014",
+      "row": 14774,
+      "split": "val",
+      "label": "calibration_23",
+      "prior_seed": 510022,
+      "observation_seed": 610022,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00363",
+      "case_id": "v4m00363_r010",
+      "row": 14770,
+      "split": "val",
+      "label": "calibration_23",
+      "prior_seed": 510022,
+      "observation_seed": 610022,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00363",
+      "case_id": "v4m00363_r018",
+      "row": 14778,
+      "split": "val",
+      "label": "calibration_23",
+      "prior_seed": 510022,
+      "observation_seed": 610022,
+      "member": 3
+    },
+    {
+      "scenario": "v4n00336",
+      "case_id": "v4n00336_r003",
+      "row": 49822,
+      "split": "val",
+      "label": "calibration_24",
+      "prior_seed": 510023,
+      "observation_seed": 610023,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00336",
+      "case_id": "v4n00336_r006",
+      "row": 49825,
+      "split": "val",
+      "label": "calibration_24",
+      "prior_seed": 510023,
+      "observation_seed": 610023,
+      "member": 1
+    },
+    {
+      "scenario": "v4n00336",
+      "case_id": "v4n00336_r002",
+      "row": 49821,
+      "split": "val",
+      "label": "calibration_24",
+      "prior_seed": 510023,
+      "observation_seed": 610023,
+      "member": 2
+    },
+    {
+      "scenario": "v4n00336",
+      "case_id": "v4n00336_r004",
+      "row": 49823,
+      "split": "val",
+      "label": "calibration_24",
+      "prior_seed": 510023,
+      "observation_seed": 610023,
+      "member": 3
+    },
+    {
+      "scenario": "v4n00633",
+      "case_id": "v4n00633_r005",
+      "row": 52159,
+      "split": "val",
+      "label": "calibration_25",
+      "prior_seed": 510024,
+      "observation_seed": 610024,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00633",
+      "case_id": "v4n00633_r003",
+      "row": 52157,
+      "split": "val",
+      "label": "calibration_25",
+      "prior_seed": 510024,
+      "observation_seed": 610024,
+      "member": 1
+    },
+    {
+      "scenario": "v4n00633",
+      "case_id": "v4n00633_r006",
+      "row": 52160,
+      "split": "val",
+      "label": "calibration_25",
+      "prior_seed": 510024,
+      "observation_seed": 610024,
+      "member": 2
+    },
+    {
+      "scenario": "v4n00633",
+      "case_id": "v4n00633_r002",
+      "row": 52156,
+      "split": "val",
+      "label": "calibration_25",
+      "prior_seed": 510024,
+      "observation_seed": 610024,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00165",
+      "case_id": "v4m00165_r017",
+      "row": 11805,
+      "split": "val",
+      "label": "calibration_26",
+      "prior_seed": 510025,
+      "observation_seed": 610025,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00165",
+      "case_id": "v4m00165_r010",
+      "row": 11798,
+      "split": "val",
+      "label": "calibration_26",
+      "prior_seed": 510025,
+      "observation_seed": 610025,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00165",
+      "case_id": "v4m00165_r003",
+      "row": 11791,
+      "split": "val",
+      "label": "calibration_26",
+      "prior_seed": 510025,
+      "observation_seed": 610025,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00165",
+      "case_id": "v4m00165_r011",
+      "row": 11799,
+      "split": "val",
+      "label": "calibration_26",
+      "prior_seed": 510025,
+      "observation_seed": 610025,
+      "member": 3
+    },
+    {
+      "scenario": "v4n00731",
+      "case_id": "v4n00731_r005",
+      "row": 52939,
+      "split": "val",
+      "label": "calibration_27",
+      "prior_seed": 510026,
+      "observation_seed": 610026,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00731",
+      "case_id": "v4n00731_r000",
+      "row": 52934,
+      "split": "val",
+      "label": "calibration_27",
+      "prior_seed": 510026,
+      "observation_seed": 610026,
+      "member": 1
+    },
+    {
+      "scenario": "v4n00731",
+      "case_id": "v4n00731_r003",
+      "row": 52937,
+      "split": "val",
+      "label": "calibration_27",
+      "prior_seed": 510026,
+      "observation_seed": 610026,
+      "member": 2
+    },
+    {
+      "scenario": "v4n00731",
+      "case_id": "v4n00731_r006",
+      "row": 52940,
+      "split": "val",
+      "label": "calibration_27",
+      "prior_seed": 510026,
+      "observation_seed": 610026,
+      "member": 3
+    },
+    {
+      "scenario": "v4n00005",
+      "case_id": "v4n00005_r006",
+      "row": 47209,
+      "split": "val",
+      "label": "calibration_28",
+      "prior_seed": 510027,
+      "observation_seed": 610027,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00005",
+      "case_id": "v4n00005_r005",
+      "row": 47208,
+      "split": "val",
+      "label": "calibration_28",
+      "prior_seed": 510027,
+      "observation_seed": 610027,
+      "member": 1
+    },
+    {
+      "scenario": "v4n00005",
+      "case_id": "v4n00005_r001",
+      "row": 47204,
+      "split": "val",
+      "label": "calibration_28",
+      "prior_seed": 510027,
+      "observation_seed": 610027,
+      "member": 2
+    },
+    {
+      "scenario": "v4n00005",
+      "case_id": "v4n00005_r002",
+      "row": 47205,
+      "split": "val",
+      "label": "calibration_28",
+      "prior_seed": 510027,
+      "observation_seed": 610027,
+      "member": 3
+    },
+    {
+      "scenario": "v4m04365",
+      "case_id": "v4m04365_r015",
+      "row": 47115,
+      "split": "val",
+      "label": "calibration_29",
+      "prior_seed": 510028,
+      "observation_seed": 610028,
+      "member": 0
+    },
+    {
+      "scenario": "v4m04365",
+      "case_id": "v4m04365_r010",
+      "row": 47110,
+      "split": "val",
+      "label": "calibration_29",
+      "prior_seed": 510028,
+      "observation_seed": 610028,
+      "member": 1
+    },
+    {
+      "scenario": "v4m04365",
+      "case_id": "v4m04365_r000",
+      "row": 47100,
+      "split": "val",
+      "label": "calibration_29",
+      "prior_seed": 510028,
+      "observation_seed": 610028,
+      "member": 2
+    },
+    {
+      "scenario": "v4m04365",
+      "case_id": "v4m04365_r002",
+      "row": 47102,
+      "split": "val",
+      "label": "calibration_29",
+      "prior_seed": 510028,
+      "observation_seed": 610028,
+      "member": 3
+    },
+    {
+      "scenario": "v4m00472",
+      "case_id": "v4m00472_r011",
+      "row": 15766,
+      "split": "val",
+      "label": "calibration_30",
+      "prior_seed": 510029,
+      "observation_seed": 610029,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00472",
+      "case_id": "v4m00472_r010",
+      "row": 15765,
+      "split": "val",
+      "label": "calibration_30",
+      "prior_seed": 510029,
+      "observation_seed": 610029,
+      "member": 1
+    },
+    {
+      "scenario": "v4m00472",
+      "case_id": "v4m00472_r017",
+      "row": 15772,
+      "split": "val",
+      "label": "calibration_30",
+      "prior_seed": 510029,
+      "observation_seed": 610029,
+      "member": 2
+    },
+    {
+      "scenario": "v4m00472",
+      "case_id": "v4m00472_r001",
+      "row": 15757,
+      "split": "val",
+      "label": "calibration_30",
+      "prior_seed": 510029,
+      "observation_seed": 610029,
+      "member": 3
+    }
+  ],
+  "precision": "FP32 operator, FP64 likelihood, TF32 disabled",
+  "observation_blocks": [
+    [
+      "cal_0_0",
+      -375.0,
+      -375.0
+    ],
+    [
+      "cal_0_1",
+      -375.0,
+      -328.125
+    ],
+    [
+      "cal_0_2",
+      -375.0,
+      -281.25
+    ],
+    [
+      "cal_0_3",
+      -375.0,
+      -234.375
+    ],
+    [
+      "cal_0_4",
+      -375.0,
+      -187.5
+    ],
+    [
+      "cal_0_5",
+      -375.0,
+      -140.625
+    ],
+    [
+      "cal_0_6",
+      -375.0,
+      -93.75
+    ],
+    [
+      "cal_0_7",
+      -375.0,
+      -46.875
+    ],
+    [
+      "cal_0_8",
+      -375.0,
+      0.0
+    ],
+    [
+      "cal_0_9",
+      -375.0,
+      46.875
+    ],
+    [
+      "cal_0_10",
+      -375.0,
+      93.75
+    ],
+    [
+      "cal_0_11",
+      -375.0,
+      140.625
+    ],
+    [
+      "cal_0_12",
+      -375.0,
+      187.5
+    ],
+    [
+      "cal_0_13",
+      -375.0,
+      234.375
+    ],
+    [
+      "cal_0_14",
+      -375.0,
+      281.25
+    ],
+    [
+      "cal_0_15",
+      -375.0,
+      328.125
+    ],
+    [
+      "cal_0_16",
+      -375.0,
+      375.0
+    ],
+    [
+      "cal_1_0",
+      -328.125,
+      -375.0
+    ],
+    [
+      "cal_1_1",
+      -328.125,
+      -328.125
+    ],
+    [
+      "cal_1_2",
+      -328.125,
+      -281.25
+    ],
+    [
+      "cal_1_3",
+      -328.125,
+      -234.375
+    ],
+    [
+      "cal_1_4",
+      -328.125,
+      -187.5
+    ],
+    [
+      "cal_1_5",
+      -328.125,
+      -140.625
+    ],
+    [
+      "cal_1_6",
+      -328.125,
+      -93.75
+    ],
+    [
+      "cal_1_7",
+      -328.125,
+      -46.875
+    ],
+    [
+      "cal_1_8",
+      -328.125,
+      0.0
+    ],
+    [
+      "cal_1_9",
+      -328.125,
+      46.875
+    ],
+    [
+      "cal_1_10",
+      -328.125,
+      93.75
+    ],
+    [
+      "cal_1_11",
+      -328.125,
+      140.625
+    ],
+    [
+      "cal_1_12",
+      -328.125,
+      187.5
+    ],
+    [
+      "cal_1_13",
+      -328.125,
+      234.375
+    ],
+    [
+      "cal_1_14",
+      -328.125,
+      281.25
+    ],
+    [
+      "cal_1_15",
+      -328.125,
+      328.125
+    ],
+    [
+      "cal_1_16",
+      -328.125,
+      375.0
+    ],
+    [
+      "cal_2_0",
+      -281.25,
+      -375.0
+    ],
+    [
+      "cal_2_1",
+      -281.25,
+      -328.125
+    ],
+    [
+      "cal_2_2",
+      -281.25,
+      -281.25
+    ],
+    [
+      "cal_2_3",
+      -281.25,
+      -234.375
+    ],
+    [
+      "cal_2_4",
+      -281.25,
+      -187.5
+    ],
+    [
+      "cal_2_5",
+      -281.25,
+      -140.625
+    ],
+    [
+      "cal_2_6",
+      -281.25,
+      -93.75
+    ],
+    [
+      "cal_2_7",
+      -281.25,
+      -46.875
+    ],
+    [
+      "cal_2_8",
+      -281.25,
+      0.0
+    ],
+    [
+      "cal_2_9",
+      -281.25,
+      46.875
+    ],
+    [
+      "cal_2_10",
+      -281.25,
+      93.75
+    ],
+    [
+      "cal_2_11",
+      -281.25,
+      140.625
+    ],
+    [
+      "cal_2_12",
+      -281.25,
+      187.5
+    ],
+    [
+      "cal_2_13",
+      -281.25,
+      234.375
+    ],
+    [
+      "cal_2_14",
+      -281.25,
+      281.25
+    ],
+    [
+      "cal_2_15",
+      -281.25,
+      328.125
+    ],
+    [
+      "cal_2_16",
+      -281.25,
+      375.0
+    ],
+    [
+      "cal_3_0",
+      -234.375,
+      -375.0
+    ],
+    [
+      "cal_3_1",
+      -234.375,
+      -328.125
+    ],
+    [
+      "cal_3_2",
+      -234.375,
+      -281.25
+    ],
+    [
+      "cal_3_3",
+      -234.375,
+      -234.375
+    ],
+    [
+      "cal_3_4",
+      -234.375,
+      -187.5
+    ],
+    [
+      "cal_3_5",
+      -234.375,
+      -140.625
+    ],
+    [
+      "cal_3_6",
+      -234.375,
+      -93.75
+    ],
+    [
+      "cal_3_7",
+      -234.375,
+      -46.875
+    ],
+    [
+      "cal_3_8",
+      -234.375,
+      0.0
+    ],
+    [
+      "cal_3_9",
+      -234.375,
+      46.875
+    ],
+    [
+      "cal_3_10",
+      -234.375,
+      93.75
+    ],
+    [
+      "cal_3_11",
+      -234.375,
+      140.625
+    ],
+    [
+      "cal_3_12",
+      -234.375,
+      187.5
+    ],
+    [
+      "cal_3_13",
+      -234.375,
+      234.375
+    ],
+    [
+      "cal_3_14",
+      -234.375,
+      281.25
+    ],
+    [
+      "cal_3_15",
+      -234.375,
+      328.125
+    ],
+    [
+      "cal_3_16",
+      -234.375,
+      375.0
+    ],
+    [
+      "cal_4_0",
+      -187.5,
+      -375.0
+    ],
+    [
+      "cal_4_1",
+      -187.5,
+      -328.125
+    ],
+    [
+      "cal_4_2",
+      -187.5,
+      -281.25
+    ],
+    [
+      "cal_4_3",
+      -187.5,
+      -234.375
+    ],
+    [
+      "cal_4_4",
+      -187.5,
+      -187.5
+    ],
+    [
+      "cal_4_5",
+      -187.5,
+      -140.625
+    ],
+    [
+      "cal_4_6",
+      -187.5,
+      -93.75
+    ],
+    [
+      "cal_4_7",
+      -187.5,
+      -46.875
+    ],
+    [
+      "cal_4_8",
+      -187.5,
+      0.0
+    ],
+    [
+      "cal_4_9",
+      -187.5,
+      46.875
+    ],
+    [
+      "cal_4_10",
+      -187.5,
+      93.75
+    ],
+    [
+      "cal_4_11",
+      -187.5,
+      140.625
+    ],
+    [
+      "cal_4_12",
+      -187.5,
+      187.5
+    ],
+    [
+      "cal_4_13",
+      -187.5,
+      234.375
+    ],
+    [
+      "cal_4_14",
+      -187.5,
+      281.25
+    ],
+    [
+      "cal_4_15",
+      -187.5,
+      328.125
+    ],
+    [
+      "cal_4_16",
+      -187.5,
+      375.0
+    ],
+    [
+      "cal_5_0",
+      -140.625,
+      -375.0
+    ],
+    [
+      "cal_5_1",
+      -140.625,
+      -328.125
+    ],
+    [
+      "cal_5_2",
+      -140.625,
+      -281.25
+    ],
+    [
+      "cal_5_3",
+      -140.625,
+      -234.375
+    ],
+    [
+      "cal_5_4",
+      -140.625,
+      -187.5
+    ],
+    [
+      "cal_5_5",
+      -140.625,
+      -140.625
+    ],
+    [
+      "cal_5_6",
+      -140.625,
+      -93.75
+    ],
+    [
+      "cal_5_7",
+      -140.625,
+      -46.875
+    ],
+    [
+      "cal_5_8",
+      -140.625,
+      0.0
+    ],
+    [
+      "cal_5_9",
+      -140.625,
+      46.875
+    ],
+    [
+      "cal_5_10",
+      -140.625,
+      93.75
+    ],
+    [
+      "cal_5_11",
+      -140.625,
+      140.625
+    ],
+    [
+      "cal_5_12",
+      -140.625,
+      187.5
+    ],
+    [
+      "cal_5_13",
+      -140.625,
+      234.375
+    ],
+    [
+      "cal_5_14",
+      -140.625,
+      281.25
+    ],
+    [
+      "cal_5_15",
+      -140.625,
+      328.125
+    ],
+    [
+      "cal_5_16",
+      -140.625,
+      375.0
+    ],
+    [
+      "cal_6_0",
+      -93.75,
+      -375.0
+    ],
+    [
+      "cal_6_1",
+      -93.75,
+      -328.125
+    ],
+    [
+      "cal_6_2",
+      -93.75,
+      -281.25
+    ],
+    [
+      "cal_6_3",
+      -93.75,
+      -234.375
+    ],
+    [
+      "cal_6_4",
+      -93.75,
+      -187.5
+    ],
+    [
+      "cal_6_5",
+      -93.75,
+      -140.625
+    ],
+    [
+      "cal_6_6",
+      -93.75,
+      -93.75
+    ],
+    [
+      "cal_6_7",
+      -93.75,
+      -46.875
+    ],
+    [
+      "cal_6_8",
+      -93.75,
+      0.0
+    ],
+    [
+      "cal_6_9",
+      -93.75,
+      46.875
+    ],
+    [
+      "cal_6_10",
+      -93.75,
+      93.75
+    ],
+    [
+      "cal_6_11",
+      -93.75,
+      140.625
+    ],
+    [
+      "cal_6_12",
+      -93.75,
+      187.5
+    ],
+    [
+      "cal_6_13",
+      -93.75,
+      234.375
+    ],
+    [
+      "cal_6_14",
+      -93.75,
+      281.25
+    ],
+    [
+      "cal_6_15",
+      -93.75,
+      328.125
+    ],
+    [
+      "cal_6_16",
+      -93.75,
+      375.0
+    ],
+    [
+      "cal_7_0",
+      -46.875,
+      -375.0
+    ],
+    [
+      "cal_7_1",
+      -46.875,
+      -328.125
+    ],
+    [
+      "cal_7_2",
+      -46.875,
+      -281.25
+    ],
+    [
+      "cal_7_3",
+      -46.875,
+      -234.375
+    ],
+    [
+      "cal_7_4",
+      -46.875,
+      -187.5
+    ],
+    [
+      "cal_7_5",
+      -46.875,
+      -140.625
+    ],
+    [
+      "cal_7_6",
+      -46.875,
+      -93.75
+    ],
+    [
+      "cal_7_7",
+      -46.875,
+      -46.875
+    ],
+    [
+      "cal_7_8",
+      -46.875,
+      0.0
+    ],
+    [
+      "cal_7_9",
+      -46.875,
+      46.875
+    ],
+    [
+      "cal_7_10",
+      -46.875,
+      93.75
+    ],
+    [
+      "cal_7_11",
+      -46.875,
+      140.625
+    ],
+    [
+      "cal_7_12",
+      -46.875,
+      187.5
+    ],
+    [
+      "cal_7_13",
+      -46.875,
+      234.375
+    ],
+    [
+      "cal_7_14",
+      -46.875,
+      281.25
+    ],
+    [
+      "cal_7_15",
+      -46.875,
+      328.125
+    ],
+    [
+      "cal_7_16",
+      -46.875,
+      375.0
+    ],
+    [
+      "cal_8_0",
+      0.0,
+      -375.0
+    ],
+    [
+      "cal_8_1",
+      0.0,
+      -328.125
+    ],
+    [
+      "cal_8_2",
+      0.0,
+      -281.25
+    ],
+    [
+      "cal_8_3",
+      0.0,
+      -234.375
+    ],
+    [
+      "cal_8_4",
+      0.0,
+      -187.5
+    ],
+    [
+      "cal_8_5",
+      0.0,
+      -140.625
+    ],
+    [
+      "cal_8_6",
+      0.0,
+      -93.75
+    ],
+    [
+      "cal_8_7",
+      0.0,
+      -46.875
+    ],
+    [
+      "cal_8_8",
+      0.0,
+      0.0
+    ],
+    [
+      "cal_8_9",
+      0.0,
+      46.875
+    ],
+    [
+      "cal_8_10",
+      0.0,
+      93.75
+    ],
+    [
+      "cal_8_11",
+      0.0,
+      140.625
+    ],
+    [
+      "cal_8_12",
+      0.0,
+      187.5
+    ],
+    [
+      "cal_8_13",
+      0.0,
+      234.375
+    ],
+    [
+      "cal_8_14",
+      0.0,
+      281.25
+    ],
+    [
+      "cal_8_15",
+      0.0,
+      328.125
+    ],
+    [
+      "cal_8_16",
+      0.0,
+      375.0
+    ],
+    [
+      "cal_9_0",
+      46.875,
+      -375.0
+    ],
+    [
+      "cal_9_1",
+      46.875,
+      -328.125
+    ],
+    [
+      "cal_9_2",
+      46.875,
+      -281.25
+    ],
+    [
+      "cal_9_3",
+      46.875,
+      -234.375
+    ],
+    [
+      "cal_9_4",
+      46.875,
+      -187.5
+    ],
+    [
+      "cal_9_5",
+      46.875,
+      -140.625
+    ],
+    [
+      "cal_9_6",
+      46.875,
+      -93.75
+    ],
+    [
+      "cal_9_7",
+      46.875,
+      -46.875
+    ],
+    [
+      "cal_9_8",
+      46.875,
+      0.0
+    ],
+    [
+      "cal_9_9",
+      46.875,
+      46.875
+    ],
+    [
+      "cal_9_10",
+      46.875,
+      93.75
+    ],
+    [
+      "cal_9_11",
+      46.875,
+      140.625
+    ],
+    [
+      "cal_9_12",
+      46.875,
+      187.5
+    ],
+    [
+      "cal_9_13",
+      46.875,
+      234.375
+    ],
+    [
+      "cal_9_14",
+      46.875,
+      281.25
+    ],
+    [
+      "cal_9_15",
+      46.875,
+      328.125
+    ],
+    [
+      "cal_9_16",
+      46.875,
+      375.0
+    ],
+    [
+      "cal_10_0",
+      93.75,
+      -375.0
+    ],
+    [
+      "cal_10_1",
+      93.75,
+      -328.125
+    ],
+    [
+      "cal_10_2",
+      93.75,
+      -281.25
+    ],
+    [
+      "cal_10_3",
+      93.75,
+      -234.375
+    ],
+    [
+      "cal_10_4",
+      93.75,
+      -187.5
+    ],
+    [
+      "cal_10_5",
+      93.75,
+      -140.625
+    ],
+    [
+      "cal_10_6",
+      93.75,
+      -93.75
+    ],
+    [
+      "cal_10_7",
+      93.75,
+      -46.875
+    ],
+    [
+      "cal_10_8",
+      93.75,
+      0.0
+    ],
+    [
+      "cal_10_9",
+      93.75,
+      46.875
+    ],
+    [
+      "cal_10_10",
+      93.75,
+      93.75
+    ],
+    [
+      "cal_10_11",
+      93.75,
+      140.625
+    ],
+    [
+      "cal_10_12",
+      93.75,
+      187.5
+    ],
+    [
+      "cal_10_13",
+      93.75,
+      234.375
+    ],
+    [
+      "cal_10_14",
+      93.75,
+      281.25
+    ],
+    [
+      "cal_10_15",
+      93.75,
+      328.125
+    ],
+    [
+      "cal_10_16",
+      93.75,
+      375.0
+    ],
+    [
+      "cal_11_0",
+      140.625,
+      -375.0
+    ],
+    [
+      "cal_11_1",
+      140.625,
+      -328.125
+    ],
+    [
+      "cal_11_2",
+      140.625,
+      -281.25
+    ],
+    [
+      "cal_11_3",
+      140.625,
+      -234.375
+    ],
+    [
+      "cal_11_4",
+      140.625,
+      -187.5
+    ],
+    [
+      "cal_11_5",
+      140.625,
+      -140.625
+    ],
+    [
+      "cal_11_6",
+      140.625,
+      -93.75
+    ],
+    [
+      "cal_11_7",
+      140.625,
+      -46.875
+    ],
+    [
+      "cal_11_8",
+      140.625,
+      0.0
+    ],
+    [
+      "cal_11_9",
+      140.625,
+      46.875
+    ],
+    [
+      "cal_11_10",
+      140.625,
+      93.75
+    ],
+    [
+      "cal_11_11",
+      140.625,
+      140.625
+    ],
+    [
+      "cal_11_12",
+      140.625,
+      187.5
+    ],
+    [
+      "cal_11_13",
+      140.625,
+      234.375
+    ],
+    [
+      "cal_11_14",
+      140.625,
+      281.25
+    ],
+    [
+      "cal_11_15",
+      140.625,
+      328.125
+    ],
+    [
+      "cal_11_16",
+      140.625,
+      375.0
+    ],
+    [
+      "cal_12_0",
+      187.5,
+      -375.0
+    ],
+    [
+      "cal_12_1",
+      187.5,
+      -328.125
+    ],
+    [
+      "cal_12_2",
+      187.5,
+      -281.25
+    ],
+    [
+      "cal_12_3",
+      187.5,
+      -234.375
+    ],
+    [
+      "cal_12_4",
+      187.5,
+      -187.5
+    ],
+    [
+      "cal_12_5",
+      187.5,
+      -140.625
+    ],
+    [
+      "cal_12_6",
+      187.5,
+      -93.75
+    ],
+    [
+      "cal_12_7",
+      187.5,
+      -46.875
+    ],
+    [
+      "cal_12_8",
+      187.5,
+      0.0
+    ],
+    [
+      "cal_12_9",
+      187.5,
+      46.875
+    ],
+    [
+      "cal_12_10",
+      187.5,
+      93.75
+    ],
+    [
+      "cal_12_11",
+      187.5,
+      140.625
+    ],
+    [
+      "cal_12_12",
+      187.5,
+      187.5
+    ],
+    [
+      "cal_12_13",
+      187.5,
+      234.375
+    ],
+    [
+      "cal_12_14",
+      187.5,
+      281.25
+    ],
+    [
+      "cal_12_15",
+      187.5,
+      328.125
+    ],
+    [
+      "cal_12_16",
+      187.5,
+      375.0
+    ],
+    [
+      "cal_13_0",
+      234.375,
+      -375.0
+    ],
+    [
+      "cal_13_1",
+      234.375,
+      -328.125
+    ],
+    [
+      "cal_13_2",
+      234.375,
+      -281.25
+    ],
+    [
+      "cal_13_3",
+      234.375,
+      -234.375
+    ],
+    [
+      "cal_13_4",
+      234.375,
+      -187.5
+    ],
+    [
+      "cal_13_5",
+      234.375,
+      -140.625
+    ],
+    [
+      "cal_13_6",
+      234.375,
+      -93.75
+    ],
+    [
+      "cal_13_7",
+      234.375,
+      -46.875
+    ],
+    [
+      "cal_13_8",
+      234.375,
+      0.0
+    ],
+    [
+      "cal_13_9",
+      234.375,
+      46.875
+    ],
+    [
+      "cal_13_10",
+      234.375,
+      93.75
+    ],
+    [
+      "cal_13_11",
+      234.375,
+      140.625
+    ],
+    [
+      "cal_13_12",
+      234.375,
+      187.5
+    ],
+    [
+      "cal_13_13",
+      234.375,
+      234.375
+    ],
+    [
+      "cal_13_14",
+      234.375,
+      281.25
+    ],
+    [
+      "cal_13_15",
+      234.375,
+      328.125
+    ],
+    [
+      "cal_13_16",
+      234.375,
+      375.0
+    ],
+    [
+      "cal_14_0",
+      281.25,
+      -375.0
+    ],
+    [
+      "cal_14_1",
+      281.25,
+      -328.125
+    ],
+    [
+      "cal_14_2",
+      281.25,
+      -281.25
+    ],
+    [
+      "cal_14_3",
+      281.25,
+      -234.375
+    ],
+    [
+      "cal_14_4",
+      281.25,
+      -187.5
+    ],
+    [
+      "cal_14_5",
+      281.25,
+      -140.625
+    ],
+    [
+      "cal_14_6",
+      281.25,
+      -93.75
+    ],
+    [
+      "cal_14_7",
+      281.25,
+      -46.875
+    ],
+    [
+      "cal_14_8",
+      281.25,
+      0.0
+    ],
+    [
+      "cal_14_9",
+      281.25,
+      46.875
+    ],
+    [
+      "cal_14_10",
+      281.25,
+      93.75
+    ],
+    [
+      "cal_14_11",
+      281.25,
+      140.625
+    ],
+    [
+      "cal_14_12",
+      281.25,
+      187.5
+    ],
+    [
+      "cal_14_13",
+      281.25,
+      234.375
+    ],
+    [
+      "cal_14_14",
+      281.25,
+      281.25
+    ],
+    [
+      "cal_14_15",
+      281.25,
+      328.125
+    ],
+    [
+      "cal_14_16",
+      281.25,
+      375.0
+    ],
+    [
+      "cal_15_0",
+      328.125,
+      -375.0
+    ],
+    [
+      "cal_15_1",
+      328.125,
+      -328.125
+    ],
+    [
+      "cal_15_2",
+      328.125,
+      -281.25
+    ],
+    [
+      "cal_15_3",
+      328.125,
+      -234.375
+    ],
+    [
+      "cal_15_4",
+      328.125,
+      -187.5
+    ],
+    [
+      "cal_15_5",
+      328.125,
+      -140.625
+    ],
+    [
+      "cal_15_6",
+      328.125,
+      -93.75
+    ],
+    [
+      "cal_15_7",
+      328.125,
+      -46.875
+    ],
+    [
+      "cal_15_8",
+      328.125,
+      0.0
+    ],
+    [
+      "cal_15_9",
+      328.125,
+      46.875
+    ],
+    [
+      "cal_15_10",
+      328.125,
+      93.75
+    ],
+    [
+      "cal_15_11",
+      328.125,
+      140.625
+    ],
+    [
+      "cal_15_12",
+      328.125,
+      187.5
+    ],
+    [
+      "cal_15_13",
+      328.125,
+      234.375
+    ],
+    [
+      "cal_15_14",
+      328.125,
+      281.25
+    ],
+    [
+      "cal_15_15",
+      328.125,
+      328.125
+    ],
+    [
+      "cal_15_16",
+      328.125,
+      375.0
+    ],
+    [
+      "cal_16_0",
+      375.0,
+      -375.0
+    ],
+    [
+      "cal_16_1",
+      375.0,
+      -328.125
+    ],
+    [
+      "cal_16_2",
+      375.0,
+      -281.25
+    ],
+    [
+      "cal_16_3",
+      375.0,
+      -234.375
+    ],
+    [
+      "cal_16_4",
+      375.0,
+      -187.5
+    ],
+    [
+      "cal_16_5",
+      375.0,
+      -140.625
+    ],
+    [
+      "cal_16_6",
+      375.0,
+      -93.75
+    ],
+    [
+      "cal_16_7",
+      375.0,
+      -46.875
+    ],
+    [
+      "cal_16_8",
+      375.0,
+      0.0
+    ],
+    [
+      "cal_16_9",
+      375.0,
+      46.875
+    ],
+    [
+      "cal_16_10",
+      375.0,
+      93.75
+    ],
+    [
+      "cal_16_11",
+      375.0,
+      140.625
+    ],
+    [
+      "cal_16_12",
+      375.0,
+      187.5
+    ],
+    [
+      "cal_16_13",
+      375.0,
+      234.375
+    ],
+    [
+      "cal_16_14",
+      375.0,
+      281.25
+    ],
+    [
+      "cal_16_15",
+      375.0,
+      328.125
+    ],
+    [
+      "cal_16_16",
+      375.0,
+      375.0
+    ]
+  ],
+  "block_radius_m": 6,
+  "interpretation": "Zero-mean spatially stationary Gaussian residual-second-moment approximation fitted only on120validation realizations at289predeclared reservoir blocks. Pressure spatial common component separated before local variance. No test geometry or response chooses calibration blocks.",
+  "source_sha256": "29dc094cd72011f0700f765ff7e51146c1aca897a255b1e59fa2bdf976c53783",
+  "seconds": 130.76928015239537
+}

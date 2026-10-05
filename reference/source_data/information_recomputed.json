@@ -1,0 +1,421 @@
+{
+  "scope": "36 baseline information/target-variance calculations recomputed from saved Jacobians by SVD; no independent FE derivative verification.",
+  "records": [
+    {
+      "case": 1,
+      "center": "unconditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 10.661617589045251,
+      "target_variance_ratio": [
+        0.396908097131698,
+        0.49670796869462197
+      ]
+    },
+    {
+      "case": 1,
+      "center": "unconditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 11.95421040539054,
+      "target_variance_ratio": [
+        0.4554303450046626,
+        0.008057984380862018
+      ]
+    },
+    {
+      "case": 1,
+      "center": "unconditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 20.24978099268509,
+      "target_variance_ratio": [
+        0.2745634236106829,
+        0.006711462729361877
+      ]
+    },
+    {
+      "case": 2,
+      "center": "unconditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 16.786497507118945,
+      "target_variance_ratio": [
+        0.06406135713562139,
+        0.306731046070841
+      ]
+    },
+    {
+      "case": 2,
+      "center": "unconditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 20.318839687286694,
+      "target_variance_ratio": [
+        0.10191608718130342,
+        0.002441056062399926
+      ]
+    },
+    {
+      "case": 2,
+      "center": "unconditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 31.447272351289943,
+      "target_variance_ratio": [
+        0.032798567194085894,
+        0.0015611707012069184
+      ]
+    },
+    {
+      "case": 3,
+      "center": "unconditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 13.042909598849887,
+      "target_variance_ratio": [
+        0.05287088511957225,
+        0.15507526092378862
+      ]
+    },
+    {
+      "case": 3,
+      "center": "unconditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 17.49717234164915,
+      "target_variance_ratio": [
+        0.10145233669676282,
+        0.00026469847784502126
+      ]
+    },
+    {
+      "case": 3,
+      "center": "unconditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 26.507980635295276,
+      "target_variance_ratio": [
+        0.039444888629948466,
+        0.00023484049878447043
+      ]
+    },
+    {
+      "case": 4,
+      "center": "unconditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 14.74745311140822,
+      "target_variance_ratio": [
+        0.15520561188171567,
+        0.569458542015488
+      ]
+    },
+    {
+      "case": 4,
+      "center": "unconditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 17.73812065252096,
+      "target_variance_ratio": [
+        0.20697001468783907,
+        0.0016177603964379291
+      ]
+    },
+    {
+      "case": 4,
+      "center": "unconditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 27.86408034492761,
+      "target_variance_ratio": [
+        0.08613688383747829,
+        0.0012592195276578174
+      ]
+    },
+    {
+      "case": 5,
+      "center": "unconditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 14.383861217349725,
+      "target_variance_ratio": [
+        0.2782156160292923,
+        0.42940258703828327
+      ]
+    },
+    {
+      "case": 5,
+      "center": "unconditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 17.17395746160909,
+      "target_variance_ratio": [
+        0.3701872887057467,
+        0.0022728602800848093
+      ]
+    },
+    {
+      "case": 5,
+      "center": "unconditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 26.953664557948997,
+      "target_variance_ratio": [
+        0.21421248716513633,
+        0.0012596601402977258
+      ]
+    },
+    {
+      "case": 6,
+      "center": "unconditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 14.105121801617775,
+      "target_variance_ratio": [
+        0.32648596644677363,
+        0.5126981817429653
+      ]
+    },
+    {
+      "case": 6,
+      "center": "unconditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 14.455857919863018,
+      "target_variance_ratio": [
+        0.5553379284701271,
+        0.0021805871797578873
+      ]
+    },
+    {
+      "case": 6,
+      "center": "unconditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 24.723389519365814,
+      "target_variance_ratio": [
+        0.26086862911617514,
+        0.0015126036766159217
+      ]
+    },
+    {
+      "case": 1,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 9.304518632469374,
+      "target_variance_ratio": [
+        0.5825818208980518,
+        0.8856142276501406
+      ]
+    },
+    {
+      "case": 1,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 7.642028923811155,
+      "target_variance_ratio": [
+        0.7641212139339494,
+        0.035325917028536956
+      ]
+    },
+    {
+      "case": 1,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 15.801771529106816,
+      "target_variance_ratio": [
+        0.4735426997378237,
+        0.026860068317542857
+      ]
+    },
+    {
+      "case": 2,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 14.51333111197326,
+      "target_variance_ratio": [
+        0.16447952215921885,
+        0.5899465077242104
+      ]
+    },
+    {
+      "case": 2,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 9.788321055857264,
+      "target_variance_ratio": [
+        0.3556038641884192,
+        0.07257327107626109
+      ]
+    },
+    {
+      "case": 2,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 22.190933635563884,
+      "target_variance_ratio": [
+        0.12388616747869023,
+        0.036192828478508854
+      ]
+    },
+    {
+      "case": 3,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 11.36164920676013,
+      "target_variance_ratio": [
+        0.2938328835883658,
+        0.8577429752917636
+      ]
+    },
+    {
+      "case": 3,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 12.920475572279589,
+      "target_variance_ratio": [
+        0.47951376203323626,
+        0.02047581243264167
+      ]
+    },
+    {
+      "case": 3,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 21.90790301303864,
+      "target_variance_ratio": [
+        0.220326443895105,
+        0.01896516281728706
+      ]
+    },
+    {
+      "case": 4,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 12.84504662075918,
+      "target_variance_ratio": [
+        0.24887134251821647,
+        0.8073612271311273
+      ]
+    },
+    {
+      "case": 4,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 12.176215996699543,
+      "target_variance_ratio": [
+        0.47247019009074664,
+        0.013057387973998583
+      ]
+    },
+    {
+      "case": 4,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 22.76543441469649,
+      "target_variance_ratio": [
+        0.17650468311367756,
+        0.010775687409822042
+      ]
+    },
+    {
+      "case": 5,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 11.413995091445507,
+      "target_variance_ratio": [
+        0.36662781943042727,
+        0.618615162479836
+      ]
+    },
+    {
+      "case": 5,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 9.717379585564231,
+      "target_variance_ratio": [
+        0.5533453045126712,
+        0.019998616919479663
+      ]
+    },
+    {
+      "case": 5,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 19.18132514160686,
+      "target_variance_ratio": [
+        0.2964501196778531,
+        0.013568396684466808
+      ]
+    },
+    {
+      "case": 6,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 11.486147308049924,
+      "target_variance_ratio": [
+        0.3243227925146655,
+        0.582895168528044
+      ]
+    },
+    {
+      "case": 6,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 10.512971590547718,
+      "target_variance_ratio": [
+        0.7743730036747423,
+        0.01272857053401316
+      ]
+    },
+    {
+      "case": 6,
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 20.273875269456884,
+      "target_variance_ratio": [
+        0.29341278152475725,
+        0.011276444959994348
+      ]
+    }
+  ],
+  "means": [
+    {
+      "center": "unconditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 13.954576804231634,
+      "target_variance_ratio": [
+        0.21229125562411222,
+        0.41167893108099807
+      ]
+    },
+    {
+      "center": "unconditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 16.523026411386578,
+      "target_variance_ratio": [
+        0.29854900012440694,
+        0.002805824462897932
+      ]
+    },
+    {
+      "center": "unconditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 26.291028066918784,
+      "target_variance_ratio": [
+        0.15133747992558452,
+        0.0020898262123207885
+      ]
+    },
+    {
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "temperature",
+      "effective_dimension": 11.82078132857623,
+      "target_variance_ratio": [
+        0.33011936351815757,
+        0.7236958781341869
+      ]
+    },
+    {
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "pressure",
+      "effective_dimension": 10.459565454126583,
+      "target_variance_ratio": [
+        0.5665712230722941,
+        0.029026595994155188
+      ]
+    },
+    {
+      "center": "permeability_conditioned_prior_mean",
+      "channel": "joint",
+      "effective_dimension": 20.353540500578262,
+      "target_variance_ratio": [
+        0.26402048257131777,
+        0.019606431444603663
+      ]
+    }
+  ]
+}

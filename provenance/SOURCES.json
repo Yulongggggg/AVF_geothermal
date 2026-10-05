@@ -1,0 +1,222 @@
+{
+  "description": "Original source files from which the geouno package was transcribed. matches_pinned_or_runtime_record is true when the SHA-256 equals a hash pinned by the frozen paper protocols, the NUTS bundle source provenance, or the audit runtime import closure of the paper inference. Training sources were snapshotted by the 2 October 2026 audit; the training run protocol that pinned them is not part of the public archive.",
+  "files": {
+    "det_sampler.py": {
+      "sha256": "5bc9dba98b468bb8dd8c87774e82808f00d5983573ce31f048de84dc7c70c1bc",
+      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) handoffs/workstationd-nuts-20261001/provenance/original_sources/det_sampler.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "direct_operator/data.py": {
+      "sha256": "9386cc42b3102a9cc8f84c6bf82dff6368a371ab523c3045fc67496b9a79b85d",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/direct_operator/data.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Training source; identical copies in the OLFS geouno archive and the 2 October 2026 audit snapshot where both exist. The training protocol that pinned it is not public."
+    },
+    "direct_operator/inference.py": {
+      "sha256": "0bcf25c88ffa91855b520b208d89a04ee896802fa979cc4cec0b3f24c19789d6",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/direct_operator/inference.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "direct_operator/model.py": {
+      "sha256": "a2c4848c0339bca6cc90f317c1fb26439550852323a39b02fd94dce34f9a220d",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/direct_operator/model.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "encoder_study/model.py": {
+      "sha256": "a0660c7505dfd1555174791cb94f927b62085e6bf3cf29848b3fb691bcb07b39",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/encoder_study/model.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "final_model/monitoring_budget.py": {
+      "sha256": "61a65d03ed0ab00a67430cafbe7df6586968cf6d9fbe94f56ddd948657a87543",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/final_model/monitoring_budget.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "history_matching_dense/conditioning.py": {
+      "sha256": "8165ad1a0a32912563003d7be43fad28edfdd40d4e24454ba58bd1da66c50d0a",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/history_matching_dense/conditioning.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "history_matching_dense/fit_prior.py": {
+      "sha256": "82098b6ebc45321a1fc0243150f211cc81e78fb34572c020a8a9c8c54024ddf8",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/history_matching_dense/fit_prior.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Portable version from the geouno-v1 archive (paths as arguments). The original run recorded source_sha256 7f682486ee18...; the archive check refits the released factor from the released inputs."
+    },
+    "history_matching_dense/networks.py": {
+      "sha256": "465d7a6303cfe429effec760be8444d4e771ac7fa43ac6bf138d8dca0a9e6232",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/history_matching_dense/networks.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "history_matching_networks/networks.py": {
+      "sha256": "f6d0b48b940a3415015143965f7941fc24ced3687c75bc15bd0853dece9469c7",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/history_matching_networks/networks.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "history_matching_revision/inputs.py": {
+      "sha256": "9e05007de17cdd3c73e8538f5e87e85cd303d579dca5f658737cca72e48a87b1",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/history_matching_revision/inputs.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "history_matching_sparse/design.py": {
+      "sha256": "fdd0f3fbdb24048d302c51d59f73371803896664d16a36a4312a024921f27cf2",
+      "origin": "AVF scripts/operator_final_20260930/evidence.tar.gz: source/ol_geo_train/history_matching_sparse/design.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "history_matching_sparse/networks.py": {
+      "sha256": "7a143baa1e58194d4ff82ae9aabde0ff4259688f05ea9a628bc8896c136c9248",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) scientific_audit_20261002/source_snapshot/ol_geo_train/history_matching_sparse/networks.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "inference_comparison/algorithms.py": {
+      "sha256": "ea3ebf9ef41e382f2f8f6d34cd16e3155d637fcd4e826947bad89d7b46fe78f5",
+      "origin": "AVF scripts/operator_final_20260930/evidence.tar.gz: source/ol_geo_train/inference_comparison/algorithms.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "inference_comparison/geothermal.py": {
+      "sha256": "7f92ebbb0d5345a95af486d1886be7da749ff3c8fcd4ed34c7d900f4657c21aa",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/inference_comparison/geothermal.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "inference_comparison/metrics.py": {
+      "sha256": "b697b06acc8dc2aad18c69c89c96f5b9f273c5cfc7077892df9fce3bf8d8c233",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/inference_comparison/metrics.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "inference_comparison/run.py": {
+      "sha256": "e71e6d3b178ba1e8c69f46acf551e2989c8ac88f68cd903ec61095400a211909",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/inference_comparison/run.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "joint_architecture/model.py": {
+      "sha256": "f7a678117f8ff15dd4390382f79be11fb676f1ae3b05a670664191ef3de3af0e",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/joint_architecture/model.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "joint_mmd/loss.py": {
+      "sha256": "bfaa89e106932b624fcc01b1cf1389a9752f10e6f057f2b203f589c8c8a26e3b",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) scientific_audit_20261002/source_snapshot/geouno-learned-modes-20260925/joint_mmd/loss.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Training source; identical copies in the OLFS geouno archive and the 2 October 2026 audit snapshot where both exist. The training protocol that pinned it is not public."
+    },
+    "joint_precision/metrics.py": {
+      "sha256": "b7ddbfc257274af032a2384142cd5f0c99500aab6a94f7ae8a3cf843b69f57ff",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/joint_precision/metrics.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Training source; identical copies in the OLFS geouno archive and the 2 October 2026 audit snapshot where both exist. The training protocol that pinned it is not public."
+    },
+    "operator_campaign_20260925/common.py": {
+      "sha256": "b1821abe5c2e8ae409594ed260cb7389b2e85e1a46d350284fa316b168f7a017",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_campaign_20260925/common.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Training source; identical copies in the OLFS geouno archive and the 2 October 2026 audit snapshot where both exist. The training protocol that pinned it is not public."
+    },
+    "operator_campaign_20260925/contract.py": {
+      "sha256": "da9f257a03a57f19fc359ab339c1e62681e9805323e63e605b1cbc5e3537a578",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_campaign_20260925/contract.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Training source; identical copies in the OLFS geouno archive and the 2 October 2026 audit snapshot where both exist. The training protocol that pinned it is not public."
+    },
+    "operator_campaign_20260925/freeze.py": {
+      "sha256": "a23218bdf857c2ba3aaa1f55eed77e2f2e7f7fc7a0fa98ab864f7678dedd8737",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_campaign_20260925/freeze.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Training source; identical copies in the OLFS geouno archive and the 2 October 2026 audit snapshot where both exist. The training protocol that pinned it is not public."
+    },
+    "operator_campaign_20260925/model.py": {
+      "sha256": "5448af883ed6611eff0b15cb5525c299b97d9ab3a1242fc8cf105a9d0cc37e7e",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) scientific_audit_20261002/source_snapshot/geouno-learned-modes-20260925/operator_campaign_20260925/model.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "operator_campaign_20260925/prepare_basis.py": {
+      "sha256": "6d2567c05ebc8d88017ba2e69de854bdb86f78cd7ffb099b9a95e5fb4d8473dd",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_campaign_20260925/prepare_basis.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Training source; identical copies in the OLFS geouno archive and the 2 October 2026 audit snapshot where both exist. The training protocol that pinned it is not public."
+    },
+    "operator_campaign_20260925/train.py": {
+      "sha256": "f5042f4152513b809177ca552f521f3c2fb87cc2e92504f7ee11c7c1e72fa0a1",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_campaign_20260925/train.py",
+      "matches_pinned_or_runtime_record": false,
+      "note": "Training source; identical copies in the OLFS geouno archive and the 2 October 2026 audit snapshot where both exist. The training protocol that pinned it is not public."
+    },
+    "operator_final_20260930/backend.py": {
+      "sha256": "d72e1b08951763aa46cc4acd7a411fa161525bb674e77d973559f35c73fa225a",
+      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) .../provenance/original_sources/original_backend.py (cluster operator_final_20260930/backend.py)",
+      "matches_pinned_or_runtime_record": true
+    },
+    "operator_final_20260930/calibrate.py": {
+      "sha256": "29dc094cd72011f0700f765ff7e51146c1aca897a255b1e59fa2bdf976c53783",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_final_20260930/calibrate.py",
+      "matches_pinned_or_runtime_record": true,
+      "note": "Equals source_sha256 recorded in calibration.json (b22e64c3...)."
+    },
+    "operator_final_20260930/common.py": {
+      "sha256": "326145ba10efbeee1f9162870e8b32a2129ae7795cd7e9aa958424d5d390fa03",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_final_20260930/common.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "operator_final_20260930/inverse_backend.py": {
+      "sha256": "63ebf217f888384586fcf780aa6da0e47d0ee72a345f54b0e516bbbf2ff83842",
+      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) .../provenance/original_sources/operator_final_20260930/inverse_backend.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "operator_final_20260930/inverse_run.py": {
+      "sha256": "b2ecc3dab29033b9cb29e79896871fd04c8b25eda482c42bb68a916048f6d134",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_final_20260930/inverse_run.py (2 October 2026 corrected version)",
+      "matches_pinned_or_runtime_record": false,
+      "note": "2 October 2026 corrected version (static-only member order). The version pinned by the inference protocol is inverse_run_registered_20260930.py."
+    },
+    "operator_final_20260930/inverse_run_registered_20260930.py": {
+      "sha256": "5bae10984b5f56d09c36129b20222ac59abfcb821ae070a7099bd129f794a75f",
+      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) .../original_sources/operator_final_20260930/inverse_run.py (version pinned by the inference protocol)",
+      "matches_pinned_or_runtime_record": true
+    },
+    "operator_final_20260930/monitoring_geometry.py": {
+      "sha256": "29f86cba87fc8f2c5ce5e2976940c6f2d2bf2aef9d0a94e961ec561d49fc4ffd",
+      "origin": "AVF evidence.tar.gz: .../monitoring_geometry.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "operator_final_20260930/monitoring_prepare.py": {
+      "sha256": "13ab4b6b19be9a9f70c8ffb468ec2987fd96b7172b3683c1b3acc279b28d89c7",
+      "origin": "AVF scripts/operator_final_20260930/evidence.tar.gz: source/geouno-learned-modes-20260925/operator_final_20260930/monitoring_prepare.py (version pinned by the monitoring protocol)",
+      "matches_pinned_or_runtime_record": true
+    },
+    "operator_final_20260930/nuts_run.py": {
+      "sha256": "666b618760531053d9666fd772d30c61d0135666e9fbed22a785a349a2a53515",
+      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) .../provenance/original_sources/original_nuts_run.py",
+      "matches_pinned_or_runtime_record": true,
+      "note": "Equals source_sha256 recorded in protocols/hamiltonian_protocol.json."
+    },
+    "operator_parallel_20260927_v2/runtime.py": {
+      "sha256": "89c7e2a63ee3f594a4ec1862cc98db00b4b9f49c79c92e7467b517fd8cf24f57",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_parallel_20260927_v2/runtime.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "operator_scratch_20260927_v2/common.py": {
+      "sha256": "6502f5dcbdd36c56690f044005d4f60f4750de7dd8ba2e993e3c167312dda48c",
+      "origin": "AVF-Nature-communication---Yulong-Jonah@1281250 (main) .../operator_scratch_20260927_v2/common.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "overnight_bench/data.py": {
+      "sha256": "240e10a5d7604cc3146c76a6c0ec5210f6055a9dc2b6ac2dd9197f14216730e9",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/overnight_bench/data.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "temperature_revision/data.py": {
+      "sha256": "5d3003d7a8fd2064dae1e2692b8ee59ae37e2ea8dbbafde84c57f4a29872995d",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/temperature_revision/data.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "temperature_revision/inference.py": {
+      "sha256": "3b7b419702f2f5f22fe1ecf99aa490af7e4b09424aae256d714d065b130a4e16",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/temperature_revision/inference.py",
+      "matches_pinned_or_runtime_record": true
+    },
+    "temperature_revision/model.py": {
+      "sha256": "4369830e3847c449cfd604baafbcd3712eaf346c8d2d9a69a40a577c0648b5fe",
+      "origin": "OL-geothermal-final-scheme@229a6b7 (main) geouno/src/temperature_revision/model.py",
+      "matches_pinned_or_runtime_record": true
+    }
+  }
+}

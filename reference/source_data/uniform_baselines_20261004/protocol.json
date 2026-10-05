@@ -1,0 +1,262 @@
+{
+  "created_utc": "2026-09-20T17:51:27.297072+00:00",
+  "recipes": [
+    {
+      "variant": "deeponet",
+      "seed": 20260915,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "fno",
+      "seed": 20260915,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "ufno",
+      "seed": 20260915,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "unet",
+      "seed": 20260915,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "resnet",
+      "seed": 20260915,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "attention_unet",
+      "seed": 20260915,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "geouno",
+      "seed": 20260915,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "deeponet",
+      "seed": 20260916,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "fno",
+      "seed": 20260916,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "ufno",
+      "seed": 20260916,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "unet",
+      "seed": 20260916,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "resnet",
+      "seed": 20260916,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "attention_unet",
+      "seed": 20260916,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "geouno",
+      "seed": 20260916,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "deeponet",
+      "seed": 20260917,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "fno",
+      "seed": 20260917,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "ufno",
+      "seed": 20260917,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "unet",
+      "seed": 20260917,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "resnet",
+      "seed": 20260917,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "attention_unet",
+      "seed": 20260917,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    },
+    {
+      "variant": "geouno",
+      "seed": 20260917,
+      "initialization": "scratch",
+      "epochs": 99,
+      "batch_scenarios": 1,
+      "time_offset": 0,
+      "lr": 0.0003
+    }
+  ],
+  "labels": {
+    "deeponet": "DeepONet",
+    "fno": "FNO",
+    "ufno": "U-FNO",
+    "unet": "U-Net",
+    "resnet": "ResNet",
+    "attention_unet": "Attention U-Net",
+    "geouno": "GeoUNO"
+  },
+  "selection": "Same validation reference-normalized paired T/p RMSE and validation times as the pre-existing 99-epoch PCNO comparison; no test-based selection.",
+  "training": "99 epochs; all 6582 scenarios and 72939 members; batch one full scenario; identical time cycling, AdamW, cosine schedule, RMSE + 0.2 MMD squared, gradient clipping, AMP and validation membership.",
+  "fairness_scope": "Equal optimization steps, exposures, loss and validation selection, not equal parameter counts or wall time. Common hyperparameters test performance under one protocol, not separately optimized performance ceilings.",
+  "deployed_model": "Existing 253-epoch GeoUNO and all scientific application results stay frozen. New 99-epoch GeoUNO uses the same final architecture initialized at random; it is a separate architecture comparison.",
+  "pno_scope": "PNO is excluded from this deterministic common-objective comparison because its conditional-generative task and proper scoring objective differ; existing probabilistic results remain supplementary.",
+  "reuse": {
+    "protocol": "/mnt/home/yliu5/projects/ol_geo_train/runs/encoder_study_20260916/protocol.json",
+    "protocol_sha256": "ce774a97fb7ee767c1e3c133c13cd90a369bcbc6623dc39f9c2f758644408a68",
+    "variants": [
+      "joint_scratch",
+      "pcno_backbone"
+    ],
+    "seeds": [
+      20260915,
+      20260916,
+      20260917
+    ],
+    "conditions": "Reuse only complete 99-epoch runs with identical exposures, objective, optimization and validation rule; unfinished PCNO seed remains pending."
+  },
+  "sources_sha256": {
+    "direct_operator/data.py": "9386cc42b3102a9cc8f84c6bf82dff6368a371ab523c3045fc67496b9a79b85d",
+    "direct_operator/model.py": "a2c4848c0339bca6cc90f317c1fb26439550852323a39b02fd94dce34f9a220d",
+    "encoder_study/__init__.py": "61949bfdc77d91914d5192fa7bb27f169974a5b4ff7279f54e1222118c0e76ce",
+    "encoder_study/common.py": "c993cc2d05bcc0369f1528f759209bd879432e34ca12a1e7521879aca9d09e9e",
+    "encoder_study/contract.py": "5cfe217bb16ccc47037d843b4aedbc0ee99a7eaf0022c6e760280301ec47dbce",
+    "encoder_study/dashboard.py": "7a69f41c3d053aa4dd9766d8b79dd3eba47896e76bcefcce924d80b43fc07995",
+    "encoder_study/evaluate.py": "f1cca28732a7f16faa40d6347c779d7faa66cc0011b62a480adb3f1158c39090",
+    "encoder_study/model.py": "a0660c7505dfd1555174791cb94f927b62085e6bf3cf29848b3fb691bcb07b39",
+    "encoder_study/paper.py": "2910e44b86f7b4eb11be28faa264675a56c9a4a95c64cd8e8cb05ebbc9746c74",
+    "encoder_study/pcno.py": "f0a9b25d8a04cc5cd85f97f4d9c932cbc9e30a26ce6409db77c38b3c63dd5994",
+    "encoder_study/prepare.py": "84e9ca8f6317820e876c382d7c1943f6e2f0112e41fc1498be088b2fcbda1560",
+    "encoder_study/report.py": "fe2b94f5b9add4b270e427bdd66aedce16faadec5b1ccd2a5b56a6118c922d71",
+    "encoder_study/run.sbatch": "2b363e1ae51977c02ed2bef18421b1c84693fdf675c4e39f1cf436c189eea526",
+    "encoder_study/train.py": "4dd40ebb159ce1fdc04132127875e811770a0d3e3f472fc86c5244aa62668eab",
+    "encoder_study/upstream/LICENSE": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "encoder_study/upstream/PCNO_Model_4D.py": "19529907e756fee88079696207b80a7f9006637d3684ae1ebf38f2652dd887ae",
+    "encoder_study/upstream/PCNO_Train_4D.py": "3e0250575e0e547d141d80ae28029317f57a12c39353abcd9e382d37e16189db",
+    "encoder_study/watch.py": "8ab1a37f0471c44328bd2725e83026d27686f464a96932c2d72f3b799bf62ac9",
+    "fair_comparison/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fair_comparison/common.py": "814b57e7caf1aacc828568457d3a1f3f209e9f87916d051041a2b69c65c69bad",
+    "fair_comparison/contract.py": "66b450d761bf589311019f7c396143d930e6daa2ab964fb7e9876f4a729a2c72",
+    "fair_comparison/evaluate.py": "e65a03ee1fed486eb03ab3091bf3cff48ab1ef21344cff107d1b4dc1fc059838",
+    "fair_comparison/models.py": "a2c31f766b5654421090e75ff0369a656fcc76f556a9fea8fd90c092a89f733a",
+    "fair_comparison/prepare.py": "63ebe446b1ca7508903ac4a21712b53738ef18f24104f1b2264a52fab0f9a6d6",
+    "fair_comparison/run.sbatch": "9e138f148894d4bb58cfc0b5fe99d78c09606c46dcd8079d33710afa493ba5d6",
+    "fair_comparison/train.py": "0880baa489749f449534b7c7e3fa7e6a59a7a17100748b7cc889c742b2253049",
+    "fair_comparison/watch.py": "3abb3adc9e281619a7eb504d730a89fd2bbd65518e5385cb595ca3c7ee028230",
+    "joint_architecture/model.py": "f7a678117f8ff15dd4390382f79be11fb676f1ae3b05a670664191ef3de3af0e",
+    "joint_mmd/loss.py": "bfaa89e106932b624fcc01b1cf1389a9752f10e6f057f2b203f589c8c8a26e3b",
+    "joint_precision/metrics.py": "b7ddbfc257274af032a2384142cd5f0c99500aab6a94f7ae8a3cf843b69f57ff",
+    "overnight_bench/data.py": "240e10a5d7604cc3146c76a6c0ec5210f6055a9dc2b6ac2dd9197f14216730e9",
+    "overnight_bench/evaluate.py": "98b946486117fce6e8465b1485d6fb36aeb0f1db652ba02437f8c8df6f89ad49",
+    "pack_v4r6t2/meta.csv": "b7a6827bc0474cec8a19fd02f0c346b096e3f83e86f22f2744f7c7272b889590",
+    "pack_v4r6t2/stats.json": "27c6a5321a3271107cb2ded98a608acb3906119cf72d3385efe5c670fafecbb8",
+    "runs/joint_mmd_20260916/round_1/trial_1_s20260915/evaluation_balanced/val.json": "e94dd9ef56b790c2a5f64c8fdc9b4fca402d9c61dbe326c75116740ae8164a88",
+    "runs/overnight_bench_20260913/pressure_scope.json": "842b8ec0e3ae52bd4296598a4e3e407299ff0cc38eda0b1e6dec3ad734096d60",
+    "temperature_revision/data.py": "5d3003d7a8fd2064dae1e2692b8ee59ae37e2ea8dbbafde84c57f4a29872995d",
+    "temperature_revision/model.py": "4369830e3847c449cfd604baafbcd3712eaf346c8d2d9a69a40a577c0648b5fe"
+  }
+}

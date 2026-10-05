@@ -1,0 +1,191 @@
+{
+  "version": "table1-nearwell-rmse-v1",
+  "evaluation_only": true,
+  "runs": [
+    {
+      "model": "deeponet",
+      "seed": 20260913,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/deeponet_s20260913/best.pt",
+      "checkpoint_sha256": "bb911799c5bf07aee6ec347eea4b878e305786f226d57ba95c610fa63fcae04b",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/deeponet_s20260913/test.json",
+      "reference_sha256": "3d776d7b579d81429b97c3dee5b1e34b7e890ffa8c273a8586ff5bb848a2e9e5",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "deeponet",
+      "seed": 20260914,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/deeponet_s20260914/best.pt",
+      "checkpoint_sha256": "629817d58a075ce989ded91cd55af75e9c619cc869868462422e79b1c5570519",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/deeponet_s20260914/test.json",
+      "reference_sha256": "5d44f2bd8c736d4500bb040555f9d4fef92cff28515b55837c325904ca9ab8c2",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "fno",
+      "seed": 20260913,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/fno_s20260913/best.pt",
+      "checkpoint_sha256": "d7f028c6997729705edb2843c8ed12f66c911914b25cbf97881108299429e5e8",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/fno_s20260913/test.json",
+      "reference_sha256": "b353b4a44e47200a2c4fadb08b313c6da858758ac23586cb0790f9fca4e3b696",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "fno",
+      "seed": 20260914,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/fno_s20260914/best.pt",
+      "checkpoint_sha256": "c8c10a2769656ac1f07342db1e17ef784f8c50bb1eea96b3e78a3a55e572a4d3",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/fno_s20260914/test.json",
+      "reference_sha256": "f466ec43e940151428f5f8c60f79b66d5ca63838a7323e9b23de63f684a84e20",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "ufno",
+      "seed": 20260913,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/ufno_s20260913/best.pt",
+      "checkpoint_sha256": "bacce891633c54bb1b2f3f1564cde3b43ec67aae47de6db78bafe2eb7363f126",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/ufno_s20260913/test.json",
+      "reference_sha256": "642c5eeec97f21b4bf9a48815ab73a019d7cb34db1cbf5e1a414523671872960",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "ufno",
+      "seed": 20260914,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/ufno_s20260914/best.pt",
+      "checkpoint_sha256": "050b6c4798a69df4e432b29e97c8ec85dfdae601b1e8e5f50913668eac3e4245",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/ufno_s20260914/test.json",
+      "reference_sha256": "0a89fb339e572f4a24efa2dbe57304c4e09c113f2c5aa4140497073ed9dc2520",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "unet",
+      "seed": 20260913,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/unet_s20260913/best.pt",
+      "checkpoint_sha256": "bcc660eb7093a9501a8608c85a4adcc9a7e4f5aa604e7bd1e8cffaed49531915",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/unet_s20260913/test.json",
+      "reference_sha256": "f0c56c5fc6508e46ae2bee4f01fc24500767c932ecf7968508f8a056b2a82063",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "unet",
+      "seed": 20260914,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/unet_s20260914/best.pt",
+      "checkpoint_sha256": "715d486a16e13a3300d125f56e02c6565ffed4c515207e624b1e1ad8b572e0c6",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/unet_s20260914/test.json",
+      "reference_sha256": "fe4bac06e05551ab953237517812bab94bc4ce6bdf51c0660d71fbc4e8255954",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "resnet",
+      "seed": 20260913,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/resnet_s20260913/best.pt",
+      "checkpoint_sha256": "44c33be03255ee826f4bcf4cfbdb542337b7579899036b039bf41f53424c97d7",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/resnet_s20260913/test.json",
+      "reference_sha256": "9c117b10e03645eaf9bbbb3eb3581fd00e4b9281dcb7dba4408361a5d577eab6",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "resnet",
+      "seed": 20260914,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/resnet_s20260914/best.pt",
+      "checkpoint_sha256": "2dd9ae1ff6797571a8d4e95186e9f8915694a6b5d35c08d8b06dea5d082a924b",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/resnet_s20260914/test.json",
+      "reference_sha256": "1186a3cce6ac538337b83b5d6c373d42018c464b471cb310412c6b048c385be6",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "attention_unet",
+      "seed": 20260913,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/attention_unet_s20260913/best.pt",
+      "checkpoint_sha256": "a96e8c13debedd30007ad9bb6abd3b083ab021e2a0c8cae668f104d2a6c926d4",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/attention_unet_s20260913/test.json",
+      "reference_sha256": "ffea99dec6ea86e730d83b7bea17be68e00271d07e364c6f17259a70d2792da9",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "attention_unet",
+      "seed": 20260914,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/attention_unet_s20260914/best.pt",
+      "checkpoint_sha256": "c53203ca5758070bb8b93ce74a149878367e5555de345f2720186d6aa6fba33f",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/overnight_bench_20260913/formal/attention_unet_s20260914/test.json",
+      "reference_sha256": "8f155d6de4a0005570e90168eb95fc26b3759b618eb9b8e9511031947b42219a",
+      "batch_size": 32,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "pcno",
+      "seed": 20260915,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/encoder_study_20260916/formal/pcno_backbone_s20260915/best.pt",
+      "checkpoint_sha256": "496132f50a312c82be0387c19b84ea21a1e3a332a1669503fdb86e282db3f44e",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/encoder_study_20260916/formal/pcno_backbone_s20260915/best/test.json",
+      "reference_sha256": "4daebeded13a63de603c8a594803a57fde02c3b4f9f6b2e1d9495c619c11eccc",
+      "batch_size": 4,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "pcno",
+      "seed": 20260916,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/encoder_study_20260916/formal/pcno_backbone_s20260916/best.pt",
+      "checkpoint_sha256": "c84e18aade9c1b4568c4056c275a62d18fd4c1aef3dc1c190109f15dc15c827c",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/encoder_study_20260916/formal/pcno_backbone_s20260916/best/test.json",
+      "reference_sha256": "d3f407577eb7c78386a9b7e3af74463b33e865a94860b22302b0239e14a7a83b",
+      "batch_size": 4,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "pcno",
+      "seed": 20260917,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/encoder_study_20260916/formal/pcno_backbone_s20260917/best.pt",
+      "checkpoint_sha256": "74892fddb4cb0032a4be714d7f4f55c60cc311fb318b447dd9540cf532494d43",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/encoder_study_20260916/formal/pcno_backbone_s20260917/best/test.json",
+      "reference_sha256": "a1b257adb0974c56ab58475cf79f62a6a0b10b8df4d03c3a42a2d13825b8cf59",
+      "batch_size": 4,
+      "code_root": "/mnt/home/yliu5/projects/ol_geo_train"
+    },
+    {
+      "model": "geouno",
+      "seed": 20260925,
+      "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20260930/model.pt",
+      "checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e",
+      "reference": "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20260930/cache/metrics.json",
+      "reference_sha256": "1b79c285663f8dca39f9cadde7c0a1d5496bbc72cb7e55502f094de876e0cf8e",
+      "batch_size": 16,
+      "code_root": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925"
+    }
+  ],
+  "pack": "/mnt/home/yliu5/projects/ol_geo_train/pack_v4r6t2",
+  "radius_m": 6,
+  "regions": {
+    "temperature": "producer disk",
+    "pressure": "injector disk"
+  },
+  "scenarios": 618,
+  "members": 8621,
+  "times": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "aggregation": "Square errors first; mean over members and cells inside each radius-6m disk, then square root per scenario and time. Equal scenario and equal-time mean within each run; mean and sample SD across the original runs. This is local field RMSE, not RMSE after spatially averaging a well block.",
+  "selection": "Exactly the Table 1 checkpoints; no model fitting or test-based model selection.",
+  "evaluation_source_sha256": "4d3c25e92988082ad5d0112c2677fc669583ad55220a658394acbe5b736cf370",
+  "user_metric_confirmation": "well\u9644\u8fd1\u7684rmse"
+}

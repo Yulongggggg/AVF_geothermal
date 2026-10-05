@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software or its artifacts, please cite the article and this repository."
+title: "GeoUNO: joint operator learning for geothermal forecasting and inference under uncertainty (code and artifacts)"
+type: software
+version: 1.0.0
+date-released: 2026-10-05
+license: MIT
+repository-code: "https://github.com/Yulongggggg/AVF_geothermal"
+keywords:
+  - geothermal energy
+  - enhanced geothermal systems
+  - neural operator
+  - history matching
+  - uncertainty quantification
+authors:
+  - family-names: Liu
+    given-names: Yulong
+    affiliation: "Department of Earth and Atmospheric Sciences, Cornell University"
+  - family-names: Botvinick-Greenhouse
+    given-names: Jonah
+    affiliation: "Institute for Foundations of Data Science, Yale University"
+  - family-names: Yang
+    given-names: Yunan
+    affiliation: "Department of Mathematics, Cornell University"
+  - family-names: Arson
+    given-names: "Chloé"
+    affiliation: "Department of Earth and Atmospheric Sciences, Cornell University"
+preferred-citation:
+  type: article
+  title: "Joint operator learning for geothermal forecasting and inference under uncertainty"
+  authors:
+    - family-names: Liu
+      given-names: Yulong
+    - family-names: Botvinick-Greenhouse
+      given-names: Jonah
+    - family-names: Yang
+      given-names: Yunan
+    - family-names: Arson
+      given-names: "Chloé"
+  year: 2026
+  notes: "Manuscript; bibliographic details will be added on publication."

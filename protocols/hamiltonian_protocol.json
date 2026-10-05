@@ -1,0 +1,89 @@
+{
+  "checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e",
+  "monitoring_protocol_sha256": "968aa31e4f8e6512e1b63c4d854719647dfab9aa8b24abec3296efecc654b27b",
+  "inference_protocol_sha256": "c09205d5fbfbcf8cbf69bc3851ec63d78c0f2f47ed2b7b5b82461267fb28977a",
+  "cases": [
+    {
+      "scenario": "v4m02656",
+      "case_id": "v4m02656_r012",
+      "row": 39801,
+      "split": "test",
+      "label": "test_01",
+      "prior_seed": 510000,
+      "observation_seed": 610000,
+      "member": 0
+    },
+    {
+      "scenario": "v4m03082",
+      "case_id": "v4m03082_r013",
+      "row": 43097,
+      "split": "test",
+      "label": "test_02",
+      "prior_seed": 510001,
+      "observation_seed": 610001,
+      "member": 0
+    },
+    {
+      "scenario": "v4m01934",
+      "case_id": "v4m01934_r019",
+      "row": 33541,
+      "split": "test",
+      "label": "test_03",
+      "prior_seed": 510002,
+      "observation_seed": 610002,
+      "member": 0
+    },
+    {
+      "scenario": "v4n00764",
+      "case_id": "v4n00764_r003",
+      "row": 53200,
+      "split": "test",
+      "label": "test_04",
+      "prior_seed": 510003,
+      "observation_seed": 610003,
+      "member": 0
+    },
+    {
+      "scenario": "v4m00306",
+      "case_id": "v4m00306_r010",
+      "row": 13468,
+      "split": "test",
+      "label": "test_05",
+      "prior_seed": 510004,
+      "observation_seed": 610004,
+      "member": 0
+    },
+    {
+      "scenario": "v4m03040",
+      "case_id": "v4m03040_r000",
+      "row": 42506,
+      "split": "test",
+      "label": "test_06",
+      "prior_seed": 510005,
+      "observation_seed": 610005,
+      "member": 0
+    }
+  ],
+  "formal": {
+    "samples": 1024,
+    "warmup": 512,
+    "max_depth": 7,
+    "target_accept": 0.9,
+    "chains": 4
+  },
+  "pilot": {
+    "samples": 32,
+    "warmup": 64,
+    "max_depth": 4,
+    "target_accept": 0.9,
+    "chains": 2
+  },
+  "source_sha256": "666b618760531053d9666fd772d30c61d0135666e9fbed22a785a349a2a53515",
+  "convergence": {
+    "rank_rhat_max": 1.05,
+    "bulk_ess_min": 200,
+    "tail_ess_min": 200,
+    "divergences": 0
+  },
+  "retention": "All six reservoirs and all four chains retained, including failures of convergence criteria; no truth-based selection"
+}

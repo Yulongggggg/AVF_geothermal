@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geouno"
+version = "1.0.0"
+description = "GeoUNO: joint temperature-pressure neural operator for geothermal forecasting and permeability inference under uncertainty"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Yulong Liu" },
+    { name = "Jonah Botvinick-Greenhouse" },
+    { name = "Yunan Yang" },
+    { name = "Chloé Arson" },
+]
+keywords = ["geothermal", "neural operator", "operator learning", "history matching",
+            "uncertainty quantification", "enhanced geothermal systems"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.4",
+    "numpy>=1.26",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+# Hamiltonian Monte Carlo (NUTS) and its convergence diagnostics.
+nuts = ["pyro-ppl>=1.9", "arviz>=0.20"]
+# ES-MDA uses Equinor's reference implementation, which is licensed under GPL-3.0.
+esmda = ["iterative-ensemble-smoother==1.1.0"]
+all = ["pyro-ppl>=1.9", "arviz>=0.20", "iterative-ensemble-smoother==1.1.0", "matplotlib>=3.8"]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+geouno = "geouno.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Yulongggggg/AVF_geothermal"
+
+[tool.setuptools.packages.find]
+include = ["geouno*"]
+
+[tool.setuptools.package-data]
+geouno = ["resources/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "release: needs the downloaded release artifacts (geouno download)",
+    "slow: takes minutes on a CPU",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["provenance/original_sources", "provenance/nuts_bundle_runtime", "data_generation"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B"]
+# B023: closures in geology_maps and nuts() are called within their own loop iteration.
+ignore = ["E741", "B905", "E731", "B023"]

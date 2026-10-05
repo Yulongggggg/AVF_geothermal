@@ -1,0 +1,683 @@
+{
+  "status": "complete",
+  "protocol_sha256": "900112530b94107c51e523d8a9289ec5bb8d800c4ba668707aeb1324d1d09ccb",
+  "evaluator_sha256": "4d3c25e92988082ad5d0112c2677fc669583ad55220a658394acbe5b736cf370",
+  "runs": {
+    "deeponet_s20260913": {
+      "model": "deeponet",
+      "seed": 20260913,
+      "scores": {
+        "T_field_rmse": 1.6479327771116719,
+        "P_field_rmse": 0.7889758528854942,
+        "T_nearwell_rmse": 2.271873241170918,
+        "P_nearwell_rmse": 0.8062313282448567,
+        "T_reference_field_rmse": 1.6479613663462653,
+        "P_reference_field_rmse": 0.7889864487038111
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -2.858923459340629e-05,
+          "max_absolute": 0.009232044219970703
+        },
+        "P": {
+          "mean_signed": -1.0595818316806726e-05,
+          "max_absolute": 0.01668757200241089
+        }
+      },
+      "output_sha256": "8574d2caf96481de83df88b37e833a21d5120546dc1f1e5175b77dbd9e1620e7",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "deeponet_s20260914": {
+      "model": "deeponet",
+      "seed": 20260914,
+      "scores": {
+        "T_field_rmse": 1.6526854085771872,
+        "P_field_rmse": 0.7689612334455487,
+        "T_nearwell_rmse": 2.2431795848813674,
+        "P_nearwell_rmse": 0.773794486315082,
+        "T_reference_field_rmse": 1.6526837942058126,
+        "P_reference_field_rmse": 0.7689479512797363
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": 1.614371374376594e-06,
+          "max_absolute": 0.007247447967529297
+        },
+        "P": {
+          "mean_signed": 1.3282165812478061e-05,
+          "max_absolute": 0.015277743339538574
+        }
+      },
+      "output_sha256": "2cffcb384f23a0d6d41454a3f8ab1469bc16094bfe46f6126c59d5ccf5f22376",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "fno_s20260913": {
+      "model": "fno",
+      "seed": 20260913,
+      "scores": {
+        "T_field_rmse": 1.6370170719666222,
+        "P_field_rmse": 1.46589684094461,
+        "T_nearwell_rmse": 2.1231255140748764,
+        "P_nearwell_rmse": 1.589724216161931,
+        "T_reference_field_rmse": 1.6370171146419652,
+        "P_reference_field_rmse": 1.4658962727496119
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -4.267534304100052e-08,
+          "max_absolute": 0.0005195140838623047
+        },
+        "P": {
+          "mean_signed": 5.681949981909424e-07,
+          "max_absolute": 0.0002830028533935547
+        }
+      },
+      "output_sha256": "a9a9d2d927956e24de3e890e783c20d1992222159da3dc1ad40efdef7d5ada42",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "fno_s20260914": {
+      "model": "fno",
+      "seed": 20260914,
+      "scores": {
+        "T_field_rmse": 1.599883544044232,
+        "P_field_rmse": 1.395679512767274,
+        "T_nearwell_rmse": 2.107102629265009,
+        "P_nearwell_rmse": 1.5378207378725106,
+        "T_reference_field_rmse": 1.5998841038647251,
+        "P_reference_field_rmse": 1.395679163692558
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -5.598204929921935e-07,
+          "max_absolute": 0.00041282176971435547
+        },
+        "P": {
+          "mean_signed": 3.4907471611065596e-07,
+          "max_absolute": 0.00034308433532714844
+        }
+      },
+      "output_sha256": "c0f81efe0ffd15a2b3556e6b0b61b15c69cbda83133f2a02bc695db94b83b1e4",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "ufno_s20260913": {
+      "model": "ufno",
+      "seed": 20260913,
+      "scores": {
+        "T_field_rmse": 0.573093881034606,
+        "P_field_rmse": 0.6851067661759028,
+        "T_nearwell_rmse": 1.2552005631161638,
+        "P_nearwell_rmse": 0.7924363682143528,
+        "T_reference_field_rmse": 0.5730993826907851,
+        "P_reference_field_rmse": 0.6851154522091878
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -5.501656179026177e-06,
+          "max_absolute": 0.006120622158050537
+        },
+        "P": {
+          "mean_signed": -8.686033284955251e-06,
+          "max_absolute": 0.007994651794433594
+        }
+      },
+      "output_sha256": "a1c2987107deabfbbf34a776830ccbc0b5e13782c6061c8ce91fbc0dfe7b188a",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "ufno_s20260914": {
+      "model": "ufno",
+      "seed": 20260914,
+      "scores": {
+        "T_field_rmse": 0.6325620265102722,
+        "P_field_rmse": 0.6998964278791873,
+        "T_nearwell_rmse": 1.2858907463101363,
+        "P_nearwell_rmse": 0.8191462518314678,
+        "T_reference_field_rmse": 0.6325734572205063,
+        "P_reference_field_rmse": 0.6998925074035147
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -1.1430710234092101e-05,
+          "max_absolute": 0.007976293563842773
+        },
+        "P": {
+          "mean_signed": 3.9204756725742805e-06,
+          "max_absolute": 0.00431060791015625
+        }
+      },
+      "output_sha256": "d6bf6459e2c5cd22bab7cf7da982b56cea1c5b001582026f376d71237b9b0192",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "unet_s20260913": {
+      "model": "unet",
+      "seed": 20260913,
+      "scores": {
+        "T_field_rmse": 0.5477190070414861,
+        "P_field_rmse": 0.5453496379818888,
+        "T_nearwell_rmse": 1.2365369654640612,
+        "P_nearwell_rmse": 0.5744085150633021,
+        "T_reference_field_rmse": 0.5477133655764993,
+        "P_reference_field_rmse": 0.5453546831034131
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": 5.641464986812371e-06,
+          "max_absolute": 0.0043833255767822266
+        },
+        "P": {
+          "mean_signed": -5.0451215241508785e-06,
+          "max_absolute": 0.0060430169105529785
+        }
+      },
+      "output_sha256": "96c8988c0a9dadaa85d9177f11719e769282b7f8d7f93e3e05883af7e5afa705",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "unet_s20260914": {
+      "model": "unet",
+      "seed": 20260914,
+      "scores": {
+        "T_field_rmse": 0.5852765931700452,
+        "P_field_rmse": 0.5719879070950645,
+        "T_nearwell_rmse": 1.200251493923022,
+        "P_nearwell_rmse": 0.6173183281984587,
+        "T_reference_field_rmse": 0.5852785399706969,
+        "P_reference_field_rmse": 0.5719879727293311
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -1.946800651708818e-06,
+          "max_absolute": 0.0031315088272094727
+        },
+        "P": {
+          "mean_signed": -6.563426659857045e-08,
+          "max_absolute": 0.00789952278137207
+        }
+      },
+      "output_sha256": "1c9acac9cb1949506c1a954e962198378195df9ba0ef82572543db324be95232",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "resnet_s20260913": {
+      "model": "resnet",
+      "seed": 20260913,
+      "scores": {
+        "T_field_rmse": 1.1123461454726424,
+        "P_field_rmse": 0.6261153516786244,
+        "T_nearwell_rmse": 1.4053723778078075,
+        "P_nearwell_rmse": 0.71224628520319,
+        "T_reference_field_rmse": 1.1123468469056785,
+        "P_reference_field_rmse": 0.6261144388805736
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -7.014330361442869e-07,
+          "max_absolute": 0.0022450685501098633
+        },
+        "P": {
+          "mean_signed": 9.127980507482813e-07,
+          "max_absolute": 0.0019214153289794922
+        }
+      },
+      "output_sha256": "8a7314f12fbfc6756aea91df7fe33f49353681035e85278e37c0547871a3bcb3",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "resnet_s20260914": {
+      "model": "resnet",
+      "seed": 20260914,
+      "scores": {
+        "T_field_rmse": 1.177335483639354,
+        "P_field_rmse": 0.6431115547238369,
+        "T_nearwell_rmse": 1.4881473211363334,
+        "P_nearwell_rmse": 0.7474386751726839,
+        "T_reference_field_rmse": 1.1773363399240164,
+        "P_reference_field_rmse": 0.6431118629776351
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -8.562846626033149e-07,
+          "max_absolute": 0.0019702911376953125
+        },
+        "P": {
+          "mean_signed": -3.0825379824911926e-07,
+          "max_absolute": 0.0021948814392089844
+        }
+      },
+      "output_sha256": "ee9842419dc7f41389b1c32f9c6f4b23775e8c2a9ec3fd3ee6d3eaf6b2be86d2",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "attention_unet_s20260913": {
+      "model": "attention_unet",
+      "seed": 20260913,
+      "scores": {
+        "T_field_rmse": 0.43478830611740416,
+        "P_field_rmse": 0.5333543883279847,
+        "T_nearwell_rmse": 0.9121619792978155,
+        "P_nearwell_rmse": 0.5747783415487503,
+        "T_reference_field_rmse": 0.434787782211877,
+        "P_reference_field_rmse": 0.5333600909679045
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": 5.239055270866703e-07,
+          "max_absolute": 0.0043408870697021484
+        },
+        "P": {
+          "mean_signed": -5.702639919812275e-06,
+          "max_absolute": 0.011247396469116211
+        }
+      },
+      "output_sha256": "4e7667d5ae480834f1e664c604450cef249dcb40354d520c3a84a40d0c0c4e39",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "attention_unet_s20260914": {
+      "model": "attention_unet",
+      "seed": 20260914,
+      "scores": {
+        "T_field_rmse": 0.44581246235065114,
+        "P_field_rmse": 0.521593683161429,
+        "T_nearwell_rmse": 0.9027457815267816,
+        "P_nearwell_rmse": 0.5513392087939615,
+        "T_reference_field_rmse": 0.44581631198333627,
+        "P_reference_field_rmse": 0.5215839070604172
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": -3.849632685133274e-06,
+          "max_absolute": 0.009234130382537842
+        },
+        "P": {
+          "mean_signed": 9.776101011709453e-06,
+          "max_absolute": 0.012379169464111328
+        }
+      },
+      "output_sha256": "1f012de7b38784b70dc08112a4e027f3ccfd8f55af6c66138d8467ddede345fa",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "pcno_s20260915": {
+      "model": "pcno",
+      "seed": 20260915,
+      "scores": {
+        "T_field_rmse": 0.5794682796188543,
+        "P_field_rmse": 0.5324824411790817,
+        "T_nearwell_rmse": 1.201930814766981,
+        "P_nearwell_rmse": 0.5456462904870363,
+        "T_reference_field_rmse": 0.5794682796188543,
+        "P_reference_field_rmse": 0.5324824411790817
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": 0.0,
+          "max_absolute": 0.0
+        },
+        "P": {
+          "mean_signed": 0.0,
+          "max_absolute": 0.0
+        }
+      },
+      "output_sha256": "75cedffa09dd3ca4818cc006ff40eb8c94ec5b2ed2834682329783e1196cc9df",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "pcno_s20260916": {
+      "model": "pcno",
+      "seed": 20260916,
+      "scores": {
+        "T_field_rmse": 0.5974951677007102,
+        "P_field_rmse": 0.509650357872457,
+        "T_nearwell_rmse": 1.4436688475388566,
+        "P_nearwell_rmse": 0.5218773916495647,
+        "T_reference_field_rmse": 0.5974951677007102,
+        "P_reference_field_rmse": 0.509650357872457
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": 0.0,
+          "max_absolute": 0.0
+        },
+        "P": {
+          "mean_signed": 0.0,
+          "max_absolute": 0.0
+        }
+      },
+      "output_sha256": "7a52cec44aa7b3497128e6e7cd83149b097deb40841892c1fb7d7a0e5ce2fc57",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "pcno_s20260917": {
+      "model": "pcno",
+      "seed": 20260917,
+      "scores": {
+        "T_field_rmse": 0.5834042408182191,
+        "P_field_rmse": 0.5344564977825887,
+        "T_nearwell_rmse": 1.4298910698107898,
+        "P_nearwell_rmse": 0.5422053863188248,
+        "T_reference_field_rmse": 0.5834042408182191,
+        "P_reference_field_rmse": 0.5344564977825887
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": 0.0,
+          "max_absolute": 0.0
+        },
+        "P": {
+          "mean_signed": 0.0,
+          "max_absolute": 0.0
+        }
+      },
+      "output_sha256": "cdbd221a926baa434be2bf1f9cece5be1406d996d53f57995ba521d2153d66af",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    },
+    "geouno_s20260925": {
+      "model": "geouno",
+      "seed": 20260925,
+      "scores": {
+        "T_field_rmse": 0.31610642695538077,
+        "P_field_rmse": 0.4265844534494029,
+        "T_nearwell_rmse": 0.8618408894046579,
+        "P_nearwell_rmse": 0.42421565336350897,
+        "T_reference_field_rmse": 0.31610642695538077,
+        "P_reference_field_rmse": 0.4265844534494029
+      },
+      "original_field_reproduction": {
+        "T": {
+          "mean_signed": 0.0,
+          "max_absolute": 0.0
+        },
+        "P": {
+          "mean_signed": 0.0,
+          "max_absolute": 0.0
+        }
+      },
+      "output_sha256": "a596a4342847f8623d2cb887c3b0999a8689ad9b23710e06142d705edab172e5",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch_version": "2.8.0+cu128"
+    }
+  },
+  "models": {
+    "deeponet": {
+      "T_field_rmse": {
+        "mean": 1.6503090928444295,
+        "sample_sd": 0.003360617937746428,
+        "runs": 2
+      },
+      "P_field_rmse": {
+        "mean": 0.7789685431655214,
+        "sample_sd": 0.014152473128853588,
+        "runs": 2
+      },
+      "T_nearwell_rmse": {
+        "mean": 2.2575264130261425,
+        "sample_sd": 0.020289478939377388,
+        "runs": 2
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.7900129072799693,
+        "sample_sd": 0.022936310888819825,
+        "runs": 2
+      },
+      "T_reference_field_rmse": {
+        "mean": 1.6503225802760388,
+        "sample_sd": 0.0033392607631501266,
+        "runs": 2
+      },
+      "P_reference_field_rmse": {
+        "mean": 0.7789671999917737,
+        "sample_sd": 0.014169357413352469,
+        "runs": 2
+      }
+    },
+    "fno": {
+      "T_field_rmse": {
+        "mean": 1.618450308005427,
+        "sample_sd": 0.026257369403302054,
+        "runs": 2
+      },
+      "P_field_rmse": {
+        "mean": 1.430788176855942,
+        "sample_sd": 0.049651148910995486,
+        "runs": 2
+      },
+      "T_nearwell_rmse": {
+        "mean": 2.1151140716699426,
+        "sample_sd": 0.01132989050322829,
+        "runs": 2
+      },
+      "P_nearwell_rmse": {
+        "mean": 1.5637724770172208,
+        "sample_sd": 0.036701301465617855,
+        "runs": 2
+      },
+      "T_reference_field_rmse": {
+        "mean": 1.6184506092533453,
+        "sample_sd": 0.026257003726459605,
+        "runs": 2
+      },
+      "P_reference_field_rmse": {
+        "mean": 1.4307877182210849,
+        "sample_sd": 0.04965099396955809,
+        "runs": 2
+      }
+    },
+    "ufno": {
+      "T_field_rmse": {
+        "mean": 0.602827953772439,
+        "sample_sd": 0.04205032893043164,
+        "runs": 2
+      },
+      "P_field_rmse": {
+        "mean": 0.692501597027545,
+        "sample_sd": 0.010457870081847412,
+        "runs": 2
+      },
+      "T_nearwell_rmse": {
+        "mean": 1.2705456547131502,
+        "sample_sd": 0.021701236652315402,
+        "runs": 2
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.8057913100229104,
+        "sample_sd": 0.018886739830365498,
+        "runs": 2
+      },
+      "T_reference_field_rmse": {
+        "mean": 0.6028364199556457,
+        "sample_sd": 0.04205452140475999,
+        "runs": 2
+      },
+      "P_reference_field_rmse": {
+        "mean": 0.6925039798063513,
+        "sample_sd": 0.010448955933876465,
+        "runs": 2
+      }
+    },
+    "unet": {
+      "T_field_rmse": {
+        "mean": 0.5664978001057657,
+        "sample_sd": 0.026557223836501942,
+        "runs": 2
+      },
+      "P_field_rmse": {
+        "mean": 0.5586687725384767,
+        "sample_sd": 0.018836100728998686,
+        "runs": 2
+      },
+      "T_nearwell_rmse": {
+        "mean": 1.2183942296935415,
+        "sample_sd": 0.025657702985220323,
+        "runs": 2
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.5958634216308805,
+        "sample_sd": 0.03034181984731676,
+        "runs": 2
+      },
+      "T_reference_field_rmse": {
+        "mean": 0.5664959527735981,
+        "sample_sd": 0.02656258955059238,
+        "runs": 2
+      },
+      "P_reference_field_rmse": {
+        "mean": 0.5586713279163721,
+        "sample_sd": 0.018832579699791976,
+        "runs": 2
+      }
+    },
+    "resnet": {
+      "T_field_rmse": {
+        "mean": 1.144840814555998,
+        "sample_sd": 0.0459544017225074,
+        "runs": 2
+      },
+      "P_field_rmse": {
+        "mean": 0.6346134532012306,
+        "sample_sd": 0.01201813042769316,
+        "runs": 2
+      },
+      "T_nearwell_rmse": {
+        "mean": 1.4467598494720706,
+        "sample_sd": 0.05853072373993281,
+        "runs": 2
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.729842480187937,
+        "sample_sd": 0.024884777593590587,
+        "runs": 2
+      },
+      "T_reference_field_rmse": {
+        "mean": 1.1448415934148475,
+        "sample_sd": 0.04595451121914251,
+        "runs": 2
+      },
+      "P_reference_field_rmse": {
+        "mean": 0.6346131509291044,
+        "sample_sd": 0.012018993841735822,
+        "runs": 2
+      }
+    },
+    "attention_unet": {
+      "T_field_rmse": {
+        "mean": 0.4403003842340276,
+        "sample_sd": 0.007795255629388889,
+        "runs": 2
+      },
+      "P_field_rmse": {
+        "mean": 0.5274740357447067,
+        "sample_sd": 0.008316074374807197,
+        "runs": 2
+      },
+      "T_nearwell_rmse": {
+        "mean": 0.9074538804122986,
+        "sample_sd": 0.006658257296891699,
+        "runs": 2
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.5630587751713558,
+        "sample_sd": 0.016573969716042896,
+        "runs": 2
+      },
+      "T_reference_field_rmse": {
+        "mean": 0.4403020470976067,
+        "sample_sd": 0.007798348187916553,
+        "runs": 2
+      },
+      "P_reference_field_rmse": {
+        "mean": 0.5274719990141609,
+        "sample_sd": 0.008327019497484128,
+        "runs": 2
+      }
+    },
+    "pcno": {
+      "T_field_rmse": {
+        "mean": 0.5867892293792611,
+        "sample_sd": 0.009478174093554587,
+        "runs": 3
+      },
+      "P_field_rmse": {
+        "mean": 0.5255297656113759,
+        "sample_sd": 0.013787346281013902,
+        "runs": 3
+      },
+      "T_nearwell_rmse": {
+        "mean": 1.3584969107055425,
+        "sample_sd": 0.1357651044556853,
+        "runs": 3
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.5365763561518085,
+        "sample_sd": 0.01284541254504397,
+        "runs": 3
+      },
+      "T_reference_field_rmse": {
+        "mean": 0.5867892293792611,
+        "sample_sd": 0.009478174093554587,
+        "runs": 3
+      },
+      "P_reference_field_rmse": {
+        "mean": 0.5255297656113759,
+        "sample_sd": 0.013787346281013902,
+        "runs": 3
+      }
+    },
+    "geouno": {
+      "T_field_rmse": {
+        "mean": 0.31610642695538077,
+        "sample_sd": null,
+        "runs": 1
+      },
+      "P_field_rmse": {
+        "mean": 0.4265844534494029,
+        "sample_sd": null,
+        "runs": 1
+      },
+      "T_nearwell_rmse": {
+        "mean": 0.8618408894046579,
+        "sample_sd": null,
+        "runs": 1
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.42421565336350897,
+        "sample_sd": null,
+        "runs": 1
+      },
+      "T_reference_field_rmse": {
+        "mean": 0.31610642695538077,
+        "sample_sd": null,
+        "runs": 1
+      },
+      "P_reference_field_rmse": {
+        "mean": 0.4265844534494029,
+        "sample_sd": null,
+        "runs": 1
+      }
+    }
+  },
+  "checks": {
+    "complete_runs": 16,
+    "records": 108768,
+    "same_scenarios_members_times": true,
+    "same_truth": true,
+    "same_masks": true,
+    "producer_cells": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "injector_cells": [
+      4
+    ]
+  },
+  "table_source": "Fresh inference for all four RMSE columns; original whole-field values retained separately for reproduction checks.",
+  "aggregation": "Square errors first; mean over members and cells inside each radius-6m disk, then square root per scenario and time. Equal scenario and equal-time mean within each run; mean and sample SD across the original runs. This is local field RMSE, not RMSE after spatially averaging a well block."
+}

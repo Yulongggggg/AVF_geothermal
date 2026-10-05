@@ -1,0 +1,159 @@
+{
+  "status": "passed",
+  "utc": "2026-10-01T15:39:47.877414+00:00",
+  "job_id": "111904",
+  "manifest_sha256": "c35f9dcf57b41e54f914055d01f4ac1a9367b8bbe316bf3387ecd5e71bc88c64",
+  "isolated_python": true,
+  "no_site": true,
+  "no_pth_processed": true,
+  "explicit_search_path": [
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src",
+    "/mnt/home/yliu5/.venvs/olgeo-inference-compare/lib/python3.11/site-packages",
+    "/mnt/home/yliu5/.venvs/olgeo-pressure-cu128/lib/python3.11/site-packages",
+    "/mnt/home/yliu5/miniforge3/envs/torch/lib/python311.zip",
+    "/mnt/home/yliu5/miniforge3/envs/torch/lib/python3.11",
+    "/mnt/home/yliu5/miniforge3/envs/torch/lib/python3.11/lib-dynload"
+  ],
+  "project_modules": {
+    "portable_runtime": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/portable_runtime/__init__.py",
+    "portable_runtime.io": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/portable_runtime/io.py",
+    "portable_runtime.cli": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/portable_runtime/cli.py",
+    "operator_campaign_20260925": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_campaign_20260925/__init__.py",
+    "encoder_study": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/encoder_study/__init__.py",
+    "direct_operator": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/direct_operator/__init__.py",
+    "temperature_revision": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/temperature_revision/__init__.py",
+    "temperature_revision.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/temperature_revision/model.py",
+    "direct_operator.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/direct_operator/model.py",
+    "joint_architecture": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/joint_architecture/__init__.py",
+    "temperature_revision.inference": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/temperature_revision/inference.py",
+    "direct_operator.inference": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/direct_operator/inference.py",
+    "joint_architecture.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/joint_architecture/model.py",
+    "encoder_study.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/encoder_study/model.py",
+    "operator_campaign_20260925.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_campaign_20260925/model.py",
+    "operator_parallel_20260927_v2": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_parallel_20260927_v2/__init__.py",
+    "operator_parallel_20260927_v2.runtime": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_parallel_20260927_v2/runtime.py",
+    "history_matching_dense": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/history_matching_dense/__init__.py",
+    "history_matching_dense.conditioning": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/history_matching_dense/conditioning.py",
+    "inference_comparison": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/__init__.py",
+    "inference_comparison.algorithms": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/algorithms.py",
+    "inference_comparison.metrics": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/metrics.py",
+    "operator_final_20260930": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_final_20260930/__init__.py",
+    "history_matching_revision": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/history_matching_revision/__init__.py",
+    "det_sampler": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/det_sampler.py",
+    "history_matching_revision.inputs": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/history_matching_revision/inputs.py",
+    "operator_final_20260930.backend": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_final_20260930/backend.py",
+    "inference_comparison.geothermal": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/geothermal.py",
+    "operator_final_20260930.inverse_backend": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_final_20260930/inverse_backend.py",
+    "operator_final_20260930.inverse_run": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_final_20260930/inverse_run.py",
+    "inference_comparison.run": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/run.py"
+  },
+  "original_vs_portable": {
+    "status": "passed",
+    "device": "cpu",
+    "utc": "2026-10-01T15:39:44.239501+00:00",
+    "seconds": 2.9075073869898915,
+    "checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e",
+    "manifest_sha256": "c35f9dcf57b41e54f914055d01f4ac1a9367b8bbe316bf3387ecd5e71bc88c64",
+    "reference_sha256": "0283506908418a879a397fa7b3bf6a2ca95c4fbdd6434babe6927162e8ad7eb3",
+    "comparisons": {
+      "y": {
+        "max_abs_difference": 0.0,
+        "atol": 1e-10,
+        "rtol": 1e-10
+      },
+      "prediction": {
+        "max_abs_difference": 0.0,
+        "atol": 1e-10,
+        "rtol": 1e-10
+      },
+      "data": {
+        "max_abs_difference": 0.0,
+        "atol": 1e-10,
+        "rtol": 1e-10
+      },
+      "cholesky": {
+        "max_abs_difference": 0.0,
+        "atol": 1e-10,
+        "rtol": 1e-10
+      },
+      "gradient": {
+        "max_abs_difference": 0.0,
+        "atol": 1e-10,
+        "rtol": 1e-10
+      },
+      "loss": {
+        "max_abs_difference": 0.0,
+        "atol": 1e-10,
+        "rtol": 1e-10
+      },
+      "permeability": {
+        "max_abs_difference": 0.0,
+        "atol": 1e-10,
+        "rtol": 1e-10
+      }
+    },
+    "input_artifact_replay": "bitwise identical; not sampler-state/transition resume",
+    "toy_nuts_installation_check": {
+      "shape": [
+        1,
+        8,
+        4
+      ],
+      "seconds": 0.03150648530572653,
+      "scientific_result": false,
+      "interrupted_restart_from_seed": "bitwise identical to uninterrupted toy chain",
+      "completed_chain_reuse_and_corruption_gate": "passed synthetic fixture",
+      "transition_state_resume": false
+    },
+    "source_origins": {
+      "operator_campaign_20260925.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_campaign_20260925/model.py",
+      "encoder_study.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/encoder_study/model.py",
+      "joint_architecture.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/joint_architecture/model.py",
+      "direct_operator.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/direct_operator/model.py",
+      "direct_operator.inference": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/direct_operator/inference.py",
+      "temperature_revision.model": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/temperature_revision/model.py",
+      "temperature_revision.inference": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/temperature_revision/inference.py",
+      "operator_parallel_20260927_v2.runtime": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_parallel_20260927_v2/runtime.py",
+      "history_matching_dense.conditioning": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/history_matching_dense/conditioning.py",
+      "inference_comparison.algorithms": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/algorithms.py",
+      "inference_comparison.metrics": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/metrics.py",
+      "operator_final_20260930.inverse_backend": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_final_20260930/inverse_backend.py",
+      "det_sampler": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/det_sampler.py",
+      "history_matching_revision.inputs": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/history_matching_revision/inputs.py",
+      "inference_comparison.geothermal": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/geothermal.py",
+      "operator_final_20260930.inverse_run": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_final_20260930/inverse_run.py",
+      "inference_comparison.run": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/inference_comparison/run.py",
+      "operator_final_20260930.backend": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/operator_final_20260930/backend.py",
+      "portable_runtime.cli": "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/workstation_nuts_20261001/src/portable_runtime/cli.py"
+    },
+    "hardware": {
+      "utc": "2026-10-01T15:39:39.414835+00:00",
+      "architecture": "x86_64",
+      "system": "Linux",
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "cpu_model": "x86_64",
+      "logical_cpu_count": 96,
+      "affinity": [
+        68,
+        69
+      ],
+      "ram_bytes": 1081889189888,
+      "torch": "2.8.0+cu128",
+      "cuda_runtime": "12.8",
+      "cuda_available": false,
+      "gpus": [],
+      "packages": {
+        "torch": "2.8.0+cu128",
+        "numpy": "2.4.6",
+        "scipy": "1.15.3",
+        "pyro-ppl": "1.9.1",
+        "arviz": "0.22.0",
+        "tqdm": "4.70.1"
+      }
+    }
+  },
+  "empty_merge_six_case_retention": "passed",
+  "merged_provenance_and_four_chain_binding": "passed synthetic valid/stale-chain/wrong-case fixtures",
+  "full_formal_nuts_executed": false,
+  "explicit_diagnostic_validity_guard": "Static review: portable convergence aggregation rejects any nonfinite coordinate diagnostic instead of skipping NaNs; sampling kernel/thresholds/failure retention unchanged. No formal-chain diagnostics are claimed."
+}

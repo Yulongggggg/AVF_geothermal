@@ -1,0 +1,527 @@
+{
+  "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+  "runs": 18,
+  "seeds": [
+    20260915,
+    20260916,
+    20260917
+  ],
+  "aggregation": "Member-by-reservoir-grid RMSE per scenario and time; equal scenario/time means; sample SD across three runs.",
+  "test_scenarios": 618,
+  "test_members": 8621,
+  "times": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "individual": [
+    {
+      "model": "deeponet",
+      "seed": 20260915,
+      "all_times_T_paired_rmse": 1.796580801126921,
+      "all_times_P_paired_rmse": 0.5824355332492669,
+      "ten_years_T_paired_rmse": 4.297746411033433,
+      "ten_years_P_paired_rmse": 0.8305214803340366
+    },
+    {
+      "model": "fno",
+      "seed": 20260915,
+      "all_times_T_paired_rmse": 1.0345523633981695,
+      "all_times_P_paired_rmse": 0.7458609733609995,
+      "ten_years_T_paired_rmse": 2.48264436013876,
+      "ten_years_P_paired_rmse": 1.1001593149643885
+    },
+    {
+      "model": "ufno",
+      "seed": 20260915,
+      "all_times_T_paired_rmse": 0.61988577790232,
+      "all_times_P_paired_rmse": 0.579916540591803,
+      "ten_years_T_paired_rmse": 1.4368927830824187,
+      "ten_years_P_paired_rmse": 0.8570790009567074
+    },
+    {
+      "model": "unet",
+      "seed": 20260915,
+      "all_times_T_paired_rmse": 0.5771881763029555,
+      "all_times_P_paired_rmse": 0.45216139380634596,
+      "ten_years_T_paired_rmse": 1.3999003681164344,
+      "ten_years_P_paired_rmse": 0.652042440991716
+    },
+    {
+      "model": "resnet",
+      "seed": 20260915,
+      "all_times_T_paired_rmse": 1.2886071020496719,
+      "all_times_P_paired_rmse": 0.4863101915867627,
+      "ten_years_T_paired_rmse": 3.2864023267644122,
+      "ten_years_P_paired_rmse": 0.7167626274779777
+    },
+    {
+      "model": "attention_unet",
+      "seed": 20260915,
+      "all_times_T_paired_rmse": 0.3810772116831798,
+      "all_times_P_paired_rmse": 0.41654584326679406,
+      "ten_years_T_paired_rmse": 0.8493119264594173,
+      "ten_years_P_paired_rmse": 0.5813590017897845
+    },
+    {
+      "model": "deeponet",
+      "seed": 20260916,
+      "all_times_T_paired_rmse": 1.8064968975967224,
+      "all_times_P_paired_rmse": 0.6015991165995089,
+      "ten_years_T_paired_rmse": 4.359102232942304,
+      "ten_years_P_paired_rmse": 0.8562666603324869
+    },
+    {
+      "model": "fno",
+      "seed": 20260916,
+      "all_times_T_paired_rmse": 1.0365278056965745,
+      "all_times_P_paired_rmse": 0.7477282433403164,
+      "ten_years_T_paired_rmse": 2.4671786601103625,
+      "ten_years_P_paired_rmse": 1.0964373493488746
+    },
+    {
+      "model": "ufno",
+      "seed": 20260916,
+      "all_times_T_paired_rmse": 0.6445661698150602,
+      "all_times_P_paired_rmse": 0.5958583245406525,
+      "ten_years_T_paired_rmse": 1.5115673697303413,
+      "ten_years_P_paired_rmse": 0.8604995609535369
+    },
+    {
+      "model": "unet",
+      "seed": 20260916,
+      "all_times_T_paired_rmse": 0.5584364468441406,
+      "all_times_P_paired_rmse": 0.43847477498756643,
+      "ten_years_T_paired_rmse": 1.3548534606074052,
+      "ten_years_P_paired_rmse": 0.6371227351038394
+    },
+    {
+      "model": "resnet",
+      "seed": 20260916,
+      "all_times_T_paired_rmse": 1.284871134977699,
+      "all_times_P_paired_rmse": 0.5000225837696174,
+      "ten_years_T_paired_rmse": 3.283756768240512,
+      "ten_years_P_paired_rmse": 0.7482548070571183
+    },
+    {
+      "model": "attention_unet",
+      "seed": 20260916,
+      "all_times_T_paired_rmse": 0.3854324537557891,
+      "all_times_P_paired_rmse": 0.4108045484573246,
+      "ten_years_T_paired_rmse": 0.8481045573660471,
+      "ten_years_P_paired_rmse": 0.5741368192745354
+    },
+    {
+      "model": "deeponet",
+      "seed": 20260917,
+      "all_times_T_paired_rmse": 1.7504191123224218,
+      "all_times_P_paired_rmse": 0.606336014401732,
+      "ten_years_T_paired_rmse": 4.197223503998568,
+      "ten_years_P_paired_rmse": 0.8662475619862959
+    },
+    {
+      "model": "fno",
+      "seed": 20260917,
+      "all_times_T_paired_rmse": 1.0208543415345601,
+      "all_times_P_paired_rmse": 0.7337571065672889,
+      "ten_years_T_paired_rmse": 2.486291376614648,
+      "ten_years_P_paired_rmse": 1.071637163173805
+    },
+    {
+      "model": "ufno",
+      "seed": 20260917,
+      "all_times_T_paired_rmse": 0.6193278106767931,
+      "all_times_P_paired_rmse": 0.5599554357833768,
+      "ten_years_T_paired_rmse": 1.451734957668002,
+      "ten_years_P_paired_rmse": 0.7917779206952327
+    },
+    {
+      "model": "unet",
+      "seed": 20260917,
+      "all_times_T_paired_rmse": 0.5543646271607424,
+      "all_times_P_paired_rmse": 0.45005804409524225,
+      "ten_years_T_paired_rmse": 1.3218825848646534,
+      "ten_years_P_paired_rmse": 0.6401015205646362
+    },
+    {
+      "model": "resnet",
+      "seed": 20260917,
+      "all_times_T_paired_rmse": 1.2544652560238638,
+      "all_times_P_paired_rmse": 0.4758604550019025,
+      "ten_years_T_paired_rmse": 3.1671508641304706,
+      "ten_years_P_paired_rmse": 0.7024860562678293
+    },
+    {
+      "model": "attention_unet",
+      "seed": 20260917,
+      "all_times_T_paired_rmse": 0.4492431332664586,
+      "all_times_P_paired_rmse": 0.43324068561586776,
+      "ten_years_T_paired_rmse": 1.0417196303123795,
+      "ten_years_P_paired_rmse": 0.6274362565545685
+    }
+  ],
+  "models": {
+    "deeponet": {
+      "all_times_T_paired_rmse": {
+        "mean": 1.784498937015355,
+        "sample_sd": 0.02992754718692132
+      },
+      "all_times_P_paired_rmse": {
+        "mean": 0.5967902214168359,
+        "sample_sd": 0.012655131547648439
+      },
+      "ten_years_T_paired_rmse": {
+        "mean": 4.284690715991435,
+        "sample_sd": 0.08172526598844493
+      },
+      "ten_years_P_paired_rmse": {
+        "mean": 0.8510119008842731,
+        "sample_sd": 0.018433599762388213
+      }
+    },
+    "fno": {
+      "all_times_T_paired_rmse": {
+        "mean": 1.0306448368764347,
+        "sample_sd": 0.008536155009606671
+      },
+      "all_times_P_paired_rmse": {
+        "mean": 0.7424487744228683,
+        "sample_sd": 0.007584885752448658
+      },
+      "ten_years_T_paired_rmse": {
+        "mean": 2.47870479895459,
+        "sample_sd": 0.010147122241609238
+      },
+      "ten_years_P_paired_rmse": {
+        "mean": 1.0894112758290226,
+        "sample_sd": 0.015504920751846573
+      }
+    },
+    "ufno": {
+      "all_times_T_paired_rmse": {
+        "mean": 0.6279265861313911,
+        "sample_sd": 0.014413002488397783
+      },
+      "all_times_P_paired_rmse": {
+        "mean": 0.578576766971944,
+        "sample_sd": 0.017988902142534433
+      },
+      "ten_years_T_paired_rmse": {
+        "mean": 1.4667317034935874,
+        "sample_sd": 0.03953163621427062
+      },
+      "ten_years_P_paired_rmse": {
+        "mean": 0.8364521608684923,
+        "sample_sd": 0.03872681059636259
+      }
+    },
+    "unet": {
+      "all_times_T_paired_rmse": {
+        "mean": 0.5633297501026129,
+        "sample_sd": 0.012173204649815304
+      },
+      "all_times_P_paired_rmse": {
+        "mean": 0.44689807096305156,
+        "sample_sd": 0.007370207345778532
+      },
+      "ten_years_T_paired_rmse": {
+        "mean": 1.3588788045294977,
+        "sample_sd": 0.03916434821554949
+      },
+      "ten_years_P_paired_rmse": {
+        "mean": 0.6430888988867306,
+        "sample_sd": 0.007895741122571995
+      }
+    },
+    "resnet": {
+      "all_times_T_paired_rmse": {
+        "mean": 1.2759811643504115,
+        "sample_sd": 0.018726721438308957
+      },
+      "all_times_P_paired_rmse": {
+        "mean": 0.4873977434527609,
+        "sample_sd": 0.012117722287741868
+      },
+      "ten_years_T_paired_rmse": {
+        "mean": 3.245769986378465,
+        "sample_sd": 0.06809900536909222
+      },
+      "ten_years_P_paired_rmse": {
+        "mean": 0.7225011636009752,
+        "sample_sd": 0.02341778671927004
+      }
+    },
+    "attention_unet": {
+      "all_times_T_paired_rmse": {
+        "mean": 0.4052509329018092,
+        "sample_sd": 0.038160546419965635
+      },
+      "all_times_P_paired_rmse": {
+        "mean": 0.42019702577999546,
+        "sample_sd": 0.011655188242056453
+      },
+      "ten_years_T_paired_rmse": {
+        "mean": 0.9130453713792813,
+        "sample_sd": 0.11143681222566627
+      },
+      "ten_years_P_paired_rmse": {
+        "mean": 0.5943106925396294,
+        "sample_sd": 0.028913962432564635
+      }
+    }
+  },
+  "recomputation_scope": "Aggregation of archived scenario metrics; no fresh forward pass.",
+  "evidence": [
+    {
+      "recipe": "deeponet_s20260915",
+      "checkpoint_sha256": "0ce24fbd5b8e88e295c9d210b9d903ebdb3636268f2025179b27f2968c67755d",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260915/complete.json": "05f2931e490d21b3e2e941f0ae24e30a98beb9f12d73474c5ac83e4140d7d11a",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260915/history.json": "cb07d8c846f689437b119849aebce5e520cdb847cc98cf5b6f3b0e732c4064da",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260915/manifest.json": "75dc5aa7b38a942d3a0d3ab9405ba312640ed8c897e3cb996ac497e64c406c0d",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260915/best/val.json": "d912f8210620bb37ceb4d378ce6897275b494a8e905d9f7d9eb5f5dc05de75fb",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260915/best/test.json": "7b336f4817996476b25d28c008f40ca47cf8ce101d0db4d32545305f6ea92c6a"
+      }
+    },
+    {
+      "recipe": "fno_s20260915",
+      "checkpoint_sha256": "1a67ae83444fe863a18fb3d5c363e5db64e321c437f374b1f1d1210f7bef084e",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260915/complete.json": "e60268e784b07991b7539eddac8524e56f569d822f7a63429cfa2917d5d23cec",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260915/history.json": "a1b9449ef15b3ef10e64af750dc16ed77bf59319d6515e00a410ebccf97108bc",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260915/manifest.json": "bfa8e6926690b32eaca7f43db0ec609fb7e5c42ca00a4521c1ede5c10a077dbe",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260915/best/val.json": "2f929152580c450baa0969f83ef48282a3c847b867c99f95b9f1c299c8fd4a09",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260915/best/test.json": "be862208b5041dbdd17ea1ffc32f7a5455af6309e9cf1688e0d5025b00ba9850"
+      }
+    },
+    {
+      "recipe": "ufno_s20260915",
+      "checkpoint_sha256": "6fc0d49ae1cfc29186ce0f7e9b462807e02df648af93fb1d414c6fb091fdd11f",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260915/complete.json": "e954357b9cdd64ba1a00289579a20bcc280785d1e4adfc6a705e63580e223dcf",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260915/history.json": "4880ca309385743b33818e6d1c45de7084be3de614cba2b5d7545ed74eda9b7b",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260915/manifest.json": "ccb004d7702aa51870a9c0655abee8b1181267b804e359fc2e1cc8f79a121e0e",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260915/best/val.json": "782a669c1c0c95bcb5807c06abe41464cb5ed44ff51781b0c4ce83b3a2517309",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260915/best/test.json": "b26f232c7896f8ce7131d86503050756b89dacacc899071e1e9aa8aa6352228d"
+      }
+    },
+    {
+      "recipe": "unet_s20260915",
+      "checkpoint_sha256": "f933afcd715a38e056178a71a7974d3e1e3969033d7e404cbe2e5f83560dec15",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260915/complete.json": "e684d6873799d147775ec469435c3794bed9b620e7f3ac1f9968f6c740fbce82",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260915/history.json": "993604c98f8a9e0a6c3659232992ee8f1580b86a25719dbc1143edd573f12e2c",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260915/manifest.json": "685e4584579682ab6773e224e3f8f1025738fc8559def5ea81631c13a1d2d8be",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260915/best/val.json": "151ff7857280e4f8459f33814aa992a6b56993b03b14ba0a1f5ece7c71ad451e",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260915/best/test.json": "0f43e83139d57af25da39a9dd8ddea662b59a456734de3656dc3c7aa4110c7a1"
+      }
+    },
+    {
+      "recipe": "resnet_s20260915",
+      "checkpoint_sha256": "5ead6a78378ff304122b0efa384195619f09d0d804804d1bfd5a14e84c5ba916",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260915/complete.json": "4766a873bd4800fef2da656d6ba7f2da02da33f7f45f2a73857d4dbbb8ee0e15",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260915/history.json": "da0eefb0f1c90a86388326f94d67a04b0fdce959579d61d6c1300b6270dd473a",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260915/manifest.json": "c668702f4cd5322036b2b7a7cba642643dc6e23e18a4fbaac11e7fd82af3338b",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260915/best/val.json": "dc764b2b9c7950929fd7d35761fc8c715dc055be867094dfe360ad1c9e5f7e52",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260915/best/test.json": "3f893083aeb995670aff40e8d9a05c4f5a1284d59e9f6f600e31c5c5c11204c4"
+      }
+    },
+    {
+      "recipe": "attention_unet_s20260915",
+      "checkpoint_sha256": "71c8662158d2b04482628c54968651a0d80759d59b44b32c8fc397779902b058",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260915/complete.json": "45adff6ee0bf3d4f1c4e1d663a71da764773f3a262702face6a6db815f7a86ed",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260915/history.json": "7cabf9883e6c98dd0d4e58fd43f7b08ad49a1d0c5c53d0691b643dd6b1bdfa21",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260915/manifest.json": "446e9bb0a6abe8d88791dee02c85fc85e69f9d08a362491e3f25976f27d1938d",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260915/best/val.json": "e4e3ed4929e07a030e2ab44916cebbb735f1024452ee11b9daee415ec18bfeb3",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260915/best/test.json": "a6fec1a9d4e74fe8f28e022ef3774d57a84ae839ce74c5b203026259b48f59f8"
+      }
+    },
+    {
+      "recipe": "deeponet_s20260916",
+      "checkpoint_sha256": "a3afa1843a02d5c5373be0818f54aad22c2baae5042d997fc20a1cbcafeca44d",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260916/complete.json": "4f76534371d41e80652c7c2e192ce951faad1b824ca8b4b9a918a42f331dd374",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260916/history.json": "a44e406626635ed4e4a9d992366019e8cd639609bb02e2ee4d8aebec225da826",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260916/manifest.json": "9d71816c2eeca49f989456c055476c93557bbd7c9ccf46d674bc864a556dafa9",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260916/best/val.json": "8b850555471a4cb0e46f49980720f568dbdd9c6e2d91eba49d36ce875dbdd941",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260916/best/test.json": "9f2f4edaf2ae50b34977d80ca506815e8403e526a3bae90c798c8129ed988390"
+      }
+    },
+    {
+      "recipe": "fno_s20260916",
+      "checkpoint_sha256": "a042e106c0257e18ed66ccc41ef003e75973e191aabfc85a691237a9853cb89b",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260916/complete.json": "66036519ee22a8fffd605739a2f098d9f4ac22ab642bcb75aa8e59fdfe48f6ca",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260916/history.json": "ca9b26a2c8bbd600a51e432ea4013919095144a19833ed42d4f65cdc802cdf5c",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260916/manifest.json": "c7f2fecc4131719b6d671fe7986ca012babedbc28155b2e432c430377e3505c1",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260916/best/val.json": "47fee555c835aab120521286ff55a2eba82b68665286522261422c270405341f",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260916/best/test.json": "187ca51afa4b242af092dd0dc28f10b6f24ad69b5db1b22ff55080f49edb810f"
+      }
+    },
+    {
+      "recipe": "ufno_s20260916",
+      "checkpoint_sha256": "5b9b404e1d7f27fd2555d1362e266dc6068ed323d0d1c4c21c20f507bd7e3072",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260916/complete.json": "fda2278682d3c73a7fd18b651be342a9525269f4c49dcfa725f22476a06e16b0",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260916/history.json": "2b0afbcdc8e6ec8884311b782ba460b46bfadd4a93db48f6ab4e3bf4476c0d1c",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260916/manifest.json": "e9cea4f6061db373bae16e34381c533269b1961f5e8fb7bbc7bace048c01c7ff",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260916/best/val.json": "32dbd74136e354e67e8f13030beba9a10a59f2935d75ff636c37774df43a3e68",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260916/best/test.json": "044ac62d15b7c8ecc667f43885fc46db59acab233b046e6c3c0bc76585e2fff6"
+      }
+    },
+    {
+      "recipe": "unet_s20260916",
+      "checkpoint_sha256": "23fd7bd11803c661a423de3d3dd6cc3b7b2cdeb6d078c99a753997b465383065",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260916/complete.json": "ba5d1b3745f7d41354dc971dcedae0ca4725663f3f0f65b9ba6f3261c4a34425",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260916/history.json": "2c8b9bb776a1a7fb8e3616e1fad16c4ac240040f98f6e2ccfbd2c498cb06e876",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260916/manifest.json": "af93d2cb5b22a5ef5d3ffb91a010f8ae527de6a0eb099b6def1865bbeb271655",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260916/best/val.json": "79ee7b137a491f9b9d12bc76d2219eedfd573dc8e01c05f0c3da9a0879ea42bc",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260916/best/test.json": "c54294eff0f660d2882a037d1c6763a1962d2ce8cd9710e99067ade406f72abf"
+      }
+    },
+    {
+      "recipe": "resnet_s20260916",
+      "checkpoint_sha256": "e9e28f520d7b90ccfe8abeaa6a1b6d30e205c08228a3215a8e01491915286123",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260916/complete.json": "e82a4372b5a75bd93925ba77021399b0a6ab81734c187ff1adcbf1dd3f667fc4",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260916/history.json": "f88b3808bc8c2770878096ad9cbf4073516487e03e91dd4d0792b8cb891f44fe",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260916/manifest.json": "99202dca009af6ddc4352e6da23ff83a7600502cdb45c9fda01d6f703404fa3a",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260916/best/val.json": "3730466af62ddef298899a513f701660ea5c5deef5d352e940497db7f1cfa434",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260916/best/test.json": "088c56e8b4327138cff1b61a39b6b92cf3153454cfb639b464095085ebdaee1d"
+      }
+    },
+    {
+      "recipe": "attention_unet_s20260916",
+      "checkpoint_sha256": "a50ec32a990c706e7d7b980e2903405744e75ddefc344b18f19b12a137c34f4e",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260916/complete.json": "1c78dcf0c26b00a0651c94aead6d0247124d0f1777de014d79b33b0e48e51679",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260916/history.json": "4263181a41fad32f5b5e51d2bfbcb464be8ff6d6fe209f922164ee1223653fee",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260916/manifest.json": "3c6ed2ffd56186d853037477943b047101ee3f6d00ca6b7be608df87639da444",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260916/best/val.json": "94b0f16cbfc6f6d1a50c167be132bc6baf89d37dd2821656a18ff5fdfb5457dc",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260916/best/test.json": "caccbdfe9631841e09a39688bc37690f92e8231a529e88042160ef0cb376ae84"
+      }
+    },
+    {
+      "recipe": "deeponet_s20260917",
+      "checkpoint_sha256": "5f61451174f02317c40698c5702e45f42fc40398c5bd74e7b10b4a35de87d646",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260917/complete.json": "171baa0e8de35b5ef1d6f1937aebbafa7167cc5022675e4e4cd1283342e2d148",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260917/history.json": "3302f0638a07c9644339cfe85d276fd1708072311d513f16d0330f36dd85fe85",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260917/manifest.json": "24705461690193bef84a49669839d58cc3e36449d170b417c4db8adf0ae6910f",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260917/best/val.json": "06d732c699b18667c3d2509e5a029ba4e0152a14d8a0efd9f51bc1e5a191d72f",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/deeponet_s20260917/best/test.json": "28ade380f184130cfe0181ac1a5467d2229ee9e7844eaaf7a08fa03f2ccc453d"
+      }
+    },
+    {
+      "recipe": "fno_s20260917",
+      "checkpoint_sha256": "f3b6bba4d64c58cd232b1da4a53f8fbc757fb0eaa9cfcda904cfe0663a482279",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260917/complete.json": "9765ed7c0c97ec64bd6aadcc91926861eecb9bdcf3dd904c10d429dafdda84ce",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260917/history.json": "a4f2f19211313c0b64f54981ade5a13ed6378b648fac5bf336d1c6d85b29261d",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260917/manifest.json": "0ebb8e99ceee9a8c2befaf59e3b7c92e2f121350253871d128e9b1eb3b064862",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260917/best/val.json": "aa41b58ea1179c9856d41abfb81d81417aeba875800fc45db310bf23ea12f8b7",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/fno_s20260917/best/test.json": "a85de4296be057c81b05f229a0a741ea903e8596dc5fff91bfcf6dfd9bc8a9ba"
+      }
+    },
+    {
+      "recipe": "ufno_s20260917",
+      "checkpoint_sha256": "b435cd0b29e73fec9bf4a784176a88fc9c31e850d84cecaf18b34c741c601de1",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260917/complete.json": "5ffa832840a539e62e1d76a55517e55bb2eaa1f8e45161fc1eb4f8a52f084101",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260917/history.json": "0815a2120ec2dd332f6a54fcd64db3ba337b43571538c93ed145ebb93570c885",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260917/manifest.json": "8bbddb1cc54857e7246e553aee7524957e0c5cc4f7214743855a503b669a5487",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260917/best/val.json": "084883f5b155d0829abccf47dd171fe3d31ee0b8fdfbd86ca2f99904e2103176",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/ufno_s20260917/best/test.json": "4ea6c7208f88b38e1c21ec53388a264d2e5909d3a78ccac1ee4c4bb4b0ba98e5"
+      }
+    },
+    {
+      "recipe": "unet_s20260917",
+      "checkpoint_sha256": "e32923d32965985a438ed8ae7de6576a69d4f96ec9ff0af5c1f87ff31e2f3f66",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260917/complete.json": "7e591d87c75f947d7179dff45990a06562201c03b1597b3f9a57e1d17f0d4780",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260917/history.json": "37cc8ee649b923324126b27d2ce83de55ebc28774544413ab9e832e1c6bbd0d7",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260917/manifest.json": "6a94c36a5b50004280393226973482f06068b3bec86eee5d74c6d490c84bfdbe",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260917/best/val.json": "d2d46f6f5d735c019772f6947f9a906bbd3c0e26645cca656f4bdc5effa6a43c",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/unet_s20260917/best/test.json": "2829c81dbe59f9458af0879532e30dda3d1a0e468299e758bf476df01debe0dc"
+      }
+    },
+    {
+      "recipe": "resnet_s20260917",
+      "checkpoint_sha256": "238c2ac01f775dc4c016d57c2649207764f894caf8141e9ce5149adbd1f227d0",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260917/complete.json": "a3720d944de202566e7907a12a6a38b116284211c811a06054c9e1ddbf67f80e",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260917/history.json": "b287e72a7cd34de2ac5965283e23b4024cf3e157e245bf0c30d5711a71435984",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260917/manifest.json": "c75a4ddc7d1a13348baaad80779945e5f6445747748a27ad84b24cabdf6c43f6",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260917/best/val.json": "1bf9da3ace001901d2d36fe09b5b2465db19ba5ce0341c50fd995a4039391f66",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/resnet_s20260917/best/test.json": "488b5d0de658c623440a130d5c75c3aa683225e16979270d16023ca1587d5a6f"
+      }
+    },
+    {
+      "recipe": "attention_unet_s20260917",
+      "checkpoint_sha256": "a17e2e432780ff31cf7662a6dfb21d5277ab6de8a7cb898026cc02e98d2719af",
+      "protocol_sha256": "5966089cded916982239bee3b9f200026be9c4711622ffbe1943455094ec9e53",
+      "sources": {
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260917/complete.json": "e05b22a328b0b8c3b7428dfe0d1b9aad63140f183726f6f57356d3586b3e617c",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260917/history.json": "5ef15e6c435d488e418a85941543d2928cc488d8c3f871d142cf987b5db350e5",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260917/manifest.json": "9e8f00d8970631875abd5ffa20d2412fc35925bdef613a93bff7caa098ad6f83",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260917/best/val.json": "b8c15ae2e36024cee2baf13866059ae3c660770805a581b26fe2ecbe4834ba83",
+        "/mnt/home/yliu5/projects/ol_geo_train/runs/fair_comparison_20260920/formal/attention_unet_s20260917/best/test.json": "2ef5a8c88b4eb68084e697bd692d528785b4ea68d491b8a08b0c7af2123190f0"
+      }
+    }
+  ],
+  "reporting_policy": {
+    "effective_date": "2026-10-04",
+    "reason": "Author explicitly removed the attention_unet comparator from the manuscript and future baseline sets.",
+    "deterministic_baselines": [
+      "deeponet",
+      "fno",
+      "ufno",
+      "unet",
+      "resnet"
+    ],
+    "additional_main_table_models": [
+      "pcno",
+      "geouno"
+    ],
+    "retired_from_reporting": [
+      "attention_unet"
+    ],
+    "archive_policy": "Preserve completed numerical outputs and frozen protocols; exclude retired models from manuscript tables, rankings, narrative and future baseline submissions."
+  },
+  "reported_models": [
+    "deeponet",
+    "fno",
+    "ufno",
+    "unet",
+    "resnet"
+  ],
+  "reported_runs": 15
+}
