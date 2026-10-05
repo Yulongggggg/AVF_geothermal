@@ -1,0 +1,274 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "model forward identical (test_01, 4 times)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model forward identical (test_13, 4 times)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model forward identical (pilot_01, 4 times)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model off-grid query identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cached basis identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pilot_01: whitening factor and data identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pilot_01: static conditioning identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pilot_01: permeability map identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pilot_01: whitened predictions identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pilot_01: posterior value and gradient identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_01: whitening factor and data identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_01: static conditioning identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_01: permeability map identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_01: whitened predictions identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_01: posterior value and gradient identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "forecast scores identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "forecast arrays identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "point-estimate scores identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "static-only problem has no dynamic data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_06: whitening factor and data identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_06: static conditioning identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_06: permeability map identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_06: whitened predictions identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test_06: posterior value and gradient identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "condition() identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "transform() identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "common_mode_quadratic() identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "score() raw identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "score() mixture identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ES-MDA (8 members, 2 updates) identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "static-only members equal the corrected original draw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "static-only members equal the ES-MDA initial ensemble",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "MAP (3 starts, 3 iterations) identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "NUTS kernel identical (toy posterior, 2 chains)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "NUTS on the GeoUNO posterior (2+4 steps, depth 2) identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "monitoring geometries identical to original (28 reservoirs x 3 families)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "recomputed geometries match the frozen protocol to 1e-9 m",
+      "passed": true,
+      "detail": "83/84 bitwise; max difference 2.8e-14 m (platform hypot)"
+    },
+    {
+      "check": "packaged geometries identical to the frozen protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "point_noise() identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "masks() identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "candidate bank identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "configurations() identical to original and to the frozen protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "design state()/choose() identical (synthetic validation priors)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "training objective identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "validation records identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "validation summary identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "learning-rate schedule identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "parameter groups identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schedule is 11 warm-up, 55 transfer, 66 fine-tuning epochs",
+      "passed": true,
+      "detail": "[11, 55, 66]"
+    },
+    {
+      "check": "scenario order and members identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "training samples identical (inputs, controls, targets)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "epoch traversal identical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "sharded batches cover every scenario once",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "threads": 2,
+  "torch": "2.8.0+cpu",
+  "numpy": "2.4.6",
+  "seconds": 1380.3272012583911
+}

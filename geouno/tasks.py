@@ -72,8 +72,9 @@ def check_method(config, method):
         raise ValueError(f'{method} was registered for multiwell_opt17 only')
 
 
-def run(config_key, label, method, out=None, device='cpu', threads=None, root=None, backend=None, log=print):
+def run(config_key, label, method, out=None, device='cpu', threads=None, root=None, backend=None, log=None):
     """Run one task; return ``(scores, info)``. Writes ``scores.json``/``forecast.npz`` to ``out``."""
+    log = log or flush_print
     reservoirs = artifacts.Reservoirs(root)
     entry = reservoirs.entry(label)
     backend = backend or load_backend(device, threads, root)
@@ -104,6 +105,10 @@ def run(config_key, label, method, out=None, device='cpu', threads=None, root=No
         np.savez_compressed(out / 'latent_samples.npz', y=np.asarray(y))
         (out / 'diagnostics.json').write_text(json.dumps(_finite(info), indent=2) + '\n')
     return result, info
+
+
+def flush_print(*args):
+    print(*args, flush=True)
 
 
 def reference_key(config_key, label, method):

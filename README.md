@@ -96,6 +96,12 @@ Every `geouno run` prints the manuscript metrics next to the archived values of 
 (`reference/paper_task_scores.json`). The full list of tasks, seeds and expected agreement is in
 [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
+**Verification of this release.** Rerunning paper tasks from scratch reproduces the archived ES-MDA, static-only and
+reference forecasts to within 6e-5 relative difference and the MAP objective to five significant digits; the NUTS
+diagnostics and scores recompute exactly from the released chains; all 80 printed table and abstract values
+recompute from Source Data; and a 53-check comparison with the archived research code is bitwise identical
+([details](docs/REPRODUCIBILITY.md#5-verification-of-this-release)).
+
 ![Permeability inference](docs/images/inversion.png)
 
 ## Model and data artifacts

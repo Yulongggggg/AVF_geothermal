@@ -15,15 +15,16 @@ from . import artifacts
 from .inverse import balanced_draws, convergence, forecast, headline, nuts, write_forecast
 from .inverse.nuts import PAPER_PROTOCOL
 from .monitoring.protocol import ENSEMBLE_SEED_OFFSET
-from .tasks import load_backend, problem_for, _finite
+from .tasks import _finite, flush_print, load_backend, problem_for
 
 NUTS_CASES = tuple(f'test_{i:02d}' for i in range(1, 7))
 
 
-def run_chain(label, chain, out, device='cuda:0', threads=None, root=None, backend=None, log=print):
+def run_chain(label, chain, out, device='cuda:0', threads=None, root=None, backend=None, log=None):
     """Run formal chain ``chain`` (0-3) for ``label``; writes ``latent_samples.npz`` and ``diagnostics.json``."""
     if label not in NUTS_CASES or chain not in range(4):
         raise ValueError('NUTS was registered for test_01..test_06, chains 0..3')
+    log = log or flush_print
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     reservoirs = artifacts.Reservoirs(root)
