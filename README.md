@@ -35,7 +35,6 @@ inputs ([docs/PROVENANCE.md](docs/PROVENANCE.md)).
 | Paper tables and abstract numbers from Source Data | [`geouno/paper.py`](geouno/paper.py), [`reference/source_data`](reference/source_data) | yes |
 | Inverse-prior fit (stationary covariance from 1,024 training fields) | [`geouno/inverse/fit_prior.py`](geouno/inverse/fit_prior.py) | yes |
 | POD basis and 132-epoch transfer training | [`geouno/training`](geouno/training), [docs/TRAINING.md](docs/TRAINING.md) | needs the FE corpus |
-| MOOSE THM input template and FE database generator | [`data_generation`](data_generation) | needs MOOSE and DFN inputs |
 | Frozen protocols, per-task paper results, original sources | [`protocols`](protocols), [`reference`](reference), [`provenance`](provenance) | — |
 
 ## Installation
@@ -90,7 +89,6 @@ with torch.no_grad():
 | A NUTS chain from scratch | `geouno nuts-chain --case test_01 --chain 0 --device cuda:0 --out runs/nuts` | ≈3.6 h on one RTX A4000 |
 | Inverse prior (marginal SD 0.976 dec) | `geouno download --group prior && geouno refit-prior --out runs/prior` | minutes |
 | POD basis and transfer training, Table 1 evaluation | [docs/TRAINING.md](docs/TRAINING.md) | FE corpus, 4 GPUs |
-| FE database | [data_generation/README.md](data_generation/README.md) | MOOSE, HPC |
 
 Every `geouno run` prints the manuscript metrics next to the archived values of the same task
 (`reference/paper_task_scores.json`). The full list of tasks, seeds and expected agreement is in
@@ -130,7 +128,6 @@ geouno/            Python package (model, inputs, backend, inverse, monitoring, 
 protocols/         frozen protocols of the reported experiments (seeds, configurations, design, calibration)
 reference/         archived per-task results and Source Data of the paper
 provenance/        original source files, the archived NUTS runtime, equivalence verifier and release assembly
-data_generation/   MOOSE PorousFlow THM template and FE database generator (archival)
 docs/              model, data, reproducibility, training, provenance and code-review notes
 tests/             unit tests (CI) and release tests (with downloaded artifacts)
 ```

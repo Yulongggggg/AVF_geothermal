@@ -10,7 +10,7 @@ source code is vendored in this repository.
 | [Pyro](https://pyro.ai) | NUTS kernel (`pyro.infer.NUTS`, `MCMC`) | Apache-2.0 |
 | [ArviZ](https://www.arviz.org) | rank-normalized R-hat and bulk/tail ESS | Apache-2.0 |
 | [iterative_ensemble_smoother](https://github.com/equinor/iterative_ensemble_smoother) (Equinor) | ES-MDA update | **GPL-3.0** (optional extra `geouno[esmda]`) |
-| [MOOSE](https://mooseframework.inl.gov) / PorousFlow | FE reference simulations (`data_generation/`, not a Python dependency) | LGPL-2.1 |
+| [MOOSE](https://mooseframework.inl.gov) / PorousFlow | FE reference simulations that produced the database (upstream of this release, not distributed) | LGPL-2.1 |
 | DFN.lab | discrete fracture networks underlying the permeability fields (upstream of this release, not distributed) | see its own terms of use |
 
 Methods are cited in the paper: ES-MDA (Emerick and Reynolds, 2013), NUTS (Hoffman and Gelman, 2014),

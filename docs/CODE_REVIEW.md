@@ -30,11 +30,11 @@ the 2 October 2026 audit had already corrected.
    THM_template_final.i` (SHA-256 `70d80c53...`) is a July 2026 version: it still builds explicit lower-dimensional
    fracture blocks and uses `epv_coeff = 0.58`, `P_coeff = 1.88e-11`. The paper describes no explicit fracture
    elements and `A_P = 7.916e-12`, `A_eps = 0.541`, which is the r4/r5 template `a87cf842...` that the
-   design-benchmark FE runs pinned and that is archived here. The FE results are unaffected; the snapshot (and any
+   design-benchmark FE runs pinned (`OL-geothermal-final-scheme` `main`). The FE results are unaffected; the snapshot (and any
    line numbers cited from it in `SOURCE_ATTRIBUTION.md`) should be updated to `a87cf842...`.
 2. **Generator version gap (provenance).** The cluster copy of `generate_dataset_v4.py` pinned by the
    design-benchmark FE runs (`9261f5e1...`, `/mnt/home/yliu5/projects/v4r5/`) is not in any repository; the latest
-   committed version is `b8eea882...`. It should be retrieved from the cluster and archived.
+   version committed to `OL-geothermal-final-scheme` is `b8eea882...`. It should be retrieved from the cluster and archived.
 3. **Superseded model presented as current (documentation).** `OL-geothermal-final-scheme/geouno/README.md` still
    calls the grid-output model `cf278e64...` the "fixed manuscript checkpoint" and reports a failed NUTS case that
    belongs to that model; `geouno/artifacts/nuts_chains` and `artifacts/inference/cases` also belong to it. A note

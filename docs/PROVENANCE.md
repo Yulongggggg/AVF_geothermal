@@ -10,7 +10,7 @@ data access (stored base inputs instead of the 180 GB cluster pack), path handli
 
 | Archive | Commit / location | Role |
 |---|---|---|
-| [OL-geothermal-final-scheme](https://github.com/Yulongggggg/OL-geothermal-final-scheme) | `main` @ `229a6b7` | historical GeoUNO archive (`geouno/`), FE generator, prior-fit inputs, parent checkpoint |
+| [OL-geothermal-final-scheme](https://github.com/Yulongggggg/OL-geothermal-final-scheme) | `main` @ `229a6b7` | historical GeoUNO archive (`geouno/`), prior-fit inputs, parent checkpoint |
 | same repository | `codex/workstationd-nuts-20261001` @ `137d61a` | frozen NUTS bundle (checkpoint, 25 reservoirs, protocols, portable runtime) |
 | same repository | `claude/workstationd-nuts-results-20261005` @ `7c3b2f7` | returned six-reservoir NUTS results |
 | [AVF-Nature-communication---Yulong-Jonah](https://github.com/Yulongggggg/AVF-Nature-communication---Yulong-Jonah) | `main` @ `1281250` | manuscript, 2 October 2026 scientific audit (corrected sources, Source Data), 1 October evidence archive |

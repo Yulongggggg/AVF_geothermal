@@ -138,4 +138,4 @@ skipped without the `nuts` group), `geouno verify` and `geouno paper-numbers`; c
 * GeoUNO and the baselines have different training budgets and objectives.
 * NUTS transitions saturate the maximum tree depth; inference costs of MAP/ES-MDA (CPU) and NUTS (GPU) use different
   resources.
-* The FE solver build and part of the upstream DFN/FE lineage are not fully recorded (see `data_generation/`).
+* The FE solver build and part of the upstream DFN/FE lineage are not fully recorded.
