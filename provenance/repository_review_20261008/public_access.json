@@ -1,0 +1,14 @@
+{
+  "anonymous_requests": [
+    {
+      "url": "https://github.com/Yulongggggg/AVF_geothermal",
+      "http_status": 404
+    },
+    {
+      "url": "https://github.com/Yulongggggg/AVF_geothermal/releases/download/artifacts-v1/geouno_pod1024_ed043489.pt",
+      "http_status": 404
+    }
+  ],
+  "ssh_repository_access": "confirmed",
+  "github_connector_repository_access": "404"
+}

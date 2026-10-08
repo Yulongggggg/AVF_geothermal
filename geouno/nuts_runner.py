@@ -67,12 +67,20 @@ def merge(label, run_dir, out=None, device='cpu', threads=None, root=None, backe
     return dict(case=label, diagnostics=diagnostics, scores=result, selected_draw_indices=index.tolist())
 
 
-def verify_released(label, device='cpu', threads=None, root=None, backend=None):
+def verify_released(label, device='cpu', threads=None, root=None, backend=None, rtol=1e-4, atol=1e-8):
     """Recompute diagnostics and scores from the released chains; compare with the archived merge."""
+    if label not in NUTS_CASES:
+        raise ValueError('Released NUTS cases are test_01..test_06')
+    if not np.isfinite([rtol, atol]).all() or min(rtol, atol) < 0:
+        raise ValueError('Verification tolerances must be finite and nonnegative')
     root = Path(root) if root else artifacts.data_dir()
     run_dir = root / 'nuts' / label
     if not run_dir.exists():
         raise FileNotFoundError(f'{run_dir} is missing; run `geouno download --group nuts`')
+    files = ['diagnostics.json', 'scores.json']
+    files += [f'chain_{c}/{name}' for c in range(4) for name in ('latent_samples.npz', 'diagnostics.json')]
+    for name in files:
+        artifacts.path(f'nuts/{label}/{name}', root)
     summary = merge(label, run_dir, device=device, threads=threads, root=root, backend=backend)
     archived_diag = json.loads((run_dir / 'diagnostics.json').read_text())
     archived_scores = json.loads((run_dir / 'scores.json').read_text())
@@ -82,4 +90,16 @@ def verify_released(label, device='cpu', threads=None, root=None, backend=None):
     new, old = headline(summary['scores']), headline(archived_scores)
     comparison['scores'] = {k: dict(recomputed=new[k], archived=old[k],
                                     rel_diff=abs(new[k] - old[k]) / max(abs(old[k]), 1e-12)) for k in old}
+    for key, values in comparison['diagnostics'].items():
+        if key in ('divergences', 'convergence_pass'):
+            values['passed'] = values['recomputed'] == values['archived']
+        else:
+            values['passed'] = bool(np.isclose(values['recomputed'], values['archived'], rtol=1e-10, atol=1e-12))
+    for values in comparison['scores'].values():
+        values['passed'] = bool(np.isclose(values['recomputed'], values['archived'], rtol=rtol, atol=atol))
+    comparison['tolerances'] = dict(score_rtol=rtol, score_atol=atol, diagnostic_rtol=1e-10,
+                                    diagnostic_atol=1e-12)
+    comparison['passed'] = (bool(summary['diagnostics']['convergence_pass'])
+                            and all(v['passed'] for group in ('diagnostics', 'scores')
+                                    for v in comparison[group].values()))
     return comparison

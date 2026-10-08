@@ -23,7 +23,7 @@ are checked against that code bit for bit on the released data, and the inverse 
 inputs ([docs/PROVENANCE.md](docs/PROVENANCE.md)).
 
 Table 1 uses three independently initialized and refined GeoUNO models; its packaged Source Data now report
-their means and sample standard deviations. The [7 October code review](docs/REVIEW_20261007.md) records the
+their means and sample standard deviations. The [7–8 October code review](docs/REVIEW_20261007.md) records the
 geothermal-operator naming correction, installed-package repairs, restart checks and current validation.
 
 ![GeoUNO overview](docs/images/overview.png)
@@ -58,6 +58,17 @@ pip install -e ".[all]"
 for ES-MDA. `geouno[nuts]` installs Pyro and ArviZ.
 
 ## Quick start
+
+The packaged table checks run without downloading model assets:
+
+```bash
+geouno paper-numbers         # 80 printed values, including three-seed Table 1 means and SDs
+```
+
+**Artifact access (checked 8 October 2026).** Anonymous access to the repository and core download URL
+returns HTTP 404. Public download is therefore not yet verified; public access is planned with publication.
+Users with a local copy of the release assets can install them with
+`geouno download --from-dir /path/to/release-assets`. The following model commands require the core assets.
 
 ```bash
 geouno download              # model, inverse prior and 25 reservoirs (343 MB), SHA-256 verified
@@ -98,19 +109,20 @@ Every `geouno run` prints the manuscript metrics next to the archived values of 
 (`geouno/resources/paper_task_scores.json`). The full list of tasks, seeds and expected agreement is in
 [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
-**Verification of this release.** Rerunning paper tasks from scratch reproduces the archived ES-MDA, static-only and
-reference forecasts to within 6e-5 relative difference and the MAP objective to five significant digits; the NUTS
-diagnostics and scores recompute exactly from the released chains; all 80 printed table and abstract values
-recompute from Source Data; and a 53-check comparison with the archived research code is bitwise identical
-([details](docs/REPRODUCIBILITY.md#5-verification-of-this-release)).
+**Verification of this release.** All 80 supported printed table and abstract values recompute from Source Data.
+The complete 53-check comparison with the archived research code passed on 7 October. Selected task reruns and
+NUTS chain checks from 5 October are recorded separately in the
+[verification report](docs/REPRODUCIBILITY.md#5-verification-of-this-release). CPU portability remains limited:
+six audited pressure summaries exceeded the archived GPU comparison tolerance, with a largest difference of
+0.005368 MPa. Agreement with the original implementation does not resolve this hardware-dependent discrepancy.
 
 ![Permeability inference](docs/images/inversion.png)
 
 ## Model and data artifacts
 
-Large files are published as assets of the GitHub release
+The artifact manifest identifies large files under the GitHub release
 [`artifacts-v1`](https://github.com/Yulongggggg/AVF_geothermal/releases/tag/artifacts-v1); `geouno download`
-fetches and verifies them. Hashes of every file are in
+fetches and verifies them when that release is accessible (see the access status above). Hashes of every file are in
 [`geouno/resources/release_manifest.json`](geouno/resources/release_manifest.json).
 
 | Asset | Group | Size | Content |
@@ -143,6 +155,8 @@ members have not been re-simulated with the FE solver. Training budgets differ b
 The test set was inspected during model development, and test and training scenarios share some upstream fracture
 images. These points, the NUTS depth-cap behaviour and the numerical-portability checks are discussed in the paper
 and in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+
+Repository entry-point and packaging checks are recorded in [docs/REVIEW_20261007.md](docs/REVIEW_20261007.md).
 
 ## Citation
 

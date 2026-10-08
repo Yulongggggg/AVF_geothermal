@@ -90,6 +90,8 @@ def cmd_prepare_cases(a):
     frozen = design()
     labels = reservoirs.labels('test') + ['pilot_01']
     configs = [c for c in configurations() if a.config in (None, c['key'])]
+    if not configs:
+        raise ValueError(f'Unknown monitoring configuration: {a.config}')
     mismatches = 0
     for label in labels:
         base_case = reservoirs.case(label)
@@ -135,8 +137,12 @@ def cmd_nuts_verify(a):
     from .nuts_runner import NUTS_CASES, verify_released
     from .tasks import load_backend
     backend = load_backend(a.device, a.threads, a.data)
+    passed = True
     for case in (a.case or NUTS_CASES):
-        _print(dict(case=case, **verify_released(case, root=a.data, backend=backend)))
+        report = verify_released(case, root=a.data, backend=backend, rtol=a.rtol, atol=a.atol)
+        _print(dict(case=case, **report))
+        passed = passed and report['passed']
+    return 0 if passed else 1
 
 
 def cmd_paper_numbers(a):
@@ -172,7 +178,7 @@ def build_parser():
     p.add_argument('--keep-archives', action='store_true', help='Keep downloaded .tar files after extraction.')
 
     p = add('verify', cmd_verify, 'Verify artifacts and reproduce the archived value/gradient check.')
-    p.add_argument('--group', nargs='+', default=None)
+    p.add_argument('--group', nargs='+', default=None, choices=('core', 'nuts', 'prior', 'training', 'all'))
     p.add_argument('--rtol', type=float, default=1e-3)
 
     p = add('predict', cmd_predict, 'Forward prediction with the true permeability of a released reservoir.')
@@ -202,7 +208,9 @@ def build_parser():
     p.add_argument('--dir', type=Path, required=True)
 
     p = add('nuts-verify', cmd_nuts_verify, 'Recompute diagnostics and scores from the released NUTS chains.')
-    p.add_argument('--case', nargs='+', default=None)
+    p.add_argument('--case', nargs='+', default=None, choices=tuple(f'test_{i:02d}' for i in range(1, 7)))
+    p.add_argument('--rtol', type=float, default=1e-4, help='Relative tolerance for forecast scores.')
+    p.add_argument('--atol', type=float, default=1e-8, help='Absolute tolerance for forecast scores.')
 
     add('paper-numbers', cmd_paper_numbers, 'Recompute Tables 1, 2, S1 and abstract numbers from Source Data.',
         device=False)

@@ -1,8 +1,24 @@
 # Changelog
 
+## Unreleased (2026-10-08)
+
+* Require a matching completion record and all four output hashes before skipping a batch task.
+* Reject invalid shard and monitoring-configuration inputs instead of silently doing no work.
+* Make NUTS verification check artifact hashes, report explicit pass/fail comparisons and return failure on
+  mismatches or failed convergence diagnostics.
+* Clarify public-access status, asset-free table checks and the 1,153 monitoring case files produced by the
+  current registered configurations.
+
+## Review corrections (2026-10-07)
+
+* Use the geothermal operator name while retaining checkpoint/import compatibility.
+* Package Source Data in installed wheels and update Table 1 to all three independent GeoUNO seeds.
+* Validate extracted artifacts, MAP restart identity and training-resume source/runtime identity.
+* Separate inference and forecasting time and evaluation counts.
+
 ## 1.0.0 (2026-10-05)
 
-First public release accompanying the manuscript *Joint operator learning for geothermal forecasting and
+Initial code and artifact snapshot accompanying the manuscript *Joint operator learning for geothermal forecasting and
 inference under uncertainty* (revision of 5 October 2026).
 
 * `geouno` package: GeoUNO operator (POD1024 + 64 learned coordinate functions per field), physical input

@@ -11,7 +11,9 @@ paths inside them are identifiers of the original cluster files, not runtime dep
 | `model_selection.json` | `5d3e7d7c...` | author selection of the checkpoint, configuration and training lineage |
 | `monitoring_design.json` | `8d9d89d9...` | validation-only nested designs (same file as `geouno/resources/design.json`) |
 | `calibration.json` | `b22e64c3...` | validation-fitted surrogate-error second moments (same as `geouno/resources/calibration.json`) |
-| `case_manifest.json` | `11c58ca1...` | SHA-256 of the 1,300 monitoring case files prepared for the paper runs |
+| `case_manifest.json` | `11c58ca1...` | SHA-256 of 1,300 historical monitoring case files; this archive includes configurations beyond the current registered task set |
 
 `geouno.monitoring.configurations()` reproduces the registered configurations exactly, and the candidate points of
 the registered reservoirs are packaged in `geouno/resources/geometries.json` (tests in `tests/test_monitoring.py`).
+The current 49 configurations produce 1,104 test-case files plus 49 validation-pilot files; the four noise
+variants are restricted to the first six test reservoirs.

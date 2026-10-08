@@ -1,7 +1,10 @@
 # Reproducing the paper
 
-All commands assume `pip install -e ".[all]"` and `geouno download` (add `--group nuts` / `--group prior` where
-noted). Times refer to the hardware stated in the paper unless marked otherwise.
+Install with `pip install -e ".[all]"`. Table checks use packaged Source Data and need no external assets.
+Model commands require `geouno download` (add `--group nuts` / `--group prior` where noted), or installation
+from a local asset copy with `geouno download --from-dir /path/to/release-assets`. The current public-access
+status is stated in the [README](../README.md#quick-start). Times refer to the hardware stated in the paper
+unless marked otherwise.
 
 ## 1. Numbers in the tables (seconds)
 
@@ -25,6 +28,11 @@ geouno run --config multiwell_opt17 --case test_01 --method esmda --threads 4   
 python scripts/run_all_tasks.py --out runs/paper --threads 4 --shard 0/8        # all tasks, resumable
 python scripts/run_all_tasks.py --out runs/paper --summary                      # agreement with the paper runs
 ```
+
+A finished task has a matching `complete.json` and SHA-256-verified `scores.json`, `forecast.npz`,
+`latent_samples.npz` and `diagnostics.json`. Missing or damaged outputs are rerun and excluded from the
+completed count. Older output folders without the completion record are also rerun; a scores file alone
+does not establish completion. A failed replacement run invalidates its previous completion record.
 
 | Method | Seed | Settings |
 |---|---|---|
@@ -61,6 +69,11 @@ geouno nuts-chain --case test_01 --chain 0 --device cuda:0 --out runs/nuts   # a
 geouno nuts-merge --case test_01 --dir runs/nuts
 ```
 
+`nuts-verify` checks the input artifact hashes and returns a nonzero exit status if any case fails.
+Diagnostic comparisons use relative tolerance `1e-10` and absolute tolerance `1e-12`; forecast-score
+tolerances default to `--rtol 1e-4 --atol 1e-8`. The report includes each comparison and the overall result.
+Convergence diagnostics must also pass their registered gate.
+
 All six reservoirs meet the registered gate (max R-hat 1.022, min bulk ESS 306 for `test_04`, no divergences). Every
 retained transition reached the depth-7 cap. A strict cross-device smoke test of the frozen bundle failed only its
 FP32 tolerance, which is documented in `nuts/DEVIATION_smoke_20261001.md`. An extension for the other 18 reservoirs
@@ -70,7 +83,7 @@ FP32 tolerance, which is documented in `nuts/DEVIATION_smoke_20261001.md`. An ex
 
 ```bash
 geouno download --group prior && geouno refit-prior --out runs/prior    # marginal SD 0.976 dec
-geouno prepare-cases --check --out runs/cases                           # 49 configurations x 25 reservoirs
+geouno prepare-cases --check --out runs/cases                           # 1,104 test + 49 validation-pilot files
 ```
 
 Monitoring placement was optimized on four validation reservoirs; the released `design.json` freezes the result.
@@ -79,8 +92,9 @@ need the FE corpus ([TRAINING.md](TRAINING.md)).
 
 ## 5. Verification of this release
 
-The [7 October review](REVIEW_20261007.md) updates Table 1 to the three-seed results, repairs installed-wheel
-resources and restart/integrity checks, and records the current serial test run. The measurements below are
+The [7–8 October review](REVIEW_20261007.md) updates Table 1 to the three-seed results, repairs installed-wheel
+resources and restart/integrity checks, and records 61 passing tests and one optional skip in the latest run.
+It also documents task-completion records, CLI validation and NUTS verification failure status. The measurements below are
 the historical 5 October release validation, not a claim that the full inference study was rerun in this review.
 
 Measured on 5 October 2026 for this release (paper runs: cluster CPU, 4 threads; reruns: one NVIDIA RTX A4000
@@ -143,3 +157,6 @@ skipped without the `nuts` group), `geouno verify` and `geouno paper-numbers`; c
 * NUTS transitions saturate the maximum tree depth; inference costs of MAP/ES-MDA (CPU) and NUTS (GPU) use different
   resources.
 * The FE solver build and part of the upstream DFN/FE lineage are not fully recorded.
+* A separate forward-reproduction audit found six CPU pressure summaries outside its declared tolerance,
+  with a largest difference of 0.005368 MPa. That discrepancy remains unresolved; agreement with the original
+  implementation on the same machine does not establish identical results across hardware.

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "job_id": "125334",
+  "cwd": "/mnt/home/yliu5/.cache/geouno-repository-review-20261008",
+  "installed_package": "/mnt/home/yliu5/.cache/geouno-repository-review-20261008/installed/geouno",
+  "matched_python_files": 37,
+  "checked_paper_cells": 80,
+  "verified_data_files": 23,
+  "verified_core_artifact_files": 53,
+  "reference_tasks": 1206,
+  "geothermal_compatibility": true,
+  "console_entry_point": true,
+  "wheel_sha256": "be5c2e01ddb5f0af68b56c49d88bed498715ca04ce68b70c517b109938580a37",
+  "max_rss_kib": 561216
+}

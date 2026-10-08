@@ -26,6 +26,24 @@ from .monitoring.protocol import (ENSEMBLE_SEED_OFFSET, ESMDA, MAP_SEED_OFFSET, 
                                   PRIOR_REFERENCE_SEED)
 
 METHODS = ('esmda', 'static', 'map', 'prior', 'static_prior')
+TASK_FILES = ('scores.json', 'forecast.npz', 'latent_samples.npz', 'diagnostics.json')
+
+
+def task_complete(out, config_key, label, method):
+    """Require the matching completion record and all four intact task outputs."""
+    out = Path(out)
+    try:
+        record = artifacts.read_json(out / 'complete.json')
+        if not isinstance(record, dict) or record.get('format_version') != 1:
+            return False
+        if record.get('task') != dict(config=config_key, case=label, method=method):
+            return False
+        files = record.get('files')
+        return (isinstance(files, dict) and set(files) == set(TASK_FILES)
+                and all((out / name).is_file() and artifacts.sha256(out / name) == files[name]
+                        for name in TASK_FILES))
+    except (OSError, ValueError, TypeError):
+        return False
 
 
 def load_backend(device='cpu', threads=None, root=None):
@@ -80,6 +98,10 @@ def run(config_key, label, method, out=None, device='cpu', threads=None, root=No
     backend = backend or load_backend(device, threads, root)
     problem, config = problem_for(backend, reservoirs, label, config_key)
     check_method(config, method)
+    if out is not None:
+        out = Path(out)
+        out.mkdir(parents=True, exist_ok=True)
+        (out / 'complete.json').unlink(missing_ok=True)
     began = time.monotonic()
     seed = entry['observation_seed'] + ENSEMBLE_SEED_OFFSET
     initial_evaluations = backend.evaluations
@@ -112,6 +134,11 @@ def run(config_key, label, method, out=None, device='cpu', threads=None, root=No
         write_forecast(out, result, arrays)
         np.savez_compressed(out / 'latent_samples.npz', y=np.asarray(y))
         (out / 'diagnostics.json').write_text(json.dumps(_finite(info), indent=2) + '\n')
+        record = dict(format_version=1, task=dict(config=config_key, case=label, method=method),
+                      files={name: artifacts.sha256(out / name) for name in TASK_FILES})
+        marker = out / 'complete.json.tmp'
+        marker.write_text(json.dumps(record, indent=2) + '\n')
+        marker.replace(out / 'complete.json')
     return result, info
 
 

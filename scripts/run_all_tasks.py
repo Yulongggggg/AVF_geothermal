@@ -1,8 +1,8 @@
 """Run every registered inference task of the paper (resumable) and summarize agreement.
 
 1,104 monitoring evaluations (ES-MDA, or analytic conditioning for `multiwell_opt9_k`), 24 MAP runs and the
-48 prior/static-prior reference ensembles. Each task writes `<out>/<config>/<case>/<method>/scores.json`;
-finished tasks are skipped. Distribute the work by running several copies with different `--shard i/n`.
+48 prior/static-prior reference ensembles. A task is skipped only when its completion record and all four
+output hashes agree. Distribute the work by running several copies with different `--shard i/n`.
 
     python scripts/run_all_tasks.py --out runs/paper --threads 4 --shard 0/8
     python scripts/run_all_tasks.py --out runs/paper --summary
@@ -13,7 +13,7 @@ from pathlib import Path
 
 from geouno import artifacts
 from geouno.monitoring import configurations
-from geouno.tasks import compare, load_backend, reference_key, reference_scores, run
+from geouno.tasks import compare, load_backend, reference_key, reference_scores, run, task_complete
 
 
 def tasks():
@@ -38,22 +38,29 @@ def main():
     todo = tasks()
     assert len(todo) == 1104 + 24 + 48
     if a.summary:
-        ref, worst, done = reference_scores(), {}, 0
+        ref, worst, done, incomplete = reference_scores(), {}, 0, 0
         for config, case, method in todo:
-            path = a.out / config / case / method / 'scores.json'
-            if not path.exists():
+            dest = a.out / config / case / method
+            if not task_complete(dest, config, case, method):
+                incomplete += dest.exists()
                 continue
             done += 1
-            rows = compare(json.loads(path.read_text()), ref[reference_key(config, case, method)])
+            rows = compare(json.loads((dest / 'scores.json').read_text()), ref[reference_key(config, case, method)])
             for metric, r in rows.items():
                 worst[metric] = max(worst.get(metric, 0.), r['rel_diff'])
-        print(json.dumps(dict(completed=done, total=len(todo), max_relative_difference=worst), indent=2))
+        print(json.dumps(dict(completed=done, incomplete=incomplete, total=len(todo),
+                              max_relative_difference=worst), indent=2))
         return
-    index, count = map(int, a.shard.split('/'))
+    try:
+        index, count = map(int, a.shard.split('/'))
+        if count <= 0 or not 0 <= index < count:
+            raise ValueError
+    except ValueError:
+        ap.error('--shard must be i/n with n > 0 and 0 <= i < n')
     backend = load_backend(a.device, a.threads)
     for i, (config, case, method) in enumerate(todo):
         dest = a.out / config / case / method
-        if i % count != index or (dest / 'scores.json').exists():
+        if i % count != index or task_complete(dest, config, case, method):
             continue
         backend.evaluations = 0
         run(config, case, method, out=dest, backend=backend, log=lambda *_: None)
