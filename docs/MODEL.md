@@ -37,7 +37,7 @@ u_l(x)       = b_l + s_l' [ mu_l(x) + sum_r a_lr psi_lr(x) ]          (s_T' = s_
   radii 6, 24, 96 m around each well), the controls, a 4 x 4 pooled pressure grid and a learned regional readout.
 * 4,309,756 trainable parameters; the POD basis (2 x 1,024 x 160 x 128) is a fixed buffer.
 
-Exact definitions: `geouno/model/geouno.py` and its parents in `geology.py`, `joint.py`, `direct.py` and
+Exact definitions: `geouno/model/geouno.py` and its parents in `geothermal.py`, `joint.py`, `direct.py` and
 `blocks.py`. Supplementary Section "Network architecture and training objective" of the paper gives the
 equations.
 

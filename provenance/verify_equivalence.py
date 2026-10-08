@@ -112,10 +112,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--data', type=Path, default=None)
     ap.add_argument('--threads', type=int, default=2)
+    ap.add_argument('--low-memory', action='store_true',
+                    help='recompute activations for memory-limited CPU verification')
     ap.add_argument('--report', type=Path, default=HERE / 'equivalence_report.json')
     a = ap.parse_args()
     torch.set_num_threads(a.threads)
     started = time.monotonic()
+    from check_memory import recompute_activations, release_unused
 
     from geouno import artifacts
     from geouno.backend import Backend
@@ -157,54 +160,97 @@ def main():
             q = torch.rand(37, 2) * 2 - 1
             check('model off-grid query identical', torch.equal(new_net(f, c, query=q), old_net(f, c, query=q)))
 
+        # Release the two standalone models before allocating posterior backends.
+        del new_net, old_net, enc, base, f, c, q
+        release_unused()
+
         # 2. Backend and posterior on the validation pilot and two test reservoirs.
-        new_b = Backend(model_path, stats, root / 'data/prior_factor.npy', threads=a.threads)
-        torch.set_num_threads(a.threads)
-        old_val = OldBackend('val', 'cpu')
-        old_test = OldBackend('test', 'cpu')
-        torch.set_num_threads(a.threads)
-        check('cached basis identical', all(torch.equal(x, y) for x, y in zip(new_b.fixed_basis, old_val.fixed_basis)))
+        # Compare lossless temporary snapshots, so only one full backend/posterior
+        # is resident at a time. Neither implementation shares model state or data.
         rng = np.random.default_rng(2026)
         obs_cfg = dict(channels=(0, 1), static=True, times=tuple(range(7)), sigma_t=.5, sigma_p=.25)
-        for label, old_b in (('pilot_01', old_val), ('test_01', old_test), ('test_06', old_test)):
-            case = reservoirs.case(label)
-            new_p = Problem(new_b, case, reservoirs.base(label), calibration, **obs_cfg)
-            old_p = OldProblem(old_b, root / f'data/cases/{label}.npz', root / 'data/calibration.json',
-                               **{k: list(v) if isinstance(v, tuple) else v for k, v in obs_cfg.items()})
-            check(f'{label}: whitening factor and data identical',
-                  torch.equal(new_p.cholesky, old_p.cholesky) and torch.equal(new_p.data, old_p.data))
-            check(f'{label}: static conditioning identical',
-                  all(torch.equal(new_p.conditional[k], old_p.conditional[k]) for k in ('mean', 'root', 'H', 'offset')))
-            y = new_p.tensor(rng.normal(size=(2, 4096)))
-            with torch.no_grad():
-                check(f'{label}: permeability map identical', torch.equal(new_p.permeability(y), old_p.permeability(y)))
-                check(f'{label}: whitened predictions identical', torch.equal(new_p.forward(y), old_p.forward(y)))
-            grads = []
-            for p in (new_p, old_p):
+        for label in ('pilot_01', 'test_01', 'test_06'):
+            latent_y = rng.normal(size=(2, 4096))
+            if label == 'test_01':
+                latent = rng.normal(size=(8, 4096))
+                one = rng.normal(size=(1, 4096))
+            snapshot = Path(tmp) / label
+            snapshot.mkdir()
+            for original in (False, True):
+                def compare_saved(name, value):
+                    file = snapshot / (name.replace(':', '_').replace(' ', '_') + '.pt')
+                    if original:
+                        # Only this process's own temporary file is deserialized.
+                        with file.open('rb') as handle:
+                            reference = torch.load(handle, map_location='cpu', weights_only=False)
+                            if hasattr(os, 'posix_fadvise'):
+                                os.posix_fadvise(handle.fileno(), 0, 0, os.POSIX_FADV_DONTNEED)
+                        check(name, same_tree(value, reference))
+                    else:
+                        with file.open('wb') as handle:
+                            torch.save(value, handle)
+                            handle.flush()
+                            os.fsync(handle.fileno())
+                            if hasattr(os, 'posix_fadvise'):
+                                os.posix_fadvise(handle.fileno(), 0, 0, os.POSIX_FADV_DONTNEED)
+
+                backend = (OldBackend('val' if label == 'pilot_01' else 'test', 'cpu') if original else
+                           Backend(model_path, stats, root / 'data/prior_factor.npy', threads=a.threads))
+                torch.set_num_threads(a.threads)
+                if a.low_memory:
+                    recompute_activations(backend.operator)
+                if label == 'pilot_01':
+                    compare_saved('cached basis identical', backend.fixed_basis)
+                case = reservoirs.case(label)
+                if original:
+                    p = OldProblem(backend, root / f'data/cases/{label}.npz', root / 'data/calibration.json',
+                                   **{k: list(v) if isinstance(v, tuple) else v for k, v in obs_cfg.items()})
+                else:
+                    p = Problem(backend, case, reservoirs.base(label), calibration, **obs_cfg)
+                compare_saved(f'{label}: whitening factor and data identical', (p.cholesky, p.data))
+                compare_saved(f'{label}: static conditioning identical',
+                              tuple(p.conditional[k] for k in ('mean', 'root', 'H', 'offset')))
+                y = p.tensor(latent_y)
+                with torch.no_grad():
+                    compare_saved(f'{label}: permeability map identical', p.permeability(y))
+                    compare_saved(f'{label}: whitened predictions identical', p.forward(y))
+                release_unused()
                 v = y[0].clone().requires_grad_(True)
                 r = p.forward(v[None])[0] - p.data
                 u = .5 * (v.square().sum() + r.square().sum())
-                grads.append((u.detach(), torch.autograd.grad(u, v)[0]))
-            check(f'{label}: posterior value and gradient identical',
-                  torch.equal(grads[0][0], grads[1][0]) and torch.equal(grads[0][1], grads[1][1]))
+                gradient, = torch.autograd.grad(u, v)
+                compare_saved(f'{label}: posterior value and gradient identical', (u.detach(), gradient))
+                del r, u, v, gradient, y
+                release_unused()
+                if label == 'test_01':
+                    if original:
+                        out = Path(tmp) / 'old_forecast'
+                        out.mkdir()
+                        scores = old_forecast(p, latent, out, save_members=True)
+                        with np.load(out / 'forecast.npz') as z:
+                            arrays = {k: z[k] for k in z.files}
+                        point_scores = old_forecast(p, one, out, point_estimate=True)
+                    else:
+                        scores, arrays = forecast(p, latent, save_members=True)
+                        point_scores = forecast(p, one, point_estimate=True)[0]
+                    compare_saved('forecast scores identical', scores)
+                    compare_saved('forecast arrays identical', arrays)
+                    compare_saved('point-estimate scores identical', point_scores)
+                    del scores, arrays, point_scores
+                    if not original:
+                        new_k = Problem(backend, case, reservoirs.base(label), calibration,
+                                        channels=(), static=True, times=tuple(range(7)))
+                        check('static-only problem has no dynamic data', new_k.nobs == 0)
+                        del new_k
+                del p, backend, case
+                release_unused()
             if label == 'test_01':
-                latent = rng.normal(size=(8, 4096))
-                new_s, new_arrays = forecast(new_p, latent, save_members=True)
-                out = Path(tmp) / 'old_forecast'
-                out.mkdir()
-                old_s = old_forecast(old_p, latent, out, save_members=True)
-                with np.load(out / 'forecast.npz') as z:
-                    old_arrays = {k: z[k] for k in z.files}
-                check('forecast scores identical', same_tree(new_s, old_s))
-                check('forecast arrays identical', same_tree(new_arrays, old_arrays))
-                one = rng.normal(size=(1, 4096))
-                check('point-estimate scores identical',
-                      same_tree(forecast(new_p, one, point_estimate=True)[0],
-                                old_forecast(old_p, one, Path(tmp) / 'old_forecast', point_estimate=True)))
-                # Static-only and prior reference variants.
-                new_k = Problem(new_b, case, reservoirs.base(label), calibration, channels=(), static=True,
-                                times=tuple(range(7)))
-                check('static-only problem has no dynamic data', new_k.nobs == 0)
+                del latent, one
+
+        new_b = Backend(model_path, stats, root / 'data/prior_factor.npy', threads=a.threads)
+        if a.low_memory:
+            recompute_activations(new_b.operator)
+        release_unused()
 
         # 3. Conditioning primitives on random problems.
         factor = new_b.factor
@@ -219,6 +265,8 @@ def main():
         err, ds, cs = torch.randn(4, 7, 9), torch.rand(7, 9) + .1, torch.rand(7)
         check('common_mode_quadratic() identical',
               torch.equal(common_mode_quadratic(err, ds, cs), old_cmq(err, ds, cs)))
+        del new_c, old_c, cd, yy, err, ds, cs, masks, observed, mean
+        release_unused()
 
         # 4. Scores.
         old_metrics = fresh_import(ORIGINAL, 'inference_comparison.metrics')
@@ -351,7 +399,7 @@ def main():
         old_phase, old_bucket, old_quality = extract(ORIGINAL / 'operator_campaign_20260925/train.py',
                                                      ['phase_rates', 'bucket', 'quality'], ns)
         check('learning-rate schedule identical', all(phase_rates(e, 132) == old_phase(e, 132) for e in range(132)))
-        names = [n for n, _ in new_net.named_parameters()]
+        names = [n for n, _ in new_b.operator.named_parameters()]
         check('parameter groups identical', [bucket(n) for n in names] == [old_bucket(n) for n in names])
         counts = [sum(phase_rates(e, 132)[0] == k for e in range(132))
                   for k in ('head_warmup', 'joint_transfer', 'fine_tune')]
@@ -359,6 +407,7 @@ def main():
         _training_data_checks(tmp, ShardedBatches)
 
     report = dict(passed=all(r['passed'] for r in RESULTS), checks=RESULTS, threads=a.threads,
+                  low_memory=a.low_memory,
                   torch=torch.__version__, numpy=np.__version__, seconds=time.monotonic() - started)
     a.report.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps({k: v for k, v in report.items() if k != 'checks'}))

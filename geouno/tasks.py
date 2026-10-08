@@ -82,6 +82,7 @@ def run(config_key, label, method, out=None, device='cpu', threads=None, root=No
     check_method(config, method)
     began = time.monotonic()
     seed = entry['observation_seed'] + ENSEMBLE_SEED_OFFSET
+    initial_evaluations = backend.evaluations
     point = False
     if method == 'esmda':
         y, info = esmda(problem, **ESMDA, seed=seed, progress=lambda r: log(json.dumps(r)))
@@ -96,9 +97,16 @@ def run(config_key, label, method, out=None, device='cpu', threads=None, root=No
         if method == 'prior':
             problem.conditional = None
         info = dict(method=f'{method} reference ensemble')
+    inference_elapsed = time.monotonic() - began
+    inference_evaluations = backend.evaluations - initial_evaluations
+    forecast_started = time.monotonic()
     result, arrays = forecast(problem, y, save_members=False, point_estimate=point)
-    info.update(seconds=time.monotonic() - began, config=config_key, case=label, method=method,
-                device=str(backend.device), forward_member_times=backend.evaluations)
+    # Keep algorithm timing (including all MAP starts) separate from forecast generation.
+    info.setdefault('seconds', inference_elapsed)
+    info.update(inference_wall_seconds=inference_elapsed, forecast_seconds=time.monotonic() - forecast_started,
+                total_seconds=time.monotonic() - began, config=config_key, case=label, method=method,
+                device=str(backend.device), forward_member_times=inference_evaluations,
+                forecast_member_times=backend.evaluations - initial_evaluations - inference_evaluations)
     if out is not None:
         out = Path(out)
         write_forecast(out, result, arrays)
@@ -118,7 +126,7 @@ def reference_key(config_key, label, method):
 
 
 def reference_scores():
-    return artifacts.read_json(artifacts.REPOSITORY / 'reference' / 'paper_task_scores.json')
+    return artifacts.read_json(artifacts.resource('paper_task_scores.json'))
 
 
 def compare(result, reference):

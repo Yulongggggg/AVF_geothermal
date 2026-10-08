@@ -72,8 +72,9 @@ def cmd_predict(a):
             rows.append(dict(time_index=ti, years=float(backend.stats['times_s'][ti]) / 3.15576e7,
                              temperature_rmse_K=float(np.sqrt(np.mean(err[0] ** 2))),
                              pressure_rmse_MPa=float(np.sqrt(np.mean(err[1] ** 2)))))
-    _print(dict(case=a.case, note='Single FE realization (the reservoir truth); paper Table 1 averages 8,621 '
-                                  'members of 618 test scenarios.', errors=rows))
+    _print(dict(case=a.case, note='Transferred application model on one FE truth. '
+                                  'Table 1 uses three independent models and 8,621 members of 618 test scenarios.',
+                errors=rows))
     if a.out:
         np.savez_compressed(a.out, prediction=np.stack(fields), truth=case['truth'][list(times)],
                             times=np.array(list(times)))

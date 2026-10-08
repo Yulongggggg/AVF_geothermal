@@ -17,7 +17,7 @@ new runs with these records; `geouno.inverse.headline` extracts the manuscript m
 
 ## `source_data/`
 
-Copied from the manuscript's scientific audit (`scientific_audit_20261002/source_data`, revision of 5 October 2026);
+Copied from the manuscript's scientific audit (`scientific_audit_20261002/source_data`, revision of 7 October 2026);
 `SHA256SUMS` lists every file.
 
 | File | Content |
@@ -28,7 +28,8 @@ Copied from the manuscript's scientific audit (`scientific_audit_20261002/source
 | `approximation_error_diagnostic.csv` | scores of the separate surrogate-error mixture diagnostic |
 | `forward_scenario_time_scores.csv` | archived per-scenario/time forward scores of the selected model (618 test scenarios x 11 times x 2 fields) |
 | `information_recomputed.json`, `operating_design_recomputed.json` | local-information and operating-design summaries |
-| `table1_nearwell/` | Table 1: whole-field and near-well RMSE of all evaluated checkpoints |
+| `table1_nearwell/` | Original baseline archive; the transferred GeoUNO row is superseded in Table 1 |
+| `table1_three_seed_20261007/` | Full FP32 test scores of the three independent GeoUNO models now used in Table 1 |
 | `uniform_baselines_20261004/` | Supplementary Table 1: five baselines x three seeds under the uniform protocol |
 | `nuts_20261005/` | six-reservoir NUTS per-reservoir scores, diagnostics summary and notes |
 

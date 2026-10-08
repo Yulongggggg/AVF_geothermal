@@ -48,7 +48,7 @@ Repository = "https://github.com/Yulongggggg/AVF_geothermal"
 include = ["geouno*"]
 
 [tool.setuptools.package-data]
-geouno = ["resources/*.json"]
+geouno = ["resources/*.json", "resources/source_data/*", "resources/source_data/**/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

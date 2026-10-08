@@ -13,8 +13,13 @@ where ``g`` stacks predicted block temperatures/pressures at the observation tim
 ``R`` is block diagonal over (time, channel). Each block is
 ``(s_local^2 + sigma^2) I`` plus, for pressure, a rank-one common component
 ``s_common^2 1 1^T``; ``s_local`` and ``s_common`` are validation-fitted surrogate-error
-variances (``calibration.json``) and ``sigma`` is 0.5 K or 0.25 MPa.
+standard deviations (their squared values are stored in ``calibration.json``), and
+``sigma`` is 0.5 K or 0.25 MPa.
 """
+import hashlib
+import json
+from pathlib import Path
+
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -73,6 +78,35 @@ class Problem:
         self.nobs = len(self.data)
         self.qoi_weights = self.tensor(case['qoi_weights'])
         self.calls = 0
+
+    def cache_key(self):
+        """Identity of the numerical posterior, used to prevent reuse of unrelated MAP starts."""
+        digest = hashlib.sha256()
+
+        def add(value):
+            if isinstance(value, torch.Tensor):
+                value = value.detach().cpu().contiguous().numpy()
+            if isinstance(value, np.ndarray):
+                digest.update(str((value.shape, value.dtype.str)).encode())
+                digest.update(value.tobytes())
+            elif isinstance(value, dict):
+                for key in sorted(value):
+                    add(key)
+                    add(value[key])
+            else:
+                digest.update(json.dumps(value, sort_keys=True).encode())
+            digest.update(b'\0')
+
+        add(dict(channels=self.channels, times=self.times, device=str(self.device),
+                 torch=str(torch.__version__), stats=self.backend.stats))
+        for value in (self.base, self.mean, self.weights, self.data, self.cholesky,
+                      self.conditional, self.backend.factor, self.backend.operator.state_dict()):
+            add(value)
+        package = Path(__file__).resolve().parents[1]
+        for path in sorted(package.rglob('*.py')):
+            add(str(path.relative_to(package)))
+            digest.update(path.read_bytes())
+        return digest.hexdigest()
 
     def tensor(self, x):
         return torch.as_tensor(x, device=self.device, dtype=torch.float64)

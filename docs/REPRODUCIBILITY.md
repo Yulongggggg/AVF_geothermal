@@ -10,7 +10,7 @@ geouno paper-numbers
 ```
 
 Recomputes Table 1, Table 2 (both cohorts, including NUTS), Supplementary Table 1 and the abstract numbers from
-`reference/source_data` and checks all 80 printed values. Expected: `{"checked": 80, "mismatches": 0}`.
+`geouno/resources/source_data` and checks all 80 printed values. Expected: `{"checked": 80, "mismatches": 0}`.
 
 ## 2. Registered inference tasks
 
@@ -47,7 +47,7 @@ locations (e-g, i-k), monitoring duration (h, l) and observation types (m). Valu
 ### Expected agreement
 
 `geouno run` and `scripts/run_all_tasks.py --summary` report relative differences of the manuscript metrics against
-`reference/paper_task_scores.json`. The network runs in FP32, and CPU round-off depends on the processor and the
+`geouno/resources/paper_task_scores.json`. The network runs in FP32, and CPU round-off depends on the processor and the
 number of threads; ES-MDA and MAP iterate on the network outputs and therefore amplify round-off slightly. Agreement
 to about 1e-4 is expected for ensemble methods and about 1 % for MAP point estimates (see section 5); bitwise
 agreement is not expected across processors.
@@ -63,8 +63,8 @@ geouno nuts-merge --case test_01 --dir runs/nuts
 
 All six reservoirs meet the registered gate (max R-hat 1.022, min bulk ESS 306 for `test_04`, no divergences). Every
 retained transition reached the depth-7 cap. A strict cross-device smoke test of the frozen bundle failed only its
-FP32 tolerance, which is documented in `nuts/DEVIATION_smoke_20261001.md`. The other 18 reservoirs (72 chains) are
-being sampled and are not part of this release.
+FP32 tolerance, which is documented in `nuts/DEVIATION_smoke_20261001.md`. An extension for the other 18 reservoirs
+(72 chains) was handed off separately; its results are not part of this release.
 
 ## 4. Inverse prior, monitoring inputs and training
 
@@ -78,6 +78,10 @@ Re-deriving it needs the three other validation reservoirs from the FE data rele
 need the FE corpus ([TRAINING.md](TRAINING.md)).
 
 ## 5. Verification of this release
+
+The [7 October review](REVIEW_20261007.md) updates Table 1 to the three-seed results, repairs installed-wheel
+resources and restart/integrity checks, and records the current serial test run. The measurements below are
+the historical 5 October release validation, not a claim that the full inference study was rerun in this review.
 
 Measured on 5 October 2026 for this release (paper runs: cluster CPU, 4 threads; reruns: one NVIDIA RTX A4000
 shared with other jobs, or the CPU where stated). Raw logs are not part of the repository; every check can be
@@ -122,7 +126,7 @@ the 4 x 1,024 released draws, and the scores of the 256 balanced forecast member
 exactly (max R-hat 1.0220 and min bulk ESS 306 for `test_04`; every case passes the gate).
 
 **Paper numbers:** `geouno paper-numbers` reproduces all 80 printed values. The 8,184 per-reservoir values of the
-monitoring Source Data agree with `reference/paper_task_scores.json` to 1e-7 relative (FP64 rescoring in the
+monitoring Source Data agree with `geouno/resources/paper_task_scores.json` to 1e-7 relative (FP64 rescoring in the
 audit) and the NUTS Source Data to 3e-8.
 
 **Package:** all 36 unit and release tests and the three-epoch training smoke run pass. A fresh clone installed

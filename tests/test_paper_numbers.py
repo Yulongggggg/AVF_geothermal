@@ -3,7 +3,6 @@ import hashlib
 from pathlib import Path
 
 from geouno import paper
-from geouno.artifacts import REPOSITORY
 
 
 def test_all_printed_values_recompute():
@@ -13,7 +12,7 @@ def test_all_printed_values_recompute():
 
 
 def test_source_data_hashes():
-    root = REPOSITORY / 'reference' / 'source_data'
+    root = paper.SOURCE
     for line in (root / 'SHA256SUMS').read_text().splitlines():
         digest, rel = line.split(None, 1)
         assert hashlib.sha256(Path(root, rel.strip()).read_bytes()).hexdigest() == digest, rel

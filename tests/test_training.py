@@ -45,12 +45,13 @@ def test_dataset_groups_members_by_scenario(tmp_path):
 @pytest.mark.slow
 def test_training_smoke_run_on_cpu(tmp_path, monkeypatch):
     """Three smoke epochs of the real training loop (gloo, one process) on random data."""
-    from geouno.model.geology import GeologyJointOperator
+    from geouno.model.geothermal import GeothermalJointOperator
     from geouno.training import train
-    pack = make_synthetic_pack(tmp_path / 'pack', train=13, val=4, members=2)
+    # Three complete scenarios exercise all training phases within a small memory budget.
+    pack = make_synthetic_pack(tmp_path / 'pack', train=3, val=2, members=1)
     stats = json.loads((pack / 'stats.json').read_text())
     torch.manual_seed(0)
-    parent = GeologyJointOperator(stats['fields_std'], stats['p_res_std_mpa'], 32, regional=True, gates=False)
+    parent = GeothermalJointOperator(stats['fields_std'], stats['p_res_std_mpa'], 32, regional=True, gates=False)
     torch.save(dict(model=parent.state_dict(), model_config=parent.config), tmp_path / 'parent.pt')
     q, _ = torch.linalg.qr(torch.randn(20480, 512))
     basis = (q.T * 20480 ** .5).reshape(1, 512, -1).expand(2, -1, -1).clone()

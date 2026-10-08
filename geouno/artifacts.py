@@ -3,7 +3,8 @@
 The model checkpoint, inverse-prior factor, reservoir cases and NUTS results are
 published as assets of the GitHub release recorded in ``resources/release_manifest.json``.
 They are stored under ``$GEOUNO_DATA`` (default: ``artifacts/`` in a source checkout, else
-``~/.cache/geouno``). Every file is verified against its SHA-256 before use.
+``~/.cache/geouno``). Downloads and extracted files are verified against SHA-256;
+``path`` also verifies individual manifest-listed files before returning them.
 """
 import hashlib
 import json
@@ -103,9 +104,15 @@ def fetch(names, root=None, force=False, log=print, source_dir=None, keep_archiv
         archive = bool(record.get('extract'))
         if archive:
             marker = root / record['extract'] / f'.{name}.complete'
-            if not force and marker.exists() and marker.read_text().strip() == record['sha256']:
+            valid_files = (not force and marker.exists()
+                           and marker.read_text().strip() == record['sha256']
+                           and all((root / record['extract'] / rel).is_file()
+                                   and sha256(root / record['extract'] / rel) == digest
+                                   for rel, digest in record['files'].items()))
+            if valid_files:
                 log(f'{name}: already installed')
                 continue
+            marker.unlink(missing_ok=True)
         dest = root / 'downloads' / name if archive else root / record['path']
         dest.parent.mkdir(parents=True, exist_ok=True)
         if force or not dest.exists() or sha256(dest) != record['sha256']:
@@ -153,6 +160,12 @@ def path(rel, root=None):
     p = (Path(root) if root else data_dir()) / rel
     if not p.exists():
         raise FileNotFoundError(f'{p} is missing; run `geouno download` first')
+    for record in manifest()['assets'].values():
+        files = ({str(Path(record['extract']) / name): digest for name, digest in record['files'].items()}
+                 if record.get('extract') else {record['path']: record['sha256']})
+        expected = files.get(str(Path(rel)))
+        if expected is not None and sha256(p) != expected:
+            raise RuntimeError(f'{p}: SHA-256 mismatch; run `geouno download` to repair the artifact')
     return p
 
 

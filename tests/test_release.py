@@ -1,5 +1,6 @@
 """Checks against the released artifacts (run ``geouno download`` first; skipped otherwise)."""
 import json
+import os
 
 import numpy as np
 import pytest
@@ -23,7 +24,22 @@ requires_core = pytest.mark.skipif(not _available(), reason='core artifacts not 
 @pytest.fixture(scope='module')
 def backend():
     from geouno.tasks import load_backend
-    return load_backend('cpu', threads=2)
+    value = load_backend('cpu', threads=2)
+    if os.environ.get('GEOUNO_TEST_RECOMPUTE') == '1':
+        from torch.utils.checkpoint import checkpoint
+
+        def wrap(forward):
+            return lambda *args: checkpoint(forward, *args, use_reentrant=False)
+
+        for block in (*value.operator.enc, *value.operator.temperature_decoder,
+                      *value.operator.pressure_decoder, value.operator.global_mix,
+                      value.operator.geology_readout):
+            block.forward = wrap(block.forward)
+        branch = value.operator.branch
+        # Recompute activations for this check only; retain the original batch shape
+        # and arithmetic, and compare the resulting gradient with the frozen archive.
+        value.operator.branch = lambda *args: checkpoint(branch, *args, use_reentrant=False)
+    return value
 
 
 @requires_core
@@ -74,7 +90,7 @@ def test_forward_prediction_close_to_fe_truth(backend):
         pred = backend.predict_real(base, 10, torch.as_tensor(case['logk_truth']))[0].numpy()
     err = pred[:, 16:144] - case['truth'][10, :, 16:144]
     rmse = np.sqrt((err ** 2).mean((1, 2)))
-    # One realization at ten years; Table 1 averages 618 scenarios x 11 times (0.316 K / 0.427 MPa).
+    # This is the transferred application model, distinct from the three independent Table 1 models.
     assert rmse[0] < 3.0 and rmse[1] < 2.0, rmse
 
 
@@ -93,3 +109,13 @@ def test_released_nuts_diagnostics_recompute():
     for key in ('rank_rhat_max', 'bulk_ess_min', 'tail_ess_min'):
         assert np.isclose(diagnostics[key], archived[key], rtol=1e-10), key
     assert diagnostics['divergences'] == 0 and diagnostics['convergence_pass']
+
+
+@requires_core
+def test_map_cache_identity_changes_with_observations(backend):
+    from geouno.tasks import problem_for
+    problem, _ = problem_for(backend, artifacts.Reservoirs(), 'pilot_01', 'multiwell_opt17')
+    key = problem.cache_key()
+    assert problem.cache_key() == key
+    problem.data[0] += .01
+    assert problem.cache_key() != key

@@ -28,7 +28,7 @@ bundle or by the audited runtime import record of the paper inference; the remai
 | `model/blocks.py` | `temperature_revision/model.py` (`CondBlock`) |
 | `model/direct.py` | `direct_operator/model.py` (`DirectFieldOperator`) |
 | `model/joint.py` | `joint_architecture/model.py` (`JointTaskOperator`; historical `initialize` omitted) |
-| `model/geology.py` | `encoder_study/model.py` (`geology_maps`, `GeologyGate`, `RegionalReadout`, `GeologyJointOperator`, `load`) |
+| `model/geothermal.py` | `encoder_study/model.py` (`geology_maps`, `GeologyGate`, `RegionalReadout`, `GeologyJointOperator`, `load`) |
 | `model/geouno.py` | `operator_campaign_20260925/model.py` (`coordinates`, `CoordinateTrunk`, `GeoUNOBasisHead`, `load`) |
 | `model/numerics.py` | `operator_parallel_20260927_v2/runtime.py`; settings of `operator_final_20260930/backend.py` |
 | `inputs.py` | `det_sampler.py` (`field_on_grid`), `history_matching_revision/inputs.py` (`realized_inputs`), `temperature_revision/inference.py` (`PhysicalInputEncoder`, `point_readout`), `direct_operator/inference.py` (`SamplingAdapter`) |
@@ -56,7 +56,7 @@ bundle or by the audited runtime import record of the paper inference; the remai
 * **Static-only member order (scientific correction, 2 October 2026).** The registered `inverse_run.py` drew the
   static-only ensemble as `(members, parameters)`, while ES-MDA draws `(parameters, members)` and transposes, so
   equal seeds gave different vectors. The corrected draw (`static_members`) matches the ES-MDA initial ensemble
-  exactly. The paper reports the corrected results; `reference/paper_task_scores.json` keeps both.
+  exactly. The paper reports the corrected results; `geouno/resources/paper_task_scores.json` keeps both.
 * **Registered geometries.** Case preparation for the 28 registered reservoirs uses the candidate points frozen in
   the monitoring protocol, as the original did. Recomputing them gives identical points except for one coordinate
   of one reservoir that differs in the last floating-point digit (platform `hypot`).
@@ -71,3 +71,8 @@ bundle or by the audited runtime import record of the paper inference; the remai
 
 `provenance/assemble_release.py` records how the release assets, packaged resources, protocols and reference
 scores were built from the archives, with hash checks of every input and deterministic tar archives.
+
+The current class is `GeothermalJointOperator`, serialized as `geothermal_task_decoders`.
+The old `GeologyJointOperator` import and `geology_task_decoders` checkpoint tag remain accepted for compatibility.
+Names such as `geology_maps` and state-dict keys `geology_readout.*` describe permeability features and remain unchanged.
+The immutable source archives retain their original names and hashes.

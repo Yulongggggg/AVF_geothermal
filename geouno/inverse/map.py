@@ -21,9 +21,24 @@ def map_optimize(problem, seed, options=None, dest=None):
     """Return ``(y [1, 4096], info)``.
 
     If ``dest`` is given, each finished start is stored there (``start_<i>.npz`` and
-    ``start_<i>.json``) and reused on restart.
+    ``start_<i>.json``) and reused only when the posterior, seed and optimizer options match.
+    Custom problems must implement ``cache_key()`` to enable persistent restart files.
     """
     options = dict(PAPER_OPTIONS if options is None else options)
+    if dest is not None:
+        dest = Path(dest)
+        identity = dict(posterior=problem.cache_key(), seed=int(seed), options=options)
+        protocol = dest / 'protocol.json'
+        if protocol.exists():
+            if json.loads(protocol.read_text()) != identity:
+                raise ValueError('MAP restart protocol differs; use a new output directory')
+        else:
+            if dest.exists() and any(dest.glob('start_*')):
+                raise ValueError('MAP restart files lack a protocol identity; use a new output directory')
+            dest.mkdir(parents=True, exist_ok=True)
+            temporary = protocol.with_suffix('.tmp')
+            temporary.write_text(json.dumps(identity, indent=2) + '\n')
+            os.replace(temporary, protocol)
     starts = [np.zeros(4096)] + list(np.random.default_rng(seed).normal(size=(2, 4096)))
     summaries = []
     solutions = []
@@ -31,8 +46,13 @@ def map_optimize(problem, seed, options=None, dest=None):
         if dest is not None:
             file, meta = Path(dest) / f'start_{i}.npz', Path(dest) / f'start_{i}.json'
             if file.exists() and meta.exists():
-                solutions.append(np.load(file)['y'])
-                summaries.append(json.loads(meta.read_text()))
+                with np.load(file, allow_pickle=False) as saved:
+                    y = saved['y'].copy()
+                info = json.loads(meta.read_text())
+                if y.shape != (4096,) or not np.isfinite(y).all() or not np.isfinite(info['objective']):
+                    raise ValueError(f'Invalid cached MAP start: {file}')
+                solutions.append(y)
+                summaries.append(info)
                 continue
         begin = time.monotonic()
 

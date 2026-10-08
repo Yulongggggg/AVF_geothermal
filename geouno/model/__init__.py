@@ -5,7 +5,8 @@ from pathlib import Path
 import torch
 
 from .geouno import GeoUNOBasisHead, CoordinateTrunk, build_from_checkpoint, coordinates
-from .geology import GeologyJointOperator, load_parent
+from .geothermal import GeothermalJointOperator, load_parent
+from .geology import GeologyJointOperator  # Historical import compatibility.
 from .numerics import fixed_pressure_pool, configure_inference
 
 #: SHA-256 of the checkpoint evaluated in the paper (POD1024 + 64 learned functions).
@@ -42,7 +43,7 @@ def load_geouno(path, device='cpu', expected_sha256=CHECKPOINT_SHA256, fixed_poo
     return net.to(device).eval()
 
 
-__all__ = ['GeoUNOBasisHead', 'CoordinateTrunk', 'GeologyJointOperator', 'coordinates',
+__all__ = ['GeoUNOBasisHead', 'CoordinateTrunk', 'GeothermalJointOperator', 'GeologyJointOperator', 'coordinates',
            'build_from_checkpoint', 'load_geouno', 'load_parent', 'fixed_pressure_pool',
            'configure_inference', 'sha256', 'CHECKPOINT_SHA256', 'PARENT_SHA256',
            'TRAINABLE_PARAMETERS']

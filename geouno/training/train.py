@@ -38,7 +38,7 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data import DataLoader
 
 from ..model import PARENT_SHA256, sha256
-from ..model.geology import load_parent
+from ..model.geothermal import load_parent
 from ..model.geouno import GeoUNOBasisHead
 from .data import EpochScenarios, ScenarioPairs, collate
 from .loss import objective
@@ -199,7 +199,12 @@ def main(argv=None):
     protocol = dict(pack_meta_sha256=sha256(args.pack / 'meta.csv'), pack_stats_sha256=sha256(args.pack / 'stats.json'),
                     parent_sha256=parent_sha, basis_sha256=sha256(args.bank), pod_rank=args.pod_rank, seed=seed,
                     epochs=args.epochs, smoke=args.smoke, world_size=world,
-                    sources_sha256={p.name: sha256(p) for p in sorted(Path(__file__).parent.glob('*.py'))})
+                    device_type=device.type, torch_version=str(torch.__version__),
+                    numpy_version=np.__version__, cuda_version=torch.version.cuda,
+                    tf32_matmul=torch.backends.cuda.matmul.allow_tf32,
+                    tf32_cudnn=torch.backends.cudnn.allow_tf32,
+                    sources_sha256={str(p.relative_to(Path(__file__).parents[1])): sha256(p)
+                                    for p in sorted(Path(__file__).parents[1].rglob('*.py'))})
     if rank == 0 and not (out / 'protocol.json').exists():
         write(out / 'protocol.json', protocol)
     dist.barrier()

@@ -6,7 +6,7 @@ with the paper) and GPUs. The paper model was trained on four GPUs; the transfer
 ## Lineage
 
 1. **Inherited grid-output predictor** `cf278e64...` (`geouno_parent_cf278e64.pt`, asset group `training`):
-   a `GeologyJointOperator(regional=True, gates=False)` trained for 253 epochs through earlier stages of the
+   a `GeothermalJointOperator(regional=True, gates=False)` trained for 253 epochs through earlier stages of the
    project. Its training history is archived in the
    [OL-geothermal-final-scheme](https://github.com/Yulongggggg/OL-geothermal-final-scheme) repository
    (`geouno/` directory); it is released here as the starting point of the final stage, not retrained.
@@ -47,7 +47,8 @@ plus the first and last) selects `best.pt` by the mean ratio of T/p RMSE to the 
 evaluates all eleven times. For the paper model the selected checkpoint is the final epoch (131).
 
 `--max-hours` checkpoints and exits for scheduler time limits; rerunning the same command resumes from `last.pt`.
-`protocol.json` in the run directory records the input hashes.
+`protocol.json` records input hashes, package source hashes and numerical runtime settings. A changed
+model implementation or runtime requires a new output directory rather than silently resuming the old run.
 
 A three-epoch smoke run on a synthetic pack exercises the full loop on a CPU:
 
@@ -60,15 +61,20 @@ pytest -m slow tests/test_training.py
 Load your checkpoint with `geouno.model.load_geouno(path, expected_sha256=None)`. Table 1 of the paper averages
 paired RMSE over all 618 test scenarios (8,621 members per time) and eleven times. The archived per-scenario and
 per-time scores of the released model (618 x 11 x 2 rows, exported from the evaluation archive, not recomputed
-here) are in `reference/source_data/forward_scenario_time_scores.csv`; the Table 1 evaluation summary of all
-checkpoints is in `reference/source_data/table1_nearwell/`.
+here) are in `geouno/resources/source_data/forward_scenario_time_scores.csv`. These describe the transferred
+application model. Table 1 now uses three independently initialized, refined POD models (198 executed epochs
+per seed); their complete FP32 scores and frozen protocol are in
+`geouno/resources/source_data/table1_three_seed_20261007/`. The historical baseline evaluation summaries
+are in `geouno/resources/source_data/table1_nearwell/`. The transfer-training command above does not rerun
+the separate independent-initialization/refinement experiment; its training scripts and records are in
+the manuscript repository, `scripts/table1_three_seed_20261007/` and the associated Source Data.
 
 ## Reproducibility notes
 
 * GPU training is not bitwise reproducible across hardware or library versions; expect statistically similar,
-  not identical, checkpoints. The released checkpoint is the one evaluated in the paper.
+  not identical, checkpoints. The released checkpoint is the transferred model used in the application experiments.
 * The training sources were snapshotted on 2 October 2026 for the manuscript audit; the run protocol that pinned
   their hashes on the training cluster is not part of the public archive ([PROVENANCE.md](PROVENANCE.md)).
 * The baselines of Table 1 (DeepONet, FNO, U-FNO, U-Net, ResNet, PCNO) used separate training scripts that are
   archived in the manuscript repository's audit snapshot; their evaluation summaries are in
-  `reference/source_data/table1_nearwell` and `reference/source_data/uniform_baselines_20261004`.
+  `geouno/resources/source_data/table1_nearwell` and `geouno/resources/source_data/uniform_baselines_20261004`.

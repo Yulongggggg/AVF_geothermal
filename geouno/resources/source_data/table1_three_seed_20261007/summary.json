@@ -1,0 +1,246 @@
+{
+  "status": "complete",
+  "identity": {
+    "protocol_sha256": "0244c78247c301f56996fab57aa0a1cca8ab413c67b255e652a10e4a5633fa1a",
+    "evaluator_sha256": "2a074a3c0e86dbd0a277ca7322842cc71dad3f892475b3639e46ffbd623e1817",
+    "torch_version": "2.8.0+cu128",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "job_id": "125044",
+    "precision": "FP32; BF16 and TF32 disabled",
+    "checkpoint_selection": "Frozen by original validation before any test predictions; all three seeds retained"
+  },
+  "seeds": [
+    20260925,
+    20260926,
+    20260927
+  ],
+  "runs": [
+    {
+      "seed": 20260925,
+      "checkpoint_sha256": "a447fc7e57104164c5a05e11002b25f6a7287306c0c659fc6981766b1a7d4982",
+      "source_sha256": "d9a03cf67fa08cd7f6d5a52457a1c0899556a711c21610e289f4ab5a98bceafe",
+      "scores": {
+        "all_times": {
+          "P_field_rmse": 0.4078472140614353,
+          "P_high_pressure_rmse": 0.90198777017042,
+          "P_mean_rmse": 0.33682518059779076,
+          "P_nearwell_rmse": 0.4074538383634885,
+          "T_field_rmse": 0.36239039421297453,
+          "T_mean_rmse": 0.30097229720630897,
+          "T_nearwell_rmse": 0.9509278939666035,
+          "inj_P_P90_abs": 0.5205974605588385,
+          "inj_T_P90_abs": 1.055241424007238,
+          "prod_P_P90_abs": 0.785296312453746,
+          "prod_T_P90_abs": 0.5192907437422665
+        },
+        "ten_year": {
+          "P_field_rmse": 0.570540808029714,
+          "P_high_pressure_rmse": 1.3247314318689196,
+          "P_mean_rmse": 0.4634543257195828,
+          "P_nearwell_rmse": 0.5719874143859667,
+          "T_field_rmse": 0.7757520921600675,
+          "T_mean_rmse": 0.5871325651949277,
+          "T_nearwell_rmse": 2.2881144217206435,
+          "inj_P_P90_abs": 0.751964032173829,
+          "inj_T_P90_abs": 0.524185291806558,
+          "prod_P_P90_abs": 0.9973322868459207,
+          "prod_T_P90_abs": 1.34093262377034
+        }
+      }
+    },
+    {
+      "seed": 20260926,
+      "checkpoint_sha256": "28de141d7936cef2385753a600af9dde1ddbfa45ca939bf7741b701f8309a22f",
+      "source_sha256": "545ef85176e4296456213ea00a0c8b81233100851c4a178df81edcc1d89167a8",
+      "scores": {
+        "all_times": {
+          "P_field_rmse": 0.4171959687546049,
+          "P_high_pressure_rmse": 0.9402748484524213,
+          "P_mean_rmse": 0.34842733113925656,
+          "P_nearwell_rmse": 0.4160741764823753,
+          "T_field_rmse": 0.37108838530934124,
+          "T_mean_rmse": 0.30897238269797905,
+          "T_nearwell_rmse": 0.9679855427765682,
+          "inj_P_P90_abs": 0.5322231027706362,
+          "inj_T_P90_abs": 0.9784804066959502,
+          "prod_P_P90_abs": 0.8032851478387936,
+          "prod_T_P90_abs": 0.5416623055653218
+        },
+        "ten_year": {
+          "P_field_rmse": 0.5830631121016533,
+          "P_high_pressure_rmse": 1.3904762236995207,
+          "P_mean_rmse": 0.47745380403992377,
+          "P_nearwell_rmse": 0.5837131871368652,
+          "T_field_rmse": 0.7967911339018338,
+          "T_mean_rmse": 0.6043208491744347,
+          "T_nearwell_rmse": 2.308838399362217,
+          "inj_P_P90_abs": 0.7615460148151207,
+          "inj_T_P90_abs": 0.3756848851540931,
+          "prod_P_P90_abs": 1.0123106087172837,
+          "prod_T_P90_abs": 1.3968918701367719
+        }
+      }
+    },
+    {
+      "seed": 20260927,
+      "checkpoint_sha256": "c013a201099f5de69220cc8392a2779c35ed1912e3b661137f2089227c682e95",
+      "source_sha256": "f7784da9140ff358c608ceb184f7990b9dc3614e72664b99aa04e974153d59ba",
+      "scores": {
+        "all_times": {
+          "P_field_rmse": 0.41432424149764785,
+          "P_high_pressure_rmse": 0.9179338358835113,
+          "P_mean_rmse": 0.34497097916007874,
+          "P_nearwell_rmse": 0.41231172461040133,
+          "T_field_rmse": 0.3732141344836127,
+          "T_mean_rmse": 0.31076977872955536,
+          "T_nearwell_rmse": 0.9721094809957402,
+          "inj_P_P90_abs": 0.5175371766715837,
+          "inj_T_P90_abs": 0.9743220116573902,
+          "prod_P_P90_abs": 0.8086418652549253,
+          "prod_T_P90_abs": 0.5324744630055491
+        },
+        "ten_year": {
+          "P_field_rmse": 0.5795418965783947,
+          "P_high_pressure_rmse": 1.344761273209575,
+          "P_mean_rmse": 0.47590990946402106,
+          "P_nearwell_rmse": 0.5814237975994649,
+          "T_field_rmse": 0.8064233680951942,
+          "T_mean_rmse": 0.6156629534215218,
+          "T_nearwell_rmse": 2.3552492252011517,
+          "inj_P_P90_abs": 0.748691908426975,
+          "inj_T_P90_abs": 0.46037319728306364,
+          "prod_P_P90_abs": 1.0111367625177354,
+          "prod_T_P90_abs": 1.3498070273492346
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "all_times": {
+      "P_field_rmse": {
+        "mean": 0.4131224747712294,
+        "sample_sd": 0.004788839737014602,
+        "runs": 3
+      },
+      "P_high_pressure_rmse": {
+        "mean": 0.9200654848354508,
+        "sample_sd": 0.019232343494326228,
+        "runs": 3
+      },
+      "P_mean_rmse": {
+        "mean": 0.34340783029904204,
+        "sample_sd": 0.005956932941374198,
+        "runs": 3
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.41194657981875504,
+        "sample_sd": 0.004321753736636694,
+        "runs": 3
+      },
+      "T_field_rmse": {
+        "mean": 0.36889763800197617,
+        "sample_sd": 0.005734794563461191,
+        "runs": 3
+      },
+      "T_mean_rmse": {
+        "mean": 0.30690481954461446,
+        "sample_sd": 0.005215723736400519,
+        "runs": 3
+      },
+      "T_nearwell_rmse": {
+        "mean": 0.9636743059129707,
+        "sample_sd": 0.011229647355939346,
+        "runs": 3
+      },
+      "inj_P_P90_abs": {
+        "mean": 0.5234525800003528,
+        "sample_sd": 0.0077480892235242535,
+        "runs": 3
+      },
+      "inj_T_P90_abs": {
+        "mean": 1.0026812807868595,
+        "sample_sd": 0.045565881466665535,
+        "runs": 3
+      },
+      "prod_P_P90_abs": {
+        "mean": 0.799074441849155,
+        "sample_sd": 0.012229114546709706,
+        "runs": 3
+      },
+      "prod_T_P90_abs": {
+        "mean": 0.5311425041043791,
+        "sample_sd": 0.01124510028796992,
+        "runs": 3
+      }
+    },
+    "ten_year": {
+      "P_field_rmse": {
+        "mean": 0.5777152722365874,
+        "sample_sd": 0.006457897659617218,
+        "runs": 3
+      },
+      "P_high_pressure_rmse": {
+        "mean": 1.3533229762593384,
+        "sample_sd": 0.03369824153493049,
+        "runs": 3
+      },
+      "P_mean_rmse": {
+        "mean": 0.47227267974117587,
+        "sample_sd": 0.0076758340493385925,
+        "runs": 3
+      },
+      "P_nearwell_rmse": {
+        "mean": 0.5790414663740989,
+        "sample_sd": 0.006215308777683035,
+        "runs": 3
+      },
+      "T_field_rmse": {
+        "mean": 0.7929888647190318,
+        "sample_sd": 0.015685175487575375,
+        "runs": 3
+      },
+      "T_mean_rmse": {
+        "mean": 0.6023721225969614,
+        "sample_sd": 0.014364675929005746,
+        "runs": 3
+      },
+      "T_nearwell_rmse": {
+        "mean": 2.3174006820946706,
+        "sample_sd": 0.03437666321480999,
+        "runs": 3
+      },
+      "inj_P_P90_abs": {
+        "mean": 0.754067318471975,
+        "sample_sd": 0.006680185079653009,
+        "runs": 3
+      },
+      "inj_T_P90_abs": {
+        "mean": 0.45341445808123826,
+        "sample_sd": 0.07449436711890456,
+        "runs": 3
+      },
+      "prod_P_P90_abs": {
+        "mean": 1.0069265526936466,
+        "sample_sd": 0.00832958171775022,
+        "runs": 3
+      },
+      "prod_T_P90_abs": {
+        "mean": 1.3625438404187822,
+        "sample_sd": 0.030075390585181105,
+        "runs": 3
+      }
+    }
+  },
+  "scenario_time_records": 20394,
+  "cohort": {
+    "scenarios": 618,
+    "members": 8621,
+    "times": 11,
+    "high_pressure_scenarios": 229,
+    "high_pressure_members": 960,
+    "quantile_scenarios": 532
+  },
+  "aggregation": "Pool squared error within each scenario/time, take root, then equal scenario/time means. Mean and sample SD across all three training seeds.",
+  "application_model_replaced": false,
+  "application_checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e"
+}

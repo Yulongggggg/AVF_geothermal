@@ -1,23 +1,25 @@
 """Recompute the manuscript's headline numbers from the bundled Source Data.
 
-Inputs are the Source Data files in ``reference/source_data`` (copied from the manuscript's
+Inputs are the packaged Source Data in ``geouno/resources/source_data`` (copied from the manuscript's
 scientific audit, ``scientific_audit_20261002/source_data``). Each recomputed value is
-rounded as printed and compared with the manuscript (revision of 5 October 2026).
+rounded as printed and compared with the manuscript (revision of 7 October 2026).
 """
 import csv
+import gzip
 import json
+import math
 import statistics
 from collections import defaultdict
 from pathlib import Path
 
-from .artifacts import REPOSITORY
+from .artifacts import resource
 
-SOURCE = REPOSITORY / 'reference' / 'source_data'
+SOURCE = resource('source_data')
 
 # Values as printed in the manuscript (Table 1, Table 2, Supplementary Table 1, abstract).
 PRINTED = {
     'Table 1': {
-        'GeoUNO': (0.316, 0.427, 0.862, 0.424),
+        'GeoUNO': ((.369, .006), (.413, .005), (.964, .011), (.412, .004)),
         'DeepONet': ((1.650, .003), (0.779, .014), (2.258, .020), (0.790, .023)),
         'FNO': ((1.618, .026), (1.431, .050), (2.115, .011), (1.564, .037)),
         'U-FNO': ((0.603, .042), (0.693, .010), (1.271, .022), (0.806, .019)),
@@ -63,6 +65,8 @@ RETIRED = {'attention_unet'}
 
 
 def _mean_sd(values):
+    if not all(math.isfinite(v) for v in values):
+        raise ValueError('Non-finite Source Data')
     return statistics.mean(values), statistics.stdev(values)
 
 
@@ -71,18 +75,50 @@ def monitoring_table(path=None):
     rows = defaultdict(dict)
     with Path(path or SOURCE / 'monitoring_primary_source_data.csv').open() as handle:
         for r in csv.DictReader(handle):
-            rows[(r['configuration'], r['metric'])][r['reservoir']] = float(r['value'])
+            group = rows[(r['configuration'], r['metric'])]
+            if r['reservoir'] in group:
+                raise ValueError('Duplicate reservoir in monitoring Source Data')
+            group[r['reservoir']] = float(r['value'])
     return rows
+
+
+def geouno_test_runs():
+    """Independent equal-scenario/time means from all three frozen FP32 test runs.
+
+    The transferred application model is deliberately excluded. Missing, duplicated,
+    non-finite or mismatched scenario/time records fail instead of changing the average.
+    """
+    folder = SOURCE / 'table1_three_seed_20261007'
+    with gzip.open(folder / 'cohort.json.gz', 'rt') as handle:
+        cohort = json.load(handle)
+    expected = {(name, int(t)): len(members) for name, t, members in cohort}
+    if len(expected) != 618 * 11 or len(cohort) != len(expected):
+        raise ValueError('Incomplete or duplicate test cohort')
+    columns = ('T_field_rmse', 'P_field_rmse', 'T_nearwell_rmse', 'P_nearwell_rmse')
+    runs = defaultdict(dict)
+    with gzip.open(folder / 'scenario_time_scores.csv.gz', 'rt') as handle:
+        for row in csv.DictReader(handle):
+            seed, key = int(row['seed']), (row['scenario'], int(row['time_index']))
+            if key in runs[seed] or expected.get(key) != int(row['members']):
+                raise ValueError('Duplicate or mismatched test record')
+            values = tuple(float(row[k]) for k in columns)
+            if not all(math.isfinite(v) and v >= 0 for v in values):
+                raise ValueError('Invalid test metric')
+            runs[seed][key] = values
+    if set(runs) != {20260925, 20260926, 20260927} or any(set(r) != set(expected) for r in runs.values()):
+        raise ValueError('Incomplete three-seed test results')
+    return [tuple(statistics.mean(c) for c in zip(*runs[s].values())) for s in sorted(runs)]
 
 
 def table1():
     by = defaultdict(list)
     with (SOURCE / 'table1_nearwell' / 'run_summary.csv').open() as handle:
         for r in csv.DictReader(handle):
-            if r['model'] in RETIRED:
+            if r['model'] in RETIRED or r['model'] == 'geouno':
                 continue
             by[MODEL_NAMES[r['model']]].append([float(r[k]) for k in ('T_field_rmse', 'P_field_rmse',
                                                                       'T_nearwell_rmse', 'P_nearwell_rmse')])
+    by['GeoUNO'] = geouno_test_runs()
     out = {}
     for name, runs in by.items():
         cols = list(zip(*runs))
@@ -143,15 +179,21 @@ def check():
     computed = {'Table 1': table1(), **table2(), 'Supplementary Table 1': supplementary_table1(),
                 'Abstract': abstract()}
     report = []
+    if set(computed) != set(PRINTED):
+        raise ValueError('Computed table set differs from printed tables')
     for table, rows in PRINTED.items():
+        if set(computed[table]) != set(rows):
+            raise ValueError(f'Computed rows differ from printed rows: {table}')
         for row, printed in rows.items():
             value = computed[table][row]
             if not isinstance(printed, tuple):
                 ok = round(value) == printed if isinstance(printed, int) else round(value, 2) == printed
                 report.append((table, row, '', value, printed, ok))
                 continue
-            for col, (v, p) in enumerate(zip(value, printed)):
+            for col, (v, p) in enumerate(zip(value, printed, strict=True)):
                 if isinstance(p, tuple):
+                    if len(v) != len(p):
+                        raise ValueError(f'Wrong statistic count: {table}/{row}')
                     ok = round(v[0], 3) == p[0] and round(v[1], 3) == p[1]
                 else:
                     ok = round(v, 3) == p

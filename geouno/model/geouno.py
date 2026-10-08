@@ -1,4 +1,4 @@
-"""GeoUNO: coefficient-times-basis output head on the geology-conditioned joint operator.
+"""GeoUNO: coefficient-times-basis output head on the joint geothermal operator.
 
 Source: ``operator_campaign_20260925/model.py`` (``coordinates``, ``CoordinateTrunk``,
 ``GeoUNOBasisHead``, ``load``). For each channel ``l`` in {T, p}::
@@ -21,7 +21,7 @@ from torch.nn import functional as F
 from torch.utils.checkpoint import checkpoint
 
 from .direct import DirectFieldOperator
-from .geology import GeologyJointOperator, geology_maps
+from .geothermal import GeothermalJointOperator, geology_maps
 
 HEIGHT, WIDTH = 160, 128
 
@@ -53,7 +53,7 @@ class CoordinateTrunk(nn.Module):
         return torch.stack((self.temperature(fourier).T, self.pressure(xy).T))
 
 
-class GeoUNOBasisHead(GeologyJointOperator):
+class GeoUNOBasisHead(GeothermalJointOperator):
     """The selected GeoUNO operator (``architecture='geouno_basis_head'``).
 
     ``forward(field, scalar)`` maps six input channels on the 160 x 128 grid

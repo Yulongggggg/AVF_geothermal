@@ -1,0 +1,108 @@
+{
+  "note": "Not counted as successful checks. Earlier original unguarded jobs were also interrupted during the account OOM.",
+  "runs": [
+    {
+      "command": [
+        "/usr/bin/env",
+        "PYTHONPATH=/tmp/yliu5/geouno-review-deps",
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-m",
+        "not slow"
+      ],
+      "exit_code": -15,
+      "status": "memory_guard",
+      "max_observed_rss_mib": 2236.90625,
+      "account_peak_mib": 6872.27734375,
+      "account_limit_mib": 8192.0,
+      "seconds": 79.31309619545937,
+      "report": "geouno-final-unit-memory.json"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_release.py::test_archived_posterior_value_and_gradient"
+      ],
+      "exit_code": -15,
+      "status": "memory_guard",
+      "max_observed_rss_mib": 2144.578125,
+      "account_peak_mib": 7470.38671875,
+      "account_limit_mib": 8192.0,
+      "seconds": 14.91690356656909,
+      "report": "geouno-serial-07.json"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_release.py::test_archived_posterior_value_and_gradient"
+      ],
+      "exit_code": -15,
+      "status": "memory_guard",
+      "max_observed_rss_mib": 2041.03515625,
+      "account_peak_mib": 7362.22265625,
+      "account_limit_mib": 8192.0,
+      "seconds": 41.25211776793003,
+      "report": "geouno-serial-07-recomputed.json"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "provenance/verify_equivalence.py",
+        "--low-memory",
+        "--report",
+        "/tmp/yliu5/geouno-review-equivalence-final.json"
+      ],
+      "exit_code": -15,
+      "status": "memory_guard",
+      "max_observed_rss_mib": 1880.76171875,
+      "account_peak_mib": 7221.66796875,
+      "account_limit_mib": 8192.0,
+      "seconds": 71.28330286964774,
+      "report": "geouno-equivalence-memory.json"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "provenance/verify_equivalence.py",
+        "--low-memory",
+        "--threads",
+        "1",
+        "--report",
+        "/tmp/yliu5/geouno-review-equivalence-serial.json"
+      ],
+      "exit_code": -15,
+      "status": "memory_guard",
+      "max_observed_rss_mib": 1723.9140625,
+      "account_peak_mib": 7185.88671875,
+      "account_limit_mib": 8192.0,
+      "seconds": 53.794193401932716,
+      "report": "geouno-equivalence-serial-memory.json"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "provenance/verify_equivalence.py",
+        "--low-memory",
+        "--threads",
+        "1",
+        "--report",
+        "/tmp/yliu5/geouno-review-equivalence-bounded.json"
+      ],
+      "exit_code": -15,
+      "status": "memory_guard",
+      "max_observed_rss_mib": 1917.26953125,
+      "account_peak_mib": 7201.89453125,
+      "account_limit_mib": 8192.0,
+      "seconds": 46.68824004009366,
+      "report": "geouno-equivalence-bounded-memory.json"
+    }
+  ]
+}

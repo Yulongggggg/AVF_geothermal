@@ -20,4 +20,15 @@ jobs:
       - name: Lint
         run: ruff check .
       - name: Unit tests (no release artifacts)
-        run: pytest -q -m "not slow and not release"
+        run: |
+          for test_file in tests/test_*.py; do
+            if [ "$test_file" = "tests/test_release.py" ]; then continue; fi
+            pytest -q "$test_file" -m "not slow and not release" || exit 1
+          done
+      - name: Installed wheel outside checkout
+        run: |
+          pip wheel . --no-deps -w /tmp/geouno-wheel
+          pip install --no-deps --target /tmp/geouno-installed /tmp/geouno-wheel/*.whl
+          cd /tmp
+          PYTHONPATH=/tmp/geouno-installed python -m geouno.cli paper-numbers
+          PYTHONPATH=/tmp/geouno-installed python -c "from geouno.tasks import reference_scores; assert reference_scores()"

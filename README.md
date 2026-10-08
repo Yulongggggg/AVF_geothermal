@@ -15,12 +15,16 @@ This repository is the code and artifact release for
 > Yulong Liu, Jonah Botvinick-Greenhouse, Yunan Yang and Chloé Arson.
 > *Joint operator learning for geothermal forecasting and inference under uncertainty.* Manuscript, 2026.
 
-It contains the exact model evaluated in the paper (checkpoint SHA-256 `ed043489…dc18e`), the inference and
+It contains the fixed transferred model used for the paper's applications (checkpoint SHA-256 `ed043489…dc18e`), the inference and
 monitoring-design code, the 24 test reservoirs used for inversion, the six-reservoir NUTS chains, the frozen
 experiment protocols and the Source Data behind the tables. Every scientific function is transcribed statement by
 statement from the code that produced the paper results; the model, inference, monitoring and training components
 are checked against that code bit for bit on the released data, and the inverse prior is refitted from released
 inputs ([docs/PROVENANCE.md](docs/PROVENANCE.md)).
+
+Table 1 uses three independently initialized and refined GeoUNO models; its packaged Source Data now report
+their means and sample standard deviations. The [7 October code review](docs/REVIEW_20261007.md) records the
+geothermal-operator naming correction, installed-package repairs, restart checks and current validation.
 
 ![GeoUNO overview](docs/images/overview.png)
 
@@ -32,7 +36,7 @@ inputs ([docs/PROVENANCE.md](docs/PROVENANCE.md)).
 | Physical input encoding, dense and block-averaged predictions | [`geouno/inputs.py`](geouno/inputs.py), [`geouno/backend.py`](geouno/backend.py) | yes |
 | Static Gaussian conditioning, posterior, MAP, ES-MDA, NUTS, forecast scores | [`geouno/inverse`](geouno/inverse) | yes |
 | Monitoring geometries, coordinate-keyed noise, A-optimal design, 49 configurations | [`geouno/monitoring`](geouno/monitoring) | yes |
-| Paper tables and abstract numbers from Source Data | [`geouno/paper.py`](geouno/paper.py), [`reference/source_data`](reference/source_data) | yes |
+| Paper tables and abstract numbers from Source Data | [`geouno/paper.py`](geouno/paper.py), [`geouno/resources/source_data`](geouno/resources/source_data) | yes |
 | Inverse-prior fit (stationary covariance from 1,024 training fields) | [`geouno/inverse/fit_prior.py`](geouno/inverse/fit_prior.py) | yes |
 | POD basis and 132-epoch transfer training | [`geouno/training`](geouno/training), [docs/TRAINING.md](docs/TRAINING.md) | needs the FE corpus |
 | Frozen protocols, per-task paper results, original sources | [`protocols`](protocols), [`reference`](reference), [`provenance`](provenance) | — |
@@ -88,10 +92,10 @@ with torch.no_grad():
 | NUTS diagnostics and scores (Table 2, Supplementary Tables 10–12) from the released chains | `geouno download --group nuts && geouno nuts-verify` | minutes |
 | A NUTS chain from scratch | `geouno nuts-chain --case test_01 --chain 0 --device cuda:0 --out runs/nuts` | ≈3.6 h on one RTX A4000 |
 | Inverse prior (marginal SD 0.976 dec) | `geouno download --group prior && geouno refit-prior --out runs/prior` | minutes |
-| POD basis and transfer training, Table 1 evaluation | [docs/TRAINING.md](docs/TRAINING.md) | FE corpus, 4 GPUs |
+| POD basis and transferred application-model training | [docs/TRAINING.md](docs/TRAINING.md) | FE corpus, 4 GPUs |
 
 Every `geouno run` prints the manuscript metrics next to the archived values of the same task
-(`reference/paper_task_scores.json`). The full list of tasks, seeds and expected agreement is in
+(`geouno/resources/paper_task_scores.json`). The full list of tasks, seeds and expected agreement is in
 [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
 **Verification of this release.** Rerunning paper tasks from scratch reproduces the archived ES-MDA, static-only and
@@ -126,7 +130,7 @@ released on Zenodo with the publication; see [docs/DATA.md](docs/DATA.md) for it
 ```
 geouno/            Python package (model, inputs, backend, inverse, monitoring, training, CLI)
 protocols/         frozen protocols of the reported experiments (seeds, configurations, design, calibration)
-reference/         archived per-task results and Source Data of the paper
+reference/         guide to archived per-task results and packaged Source Data
 provenance/        original source files, the archived NUTS runtime, equivalence verifier and release assembly
 docs/              model, data, reproducibility, training, provenance and code-review notes
 tests/             unit tests (CI) and release tests (with downloaded artifacts)

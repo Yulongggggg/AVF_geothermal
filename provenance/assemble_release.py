@@ -205,7 +205,7 @@ def main():
     nuts_root = a.results / 'results'
     for case in [f'test_{i:02d}' for i in range(1, 7)]:
         scores[f'multiwell_opt17/{case}/nuts'] = read(nuts_root / case / 'scores.json')
-    write(repo / 'reference/paper_task_scores.json', scores)
+    write(repo / 'geouno/resources/paper_task_scores.json', scores)
     print(json.dumps({k: (v['bytes'], v['sha256'][:12]) for k, v in assets.items()}, indent=1))
     print('reference tasks:', len(scores))
 

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "installed_source": "/tmp/yliu5/geouno-wheel-after-install/geouno/resources/source_data",
+  "cwd": "/tmp",
+  "checked_paper_cells": 80,
+  "verified_data_files": 23,
+  "reference_tasks": 1206,
+  "geothermal_compatibility": true
+}

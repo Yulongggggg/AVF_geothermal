@@ -1,0 +1,199 @@
+{
+  "passed": 46,
+  "skipped": 1,
+  "runs": [
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_math.py"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 658.015625,
+      "account_peak_mib": 5356.62890625,
+      "account_limit_mib": 8192.0,
+      "seconds": 12.31193744763732,
+      "test_output": "........                                                                 [100%]\n8 passed in 7.51s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_model.py"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 965.76171875,
+      "account_peak_mib": 5620.88671875,
+      "account_limit_mib": 8192.0,
+      "seconds": 10.6327143907547,
+      "test_output": "......                                                                   [100%]\n6 passed in 9.17s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_monitoring.py"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 49.5,
+      "account_peak_mib": 5179.171875,
+      "account_limit_mib": 8192.0,
+      "seconds": 62.69678181409836,
+      "test_output": ".......                                                                  [100%]\n7 passed in 61.08s (0:01:01)\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_paper_numbers.py"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 41.1640625,
+      "account_peak_mib": 5138.12109375,
+      "account_limit_mib": 8192.0,
+      "seconds": 2.2960471361875534,
+      "test_output": "..                                                                       [100%]\n2 passed in 0.63s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_review_regressions.py"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 653.56640625,
+      "account_peak_mib": 5486.0546875,
+      "account_limit_mib": 8192.0,
+      "seconds": 19.13426610454917,
+      "test_output": ".........                                                                [100%]\n9 passed in 16.89s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_training.py"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 1689.15625,
+      "account_peak_mib": 7005.7421875,
+      "account_limit_mib": 8192.0,
+      "seconds": 49.97338521108031,
+      "test_output": ".........                                                                [100%]\n9 passed in 46.11s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_release.py::test_checkpoint_metadata"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 849.609375,
+      "account_peak_mib": 5896.546875,
+      "account_limit_mib": 8192.0,
+      "seconds": 10.528485145419836,
+      "test_output": ".                                                                        [100%]\n1 passed in 7.96s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_release.py::test_archived_posterior_value_and_gradient"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 1744.58203125,
+      "account_peak_mib": 7038.25,
+      "account_limit_mib": 8192.0,
+      "seconds": 34.921775214374065,
+      "test_output": ".                                                                        [100%]\n1 passed in 32.22s\n",
+      "GEOUNO_TEST_RECOMPUTE": "1"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_release.py::test_regenerated_opt17_cases_equal_released_files"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 554.5625,
+      "account_peak_mib": 5937.62890625,
+      "account_limit_mib": 8192.0,
+      "seconds": 13.041760873049498,
+      "test_output": ".                                                                        [100%]\n1 passed in 10.43s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_release.py::test_forward_prediction_close_to_fe_truth"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 1063.36328125,
+      "account_peak_mib": 6433.37890625,
+      "account_limit_mib": 8192.0,
+      "seconds": 16.68557793647051,
+      "test_output": ".                                                                        [100%]\n1 passed in 14.04s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_release.py::test_released_nuts_diagnostics_recompute"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 500.72265625,
+      "account_peak_mib": 5886.80078125,
+      "account_limit_mib": 8192.0,
+      "seconds": 8.791666083037853,
+      "test_output": "s                                                                        [100%]\n1 skipped in 6.67s\n"
+    },
+    {
+      "command": [
+        "/mnt/home/yliu5/.venvs/olgeo-inference-compare/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_release.py::test_map_cache_identity_changes_with_observations"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "max_observed_rss_mib": 1296.27734375,
+      "account_peak_mib": 6745.8046875,
+      "account_limit_mib": 8192.0,
+      "seconds": 15.14310958236456,
+      "test_output": ".                                                                        [100%]\n1 passed in 12.66s\n"
+    }
+  ]
+}
