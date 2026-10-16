@@ -21,10 +21,7 @@ jobs:
         run: ruff check .
       - name: Unit tests (no release artifacts)
         run: |
-          for test_file in tests/test_*.py; do
-            if [ "$test_file" = "tests/test_release.py" ]; then continue; fi
-            pytest -q "$test_file" -m "not slow and not release and not model_execution" || exit 1
-          done
+          pytest -q --ignore=tests/test_release.py -m "not slow and not release and not model_execution"
       - name: Installed wheel outside checkout
         run: |
           pip wheel . --no-deps -w /tmp/geouno-wheel

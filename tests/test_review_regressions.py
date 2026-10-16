@@ -17,6 +17,7 @@ from geouno.model.geothermal import GeothermalJointOperator, load_parent
 from geouno.model.geology import GeologyJointOperator
 
 
+@pytest.mark.model_execution
 def test_geothermal_name_loads_both_checkpoint_tags(tmp_path):
     assert GeologyJointOperator is GeothermalJointOperator
     torch.manual_seed(9)
