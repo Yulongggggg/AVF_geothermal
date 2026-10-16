@@ -31,7 +31,7 @@ six sets of four NUTS chains, 1,542 saved task/reference score records, and the 
 git clone https://github.com/Yulongggggg/AVF_geothermal.git
 cd AVF_geothermal
 python -m pip install -e ".[all]"
-geouno paper-numbers                   # 138 checks, no model execution
+geouno paper-numbers                   # 170 checks, no model execution
 geouno download                        # checkpoint, prior factor and reservoir cases
 geouno verify                          # hashes and strict checkpoint loading; no prediction
 ```

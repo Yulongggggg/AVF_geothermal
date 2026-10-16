@@ -26,10 +26,9 @@ loading separately confirms tensor compatibility and 3,520,755 parameters.
   `operator_final_20261015`.
 - Final NUTS artifacts contain six reservoirs × four completed chains and their saved diagnostics/forecasts.
 - The geological truth, prior means and base FE inputs are unchanged; observation locations use the new design.
-- `paper-numbers` recomputes 138 printed entries with zero mismatches from saved records. It validates the
+- `paper-numbers` recomputes 170 printed entries with zero mismatches from saved records. It validates the
   three final GeoUNO seeds and their scenario/time/member identities. The final application seed is included.
-- Baseline rows retain their approved results. The common 99-epoch appendix table has two completed models
-  and four pending models represented by dashes. CO₂ tables contain all three completed seeds at each POD rank.
+- Baseline rows retain their approved results. The common 99-epoch appendix table includes all six models, each with three completed seeds. CO₂ tables contain all three completed seeds at each POD rank.
 - File hashes are in `geouno/resources/source_data/SHA256SUMS` and `release_manifest.json`.
 
 The final large assets are stored on the Git LFS branch `artifacts-final-20261015`; the unchanged prior-fit

@@ -13,9 +13,9 @@ geouno prepare-cases --check --out runs/cases
 ```
 
 `paper-numbers` independently aggregates saved per-scenario/time, per-reservoir and per-seed values and
-checks **138 printed entries**, with zero mismatches. It covers Table 1, both Table 2 cohorts, completed
-uniform-protocol rows, the CO₂ table and three abstract percentages. It validates the three final test seeds,
-618 × 11 scenario/time records per seed and 8,621 realizations per time. The four pending uniform rows are dashes.
+checks **170 printed entries**, with zero mismatches. It covers Table 1, both Table 2 cohorts, all six
+uniform-protocol models, the CO₂ table and three abstract percentages. It validates the three final test seeds,
+618 × 11 scenario/time records per seed and 8,621 realizations per time. The common 99-epoch comparison includes all 18 completed training runs.
 Baseline RMSE uses its original saved evaluation; pooled relative L2 uses the saved 13 October FP32 evaluation.
 
 `verify` checks all selected artifact hashes and strictly loads the final checkpoint, checking 3,520,755
