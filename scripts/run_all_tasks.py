@@ -1,6 +1,6 @@
-"""Run every registered inference task of the paper (resumable) and summarize agreement.
+"""Run every inference task of the paper (resumable) and summarize agreement.
 
-1,104 monitoring evaluations (ES-MDA, or analytic conditioning for `multiwell_opt9_k`), 24 MAP runs and the
+1,464 monitoring evaluations (ES-MDA, or analytic conditioning for `multiwell_opt9_k`), 24 MAP runs and the
 48 prior/static-prior reference ensembles. A task is skipped only when its completion record and all four
 output hashes agree. Distribute the work by running several copies with different `--shard i/n`.
 
@@ -36,7 +36,7 @@ def main():
     ap.add_argument('--summary', action='store_true')
     a = ap.parse_args()
     todo = tasks()
-    assert len(todo) == 1104 + 24 + 48
+    assert len(todo) == 1464 + 24 + 48
     if a.summary:
         ref, worst, done, incomplete = reference_scores(), {}, 0, 0
         for config, case, method in todo:

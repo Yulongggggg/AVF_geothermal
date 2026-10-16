@@ -11,6 +11,8 @@ from geouno.model import TRAINABLE_PARAMETERS, GeoUNOBasisHead, fixed_pressure_p
 from geouno.model.geouno import coordinates
 
 
+pytestmark = pytest.mark.model_execution
+
 @pytest.fixture(scope='module')
 def net():
     torch.manual_seed(0)
@@ -18,7 +20,6 @@ def net():
     with torch.no_grad():
         model.pod.normal_()
         model.mean_function.normal_()
-        model.coefficient_delta[-1].weight.normal_(std=1e-3)
     return model
 
 
@@ -34,7 +35,7 @@ def _inputs(batch=2):
 
 
 def test_trainable_parameter_count_matches_paper(net):
-    assert sum(p.numel() for p in net.parameters()) == TRAINABLE_PARAMETERS == 4_309_756
+    assert sum(p.numel() for p in net.parameters()) == TRAINABLE_PARAMETERS == 3_520_755
 
 
 def test_output_is_exact_basis_expansion(net):

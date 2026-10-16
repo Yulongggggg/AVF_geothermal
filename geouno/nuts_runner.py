@@ -1,9 +1,8 @@
-"""NUTS reference runs for the six prespecified reservoirs (``test_01``-``test_06``).
+"""NUTS runs for test_01 through test_06.
 
-The paper ran four chains per reservoir on one NVIDIA RTX A4000 (about 3.6 h per chain;
-every retained transition reached the depth-7 cap). The released chains can be checked
-without rerunning: :func:`verify_released` recomputes the convergence diagnostics from all
-4 x 1,024 draws and rescores the balanced 256-member forecast.
+Four chains per reservoir use H100/H200 GPUs, two concurrent chains per GPU.
+The saved final runs average 19.6 chain-hours per reservoir and have zero divergences.
+The verify_released command recomputes diagnostics and forecast scores from saved draws.
 """
 import json
 import time

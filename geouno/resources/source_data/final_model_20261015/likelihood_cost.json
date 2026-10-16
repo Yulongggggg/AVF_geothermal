@@ -1,0 +1,436 @@
+{
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/model.pt",
+  "monitoring_protocol_sha256": "aba19b991a63617beda41f2d6b8fd2d1c8eba3404e12abd669ae5580fe4e90e0",
+  "inference_protocol_sha256": "a9d0d59f88bb725359d76f2f9b57d1f420a41bf121613711485bbab69e90622f",
+  "calibration_sha256": "ba34f80466f80dd51bf21131441e236bd64245ebe91f50c2af1f36a1c6721c1f",
+  "case_sha256": "e95bedbc56fa0393d7893672028e1d7bfb4192be9083cb4dec245f0dff9284fd",
+  "case_path": "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/monitoring/cases/multiwell_opt17/pilot_01.npz",
+  "source_sha256": "82ddf6eecd31ecfa6444327027f111bbd9cc2149f4ee9e3f4ff6d4efea6850c9",
+  "sources": {
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/likelihood_cost.py": "82ddf6eecd31ecfa6444327027f111bbd9cc2149f4ee9e3f4ff6d4efea6850c9",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/likelihood_cost.sbatch": "f0bbb0d41f9e08f814a54b5ca43d2249c5e82261a0a1af5731a44cac891fac32",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/inverse_backend.py": "63ebf217f888384586fcf780aa6da0e47d0ee72a345f54b0e516bbbf2ff83842",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/backend.py": "74dfff15b3af4a2ba1b5d20e076f20707a57bc1bb884e6ce71632aa2ddf2c1d2",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/inverse_run.py": "fc0f469f522299f8a435fe20c55efaa4b6b382c2984897fa0ed12fe524cc181d",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/inverse_checks.py": "0413ceb0cf7c6b4b78fbbb892646da71f6f54dcc3977ffae544e8396b5c81a76",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/common.py": "abe0d3be96f242db86cc4bfc09de76aba565e66a52e99ee371a5679474b170d5",
+    "/mnt/home/yliu5/projects/ol_geo_train/inference_comparison/geothermal.py": "7f92ebbb0d5345a95af486d1886be7da749ff3c8fcd4ed34c7d900f4657c21aa"
+  },
+  "config": {
+    "key": "multiwell_opt17",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  "case": {
+    "scenario": "v4m02943",
+    "case_id": "v4m02943_r003",
+    "row": 42143,
+    "split": "val",
+    "label": "pilot_01",
+    "prior_seed": 510000,
+    "observation_seed": 610000,
+    "member": 0
+  },
+  "latent_dimension": 4096,
+  "monitoring_readings": 238,
+  "random_seed": 2141,
+  "latent_sha256": "d2cd2d8532f2f5f3358ab4be594f8edd635b8c72dd94774c4741448c309d3065",
+  "whitened_data_sha256": "775768abe0abb558b44ceb2919a4c8c8733186b523c03abffd46c08537220779",
+  "residual_cholesky_sha256": "3c473cf2b2ccb5297a1cd623817d68804ec8a8ef6690745321037b28f730ec23",
+  "status": "complete",
+  "completed_utc": "2026-10-15T13:36:04.493901+00:00",
+  "measurements": {
+    "monitoring_forward": {
+      "repeats": 20,
+      "seconds": [
+        0.019212018931284547,
+        0.01918473606929183,
+        0.019135502865538,
+        0.019276612903922796,
+        0.019143120851367712,
+        0.019239007961004972,
+        0.019158028066158295,
+        0.019210755126550794,
+        0.019167826045304537,
+        0.019166179932653904,
+        0.019160624826326966,
+        0.019199357833713293,
+        0.019147695042192936,
+        0.019202250987291336,
+        0.019211302045732737,
+        0.019217830849811435,
+        0.019225699128583074,
+        0.019194853026419878,
+        0.019171875901520252,
+        0.01915896311402321
+      ],
+      "mean_seconds": 0.019189212075434624,
+      "sample_sd_seconds": 3.612238216854194e-05,
+      "minimum_seconds": 0.019135502865538,
+      "maximum_seconds": 0.019276612903922796,
+      "warmup_calls": 2,
+      "monitoring_response_calls_including_warmup": 22,
+      "forward_member_times_including_warmup": 154,
+      "finite_checks": [
+        {
+          "iteration": 0,
+          "warmup": true,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 1,
+          "warmup": true,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 2,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 3,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 4,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 5,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 6,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 7,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 8,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 9,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 10,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 11,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 12,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 13,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 14,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 15,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 16,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 17,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 18,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 19,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 20,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        },
+        {
+          "iteration": 21,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0
+        }
+      ]
+    },
+    "posterior_potential_gradient": {
+      "repeats": 20,
+      "seconds": [
+        0.11371206003241241,
+        0.1152576960157603,
+        0.11583870812319219,
+        0.1154905199073255,
+        0.11560761695727706,
+        0.12461116211488843,
+        0.11631260602734983,
+        0.11564184096641839,
+        0.11548040807247162,
+        0.11604918306693435,
+        0.11603632103651762,
+        0.11579142906703055,
+        0.11581863509491086,
+        0.11566547094844282,
+        0.11597761907614768,
+        0.11561393784359097,
+        0.11582566611468792,
+        0.1156038399785757,
+        0.11576023604720831,
+        0.11567804799415171
+      ],
+      "mean_seconds": 0.1160886502242647,
+      "sample_sd_seconds": 0.002069912388839585,
+      "minimum_seconds": 0.11371206003241241,
+      "maximum_seconds": 0.12461116211488843,
+      "warmup_calls": 2,
+      "monitoring_response_calls_including_warmup": 22,
+      "forward_member_times_including_warmup": 154,
+      "finite_checks": [
+        {
+          "iteration": 0,
+          "warmup": true,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251773066049,
+          "input_gradient_inf": 240.340776644349
+        },
+        {
+          "iteration": 1,
+          "warmup": true,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1252125946703,
+          "input_gradient_inf": 240.34077553404802
+        },
+        {
+          "iteration": 2,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251783599623,
+          "input_gradient_inf": 240.34077620467238
+        },
+        {
+          "iteration": 3,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251658487367,
+          "input_gradient_inf": 240.34077556909904
+        },
+        {
+          "iteration": 4,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251710729714,
+          "input_gradient_inf": 240.34077478757365
+        },
+        {
+          "iteration": 5,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251688820082,
+          "input_gradient_inf": 240.34077446646222
+        },
+        {
+          "iteration": 6,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251995172095,
+          "input_gradient_inf": 240.34077736579994
+        },
+        {
+          "iteration": 7,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251905062186,
+          "input_gradient_inf": 240.34077579227662
+        },
+        {
+          "iteration": 8,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251726555217,
+          "input_gradient_inf": 240.34077422843743
+        },
+        {
+          "iteration": 9,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251411608212,
+          "input_gradient_inf": 240.34077685924584
+        },
+        {
+          "iteration": 10,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251869908244,
+          "input_gradient_inf": 240.34077674440002
+        },
+        {
+          "iteration": 11,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251582324155,
+          "input_gradient_inf": 240.34077594160416
+        },
+        {
+          "iteration": 12,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251652348683,
+          "input_gradient_inf": 240.34077425258343
+        },
+        {
+          "iteration": 13,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251369777483,
+          "input_gradient_inf": 240.34077829729597
+        },
+        {
+          "iteration": 14,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251896172753,
+          "input_gradient_inf": 240.34077366465598
+        },
+        {
+          "iteration": 15,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251809952244,
+          "input_gradient_inf": 240.34077439417032
+        },
+        {
+          "iteration": 16,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251862349584,
+          "input_gradient_inf": 240.34077499651266
+        },
+        {
+          "iteration": 17,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251552376757,
+          "input_gradient_inf": 240.3407756611538
+        },
+        {
+          "iteration": 18,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251541988224,
+          "input_gradient_inf": 240.34077809869868
+        },
+        {
+          "iteration": 19,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251875927546,
+          "input_gradient_inf": 240.34077281057264
+        },
+        {
+          "iteration": 20,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.12519295492,
+          "input_gradient_inf": 240.34077232737818
+        },
+        {
+          "iteration": 21,
+          "warmup": false,
+          "prediction_max_absolute_change": 0.0,
+          "potential": 4182.814438134385,
+          "input_gradient_l2": 1794.1251754536163,
+          "input_gradient_inf": 240.3407725483711
+        }
+      ]
+    }
+  },
+  "no_grad_vs_grad_prediction_max_absolute": 0.0,
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_capability": [
+    12,
+    0
+  ],
+  "gpu_memory_bytes": 101973819392,
+  "torch_version": "2.8.0+cu128",
+  "cuda_version": "12.8",
+  "cudnn_version": 91002,
+  "python_version": "3.11.15",
+  "host": "alphagpu54",
+  "job_id": "136128",
+  "allocated_cpu_threads": "4",
+  "active_torch_threads": 1,
+  "precision": "FP32 frozen network; FP64 latent, covariance whitening, posterior objective and returned input gradient; TF32 disabled",
+  "timed_scope": "One complete 238-reading production monitoring forward through seven times, including permeability transformation, fixed-basis readout and whitening; gradient additionally differentiates prior plus residual objective with respect to 4096 latent inputs",
+  "exclusions": "Model/data loading, basis/covariance setup, input allocation, finite-value checks, host result transfer, calibration and posterior prediction",
+  "interpretation": "Single-call measurements on one validation pilot; not measured complete MAP/ES-MDA/NUTS runtime, convergence, or FE-gradient acceleration"
+}

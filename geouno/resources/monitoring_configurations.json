@@ -1,0 +1,1452 @@
+[
+  {
+    "key": "multiwell_opt2",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 2,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt3",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 3,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt5",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 5,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt7",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 7,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt9",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt13",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 13,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt17",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt25",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 25,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt33",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 33,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_space5",
+    "family": "multiwell",
+    "rule": "space_filling",
+    "n": 5,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_space9",
+    "family": "multiwell",
+    "rule": "space_filling",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_space17",
+    "family": "multiwell",
+    "rule": "space_filling",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_space33",
+    "family": "multiwell",
+    "rule": "space_filling",
+    "n": 33,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_opt3",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 3,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_opt5",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 5,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_opt7",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 7,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_opt9",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_opt13",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 13,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_opt17",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_opt25",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 25,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_opt33",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 33,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_space5",
+    "family": "vertical",
+    "rule": "space_filling",
+    "n": 5,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_space9",
+    "family": "vertical",
+    "rule": "space_filling",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_space17",
+    "family": "vertical",
+    "rule": "space_filling",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "vertical_space33",
+    "family": "vertical",
+    "rule": "space_filling",
+    "n": 33,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_opt3",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 3,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_opt5",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 5,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_opt7",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 7,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_opt9",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_opt13",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 13,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_opt17",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_opt25",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 25,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_opt33",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 33,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_space5",
+    "family": "inclined",
+    "rule": "space_filling",
+    "n": 5,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_space9",
+    "family": "inclined",
+    "rule": "space_filling",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_space17",
+    "family": "inclined",
+    "rule": "space_filling",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "inclined_space33",
+    "family": "inclined",
+    "rule": "space_filling",
+    "n": 33,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget"
+  },
+  {
+    "key": "multiwell_opt9_Tp",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels"
+  },
+  {
+    "key": "multiwell_opt9_T",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels"
+  },
+  {
+    "key": "multiwell_opt9_p",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      1
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels"
+  },
+  {
+    "key": "multiwell_opt9_Tk",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels"
+  },
+  {
+    "key": "multiwell_opt9_pk",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels"
+  },
+  {
+    "key": "multiwell_opt9_k",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels"
+  },
+  {
+    "key": "multiwell_opt17_end4",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "duration"
+  },
+  {
+    "key": "multiwell_opt17_end5",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 17,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "duration"
+  },
+  {
+    "key": "multiwell_opt9_Tk_noise0.2",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.1,
+    "sigma_p": 0.25,
+    "kind": "noise",
+    "test_limit": 6
+  },
+  {
+    "key": "multiwell_opt9_Tpk_noise0.2",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.1,
+    "sigma_p": 0.25,
+    "kind": "noise",
+    "test_limit": 6
+  },
+  {
+    "key": "multiwell_opt9_Tk_noise2",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 1.0,
+    "sigma_p": 0.25,
+    "kind": "noise",
+    "test_limit": 6
+  },
+  {
+    "key": "multiwell_opt9_Tpk_noise2",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 1.0,
+    "sigma_p": 0.25,
+    "kind": "noise",
+    "test_limit": 6
+  },
+  {
+    "key": "vertical_opt9_Tp",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "vertical_opt9_T",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "vertical_opt9_p",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      1
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "vertical_opt9_Tk",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "vertical_opt9_pk",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "vertical_opt9_k",
+    "family": "vertical",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "inclined_opt9_Tp",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0,
+      1
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "inclined_opt9_T",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "inclined_opt9_p",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      1
+    ],
+    "static": false,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "inclined_opt9_Tk",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      0
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "inclined_opt9_pk",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "inclined_opt9_k",
+    "family": "inclined",
+    "rule": "optimized",
+    "n": 9,
+    "channels": [],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "channels_extension"
+  },
+  {
+    "key": "multiwell_opt4",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 4,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget_extension"
+  },
+  {
+    "key": "multiwell_opt6",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 6,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget_extension"
+  },
+  {
+    "key": "multiwell_opt8",
+    "family": "multiwell",
+    "rule": "optimized",
+    "n": 8,
+    "channels": [
+      0,
+      1
+    ],
+    "static": true,
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sigma_t": 0.5,
+    "sigma_p": 0.25,
+    "kind": "budget_extension"
+  }
+]

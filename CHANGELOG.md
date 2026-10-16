@@ -1,3 +1,11 @@
+## 1.1.0 — final model, 15 October 2026
+
+- Replace the application checkpoint with final resid64_p1 seed 20260915 (3,520,755 parameters).
+- Port 99/44/22-epoch training, final evaluation and training resources.
+- Update calibration, optimized layouts, 64 configurations and six four-chain NUTS results.
+- Recompute 138 paper entries; mark incomplete uniform-protocol rows with dashes.
+- Add the CO₂ field gallery, final artifacts on Git LFS, and saved-result verification.
+
 # Changelog
 
 ## Unreleased (2026-10-08)

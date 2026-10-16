@@ -1,67 +1,47 @@
-# The GeoUNO operator
+# The final GeoUNO operator
 
-`geouno.model.GeoUNOBasisHead` (checkpoint `geouno_pod1024_ed043489.pt`, SHA-256
-`ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e`).
+`geouno.model.GeoUNO` is the `resid64_p1` model used in the 15 October 2026 results.
+The application checkpoint is `geouno_resid64_p1_f39894ff.pt` (seed 20260915).
 
 ## Inputs and outputs
 
-* Six fields on the 160 x 128 grid: `m + 13.5` with `m = log10 k`, reservoir mask, `x/400`, `y/500`,
-  producer distance / 400 m, injector distance / 400 m.
-* Five controls: `q/3.5`, `(T_inj - 303)/10`, `(p_prod - 20)/10`, `(log10 t - 6)/2`, `(depth - 3.06)/0.6`, with
-  injection rate `q` [kg/s], injection temperature [K], absolute producer bottom-hole pressure [MPa], time [s] and
-  depth [km].
-* Output: `Delta T` [K] and `Delta p` [MPa] on the 160 x 128 grid, or at arbitrary query points
-  `(x/400, y/500)` via `model(field, scalar, query=xy)`.
-
-Mean field and confidence of the characterization determine the permeability draws; they are not network inputs.
+Six fields on the 160 × 128 grid encode `log10(k) + 13.5`, the reservoir mask, `x/400`, `y/500`,
+and producer/injector distances divided by 400 m. Five scalars encode `q/3.5`, `(T_inj − 303)/10`,
+`(p_prod − 20)/10`, `(log10(t) − 6)/2` and `(depth − 3.06)/0.6`, with physical units kg/s, K, MPa, s and km.
+The outputs are cooling `ΔT` in K and pressure change `Δp` in MPa, on the reference grid or at query coordinates.
 
 ## Architecture
 
-```
-controls --MLP--> c (128)
-fields --CondBlock x4 (32, 64, 128, 192 ch, avg-pool between)--> 2-layer transformer on the 20 x 16 grid
-       --> separate temperature and pressure decoders (CondBlocks with skips, back to 160 x 128)
-       --> 1x1 heads: raw T, raw p fields
-features     = [pooled encoder (384), well summaries (12), controls (5), 4x4 pressure grid (256), regional readout (112)]
-coefficients a = <raw - mean(raw) - mu, POD> + delta(features)      (1,024 POD + 64 learned per field; delta: MLP on 769 features)
-levels       b_T = s_T * spatial mean of raw T;  b_p = s_p * MLP(features)
-u_l(x)       = b_l + s_l' [ mu_l(x) + sum_r a_lr psi_lr(x) ]          (s_T' = s_T; s_p' = pressure residual scale)
-```
+Four scalar-conditioned encoder blocks (32, 64, 128 and 192 channels), two transformer layers and separate
+field decoders retain layerwise FiLM modulation. Each field combines 1,024 fixed training-fitted POD functions
+with 64 learned coordinate functions. POD coefficients are projections of the centered decoder output after
+subtracting its mean shape. Learned coefficients come from a least-squares projection of the residual after
+subtracting the POD contribution. The coordinate functions are normalized on the reference grid; the solve
+adds `1e-6 I` to the Gram matrix and uses FP64 before returning FP32 coefficients.
 
-* `CondBlock`: two 3x3 convolutions with group normalization, FiLM modulation by `c` (tanh-bounded gain), residual.
-* POD functions: 1,024 per field, fitted on training snapshots only (randomized SVD), orthonormal under the
-  pixel-mean inner product; bilinear interpolation extends them to query points.
-* Learned functions: 64 per field from coordinate MLPs (temperature with Fourier features of 1-32 cycles),
-  standardized over the sensor grid.
-* Pressure level: an MLP on pooled encoder features, twelve well-neighbourhood permeability summaries (Gaussian
-  radii 6, 24, 96 m around each well), the controls, a 4 x 4 pooled pressure grid and a learned regional readout.
-* 4,309,756 trainable parameters; the POD basis (2 x 1,024 x 160 x 128) is a fixed buffer.
+The pressure-level input has 657 components in this order: mean-pooled features (192), max-pooled features
+(192), scalars (5), pressure-grid features (256), and P1 well-permeability summaries (12). The level MLP is
+657 → 256 → 128 → 1. P1 uses three Gaussian radii (6, 24, 96 m) around each well and two statistics per radius.
+There is no coefficient-correction MLP or P0 regional feature extractor. The model has **3,520,755 trainable
+parameters**, with POD functions held as fixed buffers.
 
-Exact definitions: `geouno/model/geouno.py` and its parents in `geothermal.py`, `joint.py`, `direct.py` and
-`blocks.py`. Supplementary Section "Network architecture and training objective" of the paper gives the
-equations.
+See [`final.py`](../geouno/model/final.py) for the exact residual projection, and
+[`geouno.py`](../geouno/model/geouno.py) for the shared coefficient–basis query implementation.
 
-## Training lineage
+## Training and loading
 
-The selected model inherits every tensor of an earlier grid-output predictor (`cf278e64...`, 253 epochs) and
-completes 132 transfer epochs: 11 coefficient-head warm-up epochs, 55 joint-transfer epochs and 66 fine-tuning
-epochs from the validation-selected transfer checkpoint, with loss = equal-scenario paired RMSE + 0.2 x MMD^2.
-The checkpoint of the final epoch (131, also the best validation score) is used for every application. See
-[TRAINING.md](TRAINING.md) and `protocols/model_selection.json`.
-
-## Numerical settings
-
-All reported inference uses FP32 network evaluation with FP64 likelihood, covariance, latent variables and
-gradients; TF32 disabled; PyTorch's fused attention fast path disabled; and the fixed 5 x 4 average pool in place
-of the equivalent adaptive pool. `geouno.model.load_geouno` and `geouno.backend.Backend` apply these settings.
-CPU results depend at round-off level on the thread count and processor.
-
-## Loading
+The three Table 1 seeds are 20260915, 20260925 and 20260926. Each uses 99 main epochs, 44 temperature-only
+epochs and 22 joint epochs; application experiments use seed 20260915 from this same comparison.
+[TRAINING.md](TRAINING.md) gives the complete protocol.
 
 ```python
 from geouno.model import load_geouno
-net = load_geouno('artifacts/model/geouno_pod1024_ed043489.pt')   # verifies SHA-256, loads with weights_only=True
-fields = net(field, scalar)                                        # [B, 2, 160, 128]
-values = net(field, scalar, query=xy)                              # [B, 2, N]
-out, parts = net(field, scalar, return_parts=True)                 # coefficients, basis, mean shape, levels
+net = load_geouno('artifacts/model/geouno_resid64_p1_f39894ff.pt')
+fields = net(field, scalar)                         # [B, 2, 160, 128]
+values = net(field, scalar, query=xy)               # [B, 2, N]
+out, parts = net(field, scalar, return_parts=True)  # evaluation mode
 ```
+
+`load_geouno` verifies SHA-256 and loads every tensor strictly. Final evaluation uses FP32 with TF32 disabled;
+the inverse backend uses FP64 likelihood, covariance and latent coordinates. The backend applies the fixed
+pressure pool and the model's observation-basis calculation.

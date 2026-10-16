@@ -1,3 +1,5 @@
+> Historical report for the pre-15-October model. Current release details: [PROVENANCE.md](PROVENANCE.md).
+
 # Code review notes (release preparation, 5 October 2026)
 
 The scientific code path of the paper was reviewed while transcribing it into this package: model, input

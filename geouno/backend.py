@@ -33,7 +33,7 @@ class Backend:
 
     Parameters
     ----------
-    model_path : checkpoint file (``ed043489...``).
+    model_path : checkpoint file (``f39894ff...``, final resid64_p1).
     stats : dict or path of the training normalization statistics.
     prior_factor_path : optional ``prior_factor.npy`` (4096 x 4096, float32) for inversion.
     device : torch device string.

@@ -1,7 +1,7 @@
 {
-  "checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e",
-  "monitoring_protocol_sha256": "968aa31e4f8e6512e1b63c4d854719647dfab9aa8b24abec3296efecc654b27b",
-  "inference_protocol_sha256": "c09205d5fbfbcf8cbf69bc3851ec63d78c0f2f47ed2b7b5b82461267fb28977a",
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "monitoring_protocol_sha256": "aba19b991a63617beda41f2d6b8fd2d1c8eba3404e12abd669ae5580fe4e90e0",
+  "inference_protocol_sha256": "a9d0d59f88bb725359d76f2f9b57d1f420a41bf121613711485bbab69e90622f",
   "cases": [
     {
       "scenario": "v4m02656",

@@ -1,7 +1,7 @@
 {
-  "checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e",
-  "monitoring_protocol_sha256": "968aa31e4f8e6512e1b63c4d854719647dfab9aa8b24abec3296efecc654b27b",
-  "calibration_sha256": "b22e64c3148695ea645f94a96a5ba0c5f4cc6bb8a3480d36f0243d4a396ab3c7",
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "monitoring_protocol_sha256": "aba19b991a63617beda41f2d6b8fd2d1c8eba3404e12abd669ae5580fe4e90e0",
+  "calibration_sha256": "ba34f80466f80dd51bf21131441e236bd64245ebe91f50c2af1f36a1c6721c1f",
   "tasks": [
     {
       "config": "multiwell_opt17",
@@ -5663,12 +5663,9 @@
   },
   "paired_ensemble_seed": "case observation_seed + 19000, same across all configurations",
   "sources": {
-    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20260930/inverse_run.py": "5bae10984b5f56d09c36129b20222ac59abfcb821ae070a7099bd129f794a75f",
-    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20260930/inverse_backend.py": "63ebf217f888384586fcf780aa6da0e47d0ee72a345f54b0e516bbbf2ff83842",
-    "/mnt/home/yliu5/projects/ol_geo_train/inference_comparison/algorithms.py": "ea3ebf9ef41e382f2f8f6d34cd16e3155d637fcd4e826947bad89d7b46fe78f5",
-    "/mnt/home/yliu5/projects/ol_geo_train/inference_comparison/metrics.py": "b697b06acc8dc2aad18c69c89c96f5b9f273c5cfc7077892df9fce3bf8d8c233",
-    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20260930/inverse_cpu.sbatch": "6f229f089456f2c443134656240b3bf7323da533b6e916085218f10c2f9dee99",
-    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20260930/inverse_gpu.sbatch": "f060114226965a27404c7ac4152a7f1125dd9649ae4c1506f1f4a553bafb741f",
-    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20260930/inverse_checks.py": "6609c7dd76dd7421a615d76b1398916d3ba5897326505e61ca3486db15058381"
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/inverse_run.py": "fc0f469f522299f8a435fe20c55efaa4b6b382c2984897fa0ed12fe524cc181d",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/inverse_backend.py": "63ebf217f888384586fcf780aa6da0e47d0ee72a345f54b0e516bbbf2ff83842",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/inference_comparison/algorithms.py": "ea3ebf9ef41e382f2f8f6d34cd16e3155d637fcd4e826947bad89d7b46fe78f5",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/inference_comparison/metrics.py": "b697b06acc8dc2aad18c69c89c96f5b9f273c5cfc7077892df9fce3bf8d8c233"
   }
 }

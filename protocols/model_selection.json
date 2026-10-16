@@ -1,39 +1,20 @@
 {
-  "author_selected_final_model": true,
-  "selected_utc": "2026-09-30T21:05:38.976214+00:00",
-  "checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20260930/model.pt",
-  "checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e",
-  "source_checkpoint": "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_campaign_20260925/formal/r1024_s20260925/best.pt",
-  "recipe_name": "r1024_s20260925",
-  "display_name": "GeoUNO",
-  "model_config": {
-    "architecture": "geouno_basis_head",
-    "scales": [
-      11.32111365383957,
-      7.98859426337178
-    ],
-    "pressure_residual_scale": 1.603772823092218,
-    "pod_rank": 1024,
-    "learned_rank": 64,
-    "width": 32
+  "architecture": "resid64_p1",
+  "parameters": 3520755,
+  "seeds": [
+    20260915,
+    20260925,
+    20260926
+  ],
+  "application_seed": 20260915,
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "stages": {
+    "main": 99,
+    "temperature": 44,
+    "joint": 22
   },
-  "training_epochs": 132,
-  "best_epoch": 131,
-  "copied_pretrained_tensors": 168,
-  "pretrained_checkpoint_sha256": "cf278e646fbe53db11ec4a03f0545b6354ef81daa9d8c2282ebaf24704ccff9b",
-  "scratch_ancestry": false,
-  "selection_basis": "Explicit author decision20260930 before this new test/application evaluation",
-  "original_reference_quality_gate_passed": false,
-  "sota_established_by_updated_results": false,
-  "calibration_status": "pending",
-  "completed_training_and_full_validation_reviewed": true,
-  "evidence_sha256": {
-    "complete.json": "4209b587d7769bf34f143a2e7ab36ee6236fa066edb5b9d3a3c7e0f7cd38a42e",
-    "manifest.json": "9d02bfe0f50d118ead2d8f2fa59f8bb50b89e1e4666323ca543c47dc826617bd",
-    "history.json": "b8e78ea291a9f5dfd38cd59bce07d0d64b5dad6fb8bff904073e52e8392674df",
-    "validation_best.json": "2c79f85be07fbfe5dd0ab1c0727b06e19f384c07b2977003009fa35254acf0ab",
-    "full_validation_best.json": "a402e7fa5fd93f7b606616d8bf74601553d0bd47c94783504f4aaf338e39c669"
-  },
-  "supersedes": "Automatic first-completed scratch refinement as manuscript/application model",
-  "auxiliary_training_jobs_retained": true
+  "batch_scenarios": 8,
+  "training_members": 72939,
+  "nominal_records_used": false,
+  "final_evaluation": "FP32; TF32 disabled"
 }

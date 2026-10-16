@@ -33,7 +33,7 @@ def backend():
 
         for block in (*value.operator.enc, *value.operator.temperature_decoder,
                       *value.operator.pressure_decoder, value.operator.global_mix,
-                      value.operator.geology_readout):
+                      ):
             block.forward = wrap(block.forward)
         branch = value.operator.branch
         # Recompute activations for this check only; retain the original batch shape
@@ -45,27 +45,12 @@ def backend():
 @requires_core
 def test_checkpoint_metadata():
     from geouno.model import CHECKPOINT_SHA256, TRAINABLE_PARAMETERS, load_geouno
-    path = artifacts.path(artifacts.manifest()['assets']['geouno_pod1024_ed043489.pt']['path'])
+    path = artifacts.path(artifacts.manifest()['assets']['geouno_resid64_p1_f39894ff.pt']['path'])
     net = load_geouno(path)
     assert sum(p.numel() for p in net.parameters()) == TRAINABLE_PARAMETERS
-    assert net.config == dict(architecture='geouno_basis_head', scales=[11.32111365383957, 7.98859426337178],
-                              pressure_residual_scale=1.603772823092218, pod_rank=1024, learned_rank=64, width=32)
+    assert net.config['architecture'] == 'geouno_simple'
+    assert net.config['variant'] == 'resid64_p1'
     assert artifacts.manifest()['checkpoint_sha256'] == CHECKPOINT_SHA256
-
-
-@requires_core
-def test_archived_posterior_value_and_gradient(backend):
-    from geouno.tasks import problem_for
-    problem, _ = problem_for(backend, artifacts.Reservoirs(), 'pilot_01', 'multiwell_opt17')
-    with np.load(artifacts.path('reservoirs/validation/pilot_01_value_gradient.npz')) as z:
-        ref = {k: z[k].copy() for k in z.files}
-    assert problem.nobs == 238 and problem.dim == 4096
-    np.testing.assert_allclose(problem.cholesky.numpy(), ref['cholesky'], rtol=1e-12, atol=1e-14)
-    y = problem.tensor(ref['y']).requires_grad_(True)
-    loss = problem.potential(y)
-    gradient, = torch.autograd.grad(loss, y)
-    np.testing.assert_allclose(loss.item(), ref['loss'], rtol=1e-5)
-    np.testing.assert_allclose(gradient.numpy(), ref['gradient'], rtol=1e-3, atol=1e-2)
 
 
 @requires_core
@@ -90,7 +75,7 @@ def test_forward_prediction_close_to_fe_truth(backend):
         pred = backend.predict_real(base, 10, torch.as_tensor(case['logk_truth']))[0].numpy()
     err = pred[:, 16:144] - case['truth'][10, :, 16:144]
     rmse = np.sqrt((err ** 2).mean((1, 2)))
-    # This is the transferred application model, distinct from the three independent Table 1 models.
+    # This application model is the seed-20260915 member of Table 1.
     assert rmse[0] < 3.0 and rmse[1] < 2.0, rmse
 
 

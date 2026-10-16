@@ -1,6 +1,6 @@
 {
-  "checkpoint_sha256": "ed04348969fe27903bc9bd084781164f65c610c7e46da0ff75bee60553fdc18e",
-  "calibration_sha256": "b22e64c3148695ea645f94a96a5ba0c5f4cc6bb8a3480d36f0243d4a396ab3c7",
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "calibration_sha256": "ba34f80466f80dd51bf21131441e236bd64245ebe91f50c2af1f36a1c6721c1f",
   "cases": {
     "pilot": [
       {
@@ -36002,7 +36002,7 @@
           ],
           [
             "perp+",
-            -92.69588709077033,
+            -92.69588709077031,
             -50.19308200596255
           ],
           [
@@ -36032,7 +36032,7 @@
           ],
           [
             "flank1+1",
-            -108.35588731965217,
+            -108.35588731965214,
             -159.9030810904352
           ],
           [
@@ -36042,7 +36042,7 @@
           ],
           [
             "flank2+1",
-            -97.91588716706427,
+            -97.91588716706426,
             -86.76308170078677
           ],
           [
@@ -36052,23 +36052,23 @@
           ],
           [
             "flank3+1",
-            -87.47588701447638,
-            -13.62308231113833
+            -87.47588701447637,
+            -13.623082311138333
           ],
           [
             "flank3-1",
-            150.11588793000374,
+            150.1158879300037,
             -47.53692135097104
           ],
           [
             "flank4+1",
-            -77.03588686188849,
+            -77.03588686188847,
             59.516917078510104
           ],
           [
             "flank4-1",
-            160.55588808259162,
-            25.603078038677392
+            160.5558880825916,
+            25.603078038677396
           ],
           [
             "monitor17",
@@ -84542,6 +84542,337 @@
       "sigma_p": 0.25,
       "kind": "noise",
       "test_limit": 6
+    },
+    {
+      "key": "vertical_opt9_Tp",
+      "family": "vertical",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        0,
+        1
+      ],
+      "static": false,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "vertical_opt9_T",
+      "family": "vertical",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        0
+      ],
+      "static": false,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "vertical_opt9_p",
+      "family": "vertical",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        1
+      ],
+      "static": false,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "vertical_opt9_Tk",
+      "family": "vertical",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        0
+      ],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "vertical_opt9_pk",
+      "family": "vertical",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        1
+      ],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "vertical_opt9_k",
+      "family": "vertical",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "inclined_opt9_Tp",
+      "family": "inclined",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        0,
+        1
+      ],
+      "static": false,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "inclined_opt9_T",
+      "family": "inclined",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        0
+      ],
+      "static": false,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "inclined_opt9_p",
+      "family": "inclined",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        1
+      ],
+      "static": false,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "inclined_opt9_Tk",
+      "family": "inclined",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        0
+      ],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "inclined_opt9_pk",
+      "family": "inclined",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [
+        1
+      ],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "inclined_opt9_k",
+      "family": "inclined",
+      "rule": "optimized",
+      "n": 9,
+      "channels": [],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "channels_extension"
+    },
+    {
+      "key": "multiwell_opt4",
+      "family": "multiwell",
+      "rule": "optimized",
+      "n": 4,
+      "channels": [
+        0,
+        1
+      ],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "budget_extension"
+    },
+    {
+      "key": "multiwell_opt6",
+      "family": "multiwell",
+      "rule": "optimized",
+      "n": 6,
+      "channels": [
+        0,
+        1
+      ],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "budget_extension"
+    },
+    {
+      "key": "multiwell_opt8",
+      "family": "multiwell",
+      "rule": "optimized",
+      "n": 8,
+      "channels": [
+        0,
+        1
+      ],
+      "static": true,
+      "times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sigma_t": 0.5,
+      "sigma_p": 0.25,
+      "kind": "budget_extension"
     }
   ],
   "esmda": {
@@ -84560,10 +84891,23 @@
   "noise_subset": "First six registered test reservoirs, fixed before new inference results",
   "analysis": "Equal-reservoir means; paired bootstrap 10000 resamples; compare producer-temperature width, P50 error and CRPS together; analyze field RMSE separately.",
   "sources": {
-    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20260930/monitoring_prepare.py": "13ab4b6b19be9a9f70c8ffb468ec2987fd96b7172b3683c1b3acc279b28d89c7",
-    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20260930/monitoring_geometry.py": "29f86cba87fc8f2c5ce5e2976940c6f2d2bf2aef9d0a94e961ec561d49fc4ffd",
-    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20260930/inverse_backend.py": "63ebf217f888384586fcf780aa6da0e47d0ee72a345f54b0e516bbbf2ff83842",
-    "/mnt/home/yliu5/projects/ol_geo_train/final_model/monitoring_budget.py": "61a65d03ed0ab00a67430cafbe7df6586968cf6d9fbe94f56ddd948657a87543",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/final_model/monitoring_budget.py": "61a65d03ed0ab00a67430cafbe7df6586968cf6d9fbe94f56ddd948657a87543",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/inference_comparison/geothermal.py": "7f92ebbb0d5345a95af486d1886be7da749ff3c8fcd4ed34c7d900f4657c21aa",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/inverse_backend.py": "63ebf217f888384586fcf780aa6da0e47d0ee72a345f54b0e516bbbf2ff83842",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/monitoring_geometry.py": "29f86cba87fc8f2c5ce5e2976940c6f2d2bf2aef9d0a94e961ec561d49fc4ffd",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/monitoring_prepare.py": "72a7b36ed41998807a863d3286bcb5c6a11cc9c846d40579b9c74f0389cd62a0",
+    "/mnt/home/yliu5/projects/ol_geo_train/history_matching_networks/networks.py": "f6d0b48b940a3415015143965f7941fc24ced3687c75bc15bd0853dece9469c7",
     "/mnt/home/yliu5/projects/ol_geo_train/history_matching_sparse/design.py": "fdd0f3fbdb24048d302c51d59f73371803896664d16a36a4312a024921f27cf2"
+  },
+  "extension": {
+    "date": "2026-10-13 (rerun 2026-10-15 with the final simplified model)",
+    "author_request": "Section 2.7 channel comparison for the vertical and inclined nine-location layouts",
+    "rule": "Same cases, priors, noise draws, ES-MDA settings and calibration as the registered multiwell_opt9_* channel configs; only the layout geometry differs (case files of vertical_opt9 / inclined_opt9).",
+    "base_protocol_sha256": "aba19b991a63617beda41f2d6b8fd2d1c8eba3404e12abd669ae5580fe4e90e0"
+  },
+  "extension_budget": {
+    "date": "2026-10-14 (rerun 2026-10-15 with the final simplified model)",
+    "author_request": "Add designed multiwell 4, 6 and 8 locations",
+    "rule": "Nested prefixes of the validation-only design order (design.json of this namespace); cases built with monitoring_prepare code; multiwell_opt5 rebuild identical"
   }
 }

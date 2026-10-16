@@ -1,0 +1,1833 @@
+{
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "monitoring_protocol_sha256": "74b70ca877d946561a3922978d90fb6ed83ef9f6efc9fa768df9f3510e4b44cf",
+  "calibration_sha256": "ba34f80466f80dd51bf21131441e236bd64245ebe91f50c2af1f36a1c6721c1f",
+  "tasks": [
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tp",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_T",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_p",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_Tk",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_pk",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "vertical_opt9_k",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tp",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_T",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_p",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_Tk",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_pk",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "inclined_opt9_k",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt4",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt6",
+      "case": "test_24",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_01",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_02",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_03",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_04",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_05",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_06",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_07",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_08",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_09",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_10",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_11",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_12",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_13",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_14",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_15",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_16",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_17",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_18",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_19",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_20",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_21",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_22",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_23",
+      "method": "esmda"
+    },
+    {
+      "config": "multiwell_opt8",
+      "case": "test_24",
+      "method": "esmda"
+    }
+  ],
+  "map_optimizer": {
+    "maxiter": 1000,
+    "maxfun": 20000,
+    "maxls": 40,
+    "gtol": 0.0001,
+    "ftol": 1e-10,
+    "maxcor": 10
+  },
+  "map_starts": "zero plus two seeded prior vectors, select lowest posterior objective",
+  "nuts": {
+    "samples": 1024,
+    "warmup": 512,
+    "chains": 4,
+    "max_depth": 7,
+    "target_accept": 0.9,
+    "cases": 6
+  },
+  "paired_ensemble_seed": "case observation_seed + 19000, same across all configurations",
+  "sources": {
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/inverse_run.py": "fc0f469f522299f8a435fe20c55efaa4b6b382c2984897fa0ed12fe524cc181d",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/operator_final_20261015/inverse_backend.py": "63ebf217f888384586fcf780aa6da0e47d0ee72a345f54b0e516bbbf2ff83842",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/inference_comparison/algorithms.py": "ea3ebf9ef41e382f2f8f6d34cd16e3155d637fcd4e826947bad89d7b46fe78f5",
+    "/mnt/home/yliu5/projects/geouno-learned-modes-20260925/inference_comparison/metrics.py": "b697b06acc8dc2aad18c69c89c96f5b9f273c5cfc7077892df9fce3bf8d8c233"
+  },
+  "base_inference_protocol_sha256": "a9d0d59f88bb725359d76f2f9b57d1f420a41bf121613711485bbab69e90622f",
+  "note": "Extension tasks only (ES-MDA); same checkpoint, calibration, ES-MDA settings, paired ensemble seed and source files as the base inference protocol of this namespace."
+}

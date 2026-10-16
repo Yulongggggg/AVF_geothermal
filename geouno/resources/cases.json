@@ -10,7 +10,7 @@
       "observation_seed": 610000,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "7f056b267ae595a105c9cc59918c05cb1462ab56ad5791f7160e991385f7802e",
+      "multiwell_opt17_case_sha256": "e95bedbc56fa0393d7893672028e1d7bfb4192be9083cb4dec245f0dff9284fd",
       "base_sha256": "53835d8db794e9d3d66c9acd265b70404d7556dddcb07663a2affe0e4517f946"
     },
     {
@@ -22,8 +22,7 @@
       "prior_seed": 510001,
       "observation_seed": 610001,
       "member": 0,
-      "released": false,
-      "note": "Validation design reservoir; inputs are in the FE data release."
+      "released": false
     },
     {
       "scenario": "v4n00058",
@@ -34,8 +33,7 @@
       "prior_seed": 510002,
       "observation_seed": 610002,
       "member": 0,
-      "released": false,
-      "note": "Validation design reservoir; inputs are in the FE data release."
+      "released": false
     },
     {
       "scenario": "v4n00870",
@@ -46,8 +44,7 @@
       "prior_seed": 510003,
       "observation_seed": 610003,
       "member": 0,
-      "released": false,
-      "note": "Validation design reservoir; inputs are in the FE data release."
+      "released": false
     }
   ],
   "test": [
@@ -61,7 +58,7 @@
       "observation_seed": 610000,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "4d5a5b327b607679adc5f218c7ac999fbd07f3c8e9ae813449c3a826b649777d",
+      "multiwell_opt17_case_sha256": "6773bceade73b308a340b0b48820f95dc051904fb6d04d26fb75a6152dd178c9",
       "base_sha256": "25f22d4ee5614b40b79415a8e6a0f1eacdf316fcb82c7a9ca23a2bbd1942aadb"
     },
     {
@@ -74,7 +71,7 @@
       "observation_seed": 610001,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "c1ec3f707aeb52c943f1ca06b4763ecd844924c8a0de3f6d4509772787a2a9e7",
+      "multiwell_opt17_case_sha256": "be50005fb60b98452e4202e764f5dbced4835670aa1ccac5de2f8bfcf0166436",
       "base_sha256": "cbc59a759da5a1dc6038360a9d7c7c5eb096e3564077fb968930d3542c90482c"
     },
     {
@@ -87,7 +84,7 @@
       "observation_seed": 610002,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "91666aac94251b3edc329338598a347e4af93b5b3b4def3956720bdb18c72f60",
+      "multiwell_opt17_case_sha256": "71f0055fdae62cf72b2f9bea75a62974f8371a89e3c1d2c17b75faa633bf1e4e",
       "base_sha256": "c990d452b2bc5014974fdb1f303e7e26d492c379ff577bb1a34ac9d16b4d46e3"
     },
     {
@@ -100,7 +97,7 @@
       "observation_seed": 610003,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "17d4f26b273b70081a7f52bbd3c02f1e56443e870514a348baf41d03ecbdcaaa",
+      "multiwell_opt17_case_sha256": "24bde8d168cb6065682abb709ce7bd9870c012e155071f618278ccd1cb1cc5d9",
       "base_sha256": "ae7b92f794eeb152b8e93005cfa1985de1cef79a5d5b29d190d5c1b964f081bd"
     },
     {
@@ -113,7 +110,7 @@
       "observation_seed": 610004,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "a92561df329384a455fb4c3f42ff498799beb27f8fef7e4868d558134f02cf1e",
+      "multiwell_opt17_case_sha256": "1f09bd38c21619cf4a2871d52ef11dfb5ef1a0160f2a807bf853458e8f5cb4db",
       "base_sha256": "9201030714d7f032393a076dbb33037476be44b88ab886fef43b38692f99da98"
     },
     {
@@ -126,7 +123,7 @@
       "observation_seed": 610005,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "b271175d5f5633f21aba9211b416760c24ca4c0dd20b43cc086d73150cc111f7",
+      "multiwell_opt17_case_sha256": "74fb1096367bc3cc25af7ad3ffa3c8aa1af396f3bee728dd53f0c117f549663a",
       "base_sha256": "05d8a5257b3a17a7107790f7d8d82a7cbc3cf97cabbbb457b932d43fdee2548a"
     },
     {
@@ -139,7 +136,7 @@
       "observation_seed": 610006,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "3e7a61abda52e5d2041663a479df4bd1ce944dad08b02f8604168e012d6b46d4",
+      "multiwell_opt17_case_sha256": "97d40d29e544b7356217cc8d0f8e0c6bdeb2f7bc5e4a5306146f42a4bdc44ba4",
       "base_sha256": "4ecb0cef01139fffa73a0cb2d196897e3c7a9eb1ec88fcb24698f3b8d152642e"
     },
     {
@@ -152,7 +149,7 @@
       "observation_seed": 610007,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "18b5de17c0c080d8ddc26f71b967b3163f0cabfbbbdde6e1be057dddc45b9190",
+      "multiwell_opt17_case_sha256": "2bd7d85bfcab62ed632246f93744a318da793541e2e7f7c6743b38e9bf9f4d65",
       "base_sha256": "d213ed2623be06049c1c1908d31d666402a7b30f3318f2dea0fa801a5375a149"
     },
     {
@@ -165,7 +162,7 @@
       "observation_seed": 610008,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "9e2678ecb7e3f6eb34813936d0661e25ac2bd0d70fbef83dbcaebf8b7dc7f6fd",
+      "multiwell_opt17_case_sha256": "b5e4fc0c5f2a5dc33f86fde2cde9f833935166b64b20e04cc97cc0780c2fd040",
       "base_sha256": "3067aef2d513eb83379e27b4136eeed6cb0865657adfcda3326ff309ac9abcfb"
     },
     {
@@ -178,7 +175,7 @@
       "observation_seed": 610009,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "d3e9c8d386e7fcf11c25b199239b7c83c87227562a963c149fe2ec596731a031",
+      "multiwell_opt17_case_sha256": "fb5f62c4bb30d97c8e30535a46fc44c6bc56e78666e2cd89cea437f47b41cf71",
       "base_sha256": "c2bc3161921f76c30799c5a18939eb42e1763bcc1db46b4aea9fea770c75f400"
     },
     {
@@ -191,7 +188,7 @@
       "observation_seed": 610010,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "ca758364c0c4fe7088f54f090c3945c46afae3caa5345432dc90dc19a0d27718",
+      "multiwell_opt17_case_sha256": "874566f28ca282c39fde5548e1c88002e32e604da974f88cbd941781288ef499",
       "base_sha256": "68e20ef6ab8f08f1e37e4f72579404c1bcd95e9af78a213801595f005f17c8e2"
     },
     {
@@ -204,7 +201,7 @@
       "observation_seed": 610011,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "9a5995e83ad545c53b4b58de58429ce9918ed119384948e46a2bce0b3a72432c",
+      "multiwell_opt17_case_sha256": "911237712df5ce2e4144506b9d03485d343158776ef0f644136ac89694ce34cf",
       "base_sha256": "a2510d170956a7a14527cd56b29c47e150c212ceb6d15575ac05c9f931b914a3"
     },
     {
@@ -217,7 +214,7 @@
       "observation_seed": 610012,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "e91d0477c7c4d03ff58519c50d3f9d828ec90b5fd75b90d96ba0c41bc98d5456",
+      "multiwell_opt17_case_sha256": "d747ed8469ccb01778ddda0fbc0089166a75246e643d3b6519e007e37c218b82",
       "base_sha256": "1ca5b9721d6e66a4edd90cbc4ff405231794bdcef2525ebefc78292a9085b9d7"
     },
     {
@@ -230,7 +227,7 @@
       "observation_seed": 610013,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "282a9d5d14825502826a822d72da587d03477c05360acec7954af91c46b1df2e",
+      "multiwell_opt17_case_sha256": "6e097febbc5235043f4ea828396e361e5081dba0b6164f5c2f0425c77330ae5a",
       "base_sha256": "7912635336db35c8ffd3dda24987cc5cae3b2d5e6e6d77c574eddbbb57995e3e"
     },
     {
@@ -243,7 +240,7 @@
       "observation_seed": 610014,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "8d401b2cb38c841514659055f0f1b07c5370e3d9b1113be09bbb162fced3bbd1",
+      "multiwell_opt17_case_sha256": "1010449abeb523973ef9b57cadd7e4dce7a386f91743362ebfadceda81b58b28",
       "base_sha256": "f1495b0e7fe6a660dcd4064e79a0cbb268d740e3f628cba41405681c628ccbfa"
     },
     {
@@ -256,7 +253,7 @@
       "observation_seed": 610015,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "cc716da0d053d3b91933fc3acbb765a5c8e81b59580bc9dfa5e6e9a7072937d8",
+      "multiwell_opt17_case_sha256": "f508d89c481bc375829175e82a1e819bccd51b783d7c8e2bbe6cf754e7187aa2",
       "base_sha256": "798ef095ef1b60fef39706a82c7a09fd37ea21cc90132160b7c0dce1b606105a"
     },
     {
@@ -269,7 +266,7 @@
       "observation_seed": 610016,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "1076a13fb61097be076d86ff35d6a04564a4393f761c9091e080573038530134",
+      "multiwell_opt17_case_sha256": "51bd887d8e761896778870eb488c22bbdab95e463acfec4576c2a0fee47a8aad",
       "base_sha256": "c9b03eb111ece2b3cdfc3a2d578149a327f75f9a6c63ae5266e1562b9e086035"
     },
     {
@@ -282,7 +279,7 @@
       "observation_seed": 610017,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "6133b558b6b18054c9874ce6823ec00eb0460dd1ed2a49aab08f0831143a511a",
+      "multiwell_opt17_case_sha256": "c21e4fc21d0bfb1aab8b2fbac694b64881321753ea13dfe6362651649337eb7d",
       "base_sha256": "5cdd8220edc1e4289eba7525ea884c1d10cee0f33fbbd2d535258dc833459ab7"
     },
     {
@@ -295,7 +292,7 @@
       "observation_seed": 610018,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "4c0e8e1b4d5c40447b96305ddd309a86a64f9605ff2149cf1608cba80e892153",
+      "multiwell_opt17_case_sha256": "06bce174daa664ef4014fd121ef38ae2366182dee344d0af4d203e1c6be4e597",
       "base_sha256": "7d7fcaf45e949c7014fa7dce5d9cdd2b3841bfab0bf9236ab432f197f35bd46a"
     },
     {
@@ -308,7 +305,7 @@
       "observation_seed": 610019,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "653cde454419ee0d8b0166c1f3f48f0549eb70fd171617337ad51101327d5f35",
+      "multiwell_opt17_case_sha256": "75e84e2e6dd60fec58f45fce5234a77d9018b010ed155317ae66c94223d4fe5e",
       "base_sha256": "54c7583d4031dcaa793b65e6ddd9cecbe4e75cb3d46d95b19972d2d30304d25d"
     },
     {
@@ -321,7 +318,7 @@
       "observation_seed": 610020,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "5ff06e76f4cc5968890058a372cf96d46f07a7ebac8c95030ab7fb6f1923d728",
+      "multiwell_opt17_case_sha256": "cd9f1d582b0074acbc07f2e376524085fc18c3761189eaec28bc756ed962c32b",
       "base_sha256": "4a409173c9a31b32a6231928ecba0b46229c1e6f69a74ae7bcc26ff19c895d0b"
     },
     {
@@ -334,7 +331,7 @@
       "observation_seed": 610021,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "e666c8cc8397fc04c40fa81a532f707f51adc6ae9d095d5c54263243f1a2539b",
+      "multiwell_opt17_case_sha256": "f7ad5d4dd1724db7d18660b8ba527412fdb93bc2cf62beaeb3708b0c5771f196",
       "base_sha256": "c89d475ce3c16122e8274d5340614db39b2354434dabc9ea50e99abad13b13b2"
     },
     {
@@ -347,7 +344,7 @@
       "observation_seed": 610022,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "71e7997c72812162333bb696da45868df2e196354a7a64b8bbaa9b400af595ad",
+      "multiwell_opt17_case_sha256": "c986632bb9f9398c48712f99c5b8734ad8dc7eaa644729ef16b34f906410f69b",
       "base_sha256": "779ca075fa073d15058f7308bd2e957c45beb9cb071efbe6c2d6528deb1ad915"
     },
     {
@@ -360,7 +357,7 @@
       "observation_seed": 610023,
       "member": 0,
       "released": true,
-      "multiwell_opt17_case_sha256": "e137db512f362c355a0d743d532fade10b6f46f2681fdbd9fd436f85a73b8479",
+      "multiwell_opt17_case_sha256": "7f9af47ab1a7f46651e299a4bd38e3b32a1a6da5790dee57a065f04aec2a3086",
       "base_sha256": "d62e2071630dc057521af8118d70b05dd6c11746dfd78326a8207476d2c1d707"
     }
   ]

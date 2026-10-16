@@ -1,7 +1,7 @@
-"""Registered monitoring configurations and deterministic observation generation.
+"""Monitoring configurations and deterministic observation generation.
 
-Source: ``operator_final_20260930/monitoring_prepare.py`` (``configurations`` and the case
-preparation loop of ``main``). The 49 configurations comprise 45 full-cohort
+Source: ``operator_final_20261015/monitoring_prepare.py`` (``configurations`` and the case
+preparation loop of ``main``). The 64 configurations comprise 60 full-cohort
 configurations (24 test reservoirs) and four noise variants on the first six reservoirs.
 
 Observation model for a configuration with points ``x_j``::
@@ -20,7 +20,7 @@ from functools import lru_cache
 import numpy as np
 
 from ..artifacts import resource
-from .geometry import FAMILIES, geometry
+from .geometry import geometry
 from .networks import masks, point_noise
 
 BUDGETS = (2, 3, 5, 7, 9, 13, 17, 25, 33)
@@ -33,31 +33,8 @@ ENSEMBLE_SEED_OFFSET = 19000
 
 
 def configurations():
-    """The 49 registered monitoring configurations, in registration order."""
-    configs = []
-    for family in FAMILIES:
-        for rule, counts in [('optimized', BUDGETS), ('space_filling', SPACE_FILLING_BUDGETS)]:
-            for n in counts:
-                if n == 2 and family != 'multiwell':
-                    continue
-                configs.append(dict(key=f'{family}_{"opt" if rule == "optimized" else "space"}{n}', family=family,
-                                    rule=rule, n=n, channels=[0, 1], static=True, times=list(range(7)),
-                                    sigma_t=.5, sigma_p=.25, kind='budget'))
-    for label, channels, static in [('Tp', [0, 1], False), ('T', [0], False), ('p', [1], False),
-                                    ('Tk', [0], True), ('pk', [1], True), ('k', [], True)]:
-        configs.append(dict(key=f'multiwell_opt9_{label}', family='multiwell', rule='optimized', n=9,
-                            channels=channels, static=static, times=list(range(7)), sigma_t=.5, sigma_p=.25,
-                            kind='channels'))
-    for last in (4, 5):
-        configs.append(dict(key=f'multiwell_opt17_end{last}', family='multiwell', rule='optimized', n=17,
-                            channels=[0, 1], static=True, times=list(range(last + 1)), sigma_t=.5, sigma_p=.25,
-                            kind='duration'))
-    for multiplier in (.2, 2.):
-        for label, channels in [('Tk', [0]), ('Tpk', [0, 1])]:
-            configs.append(dict(key=f'multiwell_opt9_{label}_noise{multiplier:g}', family='multiwell',
-                                rule='optimized', n=9, channels=channels, static=True, times=list(range(7)),
-                                sigma_t=.5 * multiplier, sigma_p=.25, kind='noise', test_limit=6))
-    return configs
+    """The 64 monitoring configurations used with the final model."""
+    return json.loads(resource('monitoring_configurations.json').read_text())
 
 
 def configuration(key):

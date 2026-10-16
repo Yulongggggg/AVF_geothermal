@@ -93,7 +93,7 @@ def test_task_timing_and_evaluation_counts_exclude_forecast(monkeypatch):
 
 @pytest.mark.parametrize('damage', ['missing', 'duplicate', 'nan', 'wrong_seed'])
 def test_three_seed_report_rejects_invalid_records(tmp_path, monkeypatch, damage):
-    folder = tmp_path / 'table1_three_seed_20261007'
+    folder = tmp_path / 'table1_three_seed_20261015'
     folder.mkdir()
     source = paper.SOURCE / folder.name
     shutil.copy(source / 'cohort.json.gz', folder)

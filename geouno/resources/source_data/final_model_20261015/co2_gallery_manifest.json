@@ -1,0 +1,35 @@
+{
+  "seed": 20261003,
+  "pod": 4096,
+  "cases_zero_based": [
+    261,
+    409,
+    20,
+    193
+  ],
+  "joint_error_ranks": [
+    125,
+    250,
+    375,
+    450
+  ],
+  "selection": "Time-averaged relative field errors divided by fieldwise case medians, then averaged over two fields; stable rank order.",
+  "time_indices_zero_based": [
+    11,
+    17,
+    23
+  ],
+  "time_labels": "Stored times 12, 18 and 24; no percentage axes",
+  "pressure_scale": 18.772821433027488,
+  "pressure_offset": 4.172939172019009,
+  "pressure_map_units": "bar",
+  "prediction_storage": "float16",
+  "inputs": {
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261015/formal/geouno_r4096_s20261003/test_records.json": "560b47e613e0228c5d2fe90528c723325306f7fbfd18e0f169f8faa6b5b34e56"
+  },
+  "predictions": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261015/formal/geouno_r4096_s20261003/test_predictions_fp16.npy",
+  "styles": [
+    "style.py",
+    "Fig. 2/3 palettes"
+  ]
+}

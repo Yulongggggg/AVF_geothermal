@@ -75,7 +75,7 @@ adds instrument variance (0.5 K)^2 or (0.25 MPa)^2 to the local variance.
 ## Monitoring design (`geouno/resources/design.json`)
 
 Nested candidate indices for each geometry (`multiwell`, `vertical`, `inclined`) and rule (`optimized`,
-`space_filling`), from 2 to 33 locations, chosen on four validation reservoirs before any test inference.
+`space_filling`), from 2 to 33 locations, chosen using the final model on four validation reservoirs.
 
 ## NUTS results (`nuts/test_0X/`)
 
@@ -98,7 +98,7 @@ The database will be released with the paper as a "pack" directory, the format r
 | `stats.json` | | training normalization (`fields_mean/std`, `M_mean/std`, `p_res_std_mpa`, `pp_norm`, `depth_norm`, ...) |
 
 Split sizes: 79,409 training, 6,808 validation, 9,232 test and 517 extreme-pressure-holdout records (72,939,
-6,275, 8,621 and 448 actual realizations; 6,585 / 542 / 618 / 69 scenarios). The absolute producer pressure is
+6,275, 8,621 and 448 actual realizations; 6,582 actual-training / 542 / 618 / 69 scenarios). The absolute producer pressure is
 `p0 - 0.00981 * y_prod - drawdown` [MPa].
 
 ## Licence

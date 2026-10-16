@@ -1,0 +1,162 @@
+{
+  "deeponet": [
+    {
+      "seed": 20261003,
+      "values": [
+        0.21647045016288757,
+        0.09382745623588562,
+        0.033536963164806366,
+        3.9013735921016286
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/deeponet_s20261003/test.json"
+    },
+    {
+      "seed": 20261004,
+      "values": [
+        0.21533332765102386,
+        0.09388909488916397,
+        0.03337962180376053,
+        3.792463648870872
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/deeponet_s20261004/test.json"
+    },
+    {
+      "seed": 20261005,
+      "values": [
+        0.21726305782794952,
+        0.09718434512615204,
+        0.03374795243144035,
+        4.006203853283539
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/deeponet_s20261005/test.json"
+    }
+  ],
+  "fno": [
+    {
+      "seed": 20261003,
+      "values": [
+        0.1649320423603058,
+        0.11212372034788132,
+        0.02995927445590496,
+        4.0654440032537975
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/fno_s20261003/test.json"
+    },
+    {
+      "seed": 20261004,
+      "values": [
+        0.16409052908420563,
+        0.11130883544683456,
+        0.02956363558769226,
+        4.092818770506819
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/fno_s20261004/test.json"
+    },
+    {
+      "seed": 20261005,
+      "values": [
+        0.16113433241844177,
+        0.10689160227775574,
+        0.029390698298811913,
+        3.9292904893471525
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/fno_s20261005/test.json"
+    }
+  ],
+  "ufno": [
+    {
+      "seed": 20261003,
+      "values": [
+        0.1016666442155838,
+        0.06878630816936493,
+        0.0186331644654274,
+        3.349054744739491
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/ufno_s20261003/test.json"
+    },
+    {
+      "seed": 20261004,
+      "values": [
+        0.09641556441783905,
+        0.055446233600378036,
+        0.01792795956134796,
+        2.276635460622309
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/ufno_s20261004/test.json"
+    },
+    {
+      "seed": 20261005,
+      "values": [
+        0.09937191754579544,
+        0.06356217712163925,
+        0.018494853749871254,
+        2.7186711366147844
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/ufno_s20261005/test.json"
+    }
+  ],
+  "unet": [
+    {
+      "seed": 20261003,
+      "values": [
+        0.08597122877836227,
+        0.054086849093437195,
+        0.016338417306542397,
+        2.370420592483275
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/unet_s20261003/test.json"
+    },
+    {
+      "seed": 20261004,
+      "values": [
+        0.08633298426866531,
+        0.05435509234666824,
+        0.016500014811754227,
+        2.2708519014917616
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/unet_s20261004/test.json"
+    },
+    {
+      "seed": 20261005,
+      "values": [
+        0.08676567673683167,
+        0.053727034479379654,
+        0.01655602641403675,
+        2.302836312233669
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/unet_s20261005/test.json"
+    }
+  ],
+  "resnet": [
+    {
+      "seed": 20261003,
+      "values": [
+        0.07155846804380417,
+        0.04465830326080322,
+        0.014996301382780075,
+        1.7090822849182112
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/resnet_s20261003/test.json"
+    },
+    {
+      "seed": 20261004,
+      "values": [
+        0.072116918861866,
+        0.048751916736364365,
+        0.015266547910869122,
+        1.9038291972251107
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/resnet_s20261004/test.json"
+    },
+    {
+      "seed": 20261005,
+      "values": [
+        0.07353895157575607,
+        0.05028144642710686,
+        0.015534504316747189,
+        1.8918728251536099
+      ],
+      "source": "/mnt/home/yliu5/projects/ol_geo_train/runs/ufno_bench_20261003/formal/resnet_s20261005/test.json"
+    }
+  ]
+}

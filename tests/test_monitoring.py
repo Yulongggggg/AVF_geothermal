@@ -11,10 +11,10 @@ PROTOCOL = json.loads((REPOSITORY / 'protocols' / 'monitoring_protocol.json').re
 
 def test_configurations_match_frozen_protocol():
     configs = configurations()
-    assert len(configs) == 49
+    assert len(configs) == 64
     assert configs == PROTOCOL['configs']
     full = [c for c in configs if 'test_limit' not in c]
-    assert len(full) * 24 + (len(configs) - len(full)) * 6 == 1104
+    assert len(full) * 24 + (len(configs) - len(full)) * 6 == 1464
 
 
 def test_geometries_match_frozen_protocol_for_all_reservoirs():

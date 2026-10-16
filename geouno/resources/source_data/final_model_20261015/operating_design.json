@@ -1,0 +1,2851 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "protocol_sha256": "2abd96f563a3cd0ff6ee428449a1446275481a62855b2e2c69d30e89e0f528d2",
+  "analysis_sha256": "af2be1de7176ba79bce798d865284897d2f5f6317d074f43fe1bae174d218f51",
+  "input_hashes": {
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c00.json": "5eddcc727fd0198da6a9a160570d841e07262c885aac77561e4fd0c47c00d47b",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c00.npz": "af2475a936fa0a370930669ef480f9995db5fe741c9f02dcb60c494e910f829f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c00.npz": "6470125cbe0ef91ca3b5c5d9fc13430bd3c98caba7bc36cc1235b06b16c4fe47",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c01.json": "7d8bd10696d9b9b1f15a5caa069de3bc1e707facbc4ce350dda3e6b289044d22",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c01.npz": "c36c92baed1fdb2fe81d6c245689d28b15772e3503d6b912a5c4372e2032459b",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c01.npz": "fcaaea235395bdd35547666683d0f9d4f20ed2ec4ccab96b4508526c7d17c23c",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c02.json": "212592dd390a30c29ff441064490e99df875c48ed08c019c510ac5ee17946119",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c02.npz": "989d3dc9879c1d732a4aa9a3898c6c525beacb8415b9f2f9fe5434c134f66ef5",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c02.npz": "0eb9799a15c5cd78e210f124b4641a65f54704be7cb8731ffd712ae3bad6d357",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c03.json": "462c079b622e7f6e6a1d7d843534a5140dded9762ea4910cff322d0820440070",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c03.npz": "58046698f5aff3a18ee1fac05142d29d1a4d3814cb6c562460ece2d0b1a54995",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c03.npz": "d3f972edfc78da77d378323be4602be642fce0f1d918e16657661d60cb75a7d0",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c04.json": "6e9966f838bccc62acc613ca412ffe3f2158fa68902602de632396114dd88170",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c04.npz": "15ac943fe8c51c0fbdf598126f48e8a2d7e9c3ffd57f613021b29b36578c9da9",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c04.npz": "419d84290196e477ce755a87e05d959c618065c0811eb111992e4092fb8f5b81",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c05.json": "f441e1f269884e8983fdcf380c1f9449b6b0046b4124acab280703a9140ebfa1",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c05.npz": "a8f8e55cb2c08fe8909fb21bae6e24db50f77481236ab6b6ae39e8b9f4ab03b1",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c05.npz": "5d96dae10bb15a47e5eabcdd9b9fd88cdea4c86a819803832c6840dd24bc8b11",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c06.json": "cc49d8f9440881a6f75408f371ddad3c5b4e445e256843ce7c5107a705ba104e",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c06.npz": "e70a45c433757c63ff32742ac457765f5c62e2ca27bc695bd5a60da3a6894c21",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c06.npz": "98c873714e997f67ca90c65310275e6cfa531cb646f31ac5fddb99ce2bda3c76",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c07.json": "f4d285a605ca11d98ace9a2b35983b254e0f6e1648ea7d03bd5dac4f9391ece0",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c07.npz": "a0b8c4fa5d33d4f5b53e55a7015d9c0a1614c510d9dbd885d8e9cb432af7ce23",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c07.npz": "f3d93f213c5a2f9ed7322db274872790539d9db6d1568beeb04e2b993de8a1e2",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m0_c08.json": "4ce63c1f698cdbd89eaadc925778a8ee6d0ede357cad30ed639316a79a5646ae",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m0_c08.npz": "07516ac0968ee849636e878e0b964bfdb142e6179d8d1c076e210ae092dbcd8f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m0_c08.npz": "5d0f97a737487b8b01019399ae046b26dd061d191689b27fd8504a8a58c7712e",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c00.json": "42038e2d40d1837bfa4d4376929d9bfb0d117995042765e62b65710f4193ed75",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c00.npz": "11953198938d63ccbe65e43b4605dba5d19d94869a49f5b9fa149018170a852c",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c00.npz": "c0d3d6dac99cd93c40d9030ac1e5f79765d513cf928d3685377111b6221c2c0b",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c01.json": "970ba60af7ec0ad691c86bbf55a4d89c92d4d17c7a8db3257cbfe25242805393",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c01.npz": "379387680206d0d5b83eb63823962749cf78293b98bebb225d1d73ad31d287f5",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c01.npz": "180c36918dd671c2d824bf18e3bc8c130441b56263da01aadb4352ec89df70cc",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c02.json": "a4ea329b948ddeb66fe3b5eab7a32c1b13615d5a9822d04e0c59eccfa464da55",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c02.npz": "38209da080977938ad179c680561f8e12a9a7387cdeea13ce62cef87319cdfbc",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c02.npz": "d190b906f0e068c8a5e5dbd43be647a4c409991bdc4ab8ac0b33dd998a1ce670",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c03.json": "571489b46ea3d06fdc6385f789fd4d966cf826c2c5ac33fb9936680fcbe32943",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c03.npz": "bf5fa8807d995bec94b4fe8a06c0d7d8e6bc2fcb58d629e300e1604a97fa33cd",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c03.npz": "284ac538965f2dd4766982aef65835697538d962230d2a4669e6038b01feb9a6",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c04.json": "c39b4305cb6aa63e64200d9b6a02d0dadc03bf7b3e04e6bc737305416c219b68",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c04.npz": "7ac083d98ca987c621059b5de76e33f2d9f3295b59dba6c7e7a0466254e53b86",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c04.npz": "26207bae346cfaf4c0c5e7434d3507d46b614550586c55e08b6298c41cad2aba",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c05.json": "2a446da9c150684f216d42d1821950c21d858f1316941f30adb6198ce8f4a451",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c05.npz": "b6106fde0b74c05a2de43c51abb56d07a38030d06e149f5ffab7e793e59e9005",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c05.npz": "2674bd348ab98385a99df091229a7ffd1d33b2084c138a625ee48ab3c151f587",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c06.json": "beec5e4fc0a4a27d01554ecc13e8951030434723c49b1ce6edaf15a87f2b1081",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c06.npz": "c9c61b6b0d81854b0e01a71f3a7d57f562ebce6327a694c3ac014399cc622e19",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c06.npz": "ad2a86a6cf854ae0aafd71c220697dbdff9bf1928ec8025f45237fbc9641542d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c07.json": "025e882a62547bbb6137eb2d4bd3d7c63df7b3112758830733ee82378ccd34f4",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c07.npz": "acf4ce5ffcafc2f5d2d9f9a1c5d2ab25dc41679fb41eb598daa385c2dd6c312d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c07.npz": "921f05b0546079142e922b74d78cdf1c187e01c21b69c14cdb2261d899f7097f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m1_c08.json": "b96146b9678a03a98fbab45cc862bdee987d3ba2a38f207293b554600d240e0f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m1_c08.npz": "d5b40ba85275aa406efb04f058c439e8c8edb62ad60500ab153016ccec783514",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m1_c08.npz": "022b703c294c5674c16b03bf24edd6be97de964f944882373d5fd268148fa501",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c00.json": "526599a6b395a824b141ff72c43d3db088af307425c94db97e30ca40ce8ce09d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c00.npz": "3865b8fdfbab1010f0b390cff03ae3d91571fad6a3eadb5a9387c264cf11c792",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c00.npz": "ba5872e1ea47d6b11c77c1e58950919067e15836fdf91a34ab1e92fb879cb27d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c01.json": "bd1e0bfe74e8cd9d375974a44df28eda616152cbba23ed14334ea4efbf0f94ee",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c01.npz": "5830cae1bd098fecf3c846c7d88d798df72a192393da39fb0a5968e2f440c583",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c01.npz": "5f77f25bfa73d375bae824992e53ae72556aa4431ce72c02cee759bccaefac03",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c02.json": "31326d4d1ce6ca4226fe0dff6b03c5b84a1219d0e3f4f4fa11677259b885a04f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c02.npz": "73f1dbaab6ad857e040c12fb9672ce02bc9b46e97394dced8457d3ea3de8bc54",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c02.npz": "0bd4a653060cd34aefc2bcd05e4615d6fde71aaf498529b70b5747d90d17c9f8",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c03.json": "f73cc1810cbe9dc8a40a875a3f68119ccf68b6199fc48987c306111d646c4194",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c03.npz": "41704649453858aee2fe2c9674e5f16ca007dcf6b0d0fcbf4e8209b50d2dd9af",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c03.npz": "a53174386d735d834f3a58d8abe229f218b65cdef0a591fdedb44c85ace66366",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c04.json": "5f64dff9db0f6a95ec2cc42af919fe517b213d78f6ea74cdcd00a5b546db7cf8",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c04.npz": "5e5fcde02f71f0d5f73103a2fc1b0d9324d6215184ec9dffa98044a1c6772ec3",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c04.npz": "59ce8f947bdd2e5b686fca1311d20df4fe321d559b02788691f6ad2400c0640d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c05.json": "2e61f2cfe802a30e09b0218570c6ab2ac58a0bbefc537fc46f2474917b51683c",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c05.npz": "92970638bd2d5987fd636c4f77b4170f042fdf914748d91ecd3d765a64842e8d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c05.npz": "7b62ac213d331c1bc8d68448aadf53b6ee72e9f20a52566593aa3e16e8af84ba",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c06.json": "f659c50d65fbe15df53a8b1b307c2738c9c288d8e830a85a491d5bc6c31cdf4f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c06.npz": "e9d117af6239ee671cd8ce896e5f8bd4a8355a8e9ae46cf6d57ac3c647c4916f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c06.npz": "241df7008e5c097e70d9b05097d24010a18ba3a10a7dbef05fc8a46963fd59f2",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c07.json": "d5302d415d027507d124a178a4ec0063afa445a1f7a64cbbf8c05c388ac39e16",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c07.npz": "61e58d533c540b21f2652d32d1bb670fd2cd391fa46c9f97b160cd2cd4e003a5",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c07.npz": "4f43f83aac8f4454dabd6e53673c788472d249b57770c6c6748c5a093a2f3f80",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m2_c08.json": "5ec7558c5c381873494c55ca7c4bece705bd7ed33201858e9a83028633931cce",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m2_c08.npz": "f1fdad6b65bc10ed5a621a1181202cf24f329d8477442673176c56afaa078b15",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m2_c08.npz": "50816c2517fc2bde1451340f026242a5c7c18fc390cf70e9be0f85cce21a9dfb",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c00.json": "bca75ba5d1032f22105d6a0d8a946191a2abc5c77cf2917fe771c683497dab5a",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c00.npz": "7814c2455dfcb91ac5f89aa86618cd9a0ac218f5d5f0ed97b2304d04639ea59d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c00.npz": "70fddc960d7409d381f6eab76d0f5a9998a4a3fbf58280107f90c6ff6a1d6f6c",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c01.json": "2477e64946519075ef3375b6fefd7ecddc6b4137e3739919d21e2e068d896eaa",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c01.npz": "20944961f3fab9b66c620eacd4357e97f6d1081fa0648c6a43284783023fa2d2",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c01.npz": "191921ba3f507384623aa229d70ed7cfaf4b15cf5bdff66a13d971751bec44d6",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c02.json": "2a203cea9d869fb586e3b936c80d081c792de9d6a0cb970ed2578c23a11aea71",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c02.npz": "6a075edf9a23914123a0d64e2b729d2eed0c9e5dd32d0f25fbbf2c07af082289",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c02.npz": "f46d4993429627b57d342960b4353ce86b09b72903da41de937cc9bc7f11a9ca",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c03.json": "a9d7cb34887fba409d67314ca4b44f1ce493d2378e0d573a20eaca0d4cf6e592",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c03.npz": "8fd993780a58781688b1abdb01d718933627772030437c2b9b444fc61f04b206",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c03.npz": "29f07daac19c37ebfcf356d9a211a0dfee22c9105668feec317c97164229349e",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c04.json": "e22040116f49b347a7f8bc9b190b551f14ea8c6a624bb866ceac5a545c946aa9",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c04.npz": "d9e31b9b8a7eeb28f23faf9040275de9158d97799369d7047ce60cc0661d297a",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c04.npz": "dbe85dbc2b0816fdaa92b3647e2471dedaa1d5c2caeca764236f0bce0a8097c0",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c05.json": "778f0a1dab3167fbbe3d62ecabe987b73db6452ab2524aba14413deb71c32470",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c05.npz": "f02d6cd7a094ea94252fa74d65eb1fb09af66196de63f54c50aa2f9cbeb452e4",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c05.npz": "3ce78006af6563f064a93bb5d4634e6358ed5d1bacc1abd90d7975b8212e2bef",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c06.json": "d24bbd41a45c8dfc5011927349efb4608a2297b489c45ff79ae2c91cda07a040",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c06.npz": "507ba4d3f13f18093d4c8a2213dc0b7feadb0b044dfa54c8b5a26a0584f2ddd5",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c06.npz": "a98777dd0d4809abf2badad2e72d45fcaebaea9aaf1f4d9e480dd487b5fec77d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c07.json": "784360b82b9a7f12cf6aeb8a094f034039ab93ecb8b80eddd44e45e5dd4bbed7",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c07.npz": "184fd5c14c1bb248c515f804876352ac7dd3d9e36c94b2e09c1134980a5f59d6",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c07.npz": "6b75a95bfe337b1161724cd030d600d5901e94375b64a73f2084fe0367a66649",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g0_m3_c08.json": "62d9d45b3c8dcabaa8ed0267b9a6ac2a2b60c5adaafb71cbd60c17a02a229a67",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g0_m3_c08.npz": "1332d2b7407f8cc89ff57ef4f1f84c61f53808952b9ef9c6d79f251a218ae232",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g0_m3_c08.npz": "7ac237e29a5219e1ab58146989fa5ac229d80bd76778928eda57f42ad6d6cac3",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c00.json": "523264b35d975749f94df732497b5f06e2dc1dd5e8789728d09386f64681ea23",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c00.npz": "eab58c6a19d5c57a9558a61795141644342bf521bb447855df085333d8893166",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c00.npz": "bc563c9bea2454d2230be973b81caa28a36fc4429d3384a892856c0481ed5dce",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c01.json": "1d82b141a8fd6a7685b00e630bedbc53a87da8b0761b5535bb7cb1cd134f3faa",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c01.npz": "62f89012724cc16db9fa2122146f060791b2a974101e02ad4b9f86fca1982bf5",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c01.npz": "26e0bec8c5258690b5a951d8d5be9135c99b17990526bd724014e54873a33ae0",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c02.json": "dc8f700f6a377371250df284cd54fb8021d81da85e82fb9b190fbec90af795ac",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c02.npz": "f7499046a66a87273d84d8ee5a6e1cd54d82698398300707c85aacd3342ba160",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c02.npz": "00872aeb561e4b0d433ac3e6bf3af9929ad16abc5bd90fba41c9792f619e7344",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c03.json": "ce96b346a820fca0985aefc1162c8b14e0c0c0fd31df5df5b0b80fe642f668ce",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c03.npz": "a48a5071b8305d4358022a48b2b4f88a0adc3660a096e231378e2341ad4cc60e",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c03.npz": "b6bd2d4ee13295d697133008808b983d1bc25d23904e2456a54bac1c865dada9",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c04.json": "a5eab90bd8d49be9db82f46c19cb0c7952666ffa66778e06fc842d4ccb380428",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c04.npz": "11dd054490b53a5e406bf6eb25e9cfccbd7d360e94caeb6d21e90f6f144010b2",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c04.npz": "c5167259a20be2eeb9e66749cee84b8ae8c15d34b612c6fd413f866a5aff76a7",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c05.json": "2a06c430cb2499843c3d4cfa28eb539d621505fb4fff2f21d982b4ec78a4edbd",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c05.npz": "9732c1d677587b79d1ed97aeab4078e8e6363c8a8602dcbd052f2e26d655150e",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c05.npz": "9b4bbbb69ca71be99cfec8eacc427dd834f84b4872bbe5d9d34dd661859ec978",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c06.json": "1d0b5f9b2f9a02b9a4be09a50ae26747c2a26dafe55bdcb379721de37c38f096",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c06.npz": "317254048069ef250393ea360e1cca257249304156cdc89bd9b69cd328ca85c2",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c06.npz": "bf17d3c9a7f423ff049180a45b185b0894adb412e99505ec569ca1ddf56f4acf",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c07.json": "f73065244207017894d398425fd9c430b35f5ebfa953afdfacfda9e1fde3a567",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c07.npz": "2427ddbedad204843b41b039f7c2b48fd9b9800e348581e4df09b566ddfcbd06",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c07.npz": "d69b5ed8d31b3344b01fb032585b9571ac1e248d89be40575f02542c56003271",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m0_c08.json": "9a162316302282a951fa5074b2b6ecd13854c73c005370349a7cb688f4a15ede",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m0_c08.npz": "e158d1e2536f31b75e4d6b6f6249a79c1245ccded87ba703b44ddf273ab532e1",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m0_c08.npz": "79a5ba719d92e8dbe807579f11a33480c5a3068709176a71c6a5ad493b5b9f61",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c00.json": "81dc67970d8b8f8484c9dd9cb884e12b6f53949e6636ea48a429648dba0c7ada",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c00.npz": "1d126a579776f04c9a7b877f72fdb03bbbf7e13d814d9c6c7d85505430c3845c",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c00.npz": "0e1d7544f299aa7167096ef950581fed24346920a1a92f17cb27ff0c8fdacb23",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c01.json": "9d10f8e3eb8b6556b9fb93de78383e930278dbf02c546974fb6ec8b332ef2e8c",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c01.npz": "87c86ad2f7be9579d556022211840fbe91d75fa72cc181367bd1c9a9076acbd7",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c01.npz": "6bdc349c34eaa08cb8d4984b6d177d1cc6ed07b36b7206128e019dfba6de0dbc",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c02.json": "6ec0446a7ea66c25bba36aaf45a5ef0b49be22686b97dc7e540e6303db0126d0",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c02.npz": "e9a2c6be60c3046e42598641acbd1b0a7db6ee4184586d94c1098e07417a6898",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c02.npz": "669dae9200cbc285151b6c5baeac7160ccff4ad5eaa4c90bb3cf7c0f0a3a6553",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c03.json": "60e7e9136a5e620c59e404371e4f579c19d32e5fe0f7dd707c7d4865a0fbb88d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c03.npz": "7f782ca0b620aa00d056cc676a4f9ebb1566f6163fa327475762267cd1543aaa",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c03.npz": "510ca1cbada18223fb90c5619402e733101572db9769d630df3acd8e762fc018",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c04.json": "f681c059e44c744439580fd5b0e66964274379fcd96588c7084d33cd17550bf5",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c04.npz": "981404a09eaacc8898f6d302f46d6cacdafc55c88e836db83b428743e8662f8d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c04.npz": "3a146ad862da98b8f448e44746144a88c4c224f32869c195476b4035ee584a9a",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c05.json": "0755e7d6194970a8d093f3a95b72bd3cf1b4a58b5382a7a1239d710998eabcf8",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c05.npz": "bd1694ce5728c22e3011bf8571a24796d0ddf5ad61d1b08517fab83eeec9d2cd",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c05.npz": "64438853792b89bf74b8c457a24e9cf471bb6c4c1fa6226e1b7858012803e327",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c06.json": "775a4cd3d6907a415ed697907686f402f27da0d1a14f3a3ff03d8dbac0ee3fba",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c06.npz": "4d9973021b46d691c05c467c72b37c158cbe09bdbea9ab7c481856f98d6212ae",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c06.npz": "f717e3a606d63ca02fe92058ce7dd88ba2ea28052e9da91ea98197c5a918bf25",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c07.json": "fee3b9ed2a87af6aca8d28ba8e128d026e103337da4181a8bd67abc6bcbe05f5",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c07.npz": "583adf2aed4c6d18a52100d8b4b93c24a9f65ddcabc0ed294fcd48f0fadc27d6",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c07.npz": "9e19f104fd9ae4998749f33ddf28e5a6c731631205d52009688b57575a61966d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m1_c08.json": "5be85361e436a2d113b89619b6bab6d7638ac32f6a5bf89b0c16a85dca466177",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m1_c08.npz": "82be9a7fc3d645c22d772199516da81e19185322c8a68f01a498cb018e66e51d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m1_c08.npz": "c2092f1eb3e16e410b03552d0c4e69a0b31188b933e300243cdc54059e4a240f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c00.json": "431938f72454eb7bf8ab3e09fbfba8455c56b40e115b3750948a8f37ec20950d",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c00.npz": "a46035fd6d6a0fd99a7f0b03d5147ca619a72bf9cd608870e18883b5ddee1ace",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c00.npz": "e3cc1fdbb74fc5025ba812789b48340d101c07c0db418496807edc2b94c16e65",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c01.json": "3e7b165ff8adf9751513d442314efcc44e52468bbc1d194281550e5b81389402",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c01.npz": "fc7b770384609535612dfd02d598da3d7e9dd0edf1753b2f0269c1aba6520f02",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c01.npz": "83f6504a64bce7384caf3e3b4ecdfa8ade0fdcbd9c956cc868764b0752484363",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c02.json": "0674d90eabcdcb1d0f8172134408be6ca9fa2dbbbcaa7b72a5922843c11fa606",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c02.npz": "c105cb4c865540146752728abbf1fb7be449e2b7fa917761ec0781ea033183b7",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c02.npz": "e632eddc400a3386dbf727f925e7ad5518cbcd1419ed4f2dec6dca1ec5b2511a",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c03.json": "721b4f283b7a528dc7345414b35fef25857d14ea5af19e8d86d508007d1d0bd7",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c03.npz": "5b32851ab990b2f172db59fa692215e7ea56db6ca83d0a3bb150210ade9a5244",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c03.npz": "e671fc9328daeed68b8528b8a01c0da89bbb2e514efbe1661b4447e8fe798748",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c04.json": "3ce6d33706197e169857c9e5b7d4531eabffe896da161e1cd0d2407d1c710f18",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c04.npz": "a457b0aff5a6f438b7dba8b79c2683dd6645c8a5a09013bda036152643bb5a4a",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c04.npz": "4bb53d6df03bc14e735789d8807d2d61e6aa0c5aa6c80f4727d19f86c60ec701",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c05.json": "6451181134f3cd324de36c8831b56b469b28fc318ffe0e711b97ee63684f4037",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c05.npz": "c4418bd6d28c3f1f28877bb4987f64d828f7a614c8a9b7047ba89d4276fb5b47",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c05.npz": "65b7f037ce02ba9ecefe807f2a932d0e7876cca760d3c549c73362946ccea0f4",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c06.json": "ab1a3d6f3fa9cb55af0311bdc3b67f691098c3280a6d9503c446e838f87c3cc9",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c06.npz": "d580689f1dfc56758a4e56f7e64555f1c67b1f85c743ba86af8089754fac50ec",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c06.npz": "f8996743d46a8801eab090b67d1511e942afb78da798f21daa26a5210f581dc7",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c07.json": "3179f7f0e8e84c0c69fc85bd67cf9200af48eaa7291eaa1c8fb56528758ea9e6",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c07.npz": "94c972446cb7fd774524bc743af1c092bbb779fad2d1821ee246ea8e5b97070f",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c07.npz": "fe7a41abe0895fd572df1c008b28e5151dcbe6c089e3fead79bd9cec542d231c",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m2_c08.json": "db46975c283e27dc63c3917853a334333b5668d40786926725194b901cdd7292",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m2_c08.npz": "190daef15df5ba713163e712550af598a00f52dce6821fd6c5bc08d304746918",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m2_c08.npz": "8ccd8138fddf348dd16f0df022aa01c71a839b8342ded055a40706c5e4f9e19b",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c00.json": "eb1cd31ae3b06a82e32eafc6bc12e061e721043876a531f0a981c3edfdbd8933",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c00.npz": "1073d97cccf146d23c58523114b22ddf34e9af229467b619de46b2e2fe8f39a1",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c00.npz": "2b29c49a45465d8de03d7a7d3d7dbb25da799bc9f7fd1b4157d02c437d72e6c2",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c01.json": "56237ba4b806c09a8939d73b296883f84a2d86326e6399ce30f8ca1eca111d17",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c01.npz": "90ec9093077a0cb8709049ec0b4a68c56679e6a0050b8f26c74ac7c262eb6724",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c01.npz": "68b6c33287fcf7e84f346259569bc58c1b9f835ad759838a0885796136d983cd",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c02.json": "e0d080ec99992bc2e1ab15645a0517f68d661ecbcff1b795c05b0e0e41e116dc",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c02.npz": "d6c04dad84de49bb84e619c4530ce9d340805ebfe6df926e704cc47e9074bdb7",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c02.npz": "8c3cc7b0920237fdaa4934d3ea41abbb92b68741e154c989304e14a73b0d0b3b",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c03.json": "4edfb7e05a7f9255580314f1c72ef8c27e5a6b33a0851650ef4145c00b0eedd1",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c03.npz": "a55419daee7f55341fd09fbd0673f4785726017b1925f868e318bd7bf3ae8b0b",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c03.npz": "d1f49a33f3c075b7e29892b41141472970e897026ad635fc74777044711fbb5a",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c04.json": "6d482e2382b1e07a1ec3b979958e2a03d33126475d7103ab2beeb9528c96e1e2",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c04.npz": "79ed734e5bc8976772cce80db70a93eea707e9655bb097d4bd0a52d32ea125e4",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c04.npz": "54f8fc37d773a6df784356108539737a67f568f55660eff3b85ae6e8a18420de",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c05.json": "013a2a888b9b3abeda42ed0c2f7fc1ee078d90fd9d293d6ca5157d4128f9d75b",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c05.npz": "2dbee2fc9422aa7a722f307aec2d37e6aaea8334a941e61350b759122bf0af25",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c05.npz": "0b69deaf8ccf18da9ec5951c5a667197d38df8e930de85bea504518faeb2a484",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c06.json": "1e7b119938c8f6f380262920cb6e0a75a74d3e12e64ad9625ce1311a7b47a852",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c06.npz": "887539928c02e63990622e31bf4d8af0c256cc5fddd916c75834fc2e26670b02",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c06.npz": "27848fed8b03c2b8cd2d137940f6511c801a127ef04a1563b6ea7167f4f85c07",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c07.json": "8fc694e681e10024269ebc17873daf86f306a892af7f1e6016a6a285bfff10f5",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c07.npz": "0c5fda1e68198c4aa09513c3a2f9a05f277acde1942c27d3bce2225a72d3ce08",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c07.npz": "5843b5b0fb8d6b7ea6cdb008cd98dcd4db24f48f703e392bed48149204d91571",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/results/g1_m3_c08.json": "2c4b93714d6412db11328ae66d00c0eb2aa18228878f39f772c2adb05b372bbf",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/predictions/g1_m3_c08.npz": "01f32471df5e79c8f9b35d895790f2d02de70553e7d3b8f6c5dedc8b9a7b45db",
+    "/mnt/home/yliu5/projects/ol_geo_train/runs/operator_final_20261015/operating_design/fields/g1_m3_c08.npz": "3e26ed17882ba7ade6dc6d3559ce7095558d44d8c8656f3b48339c71244dc1e2"
+  },
+  "forecast_time_s": 316000000.0,
+  "members": [
+    {
+      "case_id": "g0_m0_c00",
+      "group": 0,
+      "member": 0,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 401.9,
+      "field_RMSE": [
+        0.703830361366272,
+        1.4966901540756226
+      ],
+      "operator": {
+        "producer_cooling_K": -2.5036163330078125,
+        "producer_temperature_K": 352.53097482357384,
+        "injector_overpressure_MPa": 9.168190002441406,
+        "injector_pressure_MPa": 41.63611453074329,
+        "thermal_throughput_kg_K_s": 59.53097482357384
+      },
+      "FE": {
+        "producer_cooling_K": -3.839844226837158,
+        "producer_temperature_K": 353.8672027174032,
+        "injector_overpressure_MPa": 7.649405479431152,
+        "injector_pressure_MPa": 40.11733000773304,
+        "thermal_throughput_kg_K_s": 60.86720271740319
+      }
+    },
+    {
+      "case_id": "g0_m0_c01",
+      "group": 0,
+      "member": 0,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 397.0,
+      "field_RMSE": [
+        0.663524329662323,
+        1.4177114963531494
+      ],
+      "operator": {
+        "producer_cooling_K": -2.147275924682617,
+        "producer_temperature_K": 352.17463441524865,
+        "injector_overpressure_MPa": 3.1721763610839844,
+        "injector_pressure_MPa": 35.64010088938587,
+        "thermal_throughput_kg_K_s": 59.17463441524865
+      },
+      "FE": {
+        "producer_cooling_K": -3.8368687629699707,
+        "producer_temperature_K": 353.864227253536,
+        "injector_overpressure_MPa": 1.7396445274353027,
+        "injector_pressure_MPa": 34.20756905573719,
+        "thermal_throughput_kg_K_s": 60.864227253536
+      }
+    },
+    {
+      "case_id": "g0_m0_c02",
+      "group": 0,
+      "member": 0,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 366.5,
+      "field_RMSE": [
+        0.5890128016471863,
+        1.4232306480407715
+      ],
+      "operator": {
+        "producer_cooling_K": -2.5102930068969727,
+        "producer_temperature_K": 352.537651497463,
+        "injector_overpressure_MPa": 8.889654159545898,
+        "injector_pressure_MPa": 41.357578687847784,
+        "thermal_throughput_kg_K_s": 39.537651497463
+      },
+      "FE": {
+        "producer_cooling_K": -3.8494420051574707,
+        "producer_temperature_K": 353.8768004957235,
+        "injector_overpressure_MPa": 7.421571254730225,
+        "injector_pressure_MPa": 39.88949578303211,
+        "thermal_throughput_kg_K_s": 40.8768004957235
+      }
+    },
+    {
+      "case_id": "g0_m0_c03",
+      "group": 0,
+      "member": 0,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 368.5,
+      "field_RMSE": [
+        0.5734601616859436,
+        1.4510563611984253
+      ],
+      "operator": {
+        "producer_cooling_K": -2.1221609115600586,
+        "producer_temperature_K": 352.1495194021261,
+        "injector_overpressure_MPa": 2.997022867202759,
+        "injector_pressure_MPa": 35.464947395504645,
+        "thermal_throughput_kg_K_s": 39.14951940212609
+      },
+      "FE": {
+        "producer_cooling_K": -3.846741199493408,
+        "producer_temperature_K": 353.87409969005944,
+        "injector_overpressure_MPa": 1.5078374147415161,
+        "injector_pressure_MPa": 33.9757619430434,
+        "thermal_throughput_kg_K_s": 40.87409969005944
+      }
+    },
+    {
+      "case_id": "g0_m0_c04",
+      "group": 0,
+      "member": 0,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 417.9,
+      "field_RMSE": [
+        0.9735763072967529,
+        1.9643925428390503
+      ],
+      "operator": {
+        "producer_cooling_K": -1.4548182487487793,
+        "producer_temperature_K": 351.4821767393148,
+        "injector_overpressure_MPa": 15.757743835449219,
+        "injector_pressure_MPa": 48.225668363751105,
+        "thermal_throughput_kg_K_s": 81.87504743504073
+      },
+      "FE": {
+        "producer_cooling_K": -3.1065220832824707,
+        "producer_temperature_K": 353.1338805738485,
+        "injector_overpressure_MPa": 13.787385940551758,
+        "injector_pressure_MPa": 46.255310468853644,
+        "thermal_throughput_kg_K_s": 84.18743280338789
+      }
+    },
+    {
+      "case_id": "g0_m0_c05",
+      "group": 0,
+      "member": 0,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 362.9,
+      "field_RMSE": [
+        0.8561713695526123,
+        2.371352195739746
+      ],
+      "operator": {
+        "producer_cooling_K": -1.8646917343139648,
+        "producer_temperature_K": 351.89205022488,
+        "injector_overpressure_MPa": 10.300752639770508,
+        "injector_pressure_MPa": 42.768677168072394,
+        "thermal_throughput_kg_K_s": 82.44887031483199
+      },
+      "FE": {
+        "producer_cooling_K": -3.065674304962158,
+        "producer_temperature_K": 353.0930327955282,
+        "injector_overpressure_MPa": 7.933937072753906,
+        "injector_pressure_MPa": 40.40186160105579,
+        "thermal_throughput_kg_K_s": 84.13024591373946
+      }
+    },
+    {
+      "case_id": "g0_m0_c06",
+      "group": 0,
+      "member": 0,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 352.1,
+      "field_RMSE": [
+        0.7540354132652283,
+        1.8826271295547485
+      ],
+      "operator": {
+        "producer_cooling_K": -1.8473478555679321,
+        "producer_temperature_K": 351.87470634613396,
+        "injector_overpressure_MPa": 15.112857818603516,
+        "injector_pressure_MPa": 47.5807823469054,
+        "thermal_throughput_kg_K_s": 54.42458888458754
+      },
+      "FE": {
+        "producer_cooling_K": -3.4657750129699707,
+        "producer_temperature_K": 353.493133503536,
+        "injector_overpressure_MPa": 13.19169807434082,
+        "injector_pressure_MPa": 45.659622602642706,
+        "thermal_throughput_kg_K_s": 56.690386904950394
+      }
+    },
+    {
+      "case_id": "g0_m0_c07",
+      "group": 0,
+      "member": 0,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 359.6,
+      "field_RMSE": [
+        0.6957050561904907,
+        2.396531105041504
+      ],
+      "operator": {
+        "producer_cooling_K": -2.002898931503296,
+        "producer_temperature_K": 352.0302574220693,
+        "injector_overpressure_MPa": 9.760645866394043,
+        "injector_pressure_MPa": 42.22857039469593,
+        "thermal_throughput_kg_K_s": 54.64236039089705
+      },
+      "FE": {
+        "producer_cooling_K": -3.4294285774230957,
+        "producer_temperature_K": 353.4567870679891,
+        "injector_overpressure_MPa": 7.327159404754639,
+        "injector_pressure_MPa": 39.795083933056524,
+        "thermal_throughput_kg_K_s": 56.63950189518477
+      }
+    },
+    {
+      "case_id": "g0_m0_c08",
+      "group": 0,
+      "member": 0,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "drawdown_MPa": 9.0,
+      "FE_status": "complete",
+      "FE_wall_s": 471.7,
+      "field_RMSE": [
+        0.6966401934623718,
+        1.9531317949295044
+      ],
+      "operator": {
+        "producer_cooling_K": -2.8177144527435303,
+        "producer_temperature_K": 352.84507294330956,
+        "injector_overpressure_MPa": 9.396596908569336,
+        "injector_pressure_MPa": 41.86452143687122,
+        "thermal_throughput_kg_K_s": 59.81408753197147
+      },
+      "FE": {
+        "producer_cooling_K": -4.125870227813721,
+        "producer_temperature_K": 354.15322871837975,
+        "injector_overpressure_MPa": 7.425920009613037,
+        "injector_pressure_MPa": 39.89384453791492,
+        "thermal_throughput_kg_K_s": 61.3838744620557
+      }
+    },
+    {
+      "case_id": "g0_m1_c00",
+      "group": 0,
+      "member": 1,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 408.4,
+      "field_RMSE": [
+        0.7596705555915833,
+        2.2739980220794678
+      ],
+      "operator": {
+        "producer_cooling_K": -2.2378909587860107,
+        "producer_temperature_K": 352.26524944935204,
+        "injector_overpressure_MPa": 20.047508239746094,
+        "injector_pressure_MPa": 52.51543276804798,
+        "thermal_throughput_kg_K_s": 59.26524944935204
+      },
+      "FE": {
+        "producer_cooling_K": -3.9248814582824707,
+        "producer_temperature_K": 353.9522399488485,
+        "injector_overpressure_MPa": 17.798912048339844,
+        "injector_pressure_MPa": 50.26683657664173,
+        "thermal_throughput_kg_K_s": 60.9522399488485
+      }
+    },
+    {
+      "case_id": "g0_m1_c01",
+      "group": 0,
+      "member": 1,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 417.5,
+      "field_RMSE": [
+        0.6628087162971497,
+        2.377702474594116
+      ],
+      "operator": {
+        "producer_cooling_K": -1.8315284252166748,
+        "producer_temperature_K": 351.8588869157827,
+        "injector_overpressure_MPa": 14.309091567993164,
+        "injector_pressure_MPa": 46.77701609629505,
+        "thermal_throughput_kg_K_s": 58.858886915782705
+      },
+      "FE": {
+        "producer_cooling_K": -3.929749011993408,
+        "producer_temperature_K": 353.95710750255944,
+        "injector_overpressure_MPa": 11.953824043273926,
+        "injector_pressure_MPa": 44.42174857157581,
+        "thermal_throughput_kg_K_s": 60.95710750255944
+      }
+    },
+    {
+      "case_id": "g0_m1_c02",
+      "group": 0,
+      "member": 1,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 394.0,
+      "field_RMSE": [
+        0.6139517426490784,
+        2.4405477046966553
+      ],
+      "operator": {
+        "producer_cooling_K": -2.117091417312622,
+        "producer_temperature_K": 352.14444990787865,
+        "injector_overpressure_MPa": 20.10645294189453,
+        "injector_pressure_MPa": 52.57437747019642,
+        "thermal_throughput_kg_K_s": 39.14444990787865
+      },
+      "FE": {
+        "producer_cooling_K": -3.926697254180908,
+        "producer_temperature_K": 353.95405574474694,
+        "injector_overpressure_MPa": 17.66604232788086,
+        "injector_pressure_MPa": 50.133966856182745,
+        "thermal_throughput_kg_K_s": 40.95405574474694
+      }
+    },
+    {
+      "case_id": "g0_m1_c03",
+      "group": 0,
+      "member": 1,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 464.8,
+      "field_RMSE": [
+        0.5112825632095337,
+        2.602452039718628
+      ],
+      "operator": {
+        "producer_cooling_K": -1.682586431503296,
+        "producer_temperature_K": 351.7099449220693,
+        "injector_overpressure_MPa": 14.422322273254395,
+        "injector_pressure_MPa": 46.89024680155628,
+        "thermal_throughput_kg_K_s": 38.709944922069326
+      },
+      "FE": {
+        "producer_cooling_K": -3.931549549102783,
+        "producer_temperature_K": 353.9589080396688,
+        "injector_overpressure_MPa": 11.818737030029297,
+        "injector_pressure_MPa": 44.28666155833118,
+        "thermal_throughput_kg_K_s": 40.95890803966881
+      }
+    },
+    {
+      "case_id": "g0_m1_c04",
+      "group": 0,
+      "member": 1,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 454.4,
+      "field_RMSE": [
+        0.9363763928413391,
+        3.353607654571533
+      ],
+      "operator": {
+        "producer_cooling_K": -3.460050106048584,
+        "producer_temperature_K": 353.4874085966146,
+        "injector_overpressure_MPa": 30.0850830078125,
+        "injector_pressure_MPa": 62.553007536114386,
+        "thermal_throughput_kg_K_s": 84.68237203526046
+      },
+      "FE": {
+        "producer_cooling_K": -6.017975330352783,
+        "producer_temperature_K": 356.0453338209188,
+        "injector_overpressure_MPa": 26.79399871826172,
+        "injector_pressure_MPa": 59.261923246563605,
+        "thermal_throughput_kg_K_s": 88.26346734928633
+      }
+    },
+    {
+      "case_id": "g0_m1_c05",
+      "group": 0,
+      "member": 1,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 534.1,
+      "field_RMSE": [
+        0.8794050812721252,
+        3.969531774520874
+      ],
+      "operator": {
+        "producer_cooling_K": -3.055419683456421,
+        "producer_temperature_K": 353.08277817402245,
+        "injector_overpressure_MPa": 24.917221069335938,
+        "injector_pressure_MPa": 57.38514559763782,
+        "thermal_throughput_kg_K_s": 84.11588944363143
+      },
+      "FE": {
+        "producer_cooling_K": -6.020767688751221,
+        "producer_temperature_K": 356.04812617931725,
+        "injector_overpressure_MPa": 21.009437561035156,
+        "injector_pressure_MPa": 53.47736208933704,
+        "thermal_throughput_kg_K_s": 88.26737665104415
+      }
+    },
+    {
+      "case_id": "g0_m1_c06",
+      "group": 0,
+      "member": 1,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 430.6,
+      "field_RMSE": [
+        0.7153719663619995,
+        3.0874783992767334
+      ],
+      "operator": {
+        "producer_cooling_K": -3.2269785404205322,
+        "producer_temperature_K": 353.25433703098656,
+        "injector_overpressure_MPa": 29.59238052368164,
+        "injector_pressure_MPa": 62.060305051983526,
+        "thermal_throughput_kg_K_s": 56.35607184338118
+      },
+      "FE": {
+        "producer_cooling_K": -6.048721790313721,
+        "producer_temperature_K": 356.07608028087975,
+        "injector_overpressure_MPa": 26.52761459350586,
+        "injector_pressure_MPa": 58.995539121807745,
+        "thermal_throughput_kg_K_s": 60.30651239323165
+      }
+    },
+    {
+      "case_id": "g0_m1_c07",
+      "group": 0,
+      "member": 1,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 572.6,
+      "field_RMSE": [
+        0.6130743622779846,
+        3.8002305030822754
+      ],
+      "operator": {
+        "producer_cooling_K": -2.8123483657836914,
+        "producer_temperature_K": 352.8397068563497,
+        "injector_overpressure_MPa": 24.518468856811523,
+        "injector_pressure_MPa": 56.98639338511341,
+        "thermal_throughput_kg_K_s": 55.77558959888961
+      },
+      "FE": {
+        "producer_cooling_K": -6.051865100860596,
+        "producer_temperature_K": 356.0792235914266,
+        "injector_overpressure_MPa": 20.738712310791016,
+        "injector_pressure_MPa": 53.2066368390929,
+        "thermal_throughput_kg_K_s": 60.31091302799727
+      }
+    },
+    {
+      "case_id": "g0_m1_c08",
+      "group": 0,
+      "member": 1,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "drawdown_MPa": 9.0,
+      "FE_status": "complete",
+      "FE_wall_s": 520.6,
+      "field_RMSE": [
+        0.7423146367073059,
+        3.1913464069366455
+      ],
+      "operator": {
+        "producer_cooling_K": -2.6878442764282227,
+        "producer_temperature_K": 352.71520276699425,
+        "injector_overpressure_MPa": 22.433841705322266,
+        "injector_pressure_MPa": 54.90176623362415,
+        "thermal_throughput_kg_K_s": 59.6582433203931
+      },
+      "FE": {
+        "producer_cooling_K": -5.086029529571533,
+        "producer_temperature_K": 355.11338802013756,
+        "injector_overpressure_MPa": 19.27199363708496,
+        "injector_pressure_MPa": 51.73991816538685,
+        "thermal_throughput_kg_K_s": 62.536065624165076
+      }
+    },
+    {
+      "case_id": "g0_m2_c00",
+      "group": 0,
+      "member": 2,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 1285.1,
+      "field_RMSE": [
+        0.5637363791465759,
+        0.7943379282951355
+      ],
+      "operator": {
+        "producer_cooling_K": -2.4762537479400635,
+        "producer_temperature_K": 352.5036122385061,
+        "injector_overpressure_MPa": 3.8412868976593018,
+        "injector_pressure_MPa": 36.30921142596119,
+        "thermal_throughput_kg_K_s": 59.50361223850609
+      },
+      "FE": {
+        "producer_cooling_K": -3.846008777618408,
+        "producer_temperature_K": 353.87336726818444,
+        "injector_overpressure_MPa": 3.0530474185943604,
+        "injector_pressure_MPa": 35.520971946896246,
+        "thermal_throughput_kg_K_s": 60.87336726818444
+      }
+    },
+    {
+      "case_id": "g0_m2_c01",
+      "group": 0,
+      "member": 2,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 506.3,
+      "field_RMSE": [
+        0.63653963804245,
+        0.6857922077178955
+      ],
+      "operator": {
+        "producer_cooling_K": -2.3306000232696533,
+        "producer_temperature_K": 352.3579585138357,
+        "injector_overpressure_MPa": -2.207592010498047,
+        "injector_pressure_MPa": 30.26033251780384,
+        "thermal_throughput_kg_K_s": 59.35795851383568
+      },
+      "FE": {
+        "producer_cooling_K": -3.8408360481262207,
+        "producer_temperature_K": 353.86819453869225,
+        "injector_overpressure_MPa": -2.8916330337524414,
+        "injector_pressure_MPa": 29.576291494549444,
+        "thermal_throughput_kg_K_s": 60.86819453869225
+      }
+    },
+    {
+      "case_id": "g0_m2_c02",
+      "group": 0,
+      "member": 2,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 444.7,
+      "field_RMSE": [
+        0.3941119909286499,
+        0.8388732075691223
+      ],
+      "operator": {
+        "producer_cooling_K": -2.526935577392578,
+        "producer_temperature_K": 352.5542940679586,
+        "injector_overpressure_MPa": 3.8077681064605713,
+        "injector_pressure_MPa": 36.27569263476246,
+        "thermal_throughput_kg_K_s": 39.55429406795861
+      },
+      "FE": {
+        "producer_cooling_K": -3.8216099739074707,
+        "producer_temperature_K": 353.8489684644735,
+        "injector_overpressure_MPa": 2.9655444622039795,
+        "injector_pressure_MPa": 35.433468990505865,
+        "thermal_throughput_kg_K_s": 40.8489684644735
+      }
+    },
+    {
+      "case_id": "g0_m2_c03",
+      "group": 0,
+      "member": 2,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 521.9,
+      "field_RMSE": [
+        0.4432481825351715,
+        0.7583556175231934
+      ],
+      "operator": {
+        "producer_cooling_K": -2.319687843322754,
+        "producer_temperature_K": 352.3470463338888,
+        "injector_overpressure_MPa": -2.216670036315918,
+        "injector_pressure_MPa": 30.251254491985968,
+        "thermal_throughput_kg_K_s": 39.347046333888784
+      },
+      "FE": {
+        "producer_cooling_K": -3.8160557746887207,
+        "producer_temperature_K": 353.84341426525475,
+        "injector_overpressure_MPa": -2.9805495738983154,
+        "injector_pressure_MPa": 29.48737495440357,
+        "thermal_throughput_kg_K_s": 40.84341426525475
+      }
+    },
+    {
+      "case_id": "g0_m2_c04",
+      "group": 0,
+      "member": 2,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 492.3,
+      "field_RMSE": [
+        0.6495728492736816,
+        1.0514875650405884
+      ],
+      "operator": {
+        "producer_cooling_K": -3.3517675399780273,
+        "producer_temperature_K": 353.37912603054406,
+        "injector_overpressure_MPa": 7.833525657653809,
+        "injector_pressure_MPa": 40.301450185955694,
+        "thermal_throughput_kg_K_s": 84.53077644276168
+      },
+      "FE": {
+        "producer_cooling_K": -4.003967761993408,
+        "producer_temperature_K": 354.03132625255944,
+        "injector_overpressure_MPa": 6.806726932525635,
+        "injector_pressure_MPa": 39.27465146082752,
+        "thermal_throughput_kg_K_s": 85.4438567535832
+      }
+    },
+    {
+      "case_id": "g0_m2_c05",
+      "group": 0,
+      "member": 2,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 498.4,
+      "field_RMSE": [
+        0.6536833643913269,
+        1.0861769914627075
+      ],
+      "operator": {
+        "producer_cooling_K": -3.2303683757781982,
+        "producer_temperature_K": 353.2577268663442,
+        "injector_overpressure_MPa": 1.9530906677246094,
+        "injector_pressure_MPa": 34.421015196026495,
+        "thermal_throughput_kg_K_s": 84.36081761288192
+      },
+      "FE": {
+        "producer_cooling_K": -3.9788975715637207,
+        "producer_temperature_K": 354.00625606212975,
+        "injector_overpressure_MPa": 0.8930014967918396,
+        "injector_pressure_MPa": 33.360926025093725,
+        "thermal_throughput_kg_K_s": 85.40875848698164
+      }
+    },
+    {
+      "case_id": "g0_m2_c06",
+      "group": 0,
+      "member": 2,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 480.3,
+      "field_RMSE": [
+        0.4628807604312897,
+        1.050026774406433
+      ],
+      "operator": {
+        "producer_cooling_K": -3.283038377761841,
+        "producer_temperature_K": 353.31039686832787,
+        "injector_overpressure_MPa": 7.677237510681152,
+        "injector_pressure_MPa": 40.14516203898304,
+        "thermal_throughput_kg_K_s": 56.434555615659015
+      },
+      "FE": {
+        "producer_cooling_K": -3.925507068634033,
+        "producer_temperature_K": 353.95286555920006,
+        "injector_overpressure_MPa": 6.639947414398193,
+        "injector_pressure_MPa": 39.10787194270008,
+        "thermal_throughput_kg_K_s": 57.33401178288008
+      }
+    },
+    {
+      "case_id": "g0_m2_c07",
+      "group": 0,
+      "member": 2,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 602.1,
+      "field_RMSE": [
+        0.4955112934112549,
+        1.0937292575836182
+      ],
+      "operator": {
+        "producer_cooling_K": -3.1165506839752197,
+        "producer_temperature_K": 353.14390917454125,
+        "injector_overpressure_MPa": 1.802293300628662,
+        "injector_pressure_MPa": 34.27021782893055,
+        "thermal_throughput_kg_K_s": 56.201472844357745
+      },
+      "FE": {
+        "producer_cooling_K": -3.9019627571105957,
+        "producer_temperature_K": 353.9293212476766,
+        "injector_overpressure_MPa": 0.7229204773902893,
+        "injector_pressure_MPa": 33.190845005692175,
+        "thermal_throughput_kg_K_s": 57.301049746747275
+      }
+    },
+    {
+      "case_id": "g0_m2_c08",
+      "group": 0,
+      "member": 2,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "drawdown_MPa": 9.0,
+      "FE_status": "complete",
+      "FE_wall_s": 491.0,
+      "field_RMSE": [
+        0.501815676689148,
+        0.9605926871299744
+      ],
+      "operator": {
+        "producer_cooling_K": -3.154872417449951,
+        "producer_temperature_K": 353.182230908016,
+        "injector_overpressure_MPa": 2.7959485054016113,
+        "injector_pressure_MPa": 35.2638730337035,
+        "thermal_throughput_kg_K_s": 60.21867708961918
+      },
+      "FE": {
+        "producer_cooling_K": -4.196701526641846,
+        "producer_temperature_K": 354.2240600172079,
+        "injector_overpressure_MPa": 1.8481695652008057,
+        "injector_pressure_MPa": 34.31609409350269,
+        "thermal_throughput_kg_K_s": 61.46887202064945
+      }
+    },
+    {
+      "case_id": "g0_m3_c00",
+      "group": 0,
+      "member": 3,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 485.8,
+      "field_RMSE": [
+        0.6858453154563904,
+        3.186072826385498
+      ],
+      "operator": {
+        "producer_cooling_K": -2.839712142944336,
+        "producer_temperature_K": 352.86707063351037,
+        "injector_overpressure_MPa": 22.75426483154297,
+        "injector_pressure_MPa": 55.222189359844855,
+        "thermal_throughput_kg_K_s": 59.867070633510366
+      },
+      "FE": {
+        "producer_cooling_K": -4.591568470001221,
+        "producer_temperature_K": 354.61892696056725,
+        "injector_overpressure_MPa": 19.580406188964844,
+        "injector_pressure_MPa": 52.04833071726673,
+        "thermal_throughput_kg_K_s": 61.61892696056725
+      }
+    },
+    {
+      "case_id": "g0_m3_c01",
+      "group": 0,
+      "member": 3,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 503.3,
+      "field_RMSE": [
+        0.6884894371032715,
+        3.3487730026245117
+      ],
+      "operator": {
+        "producer_cooling_K": -2.3221473693847656,
+        "producer_temperature_K": 352.3495058599508,
+        "injector_overpressure_MPa": 17.08480453491211,
+        "injector_pressure_MPa": 49.552729063213995,
+        "thermal_throughput_kg_K_s": 59.349505859950796
+      },
+      "FE": {
+        "producer_cooling_K": -4.590393543243408,
+        "producer_temperature_K": 354.61775203380944,
+        "injector_overpressure_MPa": 13.748774528503418,
+        "injector_pressure_MPa": 46.216699056805304,
+        "thermal_throughput_kg_K_s": 61.61775203380944
+      }
+    },
+    {
+      "case_id": "g0_m3_c02",
+      "group": 0,
+      "member": 3,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 489.1,
+      "field_RMSE": [
+        0.5637207627296448,
+        3.117044687271118
+      ],
+      "operator": {
+        "producer_cooling_K": -2.6311144828796387,
+        "producer_temperature_K": 352.65847297344567,
+        "injector_overpressure_MPa": 22.55974006652832,
+        "injector_pressure_MPa": 55.027664594830206,
+        "thermal_throughput_kg_K_s": 39.65847297344567
+      },
+      "FE": {
+        "producer_cooling_K": -4.601410388946533,
+        "producer_temperature_K": 354.62876887951256,
+        "injector_overpressure_MPa": 19.432538986206055,
+        "injector_pressure_MPa": 51.90046351450794,
+        "thermal_throughput_kg_K_s": 41.62876887951256
+      }
+    },
+    {
+      "case_id": "g0_m3_c03",
+      "group": 0,
+      "member": 3,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 508.7,
+      "field_RMSE": [
+        0.5612543225288391,
+        3.532268524169922
+      ],
+      "operator": {
+        "producer_cooling_K": -2.0932130813598633,
+        "producer_temperature_K": 352.1205715719259,
+        "injector_overpressure_MPa": 17.137855529785156,
+        "injector_pressure_MPa": 49.60578005808704,
+        "thermal_throughput_kg_K_s": 39.12057157192589
+      },
+      "FE": {
+        "producer_cooling_K": -4.600342273712158,
+        "producer_temperature_K": 354.6277007642782,
+        "injector_overpressure_MPa": 13.59852409362793,
+        "injector_pressure_MPa": 46.066448621929815,
+        "thermal_throughput_kg_K_s": 41.62770076427819
+      }
+    },
+    {
+      "case_id": "g0_m3_c04",
+      "group": 0,
+      "member": 3,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 536.3,
+      "field_RMSE": [
+        0.8469646573066711,
+        4.215124130249023
+      ],
+      "operator": {
+        "producer_cooling_K": -2.8017005920410156,
+        "producer_temperature_K": 352.82905908260705,
+        "injector_overpressure_MPa": 34.118412017822266,
+        "injector_pressure_MPa": 66.58633654612416,
+        "thermal_throughput_kg_K_s": 83.76068271564986
+      },
+      "FE": {
+        "producer_cooling_K": -4.672745227813721,
+        "producer_temperature_K": 354.70010371837975,
+        "injector_overpressure_MPa": 29.937744140625,
+        "injector_pressure_MPa": 62.405668668926886,
+        "thermal_throughput_kg_K_s": 86.38014520573165
+      }
+    },
+    {
+      "case_id": "g0_m3_c05",
+      "group": 0,
+      "member": 3,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 1516.6,
+      "field_RMSE": [
+        0.8059142827987671,
+        4.876197814941406
+      ],
+      "operator": {
+        "producer_cooling_K": -2.748577117919922,
+        "producer_temperature_K": 352.77593560848595,
+        "injector_overpressure_MPa": 29.013147354125977,
+        "injector_pressure_MPa": 61.48107188242786,
+        "thermal_throughput_kg_K_s": 83.68630985188032
+      },
+      "FE": {
+        "producer_cooling_K": -4.651627063751221,
+        "producer_temperature_K": 354.67898555431725,
+        "injector_overpressure_MPa": 24.18484878540039,
+        "injector_pressure_MPa": 56.652773313702276,
+        "thermal_throughput_kg_K_s": 86.35057977604414
+      }
+    },
+    {
+      "case_id": "g0_m3_c06",
+      "group": 0,
+      "member": 3,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 553.5,
+      "field_RMSE": [
+        0.6413419246673584,
+        3.783977508544922
+      ],
+      "operator": {
+        "producer_cooling_K": -2.8552825450897217,
+        "producer_temperature_K": 352.88264103565575,
+        "injector_overpressure_MPa": 33.33721923828125,
+        "injector_pressure_MPa": 65.80514376658314,
+        "thermal_throughput_kg_K_s": 55.83569744991805
+      },
+      "FE": {
+        "producer_cooling_K": -4.848892688751221,
+        "producer_temperature_K": 354.87625117931725,
+        "injector_overpressure_MPa": 29.56041717529297,
+        "injector_pressure_MPa": 62.028341703594855,
+        "thermal_throughput_kg_K_s": 58.626751651044145
+      }
+    },
+    {
+      "case_id": "g0_m3_c07",
+      "group": 0,
+      "member": 3,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 559.3,
+      "field_RMSE": [
+        0.6228040456771851,
+        4.749206066131592
+      ],
+      "operator": {
+        "producer_cooling_K": -2.679473400115967,
+        "producer_temperature_K": 352.706831890682,
+        "injector_overpressure_MPa": 28.534805297851562,
+        "injector_pressure_MPa": 61.00272982615345,
+        "thermal_throughput_kg_K_s": 55.58956464695479
+      },
+      "FE": {
+        "producer_cooling_K": -4.829163074493408,
+        "producer_temperature_K": 354.85652156505944,
+        "injector_overpressure_MPa": 23.80097770690918,
+        "injector_pressure_MPa": 56.268902235211065,
+        "thermal_throughput_kg_K_s": 58.59913019108321
+      }
+    },
+    {
+      "case_id": "g0_m3_c08",
+      "group": 0,
+      "member": 3,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "drawdown_MPa": 9.0,
+      "FE_status": "complete",
+      "FE_wall_s": 535.4,
+      "field_RMSE": [
+        0.6238942742347717,
+        4.311378479003906
+      ],
+      "operator": {
+        "producer_cooling_K": -3.054757595062256,
+        "producer_temperature_K": 353.0821160856283,
+        "injector_overpressure_MPa": 25.887617111206055,
+        "injector_pressure_MPa": 58.35554163950794,
+        "thermal_throughput_kg_K_s": 60.09853930275394
+      },
+      "FE": {
+        "producer_cooling_K": -5.047058582305908,
+        "producer_temperature_K": 355.07441707287194,
+        "injector_overpressure_MPa": 21.597890853881836,
+        "injector_pressure_MPa": 54.06581538218372,
+        "thermal_throughput_kg_K_s": 62.48930048744632
+      }
+    },
+    {
+      "case_id": "g1_m0_c00",
+      "group": 1,
+      "member": 0,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 397.2,
+      "field_RMSE": [
+        0.31707310676574707,
+        0.335523784160614
+      ],
+      "operator": {
+        "producer_cooling_K": -3.5014519691467285,
+        "producer_temperature_K": 353.52881045971276,
+        "injector_overpressure_MPa": 9.593563079833984,
+        "injector_pressure_MPa": 42.06148760813587,
+        "thermal_throughput_kg_K_s": 60.52881045971276
+      },
+      "FE": {
+        "producer_cooling_K": -4.009323596954346,
+        "producer_temperature_K": 354.0366820875204,
+        "injector_overpressure_MPa": 9.90691089630127,
+        "injector_pressure_MPa": 42.374835424603155,
+        "thermal_throughput_kg_K_s": 61.036682087520376
+      }
+    },
+    {
+      "case_id": "g1_m0_c01",
+      "group": 1,
+      "member": 0,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 375.3,
+      "field_RMSE": [
+        0.3480358123779297,
+        0.24212634563446045
+      ],
+      "operator": {
+        "producer_cooling_K": -3.4041876792907715,
+        "producer_temperature_K": 353.4315461698568,
+        "injector_overpressure_MPa": 3.8466575145721436,
+        "injector_pressure_MPa": 36.31458204287403,
+        "thermal_throughput_kg_K_s": 60.4315461698568
+      },
+      "FE": {
+        "producer_cooling_K": -4.003998279571533,
+        "producer_temperature_K": 354.03135677013756,
+        "injector_overpressure_MPa": 4.02736234664917,
+        "injector_pressure_MPa": 36.495286874951056,
+        "thermal_throughput_kg_K_s": 61.03135677013756
+      }
+    },
+    {
+      "case_id": "g1_m0_c02",
+      "group": 1,
+      "member": 0,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 404.7,
+      "field_RMSE": [
+        0.2783164978027344,
+        0.21108339726924896
+      ],
+      "operator": {
+        "producer_cooling_K": -3.570099353790283,
+        "producer_temperature_K": 353.5974578443563,
+        "injector_overpressure_MPa": 8.585578918457031,
+        "injector_pressure_MPa": 41.05350344675892,
+        "thermal_throughput_kg_K_s": 40.59745784435631
+      },
+      "FE": {
+        "producer_cooling_K": -4.032639026641846,
+        "producer_temperature_K": 354.0599975172079,
+        "injector_overpressure_MPa": 8.776368141174316,
+        "injector_pressure_MPa": 41.2442926694762,
+        "thermal_throughput_kg_K_s": 41.059997517207876
+      }
+    },
+    {
+      "case_id": "g1_m0_c03",
+      "group": 1,
+      "member": 0,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 383.1,
+      "field_RMSE": [
+        0.29634806513786316,
+        0.0694388747215271
+      ],
+      "operator": {
+        "producer_cooling_K": -3.3894147872924805,
+        "producer_temperature_K": 353.4167732778585,
+        "injector_overpressure_MPa": 2.8631443977355957,
+        "injector_pressure_MPa": 35.33106892603748,
+        "thermal_throughput_kg_K_s": 40.41677327785851
+      },
+      "FE": {
+        "producer_cooling_K": -4.027481555938721,
+        "producer_temperature_K": 354.05484004650475,
+        "injector_overpressure_MPa": 2.877345561981201,
+        "injector_pressure_MPa": 35.34527009028309,
+        "thermal_throughput_kg_K_s": 41.05484004650475
+      }
+    },
+    {
+      "case_id": "g1_m0_c04",
+      "group": 1,
+      "member": 0,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 398.1,
+      "field_RMSE": [
+        0.58436518907547,
+        0.6093436479568481
+      ],
+      "operator": {
+        "producer_cooling_K": -4.525115013122559,
+        "producer_temperature_K": 354.5524735036886,
+        "injector_overpressure_MPa": 16.114614486694336,
+        "injector_pressure_MPa": 48.58253901499622,
+        "thermal_throughput_kg_K_s": 86.17346290516402
+      },
+      "FE": {
+        "producer_cooling_K": -4.710129261016846,
+        "producer_temperature_K": 354.7374877515829,
+        "injector_overpressure_MPa": 16.875202178955078,
+        "injector_pressure_MPa": 49.343126707256964,
+        "thermal_throughput_kg_K_s": 86.43248285221603
+      }
+    },
+    {
+      "case_id": "g1_m0_c05",
+      "group": 1,
+      "member": 0,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 389.8,
+      "field_RMSE": [
+        0.6433296799659729,
+        0.7478712201118469
+      ],
+      "operator": {
+        "producer_cooling_K": -4.706883430480957,
+        "producer_temperature_K": 354.734241921047,
+        "injector_overpressure_MPa": 10.266963958740234,
+        "injector_pressure_MPa": 42.73488848704212,
+        "thermal_throughput_kg_K_s": 86.42793868946578
+      },
+      "FE": {
+        "producer_cooling_K": -4.692825794219971,
+        "producer_temperature_K": 354.720184284786,
+        "injector_overpressure_MPa": 11.055671691894531,
+        "injector_pressure_MPa": 43.52359622019642,
+        "thermal_throughput_kg_K_s": 86.40825799870039
+      }
+    },
+    {
+      "case_id": "g1_m0_c06",
+      "group": 1,
+      "member": 0,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 376.7,
+      "field_RMSE": [
+        0.38239845633506775,
+        0.5718285441398621
+      ],
+      "operator": {
+        "producer_cooling_K": -4.576456069946289,
+        "producer_temperature_K": 354.6038145605123,
+        "injector_overpressure_MPa": 14.280647277832031,
+        "injector_pressure_MPa": 46.74857180613392,
+        "thermal_throughput_kg_K_s": 58.245340384717245
+      },
+      "FE": {
+        "producer_cooling_K": -4.830475330352783,
+        "producer_temperature_K": 354.8578338209188,
+        "injector_overpressure_MPa": 14.954740524291992,
+        "injector_pressure_MPa": 47.42266505259388,
+        "thermal_throughput_kg_K_s": 58.600967349286336
+      }
+    },
+    {
+      "case_id": "g1_m0_c07",
+      "group": 1,
+      "member": 0,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 378.8,
+      "field_RMSE": [
+        0.4114166796207428,
+        0.6226171851158142
+      ],
+      "operator": {
+        "producer_cooling_K": -4.573389530181885,
+        "producer_temperature_K": 354.6007480207479,
+        "injector_overpressure_MPa": 8.472838401794434,
+        "injector_pressure_MPa": 40.94076293009632,
+        "thermal_throughput_kg_K_s": 58.241047229047076
+      },
+      "FE": {
+        "producer_cooling_K": -4.814239978790283,
+        "producer_temperature_K": 354.8415984693563,
+        "injector_overpressure_MPa": 9.103865623474121,
+        "injector_pressure_MPa": 41.57179015177601,
+        "thermal_throughput_kg_K_s": 58.578237857098834
+      }
+    },
+    {
+      "case_id": "g1_m0_c08",
+      "group": 1,
+      "member": 0,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "drawdown_MPa": 9.0,
+      "FE_status": "complete",
+      "FE_wall_s": 369.8,
+      "field_RMSE": [
+        0.3401482403278351,
+        0.5105341076850891
+      ],
+      "operator": {
+        "producer_cooling_K": -4.229461669921875,
+        "producer_temperature_K": 354.2568201604879,
+        "injector_overpressure_MPa": 9.032718658447266,
+        "injector_pressure_MPa": 41.50064318674915,
+        "thermal_throughput_kg_K_s": 61.50818419258548
+      },
+      "FE": {
+        "producer_cooling_K": -4.609329700469971,
+        "producer_temperature_K": 354.636688191036,
+        "injector_overpressure_MPa": 9.55221939086914,
+        "injector_pressure_MPa": 42.020143919171026,
+        "thermal_throughput_kg_K_s": 61.9640258292432
+      }
+    },
+    {
+      "case_id": "g1_m1_c00",
+      "group": 1,
+      "member": 1,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 335.2,
+      "field_RMSE": [
+        0.3751868009567261,
+        0.03991057723760605
+      ],
+      "operator": {
+        "producer_cooling_K": -3.621713638305664,
+        "producer_temperature_K": 353.6490721288717,
+        "injector_overpressure_MPa": 0.11828917264938354,
+        "injector_pressure_MPa": 32.58621370095127,
+        "thermal_throughput_kg_K_s": 60.649072128871694
+      },
+      "FE": {
+        "producer_cooling_K": -4.015991687774658,
+        "producer_temperature_K": 354.0433501783407,
+        "injector_overpressure_MPa": 0.13933897018432617,
+        "injector_pressure_MPa": 32.60726349848621,
+        "thermal_throughput_kg_K_s": 61.04335017834069
+      }
+    },
+    {
+      "case_id": "g1_m1_c01",
+      "group": 1,
+      "member": 1,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 487.9,
+      "field_RMSE": [
+        0.41846805810928345,
+        0.08218006789684296
+      ],
+      "operator": {
+        "producer_cooling_K": -3.464582920074463,
+        "producer_temperature_K": 353.4919414106405,
+        "injector_overpressure_MPa": -5.9171462059021,
+        "injector_pressure_MPa": 26.550778322399786,
+        "thermal_throughput_kg_K_s": 60.49194141064049
+      },
+      "FE": {
+        "producer_cooling_K": -4.010437488555908,
+        "producer_temperature_K": 354.03779597912194,
+        "injector_overpressure_MPa": -5.814691543579102,
+        "injector_pressure_MPa": 26.653232984722784,
+        "thermal_throughput_kg_K_s": 61.03779597912194
+      }
+    },
+    {
+      "case_id": "g1_m1_c02",
+      "group": 1,
+      "member": 1,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 329.3,
+      "field_RMSE": [
+        0.31390032172203064,
+        0.019297035411000252
+      ],
+      "operator": {
+        "producer_cooling_K": -3.505087375640869,
+        "producer_temperature_K": 353.5324458662069,
+        "injector_overpressure_MPa": -0.5817362666130066,
+        "injector_pressure_MPa": 31.88618826168888,
+        "thermal_throughput_kg_K_s": 40.5324458662069
+      },
+      "FE": {
+        "producer_cooling_K": -4.023773670196533,
+        "producer_temperature_K": 354.05113216076256,
+        "injector_overpressure_MPa": -0.593146562576294,
+        "injector_pressure_MPa": 31.874777965725592,
+        "thermal_throughput_kg_K_s": 41.05113216076256
+      }
+    },
+    {
+      "case_id": "g1_m1_c03",
+      "group": 1,
+      "member": 1,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 335.0,
+      "field_RMSE": [
+        0.33834442496299744,
+        0.060569219291210175
+      ],
+      "operator": {
+        "producer_cooling_K": -3.285217046737671,
+        "producer_temperature_K": 353.3125755373037,
+        "injector_overpressure_MPa": -6.616553783416748,
+        "injector_pressure_MPa": 25.851370744885138,
+        "thermal_throughput_kg_K_s": 40.3125755373037
+      },
+      "FE": {
+        "producer_cooling_K": -4.018249988555908,
+        "producer_temperature_K": 354.04560847912194,
+        "injector_overpressure_MPa": -6.560342788696289,
+        "injector_pressure_MPa": 25.907581739605597,
+        "thermal_throughput_kg_K_s": 41.04560847912194
+      }
+    },
+    {
+      "case_id": "g1_m1_c04",
+      "group": 1,
+      "member": 1,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 350.3,
+      "field_RMSE": [
+        0.5172522068023682,
+        0.05771618336439133
+      ],
+      "operator": {
+        "producer_cooling_K": -4.580047130584717,
+        "producer_temperature_K": 354.60740562115075,
+        "injector_overpressure_MPa": 2.9548330307006836,
+        "injector_pressure_MPa": 35.42275755900257,
+        "thermal_throughput_kg_K_s": 86.25036786961104
+      },
+      "FE": {
+        "producer_cooling_K": -4.715088367462158,
+        "producer_temperature_K": 354.7424468580282,
+        "injector_overpressure_MPa": 2.9939756393432617,
+        "injector_pressure_MPa": 35.46190016764515,
+        "thermal_throughput_kg_K_s": 86.43942560123946
+      }
+    },
+    {
+      "case_id": "g1_m1_c05",
+      "group": 1,
+      "member": 1,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 327.3,
+      "field_RMSE": [
+        0.5884155035018921,
+        0.1042570024728775
+      ],
+      "operator": {
+        "producer_cooling_K": -4.692028999328613,
+        "producer_temperature_K": 354.71938748989464,
+        "injector_overpressure_MPa": -2.9979801177978516,
+        "injector_pressure_MPa": 29.469944410504034,
+        "thermal_throughput_kg_K_s": 86.40714248585249
+      },
+      "FE": {
+        "producer_cooling_K": -4.695053577423096,
+        "producer_temperature_K": 354.7224120679891,
+        "injector_overpressure_MPa": -2.931915521621704,
+        "injector_pressure_MPa": 29.53600900668018,
+        "thermal_throughput_kg_K_s": 86.41137689518477
+      }
+    },
+    {
+      "case_id": "g1_m1_c06",
+      "group": 1,
+      "member": 1,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 333.7,
+      "field_RMSE": [
+        0.3959619700908661,
+        0.061826933175325394
+      ],
+      "operator": {
+        "producer_cooling_K": -4.2699408531188965,
+        "producer_temperature_K": 354.2972993436849,
+        "injector_overpressure_MPa": 1.7291970252990723,
+        "injector_pressure_MPa": 34.19712155360096,
+        "thermal_throughput_kg_K_s": 57.81621908115889
+      },
+      "FE": {
+        "producer_cooling_K": -4.801346302032471,
+        "producer_temperature_K": 354.8287047925985,
+        "injector_overpressure_MPa": 1.7649844884872437,
+        "injector_pressure_MPa": 34.23290901678913,
+        "thermal_throughput_kg_K_s": 58.5601867096379
+      }
+    },
+    {
+      "case_id": "g1_m1_c07",
+      "group": 1,
+      "member": 1,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 309.5,
+      "field_RMSE": [
+        0.4426913857460022,
+        0.10966452211141586
+      ],
+      "operator": {
+        "producer_cooling_K": -4.2739410400390625,
+        "producer_temperature_K": 354.3012995306051,
+        "injector_overpressure_MPa": -4.268827438354492,
+        "injector_pressure_MPa": 28.199097089947394,
+        "thermal_throughput_kg_K_s": 57.82181934284713
+      },
+      "FE": {
+        "producer_cooling_K": -4.782562732696533,
+        "producer_temperature_K": 354.80992122326256,
+        "injector_overpressure_MPa": -4.182339668273926,
+        "injector_pressure_MPa": 28.28558486002796,
+        "thermal_throughput_kg_K_s": 58.533889712567586
+      }
+    },
+    {
+      "case_id": "g1_m1_c08",
+      "group": 1,
+      "member": 1,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "drawdown_MPa": 9.0,
+      "FE_status": "complete",
+      "FE_wall_s": 326.2,
+      "field_RMSE": [
+        0.3992253541946411,
+        0.07233700901269913
+      ],
+      "operator": {
+        "producer_cooling_K": -4.155763149261475,
+        "producer_temperature_K": 354.1831216398275,
+        "injector_overpressure_MPa": -2.0379650592803955,
+        "injector_pressure_MPa": 30.42995946902149,
+        "thermal_throughput_kg_K_s": 61.419745967793006
+      },
+      "FE": {
+        "producer_cooling_K": -4.602676868438721,
+        "producer_temperature_K": 354.63003535900475,
+        "injector_overpressure_MPa": -1.9827760457992554,
+        "injector_pressure_MPa": 30.48514848250263,
+        "thermal_throughput_kg_K_s": 61.956042430805695
+      }
+    },
+    {
+      "case_id": "g1_m2_c00",
+      "group": 1,
+      "member": 2,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 307.2,
+      "field_RMSE": [
+        0.3465769588947296,
+        0.1279497742652893
+      ],
+      "operator": {
+        "producer_cooling_K": -3.086350917816162,
+        "producer_temperature_K": 353.1137094083822,
+        "injector_overpressure_MPa": 2.4631643295288086,
+        "injector_pressure_MPa": 34.931088857830694,
+        "thermal_throughput_kg_K_s": 60.11370940838219
+      },
+      "FE": {
+        "producer_cooling_K": -3.196106433868408,
+        "producer_temperature_K": 353.22346492443444,
+        "injector_overpressure_MPa": 2.5744495391845703,
+        "injector_pressure_MPa": 35.042374067486456,
+        "thermal_throughput_kg_K_s": 60.22346492443444
+      }
+    },
+    {
+      "case_id": "g1_m2_c01",
+      "group": 1,
+      "member": 2,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 342.0,
+      "field_RMSE": [
+        0.3731168508529663,
+        0.12160185724496841
+      ],
+      "operator": {
+        "producer_cooling_K": -3.0259222984313965,
+        "producer_temperature_K": 353.0532807889974,
+        "injector_overpressure_MPa": -3.471651554107666,
+        "injector_pressure_MPa": 28.99627297419422,
+        "thermal_throughput_kg_K_s": 60.05328078899743
+      },
+      "FE": {
+        "producer_cooling_K": -3.188416004180908,
+        "producer_temperature_K": 353.21577449474694,
+        "injector_overpressure_MPa": -3.3625004291534424,
+        "injector_pressure_MPa": 29.105424099148443,
+        "thermal_throughput_kg_K_s": 60.21577449474694
+      }
+    },
+    {
+      "case_id": "g1_m2_c02",
+      "group": 1,
+      "member": 2,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 507.4,
+      "field_RMSE": [
+        0.298604279756546,
+        0.09941069781780243
+      ],
+      "operator": {
+        "producer_cooling_K": -2.943868637084961,
+        "producer_temperature_K": 352.971227127651,
+        "injector_overpressure_MPa": 1.7556921243667603,
+        "injector_pressure_MPa": 34.223616652668646,
+        "thermal_throughput_kg_K_s": 39.97122712765099
+      },
+      "FE": {
+        "producer_cooling_K": -3.2226414680480957,
+        "producer_temperature_K": 353.2499999586141,
+        "injector_overpressure_MPa": 1.845860481262207,
+        "injector_pressure_MPa": 34.31378500956409,
+        "thermal_throughput_kg_K_s": 40.249999958614126
+      }
+    },
+    {
+      "case_id": "g1_m2_c03",
+      "group": 1,
+      "member": 2,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 341.6,
+      "field_RMSE": [
+        0.3068268597126007,
+        0.04625867307186127
+      ],
+      "operator": {
+        "producer_cooling_K": -2.819949150085449,
+        "producer_temperature_K": 352.8473076406515,
+        "injector_overpressure_MPa": -4.1394853591918945,
+        "injector_pressure_MPa": 28.32843916910999,
+        "thermal_throughput_kg_K_s": 39.84730764065148
+      },
+      "FE": {
+        "producer_cooling_K": -3.215027332305908,
+        "producer_temperature_K": 353.24238582287194,
+        "injector_overpressure_MPa": -4.103931903839111,
+        "injector_pressure_MPa": 28.363992624462774,
+        "thermal_throughput_kg_K_s": 40.24238582287194
+      }
+    },
+    {
+      "case_id": "g1_m2_c04",
+      "group": 1,
+      "member": 2,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 369.5,
+      "field_RMSE": [
+        0.622989296913147,
+        0.2666845917701721
+      ],
+      "operator": {
+        "producer_cooling_K": -3.740668535232544,
+        "producer_temperature_K": 353.7680270257986,
+        "injector_overpressure_MPa": 6.136075496673584,
+        "injector_pressure_MPa": 38.60400002497547,
+        "thermal_throughput_kg_K_s": 85.07523783611799
+      },
+      "FE": {
+        "producer_cooling_K": -3.467682361602783,
+        "producer_temperature_K": 353.4950408521688,
+        "injector_overpressure_MPa": 6.4281415939331055,
+        "injector_pressure_MPa": 38.89606612223499,
+        "thermal_throughput_kg_K_s": 84.69305719303634
+      }
+    },
+    {
+      "case_id": "g1_m2_c05",
+      "group": 1,
+      "member": 2,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 373.1,
+      "field_RMSE": [
+        0.7312632203102112,
+        0.25951623916625977
+      ],
+      "operator": {
+        "producer_cooling_K": -3.8142142295837402,
+        "producer_temperature_K": 353.84157272014977,
+        "injector_overpressure_MPa": 0.31210875511169434,
+        "injector_pressure_MPa": 32.78003328341358,
+        "thermal_throughput_kg_K_s": 85.17820180820968
+      },
+      "FE": {
+        "producer_cooling_K": -3.4461522102355957,
+        "producer_temperature_K": 353.4735107008016,
+        "injector_overpressure_MPa": 0.526790976524353,
+        "injector_pressure_MPa": 32.99471550482624,
+        "thermal_throughput_kg_K_s": 84.66291498112227
+      }
+    },
+    {
+      "case_id": "g1_m2_c06",
+      "group": 1,
+      "member": 2,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 382.8,
+      "field_RMSE": [
+        0.3716135025024414,
+        0.22343309223651886
+      ],
+      "operator": {
+        "producer_cooling_K": -3.534560441970825,
+        "producer_temperature_K": 353.56191893253686,
+        "injector_overpressure_MPa": 4.978163719177246,
+        "injector_pressure_MPa": 37.44608824747913,
+        "thermal_throughput_kg_K_s": 56.78668650555159
+      },
+      "FE": {
+        "producer_cooling_K": -3.5466160774230957,
+        "producer_temperature_K": 353.5739745679891,
+        "injector_overpressure_MPa": 5.209282875061035,
+        "injector_pressure_MPa": 37.67720740336292,
+        "thermal_throughput_kg_K_s": 56.80356439518477
+      }
+    },
+    {
+      "case_id": "g1_m2_c07",
+      "group": 1,
+      "member": 2,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 338.3,
+      "field_RMSE": [
+        0.43174663186073303,
+        0.19996283948421478
+      ],
+      "operator": {
+        "producer_cooling_K": -3.493368625640869,
+        "producer_temperature_K": 353.5207271162069,
+        "injector_overpressure_MPa": -0.8897101283073425,
+        "injector_pressure_MPa": 31.578214399994543,
+        "thermal_throughput_kg_K_s": 56.72901796268965
+      },
+      "FE": {
+        "producer_cooling_K": -3.5252232551574707,
+        "producer_temperature_K": 353.5525817457235,
+        "injector_overpressure_MPa": -0.7128770351409912,
+        "injector_pressure_MPa": 31.755047493160895,
+        "thermal_throughput_kg_K_s": 56.7736144440129
+      }
+    },
+    {
+      "case_id": "g1_m2_c08",
+      "group": 1,
+      "member": 2,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "drawdown_MPa": 9.0,
+      "FE_status": "complete",
+      "FE_wall_s": 335.7,
+      "field_RMSE": [
+        0.3711869716644287,
+        0.15124107897281647
+      ],
+      "operator": {
+        "producer_cooling_K": -3.5224032402038574,
+        "producer_temperature_K": 353.5497617307699,
+        "injector_overpressure_MPa": 0.8230088949203491,
+        "injector_pressure_MPa": 33.290933423222235,
+        "thermal_throughput_kg_K_s": 60.65971407692386
+      },
+      "FE": {
+        "producer_cooling_K": -3.583801746368408,
+        "producer_temperature_K": 353.61116023693444,
+        "injector_overpressure_MPa": 0.9553514719009399,
+        "injector_pressure_MPa": 33.423276000202826,
+        "thermal_throughput_kg_K_s": 60.733392284321326
+      }
+    },
+    {
+      "case_id": "g1_m3_c00",
+      "group": 1,
+      "member": 3,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 356.5,
+      "field_RMSE": [
+        0.4443298280239105,
+        0.29006895422935486
+      ],
+      "operator": {
+        "producer_cooling_K": -3.0343172550201416,
+        "producer_temperature_K": 353.0616757455862,
+        "injector_overpressure_MPa": 5.153230667114258,
+        "injector_pressure_MPa": 37.621155195416144,
+        "thermal_throughput_kg_K_s": 60.06167574558617
+      },
+      "FE": {
+        "producer_cooling_K": -2.6074070930480957,
+        "producer_temperature_K": 352.6347655836141,
+        "injector_overpressure_MPa": 5.398017883300781,
+        "injector_pressure_MPa": 37.86594241160267,
+        "thermal_throughput_kg_K_s": 59.634765583614126
+      }
+    },
+    {
+      "case_id": "g1_m3_c01",
+      "group": 1,
+      "member": 3,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 416.4,
+      "field_RMSE": [
+        0.4611877501010895,
+        0.11125992238521576
+      ],
+      "operator": {
+        "producer_cooling_K": -2.952068328857422,
+        "producer_temperature_K": 352.97942681942345,
+        "injector_overpressure_MPa": -0.5823457837104797,
+        "injector_pressure_MPa": 31.885578744591406,
+        "thermal_throughput_kg_K_s": 59.97942681942345
+      },
+      "FE": {
+        "producer_cooling_K": -2.5999302864074707,
+        "producer_temperature_K": 352.6272887769735,
+        "injector_overpressure_MPa": -0.5171325206756592,
+        "injector_pressure_MPa": 31.950792007626227,
+        "thermal_throughput_kg_K_s": 59.6272887769735
+      }
+    },
+    {
+      "case_id": "g1_m3_c02",
+      "group": 1,
+      "member": 3,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 325.0,
+      "field_RMSE": [
+        0.35346001386642456,
+        0.2620967924594879
+      ],
+      "operator": {
+        "producer_cooling_K": -2.9117770195007324,
+        "producer_temperature_K": 352.93913551006676,
+        "injector_overpressure_MPa": 4.30335807800293,
+        "injector_pressure_MPa": 36.771282606304815,
+        "thermal_throughput_kg_K_s": 39.93913551006676
+      },
+      "FE": {
+        "producer_cooling_K": -2.6315464973449707,
+        "producer_temperature_K": 352.658904987911,
+        "injector_overpressure_MPa": 4.549647331237793,
+        "injector_pressure_MPa": 37.01757185953968,
+        "thermal_throughput_kg_K_s": 39.658904987911
+      }
+    },
+    {
+      "case_id": "g1_m3_c03",
+      "group": 1,
+      "member": 3,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 355.6,
+      "field_RMSE": [
+        0.37494853138923645,
+        0.028692375868558884
+      ],
+      "operator": {
+        "producer_cooling_K": -2.7741689682006836,
+        "producer_temperature_K": 352.8015274587667,
+        "injector_overpressure_MPa": -1.3461064100265503,
+        "injector_pressure_MPa": 31.121818118275336,
+        "thermal_throughput_kg_K_s": 39.801527458766714
+      },
+      "FE": {
+        "producer_cooling_K": -2.6243443489074707,
+        "producer_temperature_K": 352.6517028394735,
+        "injector_overpressure_MPa": -1.3800876140594482,
+        "injector_pressure_MPa": 31.087836914242438,
+        "thermal_throughput_kg_K_s": 39.6517028394735
+      }
+    },
+    {
+      "case_id": "g1_m3_c04",
+      "group": 1,
+      "member": 3,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 362.4,
+      "field_RMSE": [
+        0.7413839101791382,
+        0.519237220287323
+      ],
+      "operator": {
+        "producer_cooling_K": -3.6570990085601807,
+        "producer_temperature_K": 353.6844574991262,
+        "injector_overpressure_MPa": 9.858808517456055,
+        "injector_pressure_MPa": 42.32673304575794,
+        "thermal_throughput_kg_K_s": 84.95824049877669
+      },
+      "FE": {
+        "producer_cooling_K": -3.0345005989074707,
+        "producer_temperature_K": 353.0618590894735,
+        "injector_overpressure_MPa": 10.36546516418457,
+        "injector_pressure_MPa": 42.833389692486456,
+        "thermal_throughput_kg_K_s": 84.08660272526289
+      }
+    },
+    {
+      "case_id": "g1_m3_c05",
+      "group": 1,
+      "member": 3,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 394.2,
+      "field_RMSE": [
+        0.819753110408783,
+        0.3894730806350708
+      ],
+      "operator": {
+        "producer_cooling_K": -3.875990390777588,
+        "producer_temperature_K": 353.9033488813436,
+        "injector_overpressure_MPa": 4.178232669830322,
+        "injector_pressure_MPa": 36.64615719813221,
+        "thermal_throughput_kg_K_s": 85.26468843388106
+      },
+      "FE": {
+        "producer_cooling_K": -3.014954090118408,
+        "producer_temperature_K": 353.04231258068444,
+        "injector_overpressure_MPa": 4.494163513183594,
+        "injector_pressure_MPa": 36.96208804148548,
+        "thermal_throughput_kg_K_s": 84.05923761295821
+      }
+    },
+    {
+      "case_id": "g1_m3_c06",
+      "group": 1,
+      "member": 3,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "drawdown_MPa": 6.0,
+      "FE_status": "complete",
+      "FE_wall_s": 373.1,
+      "field_RMSE": [
+        0.5251387357711792,
+        0.44631871581077576
+      ],
+      "operator": {
+        "producer_cooling_K": -3.417281150817871,
+        "producer_temperature_K": 353.4446396413839,
+        "injector_overpressure_MPa": 8.535224914550781,
+        "injector_pressure_MPa": 41.00314944285267,
+        "thermal_throughput_kg_K_s": 56.62249549793746
+      },
+      "FE": {
+        "producer_cooling_K": -3.1552281379699707,
+        "producer_temperature_K": 353.182586628536,
+        "injector_overpressure_MPa": 8.980056762695312,
+        "injector_pressure_MPa": 41.4479812909972,
+        "thermal_throughput_kg_K_s": 56.2556212799504
+      }
+    },
+    {
+      "case_id": "g1_m3_c07",
+      "group": 1,
+      "member": 3,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "drawdown_MPa": 12.0,
+      "FE_status": "complete",
+      "FE_wall_s": 370.1,
+      "field_RMSE": [
+        0.5778191089630127,
+        0.2229926884174347
+      ],
+      "operator": {
+        "producer_cooling_K": -3.4968206882476807,
+        "producer_temperature_K": 353.5241791788137,
+        "injector_overpressure_MPa": 2.8930764198303223,
+        "injector_pressure_MPa": 35.36100094813221,
+        "thermal_throughput_kg_K_s": 56.73385085033919
+      },
+      "FE": {
+        "producer_cooling_K": -3.1365818977355957,
+        "producer_temperature_K": 353.1639403883016,
+        "injector_overpressure_MPa": 3.085796594619751,
+        "injector_pressure_MPa": 35.55372112292164,
+        "thermal_throughput_kg_K_s": 56.229516543622275
+      }
+    },
+    {
+      "case_id": "g1_m3_c08",
+      "group": 1,
+      "member": 3,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "drawdown_MPa": 9.0,
+      "FE_status": "complete",
+      "FE_wall_s": 372.4,
+      "field_RMSE": [
+        0.4916185438632965,
+        0.27933645248413086
+      ],
+      "operator": {
+        "producer_cooling_K": -3.4914841651916504,
+        "producer_temperature_K": 353.5188426557577,
+        "injector_overpressure_MPa": 4.0145111083984375,
+        "injector_pressure_MPa": 36.48243563670032,
+        "thermal_throughput_kg_K_s": 60.62261118690921
+      },
+      "FE": {
+        "producer_cooling_K": -3.059021472930908,
+        "producer_temperature_K": 353.08637996349694,
+        "injector_overpressure_MPa": 4.2610273361206055,
+        "injector_pressure_MPa": 36.72895186442249,
+        "thermal_throughput_kg_K_s": 60.10365595619632
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "group": 0,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": false,
+        "pressure_p90_MPa": 51.51388247507923,
+        "objective": 60.91280360851647,
+        "producer_temperature_p50_K": 353.91280360851647
+      },
+      "operator": {
+        "feasible": false,
+        "pressure_p90_MPa": 54.41016238230579,
+        "objective": 59.51729353103997,
+        "producer_temperature_p50_K": 352.51729353103997
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.5362074375152588,
+        "injector_pressure_MPa": 1.9323697090148926
+      }
+    },
+    {
+      "group": 0,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 45.678213911236455,
+        "objective": 60.912651020625844,
+        "producer_temperature_p50_K": 353.91265102062584
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 48.720015173138314,
+        "objective": 59.26207013759972,
+        "producer_temperature_p50_K": 352.2620701375997
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.8915739059448242,
+        "injector_pressure_MPa": 1.9519675970077515
+      }
+    },
+    {
+      "group": 0,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": false,
+        "pressure_p90_MPa": 51.370514517010385,
+        "objective": 40.91542812023522,
+        "producer_temperature_p50_K": 353.9154281202352
+      },
+      "operator": {
+        "feasible": false,
+        "pressure_p90_MPa": 54.29167845744007,
+        "objective": 39.545972782710805,
+        "producer_temperature_p50_K": 352.5459727827108
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.6034312844276428,
+        "injector_pressure_MPa": 1.9694795608520508
+      }
+    },
+    {
+      "group": 0,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 45.532512502850224,
+        "objective": 40.916503864864126,
+        "producer_temperature_p50_K": 353.9165038648641
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 48.791120081127815,
+        "objective": 39.13504548702599,
+        "producer_temperature_p50_K": 352.135045487026
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.9942601323127747,
+        "injector_pressure_MPa": 2.098995417356491
+      }
+    },
+    {
+      "group": 0,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": false,
+        "pressure_p90_MPa": 61.462545042217904,
+        "objective": 85.91200097965742,
+        "producer_temperature_p50_K": 354.3657149854696
+      },
+      "operator": {
+        "feasible": false,
+        "pressure_p90_MPa": 65.37633784312123,
+        "objective": 84.14572957920578,
+        "producer_temperature_p50_K": 353.10409255657555
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.6832184791564941,
+        "injector_pressure_MPa": 2.617227196693422
+      }
+    },
+    {
+      "group": 0,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": false,
+        "pressure_p90_MPa": 55.700149946392706,
+        "objective": 85.87966913151288,
+        "producer_temperature_p50_K": 354.3426208082235
+      },
+      "operator": {
+        "feasible": false,
+        "pressure_p90_MPa": 60.25229399699085,
+        "objective": 83.90109964775587,
+        "producer_temperature_p50_K": 352.9293568912542
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.7044774293899536,
+        "injector_pressure_MPa": 3.0407467037439346
+      }
+    },
+    {
+      "group": 0,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": false,
+        "pressure_p90_MPa": 61.11850092905872,
+        "objective": 57.980381716962114,
+        "producer_temperature_p50_K": 354.41455836925866
+      },
+      "operator": {
+        "feasible": false,
+        "pressure_p90_MPa": 64.68169215220325,
+        "objective": 56.095884646649615,
+        "producer_temperature_p50_K": 353.06848903332116
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.7690623104572296,
+        "injector_pressure_MPa": 2.450004458427431
+      }
+    },
+    {
+      "group": 0,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": false,
+        "pressure_p90_MPa": 55.35022261637562,
+        "objective": 57.95008996891524,
+        "producer_temperature_p50_K": 354.39292140636803
+      },
+      "operator": {
+        "feasible": false,
+        "pressure_p90_MPa": 59.79782889384144,
+        "objective": 55.6825771229222,
+        "producer_temperature_p50_K": 352.77326937351586
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.9002870321273804,
+        "injector_pressure_MPa": 3.006610855460167
+      }
+    },
+    {
+      "group": 0,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": false,
+        "pressure_p90_MPa": 53.36804621714466,
+        "objective": 61.979086254047886,
+        "producer_temperature_p50_K": 354.6492385450399
+      },
+      "operator": {
+        "feasible": false,
+        "pressure_p90_MPa": 57.31940901774281,
+        "objective": 59.95631341736271,
+        "producer_temperature_p50_K": 352.9635945144689
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 1.685117781162262,
+        "injector_pressure_MPa": 2.592507541179657
+      }
+    },
+    {
+      "group": 1,
+      "control": 0,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 41.02216752070301,
+        "objective": 60.63007350597741,
+        "producer_temperature_p50_K": 353.6300735059774
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 40.729387884319955,
+        "objective": 60.321259934047475,
+        "producer_temperature_p50_K": 353.3212599340475
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.35970383882522583,
+        "injector_pressure_MPa": 0.17261750996112823
+      }
+    },
+    {
+      "group": 1,
+      "control": 1,
+      "q": 1.0,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 35.131938414753606,
+        "objective": 60.62356563244225,
+        "producer_temperature_p50_K": 353.62356563244225
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 34.98588105338924,
+        "objective": 60.242413479427114,
+        "producer_temperature_p50_K": 353.2424134794271
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.4150742292404175,
+        "injector_pressure_MPa": 0.11438097059726715
+      }
+    },
+    {
+      "group": 1,
+      "control": 2,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 39.97627642649525,
+        "objective": 40.650566059688344,
+        "producer_temperature_p50_K": 353.65056605968834
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 39.76883719462269,
+        "objective": 40.251836496928945,
+        "producer_temperature_p50_K": 353.25183649692895
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.38505733013153076,
+        "injector_pressure_MPa": 0.13466428220272064
+      }
+    },
+    {
+      "group": 1,
+      "control": 3,
+      "q": 1.0,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 34.068040137470895,
+        "objective": 40.64399715099694,
+        "producer_temperature_p50_K": 353.64399715099694
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 34.06829368370884,
+        "objective": 40.07994158897759,
+        "producer_temperature_p50_K": 353.0799415889776
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.47900062799453735,
+        "injector_pressure_MPa": 0.0349867045879364
+      }
+    },
+    {
+      "group": 1,
+      "control": 4,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 22.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 47.390205602825816,
+        "objective": 85.56277002262618,
+        "producer_temperature_p50_K": 354.11626430187584
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 46.70579722422474,
+        "objective": 85.624350370641,
+        "producer_temperature_p50_K": 354.1602502647436
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.3039100170135498,
+        "injector_pressure_MPa": 0.39961326122283936
+      }
+    },
+    {
+      "group": 1,
+      "control": 5,
+      "q": 1.4,
+      "injection_temperature_K": 293.0,
+      "producer_BHP_MPa": 16.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 41.555143766583136,
+        "objective": 85.53558648991134,
+        "producer_temperature_p50_K": 354.0968474927938
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 40.90826910036915,
+        "objective": 85.83591545986678,
+        "producer_temperature_p50_K": 354.31136818561913
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.31043124198913574,
+        "injector_pressure_MPa": 0.34634634852409363
+      }
+    },
+    {
+      "group": 1,
+      "control": 6,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 22.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 45.630259924114874,
+        "objective": 57.681875552411334,
+        "producer_temperature_p50_K": 354.2013396802938
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 45.02494509714954,
+        "objective": 57.30145279335524,
+        "producer_temperature_p50_K": 353.9296091381109
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.2648833394050598,
+        "injector_pressure_MPa": 0.34645792841911316
+      }
+    },
+    {
+      "group": 1,
+      "control": 7,
+      "q": 1.4,
+      "injection_temperature_K": 313.0,
+      "producer_BHP_MPa": 16.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 39.7663694431197,
+        "objective": 57.65375207829024,
+        "producer_temperature_p50_K": 354.18125148449303
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 39.266834335507085,
+        "objective": 57.27783509659316,
+        "producer_temperature_p50_K": 353.9127393547094
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.28366535902023315,
+        "injector_pressure_MPa": 0.2717670649290085
+      }
+    },
+    {
+      "group": 1,
+      "control": 8,
+      "q": 1.2,
+      "injection_temperature_K": 303.0,
+      "producer_BHP_MPa": 19.2342,
+      "FE_guard_rejections": 0,
+      "FE": {
+        "feasible": true,
+        "pressure_p90_MPa": 40.432786302746464,
+        "objective": 61.34471735756351,
+        "producer_temperature_p50_K": 354.1205977979696
+      },
+      "operator": {
+        "feasible": true,
+        "pressure_p90_MPa": 39.9951809217345,
+        "objective": 61.039730022358434,
+        "producer_temperature_p50_K": 353.8664416852987
+      },
+      "paired_distribution_w1": {
+        "producer_temperature_K": 0.3301607370376587,
+        "injector_pressure_MPa": 0.23838713765144348
+      }
+    }
+  ],
+  "selection": [
+    {
+      "group": 0,
+      "FE_selected_control": 1,
+      "operator_selected_control": 1,
+      "operator_choice_FE_feasible": true,
+      "FE_objective_regret": 0.0,
+      "objective_spearman": 0.9833333333333333,
+      "feasibility_agreement": 9,
+      "candidates": 9
+    },
+    {
+      "group": 1,
+      "FE_selected_control": 4,
+      "operator_selected_control": 5,
+      "operator_choice_FE_feasible": true,
+      "FE_objective_regret": 0.02718353271484375,
+      "objective_spearman": 0.9833333333333333,
+      "feasibility_agreement": 9,
+      "candidates": 9
+    }
+  ],
+  "well_support": "Identical radius 6 m blocks for operator and FE; final FE element-sampled fields, not native PointValue curves",
+  "absolute_reference": {
+    "producer_initial_temperature_K": 350.02735849056603,
+    "injector_initial_pressure_MPa": 32.467924528301886
+  },
+  "decision_units": "kg K/s; thermal-throughput proxy, not net power",
+  "feasibility": "P90 injector absolute pressure <=50 MPa; any archived 72 MPa guard rejection makes that candidate FE-infeasible",
+  "scope": "Two held-out geology groups, four paired members, nine independently crossed operating settings at fixed producer location; no depth sweep"
+}

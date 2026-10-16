@@ -49,7 +49,7 @@ def task_complete(out, config_key, label, method):
 def load_backend(device='cpu', threads=None, root=None):
     """Backend with the released checkpoint, statistics and inverse-prior factor."""
     info = artifacts.manifest()['assets']
-    model = artifacts.path(info['geouno_pod1024_ed043489.pt']['path'], root)
+    model = artifacts.path(info['geouno_resid64_p1_f39894ff.pt']['path'], root)
     factor = artifacts.path(info['prior_factor_64eb46fb.npy']['path'], root)
     return Backend(model, artifacts.resource('stats.json'), factor, device=device, threads=threads)
 

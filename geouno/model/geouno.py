@@ -177,8 +177,13 @@ class GeoUNOBasisHead(GeothermalJointOperator):
 def build_from_checkpoint(state):
     """Instantiate :class:`GeoUNOBasisHead` from a loaded checkpoint dictionary (strict)."""
     cfg = state['model_config'].copy()
-    if cfg.pop('architecture') != 'geouno_basis_head':
-        raise ValueError('Checkpoint is not a GeoUNO basis-head model')
-    net = GeoUNOBasisHead(**cfg)
+    architecture = cfg.pop('architecture')
+    if architecture == 'geouno_simple':
+        from .final import FinalGeoUNO
+        net = FinalGeoUNO(**cfg)
+    elif architecture == 'geouno_basis_head':
+        net = GeoUNOBasisHead(**cfg)
+    else:
+        raise ValueError(f'Unsupported GeoUNO architecture: {architecture}')
     net.load_state_dict(state['model'], strict=True)
     return net.eval()

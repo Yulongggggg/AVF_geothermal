@@ -1,3 +1,4 @@
+# Historical 7 October checker: use the artifacts-v1 code revision and artifacts.
 """Check that the ``geouno`` package computes exactly what the archived research code computed.
 
 Two references are used:

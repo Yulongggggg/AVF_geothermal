@@ -1,0 +1,2200 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "protocol_sha256": "473e9de953465120bfd7bb1369b230f11aeb11fc71440328de3106380f549f94",
+  "source_sha256": "bf1691ed75a20bb3d6e7890cbcb8b12a36dbb106e14e4d4ee7a54125b71e6d3b",
+  "n": 108,
+  "repeats": 5,
+  "precision": "FP32, TF32 disabled; identical numerical precision to the new full forward evaluation",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "alphagpu51",
+  "torch_version": "2.8.0+cu128",
+  "cuda_version": "12.8",
+  "job_id": "136133",
+  "FE_seconds": {
+    "mean": 380.2157407407408,
+    "sd": 47.209925223760855,
+    "median": 386.35,
+    "min": 270.3,
+    "max": 504.9
+  },
+  "operator_seconds": {
+    "mean": 0.015207924270416026,
+    "sd": 0.0004407964787395705,
+    "median": 0.015138077107258141,
+    "min": 0.01377550158649683,
+    "max": 0.016389652574434876
+  },
+  "paired_ratio": {
+    "mean": 25008.15419110682,
+    "sd": 3069.1000575793664,
+    "median": 25399.621327494384,
+    "min": 17358.914227234076,
+    "max": 33019.71372201645
+  },
+  "total_time_ratio": 25001.159525785806,
+  "records": [
+    {
+      "case_id": "v4n00020_r000",
+      "row": 47323,
+      "scen": "v4n00020",
+      "fe_wall_s": 379.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard4.csv",
+      "metadata_sha256": "5d2dd4c147441f6307612b9a3a386890e1c70be1c5d9a39ada42613984a6d9c0",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00020_r000.log",
+      "log_sha256": "0916d2c54aa378b0f7ccf516fbd43cf9c44eba7181043e8dd3fbe385f7453178",
+      "operator_wall_s": [
+        0.014004491968080401,
+        0.01432991516776383,
+        0.0139103380497545,
+        0.013869061134755611,
+        0.013783009955659509
+      ],
+      "operator_mean_s": 0.01397936325520277
+    },
+    {
+      "case_id": "v4n00023_r000",
+      "row": 47347,
+      "scen": "v4n00023",
+      "fe_wall_s": 396.7,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard7.csv",
+      "metadata_sha256": "4120df3a35ae1852cb530fee79719bfdd680577a2599b603004d83cd5466a0ae",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00023_r000.log",
+      "log_sha256": "4aba74ed7f802bd8203377ce759bf8024093cce572c59e4176e5529b8ecbbb8f",
+      "operator_wall_s": [
+        0.013739184010773897,
+        0.013754189945757389,
+        0.013720361981540918,
+        0.01501564891077578,
+        0.01572741591371596
+      ],
+      "operator_mean_s": 0.01439136015251279
+    },
+    {
+      "case_id": "v4n00027_r000",
+      "row": 47379,
+      "scen": "v4n00027",
+      "fe_wall_s": 352.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard11.csv",
+      "metadata_sha256": "d99567c28f31978e5d902344e51503a460a59cec7a2886a06075df6964ca94c8",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00027_r000.log",
+      "log_sha256": "fa8dd42cf7794f0607a5d7a3bee06f5317dc68eb645cb68c744147c855f2c8fc",
+      "operator_wall_s": [
+        0.013673917157575488,
+        0.013909959001466632,
+        0.014450413873419166,
+        0.01640421897172928,
+        0.0157613018527627
+      ],
+      "operator_mean_s": 0.014839962171390653
+    },
+    {
+      "case_id": "v4n00033_r000",
+      "row": 47426,
+      "scen": "v4n00033",
+      "fe_wall_s": 385.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard1.csv",
+      "metadata_sha256": "263f13a17f90ee0c0f6857b41d09cb553172a0642b99b3c75bd130957d36ad9f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00033_r000.log",
+      "log_sha256": "120de3854d5c0bf2986bba3fcb156dd683502e463c8b2643fdcbdcc9fb081ed5",
+      "operator_wall_s": [
+        0.01520058698952198,
+        0.014916396932676435,
+        0.015478858957067132,
+        0.01422411110252142,
+        0.01612815004773438
+      ],
+      "operator_mean_s": 0.01518962080590427
+    },
+    {
+      "case_id": "v4n00046_r000",
+      "row": 47529,
+      "scen": "v4n00046",
+      "fe_wall_s": 452.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard14.csv",
+      "metadata_sha256": "2d59e0a52643c65d844e866ad8aa84ca91394be97b322d3389f5e7fec58ed67f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00046_r000.log",
+      "log_sha256": "8dd91e8867a62d69a40f5af8cf6905198c0bd95d24cd8d1aa0ba8f1e85335d52",
+      "operator_wall_s": [
+        0.015177584951743484,
+        0.014283415861427784,
+        0.01588340988382697,
+        0.015128782019019127,
+        0.014288713922724128
+      ],
+      "operator_mean_s": 0.014952381327748298
+    },
+    {
+      "case_id": "v4n00055_r000",
+      "row": 47597,
+      "scen": "v4n00055",
+      "fe_wall_s": 392.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard7.csv",
+      "metadata_sha256": "4120df3a35ae1852cb530fee79719bfdd680577a2599b603004d83cd5466a0ae",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00055_r000.log",
+      "log_sha256": "89ec1a96028aac28f7697e965ba931fb91d03bf9e86bebbd08937d78dbc02b04",
+      "operator_wall_s": [
+        0.016036838060244918,
+        0.015157952904701233,
+        0.0143012679181993,
+        0.016007971949875355,
+        0.01568542211316526
+      ],
+      "operator_mean_s": 0.015437890589237214
+    },
+    {
+      "case_id": "v4n00076_r000",
+      "row": 47765,
+      "scen": "v4n00076",
+      "fe_wall_s": 422.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard12.csv",
+      "metadata_sha256": "7b13529170523260f1f081736ac3ba26bc06b015d21d2032b603ab1fb458f521",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00076_r000.log",
+      "log_sha256": "98ffe1f52b13bf13cada3eea639dad2f59bd5bc49b4f4491836d22d31f0a12a9",
+      "operator_wall_s": [
+        0.015021742088720202,
+        0.014924386981874704,
+        0.01507106120698154,
+        0.014225593069568276,
+        0.015930711990222335
+      ],
+      "operator_mean_s": 0.01503469906747341
+    },
+    {
+      "case_id": "v4n00088_r000",
+      "row": 47858,
+      "scen": "v4n00088",
+      "fe_wall_s": 378.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard8.csv",
+      "metadata_sha256": "8ed167f371b91305aeb50283bdd416eb47224fdbe9e9ec1fa806942b3f7e7beb",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00088_r000.log",
+      "log_sha256": "202cd5d41b8e5adfb934ee7e7ad8afccf661d0e4d029e5020b004b91d33ff0b8",
+      "operator_wall_s": [
+        0.015579938888549805,
+        0.01499534398317337,
+        0.014721970073878765,
+        0.015006907051429152,
+        0.014148856978863478
+      ],
+      "operator_mean_s": 0.014890603395178914
+    },
+    {
+      "case_id": "v4n00098_r000",
+      "row": 47937,
+      "scen": "v4n00098",
+      "fe_wall_s": 422.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard2.csv",
+      "metadata_sha256": "c55b0c5f687a159c193d73228e61d56e944668ec162231c28e6727faf8968688",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00098_r000.log",
+      "log_sha256": "5d9da710bb0a357ef369f870d589a0752a95c67b40c33bff97b2a95976b9707c",
+      "operator_wall_s": [
+        0.015969085972756147,
+        0.015559400897473097,
+        0.015085298102349043,
+        0.014656940009444952,
+        0.015128303086385131
+      ],
+      "operator_mean_s": 0.015279805613681674
+    },
+    {
+      "case_id": "v4n00103_r000",
+      "row": 47977,
+      "scen": "v4n00103",
+      "fe_wall_s": 348.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard7.csv",
+      "metadata_sha256": "4120df3a35ae1852cb530fee79719bfdd680577a2599b603004d83cd5466a0ae",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00103_r000.log",
+      "log_sha256": "6e5ceaf30d2374116a20e516e142deac84f14e0ea5a3030a12c1b5254cd6d461",
+      "operator_wall_s": [
+        0.014470598194748163,
+        0.015997742069885135,
+        0.015035632997751236,
+        0.014237643918022513,
+        0.015916679054498672
+      ],
+      "operator_mean_s": 0.015131659246981144
+    },
+    {
+      "case_id": "v4n00117_r000",
+      "row": 48085,
+      "scen": "v4n00117",
+      "fe_wall_s": 404.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard5.csv",
+      "metadata_sha256": "b25c2a5f477494979919efdd36fe7598d5ce8364333881b237b7dd507e5d73e6",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00117_r000.log",
+      "log_sha256": "f87a3176f1effc503c5e06ca444794992d86ee04124136c0cce39ef4b4c1d042",
+      "operator_wall_s": [
+        0.01916015101596713,
+        0.014235825976356864,
+        0.01600122614763677,
+        0.015439070062711835,
+        0.015128291212022305
+      ],
+      "operator_mean_s": 0.01599291288293898
+    },
+    {
+      "case_id": "v4n00131_r000",
+      "row": 48197,
+      "scen": "v4n00131",
+      "fe_wall_s": 421.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard3.csv",
+      "metadata_sha256": "5f65de6698a8f1b45187fcbb10b478f153a3f48b8f54cb8a1aa70cdcdd77950e",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00131_r000.log",
+      "log_sha256": "23c17435a710b2c60aedb6e064f0523f5cd2ef44da5c52f3553b3db20ee63a13",
+      "operator_wall_s": [
+        0.014899178873747587,
+        0.015053868060931563,
+        0.014306074939668179,
+        0.015887757996097207,
+        0.015575594967231154
+      ],
+      "operator_mean_s": 0.015144494967535138
+    },
+    {
+      "case_id": "v4n00136_r000",
+      "row": 48237,
+      "scen": "v4n00136",
+      "fe_wall_s": 422.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard8.csv",
+      "metadata_sha256": "8ed167f371b91305aeb50283bdd416eb47224fdbe9e9ec1fa806942b3f7e7beb",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00136_r000.log",
+      "log_sha256": "476f88b07de6b4a6eae728490b9c810d702c140b30f1599aa5d36979fa16f1b7",
+      "operator_wall_s": [
+        0.01518704416230321,
+        0.014714732998982072,
+        0.015150847844779491,
+        0.01421743887476623,
+        0.015801179921254516
+      ],
+      "operator_mean_s": 0.015014248760417103
+    },
+    {
+      "case_id": "v4n00153_r000",
+      "row": 48373,
+      "scen": "v4n00153",
+      "fe_wall_s": 402.6,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard9.csv",
+      "metadata_sha256": "4a9ed822c9ea58040d81e5bdaee3d2013944361b0d97e19fa972297927c4ca55",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00153_r000.log",
+      "log_sha256": "b2ff98539bdd35496f5e4220d47f7155b48b0dfbf5ff18587cdd687df83736fb",
+      "operator_wall_s": [
+        0.015065121930092573,
+        0.01419854094274342,
+        0.01593081117607653,
+        0.015168023994192481,
+        0.014223836129531264
+      ],
+      "operator_mean_s": 0.014917266834527255
+    },
+    {
+      "case_id": "v4n00158_r000",
+      "row": 48413,
+      "scen": "v4n00158",
+      "fe_wall_s": 430.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard14.csv",
+      "metadata_sha256": "2d59e0a52643c65d844e866ad8aa84ca91394be97b322d3389f5e7fec58ed67f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00158_r000.log",
+      "log_sha256": "f388fe1a7481b73fcd907e7e8d6bc4ff0215650130873e4a875a1662ea35fb0e",
+      "operator_wall_s": [
+        0.015927709871903062,
+        0.01571098784916103,
+        0.015158395050093532,
+        0.014686312060803175,
+        0.015573312994092703
+      ],
+      "operator_mean_s": 0.0154113435652107
+    },
+    {
+      "case_id": "v4n00188_r000",
+      "row": 48653,
+      "scen": "v4n00188",
+      "fe_wall_s": 385.7,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard12.csv",
+      "metadata_sha256": "7b13529170523260f1f081736ac3ba26bc06b015d21d2032b603ab1fb458f521",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00188_r000.log",
+      "log_sha256": "2b4ff98685f74fd25b8b3a1302bbc5eb2158702055d92872885ee2011f6428a6",
+      "operator_wall_s": [
+        0.015098144998773932,
+        0.014879503985866904,
+        0.01504725799895823,
+        0.014275133842602372,
+        0.016013009008020163
+      ],
+      "operator_mean_s": 0.015062609966844321
+    },
+    {
+      "case_id": "v4n00196_r000",
+      "row": 48716,
+      "scen": "v4n00196",
+      "fe_wall_s": 420.1,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard4.csv",
+      "metadata_sha256": "5d2dd4c147441f6307612b9a3a386890e1c70be1c5d9a39ada42613984a6d9c0",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00196_r000.log",
+      "log_sha256": "245a61dde3c33cea19caa73e726636b94c3b8822923ed74cd091c140ea04ea5c",
+      "operator_wall_s": [
+        0.015054477844387293,
+        0.014124344103038311,
+        0.015921310056000948,
+        0.01566440798342228,
+        0.015152201987802982
+      ],
+      "operator_mean_s": 0.015183348394930362
+    },
+    {
+      "case_id": "v4n00200_r000",
+      "row": 48748,
+      "scen": "v4n00200",
+      "fe_wall_s": 298.6,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard8.csv",
+      "metadata_sha256": "8ed167f371b91305aeb50283bdd416eb47224fdbe9e9ec1fa806942b3f7e7beb",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00200_r000.log",
+      "log_sha256": "954ec923031a8beb76267505d8ef7dd0da1a8cf4f8dec79f730e2678388ab159",
+      "operator_wall_s": [
+        0.01470231986604631,
+        0.01561935618519783,
+        0.01507856510579586,
+        0.014891186961904168,
+        0.015499492175877094
+      ],
+      "operator_mean_s": 0.015158184058964252
+    },
+    {
+      "case_id": "v4n00221_r000",
+      "row": 48910,
+      "scen": "v4n00221",
+      "fe_wall_s": 372.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard13.csv",
+      "metadata_sha256": "bf26ff14ff8924d027452dd405a5e4e73f418eaf93b429211dc921d5379c7db7",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00221_r000.log",
+      "log_sha256": "d27008dee4aa3af0d06ed62d5e1742ed0e44eb571acf85f34f521b333890990d",
+      "operator_wall_s": [
+        0.015160612994804978,
+        0.014887688914313912,
+        0.015009433031082153,
+        0.014263598946854472,
+        0.015937103191390634
+      ],
+      "operator_mean_s": 0.01505168741568923
+    },
+    {
+      "case_id": "v4n00224_r000",
+      "row": 48933,
+      "scen": "v4n00224",
+      "fe_wall_s": 339.1,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard0.csv",
+      "metadata_sha256": "bb9387d2a2cbf64a31539a104799f627debd0d99420d4c6e3533175e98a3251f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00224_r000.log",
+      "log_sha256": "e612bd261ac4796df6491b3dbd9334f7531c366c6318edbf9a2bf85aed6461f4",
+      "operator_wall_s": [
+        0.015138592105358839,
+        0.014329041121527553,
+        0.015930118039250374,
+        0.015111786080524325,
+        0.014251064043492079
+      ],
+      "operator_mean_s": 0.014952120278030634
+    },
+    {
+      "case_id": "v4n00229_r000",
+      "row": 48972,
+      "scen": "v4n00229",
+      "fe_wall_s": 390.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard5.csv",
+      "metadata_sha256": "b25c2a5f477494979919efdd36fe7598d5ce8364333881b237b7dd507e5d73e6",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00229_r000.log",
+      "log_sha256": "d3d054ab3440eabe655dc81065e20f5e3d98db1f7f738a1dbadd0364c010299e",
+      "operator_wall_s": [
+        0.020226632012054324,
+        0.015097795985639095,
+        0.013908853055909276,
+        0.013949997955933213,
+        0.013789965072646737
+      ],
+      "operator_mean_s": 0.01539464881643653
+    },
+    {
+      "case_id": "v4n00234_r000",
+      "row": 49012,
+      "scen": "v4n00234",
+      "fe_wall_s": 344.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00234_r000.log",
+      "log_sha256": "bb6a183c692e2534c4f8414a08e63627cd8f7a36c7c1574b2286f84e5f7d7bf2",
+      "operator_wall_s": [
+        0.013797494815662503,
+        0.01379273715429008,
+        0.01383556192740798,
+        0.013715002918615937,
+        0.01373671111650765
+      ],
+      "operator_mean_s": 0.01377550158649683
+    },
+    {
+      "case_id": "v4n00247_r000",
+      "row": 49114,
+      "scen": "v4n00247",
+      "fe_wall_s": 316.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard7.csv",
+      "metadata_sha256": "4120df3a35ae1852cb530fee79719bfdd680577a2599b603004d83cd5466a0ae",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00247_r000.log",
+      "log_sha256": "8dcfa803d8e00fc60f0772fd5a721ad1b242846aa543a6c84ed983b8099e5051",
+      "operator_wall_s": [
+        0.013733681989833713,
+        0.013757921988144517,
+        0.013880294980481267,
+        0.014370850985869765,
+        0.015355968847870827
+      ],
+      "operator_mean_s": 0.014219743758440017
+    },
+    {
+      "case_id": "v4n00272_r000",
+      "row": 49314,
+      "scen": "v4n00272",
+      "fe_wall_s": 362.1,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard0.csv",
+      "metadata_sha256": "bb9387d2a2cbf64a31539a104799f627debd0d99420d4c6e3533175e98a3251f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00272_r000.log",
+      "log_sha256": "90ee243f621bd6c6737ed44430a2b5f5d7e6f22a161efa4c1649be0ad2ea2474",
+      "operator_wall_s": [
+        0.02027207612991333,
+        0.015216046944260597,
+        0.014325523050501943,
+        0.016181543935090303,
+        0.01595307281240821
+      ],
+      "operator_mean_s": 0.016389652574434876
+    },
+    {
+      "case_id": "v4n00276_r000",
+      "row": 49346,
+      "scen": "v4n00276",
+      "fe_wall_s": 407.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard4.csv",
+      "metadata_sha256": "5d2dd4c147441f6307612b9a3a386890e1c70be1c5d9a39ada42613984a6d9c0",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00276_r000.log",
+      "log_sha256": "a9eb358fc00b97ee5711aaac5358320bd415bce89db76b19bf960dc5c5da98b3",
+      "operator_wall_s": [
+        0.01963111711665988,
+        0.014923867071047425,
+        0.015590636059641838,
+        0.015041287057101727,
+        0.014667687937617302
+      ],
+      "operator_mean_s": 0.015970919048413634
+    },
+    {
+      "case_id": "v4n00283_r000",
+      "row": 49401,
+      "scen": "v4n00283",
+      "fe_wall_s": 433.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard11.csv",
+      "metadata_sha256": "d99567c28f31978e5d902344e51503a460a59cec7a2886a06075df6964ca94c8",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00283_r000.log",
+      "log_sha256": "097f3407f996c4708692e5ddf759ce01134e7ed6bf3a55212c442b5fe1340136",
+      "operator_wall_s": [
+        0.020622933050617576,
+        0.014995357021689415,
+        0.014524815138429403,
+        0.015513438964262605,
+        0.01499257399700582
+      ],
+      "operator_mean_s": 0.016129823634400964
+    },
+    {
+      "case_id": "v4n00286_r000",
+      "row": 49425,
+      "scen": "v4n00286",
+      "fe_wall_s": 333.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard14.csv",
+      "metadata_sha256": "2d59e0a52643c65d844e866ad8aa84ca91394be97b322d3389f5e7fec58ed67f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00286_r000.log",
+      "log_sha256": "8420fa9185c43d4d3e92eca55684472564f42d657670ec1267cfb7cfdecaf97a",
+      "operator_wall_s": [
+        0.0184045631904155,
+        0.015546380076557398,
+        0.015134693123400211,
+        0.015056119998916984,
+        0.015051046153530478
+      ],
+      "operator_mean_s": 0.015838560508564116
+    },
+    {
+      "case_id": "v4n00294_r000",
+      "row": 49487,
+      "scen": "v4n00294",
+      "fe_wall_s": 376.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard6.csv",
+      "metadata_sha256": "eedf5a7171f623b11f657a5101737eeb8d81ce73b9e55183fe777e8658e55d94",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00294_r000.log",
+      "log_sha256": "84a691308f1fcad2dca09982f63304b92bcab2fe81c267d1d5b884ecf32f8ffa",
+      "operator_wall_s": [
+        0.018916985020041466,
+        0.015869633993133903,
+        0.01553912996314466,
+        0.015066463965922594,
+        0.0149032031185925
+      ],
+      "operator_mean_s": 0.016059083212167025
+    },
+    {
+      "case_id": "v4n00297_r000",
+      "row": 49511,
+      "scen": "v4n00297",
+      "fe_wall_s": 317.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard9.csv",
+      "metadata_sha256": "4a9ed822c9ea58040d81e5bdaee3d2013944361b0d97e19fa972297927c4ca55",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00297_r000.log",
+      "log_sha256": "ad3debc1289c5e294ec2eb5b2228a11646e46d4ac18a792e8b3e6900da89cac0",
+      "operator_wall_s": [
+        0.015123944031074643,
+        0.01421727379783988,
+        0.015891319140791893,
+        0.015623834915459156,
+        0.015098325908184052
+      ],
+      "operator_mean_s": 0.015190939558669925
+    },
+    {
+      "case_id": "v4n00301_r000",
+      "row": 49543,
+      "scen": "v4n00301",
+      "fe_wall_s": 420.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard13.csv",
+      "metadata_sha256": "bf26ff14ff8924d027452dd405a5e4e73f418eaf93b429211dc921d5379c7db7",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00301_r000.log",
+      "log_sha256": "0a50ef1c7556d7c0b2cba969c0baf2cb969205c129b4e82b4511929fd54d2481",
+      "operator_wall_s": [
+        0.016607385128736496,
+        0.01557844690978527,
+        0.01426495099440217,
+        0.015975844115018845,
+        0.015066241146996617
+      ],
+      "operator_mean_s": 0.01549857365898788
+    },
+    {
+      "case_id": "v4n00303_r000",
+      "row": 49559,
+      "scen": "v4n00303",
+      "fe_wall_s": 357.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00303_r000.log",
+      "log_sha256": "e6cb5bdea5c1c30da1591f569dd2bcc93b2ffbe08238c9cf1d4ea3b7c5c39156",
+      "operator_wall_s": [
+        0.02004049881361425,
+        0.015974565874785185,
+        0.015573014039546251,
+        0.015031106071546674,
+        0.014719218015670776
+      ],
+      "operator_mean_s": 0.016267680563032627
+    },
+    {
+      "case_id": "v4n00313_r000",
+      "row": 49638,
+      "scen": "v4n00313",
+      "fe_wall_s": 387.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard9.csv",
+      "metadata_sha256": "4a9ed822c9ea58040d81e5bdaee3d2013944361b0d97e19fa972297927c4ca55",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00313_r000.log",
+      "log_sha256": "b41caa45b6cc66b787d99f47b8540971b39c25ded898fbf42c6cda1b14f5699f",
+      "operator_wall_s": [
+        0.015764296054840088,
+        0.015042965998873115,
+        0.014760100049898028,
+        0.015123214107006788,
+        0.014349764911457896
+      ],
+      "operator_mean_s": 0.015008068224415184
+    },
+    {
+      "case_id": "v4n00314_r000",
+      "row": 49646,
+      "scen": "v4n00314",
+      "fe_wall_s": 411.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00314_r000.log",
+      "log_sha256": "39471eddf5f26171caa12488d3f08994a643fae67542d52da97c29f0a9df04ee",
+      "operator_wall_s": [
+        0.01781797199510038,
+        0.015146641992032528,
+        0.014279167167842388,
+        0.016119556035846472,
+        0.015595123171806335
+      ],
+      "operator_mean_s": 0.01579169207252562
+    },
+    {
+      "case_id": "v4n00320_r000",
+      "row": 49694,
+      "scen": "v4n00320",
+      "fe_wall_s": 419.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard0.csv",
+      "metadata_sha256": "bb9387d2a2cbf64a31539a104799f627debd0d99420d4c6e3533175e98a3251f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00320_r000.log",
+      "log_sha256": "bd6c4059e658319ffe13eea956171cc0167e60e501240f00adc358e0dcc1ba4a",
+      "operator_wall_s": [
+        0.015025171218439937,
+        0.014669480035081506,
+        0.015110597014427185,
+        0.01420341501943767,
+        0.015965927159413695
+      ],
+      "operator_mean_s": 0.014994918089359998
+    },
+    {
+      "case_id": "v4n00327_r000",
+      "row": 49747,
+      "scen": "v4n00327",
+      "fe_wall_s": 408.7,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard7.csv",
+      "metadata_sha256": "4120df3a35ae1852cb530fee79719bfdd680577a2599b603004d83cd5466a0ae",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00327_r000.log",
+      "log_sha256": "a00dc8b2f4de03e05dc137360070fe2675e9dfe2ff2a3e416fbb48c59c6c5a02",
+      "operator_wall_s": [
+        0.019945519976317883,
+        0.014346339972689748,
+        0.015880014980211854,
+        0.015075878007337451,
+        0.01421678508631885
+      ],
+      "operator_mean_s": 0.01589290760457516
+    },
+    {
+      "case_id": "v4n00334_r000",
+      "row": 49803,
+      "scen": "v4n00334",
+      "fe_wall_s": 332.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard14.csv",
+      "metadata_sha256": "2d59e0a52643c65d844e866ad8aa84ca91394be97b322d3389f5e7fec58ed67f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00334_r000.log",
+      "log_sha256": "e23643122e9dadefe0af693fb634924fb575ca4dbadf263dc26ad235c7ad172a",
+      "operator_wall_s": [
+        0.016041303984820843,
+        0.015162630937993526,
+        0.01443853392265737,
+        0.016025630990043283,
+        0.01550488406792283
+      ],
+      "operator_mean_s": 0.01543459678068757
+    },
+    {
+      "case_id": "v4n00341_r000",
+      "row": 49858,
+      "scen": "v4n00341",
+      "fe_wall_s": 305.6,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard5.csv",
+      "metadata_sha256": "b25c2a5f477494979919efdd36fe7598d5ce8364333881b237b7dd507e5d73e6",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00341_r000.log",
+      "log_sha256": "95090a06660db5357092ce25dc436aec6f2e544717a9543ac52450050b1176e2",
+      "operator_wall_s": [
+        0.015153762884438038,
+        0.015109692933037877,
+        0.01563704013824463,
+        0.015055757015943527,
+        0.014638977125287056
+      ],
+      "operator_mean_s": 0.015119046019390226
+    },
+    {
+      "case_id": "v4n00368_r000",
+      "row": 50070,
+      "scen": "v4n00368",
+      "fe_wall_s": 423.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard0.csv",
+      "metadata_sha256": "bb9387d2a2cbf64a31539a104799f627debd0d99420d4c6e3533175e98a3251f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00368_r000.log",
+      "log_sha256": "47a8df004a1d7db4dc246d5430434bc9bf650dd55230c62897c375bfcb6bc44a",
+      "operator_wall_s": [
+        0.015504579991102219,
+        0.015038152923807502,
+        0.01469271001406014,
+        0.015670080902054906,
+        0.015102759934961796
+      ],
+      "operator_mean_s": 0.015201656753197313
+    },
+    {
+      "case_id": "v4n00374_r000",
+      "row": 50118,
+      "scen": "v4n00374",
+      "fe_wall_s": 293.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard6.csv",
+      "metadata_sha256": "eedf5a7171f623b11f657a5101737eeb8d81ce73b9e55183fe777e8658e55d94",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00374_r000.log",
+      "log_sha256": "9688adbda49b47f2fde99be15129179ceb8edb6bcf3e47fdfe4c965aa5bd77d3",
+      "operator_wall_s": [
+        0.0147017240524292,
+        0.015063449973240495,
+        0.014182610902935266,
+        0.015996001893654466,
+        0.015157996909692883
+      ],
+      "operator_mean_s": 0.015020356746390462
+    },
+    {
+      "case_id": "v4n00377_r000",
+      "row": 50142,
+      "scen": "v4n00377",
+      "fe_wall_s": 372.6,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard9.csv",
+      "metadata_sha256": "4a9ed822c9ea58040d81e5bdaee3d2013944361b0d97e19fa972297927c4ca55",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00377_r000.log",
+      "log_sha256": "b684084762461a713f6ebbdc4be742ba6e8180109732a6b82e1fbb24825b5b6b",
+      "operator_wall_s": [
+        0.014305487042292953,
+        0.016032048035413027,
+        0.015175431035459042,
+        0.014113580109551549,
+        0.015825692797079682
+      ],
+      "operator_mean_s": 0.01509044780395925
+    },
+    {
+      "case_id": "v4n00378_r000",
+      "row": 50150,
+      "scen": "v4n00378",
+      "fe_wall_s": 309.9,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00378_r000.log",
+      "log_sha256": "f3331f8c486344378f8c358c6ed872e92b1edd58f7bff598f41d195cde1ac26a",
+      "operator_wall_s": [
+        0.015531513141468167,
+        0.015015627024695277,
+        0.014653747901320457,
+        0.015579644124954939,
+        0.015170797938480973
+      ],
+      "operator_mean_s": 0.015190266026183962
+    },
+    {
+      "case_id": "v4n00383_r000",
+      "row": 50190,
+      "scen": "v4n00383",
+      "fe_wall_s": 340.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00383_r000.log",
+      "log_sha256": "6d4dd218cddcba8d1f2022209f1cda6a6a2ae8f1b139b5888926afe85ca976a3",
+      "operator_wall_s": [
+        0.014652385143563151,
+        0.015210988000035286,
+        0.014222928090021014,
+        0.015875177923589945,
+        0.015588147100061178
+      ],
+      "operator_mean_s": 0.015109925251454114
+    },
+    {
+      "case_id": "v4n00384_r000",
+      "row": 50198,
+      "scen": "v4n00384",
+      "fe_wall_s": 405.6,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard0.csv",
+      "metadata_sha256": "bb9387d2a2cbf64a31539a104799f627debd0d99420d4c6e3533175e98a3251f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00384_r000.log",
+      "log_sha256": "5b7af76493652678514c36892b7dc582e939ed076ec041a825a9c2a3f10a2e16",
+      "operator_wall_s": [
+        0.015237196115776896,
+        0.014831643085926771,
+        0.015137396985664964,
+        0.014318086905404925,
+        0.016025210032239556
+      ],
+      "operator_mean_s": 0.015109906625002622
+    },
+    {
+      "case_id": "v4n00390_r000",
+      "row": 50246,
+      "scen": "v4n00390",
+      "fe_wall_s": 296.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard6.csv",
+      "metadata_sha256": "eedf5a7171f623b11f657a5101737eeb8d81ce73b9e55183fe777e8658e55d94",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00390_r000.log",
+      "log_sha256": "b500629720e6bc22ab75501167547c3f56d03955284b78177e018a7c36817803",
+      "operator_wall_s": [
+        0.015560942934826016,
+        0.014996916987001896,
+        0.01472445297986269,
+        0.015509647782891989,
+        0.015017228899523616
+      ],
+      "operator_mean_s": 0.015161837916821241
+    },
+    {
+      "case_id": "v4n00395_r000",
+      "row": 50285,
+      "scen": "v4n00395",
+      "fe_wall_s": 380.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard11.csv",
+      "metadata_sha256": "d99567c28f31978e5d902344e51503a460a59cec7a2886a06075df6964ca94c8",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00395_r000.log",
+      "log_sha256": "d17184b351bed942a8671c7a1fcda0eef8cf63be30bc60f8c176cf9acf148307",
+      "operator_wall_s": [
+        0.014683217043057084,
+        0.015749935060739517,
+        0.015134678920730948,
+        0.014609136153012514,
+        0.015156193869188428
+      ],
+      "operator_mean_s": 0.015066632209345699
+    },
+    {
+      "case_id": "v4n00399_r000",
+      "row": 50317,
+      "scen": "v4n00399",
+      "fe_wall_s": 323.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00399_r000.log",
+      "log_sha256": "d2e924741af7178ef20d28db2d8b625b0e15a8abf2f3bc6406eb5c52a9761673",
+      "operator_wall_s": [
+        0.014325132826343179,
+        0.015948290936648846,
+        0.015158205991610885,
+        0.014484361978247762,
+        0.016000085044652224
+      ],
+      "operator_mean_s": 0.015183215355500579
+    },
+    {
+      "case_id": "v4n00403_r000",
+      "row": 50346,
+      "scen": "v4n00403",
+      "fe_wall_s": 270.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard3.csv",
+      "metadata_sha256": "5f65de6698a8f1b45187fcbb10b478f153a3f48b8f54cb8a1aa70cdcdd77950e",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00403_r000.log",
+      "log_sha256": "481cb04327820782c6bdb9f9fd8498b5a60dff3d9a2d2bb9b6c8d5d3c08f0236",
+      "operator_wall_s": [
+        0.017148218117654324,
+        0.015211012912914157,
+        0.014860410010442138,
+        0.015509180957451463,
+        0.015127429971471429
+      ],
+      "operator_mean_s": 0.015571250393986703
+    },
+    {
+      "case_id": "v4n00447_r000",
+      "row": 50686,
+      "scen": "v4n00447",
+      "fe_wall_s": 445.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00447_r000.log",
+      "log_sha256": "ef36b0ac5b0d74b9b8d65e3bbdba4540346ba4c45637e465bced12186bc860ca",
+      "operator_wall_s": [
+        0.014708697097375989,
+        0.015538385137915611,
+        0.015051119960844517,
+        0.014649174874648452,
+        0.015102026984095573
+      ],
+      "operator_mean_s": 0.01500988081097603
+    },
+    {
+      "case_id": "v4n00460_r000",
+      "row": 50787,
+      "scen": "v4n00460",
+      "fe_wall_s": 412.7,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard12.csv",
+      "metadata_sha256": "7b13529170523260f1f081736ac3ba26bc06b015d21d2032b603ab1fb458f521",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00460_r000.log",
+      "log_sha256": "c400009a6a96c1322b21cea078bdf6c25d6d8d5e9e2c18a94ad8d73c2a2b5b59",
+      "operator_wall_s": [
+        0.014276286121457815,
+        0.015942652011290193,
+        0.015043084975332022,
+        0.014283946948125958,
+        0.015998852904886007
+      ],
+      "operator_mean_s": 0.015108964592218398
+    },
+    {
+      "case_id": "v4n00461_r000",
+      "row": 50795,
+      "scen": "v4n00461",
+      "fe_wall_s": 274.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard13.csv",
+      "metadata_sha256": "bf26ff14ff8924d027452dd405a5e4e73f418eaf93b429211dc921d5379c7db7",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00461_r000.log",
+      "log_sha256": "a55d4026e5fcfa3eb9fe925797cb3873800d3221871af41dd1e9a59cf2dad9b9",
+      "operator_wall_s": [
+        0.017293673940002918,
+        0.014238356845453382,
+        0.01607535220682621,
+        0.014983179979026318,
+        0.014186332933604717
+      ],
+      "operator_mean_s": 0.015355379180982709
+    },
+    {
+      "case_id": "v4n00467_r000",
+      "row": 50843,
+      "scen": "v4n00467",
+      "fe_wall_s": 388.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard3.csv",
+      "metadata_sha256": "5f65de6698a8f1b45187fcbb10b478f153a3f48b8f54cb8a1aa70cdcdd77950e",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00467_r000.log",
+      "log_sha256": "fcdf1f5fac0a576a108546b84c72cc52911b0079504b351ab5be05a0d81e755d",
+      "operator_wall_s": [
+        0.015967876883223653,
+        0.015025387983769178,
+        0.014225983992218971,
+        0.01590648083947599,
+        0.015028201043605804
+      ],
+      "operator_mean_s": 0.015230786148458719
+    },
+    {
+      "case_id": "v4n00487_r000",
+      "row": 51003,
+      "scen": "v4n00487",
+      "fe_wall_s": 374.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard7.csv",
+      "metadata_sha256": "4120df3a35ae1852cb530fee79719bfdd680577a2599b603004d83cd5466a0ae",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00487_r000.log",
+      "log_sha256": "90b186e47f2aeaeb25e710a8165aeec9c265c5e9db2464084443e5711327082f",
+      "operator_wall_s": [
+        0.014252891996875405,
+        0.016292351065203547,
+        0.015221702167764306,
+        0.014250876847654581,
+        0.015987090999260545
+      ],
+      "operator_mean_s": 0.015200982615351678
+    },
+    {
+      "case_id": "v4n00519_r000",
+      "row": 51253,
+      "scen": "v4n00519",
+      "fe_wall_s": 293.1,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard7.csv",
+      "metadata_sha256": "4120df3a35ae1852cb530fee79719bfdd680577a2599b603004d83cd5466a0ae",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00519_r000.log",
+      "log_sha256": "d2881cec0e306caa25a3be0e9152143a9231eabaeeaceb058fe5250787420695",
+      "operator_wall_s": [
+        0.015223693801090121,
+        0.014438515063375235,
+        0.016126418951898813,
+        0.015669782180339098,
+        0.015024886932224035
+      ],
+      "operator_mean_s": 0.01529665938578546
+    },
+    {
+      "case_id": "v4n00546_r000",
+      "row": 51466,
+      "scen": "v4n00546",
+      "fe_wall_s": 370.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard2.csv",
+      "metadata_sha256": "c55b0c5f687a159c193d73228e61d56e944668ec162231c28e6727faf8968688",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00546_r000.log",
+      "log_sha256": "6fb83f3f36c844813e96f0f8116dede91704b13f452eebd8b3d3fc195d0d1b98",
+      "operator_wall_s": [
+        0.014802471036091447,
+        0.015506316209211946,
+        0.015145675046369433,
+        0.014767137821763754,
+        0.015089408960193396
+      ],
+      "operator_mean_s": 0.015062201814725996
+    },
+    {
+      "case_id": "v4n00553_r000",
+      "row": 51522,
+      "scen": "v4n00553",
+      "fe_wall_s": 375.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard9.csv",
+      "metadata_sha256": "4a9ed822c9ea58040d81e5bdaee3d2013944361b0d97e19fa972297927c4ca55",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00553_r000.log",
+      "log_sha256": "322d8bd3e834ce206f5c7953d2569de34a4506edfd56c77cdbe1b4d1e482ad18",
+      "operator_wall_s": [
+        0.014244158985093236,
+        0.015799110988155007,
+        0.015788520919159055,
+        0.015051997965201735,
+        0.014771501999348402
+      ],
+      "operator_mean_s": 0.015131058171391487
+    },
+    {
+      "case_id": "v4n00580_r000",
+      "row": 51737,
+      "scen": "v4n00580",
+      "fe_wall_s": 419.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard4.csv",
+      "metadata_sha256": "5d2dd4c147441f6307612b9a3a386890e1c70be1c5d9a39ada42613984a6d9c0",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00580_r000.log",
+      "log_sha256": "031b47caa1e714a4f9e8c962c7fce18649e54ff13de9f0eca2c2b936115b477d",
+      "operator_wall_s": [
+        0.01571392989717424,
+        0.01516296504996717,
+        0.01481242710724473,
+        0.015494746156036854,
+        0.015135792782530189
+      ],
+      "operator_mean_s": 0.015263972198590636
+    },
+    {
+      "case_id": "v4n00617_r000",
+      "row": 52030,
+      "scen": "v4n00617",
+      "fe_wall_s": 427.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard9.csv",
+      "metadata_sha256": "4a9ed822c9ea58040d81e5bdaee3d2013944361b0d97e19fa972297927c4ca55",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00617_r000.log",
+      "log_sha256": "9cba5cef39105b1b42a05e908b1f59d43351df7246f5f7cb5c64f45e9dbfac95",
+      "operator_wall_s": [
+        0.019248008960857987,
+        0.015150553081184626,
+        0.014231592882424593,
+        0.016066608019173145,
+        0.015037972014397383
+      ],
+      "operator_mean_s": 0.015946946991607546
+    },
+    {
+      "case_id": "v4n00624_r000",
+      "row": 52084,
+      "scen": "v4n00624",
+      "fe_wall_s": 408.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard0.csv",
+      "metadata_sha256": "bb9387d2a2cbf64a31539a104799f627debd0d99420d4c6e3533175e98a3251f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00624_r000.log",
+      "log_sha256": "a63b4c7d9ec6ed28a683222fecdb7f98371dded404f9139e4f380ac83ea1ca0d",
+      "operator_wall_s": [
+        0.014373976038768888,
+        0.01593748712912202,
+        0.015086763072758913,
+        0.014574829023331404,
+        0.016099887900054455
+      ],
+      "operator_mean_s": 0.015214588632807136
+    },
+    {
+      "case_id": "v4n00626_r000",
+      "row": 52100,
+      "scen": "v4n00626",
+      "fe_wall_s": 321.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard2.csv",
+      "metadata_sha256": "c55b0c5f687a159c193d73228e61d56e944668ec162231c28e6727faf8968688",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00626_r000.log",
+      "log_sha256": "e6de461b2d30a74125e6838883675ca91523bac1f9ff501e8bb766351143fc72",
+      "operator_wall_s": [
+        0.015084275975823402,
+        0.014266404090449214,
+        0.015907744877040386,
+        0.015502024907618761,
+        0.014969263225793839
+      ],
+      "operator_mean_s": 0.015145942615345121
+    },
+    {
+      "case_id": "v4n00629_r000",
+      "row": 52122,
+      "scen": "v4n00629",
+      "fe_wall_s": 331.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard5.csv",
+      "metadata_sha256": "b25c2a5f477494979919efdd36fe7598d5ce8364333881b237b7dd507e5d73e6",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00629_r000.log",
+      "log_sha256": "4395ca343c9e9a0c7289f70512a979dfd8df64ba9450964b01a41f52cc6803d5",
+      "operator_wall_s": [
+        0.01469870307482779,
+        0.015225192997604609,
+        0.014260938158258796,
+        0.016080681001767516,
+        0.015687462175264955
+      ],
+      "operator_mean_s": 0.015190595481544732
+    },
+    {
+      "case_id": "v4n00652_r000",
+      "row": 52305,
+      "scen": "v4n00652",
+      "fe_wall_s": 325.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard12.csv",
+      "metadata_sha256": "7b13529170523260f1f081736ac3ba26bc06b015d21d2032b603ab1fb458f521",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00652_r000.log",
+      "log_sha256": "a241946cd0b94f1b08ad812f84f7beb1d4f879f23d72c345fd33525ca6fedfed",
+      "operator_wall_s": [
+        0.015116098104044795,
+        0.015074942959472537,
+        0.015223218128085136,
+        0.014320221962407231,
+        0.01584347104653716
+      ],
+      "operator_mean_s": 0.015115590440109372
+    },
+    {
+      "case_id": "v4n00667_r000",
+      "row": 52424,
+      "scen": "v4n00667",
+      "fe_wall_s": 291.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard11.csv",
+      "metadata_sha256": "d99567c28f31978e5d902344e51503a460a59cec7a2886a06075df6964ca94c8",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00667_r000.log",
+      "log_sha256": "8c166911ce24ec6291aa6fc374e5677a86399fb36ab1d1e6f0d2b010b6746bab",
+      "operator_wall_s": [
+        0.018376247957348824,
+        0.014295290922746062,
+        0.016160731902346015,
+        0.014808047097176313,
+        0.013786625117063522
+      ],
+      "operator_mean_s": 0.015485388599336148
+    },
+    {
+      "case_id": "v4n00681_r000",
+      "row": 52536,
+      "scen": "v4n00681",
+      "fe_wall_s": 504.9,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard9.csv",
+      "metadata_sha256": "4a9ed822c9ea58040d81e5bdaee3d2013944361b0d97e19fa972297927c4ca55",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00681_r000.log",
+      "log_sha256": "4161bb094f0829b79e568d0d5f1406d580187868bb5072ff9c445282cec085bf",
+      "operator_wall_s": [
+        0.018459887010976672,
+        0.015096826944500208,
+        0.014292387058958411,
+        0.015990092884749174,
+        0.015622558072209358
+      ],
+      "operator_mean_s": 0.015892350394278765
+    },
+    {
+      "case_id": "v4n00706_r000",
+      "row": 52736,
+      "scen": "v4n00706",
+      "fe_wall_s": 427.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard2.csv",
+      "metadata_sha256": "c55b0c5f687a159c193d73228e61d56e944668ec162231c28e6727faf8968688",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00706_r000.log",
+      "log_sha256": "1b183b747463f9652f2e7b4d69843177149258f1aba19b040ff91e4486cec4df",
+      "operator_wall_s": [
+        0.015021697850897908,
+        0.014777765143662691,
+        0.014806570950895548,
+        0.013851513154804707,
+        0.0157167948782444
+      ],
+      "operator_mean_s": 0.014834868395701051
+    },
+    {
+      "case_id": "v4n00746_r000",
+      "row": 53054,
+      "scen": "v4n00746",
+      "fe_wall_s": 411.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00746_r000.log",
+      "log_sha256": "5cb4ecf11865e25207b491042ae3a55501b2062fcbaada1f44c1fe50676c545c",
+      "operator_wall_s": [
+        0.014849405037239194,
+        0.013900284888222814,
+        0.015944283921271563,
+        0.015200306894257665,
+        0.014257609145715833
+      ],
+      "operator_mean_s": 0.014830377977341413
+    },
+    {
+      "case_id": "v4n00749_r000",
+      "row": 53078,
+      "scen": "v4n00749",
+      "fe_wall_s": 456.7,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard13.csv",
+      "metadata_sha256": "bf26ff14ff8924d027452dd405a5e4e73f418eaf93b429211dc921d5379c7db7",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00749_r000.log",
+      "log_sha256": "87b4fcf97d8fca6b1e5c5e4b94b24d86c65540765ca99ac7911608ef30927028",
+      "operator_wall_s": [
+        0.017747143981978297,
+        0.015043789055198431,
+        0.014331304002553225,
+        0.01594120403751731,
+        0.015179591020569205
+      ],
+      "operator_mean_s": 0.015648606419563293
+    },
+    {
+      "case_id": "v4n00751_r000",
+      "row": 53093,
+      "scen": "v4n00751",
+      "fe_wall_s": 393.6,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00751_r000.log",
+      "log_sha256": "350d5b974c7a30631d4fc292a94a6bafb8f45c17559a197369fe9717a2f5a6ae",
+      "operator_wall_s": [
+        0.014749743044376373,
+        0.014622859191149473,
+        0.015141871059313416,
+        0.014240235090255737,
+        0.01596303191035986
+      ],
+      "operator_mean_s": 0.014943548059090973
+    },
+    {
+      "case_id": "v4n00764_r000",
+      "row": 53197,
+      "scen": "v4n00764",
+      "fe_wall_s": 425.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard12.csv",
+      "metadata_sha256": "7b13529170523260f1f081736ac3ba26bc06b015d21d2032b603ab1fb458f521",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00764_r000.log",
+      "log_sha256": "b622112ed27376bd6c2b02def917ecd53e7525d3de784c8aa332beeae186403b",
+      "operator_wall_s": [
+        0.01509412401355803,
+        0.014249466126784682,
+        0.01597039890475571,
+        0.015436851186677814,
+        0.014980871928855777
+      ],
+      "operator_mean_s": 0.015146342432126403
+    },
+    {
+      "case_id": "v4n00766_r000",
+      "row": 53213,
+      "scen": "v4n00766",
+      "fe_wall_s": 362.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard14.csv",
+      "metadata_sha256": "2d59e0a52643c65d844e866ad8aa84ca91394be97b322d3389f5e7fec58ed67f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00766_r000.log",
+      "log_sha256": "56218b091c0ac0067fbcbd90bd2e65f030a62ee7f268d30e5f11fd7b306add39",
+      "operator_wall_s": [
+        0.014762622071430087,
+        0.015536113874986768,
+        0.015030276030302048,
+        0.014607244869694114,
+        0.015132199972867966
+      ],
+      "operator_mean_s": 0.015013691363856196
+    },
+    {
+      "case_id": "v4n00786_r000",
+      "row": 53367,
+      "scen": "v4n00786",
+      "fe_wall_s": 408.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard2.csv",
+      "metadata_sha256": "c55b0c5f687a159c193d73228e61d56e944668ec162231c28e6727faf8968688",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00786_r000.log",
+      "log_sha256": "148ebed93a1a5b88e0d6d635e17565c99a07109c194d591c24b004e3013d318d",
+      "operator_wall_s": [
+        0.01919894595630467,
+        0.015954759204760194,
+        0.015299414051696658,
+        0.014332669088616967,
+        0.016037083929404616
+      ],
+      "operator_mean_s": 0.01616457444615662
+    },
+    {
+      "case_id": "v4n00797_r000",
+      "row": 53454,
+      "scen": "v4n00797",
+      "fe_wall_s": 363.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard13.csv",
+      "metadata_sha256": "bf26ff14ff8924d027452dd405a5e4e73f418eaf93b429211dc921d5379c7db7",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00797_r000.log",
+      "log_sha256": "1201342060861106fdca4bca9a80e1d750bfb79e47f9f3007506771b31b73dd5",
+      "operator_wall_s": [
+        0.0151085639372468,
+        0.014527947176247835,
+        0.01613236195407808,
+        0.01513597508892417,
+        0.01427597482688725
+      ],
+      "operator_mean_s": 0.015036164596676827
+    },
+    {
+      "case_id": "v4n00801_r000",
+      "row": 53485,
+      "scen": "v4n00801",
+      "fe_wall_s": 419.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard1.csv",
+      "metadata_sha256": "263f13a17f90ee0c0f6857b41d09cb553172a0642b99b3c75bd130957d36ad9f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00801_r000.log",
+      "log_sha256": "0301a9fd0926d904ab46847f266c3a57cd0eb851d32a5c2847ffefb7f9e53796",
+      "operator_wall_s": [
+        0.020254973089322448,
+        0.015619518933817744,
+        0.015114371897652745,
+        0.014752864139154553,
+        0.015185770113021135
+      ],
+      "operator_mean_s": 0.016185499634593724
+    },
+    {
+      "case_id": "v4n00852_r000",
+      "row": 53891,
+      "scen": "v4n00852",
+      "fe_wall_s": 389.1,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard4.csv",
+      "metadata_sha256": "5d2dd4c147441f6307612b9a3a386890e1c70be1c5d9a39ada42613984a6d9c0",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00852_r000.log",
+      "log_sha256": "83067cbd80b02ccd00bd1072e3b272e9e40249b5d693e5201a400e561d57b00c",
+      "operator_wall_s": [
+        0.014277376933023334,
+        0.01601728587411344,
+        0.015445607947185636,
+        0.015054941875860095,
+        0.014742993051186204
+      ],
+      "operator_mean_s": 0.015107641136273742
+    },
+    {
+      "case_id": "v4n00877_r000",
+      "row": 54088,
+      "scen": "v4n00877",
+      "fe_wall_s": 439.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard13.csv",
+      "metadata_sha256": "bf26ff14ff8924d027452dd405a5e4e73f418eaf93b429211dc921d5379c7db7",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00877_r000.log",
+      "log_sha256": "9f6bfd1f0db31b7e88dcc00a8883826f1166b320f764bf2f32dbe7edb81eba41",
+      "operator_wall_s": [
+        0.015672395937144756,
+        0.01501603820361197,
+        0.01471725688315928,
+        0.015580144012346864,
+        0.015111361164599657
+      ],
+      "operator_mean_s": 0.015219439240172505
+    },
+    {
+      "case_id": "v4n00879_r000",
+      "row": 54104,
+      "scen": "v4n00879",
+      "fe_wall_s": 339.9,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00879_r000.log",
+      "log_sha256": "231abe3d2d5abc617a3e4f0f791ddae7f08cd214dd5dbdc7d6a9b022d65bea1b",
+      "operator_wall_s": [
+        0.01849284884519875,
+        0.015111644985154271,
+        0.014262031996622682,
+        0.01593627082183957,
+        0.0150440139696002
+      ],
+      "operator_mean_s": 0.015769362123683094
+    },
+    {
+      "case_id": "v4n00886_r000",
+      "row": 54160,
+      "scen": "v4n00886",
+      "fe_wall_s": 334.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard6.csv",
+      "metadata_sha256": "eedf5a7171f623b11f657a5101737eeb8d81ce73b9e55183fe777e8658e55d94",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00886_r000.log",
+      "log_sha256": "412b9176a31960a269f99098e6c496ff388b4b7de126f15304c45c81b346d0b3",
+      "operator_wall_s": [
+        0.014382324181497097,
+        0.01594115700572729,
+        0.015725517878308892,
+        0.015025452943518758,
+        0.014703309861943126
+      ],
+      "operator_mean_s": 0.015155552374199032
+    },
+    {
+      "case_id": "v4n00891_r000",
+      "row": 54199,
+      "scen": "v4n00891",
+      "fe_wall_s": 484.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard11.csv",
+      "metadata_sha256": "d99567c28f31978e5d902344e51503a460a59cec7a2886a06075df6964ca94c8",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00891_r000.log",
+      "log_sha256": "9832f0abb43b1a21f35259ce8f68489d00eb68130b78e4573c68126f3325570c",
+      "operator_wall_s": [
+        0.015121096046641469,
+        0.014241961063817143,
+        0.01582262199372053,
+        0.01549846911802888,
+        0.015044997911900282
+      ],
+      "operator_mean_s": 0.015145829226821662
+    },
+    {
+      "case_id": "v4n00892_r000",
+      "row": 54206,
+      "scen": "v4n00892",
+      "fe_wall_s": 485.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard12.csv",
+      "metadata_sha256": "7b13529170523260f1f081736ac3ba26bc06b015d21d2032b603ab1fb458f521",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00892_r000.log",
+      "log_sha256": "d4d856f67d3e9c9567464f20edfa673f41deb196c1130f1b7f4938cd2d86e2d5",
+      "operator_wall_s": [
+        0.01456585293635726,
+        0.01474390085786581,
+        0.013918290846049786,
+        0.015539458021521568,
+        0.014794613001868129
+      ],
+      "operator_mean_s": 0.014712423132732511
+    },
+    {
+      "case_id": "v4n00893_r000",
+      "row": 54214,
+      "scen": "v4n00893",
+      "fe_wall_s": 356.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard13.csv",
+      "metadata_sha256": "bf26ff14ff8924d027452dd405a5e4e73f418eaf93b429211dc921d5379c7db7",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00893_r000.log",
+      "log_sha256": "fa5565129321353e498249a5280402063076679a93ba47612bd2595217e29992",
+      "operator_wall_s": [
+        0.014008862897753716,
+        0.015938039170578122,
+        0.015541923930868506,
+        0.014968634815886617,
+        0.014517219038680196
+      ],
+      "operator_mean_s": 0.014994935970753432
+    },
+    {
+      "case_id": "v4n00910_r000",
+      "row": 54350,
+      "scen": "v4n00910",
+      "fe_wall_s": 390.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard14.csv",
+      "metadata_sha256": "2d59e0a52643c65d844e866ad8aa84ca91394be97b322d3389f5e7fec58ed67f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00910_r000.log",
+      "log_sha256": "cfaa7f6fcd405a3e924860e17e45bcda6588fc344bb1d546e0910e56fff3b733",
+      "operator_wall_s": [
+        0.01476985402405262,
+        0.014070831006392837,
+        0.01592088514007628,
+        0.015150879044085741,
+        0.014166818000376225
+      ],
+      "operator_mean_s": 0.01481585344299674
+    },
+    {
+      "case_id": "v4n00914_r000",
+      "row": 54380,
+      "scen": "v4n00914",
+      "fe_wall_s": 345.1,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard2.csv",
+      "metadata_sha256": "c55b0c5f687a159c193d73228e61d56e944668ec162231c28e6727faf8968688",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00914_r000.log",
+      "log_sha256": "0071e0596d7e53a69ae0dbf00474a39ef411b876be37a4de2b48f73b612cb9c5",
+      "operator_wall_s": [
+        0.016009812941774726,
+        0.01522077713161707,
+        0.014762409031391144,
+        0.014474490890279412,
+        0.014858691953122616
+      ],
+      "operator_mean_s": 0.015065236389636994
+    },
+    {
+      "case_id": "v4n00947_r000",
+      "row": 54640,
+      "scen": "v4n00947",
+      "fe_wall_s": 388.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard3.csv",
+      "metadata_sha256": "5f65de6698a8f1b45187fcbb10b478f153a3f48b8f54cb8a1aa70cdcdd77950e",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00947_r000.log",
+      "log_sha256": "0a400ee2e7fcd10d94d22349128168b6dd5bbbc2029f78218784c3c17724d89c",
+      "operator_wall_s": [
+        0.013974089175462723,
+        0.015679103089496493,
+        0.015146042220294476,
+        0.014395365957170725,
+        0.01600437704473734
+      ],
+      "operator_mean_s": 0.01503979549743235
+    },
+    {
+      "case_id": "v4n00956_r000",
+      "row": 54701,
+      "scen": "v4n00956",
+      "fe_wall_s": 376.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard12.csv",
+      "metadata_sha256": "7b13529170523260f1f081736ac3ba26bc06b015d21d2032b603ab1fb458f521",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00956_r000.log",
+      "log_sha256": "f3d34f516ba9aa078008d875c39e6f5475987fe5e35e6e7b378e07b321e0041e",
+      "operator_wall_s": [
+        0.015350452857092023,
+        0.014632000820711255,
+        0.014763542916625738,
+        0.015054092044010758,
+        0.014253061963245273
+      ],
+      "operator_mean_s": 0.01481063012033701
+    },
+    {
+      "case_id": "v4n00961_r000",
+      "row": 54741,
+      "scen": "v4n00961",
+      "fe_wall_s": 472.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard1.csv",
+      "metadata_sha256": "263f13a17f90ee0c0f6857b41d09cb553172a0642b99b3c75bd130957d36ad9f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00961_r000.log",
+      "log_sha256": "d3a77e647b98f28270fa756e490dd0ec5dd01570c79c7d5eac2dd2e12bdc98be",
+      "operator_wall_s": [
+        0.020902323070913553,
+        0.015752637991681695,
+        0.015088764950633049,
+        0.014733899850398302,
+        0.01474887109361589
+      ],
+      "operator_mean_s": 0.016245299391448496
+    },
+    {
+      "case_id": "v4n00970_r000",
+      "row": 54812,
+      "scen": "v4n00970",
+      "fe_wall_s": 325.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00970_r000.log",
+      "log_sha256": "e61216676e644dd7709f9b7c6115fb76ad8f1b46d89d377e5c3867f731ed9af7",
+      "operator_wall_s": [
+        0.01405570120550692,
+        0.01571743586100638,
+        0.014839672949165106,
+        0.014035505009815097,
+        0.01617532200179994
+      ],
+      "operator_mean_s": 0.014964727405458688
+    },
+    {
+      "case_id": "v4n00994_r000",
+      "row": 55001,
+      "scen": "v4n00994",
+      "fe_wall_s": 327.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard2.csv",
+      "metadata_sha256": "c55b0c5f687a159c193d73228e61d56e944668ec162231c28e6727faf8968688",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n00994_r000.log",
+      "log_sha256": "e48ff9ba2c94049f2010801a1353c408accebade0b494e75f9f450285fe25891",
+      "operator_wall_s": [
+        0.01514378096908331,
+        0.014233516994863749,
+        0.01574814901687205,
+        0.014835696900263429,
+        0.014312333893030882
+      ],
+      "operator_mean_s": 0.014854695554822684
+    },
+    {
+      "case_id": "v4n01003_r000",
+      "row": 55073,
+      "scen": "v4n01003",
+      "fe_wall_s": 366.6,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard11.csv",
+      "metadata_sha256": "d99567c28f31978e5d902344e51503a460a59cec7a2886a06075df6964ca94c8",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01003_r000.log",
+      "log_sha256": "40e2a3b47bf4ee32ced229de06c71b746f1bd91016fb8fc64783cbbb496e6db6",
+      "operator_wall_s": [
+        0.016027598176151514,
+        0.015428334940224886,
+        0.014864326920360327,
+        0.015499898931011558,
+        0.015226162038743496
+      ],
+      "operator_mean_s": 0.015409264201298355
+    },
+    {
+      "case_id": "v4n01007_r000",
+      "row": 55105,
+      "scen": "v4n01007",
+      "fe_wall_s": 345.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01007_r000.log",
+      "log_sha256": "59d262d4d631df04914e7d39c89964988dd4f5644fa2c8894e6dff9f6a319508",
+      "operator_wall_s": [
+        0.014324920950457454,
+        0.016120473155751824,
+        0.015111823100596666,
+        0.014581195078790188,
+        0.01647151494398713
+      ],
+      "operator_mean_s": 0.015321985445916652
+    },
+    {
+      "case_id": "v4n01016_r000",
+      "row": 55177,
+      "scen": "v4n01016",
+      "fe_wall_s": 384.4,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard8.csv",
+      "metadata_sha256": "8ed167f371b91305aeb50283bdd416eb47224fdbe9e9ec1fa806942b3f7e7beb",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01016_r000.log",
+      "log_sha256": "36a112a1bd7c0950211a9cfff619addad9e44cd328d3021b8d2025c7ad62bfdd",
+      "operator_wall_s": [
+        0.015594004886224866,
+        0.01507186098024249,
+        0.014788695145398378,
+        0.01509874314069748,
+        0.013917200034484267
+      ],
+      "operator_mean_s": 0.014894100837409496
+    },
+    {
+      "case_id": "v4n01038_r000",
+      "row": 55352,
+      "scen": "v4n01038",
+      "fe_wall_s": 392.1,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard14.csv",
+      "metadata_sha256": "2d59e0a52643c65d844e866ad8aa84ca91394be97b322d3389f5e7fec58ed67f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01038_r000.log",
+      "log_sha256": "d101a3ad3f40edd0cccf6aeb19b78281cda44131154d4c1504ac22aa4e20b0fc",
+      "operator_wall_s": [
+        0.015974086010828614,
+        0.015138466842472553,
+        0.014239242067560554,
+        0.01596533111296594,
+        0.015131867956370115
+      ],
+      "operator_mean_s": 0.015289798798039555
+    },
+    {
+      "case_id": "v4n01039_r000",
+      "row": 55360,
+      "scen": "v4n01039",
+      "fe_wall_s": 387.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01039_r000.log",
+      "log_sha256": "aa6104ac1b5880ff4dff61272e9e231d29720248afa719e02e26be371851610a",
+      "operator_wall_s": [
+        0.014297088142484426,
+        0.015973896021023393,
+        0.014771832851693034,
+        0.014145800145342946,
+        0.01588126621209085
+      ],
+      "operator_mean_s": 0.01501397667452693
+    },
+    {
+      "case_id": "v4n01082_r000",
+      "row": 55698,
+      "scen": "v4n01082",
+      "fe_wall_s": 414.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01082_r000.log",
+      "log_sha256": "cef455bca13e57f7d0cb8d90699b81cc2acf0854fd134461ba7e8791e7110b3a",
+      "operator_wall_s": [
+        0.015157544985413551,
+        0.014296827837824821,
+        0.015905807027593255,
+        0.015617573168128729,
+        0.01499533699825406
+      ],
+      "operator_mean_s": 0.015194618003442883
+    },
+    {
+      "case_id": "v4n01098_r000",
+      "row": 55823,
+      "scen": "v4n01098",
+      "fe_wall_s": 415.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01098_r000.log",
+      "log_sha256": "d977b13d5313ed14d52dacc79bcb1facb490c98cee7b124d24f1516f90356e22",
+      "operator_wall_s": [
+        0.01480098394677043,
+        0.015549194999039173,
+        0.015026580076664686,
+        0.014657431049272418,
+        0.015004412038251758
+      ],
+      "operator_mean_s": 0.015007720421999693
+    },
+    {
+      "case_id": "v4n01107_r000",
+      "row": 55895,
+      "scen": "v4n01107",
+      "fe_wall_s": 402.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard3.csv",
+      "metadata_sha256": "5f65de6698a8f1b45187fcbb10b478f153a3f48b8f54cb8a1aa70cdcdd77950e",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01107_r000.log",
+      "log_sha256": "57169e86324f52b96807a494e8c3bc10a99662199e150609fb50111a54f618b0",
+      "operator_wall_s": [
+        0.018406996969133615,
+        0.01589898392558098,
+        0.01513764588162303,
+        0.014104196103289723,
+        0.015860883053392172
+      ],
+      "operator_mean_s": 0.015881741186603904
+    },
+    {
+      "case_id": "v4n01114_r000",
+      "row": 55951,
+      "scen": "v4n01114",
+      "fe_wall_s": 355.6,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01114_r000.log",
+      "log_sha256": "a4a82e16e1acd90967aa74e4c417815faefbcfdda53ebf7b84e7ff53f1948fab",
+      "operator_wall_s": [
+        0.01578429900109768,
+        0.014990963973104954,
+        0.014648155076429248,
+        0.015048295026645064,
+        0.01432252605445683
+      ],
+      "operator_mean_s": 0.014958847826346756
+    },
+    {
+      "case_id": "v4n01125_r000",
+      "row": 56037,
+      "scen": "v4n01125",
+      "fe_wall_s": 373.1,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard5.csv",
+      "metadata_sha256": "b25c2a5f477494979919efdd36fe7598d5ce8364333881b237b7dd507e5d73e6",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01125_r000.log",
+      "log_sha256": "e60b3d07538c225de7a8e8967a5c7384776847cb32c5ac2d0663b80527b697c3",
+      "operator_wall_s": [
+        0.015887743094936013,
+        0.015093411784619093,
+        0.014322430128231645,
+        0.01548818894661963,
+        0.01503935200162232
+      ],
+      "operator_mean_s": 0.01516622519120574
+    },
+    {
+      "case_id": "v4n01134_r000",
+      "row": 56108,
+      "scen": "v4n01134",
+      "fe_wall_s": 408.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard14.csv",
+      "metadata_sha256": "2d59e0a52643c65d844e866ad8aa84ca91394be97b322d3389f5e7fec58ed67f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01134_r000.log",
+      "log_sha256": "b23dd8a0e28e853d97dda64c9ad3eb2fd3b3c674bd0ec9148da70568e89a4e45",
+      "operator_wall_s": [
+        0.014717568177729845,
+        0.01435521594248712,
+        0.014744590036571026,
+        0.013998450012877584,
+        0.015653854934498668
+      ],
+      "operator_mean_s": 0.014693935820832848
+    },
+    {
+      "case_id": "v4n01136_r000",
+      "row": 56124,
+      "scen": "v4n01136",
+      "fe_wall_s": 398.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard0.csv",
+      "metadata_sha256": "bb9387d2a2cbf64a31539a104799f627debd0d99420d4c6e3533175e98a3251f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01136_r000.log",
+      "log_sha256": "5b09e8ef196ce41bd166c4400e9f2aa374729e1ab07cffc65678520b4d130b63",
+      "operator_wall_s": [
+        0.014791571069508791,
+        0.014229707885533571,
+        0.01572642894461751,
+        0.014722461812198162,
+        0.013901002006605268
+      ],
+      "operator_mean_s": 0.01467423434369266
+    },
+    {
+      "case_id": "v4n01153_r000",
+      "row": 56258,
+      "scen": "v4n01153",
+      "fe_wall_s": 394.7,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard1.csv",
+      "metadata_sha256": "263f13a17f90ee0c0f6857b41d09cb553172a0642b99b3c75bd130957d36ad9f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01153_r000.log",
+      "log_sha256": "c04413d5b2c8c8f86295cc98203cea77af44dad440470b8831950910717d56cb",
+      "operator_wall_s": [
+        0.015586242079734802,
+        0.015224143862724304,
+        0.014729168033227324,
+        0.014362831134349108,
+        0.015287666115909815
+      ],
+      "operator_mean_s": 0.015038010245189071
+    },
+    {
+      "case_id": "v4n01161_r000",
+      "row": 56321,
+      "scen": "v4n01161",
+      "fe_wall_s": 331.5,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard9.csv",
+      "metadata_sha256": "4a9ed822c9ea58040d81e5bdaee3d2013944361b0d97e19fa972297927c4ca55",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01161_r000.log",
+      "log_sha256": "bdb08d7e106833af406e9eb3f8692fc824f95336d5b82bfb7a49fe9611e76850",
+      "operator_wall_s": [
+        0.015009141061455011,
+        0.014745444990694523,
+        0.01517686084844172,
+        0.014373340876773,
+        0.015909562120214105
+      ],
+      "operator_mean_s": 0.015042869979515672
+    },
+    {
+      "case_id": "v4n01178_r000",
+      "row": 56456,
+      "scen": "v4n01178",
+      "fe_wall_s": 371.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01178_r000.log",
+      "log_sha256": "c9092d1c0b261c43bdea8bf3b014cff78eacf70244ce8f054c48c1b2b3aec28b",
+      "operator_wall_s": [
+        0.014952824916690588,
+        0.01396253309212625,
+        0.0157015488948673,
+        0.015570850111544132,
+        0.014956005848944187
+      ],
+      "operator_mean_s": 0.015028752572834491
+    },
+    {
+      "case_id": "v4n01185_r000",
+      "row": 56511,
+      "scen": "v4n01185",
+      "fe_wall_s": 434.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard1.csv",
+      "metadata_sha256": "263f13a17f90ee0c0f6857b41d09cb553172a0642b99b3c75bd130957d36ad9f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01185_r000.log",
+      "log_sha256": "de2179d2eb03d70093be13beade58cf5bfc3c0a753363945052bc0e9ccc28a0d",
+      "operator_wall_s": [
+        0.017400078009814024,
+        0.014799715019762516,
+        0.014188661007210612,
+        0.015586056979373097,
+        0.014799880096688867
+      ],
+      "operator_mean_s": 0.015354878222569823
+    },
+    {
+      "case_id": "v4n01188_r000",
+      "row": 56535,
+      "scen": "v4n01188",
+      "fe_wall_s": 394.0,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard4.csv",
+      "metadata_sha256": "5d2dd4c147441f6307612b9a3a386890e1c70be1c5d9a39ada42613984a6d9c0",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01188_r000.log",
+      "log_sha256": "aa16eef40fbb81ce927bc797b3e49354f7579fee8f360aab5324c53348af86fc",
+      "operator_wall_s": [
+        0.014119695872068405,
+        0.016051490092650056,
+        0.015141404932364821,
+        0.014261062955483794,
+        0.015612304909154773
+      ],
+      "operator_mean_s": 0.01503719175234437
+    },
+    {
+      "case_id": "v4n01200_r000",
+      "row": 56630,
+      "scen": "v4n01200",
+      "fe_wall_s": 289.7,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard0.csv",
+      "metadata_sha256": "bb9387d2a2cbf64a31539a104799f627debd0d99420d4c6e3533175e98a3251f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01200_r000.log",
+      "log_sha256": "444f3d7052302b24f986d0d949fa5323c1edd6ee5c951fad8bc400533e1f04e9",
+      "operator_wall_s": [
+        0.014789693057537079,
+        0.014105429872870445,
+        0.015934654977172613,
+        0.0147950469981879,
+        0.014072397956624627
+      ],
+      "operator_mean_s": 0.014739444572478532
+    },
+    {
+      "case_id": "v4n01231_r000",
+      "row": 56861,
+      "scen": "v4n01231",
+      "fe_wall_s": 377.7,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard15.csv",
+      "metadata_sha256": "b91babfc8edf49307e29250a1164e4ede6c99ce66f66d114c75c45e9a468793a",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01231_r000.log",
+      "log_sha256": "cd41452e86b61a8baf6b1d05762a9d85ef11595f5866830e7eee9cd4c05e0323",
+      "operator_wall_s": [
+        0.01569691183976829,
+        0.014742181869223714,
+        0.013916501076892018,
+        0.016014344058930874,
+        0.015704192919656634
+      ],
+      "operator_mean_s": 0.015214826352894307
+    },
+    {
+      "case_id": "v4n01233_r000",
+      "row": 56877,
+      "scen": "v4n01233",
+      "fe_wall_s": 373.2,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard1.csv",
+      "metadata_sha256": "263f13a17f90ee0c0f6857b41d09cb553172a0642b99b3c75bd130957d36ad9f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01233_r000.log",
+      "log_sha256": "ce055d72cc243d73bdb6cc76f62f7449c8f8ef08bfe9847239e141c038987cd4",
+      "operator_wall_s": [
+        0.01802599406801164,
+        0.014454429969191551,
+        0.014909369172528386,
+        0.014496625168249011,
+        0.016095071798190475
+      ],
+      "operator_mean_s": 0.015596298035234213
+    },
+    {
+      "case_id": "v4n01249_r000",
+      "row": 56967,
+      "scen": "v4n01249",
+      "fe_wall_s": 411.3,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard1.csv",
+      "metadata_sha256": "263f13a17f90ee0c0f6857b41d09cb553172a0642b99b3c75bd130957d36ad9f",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01249_r000.log",
+      "log_sha256": "5c34c440db97ef659150ce33b823ec76e2decb01744ab3b48a376af3032a0621",
+      "operator_wall_s": [
+        0.015063517959788442,
+        0.01398866600356996,
+        0.015518511878326535,
+        0.015289973933249712,
+        0.014776078052818775
+      ],
+      "operator_mean_s": 0.014927349565550686
+    },
+    {
+      "case_id": "v4n01258_r000",
+      "row": 57011,
+      "scen": "v4n01258",
+      "fe_wall_s": 393.8,
+      "mpi_ranks": 8,
+      "threads_per_rank": 1,
+      "metadata": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/metadata_v4n_shard10.csv",
+      "metadata_sha256": "1595481bff8d72f3f1e9003dc3e1d88ebebe7f201122a2cd1e65475e9a823db9",
+      "log": "/mnt/home/yliu5/projects/v4r6/dataset_v4_coussy_r6/logs/v4n01258_r000.log",
+      "log_sha256": "99bacc789923e76b8b6ea5db617d3f9bacdc097c4ae3140861baa3d26e77d882",
+      "operator_wall_s": [
+        0.014383764937520027,
+        0.015107781859114766,
+        0.014380973996594548,
+        0.015894170152023435,
+        0.014813085086643696
+      ],
+      "operator_mean_s": 0.014915955206379294
+    }
+  ],
+  "interpretation": "Recorded CPU FE versus current GPU deployment, not matched hardware or energy cost.",
+  "input_equivalence": "Exact equality against supervised FieldPairs inputs for first three cases at all eleven times"
+}

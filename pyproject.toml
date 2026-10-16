@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geouno"
-version = "1.0.0"
+version = "1.1.0"
 description = "GeoUNO: joint temperature-pressure neural operator for geothermal forecasting and permeability inference under uncertainty"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -48,13 +48,14 @@ Repository = "https://github.com/Yulongggggg/AVF_geothermal"
 include = ["geouno*"]
 
 [tool.setuptools.package-data]
-geouno = ["resources/*.json", "resources/source_data/*", "resources/source_data/**/*"]
+geouno = ["resources/*.json", "resources/training_final_20261015/*", "resources/source_data/*", "resources/source_data/**/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = [
     "release: needs the downloaded release artifacts (geouno download)",
     "slow: takes minutes on a CPU",
+    "model_execution: executes a neural model forward pass",
 ]
 
 [tool.ruff]
