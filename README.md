@@ -23,7 +23,12 @@ error by **37%** relative to space-filling placement.
 The application checkpoint is the seed-20260915 member of the three-seed Table 1 comparison:
 `f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb`.
 This release includes that model, updated observation layouts and calibration, 24 test reservoirs,
-six sets of four NUTS chains, 1,542 saved task/reference score records, and the paper's numerical Source Data.
+1,560 saved task/reference score records, and the paper's numerical Source Data. The 19 October update
+includes NUTS forecasts and diagnostics for all 24 reservoirs (96 completed chains): 23 pass convergence
+criteria; `test_16` remains included with its diagnostic flag. Mean NUTS permeability, temperature-field
+and pressure-field RMSEs are **0.645 dec, 6.631 K and 0.474 MPa**. The downloadable raw-chain bundles
+currently cover the original six reservoirs; the full-cohort scores and diagnostic summaries are bundled
+in [Source Data](geouno/resources/source_data/final_model_20261015).
 
 ## Quick start
 
@@ -31,7 +36,7 @@ six sets of four NUTS chains, 1,542 saved task/reference score records, and the 
 git clone https://github.com/Yulongggggg/AVF_geothermal.git
 cd AVF_geothermal
 python -m pip install -e ".[all]"
-geouno paper-numbers                   # 170 checks, no model execution
+geouno paper-numbers                   # 175 saved-value checks, no model execution
 geouno download                        # checkpoint, prior factor and reservoir cases
 geouno verify                          # hashes and strict checkpoint loading; no prediction
 ```

@@ -1,4 +1,4 @@
-"""Recompute the 15 October final-model paper tables from saved Source Data."""
+"""Recompute final-model paper tables, including the completed 24-reservoir NUTS cohort."""
 
 import csv
 import gzip
@@ -90,11 +90,9 @@ def table2():
     columns = ("logk_RMSE", "T_field_RMSE", "p_field_RMSE", "T_nearwell_RMSE", "p_nearwell_RMSE")
     out = {}
     for n in (24, 6):
-        table = f"Table 2 ({'24' if n == 24 else 'six'} reservoirs)"
+        table = "Table 2 (24 reservoirs)" if n == 24 else "Historical six-reservoir subset"
         out[table] = {}
         for label, key in methods.items():
-            if n == 24 and label == "NUTS":
-                continue
             cases = [f"test_{i:02d}" for i in range(1, n + 1)]
             out[table][label] = summarize([[groups[key][case][col] for col in columns] for case in cases])
     return out
@@ -142,7 +140,7 @@ def abstract():
 
 
 def check():
-    """Return (table, row, column, recomputed, printed, ok); pending cells are omitted."""
+    """Check current paper entries and the archived six-reservoir subset; pending cells are omitted."""
     computed = {
         "Table 1": table1(),
         **table2(),

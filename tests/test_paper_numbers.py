@@ -7,7 +7,7 @@ from geouno import paper
 
 def test_all_printed_values_recompute():
     report = paper.check()
-    assert len(report) == 170
+    assert len(report) == 175
     assert all(ok for *_, ok in report), [r for r in report if not r[-1]]
 
 

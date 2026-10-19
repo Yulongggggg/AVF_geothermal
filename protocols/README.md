@@ -17,3 +17,7 @@ paths inside them are identifiers of the original cluster files, not runtime dep
 the registered reservoirs are packaged in `geouno/resources/geometries.json` (tests in `tests/test_monitoring.py`).
 The current 49 configurations produce 1,104 test-case files plus 49 validation-pilot files; the four noise
 variants are restricted to the first six test reservoirs.
+
+## Completed 24-reservoir NUTS comparison (19 October 2026)
+
+`hamiltonian_extension_20261017.json` registers test_07 through test_24 with the final checkpoint `f39894ff...`, the same four-chain sampler and convergence criteria as the original six. Its SHA-256 is `2aa3020c28c309b5244202e695a66caf567e75fd28ff100527e43c3584c12e94`. All 96 chains completed; 23 reservoirs pass, and test_16 is retained with a diagnostic flag. The dated protocol files are immutable records; cluster paths identify their original inputs.

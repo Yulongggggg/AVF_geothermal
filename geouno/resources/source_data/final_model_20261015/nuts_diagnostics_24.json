@@ -1,0 +1,1010 @@
+{
+  "test_01": {
+    "rank_rhat_max": 1.0094098900016597,
+    "bulk_ess_min": 1053.2572887657216,
+    "tail_ess_min": 1262.3268243219825,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 53036.5846105665,
+    "potential_evaluations": 775300,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13248.651864347048,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193897,
+        "hardware": "NVIDIA H200"
+      },
+      {
+        "seconds": 13252.69419584237,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193896,
+        "hardware": "NVIDIA H200"
+      },
+      {
+        "seconds": 13268.763769990765,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193767,
+        "hardware": "NVIDIA H200"
+      },
+      {
+        "seconds": 13266.474780386314,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193740,
+        "hardware": "NVIDIA H200"
+      }
+    ]
+  },
+  "test_02": {
+    "rank_rhat_max": 1.011310790082194,
+    "bulk_ess_min": 234.1153054216153,
+    "tail_ess_min": 393.9675191806591,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 89911.03234816995,
+    "potential_evaluations": 776968,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 22402.87037148513,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194278,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 22403.21655958984,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194388,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 22551.391560314223,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194155,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 22553.553856780753,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194147,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      }
+    ]
+  },
+  "test_03": {
+    "rank_rhat_max": 1.0062873280043998,
+    "bulk_ess_min": 1545.3781590048097,
+    "tail_ess_min": 1289.5863912145774,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 80055.42770018056,
+    "potential_evaluations": 776341,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 22111.474453356117,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194086,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 22077.846375411376,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193994,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 22212.310308178887,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194195,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 13653.79656323418,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194066,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      }
+    ]
+  },
+  "test_04": {
+    "rank_rhat_max": 1.0065990272052776,
+    "bulk_ess_min": 1219.1590792625607,
+    "tail_ess_min": 1680.977104011844,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 63224.45924915001,
+    "potential_evaluations": 776251,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 22181.827947579324,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194210,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 13643.297938620672,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193841,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 13704.793214004487,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194206,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 13694.540148945525,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193994,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      }
+    ]
+  },
+  "test_05": {
+    "rank_rhat_max": 1.01087442578804,
+    "bulk_ess_min": 714.2703734311151,
+    "tail_ess_min": 1188.3441378509413,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 61093.78065719362,
+    "potential_evaluations": 775804,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13114.401867667213,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193939,
+        "hardware": "NVIDIA H200"
+      },
+      {
+        "seconds": 13112.218585579656,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193877,
+        "hardware": "NVIDIA H200"
+      },
+      {
+        "seconds": 13065.148484929465,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194132,
+        "hardware": "NVIDIA H200"
+      },
+      {
+        "seconds": 21802.01171901729,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193856,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      }
+    ]
+  },
+  "test_06": {
+    "rank_rhat_max": 1.008491436198786,
+    "bulk_ess_min": 6062.909276386626,
+    "tail_ess_min": 1661.2700776973309,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 76713.60686171893,
+    "potential_evaluations": 754137,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 12817.281624748372,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 187785,
+        "hardware": "NVIDIA H200"
+      },
+      {
+        "seconds": 21280.55037684925,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 189145,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 21364.04399936553,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 189075,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      },
+      {
+        "seconds": 21251.73086075578,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 188132,
+        "hardware": "NVIDIA H100 80GB HBM3"
+      }
+    ]
+  },
+  "test_07": {
+    "rank_rhat_max": 1.007085788848105,
+    "bulk_ess_min": 4578.282749140497,
+    "tail_ess_min": 2089.770488078587,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 52108.08836578578,
+    "potential_evaluations": 771320,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 12994.248140031472,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192933,
+        "hardware": "NVIDIA H200",
+        "chain_index": 0,
+        "seed": 629006
+      },
+      {
+        "seconds": 12983.155965548009,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192643,
+        "hardware": "NVIDIA H200",
+        "chain_index": 1,
+        "seed": 629007
+      },
+      {
+        "seconds": 13061.28396187909,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192767,
+        "hardware": "NVIDIA H200",
+        "chain_index": 2,
+        "seed": 629008
+      },
+      {
+        "seconds": 13069.400298327208,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192977,
+        "hardware": "NVIDIA H200",
+        "chain_index": 3,
+        "seed": 629009
+      }
+    ]
+  },
+  "test_08": {
+    "rank_rhat_max": 1.0055643572954156,
+    "bulk_ess_min": 1531.2642951953635,
+    "tail_ess_min": 1643.4172075118672,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 87941.20989727601,
+    "potential_evaluations": 775154,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 21972.2312940564,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193766,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629007
+      },
+      {
+        "seconds": 21894.341740854084,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193457,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629008
+      },
+      {
+        "seconds": 22032.708572864532,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193932,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629009
+      },
+      {
+        "seconds": 22041.928289500996,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193999,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629010
+      }
+    ]
+  },
+  "test_09": {
+    "rank_rhat_max": 1.0069371230803652,
+    "bulk_ess_min": 1923.2189905311993,
+    "tail_ess_min": 1835.608548288588,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 54508.61716542486,
+    "potential_evaluations": 773051,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13470.378354819492,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192981,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629008
+      },
+      {
+        "seconds": 13471.101957310922,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193013,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629009
+      },
+      {
+        "seconds": 13772.776750534773,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193267,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629010
+      },
+      {
+        "seconds": 13794.360102759674,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193790,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629011
+      }
+    ]
+  },
+  "test_10": {
+    "rank_rhat_max": 1.009438883770383,
+    "bulk_ess_min": 1094.8808980647095,
+    "tail_ess_min": 1528.3638192991364,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 52499.87188876886,
+    "potential_evaluations": 775064,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13118.050930165686,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193754,
+        "hardware": "NVIDIA H200",
+        "chain_index": 0,
+        "seed": 629009
+      },
+      {
+        "seconds": 13127.76177541446,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194006,
+        "hardware": "NVIDIA H200",
+        "chain_index": 1,
+        "seed": 629010
+      },
+      {
+        "seconds": 13128.78806089051,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193688,
+        "hardware": "NVIDIA H200",
+        "chain_index": 2,
+        "seed": 629011
+      },
+      {
+        "seconds": 13125.271122298203,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193616,
+        "hardware": "NVIDIA H200",
+        "chain_index": 3,
+        "seed": 629012
+      }
+    ]
+  },
+  "test_11": {
+    "rank_rhat_max": 1.0091788902162786,
+    "bulk_ess_min": 5275.354850001319,
+    "tail_ess_min": 1516.436489073143,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 87958.19978797995,
+    "potential_evaluations": 750890,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 22059.959477773868,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 187796,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629010
+      },
+      {
+        "seconds": 22046.62618205417,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 187494,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629011
+      },
+      {
+        "seconds": 21840.356658019125,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 186923,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629012
+      },
+      {
+        "seconds": 22011.257470132783,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 188677,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629013
+      }
+    ]
+  },
+  "test_12": {
+    "rank_rhat_max": 1.0114430880113177,
+    "bulk_ess_min": 852.6115696045964,
+    "tail_ess_min": 1054.666014713599,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 52531.665774505585,
+    "potential_evaluations": 775802,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13089.320630149916,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193720,
+        "hardware": "NVIDIA H200",
+        "chain_index": 0,
+        "seed": 629011
+      },
+      {
+        "seconds": 13102.10160931386,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194042,
+        "hardware": "NVIDIA H200",
+        "chain_index": 1,
+        "seed": 629012
+      },
+      {
+        "seconds": 13176.751746114343,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194185,
+        "hardware": "NVIDIA H200",
+        "chain_index": 2,
+        "seed": 629013
+      },
+      {
+        "seconds": 13163.491788927466,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193855,
+        "hardware": "NVIDIA H200",
+        "chain_index": 3,
+        "seed": 629014
+      }
+    ]
+  },
+  "test_13": {
+    "rank_rhat_max": 1.0118946619815647,
+    "bulk_ess_min": 823.1632119241302,
+    "tail_ess_min": 1045.4712862308843,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 52510.93544347864,
+    "potential_evaluations": 774706,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13042.291208134964,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193517,
+        "hardware": "NVIDIA H200",
+        "chain_index": 0,
+        "seed": 629012
+      },
+      {
+        "seconds": 13054.077078239992,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193823,
+        "hardware": "NVIDIA H200",
+        "chain_index": 1,
+        "seed": 629013
+      },
+      {
+        "seconds": 13202.78299742844,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193566,
+        "hardware": "NVIDIA H200",
+        "chain_index": 2,
+        "seed": 629014
+      },
+      {
+        "seconds": 13211.78415967524,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193800,
+        "hardware": "NVIDIA H200",
+        "chain_index": 3,
+        "seed": 629015
+      }
+    ]
+  },
+  "test_14": {
+    "rank_rhat_max": 1.0234957632323451,
+    "bulk_ess_min": 328.414679381795,
+    "tail_ess_min": 509.6778735659322,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 54568.27131768875,
+    "potential_evaluations": 775258,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13500.39251191169,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193881,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629013
+      },
+      {
+        "seconds": 13506.186424513347,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194030,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629014
+      },
+      {
+        "seconds": 13785.562397906557,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193793,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629015
+      },
+      {
+        "seconds": 13776.129983357154,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193554,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629016
+      }
+    ]
+  },
+  "test_15": {
+    "rank_rhat_max": 1.0075916152401734,
+    "bulk_ess_min": 3480.277754051554,
+    "tail_ess_min": 1970.22889393869,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 52317.73916971125,
+    "potential_evaluations": 770192,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13123.007521687075,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192277,
+        "hardware": "NVIDIA H200",
+        "chain_index": 0,
+        "seed": 629014
+      },
+      {
+        "seconds": 13140.135473459959,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192730,
+        "hardware": "NVIDIA H200",
+        "chain_index": 1,
+        "seed": 629015
+      },
+      {
+        "seconds": 13025.466464120895,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192550,
+        "hardware": "NVIDIA H200",
+        "chain_index": 2,
+        "seed": 629016
+      },
+      {
+        "seconds": 13029.129710443318,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192635,
+        "hardware": "NVIDIA H200",
+        "chain_index": 3,
+        "seed": 629017
+      }
+    ]
+  },
+  "test_16": {
+    "rank_rhat_max": 1.05191252455959,
+    "bulk_ess_min": 53.580453187389395,
+    "tail_ess_min": 283.5962718605165,
+    "divergences": 0,
+    "convergence_pass": false,
+    "seconds": 84676.83696098626,
+    "potential_evaluations": 765137,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 21322.330704074353,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192969,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629015
+      },
+      {
+        "seconds": 21361.179628847167,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193355,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629016
+      },
+      {
+        "seconds": 21354.848644731566,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192728,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629017
+      },
+      {
+        "seconds": 20638.47798333317,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 186085,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629018
+      }
+    ]
+  },
+  "test_17": {
+    "rank_rhat_max": 1.0057796086231632,
+    "bulk_ess_min": 2188.6679709675564,
+    "tail_ess_min": 2023.0803201215092,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 85021.08363198303,
+    "potential_evaluations": 774634,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 21181.927839489654,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193608,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629016
+      },
+      {
+        "seconds": 21214.13516418077,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193629,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629017
+      },
+      {
+        "seconds": 21342.264007691294,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193823,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629018
+      },
+      {
+        "seconds": 21282.75662062131,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193574,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629019
+      }
+    ]
+  },
+  "test_18": {
+    "rank_rhat_max": 1.0075428639511266,
+    "bulk_ess_min": 5075.755497429212,
+    "tail_ess_min": 2063.1757574437884,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 86559.67609866336,
+    "potential_evaluations": 768434,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 21605.432570513338,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192089,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629017
+      },
+      {
+        "seconds": 21599.909754022956,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192059,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629018
+      },
+      {
+        "seconds": 21652.724784564227,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 191865,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629019
+      },
+      {
+        "seconds": 21701.60898956284,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192421,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629020
+      }
+    ]
+  },
+  "test_19": {
+    "rank_rhat_max": 1.0051366098475634,
+    "bulk_ess_min": 1538.4958214687401,
+    "tail_ess_min": 1896.155524365504,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 90975.4886520654,
+    "potential_evaluations": 775918,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 22595.09044391103,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193983,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629018
+      },
+      {
+        "seconds": 22596.252502735704,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193992,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629019
+      },
+      {
+        "seconds": 22837.696520831436,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193710,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629020
+      },
+      {
+        "seconds": 22946.449184587225,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194233,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629021
+      }
+    ]
+  },
+  "test_20": {
+    "rank_rhat_max": 1.008397860417874,
+    "bulk_ess_min": 3937.75985054079,
+    "tail_ess_min": 1912.0020125124831,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 51621.54185033776,
+    "potential_evaluations": 760444,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 12858.026161143556,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 189707,
+        "hardware": "NVIDIA H200",
+        "chain_index": 0,
+        "seed": 629019
+      },
+      {
+        "seconds": 12891.792410455644,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 190592,
+        "hardware": "NVIDIA H200",
+        "chain_index": 1,
+        "seed": 629020
+      },
+      {
+        "seconds": 12912.705294640735,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 189473,
+        "hardware": "NVIDIA H200",
+        "chain_index": 2,
+        "seed": 629021
+      },
+      {
+        "seconds": 12959.017984097824,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 190672,
+        "hardware": "NVIDIA H200",
+        "chain_index": 3,
+        "seed": 629022
+      }
+    ]
+  },
+  "test_21": {
+    "rank_rhat_max": 1.0125567689277646,
+    "bulk_ess_min": 763.345372259643,
+    "tail_ess_min": 1017.9907399731371,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 55098.89111874439,
+    "potential_evaluations": 774859,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 13691.456805747934,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193926,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629020
+      },
+      {
+        "seconds": 13687.31812653318,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193679,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629021
+      },
+      {
+        "seconds": 13860.360342447646,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193625,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629022
+      },
+      {
+        "seconds": 13859.755844015628,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193629,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629023
+      }
+    ]
+  },
+  "test_22": {
+    "rank_rhat_max": 1.0095505952649624,
+    "bulk_ess_min": 4153.176192756114,
+    "tail_ess_min": 1997.373484628552,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 85153.54019334354,
+    "potential_evaluations": 768496,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 21146.66452543065,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 191349,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629021
+      },
+      {
+        "seconds": 21323.873039633036,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193003,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629022
+      },
+      {
+        "seconds": 21328.02066558972,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 191936,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629023
+      },
+      {
+        "seconds": 21354.98196269013,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 192208,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629024
+      }
+    ]
+  },
+  "test_23": {
+    "rank_rhat_max": 1.0138536954802246,
+    "bulk_ess_min": 523.3443024042726,
+    "tail_ess_min": 808.665426625886,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 87496.8781484142,
+    "potential_evaluations": 775309,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 21768.54764526151,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193406,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629022
+      },
+      {
+        "seconds": 21811.44397076592,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193871,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629023
+      },
+      {
+        "seconds": 21959.611328162253,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193997,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629024
+      },
+      {
+        "seconds": 21957.275204224512,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194035,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629025
+      }
+    ]
+  },
+  "test_24": {
+    "rank_rhat_max": 1.0167695936304468,
+    "bulk_ess_min": 442.06686943344647,
+    "tail_ess_min": 1368.2652804151387,
+    "divergences": 0,
+    "convergence_pass": true,
+    "seconds": 91400.96506327763,
+    "potential_evaluations": 775924,
+    "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+    "chains": [
+      {
+        "seconds": 22686.760938270018,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194003,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 0,
+        "seed": 629023
+      },
+      {
+        "seconds": 22750.831987772137,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 194251,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 1,
+        "seed": 629024
+      },
+      {
+        "seconds": 22988.986010702327,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193934,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 2,
+        "seed": 629025
+      },
+      {
+        "seconds": 22974.38612653315,
+        "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+        "potential_evaluations": 193736,
+        "hardware": "NVIDIA H100 80GB HBM3",
+        "chain_index": 3,
+        "seed": 629026
+      }
+    ]
+  }
+}
