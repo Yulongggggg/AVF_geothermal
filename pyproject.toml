@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geouno"
-version = "1.1.0"
+version = "1.2.0"
 description = "GeoUNO: joint temperature-pressure neural operator for geothermal forecasting and permeability inference under uncertainty"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -32,10 +32,10 @@ dependencies = [
 
 [project.optional-dependencies]
 # Hamiltonian Monte Carlo (NUTS) and its convergence diagnostics.
-nuts = ["pyro-ppl>=1.9", "arviz>=0.20"]
+nuts = ["pyro-ppl>=1.9", "arviz>=0.20,<1"]
 # ES-MDA uses Equinor's reference implementation, which is licensed under GPL-3.0.
 esmda = ["iterative-ensemble-smoother==1.1.0"]
-all = ["pyro-ppl>=1.9", "arviz>=0.20", "iterative-ensemble-smoother==1.1.0", "matplotlib>=3.8"]
+all = ["pyro-ppl>=1.9", "arviz>=0.20,<1", "iterative-ensemble-smoother==1.1.0", "matplotlib>=3.8"]
 dev = ["pytest>=8", "ruff>=0.5"]
 
 [project.scripts]
@@ -61,7 +61,13 @@ markers = [
 [tool.ruff]
 line-length = 120
 target-version = "py310"
-extend-exclude = ["provenance/original_sources", "provenance/nuts_bundle_runtime"]
+extend-exclude = [
+    "provenance/original_sources",
+    "provenance/nuts_bundle_runtime",
+    "comparisons/pcno/upstream",
+    "finite_element/generation",
+    "finite_element/packing",
+]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "B"]

@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or its artifacts, please cite the article and this repository."
 title: "GeoUNO: joint operator learning for geothermal forecasting and inference under uncertainty (code and artifacts)"
 type: software
-version: 1.1.0
-date-released: 2026-10-05
+version: 1.2.0
+date-released: 2026-11-01
 license: MIT
 repository-code: "https://github.com/Yulongggggg/AVF_geothermal"
 keywords:

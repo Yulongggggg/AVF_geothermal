@@ -1,0 +1,222 @@
+{
+  "monitoring_locations_xy_m": {
+    "shape": [
+      17,
+      2
+    ],
+    "dtype": "float64",
+    "sha256": "69c98c77d99c5f7d641a04e8e86f33c43dff88c34b99559251109af38966325e"
+  },
+  "observation_time_indices_zero_based": {
+    "shape": [
+      7
+    ],
+    "dtype": "int64",
+    "sha256": "81845a01dafa45c9b26e10a7af52a92e8604d5d8ef690f1e3ccdcfe3b5c6ae98"
+  },
+  "observed_injector_pressure_MPa": {
+    "shape": [
+      7
+    ],
+    "dtype": "float64",
+    "sha256": "e8b2e0f9394e9d633b57b1b544c5b31c8f33dbf498ebfd063cdbc4b372958d8c"
+  },
+  "prior_injector_pressure_members_MPa": {
+    "shape": [
+      256,
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "f6b34c1d76e7fe2c9b9aec8f10e75ddfee2791b73fa159fc02233913f94afce1"
+  },
+  "static_prior_injector_pressure_members_MPa": {
+    "shape": [
+      256,
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "933d0514bd175118730e4d88ddac0182ef8614be6355fb09ad11d36f84976da6"
+  },
+  "map_injector_pressure_members_MPa": {
+    "shape": [
+      1,
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "d48735297bb84e1ba1934d8977b67ea50fb44e9c0f871296ba28cbb471fe58c8"
+  },
+  "esmda_injector_pressure_members_MPa": {
+    "shape": [
+      256,
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "501a04d20c4a95a4821bf1b6aea3078c158799bde4d61e7a69d4d5de2897a55b"
+  },
+  "nuts_injector_pressure_members_MPa": {
+    "shape": [
+      256,
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "897b4d08636c8f3131472cd72b9cc510b8a00b35a6d70792c78a8440934a68f2"
+  },
+  "times_s": {
+    "shape": [
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "cc706d6725c6d46ffc95904d75b38149a3d97a7a994a2b617867b2caf07b3e59"
+  },
+  "fe_truth_injector_pressure_MPa": {
+    "shape": [
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "ab69dd77a8c09c16a67b6f7cae00d3d4bff1d058bcf1a8389dd196887f56d833"
+  },
+  "prior_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "fce2af00531fd382cf1b0f59603c5958cab2c1120cae9ff12b053ac868625bb7"
+  },
+  "static_prior_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "d79a28ba07ecc622e65f87a54525643b788813b4072ed727c285757b70f21933"
+  },
+  "map_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "f123d10c9c2d2b9733d8bae5c9f7db9f0ff28f0edb4aa29d10e55206aab80ce5"
+  },
+  "esmda_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "667b203bc1f262b93c11d2aa9627676c98c02fa593ea06db0e27cd4553ee4074"
+  },
+  "nuts_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "8e14abb0cb2c6a6127edd6e0147981767f43e94d303cac5623feedceb6420024"
+  },
+  "truth_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "e5df686912e6da06789afdf1002021eb377543c2bb69c597636153343379f11b"
+  },
+  "prior_cooling_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "36b5604b576607f6cbdca8d3c94d443e7dcc714397c803917b662b46a92b71fc"
+  },
+  "static_prior_cooling_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "9953ef13b70c1908b1a64627ccee1fc409ca5cf40950b4bcb23e881d298b7a0c"
+  },
+  "map_cooling_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "4c4eed828caaf87163245daa7e3c1cae5cbd0b32f7e1208382a8e8c097c9f2c7"
+  },
+  "esmda_cooling_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "b9d6dced692ae8f2d28cd4b047fd0af164668c079c6ad68bb64ac422be3cd706"
+  },
+  "nuts_cooling_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "84ade4d802100b7474489f3fcb8b96b1dc61a58faeeb3d130187d7de2c0f95e1"
+  },
+  "truth_cooling_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float64",
+    "sha256": "67d41586db1ddd54bfdb6f5743b4ee868ce509c6dfd31e3db8c220d7e4d9171a"
+  },
+  "prior_pressure_change_MPa": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "2454d007dfdc373154807a3c8e6a2df3418efa1ec81d743415de18a16217fbaf"
+  },
+  "static_prior_pressure_change_MPa": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "153227ca89cf6cc3579ec31bb6c5affcbcde6357d8f2e5809707d0866177fb53"
+  },
+  "map_pressure_change_MPa": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "be454b957d933b914c591463d676bd78f23607145d049307e607ec7aa5ea814e"
+  },
+  "esmda_pressure_change_MPa": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "119acd71bc9404882a893415e3507065b783021fb50c692fe24441149b03138d"
+  },
+  "nuts_pressure_change_MPa": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "4e2f77102aaf71d960136493e70a3e159fe797e6068ec3aba454136c0f5a5e48"
+  },
+  "truth_pressure_change_MPa": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float64",
+    "sha256": "c398f3e086a638edb7f7fb205851f8e0a7acf3a63da483c9f1a8ab83f3a5af5f"
+  }
+}

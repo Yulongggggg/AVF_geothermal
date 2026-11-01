@@ -1,0 +1,92 @@
+{
+  "status": "complete",
+  "case_id": "v4m02656_r012",
+  "comparisons": {
+    "fields": {
+      "shape": [
+        2,
+        160,
+        128
+      ],
+      "dtype": "float32",
+      "byte_equal": true,
+      "max_absolute": 0.0,
+      "rmse": 0.0
+    },
+    "z": {
+      "shape": [
+        4096
+      ],
+      "dtype": "float32",
+      "byte_equal": true,
+      "max_absolute": 0.0,
+      "rmse": 0.0
+    },
+    "curve_t": {
+      "shape": [
+        33
+      ],
+      "dtype": "float64",
+      "byte_equal": true,
+      "max_absolute": 0.0,
+      "rmse": 0.0
+    },
+    "curves": {
+      "shape": [
+        33,
+        7
+      ],
+      "dtype": "float32",
+      "byte_equal": true,
+      "max_absolute": 0.0,
+      "rmse": 0.0
+    },
+    "curve_cols": {
+      "shape": [
+        7
+      ],
+      "dtype": "<U17",
+      "byte_equal": true
+    },
+    "physics_version": {
+      "shape": [],
+      "dtype": "<U22",
+      "byte_equal": true
+    },
+    "snap_fields": {
+      "shape": [
+        10,
+        2,
+        160,
+        128
+      ],
+      "dtype": "float32",
+      "byte_equal": true,
+      "max_absolute": 0.0,
+      "rmse": 0.0
+    },
+    "snap_times": {
+      "shape": [
+        10
+      ],
+      "dtype": "float64",
+      "byte_equal": true,
+      "max_absolute": 0.0,
+      "rmse": 0.0
+    }
+  },
+  "all_arrays_byte_equal": true,
+  "output_sha256": "28bd3e9ede4c3575d468c4d880fa0c8758eb987312d3d8cebc56b08e814cbada",
+  "reference_sha256": "28bd3e9ede4c3575d468c4d880fa0c8758eb987312d3d8cebc56b08e814cbada",
+  "mpi_processes": 6,
+  "moose_commit": "381947fe984564cf250e888a4689a8710902152e",
+  "executable_sha256": "83aab659dc354a77f3ad4c55f947e755aa45f940c3ddf0976b73bb78791f8f0c",
+  "verification_date": "2026-11-01",
+  "verification_entry": "python finite_element/run.py",
+  "elapsed_seconds_including_collection": 338.19201474729925,
+  "solver_seconds_original_replay": 345,
+  "public_entry_all_arrays_byte_equal": true,
+  "public_entry_output_sha256": "28bd3e9ede4c3575d468c4d880fa0c8758eb987312d3d8cebc56b08e814cbada",
+  "entry_source_sha256": "9823e0b9e9ca2cbfffdce04bb904b65b05acfae82a2d972eeb4307fe3287f8b1",
+  "reference_replay_count": 2
+}

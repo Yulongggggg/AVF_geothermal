@@ -2,10 +2,10 @@
 
 Inputs are the archival sources described in ``docs/PROVENANCE.md``:
 
---handoff     OL-geothermal-final-scheme @ codex/workstationd-nuts-20261001,
+--handoff     OL-geothermal-final-scheme, archived NUTS input bundle,
               handoffs/workstationd-nuts-20261001 (with Git LFS content)
---extension   same branch, handoffs/workstationd-nuts-extension-20261005
---results     OL-geothermal-final-scheme @ claude/workstationd-nuts-results-20261005,
+--extension   archived extension, handoffs/workstationd-nuts-extension-20261005
+--results     OL-geothermal-final-scheme, archived NUTS result bundle,
               handoffs/workstationd-nuts-20261001-results
 --prior-fit   OL-geothermal-final-scheme @ main, geouno/artifacts/prior
 --parent      OL-geothermal-final-scheme @ main, geouno/artifacts/model/model.pt

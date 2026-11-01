@@ -1,0 +1,6 @@
+{
+  "figure_sha256": "9de8d87f329a2ec8ae60e8fb6832a18b78ba2faa829bdc403b80a10e0e7007d4",
+  "figure_type": "network architecture schematic",
+  "numeric_result_arrays": false,
+  "description": "Boxes, connections and tensor dimensions describe the architecture and operations defined in Methods. This figure contains no predicted, measured or sampled field values."
+}

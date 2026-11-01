@@ -76,6 +76,24 @@ def admissible(result, start, stage):
     return float(np.mean(r)), bool(max(r) <= 1.0 + 1e-10 and tails)
 
 
+def checkpoint_score(checkpoint, stage, history):
+    """Recover the score stored with the selected weights, including older checkpoints."""
+    if "selection_score" in checkpoint:
+        value = checkpoint["selection_score"]
+    elif checkpoint["epoch"] == -1 and stage != "main":
+        value = 1.0
+    else:
+        key = "score" if stage == "main" else "stage_score"
+        rows = [row for row in history if row.get("epoch") == checkpoint["epoch"] and key in row]
+        if len(rows) != 1:
+            raise ValueError("Cannot recover the selected checkpoint score from its saved validation record")
+        value = rows[0][key]
+    value = float(value)
+    if not math.isfinite(value):
+        raise ValueError("Selected checkpoint has a non-finite score")
+    return value
+
+
 def run_stage(stage, net, arch, seed, out, device, smoke, tr, va, workers, stats):
     cfg = STAGES[stage]
     sdir = out / stage
@@ -94,17 +112,30 @@ def run_stage(stage, net, arch, seed, out, device, smoke, tr, va, workers, stats
         for p in active:
             p.requires_grad_(True)
     opt = torch.optim.AdamW(active, lr=cfg["lr"], weight_decay=1e-4)
+    reference = None
     if stage == "main":
         sched = torch.optim.lr_scheduler.LambdaLR(opt, lambda e: 0.05 + 0.95 * (1 + math.cos(math.pi * e / epochs)) / 2)
         reference = read(REFERENCE) if not smoke else evaluate(net, va, device, times, workers, chunk_size=16)
     else:
         sched = None
-    start = evaluate(net, va, device, times, workers, chunk_size=16) if stage != "main" else None
+    start = None
+    best_path = sdir / "best.pt"
+    selected = torch.load(best_path, map_location=device, weights_only=False) if best_path.exists() else None
     if stage != "main":
-        atomic_checkpoint(
-            dict(model=net.state_dict(), model_config=net.config, stage=stage, epoch=-1, seed=seed), sdir / "best.pt"
-        )
-        write(sdir / "validation_start.json", start)
+        start_path = sdir / "validation_start.json"
+        if start_path.exists():
+            start = read(start_path)
+        else:
+            if (sdir / "last.pt").exists() or (selected is not None and selected["epoch"] >= 0):
+                raise ValueError("Resumed stage is missing its entry validation; restore validation_start.json")
+            start = evaluate(net, va, device, times, workers, chunk_size=16)
+            write(start_path, start)
+        if selected is None:
+            if (sdir / "last.pt").exists():
+                raise ValueError("Resumed stage is missing its selected checkpoint; restore best.pt")
+            selected = dict(model=net.state_dict(), model_config=net.config, stage=stage, epoch=-1,
+                            seed=seed, selection_score=1.0, validation=start)
+            atomic_checkpoint(selected, best_path)
     best, history, first = (float("inf") if stage == "main" else 1.0), [], 0
     if (sdir / "last.pt").exists():
         old = torch.load(sdir / "last.pt", map_location=device, weights_only=False)
@@ -116,6 +147,15 @@ def run_stage(stage, net, arch, seed, out, device, smoke, tr, va, workers, stats
         if device == "cuda":
             torch.cuda.set_rng_state_all([x.cpu() for x in old["rng_cuda"]])
         first, best, history = old["epoch"] + 1, old["best"], old["history"]
+        if selected is None:
+            raise ValueError("Resumed stage is missing its selected checkpoint; restore best.pt")
+    if selected is not None:
+        # The weights and score are one atomic record. A validated best.pt may have
+        # been saved just before interruption while last.pt still names the preceding
+        # epoch. Retain that candidate while replaying from the last optimizer state.
+        best = checkpoint_score(selected, stage, history)
+        if "validation" in selected:
+            write(sdir / "validation_best.json", selected["validation"])
     sampler = EpochScenarios(tr, seed + 3000 + {"main": 0, "temperature": 1, "joint": 2}[stage])
     loader = DataLoader(
         tr,
@@ -176,14 +216,14 @@ def run_stage(stage, net, arch, seed, out, device, smoke, tr, va, workers, stats
                 row.update(validation=val["summary"], score=s)
                 if s < best:
                     best = s
-                    atomic_checkpoint(state, sdir / "best.pt")
+                    atomic_checkpoint(dict(state, selection_score=s, validation=val), sdir / "best.pt")
                     write(sdir / "validation_best.json", val)
             else:
                 s, ok = admissible(val, start, stage)
                 row.update(validation=val["summary"], stage_score=s, admissible=ok)
                 if ok and s < best:
                     best = s
-                    atomic_checkpoint(state, sdir / "best.pt")
+                    atomic_checkpoint(dict(state, selection_score=s, validation=val), sdir / "best.pt")
                     write(sdir / "validation_best.json", val)
         history.append(row)
         atomic_checkpoint(

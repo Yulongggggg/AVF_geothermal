@@ -1,0 +1,16 @@
+{
+  "protocol_name": "encoder_study_20260916",
+  "protocol_sha256": "ce774a97fb7ee767c1e3c133c13cd90a369bcbc6623dc39f9c2f758644408a68",
+  "sources_sha256": {
+    "encoder_study/pcno.py": "f0a9b25d8a04cc5cd85f97f4d9c932cbc9e30a26ce6409db77c38b3c63dd5994",
+    "encoder_study/train.py": "4dd40ebb159ce1fdc04132127875e811770a0d3e3f472fc86c5244aa62668eab",
+    "encoder_study/evaluate.py": "f1cca28732a7f16faa40d6347c779d7faa66cc0011b62a480adb3f1158c39090",
+    "direct_operator/data.py": "9386cc42b3102a9cc8f84c6bf82dff6368a371ab523c3045fc67496b9a79b85d",
+    "joint_mmd/loss.py": "bfaa89e106932b624fcc01b1cf1389a9752f10e6f057f2b203f589c8c8a26e3b",
+    "joint_precision/metrics.py": "b7ddbfc257274af032a2384142cd5f0c99500aab6a94f7ae8a3cf843b69f57ff"
+  },
+  "upstream": "https://git.codeocean.com/capsule-8000337.git",
+  "commit": "dc4cd4417ed7f97715ffb47496690ce60f7665a3",
+  "license": "GPL-3.0-only",
+  "reference_sha256": "511262c9b30739f5c4748fc725c7c53c4715f3c593e2211a0f5fa25fb473f815"
+}

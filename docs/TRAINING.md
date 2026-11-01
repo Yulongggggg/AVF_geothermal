@@ -1,7 +1,10 @@
-# Training the final model
+# Geothermal training and evaluation
+
+This checkout provides training and evaluation for the final GeoUNO model and the six deterministic
+geothermal baselines. Supply the FE corpus in the format described in [DATA.md](DATA.md).
 
 The final `resid64_p1` model starts from random neural initialization and a fixed POD bank fitted to training
-outputs. Training uses 72,939 non-nominal realizations in 6,582 scenarios, with eight complete scenarios per step.
+outputs. Training uses 72,939 permeability realizations in 6,582 scenarios, with eight complete scenarios per step.
 Each eleven-epoch cycle visits the eleven stored times. Seeds: 20260915, 20260925, 20260926.
 
 | Stage | Epochs | Parameters | Learning rate |
@@ -31,12 +34,46 @@ python -m geouno.training.train \
 ```
 
 The command writes stage histories and checkpoints under `formal/resid64_p1_s20260915/`, then
-`final.pt`, `final_eval/val.json` and `final_eval/test.json`. Completed stages and partial epochs resume from
-saved state. `--main-from` can adopt a completed main-stage run after validating its protocol and seed.
+`final.pt`, `final_eval/val.json` and `final_eval/test.json`. Completed stages are reused; interrupted stages
+resume from the last completed epoch. `--main-from` can adopt a completed main-stage run after validating its protocol and seed.
 The packaged three-time reference validation supplies the main-stage score normalization.
 
-The common-protocol appendix comparison uses the 99-epoch stage, eight scenarios per batch and seeds
-20260915–20260917. It has no refinement stages. Pending rows are identified in the packaged numerical data.
+## Common 99-epoch comparison
+
+Main Table 1 uses the 99-epoch stage, eight scenarios per batch and seeds 20260915–20260917.
+The six baselines use the same input encoding, objective, optimizer and validation reference as GeoUNO.
+
+```bash
+python -m geouno.common99 \
+  --pack /path/to/fe-pack --bank artifacts/training/pod_bank_296b9975.pt \
+  --out runs/common99 --model geouno --seed 20260915 --device cuda
+
+python -m geouno.baselines.train \
+  --pack /path/to/fe-pack --out runs/common99 \
+  --model attention_unet --seed 20260915 --device cuda
+```
+
+Model choices are `deeponet`, `fno`, `ufno`, `unet`, `resnet` and `attention_unet`.
+Each run writes its selected `best.pt`, epoch checkpoint `last.pt`, training history and final validation/test
+records. The baseline training command resumes from `last.pt`; `--smoke --device cpu` runs two small epochs.
+The common trainer writes its original BF16 validation/test records. Use the table evaluator below
+for the current paper comparison: it evaluates the six baselines in BF16 on CUDA and GeoUNO in FP32
+with TF32 disabled. GeoUNO uses batches of 16 realizations; the other models use 32.
+
+```bash
+python -m geouno.baselines.table_metrics \
+  --pack /path/to/fe-pack \
+  --checkpoint runs/common99/formal/attention_unet_s20260915/best.pt \
+  --out runs/common99/attention_s20260915_metrics.json --device cuda
+```
+
+The table evaluator records field and near-well errors for every scenario and time. Relative $L_2$
+pools squared errors and reference norms over times within each scenario before averaging scenarios.
+This differs from averaging the eleven relative errors.
+For GeoUNO, pass `runs/common99/formal/resid64_p1_s20260915/best.pt` to the same evaluator.
+Repeat each architecture with seeds 20260915, 20260916 and 20260917; the tables report the mean and
+sample standard deviation of these three independent runs. The common training command ends after
+99 epochs. The application-model command above continues through temperature and joint refinement.
 
 The source used for the final paper runs is preserved in
 [`provenance/original_sources/final_geouno_20261015`](../provenance/original_sources/final_geouno_20261015).

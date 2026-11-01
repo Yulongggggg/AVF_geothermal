@@ -1,0 +1,255 @@
+{
+  "P_coeff_per_Pa": 7.916051612903226e-12,
+  "Qth_definition": "produced enthalpy minus m_prod times injected-fluid specific enthalpy",
+  "T_coeff_per_K": -1.623e-05,
+  "biot_alpha": 0.58,
+  "borehole_radius_m": 0.1,
+  "bottom_mechanical_boundary": "uy=0 on base; ux=0 at bottom-center node",
+  "cap_bed_P_coeff_per_Pa": 8.47207741935484e-12,
+  "cap_bed_T_coeff_per_K": -1.737e-05,
+  "cap_bed_epv_coeff": 0.579,
+  "cap_bed_phi_ref": 0.001,
+  "channel_kap2_range": [
+    0.08,
+    0.2
+  ],
+  "cholesky_sha256": "fdc8c5e1ed73f3e25b6564ad679beb6d50c738da439a9631dbe1f39c06cacf11",
+  "clip_range_m2": [
+    4e-16,
+    4.3e-12
+  ],
+  "dataset_root": "dataset_v4_coussy_r5",
+  "drained_bulk_modulus_Pa": 28703703703.7037,
+  "epv_coeff": 0.5409999999999999,
+  "fracture_representation": "static equivalent matrix permeability only",
+  "grain_bulk_modulus_Pa": 68342151675.48499,
+  "heatmap_k_max_m2": 1.35e-12,
+  "heatmap_k_min_m2": 4e-15,
+  "injector_xy_m": [
+    0.0,
+    -250.0
+  ],
+  "interwell_distance_range_m": [
+    250.0,
+    620.0
+  ],
+  "lagrangian_to_current_linearization": "Phi=J*phi, J\u22481+eps_v",
+  "legacy_dataset_root": "dataset_v4_coussy",
+  "lower_dimensional_fracture_elements": false,
+  "mechanical_stress_free_temperature": "spatial pre-injection temperature T0(y)",
+  "peaceman_strain_at_nearest_qp": false,
+  "peaceman_strain_mapping_note": "nearest-QP material is not enabled: the installed MOOSE build segfaults during INITIAL elemental AuxKernel execution; this model's Peaceman well uses qp permeability and nodal fluid mobility, not nodal strain-dependent porosity",
+  "phi_ref": 0.039,
+  "physics_version": "v4-prodbhp-variable-r5",
+  "poisson_ratio": 0.32,
+  "porosity_definition": "current bulk volume (Eulerian/local porosity)",
+  "porosity_pressure_reference": "spatial pre-injection pressure p0(y)",
+  "porosity_temperature_reference": "spatial pre-injection temperature T0(y)",
+  "previous_dataset_root": "dataset_v4_coussy_r4",
+  "producer_bhp_formula": "prod_p = pp_ic + dpdy*(y_prod - y_ref) - drawdown",
+  "producer_bhp_initialization": "local hydrostatic p0(x_prod,y_prod)",
+  "producer_bhp_mode": "sampled_drawdown",
+  "producer_bhp_reference_mpa": 20.0,
+  "producer_completion_note": "single .bh point at z=0 plus prod_line_length=1.0 m in the unit-thickness 2D model, i.e. the producer fully penetrates the Lz=5 m stage. r3 and earlier wrote two points at z=1 and z=0; the z=1 point lies outside the strictly 2D mesh and was silently dropped, halving the Peaceman well index.",
+  "producer_drawdown_range_mpa": [
+    4.0,
+    14.0
+  ],
+  "producer_drawdown_seed": 990000,
+  "producer_line_length_m": 1.0,
+  "screen_bhp_slope": 1.0,
+  "solid_bulk_density_for_gravity_kg_m3": 2772.68093782,
+  "sweep_position_count": 45,
+  "sweep_xy_grid_m": [
+    [
+      -180.0,
+      0.0
+    ],
+    [
+      -120.0,
+      0.0
+    ],
+    [
+      -60.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      60.0,
+      0.0
+    ],
+    [
+      120.0,
+      0.0
+    ],
+    [
+      180.0,
+      0.0
+    ],
+    [
+      -180.0,
+      60.0
+    ],
+    [
+      -120.0,
+      60.0
+    ],
+    [
+      -60.0,
+      60.0
+    ],
+    [
+      0.0,
+      60.0
+    ],
+    [
+      60.0,
+      60.0
+    ],
+    [
+      120.0,
+      60.0
+    ],
+    [
+      180.0,
+      60.0
+    ],
+    [
+      -180.0,
+      120.0
+    ],
+    [
+      -120.0,
+      120.0
+    ],
+    [
+      -60.0,
+      120.0
+    ],
+    [
+      0.0,
+      120.0
+    ],
+    [
+      60.0,
+      120.0
+    ],
+    [
+      120.0,
+      120.0
+    ],
+    [
+      180.0,
+      120.0
+    ],
+    [
+      -180.0,
+      180.0
+    ],
+    [
+      -120.0,
+      180.0
+    ],
+    [
+      -60.0,
+      180.0
+    ],
+    [
+      0.0,
+      180.0
+    ],
+    [
+      60.0,
+      180.0
+    ],
+    [
+      120.0,
+      180.0
+    ],
+    [
+      180.0,
+      180.0
+    ],
+    [
+      -180.0,
+      240.0
+    ],
+    [
+      -120.0,
+      240.0
+    ],
+    [
+      -60.0,
+      240.0
+    ],
+    [
+      0.0,
+      240.0
+    ],
+    [
+      60.0,
+      240.0
+    ],
+    [
+      120.0,
+      240.0
+    ],
+    [
+      180.0,
+      240.0
+    ],
+    [
+      -180.0,
+      300.0
+    ],
+    [
+      -120.0,
+      300.0
+    ],
+    [
+      -60.0,
+      300.0
+    ],
+    [
+      0.0,
+      300.0
+    ],
+    [
+      60.0,
+      300.0
+    ],
+    [
+      120.0,
+      300.0
+    ],
+    [
+      180.0,
+      300.0
+    ],
+    [
+      -60.0,
+      360.0
+    ],
+    [
+      0.0,
+      360.0
+    ],
+    [
+      60.0,
+      360.0
+    ]
+  ],
+  "template_sha256": "cdd3fdb75190b358fb25e44d2a2d35b7e7d109badd227852010cee8881342824",
+  "well_x_range_m": [
+    -180.0,
+    180.0
+  ],
+  "well_y_range_m": [
+    0.0,
+    360.0
+  ],
+  "youngs_modulus_Pa": 31000000000.0
+}

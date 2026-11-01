@@ -1,3 +1,18 @@
+# Changelog
+
+## 1.2.0 — 1 November 2026
+
+- Provide the common 99-epoch trainer and current table evaluator for GeoUNO and six geothermal baselines.
+- Add CO₂ data preparation, training and evaluation for the eight models in the benchmark comparison.
+- Include the supplementary PCNO and conditional PNO training and evaluation programs with their component licences.
+- Provide a finite-element reference case, original application source and fixed MOOSE version.
+- Publish all 24 four-chain NUTS archives and the training-only prior-fit inputs on one Git LFS branch.
+- Preserve selected checkpoints across interrupted training, and validate data and protocol identity when resuming.
+- Bind evaluation caches to their inputs, model, precision and evaluation cohort.
+- Verify chain identities and distinguish numerical reproduction from convergence diagnostics.
+- Update the Source Data mapping, upstream benchmark attribution and reproduction instructions.
+- Supply figure Source Data and an eight-file corpus manifest, including the PNO characterization inputs.
+
 ## 1.1.0 — final model, 15 October 2026
 
 - Replace the application checkpoint with final resid64_p1 seed 20260915 (3,520,755 parameters).
@@ -5,8 +20,6 @@
 - Update calibration, optimized layouts, 64 configurations and six four-chain NUTS results.
 - Recompute 138 paper entries; mark incomplete uniform-protocol rows with dashes.
 - Add the CO₂ field gallery, final artifacts on Git LFS, and saved-result verification.
-
-# Changelog
 
 ## Unreleased (2026-10-08)
 
@@ -36,4 +49,4 @@ inference under uncertainty* (revision of 5 October 2026).
   validation pilot, six-reservoir NUTS chains, prior-fit inputs, transfer parent `cf278e64...`.
 * Frozen protocols, per-task reference scores (1,206 records) and Source Data of the manuscript tables.
 * Provenance: original sources with hashes, archived NUTS runtime, bitwise equivalence verifier, release assembly.
-* Static-only forecasts use the corrected member order (2 October 2026 audit).
+* Static-only forecasts use the corrected member order.

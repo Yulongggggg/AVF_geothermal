@@ -1,0 +1,15 @@
+{
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "source_sha256": "29539e04b9045c3ac8c6742c58ee53d6be3f61e244f0ac6a430debb769b5f37f",
+  "source_rows": 3696,
+  "colours": {
+    "multiwell": "#285F96",
+    "vertical": "#73A2CC",
+    "inclined": "#B8D1E7"
+  },
+  "bootstrap_seed": 20261002,
+  "bootstrap_resamples": 10000,
+  "source_data_sha256": "0ba8b9bb6902ae061422a4db1b1d5da561936855dbe7090827e592fe452f6013",
+  "pdf_sha256": "56b16d27bbcdc4e1bebbcb4225efb3ffe6f0af3109a0c70cfca8d33e5166b9bd",
+  "model_execution": false
+}

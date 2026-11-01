@@ -72,11 +72,16 @@ def freeze(arch):
     sources = {
         p.relative_to(pkg).as_posix(): sha(p) for sub in ("training", "model") for p in sorted((pkg / sub).glob("*.py"))
     }
+    sources["inputs.py"] = sha(pkg / "inputs.py")
+    arrays = {}
+    for name in ("real.npy", "fields.npy", "scal.npy"):
+        stat = (PACK / name).stat()
+        arrays[name] = dict(bytes=stat.st_size, modified_ns=stat.st_mtime_ns)
     value = dict(
         architecture=arch,
         stages=STAGES,
         batch_scenarios=BATCH_SCENARIOS,
-        seeds=SEEDS,
+        seeds=list(SEEDS),
         training_records=72939,
         training_scenarios=6582,
         nominal_records_used=False,
@@ -84,14 +89,18 @@ def freeze(arch):
         reference_validation_sha256=sha(REFERENCE),
         stats_sha256=sha(PACK / "stats.json"),
         meta_sha256=sha(PACK / "meta.csv"),
+        times_sha256=sha(PACK / "_ref_times.npy"),
+        pack_path=str(PACK.resolve()),
+        pack_arrays=arrays,
         sources_sha256=sources,
         final_evaluation="FP32, TF32 disabled",
     )
     target = OUT / f"protocol_{arch}.json"
     if target.exists():
         old = read(target)
-        if old["sources_sha256"] != sources or old["stages"] != STAGES:
-            raise ValueError("Source code or stage protocol changed since this run began")
+        changed = [key for key in sorted(set(old) | set(value)) if old.get(key) != value.get(key)]
+        if changed:
+            raise ValueError("Training inputs or protocol changed since this run began: " + ", ".join(changed))
         return old
     write(target, value)
     return value

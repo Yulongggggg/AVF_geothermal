@@ -3,7 +3,7 @@
   "files": {
     "det_sampler.py": {
       "sha256": "5bc9dba98b468bb8dd8c87774e82808f00d5983573ce31f048de84dc7c70c1bc",
-      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) handoffs/workstationd-nuts-20261001/provenance/original_sources/det_sampler.py",
+      "origin": "OL-geothermal-final-scheme@137d61a handoffs/workstationd-nuts-20261001/provenance/original_sources/det_sampler.py",
       "matches_pinned_or_runtime_record": true
     },
     "direct_operator/data.py": {
@@ -142,7 +142,7 @@
     },
     "operator_final_20260930/backend.py": {
       "sha256": "d72e1b08951763aa46cc4acd7a411fa161525bb674e77d973559f35c73fa225a",
-      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) .../provenance/original_sources/original_backend.py (cluster operator_final_20260930/backend.py)",
+      "origin": "OL-geothermal-final-scheme@137d61a .../provenance/original_sources/original_backend.py (cluster operator_final_20260930/backend.py)",
       "matches_pinned_or_runtime_record": true
     },
     "operator_final_20260930/calibrate.py": {
@@ -158,7 +158,7 @@
     },
     "operator_final_20260930/inverse_backend.py": {
       "sha256": "63ebf217f888384586fcf780aa6da0e47d0ee72a345f54b0e516bbbf2ff83842",
-      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) .../provenance/original_sources/operator_final_20260930/inverse_backend.py",
+      "origin": "OL-geothermal-final-scheme@137d61a .../provenance/original_sources/operator_final_20260930/inverse_backend.py",
       "matches_pinned_or_runtime_record": true
     },
     "operator_final_20260930/inverse_run.py": {
@@ -169,7 +169,7 @@
     },
     "operator_final_20260930/inverse_run_registered_20260930.py": {
       "sha256": "5bae10984b5f56d09c36129b20222ac59abfcb821ae070a7099bd129f794a75f",
-      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) .../original_sources/operator_final_20260930/inverse_run.py (version pinned by the inference protocol)",
+      "origin": "OL-geothermal-final-scheme@137d61a .../original_sources/operator_final_20260930/inverse_run.py (version pinned by the inference protocol)",
       "matches_pinned_or_runtime_record": true
     },
     "operator_final_20260930/monitoring_geometry.py": {
@@ -184,7 +184,7 @@
     },
     "operator_final_20260930/nuts_run.py": {
       "sha256": "666b618760531053d9666fd772d30c61d0135666e9fbed22a785a349a2a53515",
-      "origin": "OL-geothermal-final-scheme@137d61a (codex/workstationd-nuts-20261001) .../provenance/original_sources/original_nuts_run.py",
+      "origin": "OL-geothermal-final-scheme@137d61a .../provenance/original_sources/original_nuts_run.py",
       "matches_pinned_or_runtime_record": true,
       "note": "Equals source_sha256 recorded in protocols/hamiltonian_protocol.json."
     },

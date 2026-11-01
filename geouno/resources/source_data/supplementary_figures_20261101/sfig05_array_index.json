@@ -1,0 +1,86 @@
+{
+  "member_numbers": {
+    "shape": [
+      5
+    ],
+    "dtype": "int64",
+    "array_sha256": "218c43d7f80a86121298311de2b1946f0c4524c2836153cb788e297344dde7c1"
+  },
+  "mean_confidence": {
+    "shape": [
+      2,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "array_sha256": "820913b5c446044f5f827b036cac18997c15ee45edcae8beac93f37a286c4004"
+  },
+  "log10k_maps": {
+    "shape": [
+      5,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "array_sha256": "2959bbc721405c3aa6488b7d5150e868defad771a6d4f3fcd4d7ddff8f62feae"
+  },
+  "FE_endpoint_fields": {
+    "shape": [
+      5,
+      2,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "array_sha256": "4042dd860bc39cb32de3e174bd69c7420957a055f32eaaf5e455a79ec92306bd"
+  },
+  "GeoUNO_endpoint_fields": {
+    "shape": [
+      5,
+      2,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "array_sha256": "abe3cf95d12dae6eff8c2e80f0ed6024c216001989108df5ce33e87eeab6d2b2"
+  },
+  "FE_well_responses": {
+    "shape": [
+      2,
+      20,
+      11
+    ],
+    "dtype": "float32",
+    "array_sha256": "343d30c6e08a91e2e13c0fe49dda4e9cdc57b83ef3db76d145d3a7af900628da"
+  },
+  "GeoUNO_well_responses": {
+    "shape": [
+      2,
+      20,
+      11
+    ],
+    "dtype": "float32",
+    "array_sha256": "612084424b117c28846caa893792ab0252477a13f1f2d8096ecce16664df2e8c"
+  },
+  "times_s": {
+    "shape": [
+      11
+    ],
+    "dtype": "float64",
+    "array_sha256": "cc706d6725c6d46ffc95904d75b38149a3d97a7a994a2b617867b2caf07b3e59"
+  },
+  "producer_xy_m": {
+    "shape": [
+      2
+    ],
+    "dtype": "float32",
+    "array_sha256": "ab8d88a9a8bd5427fe59cf8c5d21c73fe969255d09ce5167003a6745044808f7"
+  },
+  "injector_xy_m": {
+    "shape": [
+      2
+    ],
+    "dtype": "float64",
+    "array_sha256": "638da02679b3f6bde474772bcf6f93a2bddcd2b6e7677bf486527c35f9eba40f"
+  }
+}

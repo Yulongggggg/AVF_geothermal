@@ -1,0 +1,117 @@
+{
+  "title": "Finite-element temperature and pressure fields for geothermal operator learning",
+  "format_version": 1,
+  "simulation_records": 95966,
+  "scenario_count": 7814,
+  "selected_members_by_split": {
+    "train": {
+      "realizations": 72939,
+      "scenarios": 6582
+    },
+    "val": {
+      "realizations": 6275,
+      "scenarios": 542
+    },
+    "test": {
+      "realizations": 8621,
+      "scenarios": 618
+    },
+    "xheld": {
+      "realizations": 448,
+      "scenarios": 69
+    }
+  },
+  "files": {
+    "meta.csv": {
+      "bytes": 6069774,
+      "sha256": "b7a6827bc0474cec8a19fd02f0c346b096e3f83e86f22f2744f7c7272b889590"
+    },
+    "stats.json": {
+      "bytes": 2218,
+      "sha256": "27c6a5321a3271107cb2ded98a608acb3906119cf72d3385efe5c670fafecbb8"
+    },
+    "_ref_times.npy": {
+      "bytes": 216,
+      "sha256": "0fd2959432b10a9d3ea907fc19c1d26cb2fdb2d9e8d18bf03b30378812e6aab5",
+      "shape": [
+        11
+      ],
+      "dtype": "float64"
+    },
+    "scal.npy": {
+      "bytes": 3454904,
+      "sha256": "cea956744abedaa0ddaf63e4c4667297aa8ab52c7131ed1c702dc928987286a8",
+      "shape": [
+        95966,
+        9
+      ],
+      "dtype": "float32"
+    },
+    "real.npy": {
+      "bytes": 6289227904,
+      "sha256": "9e5444422e92de3574be59a53366a3acac16880d1e00e4f2ae2b6b719ecf09b5",
+      "shape": [
+        95966,
+        128,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "fields.npy": {
+      "bytes": 172953763968,
+      "sha256": "38aa13aa807de354e32bcc66c2f97849874188ff3649159b2c7029c17801e7e5",
+      "shape": [
+        95966,
+        11,
+        2,
+        160,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "inputs.npy": {
+      "bytes": 1024196736,
+      "sha256": "187f740e0f4ecc9cbc400add4fb31e91925eb1e0f8d437c4545dcc9a658e0205",
+      "shape": [
+        7814,
+        2,
+        128,
+        128
+      ],
+      "dtype": "float32",
+      "description": "Scenario characterization mean log10 permeability and confidence; required by conditional PNO."
+    },
+    "index.npy": {
+      "bytes": 767856,
+      "sha256": "4154f33d9be5f098e0a6cdab295a74161ed65d5ca06d0d7ab22dc8c955d0fbaf",
+      "shape": [
+        95966
+      ],
+      "dtype": "int64",
+      "description": "FE record to characterization catalog row; identical to meta.csv scen_row."
+    }
+  },
+  "total_bytes": 180277483576,
+  "complete": true,
+  "requirements": {
+    "geouno_and_deterministic_baselines": [
+      "meta.csv",
+      "stats.json",
+      "_ref_times.npy",
+      "scal.npy",
+      "real.npy",
+      "fields.npy"
+    ],
+    "conditional_pno": [
+      "meta.csv",
+      "stats.json",
+      "_ref_times.npy",
+      "scal.npy",
+      "real.npy",
+      "fields.npy",
+      "inputs.npy",
+      "index.npy"
+    ]
+  },
+  "normalization": "Frozen training-only constants inherited from the preceding pack; all contributing cases remain in the current training split. Preserve the released stats.json when repacking raw FE output."
+}

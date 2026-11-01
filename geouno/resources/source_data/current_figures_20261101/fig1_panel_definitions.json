@@ -1,0 +1,98 @@
+{
+  "a": {
+    "source": "fig1_stage_fe_fields.npz",
+    "stage_ids": [
+      "v4s00031_r000",
+      "v4s00031_r019",
+      "v4s01471_r000",
+      "v4s01471_r019",
+      "v4s01741_r000",
+      "v4s01741_r019"
+    ],
+    "quantity": "FE temperature_C",
+    "colormap_limits_C": [
+      20,
+      100
+    ]
+  },
+  "b": {
+    "source_scenario": "v4s00000",
+    "source_pack_rows": [
+      57039,
+      57040,
+      57041,
+      57042,
+      57043,
+      57044,
+      57045,
+      57046,
+      57047,
+      57048,
+      57049,
+      57050,
+      57051,
+      57052,
+      57053,
+      57054,
+      57055,
+      57056,
+      57057,
+      57058
+    ],
+    "displayed_input_pack_row": 57039,
+    "basis_thumbnails": "First four right singular vectors of the centered saved temperature-prediction ensemble; illustrative basis shapes, not the fitted training POD bank",
+    "schematic_inputs": [
+      "b_schematic_injector_distance",
+      "b_schematic_coordinate"
+    ]
+  },
+  "c_forecasting": {
+    "scenario": "v4s01745",
+    "scenario_row": 5135,
+    "first_member_pack_row": 74289,
+    "last_member_pack_row": 74308,
+    "members": 20,
+    "producer_xy_m": [
+      -180.0,
+      300.0
+    ],
+    "temperature_mean_limits_K": [
+      0,
+      60
+    ],
+    "temperature_sd_limits_K": [
+      0,
+      16.0
+    ]
+  },
+  "c_gradient": {
+    "reservoir": "test_01",
+    "configuration": "multiwell_opt9",
+    "state": "unconditioned_prior_mean",
+    "quantity": "Derivative of ten-year producer cooling with respect to the 4096 whitened latent coordinates, reshaped 64 by 64 for display",
+    "unit": "K per whitened latent coordinate"
+  },
+  "c_design": {
+    "source": "fig4_location_group_0.npz",
+    "objective": "up_op_p90",
+    "candidate_count": 45,
+    "selected_index_zero_based": 3
+  },
+  "c_inference": {
+    "reservoir": "test_01",
+    "scenario": "v4m02656",
+    "configuration": "multiwell_opt17",
+    "curve_unit": "producer cooling in K",
+    "times_year_denominator_s": 31557600.0,
+    "observation_time_indices_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "producer_location_index_zero_based": 1
+  }
+}

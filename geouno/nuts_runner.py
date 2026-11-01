@@ -1,10 +1,11 @@
-"""NUTS runs for test_01 through test_06.
+"""NUTS runs and archived-chain verification for all 24 test reservoirs.
 
 Four chains per reservoir use H100/H200 GPUs, two concurrent chains per GPU.
-The saved final runs average 19.6 chain-hours per reservoir and have zero divergences.
+The saved full-cohort runs have zero divergences; 23 of 24 pass the diagnostic criteria.
 The verify_released command recomputes diagnostics and forecast scores from saved draws.
 """
 import json
+import os
 import time
 from pathlib import Path
 
@@ -16,13 +17,14 @@ from .inverse.nuts import PAPER_PROTOCOL
 from .monitoring.protocol import ENSEMBLE_SEED_OFFSET
 from .tasks import _finite, flush_print, load_backend, problem_for
 
-NUTS_CASES = tuple(f'test_{i:02d}' for i in range(1, 7))
+NUTS_CASES = tuple(f'test_{i:02d}' for i in range(1, 25))
+RELEASED_NUTS_CASES = NUTS_CASES
 
 
 def run_chain(label, chain, out, device='cuda:0', threads=None, root=None, backend=None, log=None):
     """Run formal chain ``chain`` (0-3) for ``label``; writes ``latent_samples.npz`` and ``diagnostics.json``."""
     if label not in NUTS_CASES or chain not in range(4):
-        raise ValueError('NUTS was registered for test_01..test_06, chains 0..3')
+        raise ValueError('NUTS was registered for test_01..test_24, chains 0..3')
     log = log or flush_print
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
@@ -38,26 +40,79 @@ def run_chain(label, chain, out, device='cuda:0', threads=None, root=None, backe
             log(json.dumps(record | dict(seconds=time.monotonic() - began)))
     protocol = {k: PAPER_PROTOCOL[k] for k in ('samples', 'warmup', 'max_depth', 'target_accept')}
     y, info = nuts(problem, **protocol, chains=1, seed=seed, progress=progress)
-    assert y.shape == (1, 1024, 4096) and np.isfinite(y).all()
-    np.savez_compressed(out / 'latent_samples.npz', y=y)
-    info.update(seed=seed, potential_evaluations=problem.calls - calls, device=str(backend.device),
-                checkpoint_sha256=artifacts.manifest()['checkpoint_sha256'])
-    (out / 'diagnostics.json').write_text(json.dumps(_finite(info), indent=2) + '\n')
+    if y.shape != (1, PAPER_PROTOCOL['samples'], 4096) or not np.isfinite(y).all():
+        raise ValueError('NUTS returned incomplete or non-finite samples')
+    samples = out / 'latent_samples.npz'
+    temporary = out / f'latent_samples.{os.getpid()}.tmp'
+    with temporary.open('wb') as handle:
+        np.savez_compressed(handle, y=y)
+    temporary.replace(samples)
+    info.update(format_version=1, case=label, chain=chain, seed=seed, protocol=protocol,
+                potential_evaluations=problem.calls - calls, device=str(backend.device),
+                checkpoint_sha256=artifacts.manifest()['checkpoint_sha256'],
+                case_sha256=artifacts.sha256(reservoirs.case_path(label)),
+                calibration_sha256=artifacts.sha256(artifacts.resource('calibration.json')),
+                samples_sha256=artifacts.sha256(samples))
+    temporary = out / f'diagnostics.{os.getpid()}.tmp'
+    temporary.write_text(json.dumps(_finite(info), indent=2) + '\n')
+    temporary.replace(out / 'diagnostics.json')
     return info
+
+
+def _read_chain(label, chain, folder, reservoirs):
+    """Read one complete chain and check its reservoir, protocol and saved sample identity."""
+    sample_path, info_path = folder / 'latent_samples.npz', folder / 'diagnostics.json'
+    info = json.loads(info_path.read_text())
+    entry = reservoirs.entry(label)
+    expected = dict(checkpoint_sha256=artifacts.manifest()['checkpoint_sha256'],
+                    case_sha256=entry['multiwell_opt17_case_sha256'],
+                    calibration_sha256=artifacts.sha256(artifacts.resource('calibration.json')))
+    for key, value in expected.items():
+        if info.get(key) != value:
+            raise ValueError(f'{folder}: {key} does not match {label}')
+    digest = artifacts.sha256(sample_path)
+    if info.get('format_version') == 1:
+        expected.update(case=label, chain=chain,
+                        seed=entry['observation_seed'] + ENSEMBLE_SEED_OFFSET + chain,
+                        samples_sha256=digest,
+                        protocol={k: PAPER_PROTOCOL[k] for k in ('samples', 'warmup', 'max_depth', 'target_accept')})
+        for key, value in expected.items():
+            if info.get(key) != value:
+                raise ValueError(f'{folder}: {key} does not match chain {chain} of {label}')
+    else:
+        # The original released chains predate the portable metadata schema. Their
+        # manifest hashes identify both the chain position and the original diagnostics.
+        files = {str(Path(record['extract']) / name): value
+                 for record in artifacts.manifest()['assets'].values() if record.get('group') == 'nuts'
+                 for name, value in record['files'].items()}
+        for name, actual in [('latent_samples.npz', digest), ('diagnostics.json', artifacts.sha256(info_path))]:
+            if files.get(f'nuts/{label}/chain_{chain}/{name}') != actual:
+                raise ValueError(f'{folder}: legacy chain identity is not in the release manifest')
+    with np.load(sample_path, allow_pickle=False) as archive:
+        y = archive['y'].copy()
+    if y.shape != (1, PAPER_PROTOCOL['samples'], 4096) or not np.isfinite(y).all():
+        raise ValueError(f'{folder}: incomplete or non-finite NUTS samples')
+    return y, info, digest
 
 
 def merge(label, run_dir, out=None, device='cpu', threads=None, root=None, backend=None):
     """Diagnostics and balanced forecast from ``run_dir/chain_{0..3}``; returns a summary dict."""
+    if label not in NUTS_CASES:
+        raise ValueError('NUTS was registered for test_01..test_24')
     run_dir = Path(run_dir)
-    ys, infos = [], []
+    reservoirs = artifacts.Reservoirs(root)
+    ys, infos, digests = [], [], set()
     for c in range(4):
-        with np.load(run_dir / f'chain_{c}' / 'latent_samples.npz') as z:
-            ys.append(z['y'].copy())
-        infos.append(json.loads((run_dir / f'chain_{c}' / 'diagnostics.json').read_text()))
+        y, info, digest = _read_chain(label, c, run_dir / f'chain_{c}', reservoirs)
+        if digest in digests:
+            raise ValueError('The four NUTS chains must contain independently generated samples')
+        ys.append(y)
+        infos.append(info)
+        digests.add(digest)
     y = np.concatenate(ys)
     diagnostics, _ = convergence(y, infos)
     backend = backend or load_backend(device, threads, root)
-    problem, _ = problem_for(backend, artifacts.Reservoirs(root), label, 'multiwell_opt17')
+    problem, _ = problem_for(backend, reservoirs, label, 'multiwell_opt17')
     selected, index = balanced_draws(y)
     result, arrays = forecast(problem, selected, save_members=True)
     if out is not None:
@@ -68,8 +123,8 @@ def merge(label, run_dir, out=None, device='cpu', threads=None, root=None, backe
 
 def verify_released(label, device='cpu', threads=None, root=None, backend=None, rtol=1e-4, atol=1e-8):
     """Recompute diagnostics and scores from the released chains; compare with the archived merge."""
-    if label not in NUTS_CASES:
-        raise ValueError('Released NUTS cases are test_01..test_06')
+    if label not in RELEASED_NUTS_CASES:
+        raise ValueError('Released NUTS cases are test_01..test_24')
     if not np.isfinite([rtol, atol]).all() or min(rtol, atol) < 0:
         raise ValueError('Verification tolerances must be finite and nonnegative')
     root = Path(root) if root else artifacts.data_dir()
@@ -98,7 +153,7 @@ def verify_released(label, device='cpu', threads=None, root=None, backend=None, 
         values['passed'] = bool(np.isclose(values['recomputed'], values['archived'], rtol=rtol, atol=atol))
     comparison['tolerances'] = dict(score_rtol=rtol, score_atol=atol, diagnostic_rtol=1e-10,
                                     diagnostic_atol=1e-12)
-    comparison['passed'] = (bool(summary['diagnostics']['convergence_pass'])
-                            and all(v['passed'] for group in ('diagnostics', 'scores')
-                                    for v in comparison[group].values()))
+    comparison['convergence_pass'] = bool(summary['diagnostics']['convergence_pass'])
+    comparison['passed'] = all(v['passed'] for group in ('diagnostics', 'scores')
+                               for v in comparison[group].values())
     return comparison

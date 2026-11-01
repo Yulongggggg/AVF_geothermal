@@ -1,0 +1,182 @@
+[
+  {
+    "row": 0,
+    "method": "prior",
+    "cmap": "cividis",
+    "clim": [
+      -16.269752502441406,
+      -10.460306167602539
+    ],
+    "array_sha256": "fce2af00531fd382cf1b0f59603c5958cab2c1120cae9ff12b053ac868625bb7"
+  },
+  {
+    "row": 0,
+    "method": "static_prior",
+    "cmap": "cividis",
+    "clim": [
+      -16.269752502441406,
+      -10.460306167602539
+    ],
+    "array_sha256": "d79a28ba07ecc622e65f87a54525643b788813b4072ed727c285757b70f21933"
+  },
+  {
+    "row": 0,
+    "method": "map",
+    "cmap": "cividis",
+    "clim": [
+      -16.269752502441406,
+      -10.460306167602539
+    ],
+    "array_sha256": "f123d10c9c2d2b9733d8bae5c9f7db9f0ff28f0edb4aa29d10e55206aab80ce5"
+  },
+  {
+    "row": 0,
+    "method": "esmda",
+    "cmap": "cividis",
+    "clim": [
+      -16.269752502441406,
+      -10.460306167602539
+    ],
+    "array_sha256": "667b203bc1f262b93c11d2aa9627676c98c02fa593ea06db0e27cd4553ee4074"
+  },
+  {
+    "row": 0,
+    "method": "nuts",
+    "cmap": "cividis",
+    "clim": [
+      -16.269752502441406,
+      -10.460306167602539
+    ],
+    "array_sha256": "8e14abb0cb2c6a6127edd6e0147981767f43e94d303cac5623feedceb6420024"
+  },
+  {
+    "row": 0,
+    "method": "truth",
+    "cmap": "cividis",
+    "clim": [
+      -16.269752502441406,
+      -10.460306167602539
+    ],
+    "array_sha256": "e5df686912e6da06789afdf1002021eb377543c2bb69c597636153343379f11b"
+  },
+  {
+    "row": 1,
+    "method": "prior",
+    "cmap": "inferno",
+    "clim": [
+      -7.884590148925781,
+      68.16349792480469
+    ],
+    "array_sha256": "36b5604b576607f6cbdca8d3c94d443e7dcc714397c803917b662b46a92b71fc"
+  },
+  {
+    "row": 1,
+    "method": "static_prior",
+    "cmap": "inferno",
+    "clim": [
+      -7.884590148925781,
+      68.16349792480469
+    ],
+    "array_sha256": "9953ef13b70c1908b1a64627ccee1fc409ca5cf40950b4bcb23e881d298b7a0c"
+  },
+  {
+    "row": 1,
+    "method": "map",
+    "cmap": "inferno",
+    "clim": [
+      -7.884590148925781,
+      68.16349792480469
+    ],
+    "array_sha256": "4c4eed828caaf87163245daa7e3c1cae5cbd0b32f7e1208382a8e8c097c9f2c7"
+  },
+  {
+    "row": 1,
+    "method": "esmda",
+    "cmap": "inferno",
+    "clim": [
+      -7.884590148925781,
+      68.16349792480469
+    ],
+    "array_sha256": "b9d6dced692ae8f2d28cd4b047fd0af164668c079c6ad68bb64ac422be3cd706"
+  },
+  {
+    "row": 1,
+    "method": "nuts",
+    "cmap": "inferno",
+    "clim": [
+      -7.884590148925781,
+      68.16349792480469
+    ],
+    "array_sha256": "84ade4d802100b7474489f3fcb8b96b1dc61a58faeeb3d130187d7de2c0f95e1"
+  },
+  {
+    "row": 1,
+    "method": "truth",
+    "cmap": "inferno",
+    "clim": [
+      -7.884590148925781,
+      68.16349792480469
+    ],
+    "array_sha256": "67d41586db1ddd54bfdb6f5743b4ee868ce509c6dfd31e3db8c220d7e4d9171a"
+  },
+  {
+    "row": 2,
+    "method": "prior",
+    "cmap": "Blues",
+    "clim": [
+      -2.3242549896240234,
+      36.83907699584961
+    ],
+    "array_sha256": "2454d007dfdc373154807a3c8e6a2df3418efa1ec81d743415de18a16217fbaf"
+  },
+  {
+    "row": 2,
+    "method": "static_prior",
+    "cmap": "Blues",
+    "clim": [
+      -2.3242549896240234,
+      36.83907699584961
+    ],
+    "array_sha256": "153227ca89cf6cc3579ec31bb6c5affcbcde6357d8f2e5809707d0866177fb53"
+  },
+  {
+    "row": 2,
+    "method": "map",
+    "cmap": "Blues",
+    "clim": [
+      -2.3242549896240234,
+      36.83907699584961
+    ],
+    "array_sha256": "be454b957d933b914c591463d676bd78f23607145d049307e607ec7aa5ea814e"
+  },
+  {
+    "row": 2,
+    "method": "esmda",
+    "cmap": "Blues",
+    "clim": [
+      -2.3242549896240234,
+      36.83907699584961
+    ],
+    "array_sha256": "119acd71bc9404882a893415e3507065b783021fb50c692fe24441149b03138d"
+  },
+  {
+    "row": 2,
+    "method": "nuts",
+    "cmap": "Blues",
+    "clim": [
+      -2.3242549896240234,
+      36.83907699584961
+    ],
+    "array_sha256": "4e2f77102aaf71d960136493e70a3e159fe797e6068ec3aba454136c0f5a5e48"
+  },
+  {
+    "row": 2,
+    "method": "truth",
+    "cmap": "Blues",
+    "clim": [
+      -2.3242549896240234,
+      36.83907699584961
+    ],
+    "array_sha256": "c398f3e086a638edb7f7fb205851f8e0a7acf3a63da483c9f1a8ab83f3a5af5f"
+  }
+]

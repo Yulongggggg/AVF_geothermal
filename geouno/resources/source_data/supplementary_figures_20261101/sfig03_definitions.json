@@ -1,0 +1,209 @@
+{
+  "panels": {
+    "a": "Normalized truncated power-law density: diameter in m, density per m; curves a=1.5 and 0.9.",
+    "b": "Fisher polar-angle density: displayed angular deviation in degrees, density per radian; K=2, 5, 10.",
+    "c": "Cumulative pair-distance fraction and prescribed slope 2.8; distance in m.",
+    "d": "6000 illustrative fracture disks; centers and sizes in m, unit normals, polygons use 2.5 diameter display multiplier.",
+    "e": "Archived fracture-trace mask 0370; display is 1-mask with extent [0,800,0,800] m and lower origin."
+  },
+  "seed": 7,
+  "family_names": [
+    "F0 subhorizontal",
+    "F1 NW-SE",
+    "F2 NE-SW",
+    "F3 N-S",
+    "F4 WSW-ENE"
+  ],
+  "family_strike_dip_deg": [
+    [
+      null,
+      0.0
+    ],
+    [
+      138.8,
+      90.0
+    ],
+    [
+      29.4,
+      90.0
+    ],
+    [
+      183.1,
+      90.0
+    ],
+    [
+      275.0,
+      90.0
+    ]
+  ],
+  "family_weights": [
+    0.15,
+    0.25,
+    0.22,
+    0.2,
+    0.18
+  ],
+  "domain_side_m": 800,
+  "display_diameter_multiplier": 2.5,
+  "diameter_range_m": [
+    2,
+    25
+  ],
+  "fracture_count": 6000,
+  "source_sha256": "81300cafb6a536021c1f79dd1dc9ad5a77b4e7379bc8af860a8cdd866b9035f8",
+  "helper_sha256": "f3bcb39211a9c56e9d3098540b4802b16b9d9f566348e64d147241b579ed94df",
+  "trace_png_sha256": "8f76e8248d7df4861762f55c12e605e26b4c1b789914440d8768916c17f542d0",
+  "figure_sha256": "76d07014c1bb7a9c9551ee40baf65558adce86d7c564f24d35b3339a698d0b5e",
+  "array_index": {
+    "fam_idx": {
+      "shape": [
+        6000
+      ],
+      "dtype": "int64",
+      "sha256": "e546376573a28750211b0c2d1e9c028e6c7f457ac207bdea579df16407d29b7f"
+    },
+    "sizes": {
+      "shape": [
+        6000
+      ],
+      "dtype": "float64",
+      "sha256": "2e7a5526e4d8d7a2e122e5df8805d3a7ebbfc8251fe326174fac656552e524df"
+    },
+    "centers": {
+      "shape": [
+        6000,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "02ecf71d7bfcdaa96b5292904f9aed5fa91e5a4fa7a7cbf1724cf416e5f2acef"
+    },
+    "normals": {
+      "shape": [
+        6000,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "20c2ad5825e2299b88f83f85ba8f6220e82147a0921d85710c6fb52b0408639b"
+    },
+    "polys": {
+      "shape": [
+        6000,
+        10,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "04f3a1dadd94c99c2556038d77adbabb019be5355a768fa67556c32059681e0c"
+    },
+    "mask": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "bool",
+      "sha256": "81141a88fd32825fb45771c8ee9fc685cb76554334a9da9626c8b7c35156c4f5"
+    },
+    "ll": {
+      "shape": [
+        400
+      ],
+      "dtype": "float64",
+      "sha256": "b0e2fa3d1f3500144a9223de5e204bef1984433480ee45f1f6dbddbfa7b3e564"
+    },
+    "th": {
+      "shape": [
+        400
+      ],
+      "dtype": "float64",
+      "sha256": "a6e58d55f289e896ae3501626c34d63fd0c8ba6e94ca67a8df86c98fcde3c28f"
+    },
+    "rs": {
+      "shape": [
+        26
+      ],
+      "dtype": "float64",
+      "sha256": "5cbd8a0f342ba92ae446f246c71c5b9dffbdb78d0410bef07a000a2846c04249"
+    },
+    "Cr": {
+      "shape": [
+        26
+      ],
+      "dtype": "float64",
+      "sha256": "6c4ba8680e9fa321f8b7ef8f1e7dc8e848e9c28af89cd42736b6412f5c852b8e"
+    },
+    "ref": {
+      "shape": [
+        26
+      ],
+      "dtype": "float64",
+      "sha256": "0f549bbcff44ba1d2798e9483dc7eab80619f4231fe88973ce5e97b5b271c471"
+    },
+    "panel_a_curve_1_xy": {
+      "shape": [
+        400,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "31a8f272210f24f7d308ffa01207c8d60c75ea6c858eaee80c054031ad2f2ffe"
+    },
+    "panel_a_curve_2_xy": {
+      "shape": [
+        400,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "99a9aba492637251615c316628ffd9a193438610a805823145d82585549c64b5"
+    },
+    "panel_b_curve_1_xy": {
+      "shape": [
+        400,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "0b798887bf3a6509d07a5ac2dcff0753e96a2f3281201c1dcca8a446b5ee7d0b"
+    },
+    "panel_b_curve_2_xy": {
+      "shape": [
+        400,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "99137e9f378bae4b4c80181c09e2a88f2c15940332c9c776453132adcb2a9f4e"
+    },
+    "panel_b_curve_3_xy": {
+      "shape": [
+        400,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "5cb5c763026a5101208fe6d44f01880ec0e9b6a8f97ade581b3cee3295ee0d7d"
+    },
+    "panel_c_curve_1_xy": {
+      "shape": [
+        26,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "2200e31df90c4b039d3ebbd0dccc5459f443d4b3fa866cc7467f280b1bc9bb63"
+    },
+    "panel_c_curve_2_xy": {
+      "shape": [
+        26,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "660bd72df4bf2f70e056341dee3fa783bc4f052b65c6d2e58770427ae6d7cd76"
+    },
+    "panel_e_display": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "int64",
+      "sha256": "972a46ae1260d5dcd607784dfd4f003eb28edfaee2bc7877845603dc135b464f"
+    }
+  },
+  "validation": {
+    "original_array_hashes_matched": 11,
+    "original_curve_hashes_matched": 7
+  }
+}

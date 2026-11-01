@@ -1,0 +1,14 @@
+{
+  "python": "3.14.6",
+  "numpy": "2.5.1",
+  "scipy": "1.18.0",
+  "pillow": "12.3.0",
+  "netcdf4": "1.7.4",
+  "moose_dev": "2026.06.16",
+  "petsc": "3.25.2",
+  "libmesh": "2026.06.05_ab36c00",
+  "mpich": "5.0.1",
+  "hdf5": "1.14.6",
+  "moose_package_channel": "https://conda.software.inl.gov/public",
+  "python_package_channel": "conda-forge"
+}

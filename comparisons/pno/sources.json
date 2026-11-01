@@ -1,0 +1,16 @@
+{
+  "protocol_name": "overnight_bench_20260913",
+  "protocol_sha256": "d730834b9603dc3ddb5319e7bc2ab72aa375ca0caeb8b239f56ac539e9a366ef",
+  "sources_sha256": {
+    "model.py": "2cbdad720c46fee7b267a198576e022997cb0a9057906e432670e81b677b1e5e",
+    "model_pno.py": "c5a0c03f761480f9e86a27f4db73b883e8f9fc568ad1a001865e854c6b2814bd",
+    "overnight_bench/models.py": "77704b8671c3a6d2576c39d17291469b8310afec577c1f35ab17b4d291ffc891",
+    "overnight_bench/data.py": "240e10a5d7604cc3146c76a6c0ec5210f6055a9dc2b6ac2dd9197f14216730e9",
+    "overnight_bench/train.py": "07054224953abf9111f92493a774cb99c865b397161e57a5cc5397de9899da97",
+    "overnight_bench/evaluate.py": "98b946486117fce6e8465b1485d6fb36aeb0f1db652ba02437f8c8df6f89ad49",
+    "temperature_revision/data.py": "5d3003d7a8fd2064dae1e2692b8ee59ae37e2ea8dbbafde84c57f4a29872995d"
+  },
+  "method": "https://openreview.net/forum?id=gangoPXSRw",
+  "upstream": "https://github.com/cbuelt/pfno",
+  "upstream_license_statement": "MIT in upstream README.MD"
+}

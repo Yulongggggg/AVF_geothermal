@@ -1,0 +1,282 @@
+{
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "figures": {
+    "1": {
+      "asset": "figures/scientific_audit_20261002/noise_fields_raw.pdf",
+      "pdf_sha256": "a6adb335d7d3ca63bf8a74d0ba2253f337a6bd0ea63b96351c0c28123db3f551",
+      "data": [
+        "sfig01_reservoir_values.csv"
+      ],
+      "rows": 216,
+      "source_report_sha256": "29539e04b9045c3ac8c6742c58ee53d6be3f61e244f0ac6a430debb769b5f37f"
+    },
+    "11": {
+      "asset": "figures/scientific_audit_20261002/fig_monitoring_duration_raw.pdf",
+      "pdf_sha256": "91b755ce826cc7c483f94f28e6a155087fc0235dee3a5b281665dc4c293bafbe",
+      "data": [
+        "sfig11_reservoir_values.csv"
+      ],
+      "rows": 672,
+      "source_report_sha256": "29539e04b9045c3ac8c6742c58ee53d6be3f61e244f0ac6a430debb769b5f37f"
+    },
+    "12": {
+      "asset": "figures/scientific_audit_20261002/fig_monitoring_channels_raw.pdf",
+      "pdf_sha256": "56b16d27bbcdc4e1bebbcb4225efb3ffe6f0af3109a0c70cfca8d33e5166b9bd",
+      "data": [
+        "sfig12_reservoir_values.csv"
+      ],
+      "rows": 3696,
+      "source_report_sha256": "29539e04b9045c3ac8c6742c58ee53d6be3f61e244f0ac6a430debb769b5f37f"
+    },
+    "13": {
+      "asset": "figures/scientific_audit_20261002/fig_monitoring_casewise_raw.pdf",
+      "pdf_sha256": "04ae7eace20a353dea49ce47c4c15dd3f8fdd83561cdc34448477566601e7580",
+      "data": [
+        "sfig13_reservoir_values.csv"
+      ],
+      "rows": 840,
+      "source_report_sha256": "29539e04b9045c3ac8c6742c58ee53d6be3f61e244f0ac6a430debb769b5f37f"
+    },
+    "5": {
+      "asset": "figures/panel_labels/fig_uncertainty_propagation_operator_final_20260930.pdf",
+      "pdf_sha256": "802c2e516c589ea0050db93dbc16a5a482befa7a313011e84e322f65078a18e2",
+      "data": [
+        "sfig05_display_arrays.npz"
+      ],
+      "source_npz_sha256": "cbd2a60c5ecafbd40a5d71380666688c5b2408edc83cd16ecc0980e1724c876c",
+      "scenario": "v4s00000",
+      "members": 20,
+      "displayed_member_numbers": [
+        1,
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    "7": {
+      "asset": "figures/panel_labels/fig_regress_joint_final_20260915.pdf",
+      "pdf_sha256": "dea37af330ad88af9f5cfcd0e0f5493c88c38adb15f48d50ece85c95acd30a22",
+      "data": [
+        "sfig07_regression.npz"
+      ],
+      "source_npz_sha256": "7bf0a9a80bf00a2008d63fdd8cce2c41d281bcd7865be992462cd7c5658a598f"
+    },
+    "9": {
+      "asset": "figures/scientific_audit_20261002/fig_monitoring_design_raw.pdf",
+      "pdf_sha256": "958b8f0e493c27217aa2da8361b997b30398a98e956f338c48ff435d08a06d0c",
+      "data": [
+        "sfig09_reservoir_values.csv",
+        "sfig09_curves.csv"
+      ],
+      "source_report_sha256": "29539e04b9045c3ac8c6742c58ee53d6be3f61e244f0ac6a430debb769b5f37f",
+      "curve_points": 90,
+      "bootstrap_seed": 20261002,
+      "bootstrap_resamples": 10000
+    },
+    "10": {
+      "asset": "figures/scientific_audit_20261002/fig_monitoring_budget_raw.pdf",
+      "pdf_sha256": "e876ae3ac98bfae6195c9a6269826f5bb6da01942a8d28408f89ad87afefca45",
+      "data": [
+        "sfig10_reservoir_values.csv",
+        "sfig10_curves.csv"
+      ],
+      "source_report_sha256": "29539e04b9045c3ac8c6742c58ee53d6be3f61e244f0ac6a430debb769b5f37f",
+      "curve_points": 210,
+      "bootstrap_seed": 20261002,
+      "bootstrap_resamples": 10000
+    },
+    "2": {
+      "asset": "figures/panel_labels/fig_thm_setup.pdf",
+      "pdf_sha256": "f0c98d05bff73302ab700b3df7d0ed97570dd56a111a605d7cf7d89b342edd02",
+      "data": [
+        "sfig02_arrays.npz",
+        "sfig02_definitions.json"
+      ],
+      "case": "test_01",
+      "source_case_sha256": "b3635bfab96c2196672a354005b46d8f4409c17aa8e5b92ce4cdac86070dc5f8"
+    },
+    "3": {
+      "asset": "figures/scientific_audit_20261002/fig_dfn_attributed.pdf",
+      "pdf_sha256": "76d07014c1bb7a9c9551ee40baf65558adce86d7c564f24d35b3339a698d0b5e",
+      "data": [
+        "sfig03_arrays.npz",
+        "sfig03_definitions.json"
+      ],
+      "seed": 7,
+      "drawn_fractures": 6000,
+      "original_arrays_matched": 11,
+      "original_curves_matched": 7
+    },
+    "4": {
+      "asset": "figures/fig_m_construction.png",
+      "png_sha256": "25fe8671dcd586718da3eca8354c1f8a41357bafc5f42f1672478672f4444b94",
+      "data": [
+        "sfig04_native_inputs.npz",
+        "sfig04_definitions.json",
+        "reconstruct_sfig04.py"
+      ],
+      "recipe_id": 6036,
+      "source_trace": 1912,
+      "storage": "native mask, exact PCG64 state, deterministic reconstruction",
+      "reconstructed_maps": 9,
+      "reconstructed_coordinate_arrays": 2,
+      "all_reconstructed_array_hashes_match": true,
+      "reproduced_figure_sha256": "25fe8671dcd586718da3eca8354c1f8a41357bafc5f42f1672478672f4444b94"
+    },
+    "6": {
+      "asset": "figures/fig_arch_operator_final_20260930.pdf",
+      "pdf_sha256": "9de8d87f329a2ec8ae60e8fb6832a18b78ba2faa829bdc403b80a10e0e7007d4",
+      "data": [
+        "sfig06_definitions.json"
+      ],
+      "figure_type": "network architecture schematic",
+      "numeric_result_arrays": false
+    },
+    "8": {
+      "asset": "figures/panel_labels/fig_monitoring_geometry_controls.pdf",
+      "pdf_sha256": "4b0badf8471b95fb09b4fdd8a16bdeb713543ab80ebe6f82a82dffcbcef3ee9f",
+      "data": [
+        "sfig08_arrays.npz",
+        "sfig08_definitions.json",
+        "sfig08_locations.csv"
+      ],
+      "case": "test_01",
+      "selected_location_records": 186,
+      "original_plot_coordinate_arrays_matched": 40
+    }
+  },
+  "files": {
+    "sfig01_definitions.json": {
+      "bytes": 8092,
+      "sha256": "bbb1b2e7c8f5ab18000557342c6d0f11686773b58802fd07c1580d1b19cce6ef"
+    },
+    "sfig01_reservoir_values.csv": {
+      "bytes": 13427,
+      "sha256": "8ee645416b3158a97d50925c04a3a7c4623745f621523eb57eb971ef66ac1589"
+    },
+    "sfig05_array_index.json": {
+      "bytes": 1839,
+      "sha256": "b813f8d6746d1946e6923f141e3ba892d78df6f3f380233c581d154cc4f32b90"
+    },
+    "sfig05_definitions.json": {
+      "bytes": 4780,
+      "sha256": "68c0a575e84478bf2f15751ada936cecabc186e2742fd52c7aaa0ed56896279e"
+    },
+    "sfig05_display_arrays.npz": {
+      "bytes": 1448531,
+      "sha256": "48e1245b4e28d6f5cf1576c1f92bef400c734ae215a2494e1c59a2d66c8e05da"
+    },
+    "sfig07_definitions.json": {
+      "bytes": 748,
+      "sha256": "1503b63137fae07e4955aa1ceb53a5630828f05e2ade1c9ee359c8213841ba1a"
+    },
+    "sfig07_regression.npz": {
+      "bytes": 142869,
+      "sha256": "7bf0a9a80bf00a2008d63fdd8cce2c41d281bcd7865be992462cd7c5658a598f"
+    },
+    "sfig09_curves.csv": {
+      "bytes": 11080,
+      "sha256": "7e8125721ea5803f7cf43902780b129dcd158bd11edf3f9153b445faf2901eb7"
+    },
+    "sfig09_reservoir_values.csv": {
+      "bytes": 202643,
+      "sha256": "62cc6c5cc2598d2103a4e5226fbc9af67fb7d7cd931e235f691d8926fbcfe75c"
+    },
+    "sfig10_curves.csv": {
+      "bytes": 25514,
+      "sha256": "82567473bd3b152ab423f485306a5f6320ca7d62ec1b479fe08f9fe421252aa9"
+    },
+    "sfig10_reservoir_values.csv": {
+      "bytes": 463501,
+      "sha256": "c00c034c449a252bbae7803dcc7117347a3c71312a8101cd32fdee6542f4a179"
+    },
+    "sfig11_definitions.json": {
+      "bytes": 4411,
+      "sha256": "7f32f0d8b279574a953d25c0de6d9aa4d127a349453189ae1b957b8d282198df"
+    },
+    "sfig11_reservoir_values.csv": {
+      "bytes": 50900,
+      "sha256": "8a55d59469bc83f3eae8304da2fbfb2d22a936107d777f8dd09b91b9d806d2f3"
+    },
+    "sfig12_definitions.json": {
+      "bytes": 571,
+      "sha256": "1176e4d4a85393f4bf2fb071170673e65a46571b9b5095e63d0ac79265b1f588"
+    },
+    "sfig12_reservoir_values.csv": {
+      "bytes": 328043,
+      "sha256": "0ba8b9bb6902ae061422a4db1b1d5da561936855dbe7090827e592fe452f6013"
+    },
+    "sfig13_definitions.json": {
+      "bytes": 2545,
+      "sha256": "73e2c2a5d4660f2e71af43ae7b411964a24813ac3f2b6b443b2c655be8f1ce46"
+    },
+    "sfig13_reservoir_values.csv": {
+      "bytes": 79635,
+      "sha256": "691c6845ac5b704a79206cc6ec2adf17fc66bbba4f4b75dbe8ff3ea0b2ce0e6e"
+    },
+    "sfig02_arrays.npz": {
+      "bytes": 54256,
+      "sha256": "8f03e6c231e9f19165d70d23d9ed431b7231fde28916caecd42e78070825a2f4"
+    },
+    "sfig02_definitions.json": {
+      "bytes": 1386,
+      "sha256": "00956a97b520f3919f9802e375faa7e283f5470b73f88d790cd078ac5cd81216"
+    },
+    "sfig03_arrays.npz": {
+      "bytes": 1583877,
+      "sha256": "6d7b7d808205da02d5e6332f3aa125b3a92e8564fe5c93c1ec08378d84595335"
+    },
+    "sfig03_definitions.json": {
+      "bytes": 5036,
+      "sha256": "be5b42ccd9cf83295e9e64b746cf281587d72528daca02a5cd4d4f881a5a0c66"
+    },
+    "sfig04_native_inputs.npz": {
+      "bytes": 20494,
+      "sha256": "d3f8e153bb2da3bd6825a693f021990d467215dab607bdd6dbcea094d24ad013"
+    },
+    "sfig04_definitions.json": {
+      "bytes": 5554,
+      "sha256": "fa4941250cd2699a7ccff0fa5238e1a0f8141d15144329bb5762f9a3a22e516d"
+    },
+    "reconstruct_sfig04.py": {
+      "bytes": 5737,
+      "sha256": "ff0ba0365adc4686a0c325bf1f978f15a3a111cb195a994bd517d31cb5a8b018"
+    },
+    "sfig06_definitions.json": {
+      "bytes": 366,
+      "sha256": "7c122ac55e7385a032053f68ba789de8b08e19f89f34a95d56240ec6e3bc0743"
+    },
+    "sfig08_arrays.npz": {
+      "bytes": 11612,
+      "sha256": "e215f2db257b575bcfa8184bda75f3fd9822750e5af160f2389db824a5acc80b"
+    },
+    "sfig08_definitions.json": {
+      "bytes": 34743,
+      "sha256": "0e5e05823ae90d375654e80478335ea0e6855ffa7e9ca7f3dc92ff5df6ac8e75"
+    },
+    "sfig08_locations.csv": {
+      "bytes": 14731,
+      "sha256": "baa33943f444f808a9e44c73d4f308d02051c8e1f591c9f80a216eacc3657994"
+    }
+  },
+  "validation": {
+    "sfig01_values": 216,
+    "sfig11_values": 672,
+    "sfig12_values": 3696,
+    "sfig13_values": 840,
+    "sfig05_quantile_arrays": 12,
+    "sfig07_original_well_arrays": 8,
+    "sfig07_recomputed_panel_statistics": 8,
+    "sfig09_curve_points": 90,
+    "sfig10_curve_points": 210,
+    "sfig02_displayed_array": 1,
+    "sfig03_original_arrays": 11,
+    "sfig03_original_curves": 7,
+    "sfig04_full_resolution_maps": 9,
+    "sfig04_coordinate_arrays": 2,
+    "sfig04_pixels_exact": true,
+    "sfig08_coordinate_arrays": 40,
+    "sfig08_locations": 186
+  }
+}

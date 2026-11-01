@@ -1,7 +1,7 @@
 """Release artifacts: locations, download and SHA-256 verification.
 
 The model checkpoint, inverse-prior factor, reservoir cases and NUTS results are
-published as assets of the GitHub release recorded in ``resources/release_manifest.json``.
+located by ``resources/release_manifest.json``; final-model files use a Git LFS branch.
 They are stored under ``$GEOUNO_DATA`` (default: ``artifacts/`` in a source checkout, else
 ``~/.cache/geouno``). Downloads and extracted files are verified against SHA-256;
 ``path`` also verifies individual manifest-listed files before returning them.
@@ -53,13 +53,13 @@ def sha256(path, chunk=8 * 1024 * 1024):
 
 
 def asset_names(group="core"):
-    """Asset names in ``group`` (``core``, ``nuts``, ``prior``, ``training`` or ``all``)."""
+    """Asset names in ``group`` (``core``, ``nuts``, ``prior``, ``training``, ``fe`` or ``all``)."""
     assets = manifest()["assets"]
     return [name for name, record in assets.items() if group == "all" or record["group"] == group]
 
 
 def _download(url, dest, repo=None, tag=None):
-    """Download ``url`` to ``dest``; fall back to ``gh release download`` (private repository).
+    """Download ``url``; use ``gh`` only for URLs pointing to GitHub release assets.
 
     The destination file name always equals the release asset name.
     """
@@ -71,7 +71,14 @@ def _download(url, dest, repo=None, tag=None):
         os.replace(tmp, dest)
     except urllib.error.HTTPError as error:
         tmp.unlink(missing_ok=True)
-        if error.code not in (401, 403, 404) or not shutil.which("gh") or not repo:
+        if error.code in (401, 403, 404) and "media.githubusercontent.com/media/" in url:
+            raise RuntimeError(
+                "Git LFS asset is not anonymously accessible. Obtain the artifact branch with "
+                "authenticated Git access and `git lfs pull`, then use "
+                "`geouno download --from-dir /path/to/assets` (see README.md)."
+            ) from error
+        if (error.code not in (401, 403, 404) or "/releases/download/" not in url
+                or not shutil.which("gh") or not repo):
             raise
         # Anonymous asset URLs only work for public repositories; use the GitHub CLI's login.
         subprocess.run(

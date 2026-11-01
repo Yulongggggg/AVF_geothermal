@@ -4,7 +4,7 @@
 Two references are used:
 
 * ``provenance/nuts_bundle_runtime`` - the portable runtime of the frozen NUTS bundle
-  (OL-geothermal-final-scheme @ codex/workstationd-nuts-20261001). Its scientific
+  (OL-geothermal-final-scheme @ 137d61a). Its scientific
   definitions are verbatim copies of the cluster sources (hashes in its ``bundle.json``),
   with data access adapted to stored base inputs. It is the reference for the model,
   backend, posterior, conditioning and forecast.

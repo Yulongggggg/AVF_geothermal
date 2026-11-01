@@ -30,7 +30,7 @@ See [`final.py`](../geouno/model/final.py) for the exact residual projection, an
 
 ## Training and loading
 
-The three Table 1 seeds are 20260915, 20260925 and 20260926. Each uses 99 main epochs, 44 temperature-only
+The three Supplementary Table 1 seeds are 20260915, 20260925 and 20260926. Each uses 99 main epochs, 44 temperature-only
 epochs and 22 joint epochs; application experiments use seed 20260915 from this same comparison.
 [TRAINING.md](TRAINING.md) gives the complete protocol.
 
@@ -45,3 +45,40 @@ out, parts = net(field, scalar, return_parts=True)  # evaluation mode
 `load_geouno` verifies SHA-256 and loads every tensor strictly. Final evaluation uses FP32 with TF32 disabled;
 the inverse backend uses FP64 likelihood, covariance and latent coordinates. The backend applies the fixed
 pressure pool and the model's observation-basis calculation.
+
+## Predicting from your own permeability map
+
+[`examples/predict_fields.py`](../examples/predict_fields.py) reads a 128 × 128 log-permeability map and
+physical controls from an NPZ file. Its input keys are:
+
+| Key | Shape | Units or meaning |
+|---|---|---|
+| `logk` | (128, 128) | `log10(k)` for permeability in m², over x and y in [−400, 400] m |
+| `producer_xy_m` | (2,) | Producer x, y in metres; the injector is fixed at (0, −250) m |
+| `q_kg_s` | scalar | Prescribed circulation rate, kg/s |
+| `T_inj_K` | scalar | Injection temperature, K |
+| `p_prod_MPa` | scalar | Absolute producer bottom-hole pressure, MPa |
+| `depth_km` | scalar | Reservoir-center depth, km |
+| `times_s` | (number of times,) | Positive forecast times, seconds |
+
+For example, to combine a permeability map saved as `my_logk.npy` with specified operating controls:
+
+```python
+import numpy as np
+
+np.savez("my_reservoir.npz", logk=np.load("my_logk.npy"), producer_xy_m=[0., 250.],
+         q_kg_s=3.5, T_inj_K=303., p_prod_MPa=20., depth_km=3.06,
+         times_s=[32183000., 126983000., 316000000.])
+```
+
+From the repository root, run:
+
+```bash
+geouno download
+python examples/predict_fields.py --input my_reservoir.npz --out my_forecast.npz --threads 4
+```
+
+The output contains `cooling_K` and `pressure_change_MPa`, each with shape
+`(number of times, 160, 128)`, together with times and grid coordinates. These are changes from the
+initial fields, with the cooling sign convention defined above. The example uses the paper's reservoir
+geometry and trained application checkpoint; [DATA.md](DATA.md) describes the grid and controls.

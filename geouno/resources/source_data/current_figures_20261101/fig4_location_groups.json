@@ -1,0 +1,480 @@
+[
+  {
+    "group": 0,
+    "geology": "0",
+    "candidates": 45,
+    "common_members": 8,
+    "common_permeability_sha256": [
+      "2b433efaa2d0091cc92ffe1b984bbd51cf8c7e077b7617d7f5c8c1414b101f04",
+      "4c07303c9f62b64e47efe1e28203b72055cb4a18a9fd14fecaa71aa453c3d243",
+      "674479c78c5ac78285adb614e59422538642edec33867ba3ef1fc826a68c5033",
+      "68853a079c330e5c6ff1aa7219508a8aa5579c87ca2581763d44d9ad2d1ca325",
+      "6e4063be94d540c1ce9e99b75d2987afa2702223a2eeb02c562e7e2fbe9240a4",
+      "cecea2578d80722ac4587d7cbcc195388cb039f1736449460eb6c47687236d3b",
+      "f9f765acf5f90afbe898430496dd617428ee636a4e9b3307f51daf470b31c4cd",
+      "fa5dc5fddfabce487b641ad29540d28dec8e0f9a847424dec088f32a8f24ce96"
+    ],
+    "scenarios": [
+      "v4s00000",
+      "v4s00001",
+      "v4s00002",
+      "v4s00003",
+      "v4s00004",
+      "v4s00005",
+      "v4s00006",
+      "v4s00007",
+      "v4s00008",
+      "v4s00009",
+      "v4s00010",
+      "v4s00011",
+      "v4s00012",
+      "v4s00013",
+      "v4s00014",
+      "v4s00015",
+      "v4s00016",
+      "v4s00017",
+      "v4s00018",
+      "v4s00019",
+      "v4s00020",
+      "v4s00021",
+      "v4s00022",
+      "v4s00023",
+      "v4s00024",
+      "v4s00025",
+      "v4s00026",
+      "v4s00027",
+      "v4s00028",
+      "v4s00029",
+      "v4s00030",
+      "v4s00031",
+      "v4s00032",
+      "v4s00033",
+      "v4s00034",
+      "v4s00035",
+      "v4s00036",
+      "v4s00037",
+      "v4s00038",
+      "v4s00039",
+      "v4s00040",
+      "v4s00041",
+      "v4s00042",
+      "v4s00043",
+      "v4s00044"
+    ],
+    "q_range": [
+      1.100000023841858,
+      1.2300000190734863
+    ],
+    "injection_temperature_K": 301.0,
+    "drawdown_MPa": 6.738999843597412,
+    "depth_km": 3.059999942779541,
+    "metrics": {
+      "cool_p50": {
+        "spearman": 0.989855072463768,
+        "penalty": 0.2733311653137207,
+        "exact_pick": false,
+        "FE_selected_scenario": "v4s00044",
+        "operator_selected_scenario": "v4s00043"
+      },
+      "op_p50": {
+        "spearman": 0.9969696969696968,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s00005",
+        "operator_selected_scenario": "v4s00005"
+      },
+      "op_p90": {
+        "spearman": 0.9919631093544136,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s00003",
+        "operator_selected_scenario": "v4s00003"
+      }
+    }
+  },
+  {
+    "group": 1,
+    "geology": "5",
+    "candidates": 4,
+    "common_members": 19,
+    "common_permeability_sha256": [
+      "2155b1762b4ed2eadb7e71fa16d9b1fcc71e2edec9578635bafd3f2853e4ed80",
+      "29af5048f52b693aeb74d3d24cea21b4b566c6010cde53a0667281d81ae80b42",
+      "30102a22636caa8eeef75d1b10638bed52ad08067f0628d90414380a83ad8539",
+      "47434d206184634f1309cea750042158bf0ff3e5598073f99c22733848d77a28",
+      "4805666ce9f90fccf1ca253c20df08483a65939f32d97d9de190a441a7964e92",
+      "4a237fe3e9e7abea392ec98742f59e615f1ea19bcb0012c2f482d971b59e5ab5",
+      "608341b5e4ad6e644ae7fd63b1a43b29efd78dbb4dc293c415d5376cc8e5ba58",
+      "6872d805ca95b308609d07afe94a7f405046f6b65101c2be08a81aeebe1bb148",
+      "69a2ce492949f36e194e24cdd98ed68c3c07d69f5b9765e7311fec73ee3f4b85",
+      "7de76998b61958890ce46a6098ab1c23c8d467d39b8f3881e65e8a846247aac9",
+      "882496741651f6d6c2aab67ce4d682760520caa8801b0d07981e0f755706ba4e",
+      "95e5eaf0af0737c220d0f9528451e6e8dae32cfa45049d2b4b495bf6f39ee6a7",
+      "9e3765cd67703f51d63ffdc6efe1aeff7d90e126faec37ef57f1b51d6cef22d9",
+      "a1025f3a7ea838603400bbddf3f7783f99a6138b61995dbb2ceee8bdb8b314ec",
+      "a489b18274bdec62916cbfc9e54015366efb384d06114281a1b7edb66e75e6ba",
+      "accae020cc97a763eab4f1cf29b878240004e0efa5de31e24c1ae772c735ce8e",
+      "da3956123bc12360e68fb55a31083a65548623ec6014855ccfc2840f56f08f62",
+      "e1950a0b079dd3b38923a11403a7414659c64cc70a4841cf7b525641d3c32a3b",
+      "f5b602e975d2f7d13b58a1bf410127d19c41634f6bd33157c17b499fb1f86c7f"
+    ],
+    "scenarios": [
+      "v4s00240",
+      "v4s00241",
+      "v4s00264",
+      "v4s00265"
+    ],
+    "q_range": [
+      1.6200000047683716,
+      1.690000057220459
+    ],
+    "injection_temperature_K": 303.6000061035156,
+    "drawdown_MPa": 12.510000228881836,
+    "depth_km": 3.059999942779541,
+    "metrics": {
+      "cool_p50": {
+        "spearman": 1.0,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s00265",
+        "operator_selected_scenario": "v4s00265"
+      },
+      "op_p50": {
+        "spearman": 0.7999999999999999,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s00265",
+        "operator_selected_scenario": "v4s00265"
+      },
+      "op_p90": {
+        "spearman": 1.0,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s00265",
+        "operator_selected_scenario": "v4s00265"
+      }
+    }
+  },
+  {
+    "group": 2,
+    "geology": "17",
+    "candidates": 21,
+    "common_members": 19,
+    "common_permeability_sha256": [
+      "06a0bb82d123f24ac82a85e8d7ffd55bdea2e3537f6b07d05a5107bd5b159677",
+      "089096d5a5b8137e7af9bb461000b19d680dd1711e6d67a12e5318f151d93dea",
+      "2778f781b028edd52bf7c2e586baa337052f6587f6750f9df7f90a72ef7fc3bc",
+      "2b56d0739447fe87fd3c09796ae16d3e8ea7fb253f3d90f00c826c7e5bbbb7a9",
+      "2cef291d93d6cd27f138540ec235bd7623c65a1cc0fbfa3ae1d34107d495f489",
+      "39af4bd2d4467d2bc126d0f92a734eb24bfa5ba6ab67d97092fdf240f8efa9fa",
+      "4a16aedbc65d1d60a2f17f2eddc32669cfe8aed9c78fc72a85bb6336ca424ec3",
+      "4f4fe3fa86aae581661013a7fac0d9756a2b1c3e8cec86444a2b00269a97fdc0",
+      "5dfc3370bc38364b9349330430ca791551dcb56fa95bb069953c26064d6a1275",
+      "610d81c7f4272022bb8cdd37f5a3d798b7f982d13c939d9a84e5cdac14bb8323",
+      "6f3ba6f992420df97504667116b614ca75f26eeb6981865e81d0167579573ca8",
+      "adfaa73f8511de0e3a496e153cf14dd5164cbd3c29e8a1fabde726e67bf8789f",
+      "c764f978e6f6d5e4d3e1f6446d2403ebe1cc5396995d39597ae9b7c3f55ea854",
+      "ccd886d3a1e15da9156faee2b3a69cb65c032ccea0efd9a9e8d973a8500f38a7",
+      "e5d25f6fa176463056dd825de647e7f36745cb7c0fa0b3a64c8ae32009533d2a",
+      "ebde1fb694ce4a05b7f7016f80f482365baa9c2448d38736d15ff866dc8b7405",
+      "f254848e64a86f8064fac927a78cafc9b177c6c2b6c96cd21312d144332c163e",
+      "f5df28f5fdeccec31618a5e6d8094c9382e02368f4dcf5ae9767ead3c40c6125",
+      "feb0343ad04356d82a6773a1142b301d4a09fdac1929b2f10deb5ae183e4c607"
+    ],
+    "scenarios": [
+      "v4s00765",
+      "v4s00766",
+      "v4s00767",
+      "v4s00768",
+      "v4s00769",
+      "v4s00771",
+      "v4s00772",
+      "v4s00773",
+      "v4s00774",
+      "v4s00775",
+      "v4s00776",
+      "v4s00777",
+      "v4s00778",
+      "v4s00779",
+      "v4s00780",
+      "v4s00781",
+      "v4s00782",
+      "v4s00783",
+      "v4s00784",
+      "v4s00792",
+      "v4s00793"
+    ],
+    "q_range": [
+      1.5199999809265137,
+      1.5199999809265137
+    ],
+    "injection_temperature_K": 293.8999938964844,
+    "drawdown_MPa": 12.10099983215332,
+    "depth_km": 3.059999942779541,
+    "metrics": {
+      "cool_p50": {
+        "spearman": 0.974025974025974,
+        "penalty": 0.08392646908760071,
+        "exact_pick": false,
+        "FE_selected_scenario": "v4s00792",
+        "operator_selected_scenario": "v4s00793"
+      },
+      "op_p50": {
+        "spearman": 0.9948051948051948,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s00771",
+        "operator_selected_scenario": "v4s00771"
+      },
+      "op_p90": {
+        "spearman": 0.9948051948051948,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s00771",
+        "operator_selected_scenario": "v4s00771"
+      }
+    }
+  },
+  {
+    "group": 3,
+    "geology": "32",
+    "candidates": 43,
+    "common_members": 8,
+    "common_permeability_sha256": [
+      "0b34f6cd4c789098282538492b34cef9083f8b41b1f2e3be61160c2cbe5cdcaf",
+      "26efe709e8de85a527571b09a8418a35edb8cc032942aab37d605d4037a63870",
+      "2d869ae90e42b8f908cbcdb63efa52ff3615134629ecadeea6bcb954c473a767",
+      "4deeebbe9610c83edb8dcb3a4a8c108d583ea084cee3ae631555286c423286d6",
+      "b33d777729fa66d867ed71a1954f3f9cd6dee39d75bb9664f4af520cd1bafea3",
+      "c89abccdb0d430ec3b576230005d49d6012aec371d36d6d8b499380abc94a0b7",
+      "cc090ca52ddcb4d406202006b9cd96bf81806bb619d795f6c902f0293fcc55a9",
+      "daebbad9c557b02ee71c5911a7e18bdcd48773e72d5b8e5c9920ccc049d11baa"
+    ],
+    "scenarios": [
+      "v4s01440",
+      "v4s01441",
+      "v4s01442",
+      "v4s01443",
+      "v4s01444",
+      "v4s01445",
+      "v4s01446",
+      "v4s01447",
+      "v4s01448",
+      "v4s01449",
+      "v4s01450",
+      "v4s01451",
+      "v4s01452",
+      "v4s01453",
+      "v4s01454",
+      "v4s01455",
+      "v4s01457",
+      "v4s01458",
+      "v4s01459",
+      "v4s01460",
+      "v4s01461",
+      "v4s01462",
+      "v4s01463",
+      "v4s01464",
+      "v4s01465",
+      "v4s01466",
+      "v4s01467",
+      "v4s01468",
+      "v4s01469",
+      "v4s01470",
+      "v4s01471",
+      "v4s01472",
+      "v4s01474",
+      "v4s01475",
+      "v4s01476",
+      "v4s01477",
+      "v4s01478",
+      "v4s01479",
+      "v4s01480",
+      "v4s01481",
+      "v4s01482",
+      "v4s01483",
+      "v4s01484"
+    ],
+    "q_range": [
+      1.2799999713897705,
+      1.409999966621399
+    ],
+    "injection_temperature_K": 303.29998779296875,
+    "drawdown_MPa": 9.76099967956543,
+    "depth_km": 3.059999942779541,
+    "metrics": {
+      "cool_p50": {
+        "spearman": 0.9548474781032921,
+        "penalty": 0.3244900703430176,
+        "exact_pick": false,
+        "FE_selected_scenario": "v4s01483",
+        "operator_selected_scenario": "v4s01484"
+      },
+      "op_p50": {
+        "spearman": 0.9859559045605557,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s01451",
+        "operator_selected_scenario": "v4s01451"
+      },
+      "op_p90": {
+        "spearman": 0.9910903050437935,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s01451",
+        "operator_selected_scenario": "v4s01451"
+      }
+    }
+  },
+  {
+    "group": 4,
+    "geology": "38",
+    "candidates": 26,
+    "common_members": 8,
+    "common_permeability_sha256": [
+      "38ac4254fc25a8f1f032949711d09bf2d368810124cffdd66421d2fd8667a530",
+      "3bc6c35c7813c1f910918bef27919e76499da0127fd972398725259876186f1b",
+      "565b28acd2d26dd8281c045b75e61faf5440051897f9619a457c3dad4374fb66",
+      "88815b3a43fd9e209687af871b21237a69326345085d494bc65c3c04243098c2",
+      "aa5222f5902b3fadf417ab45aa5dbf7db9d47212648a5f1ec9f20a70f59b006b",
+      "d16614b0e3ded67cff0491afb08524bc7aaf983dd1b13aaad1a01ecd2f301164",
+      "dcb1f3e2ad12796cd0d3f1955b86728f3ffc0b07201feabe317159c9194ea9e8",
+      "f7b72127e48365f0d7a37e311c2dbea956092c0e7c54240c572377f2e015d9c4"
+    ],
+    "scenarios": [
+      "v4s01728",
+      "v4s01729",
+      "v4s01730",
+      "v4s01731",
+      "v4s01732",
+      "v4s01733",
+      "v4s01734",
+      "v4s01735",
+      "v4s01736",
+      "v4s01737",
+      "v4s01738",
+      "v4s01739",
+      "v4s01740",
+      "v4s01741",
+      "v4s01742",
+      "v4s01743",
+      "v4s01745",
+      "v4s01746",
+      "v4s01747",
+      "v4s01748",
+      "v4s01749",
+      "v4s01750",
+      "v4s01751",
+      "v4s01752",
+      "v4s01753",
+      "v4s01754"
+    ],
+    "q_range": [
+      1.3799999952316284,
+      1.4700000286102295
+    ],
+    "injection_temperature_K": 293.3999938964844,
+    "drawdown_MPa": 11.973999977111816,
+    "depth_km": 3.059999942779541,
+    "metrics": {
+      "cool_p50": {
+        "spearman": 0.9288888888888889,
+        "penalty": 0.3536376953125,
+        "exact_pick": false,
+        "FE_selected_scenario": "v4s01752",
+        "operator_selected_scenario": "v4s01753"
+      },
+      "op_p50": {
+        "spearman": 0.9876923076923075,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s01734",
+        "operator_selected_scenario": "v4s01734"
+      },
+      "op_p90": {
+        "spearman": 0.989059829059829,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s01734",
+        "operator_selected_scenario": "v4s01734"
+      }
+    }
+  },
+  {
+    "group": 5,
+    "geology": "52",
+    "candidates": 25,
+    "common_members": 12,
+    "common_permeability_sha256": [
+      "09bcf1fb259dbb9c5c7098b948c3a2b58e601742b77bdc9c96f3ad24e041953f",
+      "2c31d37afd7d3451607cc045d75d195f831e499b586191bd75699f2909480def",
+      "5553fded527ebe48bba29f061278b5650e05cc36627bf79cc8fc8a740d744edc",
+      "6de48584925c0a43fee85503cf35c228441cb7c6b60a099e3c68dccc39c81fd8",
+      "7290f08255f888467e899c155806426b3c907b99993cb6bf9fc6489a50201b9f",
+      "7488c42eaece7bc6fc3c964f7d84c8f392bba893e711e3797f7b6ea196862c9f",
+      "856f5c287674ba5c5e5fa6c25a0b958853084b2189d2777e443bb06cb14609f0",
+      "8fdfbfe92207c8b9fecb1aa45ef03a055418a89a916c2f6da18a9ea12f68a8e9",
+      "9be715635c3442f511c103ad4779344eeeac09d21615a4f5562e1043a06d7516",
+      "aaa8ccd39761aeebf9ce38c7519a0f02a90a8f1ab98ad88a61bd70a85c11290f",
+      "d3149f07b0a346c1d1e079cf7ecf44c0b438eb866c9a2e261db5ec5e2d823eec",
+      "f7f68cd947a45ca1ad605915392cc4fa1ab9b5ff1afe0c4ff67152546ff14fe0"
+    ],
+    "scenarios": [
+      "v4s02340",
+      "v4s02341",
+      "v4s02342",
+      "v4s02343",
+      "v4s02345",
+      "v4s02346",
+      "v4s02347",
+      "v4s02348",
+      "v4s02349",
+      "v4s02350",
+      "v4s02351",
+      "v4s02355",
+      "v4s02356",
+      "v4s02357",
+      "v4s02358",
+      "v4s02359",
+      "v4s02360",
+      "v4s02361",
+      "v4s02362",
+      "v4s02363",
+      "v4s02364",
+      "v4s02365",
+      "v4s02366",
+      "v4s02367",
+      "v4s02368"
+    ],
+    "q_range": [
+      1.6100000143051147,
+      1.7400000095367432
+    ],
+    "injection_temperature_K": 297.79998779296875,
+    "drawdown_MPa": 6.5269999504089355,
+    "depth_km": 3.059999942779541,
+    "metrics": {
+      "cool_p50": {
+        "spearman": 0.9907692307692307,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s02367",
+        "operator_selected_scenario": "v4s02367"
+      },
+      "op_p50": {
+        "spearman": 0.9892307692307692,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s02351",
+        "operator_selected_scenario": "v4s02351"
+      },
+      "op_p90": {
+        "spearman": 0.9846153846153846,
+        "penalty": 0.0,
+        "exact_pick": true,
+        "FE_selected_scenario": "v4s02351",
+        "operator_selected_scenario": "v4s02351"
+      }
+    }
+  }
+]

@@ -106,3 +106,19 @@ def test_nuts_cli_returns_failure_if_any_case_fails(monkeypatch):
     assert cli.cmd_nuts_verify(args) == 0
     args.case.append('test_02')
     assert cli.cmd_nuts_verify(args) == 1
+
+
+def test_reproduced_diagnostic_flag_is_separate_from_numerical_reproduction(tmp_path, monkeypatch):
+    folder = tmp_path / 'nuts/test_16'
+    folder.mkdir(parents=True)
+    diagnostics = dict(rank_rhat_max=1.052, bulk_ess_min=53.6, tail_ess_min=283.6,
+                       divergences=0, convergence_pass=False)
+    (folder / 'diagnostics.json').write_text(json.dumps(diagnostics))
+    (folder / 'scores.json').write_text(json.dumps({'metric': 1.}))
+    monkeypatch.setattr(nuts_runner.artifacts, 'path', lambda *_: None)
+    monkeypatch.setattr(nuts_runner, 'merge',
+                        lambda *_, **__: dict(diagnostics=diagnostics, scores={'metric': 1.}))
+    monkeypatch.setattr(nuts_runner, 'headline', lambda scores: scores)
+    result = nuts_runner.verify_released('test_16', root=tmp_path)
+    assert result['passed']
+    assert not result['convergence_pass']

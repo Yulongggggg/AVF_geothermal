@@ -1,47 +1,39 @@
-# Final-model release provenance
+# Source provenance and numerical verification
 
-The 15 October 2026 update corresponds to the simplified `resid64_p1` paper model and its saved application
-experiments. The application checkpoint is final seed 20260915, SHA-256
+The application model is the refined `resid64_p1` model, seed 20260915, with checkpoint SHA-256
 `f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb`.
+Its three training stages use 99, 44 and 22 epochs. Main Table 1 compares the models after the common
+99-epoch stage; Supplementary Table 1 reports the refined GeoUNO results and the earlier baseline runs.
 
-## Numerical implementation
+## Implementations
 
-The original final `model.py`, `train.py` and `evaluate.py` are preserved under
-[`original_sources/final_geouno_20261015`](../provenance/original_sources/final_geouno_20261015).
-The portable package changes imports, filesystem paths, CLI arguments and the constructor's default variant
-(from the research default to the selected `resid64_p1`). It preserves the model arithmetic, least-squares
-solve, training losses, learning-rate schedules and stage selection.
+The archived research modules and their origins are listed in
+[`provenance/SOURCES.json`](../provenance/SOURCES.json). The original final GeoUNO model and trainer are in
+[`final_geouno_20261015`](../provenance/original_sources/final_geouno_20261015).
+The portable package retains their model arithmetic, losses, learning-rate schedules and validation criteria.
+Filesystem paths and entry points are configurable.
 
 ```bash
 python provenance/verify_final_sources.py
+pytest -q tests/test_training_resume.py tests/test_baselines.py
 ```
 
-This checks nine definitions against the original source using their syntax trees, normalizing the public
-class name, constructor default and docstrings. It executes neither training nor prediction. Strict checkpoint
-loading separately confirms tensor compatibility and 3,520,755 parameters.
+The source comparison checks eight model and training definitions. Restart handling is tested separately:
+the best checkpoint survives interruption, and resumes require matching data and protocol metadata.
+Baseline implementations accept the original research checkpoints with strict state loading.
 
-## Data and scores
+## Data and experiment identity
 
-- New calibration, optimized layouts, monitoring configurations and reservoir observation arrays come from
-  `operator_final_20261015`.
-- Final NUTS artifacts contain six reservoirs × four completed chains and their saved diagnostics/forecasts.
-- The geological truth, prior means and base FE inputs are unchanged; observation locations use the new design.
-- `paper-numbers` recomputes 170 printed entries with zero mismatches from saved records. It validates the
-  three final GeoUNO seeds and their scenario/time/member identities. The final application seed is included.
-- Baseline rows retain their approved results. The common 99-epoch appendix table includes all six models, each with three completed seeds. CO₂ tables contain all three completed seeds at each POD rank.
-- File hashes are in `geouno/resources/source_data/SHA256SUMS` and `release_manifest.json`.
+The checkpoint, prior factor, calibration, observation layouts and reservoir cases are identified by
+[`release_manifest.json`](../geouno/resources/release_manifest.json),
+[`cases.json`](../geouno/resources/cases.json) and the packaged configuration files.
+Original source files and experiment outputs retain their recorded hashes.
 
-The final large assets are stored on the Git LFS branch `artifacts-final-20261015`; the unchanged prior-fit
-inputs remain in the earlier `artifacts-v1` release. Downloads use each asset's manifest URL and SHA-256.
+Source Data contains scenario/time scores, seed-level comparison values, all 24 inference reservoirs,
+monitoring results, operating-design results and computational costs. The
+[Source Data index](../geouno/resources/source_data/README.md) maps these files to the current manuscript.
+`geouno paper-numbers` recalculates the supported table entries from those records.
 
-## Validation scope
-
-This release update uses saved experimental outputs. Its validation comprises source comparison, strict model
-loading, artifact integrity, observation-array regeneration, numerical aggregation, portable-resource checks
-and unit tests that do not execute neural predictions. It makes no new cross-device prediction-equivalence
-claim. The dated [7 October review](REVIEW_20261007.md) and `verify_equivalence.py` apply to the earlier code
-revision and its artifacts.
-
-The original prior and inference algorithms remain in `geouno/inverse`; monitoring geometry, coordinate-keyed
-noise and the common observation model remain in `geouno/monitoring`. Their scientific definitions are unchanged.
-Component licences are listed in [THIRD_PARTY.md](../THIRD_PARTY.md).
+Model predictions and inverse experiments are reproduced with the commands in
+[REPRODUCIBILITY.md](REPRODUCIBILITY.md). Code, model and data licences are specified in
+[LICENSE](../LICENSE), [THIRD_PARTY.md](../THIRD_PARTY.md) and [DATA.md](DATA.md#licence).

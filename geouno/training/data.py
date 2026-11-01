@@ -13,7 +13,7 @@ Pack layout (directory; see ``docs/DATA.md``)::
     scal.npy         [N, >=9] q, T_inj, -, x_prod, y_prod, -, drawdown, depth, p0
     _ref_times.npy   [11] stored times in seconds
 
-Only actual (non-nominal) realizations are used; each scenario groups its members.
+The corpus metadata selects the permeability realizations and groups them by scenario.
 """
 import csv
 import hashlib

@@ -1,0 +1,56 @@
+{
+  "case": "test_01",
+  "source_case_sha256": "b3635bfab96c2196672a354005b46d8f4409c17aa8e5b92ce4cdac86070dc5f8",
+  "source_sha256": "fe659e839f9d0cc5749c1184f03b8d7db0a21da9291b88b9d3abd617796a7e7f",
+  "figure_sha256": "f0c98d05bff73302ab700b3df7d0ed97570dd56a111a605d7cf7d89b342edd02",
+  "panels": {
+    "a": "Boundary conditions and initial-state schematic.",
+    "b": "Stored continuum reservoir log-permeability realization, with injector and producer coordinates."
+  },
+  "array_index": {
+    "logk_truth": {
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "float32",
+      "sha256": "e5df686912e6da06789afdf1002021eb377543c2bb69c597636153343379f11b"
+    },
+    "point_xy_m": {
+      "shape": [
+        2,
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "bf4bed2d6bb049553a41cc4982796115542effbaf1e7f3e979805d8ea90acc2d"
+    }
+  },
+  "array_units": {
+    "logk_truth": "log10(k / m^2)",
+    "point_xy_m": "m"
+  },
+  "point_order": [
+    "injector",
+    "producer"
+  ],
+  "reservoir_extent_m": [
+    -400,
+    400,
+    -400,
+    400
+  ],
+  "full_domain_extent_m": [
+    -400,
+    400,
+    -500,
+    500
+  ],
+  "origin": "lower",
+  "drawing_transform": "(physical_xy + [400,500]) / 100",
+  "cap_bed_permeability_m2": 1e-18,
+  "cap_bed_porosity": 0.001,
+  "validation": {
+    "original_case_sha_matches": true,
+    "displayed_array_exact": true
+  }
+}

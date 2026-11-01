@@ -46,7 +46,9 @@ def check():
         (
             "train.py",
             "geouno/training/train.py",
-            ["build", "temperature_loss", "fine_lr", "admissible", "run_stage", "adopt_main"],
+            # run_stage has corrected restart handling; test_training_resume.py
+            # exercises its checkpoint selection across interrupted epochs.
+            ["build", "temperature_loss", "fine_lr", "admissible", "adopt_main"],
         ),
     ]
     results = []

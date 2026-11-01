@@ -77,31 +77,52 @@ adds instrument variance (0.5 K)^2 or (0.25 MPa)^2 to the local variance.
 Nested candidate indices for each geometry (`multiwell`, `vertical`, `inclined`) and rule (`optimized`,
 `space_filling`), from 2 to 33 locations, chosen using the final model on four validation reservoirs.
 
-## NUTS results (`nuts/test_0X/`)
+## NUTS results (`nuts/test_01/` through `nuts/test_24/`)
 
 `chain_c/latent_samples.npz` (`y`: 1 x 1024 x 4096 whitened coordinates), `chain_c/diagnostics.json`
 (Pyro diagnostics, step sizes, timings), `diagnostics.json` (four-chain R-hat/ESS gate), `forecast.npz` and
 `scores.json` (256 balanced draws at ten years). The merged `latent_samples.npz` of the original return is omitted
 because it is the concatenation of the four chain files.
 
-## FE corpus (Zenodo, on publication)
+## FE corpus
 
 The database will be released with the paper as a "pack" directory, the format read by `geouno.training`:
 
 | File | Shape | Content |
 |---|---|---|
-| `meta.csv` | 95,966 rows | `case_id`, `scen`, `split` (train/val/test/holdout), `row`, `real` (member label; `nom` = nominal run) |
+| `meta.csv` | 95,966 rows | `case_id`, `scen`, `split` (`train`/`val`/`test`/`xheld`), `row`, `real` (member identifier) |
 | `real.npy` | (N, 128, 128) f32 | realized log10 permeability |
 | `fields.npy` | (N, 11, 2, 160, 128) f32 | `Delta T`, `Delta p` at the eleven stored times |
 | `scal.npy` | (N, 9) f32 | `q`, `T_inj`, `S_max`, producer x, producer y, mean confidence, drawdown, depth, initial pressure |
 | `_ref_times.npy` | (11,) | stored times in seconds |
 | `stats.json` | | training normalization (`fields_mean/std`, `M_mean/std`, `p_res_std_mpa`, `pp_norm`, `depth_norm`, ...) |
+| `inputs.npy` | (7,814, 2, 128, 128) f32 | scenario characterization: mean log10 permeability and confidence; used by PNO |
+| `index.npy` | (N,) i64 | maps each simulation record to its scenario row in `inputs.npy`, matching `meta.csv` column `scen_row`; used by PNO |
 
-Split sizes: 79,409 training, 6,808 validation, 9,232 test and 517 extreme-pressure-holdout records (72,939,
-6,275, 8,621 and 448 actual realizations; 6,582 actual-training / 542 / 618 / 69 scenarios). The absolute producer pressure is
+The loader selects 72,939 training, 6,275 validation, 8,621 test and 448 pressure-holdout permeability
+realizations, spanning 6,582 / 542 / 618 / 69 scenarios. The absolute producer pressure is
 `p0 - 0.00981 * y_prod - drawdown` [MPa].
+
+The first six files support GeoUNO and the deterministic baselines and occupy 166.94 GiB. PNO also
+requires `inputs.npy` and `index.npy`; the complete eight-file pack occupies 167.90 GiB.
+Their exact shapes, data types and SHA-256 hashes are in
+[`corpus_manifest.json`](../geouno/resources/training_final_20261015/corpus_manifest.json).
+After obtaining the pack, verify its complete contents from the pack directory:
+
+```bash
+sha256sum --check /path/to/AVF_geothermal/geouno/resources/training_final_20261015/corpus_SHA256SUMS
+```
+
+This reads all eight files, including the full field array. It is separate from downloading the compact
+inference assets or checking the table Source Data.
+
+The frozen normalization was fitted on training data in the preceding pack. All contributing cases
+remain in the current training split. Preserve the released `stats.json` when repacking the corpus
+to reproduce the published models.
 
 ## Licence
 
-The model weights, reservoir cases, NUTS results, prior-fit inputs and Source Data released here are licensed
-under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please cite the paper when using them.
+The authors' geothermal model weights, reservoir cases, NUTS results, prior-fit inputs and numerical
+Source Data are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+CO₂ benchmark inputs and reference fields retain the original provider's terms and are excluded from
+this licence; see [THIRD_PARTY.md](../THIRD_PARTY.md#co₂-benchmark). Please cite the corresponding papers.

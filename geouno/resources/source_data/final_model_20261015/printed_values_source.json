@@ -1,0 +1,16 @@
+{
+  "source": "GeoUNO manuscript",
+  "files": {
+    "tables.tex": "b3e63ae5ed26c78cdc7fe96c4535c28f7b66c8efa0c024cdb2a7064b1f806158",
+    "main.tex": "924cb4b072c98ca864af1e20688a0c7a7292d7893e170cda28048907bc07435d"
+  },
+  "table_assets": {
+    "Table 1": "uniform_training_runs",
+    "Table 2 (24 reservoirs)": "hm_networks",
+    "Supplementary Table 1": "baselines",
+    "Supplementary Table 2": "ufno_benchmark",
+    "Supplementary Table 19": "uniform_training_horizons"
+  },
+  "complete": true,
+  "all_table_cells_have_sample_sd": true
+}

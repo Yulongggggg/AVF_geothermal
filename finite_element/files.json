@@ -1,0 +1,138 @@
+{
+  "LICENSE": {
+    "bytes": 26530,
+    "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+  },
+  "README.md": {
+    "bytes": 5607,
+    "sha256": "997a7c3e2a2a1aa41febdcc07f837c9d8c99ace13b99ccc901ad924a59397710"
+  },
+  "application/LICENSE": {
+    "bytes": 26530,
+    "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+  },
+  "application/Makefile": {
+    "bytes": 2298,
+    "sha256": "f87a8a98f930f5607cf78a55dd4c2bed6cfd94607fd30e4de4d25eb9836190bd"
+  },
+  "application/include/base/cavityApp.h": {
+    "bytes": 618,
+    "sha256": "2a7a8a96480b4912b5ea3619527e67bdfeda8cfa1df9938c6db152625944a3b9"
+  },
+  "application/include/constraints/FVEqualValueConstraint.h": {
+    "bytes": 1146,
+    "sha256": "d49613ca35189aa5b5b8ae024afebb368a62341fe0a37c6dad2d3d29d26213c3"
+  },
+  "application/src/base/cavityApp.C": {
+    "bytes": 1414,
+    "sha256": "f52a86e32d73540e3b77e61e503e090f126e9e1eea0fe8e3c88b113a715040f2"
+  },
+  "application/src/constraints/FVEqualValueConstraint.C": {
+    "bytes": 4445,
+    "sha256": "6e3dac8fd825acd348258d0be700a72408bebc2186dd214a8b0f5c8a686cc768"
+  },
+  "application/src/main.C": {
+    "bytes": 482,
+    "sha256": "249506a302a78067f3b80a0ea53a2c361dc3b6522ab07575c40266addd122256"
+  },
+  "application/test/include/base/cavityTestApp.h": {
+    "bytes": 658,
+    "sha256": "a5ea81232682fa4a17793daf299a942dbb8fa6948baa6659e341bee7a94d579d"
+  },
+  "application/test/src/base/cavityTestApp.C": {
+    "bytes": 1880,
+    "sha256": "dae95c109eebe13d879ea5a4015911c2f780315680cbc1e996997be91f4afb8f"
+  },
+  "case/case.i": {
+    "bytes": 16092,
+    "sha256": "d385f9a46c00f504b35e19db291d0def846a410e0acf28a740dad22b5db19ec9"
+  },
+  "case/fractures.png": {
+    "bytes": 78750,
+    "sha256": "d3220d2e820e4e1731b821a679bc614d9304405d269bfc47f8b325c38f793b5c"
+  },
+  "case/mesh.msh": {
+    "bytes": 5846203,
+    "sha256": "560ef202d22ad51b1ee4d9268038f4eb9eee7d8ced4021a101457841e9df78dc"
+  },
+  "case/permeability.i": {
+    "bytes": 2087451,
+    "sha256": "6124fa844ae9278f76a0859ae309abf0c86f38c7a045505ae0e2e2e39b743d76"
+  },
+  "case/producer.bh": {
+    "bytes": 27,
+    "sha256": "48f0093f33b47f7e4ddd491600260b0734a1ca79e920cde4337fd60eef8610e5"
+  },
+  "common.py": {
+    "bytes": 901,
+    "sha256": "10152ee497370702c36f44b3493ad6337cbe684fb4fe5f3b22f7afd9206c2242"
+  },
+  "environment.json": {
+    "bytes": 346,
+    "sha256": "22d1d4565f0be40b6a17e1a8b5f90685bde7d5e3f8be41bb47479f7fd1d9f607"
+  },
+  "generation/THM_template_final.i": {
+    "bytes": 15970,
+    "sha256": "5d0988e39177c430fa6455849566dbbba0ea8ace79fe989911ec931f665cdef1"
+  },
+  "generation/build_prior_field.py": {
+    "bytes": 10233,
+    "sha256": "8f81c7fc5c2b2ce4e5ef195aa1483ededdbb5ba3ffffb8966e3b5d03cabe98e8"
+  },
+  "generation/confidence_model.py": {
+    "bytes": 3937,
+    "sha256": "369e58917d8d323f2687590476deb5ec4b680e07dba55efaef15c6accb8970d2"
+  },
+  "generation/generate_dataset_v3.py": {
+    "bytes": 15267,
+    "sha256": "cefec02b8ca5544a45a7c9709ba0234d331136324d7a4d7af5ed353411651d20"
+  },
+  "generation/generate_dataset_v4.py": {
+    "bytes": 24019,
+    "sha256": "5be9748bfe6832bd36a6cd4fd39bb63de51a6f48265bb03ec28c467b41d1c0e6"
+  },
+  "generation/generate_uq_dataset.py": {
+    "bytes": 12847,
+    "sha256": "3002eb86ceebbd0ed9c692f5bc68098a4de16610fd652837f1e13d391da4ad21"
+  },
+  "generation/injectivity_screen.py": {
+    "bytes": 1701,
+    "sha256": "bce635914ea00b9c9f0c2dc6703df60f52aae5af64e21c9a36d25edb02aba0c2"
+  },
+  "packing/pack_add_real.py": {
+    "bytes": 2988,
+    "sha256": "164e3850ffb6cf403d4854e0c9b3487f8a4df39b9dfc6586a01728815f1760c7"
+  },
+  "packing/pack_dataset_v4t.py": {
+    "bytes": 20500,
+    "sha256": "6872bde90590474493b63a46c26328873280e2fd1b0568022da561286c62bb18"
+  },
+  "provenance.json": {
+    "bytes": 13546,
+    "sha256": "a86a1573777396a867f9492e144e659c229607f4ec9429dd50bac8eca1b87249"
+  },
+  "reconstruct.py": {
+    "bytes": 3512,
+    "sha256": "80f9382cc54e117ddcdeaa8f887c534fd21b158fa9cfd287dea5ce371b618a8c"
+  },
+  "reference/PHYSICS_MANIFEST.json": {
+    "bytes": 4692,
+    "sha256": "419681fb8bc39cc82624e6b1c77f519de57549fa77270f1ab52dd24d81cb6b50"
+  },
+  "reference/fields.npz": {
+    "bytes": 1289766,
+    "sha256": "28bd3e9ede4c3575d468c4d880fa0c8758eb987312d3d8cebc56b08e814cbada"
+  },
+  "reference/reproduction.json": {
+    "bytes": 2163,
+    "sha256": "255ecf1aeefe59d25e5dfff4207221bde06d88f9635ea3bf62b32f327dc5f40a"
+  },
+  "reference/scenario.npz": {
+    "bytes": 52086,
+    "sha256": "02fcd51cbdd6cffed4703bd1efe6604d9f73c1ece7423d98070e0d017e3a1362"
+  },
+  "run.py": {
+    "bytes": 4586,
+    "sha256": "9823e0b9e9ca2cbfffdce04bb904b65b05acfae82a2d972eeb4307fe3287f8b1"
+  }
+}

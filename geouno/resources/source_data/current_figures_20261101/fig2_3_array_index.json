@@ -1,0 +1,816 @@
+{
+  "figure2_a_row0_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "f3ed6723e66e98d3373bbc61d44e9fa689f356cd48c40c105af2803ec64a5955"
+  },
+  "figure2_a_row0_fe_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "2722fe0ef3c533f3592d2049f7be49b33640c9794712382fb6271746207ca59d"
+  },
+  "figure2_a_row0_geouno_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "eb653a3369e81a11786bf8286ae66f8a8e6a800e8385ffa2e12b884493fc22c6"
+  },
+  "figure2_a_row0_error": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "4569cd2683f5c41fcdabdc9b2a9b62b29f3d9106c5247c1034b83442b0bf2baf"
+  },
+  "figure2_a_row0_geouno_standard_deviation": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "0f1c126c978a7601271d999565a737434b8c812550a99299a63714eaba6115b5"
+  },
+  "figure2_c_row0_fe_response": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "8f3a9a65542b9470038ae3361e04a56c9eeeb6ddc317f2b48da25a49b0b7208a"
+  },
+  "figure2_c_row0_fe_lower": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "6ede04f2954c9c31e83d085767b8d11ece630b538febba00fad840277fa03093"
+  },
+  "figure2_c_row0_geouno_response": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "c9eee47826ba04c0d798e531fd334a5c416463952820e7321241e33dea2f4ece"
+  },
+  "figure2_c_row0_geouno_lower": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "6c4979e131b06fbb970d7478187d528f921070b15efa394a21985ab6f064db47"
+  },
+  "figure2_c_row0_geouno_response_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "0f27cf659fdc2dec71f44bd042d1942f316b955fce62070e7761c27e3b7ce751"
+  },
+  "figure2_c_row0_geouno_lower_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "b8bf0f65ca92f148319ddb8e2be68b0686617458113a2b9dc58801c3baa1c560"
+  },
+  "figure2_a_row1_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "82fdf104c35220b45c9f159d8f6f548c5846afa35656158e2cb2f98cf4a3b3c4"
+  },
+  "figure2_a_row1_fe_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "11ccb4cbb28241b4b4c3bddd10decf25b65281c4dfc91660360d5b49b18f729a"
+  },
+  "figure2_a_row1_geouno_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "00edbb97f759f73d5542557cc78e17c2e889282053a514ba7179baf428dfcdf1"
+  },
+  "figure2_a_row1_error": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "8fdd038463c282a5f894d131b8a8c7ada19dc027b73352e1f25cb404cc16e744"
+  },
+  "figure2_a_row1_geouno_standard_deviation": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "41b8c35b06ab7c501966a2273d9fb2751353473424c7b1a558f313bd8d4a7ed4"
+  },
+  "figure2_c_row1_fe_response": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "48dd0d7e5003846671d3a761c97a7deb55cc3eb27f654247aefe1f58090b450b"
+  },
+  "figure2_c_row1_fe_lower": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "e2b45f1a381ac36ea896e74a77b32aeb9ba07487d48a0bf663178c977999ef83"
+  },
+  "figure2_c_row1_geouno_response": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "4fc3890b9c9732255f52d5b6cc95f8be5355a684f823ddac4d3aea708d681832"
+  },
+  "figure2_c_row1_geouno_lower": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "4f4ac50b3adfdf78cd4c5ad5aa3666d31cb76501bde9a354fb008cb89b19ee22"
+  },
+  "figure2_c_row1_geouno_response_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "7930784012d8327d073310b91376309b4d4ee2862cc39e93853da85d8b14b640"
+  },
+  "figure2_c_row1_geouno_lower_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "68b1eedb762fd3c3a911572821b9e576b8b3026e2ec1ccb814b87fe785f3e3ce"
+  },
+  "figure2_a_row2_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "c752073b14c027b6a7f8187f03caaac0fc24aa21d354c74dc0a6ae6417d445a4"
+  },
+  "figure2_a_row2_fe_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "e91b4e6778369d97600d509f259b905ba1ade987a8ff9126313b04fb12695022"
+  },
+  "figure2_a_row2_geouno_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "cde7536f067670fef037d2aaa9c0d1dfc321c9a772305dc7bd5d18266c7f7345"
+  },
+  "figure2_a_row2_error": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "56509372fd7cc5b1960570f90133a63219f8645f9765a0fa79d60d093eb95d1b"
+  },
+  "figure2_a_row2_geouno_standard_deviation": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "13d5dac52c968e1d5e82042902bb5c8aabfdae478e2606e5be437c32cdcc627e"
+  },
+  "figure2_c_row2_fe_response": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "eed33b49d9aea5b83eb10301f41cbb7f0320e739d1c6af022c13a9a6231c5864"
+  },
+  "figure2_c_row2_fe_lower": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "37fce212931bd99634ab8e46508e870c32d1b4ac844f8895525dcec50df63938"
+  },
+  "figure2_c_row2_geouno_response": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "f96d4923036a19283c46dfb3de431f89ccd5d58a307cc634a108c062a0530f2a"
+  },
+  "figure2_c_row2_geouno_lower": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "b46417fca5bdf819efefa6c2503d5e861165803c1d4a9dcff90ac56009d10a4b"
+  },
+  "figure2_c_row2_geouno_response_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "63a73cc33a08e0c76923aebf1488f71f777e12370be115c1a07bfe1a5d825c9e"
+  },
+  "figure2_c_row2_geouno_lower_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "7dd15e949c04deab407dea5f986bcbe572967b9ecd613d6b1c0115599455a43c"
+  },
+  "figure2_a_row3_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "0f5c4d46c8b7d4103ad423b62d2cb42734b950dc3b5dff2e3aeaa8364bd2e0f1"
+  },
+  "figure2_a_row3_fe_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "e786dd7d046ce1562c2f6efe0969f1d317f45c950dd7752eda5dbe9b653d75dc"
+  },
+  "figure2_a_row3_geouno_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "5502444606a31e033101cd6e33200d796972c1cb8fd06ec5fd54d3b667b98b26"
+  },
+  "figure2_a_row3_error": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "da9e67b12e112fed139429d2630fe76654fe4cc9c0e57070c8e94bbb31bb0762"
+  },
+  "figure2_a_row3_geouno_standard_deviation": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "dd0a5ec12ce3b4686ee7cd88d6d578e3d544a0fd023e429ec2db9c77901780fb"
+  },
+  "figure2_c_row3_fe_response": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "854b24ffa621fa3a59b6dfce0cd0d01f735caa1811eed6331c5ba8869778892b"
+  },
+  "figure2_c_row3_fe_lower": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "612931da8bd80c916c770fe03b5b4326f08a9173124f0688e4ad78c3149fc649"
+  },
+  "figure2_c_row3_geouno_response": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "4b2d498b6200eeba639eb3d4be3f5d1339e659daa53d3aecabeed9a6d2b568d0"
+  },
+  "figure2_c_row3_geouno_lower": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "4e017ca9228eddc08d7fcc85d7b91fe45bdcb855c9b101b6d80ef3a83496e78e"
+  },
+  "figure2_c_row3_geouno_response_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "27f2516018c59810cc5d81daac4f6c8b22f9d032219e156f38210be1d597d23d"
+  },
+  "figure2_c_row3_geouno_lower_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "b3e7d976da259c4dd5ed71b14eea3ede566cc9aa2bae996bf1833d660ecc516a"
+  },
+  "figure2_b_fe_fields": {
+    "shape": [
+      5,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "7b06d8e01fbf0b6caa8b5b8f6a10d18770ebcd8e369ce6ed4b17a326cec8ba93"
+  },
+  "figure2_b_geouno_fields": {
+    "shape": [
+      5,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "212e600436e19f4edaa721bb282df39779eee71211f27753d61b1fb0598c2818"
+  },
+  "figure2_d_field_rmse_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "1b609df5fec17c4822d9f33ae81a877de5cc6817ef8f59652edde56e5d5427be"
+  },
+  "figure2_d_well_error_median": {
+    "shape": [
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "0753fa85373563e9f5e4e4c1999e4c0c35df238a294ba2797f03fe3e61886893"
+  },
+  "figure2_e_w1_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "708c9d09e8335e490aee5ab7aee33fd76fb21bcb5e1850c23452b6f60bc525cd"
+  },
+  "figure3_a_row0_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "bdc6e27ba32f4722fa655debb958a6a228173f660a20bf6a140b1ceacb019820"
+  },
+  "figure3_a_row0_fe_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "d94720f41cf2b054bb620c90b541850265348b31328d280382e112149ccd4981"
+  },
+  "figure3_a_row0_geouno_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "f547759a990a5ddef696d2e576272370c3439717d0fb40a49e1748476c4bb40b"
+  },
+  "figure3_a_row0_error": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "ae8c07466b25a1b27c7035822bb0d37fc7a53cd546e1e8037c95a67b1dea5462"
+  },
+  "figure3_a_row0_geouno_standard_deviation": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "9ad47485ecd023fb4778d31b49c5e13d6e571ca1def168b50761410131243ac4"
+  },
+  "figure3_c_row0_fe_response": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "389189a700e68d83e347aba7915fc408e56fb13faabf46fb5b687d4b76c44036"
+  },
+  "figure3_c_row0_fe_lower": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "a01fdd28c27e39042a97e6e93e412772fbbc0dad28f27e91990037c8a661b0eb"
+  },
+  "figure3_c_row0_geouno_response": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "4d14ce9a7d999b76bd27c5571f3343e63d006f63a78e4c719202fde8c21e6a71"
+  },
+  "figure3_c_row0_geouno_lower": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "a28fa62e521a6e864272a51e5185a6ce4bb761d50cd843d57bd98dbdca6f84f6"
+  },
+  "figure3_c_row0_geouno_response_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "0b6644a291eab5addce907bb05fdb45c25c2e77432c796dab77e9e95de885856"
+  },
+  "figure3_c_row0_geouno_lower_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "05f56c571f2d60415f138c767f3a126752d916d73cbfe43f522e1430c3446c5c"
+  },
+  "figure3_a_row1_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "2db7540eee48af03245383467e36167111b8ba93217e23b813077b869fed1003"
+  },
+  "figure3_a_row1_fe_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "6af68afd6c7c32aba911e76bb313d411bb59949d309ca3f270d5a8ff16fab9d0"
+  },
+  "figure3_a_row1_geouno_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "5afe12305373f4fd143e90d856fc3c3bb3a33b72b2fa5aeeda9caf7ccbe5b450"
+  },
+  "figure3_a_row1_error": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "4a9a47019b488fab2b9620b7d0a43a4cede7fa6c1cca21e13fea320886fe1d68"
+  },
+  "figure3_a_row1_geouno_standard_deviation": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "9886049d581daf5e781f777741b12b6687a91cd0b7cdebb5826cdf5a518490c3"
+  },
+  "figure3_c_row1_fe_response": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "e45e3908788e33c4818aae3ad74bc98abda928895cf4f123b642e6dffe4ba48d"
+  },
+  "figure3_c_row1_fe_lower": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "8f0077ae5b875b9e2cc7c0691cce4aab2148668ef5b9d8712f785cb95f837621"
+  },
+  "figure3_c_row1_geouno_response": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "384eefb50401cadeec004c39cc94353b76bec85ef8f54019c841d481a1de4217"
+  },
+  "figure3_c_row1_geouno_lower": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "e66267b24e66cda55239a20e72a2954f19cdfdc454dcd2da1d88a6af0c585243"
+  },
+  "figure3_c_row1_geouno_response_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "f9953d085c7d260e51a56b8427e2c108e48274b61aa7ab1bf310a4b2d0160378"
+  },
+  "figure3_c_row1_geouno_lower_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "7138c7562325fde44f12fd170081c3c6fd3802f8c326fe43fda9336814b6d910"
+  },
+  "figure3_a_row2_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "02203738dd10f1b45fe8d831b5f299b3dcfae26f80d7a55e091d1e5af440bb57"
+  },
+  "figure3_a_row2_fe_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "8df139be9d372c10a4da072f217561936775cea012bf0efd7bb61dde4bf6eff4"
+  },
+  "figure3_a_row2_geouno_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "21ff59ba16ee01155077fcfbf00c17f8768324caf0b93c466dcae407144e1974"
+  },
+  "figure3_a_row2_error": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "2447d62c954174e2b465d8178aa9fd453f3ce64dc4b0086d2e0226eb4dba90b3"
+  },
+  "figure3_a_row2_geouno_standard_deviation": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "80560ccb5282b12d6603f29082e3208bf413ef739bcb3f576be33022f40ce080"
+  },
+  "figure3_c_row2_fe_response": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "ddc48106f83e0e4a6fd2b51663e337b98412137ba14fa3d44c0e95e299b47388"
+  },
+  "figure3_c_row2_fe_lower": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "e4d63f10a2ea006777ddae06d20859f083181a344d329b4fd36be329c055c236"
+  },
+  "figure3_c_row2_geouno_response": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "6875b44087e55f974cce92ebccd0b53a1354b2d429159a53e6a34e3be64c6d1d"
+  },
+  "figure3_c_row2_geouno_lower": {
+    "shape": [
+      7,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "f00fa30b1a4e323e73a9c22b50728a976d932bafee3469992f87ead3c49aa5dd"
+  },
+  "figure3_c_row2_geouno_response_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "5dd04b947b6c646c1a18523e2c092cd52b16c23568f3aecf76ea08b65ea69fca"
+  },
+  "figure3_c_row2_geouno_lower_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "2473b1f82b09dffc6e9284b4e16959d36333440a8452ddd9b4ba4bf0dadafe9b"
+  },
+  "figure3_a_row3_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "53cc19b6464f6f1bbf1d52d578e64e17a4bb7abce4f7c0eef816e364edd1c51a"
+  },
+  "figure3_a_row3_fe_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "68a65e2d127208863a10d8e722b46861bd7739d93ed8e092de5bf9236a645dfd"
+  },
+  "figure3_a_row3_geouno_ensemble_mean": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "d564389c5b03feec3f86b87995f6380b280fdda209612f5524371b119e58d772"
+  },
+  "figure3_a_row3_error": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "7d1711e86bfdcad67a21c467d7f6d4f0eab0f149d725623d54bf03f20411c304"
+  },
+  "figure3_a_row3_geouno_standard_deviation": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "fcaece1816ba0d7774293c3b128acf1ba1251d20b89780c7a3862fa058a3afe2"
+  },
+  "figure3_c_row3_fe_response": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "83b11e22b27a199d194cb54ff7a5c29721186a73c4892c3592aac066bc5105c3"
+  },
+  "figure3_c_row3_fe_lower": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "83b2dc443bb2f8a18f9d5651bcfc4e34638f67150a326dcb093e75aeec618532"
+  },
+  "figure3_c_row3_geouno_response": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float32",
+    "sha256": "98375c8847c16e5034f5741b10db7aecf1ed641b7de9a29063697fd3b0b48b7d"
+  },
+  "figure3_c_row3_geouno_lower": {
+    "shape": [
+      20,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "b7ceba8351167a711284f7a524867a8cff9a3d4ddd6505b02a4031ebc70c960d"
+  },
+  "figure3_c_row3_geouno_response_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "51b05ec2a9757900960131eb73cd14f4cf805f7b5b61204a75bb7956291633ed"
+  },
+  "figure3_c_row3_geouno_lower_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "68d9be79fd622682f153128216d1ec863e08b748c297e7655477051c618c9899"
+  },
+  "figure3_b_fe_fields": {
+    "shape": [
+      5,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "343f14b1aec85e673446ab0ac54b0b1195c85c76438e191e2a552b4433d95420"
+  },
+  "figure3_b_geouno_fields": {
+    "shape": [
+      5,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "71a33845415703bc20226facb73973a39ad9e3df64a9bd9889fc49e507662732"
+  },
+  "figure3_d_field_rmse_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "2ee1b6a255974c80877b4dca1096b86454cd77a91c17394d3ae419e1c3f421bd"
+  },
+  "figure3_d_well_error_median": {
+    "shape": [
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "b9fc80a369e6c0930aa7b9c8f9b84fcf92fe6964b8edf08b348bb61c4c464170"
+  },
+  "figure3_e_w1_quantiles": {
+    "shape": [
+      3,
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "a5f47150056306976a509676c4285d6a9dc4490f23781e0feeb21ab8d1a37bf1"
+  },
+  "time_years": {
+    "shape": [
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "145dea5b11b33e7f0758cb0e94756ea36005acbc2e559fc1d9b669d23557e41c"
+  },
+  "time_s": {
+    "shape": [
+      9
+    ],
+    "dtype": "float64",
+    "sha256": "d0243876830dd0e5803810a8bb33228184ccb9acc0c6e6277bde326fd518842a"
+  },
+  "film_time_indices_zero_based": {
+    "shape": [
+      5
+    ],
+    "dtype": "int64",
+    "sha256": "a92489818447a566411b059c0a97154b535c03a637706551b3d8b5963e2596c6"
+  },
+  "film_time_years": {
+    "shape": [
+      5
+    ],
+    "dtype": "float64",
+    "sha256": "a750842eddb68a7e23f9450871bd233e2d093781258f301d5299854f3474b94c"
+  }
+}

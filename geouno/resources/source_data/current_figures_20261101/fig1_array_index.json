@@ -1,0 +1,185 @@
+{
+  "c_characterization_mean_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "0f5c4d46c8b7d4103ad423b62d2cb42734b950dc3b5dff2e3aeaa8364bd2e0f1"
+  },
+  "c_characterization_confidence": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "9313154dc608753e7e1b15dfc75560c46983af90d688b0ef2d3ab910b44e1301"
+  },
+  "c_first_log10_permeability_member": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "c1187c239ed51f78f2b33313d7e5c9f12354c05592c55553a1253537db6def78"
+  },
+  "c_last_log10_permeability_member": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "fc583e1ccdebe0d68ce707a576177129f62a5204e84b8ae90b62a6d5b76df3e0"
+  },
+  "c_cooling_ensemble_mean_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "5502444606a31e033101cd6e33200d796972c1cb8fd06ec5fd54d3b667b98b26"
+  },
+  "c_cooling_ensemble_sd_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "dd0a5ec12ce3b4686ee7cd88d6d578e3d544a0fd023e429ec2db9c77901780fb"
+  },
+  "c_inference_prior_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "fce2af00531fd382cf1b0f59603c5958cab2c1120cae9ff12b053ac868625bb7"
+  },
+  "c_inference_map_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "f123d10c9c2d2b9733d8bae5c9f7db9f0ff28f0edb4aa29d10e55206aab80ce5"
+  },
+  "c_inference_truth_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "e5df686912e6da06789afdf1002021eb377543c2bb69c597636153343379f11b"
+  },
+  "c_inference_monitoring_locations_xy_m": {
+    "shape": [
+      17,
+      2
+    ],
+    "dtype": "float64",
+    "sha256": "69c98c77d99c5f7d641a04e8e86f33c43dff88c34b99559251109af38966325e"
+  },
+  "c_latent_temperature_gradient": {
+    "shape": [
+      64,
+      64
+    ],
+    "dtype": "float64",
+    "sha256": "ae37b0bd51ea75891b5e4427e501154e889b8ec85e57e3d235e137f81470ca7b"
+  },
+  "b_input_log10_permeability": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "fa5dc5fddfabce487b641ad29540d28dec8e0f9a847424dec088f32a8f24ce96"
+  },
+  "b_cooling_output_K": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "c9e981b1aff5ced7265bea774bd850f1d84678fad50b52511286616916beb2aa"
+  },
+  "b_pressure_output_MPa": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "90eef4fa18298bf95f6ec11e35a2b0fcb545ddd12f8cf50039181224032bfdb3"
+  },
+  "b_illustrative_svd_modes": {
+    "shape": [
+      4,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "3b6a58538eeb341a830bc3eba46ca9fe52fb7006484d2204749b900d11fa9851"
+  },
+  "b_mode_source_cooling_ensemble_K": {
+    "shape": [
+      20,
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "sha256": "82724e920964aa244fc679fccd4b53bcd8e92b43a1d85c1afdb442e0db1dccd0"
+  },
+  "b_schematic_injector_distance": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float64",
+    "sha256": "21dad30da5687a4b69c52cd197f458d7db54e0bf820a3d49744cebbf365a7bd2"
+  },
+  "b_schematic_coordinate": {
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float64",
+    "sha256": "50b167fc112181cfd766157275ef1df86d31e108a20d3b0d1c2d90d0e6acb9fa"
+  },
+  "c_inference_prior_cooling_members_K": {
+    "shape": [
+      256,
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "e1b699f7d0ca1b681171a45634bdf2cb75d0390f740b7d027fb9b06cdce42c50"
+  },
+  "c_inference_esmda_cooling_members_K": {
+    "shape": [
+      256,
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "f7e475113ebcc47473c82f7533747de9efab8cec1f3bf8626975cb8739ae59a1"
+  },
+  "c_inference_truth_cooling_K": {
+    "shape": [
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "f3c2808d57959b67e791d371da6b64e9b8341bb6fa938eaeeacba764be5a73d4"
+  },
+  "c_inference_observed_cooling_K": {
+    "shape": [
+      7
+    ],
+    "dtype": "float64",
+    "sha256": "f0c9c4658b337686e2bf4826d684b21a41ee53c079f778583a7c3572ffd1bb23"
+  },
+  "c_inference_time_s": {
+    "shape": [
+      11
+    ],
+    "dtype": "float64",
+    "sha256": "cc706d6725c6d46ffc95904d75b38149a3d97a7a994a2b617867b2caf07b3e59"
+  }
+}

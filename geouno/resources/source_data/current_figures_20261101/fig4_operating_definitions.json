@@ -1,0 +1,36 @@
+{
+  "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+  "protocol_sha256": "2abd96f563a3cd0ff6ee428449a1446275481a62855b2e2c69d30e89e0f528d2",
+  "analysis_sha256": "af2be1de7176ba79bce798d865284897d2f5f6317d074f43fe1bae174d218f51",
+  "forecast_time_s": 316000000.0,
+  "selection": [
+    {
+      "group": 0,
+      "FE_selected_control": 1,
+      "operator_selected_control": 1,
+      "operator_choice_FE_feasible": true,
+      "FE_objective_regret": 0.0,
+      "objective_spearman": 0.9833333333333333,
+      "feasibility_agreement": 9,
+      "candidates": 9
+    },
+    {
+      "group": 1,
+      "FE_selected_control": 4,
+      "operator_selected_control": 5,
+      "operator_choice_FE_feasible": true,
+      "FE_objective_regret": 0.02718353271484375,
+      "objective_spearman": 0.9833333333333333,
+      "feasibility_agreement": 9,
+      "candidates": 9
+    }
+  ],
+  "well_support": "Identical radius 6 m blocks for operator and FE; final FE element-sampled fields, not native PointValue curves",
+  "absolute_reference": {
+    "producer_initial_temperature_K": 350.02735849056603,
+    "injector_initial_pressure_MPa": 32.467924528301886
+  },
+  "decision_units": "kg K/s; thermal-throughput proxy, not net power",
+  "feasibility": "P90 injector absolute pressure <=50 MPa; any archived 72 MPa guard rejection makes that candidate FE-infeasible",
+  "scope": "Two held-out geology groups, four paired members, nine independently crossed operating settings at fixed producer location; no depth sweep"
+}

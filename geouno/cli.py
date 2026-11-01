@@ -18,10 +18,8 @@ def cmd_download(a):
 
 
 def cmd_verify(a):
-    """Check artifact hashes and load the final model strictly, without inference."""
+    """Check selected artifact hashes; core verification also loads the model strictly."""
     from . import artifacts
-    from .tasks import load_backend
-    from .model import TRAINABLE_PARAMETERS, CHECKPOINT_SHA256
 
     groups = tuple(a.group) if a.group else ("core",)
     results = artifacts.verify(a.data, groups)
@@ -30,6 +28,11 @@ def cmd_verify(a):
     if bad:
         print("missing or corrupt:", *bad, sep="\n  ")
         return 1
+    if "core" not in groups and "all" not in groups:
+        return 0
+    from .tasks import load_backend
+    from .model import TRAINABLE_PARAMETERS, CHECKPOINT_SHA256
+
     backend = load_backend(a.device, a.threads, a.data)
     net = backend.operator
     count = sum(p.numel() for p in net.parameters())
@@ -75,8 +78,8 @@ def cmd_predict(a):
     _print(
         dict(
             case=a.case,
-            note="Final seed-20260915 model on one FE truth. "
-            "Table 1 uses three independent models and 8,621 members of 618 test scenarios.",
+            note="Refined seed-20260915 application model on one FE truth. "
+            "The common 99-epoch comparison is in Table 1; refined models are in Supplementary Table 1.",
             errors=rows,
         )
     )
@@ -145,12 +148,12 @@ def cmd_nuts_merge(a):
 
 
 def cmd_nuts_verify(a):
-    from .nuts_runner import NUTS_CASES, verify_released
+    from .nuts_runner import RELEASED_NUTS_CASES, verify_released
     from .tasks import load_backend
 
     backend = load_backend(a.device, a.threads, a.data)
     passed = True
-    for case in a.case or NUTS_CASES:
+    for case in a.case or RELEASED_NUTS_CASES:
         report = verify_released(case, root=a.data, backend=backend, rtol=a.rtol, atol=a.atol)
         _print(dict(case=case, **report))
         passed = passed and report["passed"]
@@ -186,18 +189,18 @@ def build_parser():
         return p
 
     p = add("download", cmd_download, "Download and verify release assets.", device=False)
-    p.add_argument("--group", default="core", choices=("core", "nuts", "prior", "training", "all"))
+    p.add_argument("--group", default="core", choices=("core", "nuts", "prior", "training", "fe", "all"))
     p.add_argument("--asset", nargs="+", default=None, help="Specific asset names.")
     p.add_argument("--from-dir", type=Path, default=None, help="Install from a local copy of the assets.")
     p.add_argument("--force", action="store_true")
     p.add_argument("--keep-archives", action="store_true", help="Keep downloaded .tar files after extraction.")
 
     p = add("verify", cmd_verify, "Verify artifact hashes and strictly load the final checkpoint.")
-    p.add_argument("--group", nargs="+", default=None, choices=("core", "nuts", "prior", "training", "all"))
+    p.add_argument("--group", nargs="+", default=None, choices=("core", "nuts", "prior", "training", "fe", "all"))
 
     p = add("predict", cmd_predict, "Forward prediction with the true permeability of a released reservoir.")
     p.add_argument("--case", default="test_01")
-    p.add_argument("--times", type=int, nargs="+", default=None)
+    p.add_argument("--times", type=int, nargs="+", choices=range(11), default=None)
     p.add_argument("--out", type=Path, default=None)
 
     p = add(
@@ -223,14 +226,14 @@ def build_parser():
     p.add_argument("--dir", type=Path, required=True)
 
     p = add("nuts-verify", cmd_nuts_verify, "Recompute diagnostics and scores from the released NUTS chains.")
-    p.add_argument("--case", nargs="+", default=None, choices=tuple(f"test_{i:02d}" for i in range(1, 7)))
+    p.add_argument("--case", nargs="+", default=None, choices=tuple(f"test_{i:02d}" for i in range(1, 25)))
     p.add_argument("--rtol", type=float, default=1e-4, help="Relative tolerance for forecast scores.")
     p.add_argument("--atol", type=float, default=1e-8, help="Absolute tolerance for forecast scores.")
 
     add(
         "paper-numbers",
         cmd_paper_numbers,
-        "Recompute Tables 1, 2, S1 and abstract numbers from Source Data.",
+        "Recompute manuscript table entries and abstract numbers from Source Data.",
         device=False,
     )
 

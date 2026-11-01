@@ -1,0 +1,227 @@
+{
+  "scenario_recipe_id": 6036,
+  "recipe_family": "channelized",
+  "scenario_parameters": {
+    "img": 1912,
+    "s_max": 0.212,
+    "well_y": 150.0,
+    "q": 1.21,
+    "t_inj": 310.7
+  },
+  "weights": {
+    "w": 0.4926496442166185,
+    "f": 0.2917077326000214,
+    "c": 0.44354900530912467,
+    "g": 0.5947234535824613
+  },
+  "opening": {
+    "beta": 0.44721353414111176,
+    "tau": 0.5790717910826382,
+    "kappa": 0.05422050536794826
+  },
+  "channelization": {
+    "q_high": 0.6741307264074827,
+    "tau2": 0.3543545408392624,
+    "kappa2": 0.10533035802948934
+  },
+  "injector_xy_m": [
+    0.0,
+    -250.0
+  ],
+  "producer_xy_m": [
+    0,
+    150.0
+  ],
+  "permeability_bounds_m2": [
+    4e-15,
+    1.35e-12
+  ],
+  "extent_m": [
+    -400,
+    400,
+    -400,
+    400
+  ],
+  "origin": "lower",
+  "panel_order": [
+    "W",
+    "Ft",
+    "Fc",
+    "Gp",
+    "S0",
+    "Sf_channelized",
+    "injector_term",
+    "score",
+    "M"
+  ],
+  "array_units": {
+    "W": "dimensionless",
+    "Ft": "dimensionless",
+    "Fc": "dimensionless",
+    "Gp": "dimensionless",
+    "S0": "dimensionless",
+    "Sf_channelized": "dimensionless",
+    "injector_term": "dimensionless",
+    "score": "dimensionless",
+    "M": "log10(k / m^2)",
+    "x_m": "m",
+    "y_m": "m"
+  },
+  "source_sha256": "78d59ba7c8ec434f38ee317b5240d3cf09c1052906ee683b25f1c95c35f7358c",
+  "helper_sha256": "6ca86c5a6b00cf6457f72f2fbce2e1c9f47a63d6ed0f5956ae5036136b51ff1b",
+  "generator_sha256": "9e0acc29db691790d4d71dccc00be36e0ff2403c2c8abd6052c922de694f2819",
+  "field_builder_sha256": "90877535a3cf044772d01a9c54519903125732d7b697cbb1183850ea4105a286",
+  "source_trace_png_sha256": "8a267046565a7165410e375539254fa64e3ddf1e209dcf3ed0887d96b444c42f",
+  "figure_sha256": "25fe8671dcd586718da3eca8354c1f8a41357bafc5f42f1672478672f4444b94",
+  "array_index": {
+    "W": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "674bf80e2f714c307f6f923faf4c3d459a9be89612c08b2ececc875af85ce3c1"
+    },
+    "Ft": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "8ec93b2fc79050cb7e459a40d2adcff50f2e822c84ec275226c49f2acfc6e7c9"
+    },
+    "Fc": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "a534a4624c2cee2b8a4b025623d992d40e0191a987b50bf820462e0220d18640"
+    },
+    "Gp": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "371f102c2ae7b3b0f5207856067dc58a6b1208fe176af969b52dbf8d8d021705"
+    },
+    "S0": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "46aee7bf66e6e292f12b9d8e067234ac49556d8ea8d80fedb6a449a2bcb1bbb9"
+    },
+    "Sf_channelized": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "31c81bff655bc2c93357b2c516da02ec85f99f03341fa61e38c825f10c5021f7"
+    },
+    "injector_term": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "d6f0a6afa31d1676fc76bef54dc9d723d73f157cdedcd740d2ac2f8edea79c2b"
+    },
+    "score": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "83bc7b7d5cfa431be7202bfa7066f2f8bce8b58d7fe7c470b944cf8a8316f0f2"
+    },
+    "M": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "b032deb5ca30f06ab21c7a6e9bd34ed9272618c3ddcc133716528efbb7cb2f89"
+    },
+    "x_m": {
+      "shape": [
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "527b1335a95e509b7543f2e2d3cdee0ed9732c1b3b6d1bad290b39dbf581662c"
+    },
+    "y_m": {
+      "shape": [
+        1200
+      ],
+      "dtype": "float64",
+      "sha256": "527b1335a95e509b7543f2e2d3cdee0ed9732c1b3b6d1bad290b39dbf581662c"
+    }
+  },
+  "validation": {
+    "displayed_arrays_matched": 9,
+    "reproduced_png_shape": [
+      4415,
+      4539,
+      4
+    ],
+    "original_png_shape": [
+      4415,
+      4539,
+      4
+    ],
+    "reproduced_pixels_exact": true,
+    "reproduced_sha256": "25fe8671dcd586718da3eca8354c1f8a41357bafc5f42f1672478672f4444b94",
+    "independent_native_input_reconstruction_exact": true,
+    "reconstructed_array_count": 11
+  },
+  "reconstruction": {
+    "script": "reconstruct_sfig04.py",
+    "native_inputs": "sfig04_native_inputs.npz",
+    "rng_state_before_construction": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 146075367574358536970024165531932824777,
+        "inc": 48660480557402056481462574304475116829
+      },
+      "has_uint32": 0,
+      "uinteger": 1588874764
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.15.3"
+    },
+    "constants": {
+      "EK_SIZE": 31,
+      "EK_SX": 8.0,
+      "EK_SY": 4.0,
+      "EK_ANG": 25.0,
+      "SIGMA_LOCAL": 40.0,
+      "SIGMA_CLUSTER": 45.0,
+      "ALPHA_FRAC_WELL": 1.0,
+      "K_MIN": 4e-15,
+      "K_MAX": 1.35e-12,
+      "KAP2_RANGE": [
+        0.08,
+        0.2
+      ],
+      "X_INJ": 0.0,
+      "Y_INJ": -250.0
+    },
+    "description": "All nine full-resolution displayed float64 maps are deterministic functions of the native 1200 by 1200 fracture mask and the recorded PCG64 state. Reconstruct without resampling or rounding.",
+    "script_sha256": "ff0ba0365adc4686a0c325bf1f978f15a3a111cb195a994bd517d31cb5a8b018"
+  },
+  "native_input_array_index": {
+    "fracture_mask": {
+      "shape": [
+        1200,
+        1200
+      ],
+      "dtype": "bool",
+      "sha256": "12ba675caf705a83e753020d7523ec35444d68a19390e2dadd49e3d22c131e83"
+    }
+  }
+}

@@ -75,7 +75,7 @@ def test_forward_prediction_close_to_fe_truth(backend):
         pred = backend.predict_real(base, 10, torch.as_tensor(case['logk_truth']))[0].numpy()
     err = pred[:, 16:144] - case['truth'][10, :, 16:144]
     rmse = np.sqrt((err ** 2).mean((1, 2)))
-    # This application model is the seed-20260915 member of Table 1.
+    # This application model is the seed-20260915 member of Supplementary Table 1.
     assert rmse[0] < 3.0 and rmse[1] < 2.0, rmse
 
 

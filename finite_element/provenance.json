@@ -1,0 +1,313 @@
+{
+  "moose_commit": "381947fe984564cf250e888a4689a8710902152e",
+  "application_version": "snapshot-20-10-27-54257-g381947fe98",
+  "application_git_commit": null,
+  "executable_sha256": "83aab659dc354a77f3ad4c55f947e755aa45f940c3ddf0976b73bb78791f8f0c",
+  "reconstructed_permeability_sha256": "6124fa844ae9278f76a0859ae309abf0c86f38c7a045505ae0e2e2e39b743d76",
+  "original_permeability_sha256": null,
+  "permeability_provenance": "Deterministic original recipe; original permeability text was not retained.",
+  "M128_and_C128_byte_equal": true,
+  "z_draw": 2,
+  "original_success_wall_seconds": 337.9,
+  "original_mpi_ranks": 6,
+  "case_id": "v4m02656_r012",
+  "public_case": "test_01",
+  "pack_row": 39801,
+  "original_case_repository": "https://github.com/Yulongggggg/OL-geothermal-final-scheme",
+  "original_r5_commit": "1d4e647163ac43e597cf5d4adba6171bce6ea676",
+  "original_r5_worktree_note": "Generator file hashes include the original local continuation changes.",
+  "moose_source": "https://github.com/idaholab/moose/tree/381947fe984564cf250e888a4689a8710902152e",
+  "sampling_factor": {
+    "filename": "fe_sampling_cholesky_fdc8c5e.npy",
+    "bytes": 134217856,
+    "sha256": "fdc8c5e1ed73f3e25b6564ad679beb6d50c738da439a9631dbe1f39c06cacf11",
+    "role": "FE realization sampling covariance factor; distinct from the inverse prior"
+  },
+  "source_transformations": {
+    "generation/THM_template_final.i": {
+      "original_sha256": "a87cf842f8934b28ba0a1e8f1bfb340c453d46beb072f7f48be7f770aa1ec4f2",
+      "changes": "Comments and empty lines removed; input values unchanged.",
+      "executable_ast_sha256": null,
+      "path_substitutions": []
+    },
+    "generation/build_prior_field.py": {
+      "original_sha256": "90877535a3cf044772d01a9c54519903125732d7b697cbb1183850ea4105a286",
+      "changes": "Comments and documentation strings removed; executable AST unchanged before the listed path substitutions.",
+      "executable_ast_sha256": "d8fe1c52f5dc9281c692282b3e0f0045a549a55e59d193669db5c76144dd13af",
+      "path_substitutions": [
+        {
+          "original_constant_sha256": "b36477c5d12f5de068d65fa2573df935a1cdd6425fd1ddb65f77da3e885dbad7",
+          "replacement": "."
+        },
+        {
+          "original_constant_sha256": "c24eadeea0fca09c5fa68eb3edf1d97acb76445fa998789288c98107ebdcdcf0",
+          "replacement": "images"
+        }
+      ]
+    },
+    "generation/confidence_model.py": {
+      "original_sha256": "a23ae7ae7cb827f5a4e9c6f18ff239e9650be9cee1fbfc57a5359819a50a37d2",
+      "changes": "Comments and documentation strings removed; executable AST unchanged before the listed path substitutions.",
+      "executable_ast_sha256": "04ed94720f80676397b24876f8ad6eba6b63674bd6cdbea648259029be23951b",
+      "path_substitutions": []
+    },
+    "generation/generate_dataset_v3.py": {
+      "original_sha256": "9e0acc29db691790d4d71dccc00be36e0ff2403c2c8abd6052c922de694f2819",
+      "changes": "Comments and documentation strings removed; executable AST unchanged before the listed path substitutions.",
+      "executable_ast_sha256": "0902f8a5c7c1511504f103d1f69c1a5c3fad0443e678c4da17b027f07fd573e4",
+      "path_substitutions": [
+        {
+          "original_constant_sha256": "c24eadeea0fca09c5fa68eb3edf1d97acb76445fa998789288c98107ebdcdcf0",
+          "replacement": "images"
+        },
+        {
+          "original_constant_sha256": "655978f69bef687604529d56384ada9345756f5df2d350e5f3df9b85f0bab090",
+          "replacement": "mesh"
+        },
+        {
+          "original_constant_sha256": "f5507be072094d83d6438e4a005eb6636c45fc642c95eecda7d9a4c187039ab9",
+          "replacement": "mpiexec"
+        },
+        {
+          "original_constant_sha256": "2c3ce094958b6a98bb1022cfd6e2ee15b2efb8d328cc155bb55b228c9715eb66",
+          "replacement": "cavity-opt"
+        }
+      ]
+    },
+    "generation/generate_dataset_v4.py": {
+      "original_sha256": "9261f5e14310deed98e00c2d18b852553177823bad055830ce8ee3aa0cfae46a",
+      "changes": "Comments and documentation strings removed; executable AST unchanged before the listed path substitutions.",
+      "executable_ast_sha256": "f08039d71b6661d8c7f4ff22e50df64335560ba73709725c2a46b307a79badde",
+      "path_substitutions": []
+    },
+    "generation/generate_uq_dataset.py": {
+      "original_sha256": "fe6f19fb8a8b780ee8d4e1019a1a5d4b9ef80f5f881550fe0904195685f7d2be",
+      "changes": "Comments and documentation strings removed; executable AST unchanged before the listed path substitutions.",
+      "executable_ast_sha256": "b2628816708cead6f6dde0d6ecaac2699cdeef7932c1f3140fccf14ab4eeb7c8",
+      "path_substitutions": [
+        {
+          "original_constant_sha256": "b36477c5d12f5de068d65fa2573df935a1cdd6425fd1ddb65f77da3e885dbad7",
+          "replacement": "."
+        },
+        {
+          "original_constant_sha256": "c24eadeea0fca09c5fa68eb3edf1d97acb76445fa998789288c98107ebdcdcf0",
+          "replacement": "images"
+        },
+        {
+          "original_constant_sha256": "655978f69bef687604529d56384ada9345756f5df2d350e5f3df9b85f0bab090",
+          "replacement": "mesh"
+        },
+        {
+          "original_constant_sha256": "f5507be072094d83d6438e4a005eb6636c45fc642c95eecda7d9a4c187039ab9",
+          "replacement": "mpiexec"
+        },
+        {
+          "original_constant_sha256": "2c3ce094958b6a98bb1022cfd6e2ee15b2efb8d328cc155bb55b228c9715eb66",
+          "replacement": "cavity-opt"
+        }
+      ]
+    },
+    "generation/injectivity_screen.py": {
+      "original_sha256": "ff0c17bfe2024e7301decde49d0bbb398ecc355952e5810cd62ad8cdabdcd867",
+      "changes": "Comments and documentation strings removed; executable AST unchanged before the listed path substitutions.",
+      "executable_ast_sha256": "a54c3b081cb1f737ef9d2d63eaab4e0e1d67d71a02d6fbec6f016565e7669d2c",
+      "path_substitutions": []
+    },
+    "packing/pack_add_real.py": {
+      "original_sha256": "1a144977759a5d8ed9527ca2c8194a53f30be78d2c04c963490afab425b41558",
+      "changes": "Comments and documentation strings removed; executable AST unchanged before the listed path substitutions.",
+      "executable_ast_sha256": "c30178a5246e6010848497aa0a3e14a9675222d3f475d19336de8abf5fe94100",
+      "path_substitutions": [
+        {
+          "original_constant_sha256": "3f976f7e7f1cccdba99c8da053f67e1d4e0f7129793fc344be8d22fcb2616a85",
+          "replacement": "data/r5"
+        },
+        {
+          "original_constant_sha256": "3b8a84cf8845b1f8ce21f3e75f0a29701f9e399d41896cfef161109a18d5b9f4",
+          "replacement": "data/r6d"
+        },
+        {
+          "original_constant_sha256": "6813825805a771c9e8333eb282f7fbd294b24c71a94d8bc3590387d562560ad8",
+          "replacement": "data/r6"
+        },
+        {
+          "original_constant_sha256": "c6d22cdae2a932f8842353aea75c5619c2b6dc1489b7921e98a2ce862637a0ad",
+          "replacement": "pack_v4r6t1"
+        }
+      ]
+    },
+    "packing/pack_dataset_v4t.py": {
+      "original_sha256": "e1e5510f978788fc4f3545c5e8a124a0404de52ec72e999ed230e34f2e7f5ad0",
+      "changes": "Comments and documentation strings removed; executable AST unchanged before the listed path substitutions.",
+      "executable_ast_sha256": "1807be28d82a5a08e2e1e9f2dcde392e6dcc9fd55d84c77f3e2e68e29b4f091b",
+      "path_substitutions": [
+        {
+          "original_constant_sha256": "3f976f7e7f1cccdba99c8da053f67e1d4e0f7129793fc344be8d22fcb2616a85",
+          "replacement": "data/r5"
+        },
+        {
+          "original_constant_sha256": "a4f04658d908009d494c821ab25ca7d85ee12d79b0c0c98c3554b4fae592f945",
+          "replacement": "pack_v4r5t"
+        }
+      ]
+    },
+    "application/LICENSE": {
+      "original_sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+      "changes": "None"
+    },
+    "application/Makefile": {
+      "original_sha256": "f87a8a98f930f5607cf78a55dd4c2bed6cfd94607fd30e4de4d25eb9836190bd",
+      "changes": "None"
+    },
+    "application/src/main.C": {
+      "original_sha256": "249506a302a78067f3b80a0ea53a2c361dc3b6522ab07575c40266addd122256",
+      "changes": "None"
+    },
+    "application/test/src/base/cavityTestApp.C": {
+      "original_sha256": "dae95c109eebe13d879ea5a4015911c2f780315680cbc1e996997be91f4afb8f",
+      "changes": "None"
+    },
+    "application/test/include/base/cavityTestApp.h": {
+      "original_sha256": "a5ea81232682fa4a17793daf299a942dbb8fa6948baa6659e341bee7a94d579d",
+      "changes": "None"
+    },
+    "application/src/base/cavityApp.C": {
+      "original_sha256": "f52a86e32d73540e3b77e61e503e090f126e9e1eea0fe8e3c88b113a715040f2",
+      "changes": "None"
+    },
+    "application/src/constraints/FVEqualValueConstraint.C": {
+      "original_sha256": "6e3dac8fd825acd348258d0be700a72408bebc2186dd214a8b0f5c8a686cc768",
+      "changes": "None"
+    },
+    "application/include/base/cavityApp.h": {
+      "original_sha256": "2a7a8a96480b4912b5ea3619527e67bdfeda8cfa1df9938c6db152625944a3b9",
+      "changes": "None"
+    },
+    "application/include/constraints/FVEqualValueConstraint.h": {
+      "original_sha256": "d49613ca35189aa5b5b8ae024afebb368a62341fe0a37c6dad2d3d29d26213c3",
+      "changes": "None"
+    },
+    "case/mesh.msh": {
+      "original_sha256": "560ef202d22ad51b1ee4d9268038f4eb9eee7d8ced4021a101457841e9df78dc",
+      "changes": "None"
+    },
+    "case/permeability.i": {
+      "original_sha256": "6124fa844ae9278f76a0859ae309abf0c86f38c7a045505ae0e2e2e39b743d76",
+      "changes": "None"
+    },
+    "case/producer.bh": {
+      "original_sha256": "48f0093f33b47f7e4ddd491600260b0734a1ca79e920cde4337fd60eef8610e5",
+      "changes": "None"
+    },
+    "case/fractures.png": {
+      "original_sha256": "d3220d2e820e4e1731b821a679bc614d9304405d269bfc47f8b325c38f793b5c",
+      "changes": "None"
+    },
+    "reference/scenario.npz": {
+      "original_sha256": "02fcd51cbdd6cffed4703bd1efe6604d9f73c1ece7423d98070e0d017e3a1362",
+      "changes": "None"
+    },
+    "reference/fields.npz": {
+      "original_sha256": "28bd3e9ede4c3575d468c4d880fa0c8758eb987312d3d8cebc56b08e814cbada",
+      "changes": "None"
+    },
+    "reference/PHYSICS_MANIFEST.json": {
+      "original_sha256": "419681fb8bc39cc82624e6b1c77f519de57549fa77270f1ab52dd24d81cb6b50",
+      "changes": "None"
+    },
+    "LICENSE": {
+      "original_sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+      "changes": "None"
+    },
+    "case/case.i": {
+      "original_sha256": "041a14866bfd30a093752f0bd5a93c9849b1e2272ae63a58b6ada9f16ee9b000",
+      "changes": "Three input paths made relative; comments and empty lines removed."
+    }
+  },
+  "training_normalization": {
+    "old_pack": "pack_v4r6t1",
+    "current_pack": "pack_v4r6t2",
+    "old_meta_sha256": "4504ee136fd6693b6131172fd976484dc478c96b3afc8d5152ac555feabb4796",
+    "current_meta_sha256": "b7a6827bc0474cec8a19fd02f0c346b096e3f83e86f22f2744f7c7272b889590",
+    "old_stats_sha256": "6b92f1332c9d8aca735ac237e5ce8e12f1f7572cd627bf67e5c311e5f846bece",
+    "current_stats_sha256": "27c6a5321a3271107cb2ded98a608acb3906119cf72d3385efe5c670fafecbb8",
+    "old_training_including_nominal": {
+      "records": 62267,
+      "all_present_current_train": true,
+      "nominal_records": 3593
+    },
+    "unchanged_normalization": {
+      "fields_mean": true,
+      "fields_std": true,
+      "M_mean": true,
+      "M_std": true,
+      "scal_mean": true,
+      "scal_std": true,
+      "p_res_std_norm": true,
+      "p_res_std_mpa": true,
+      "p_res_std_t_mpa": true
+    },
+    "pressure_residual_selection": {
+      "seed": 20260901,
+      "records": 3000,
+      "nominal_records": 173,
+      "selected_row_indices_sha256": "ffaef40c9848656c2ab7a2941da4019e90b73f94c7e22ca388a3825a4ecbba28",
+      "selected_case_ids_sha256": "879c98d53e37db2e000d1d4090e30ae714d3c5af09af478c3636456219cbc5b6",
+      "all_present_current_train": true,
+      "source": "pres_stats.py",
+      "source_sha256": "476a6cabe5add07b0799a2258b9b89e3d1b92196231b34ea361d93629d0d4852",
+      "completed_log": "presstat_57783.out"
+    },
+    "recomputed_scalar_normalization": {
+      "pp_norm": {
+        "values": [
+          19.235483169555664,
+          3.0681371688842773
+        ],
+        "exactly_matches_current": true
+      },
+      "depth_norm": {
+        "values": [
+          3.058546543121338,
+          0.061319150030612946
+        ],
+        "exactly_matches_current": true
+      },
+      "scal_mean": {
+        "values": [
+          1.5283324718475342,
+          302.8705139160156,
+          0.3234234154224396,
+          -1.4017492532730103,
+          172.03579711914062,
+          0.2078966200351715,
+          9.061732292175293,
+          3.0599067211151123,
+          29.985750198364258
+        ],
+        "exactly_matches_current": true
+      },
+      "scal_std": {
+        "values": [
+          0.525326132774353,
+          5.830945014953613,
+          0.10615260154008865,
+          108.30294036865234,
+          106.71440887451172,
+          0.07338699698448181,
+          2.848879337310791,
+          0.061334170401096344,
+          0.6009966135025024
+        ],
+        "exactly_matches_current": true
+      }
+    },
+    "selection_source": {
+      "packer_sha256": "e1e5510f978788fc4f3545c5e8a124a0404de52ec72e999ed230e34f2e7f5ad0",
+      "field_and_scalar_rows": "split == train and real != nom",
+      "characterization_scenarios": "unique scen_row where split == train",
+      "pressure_residual_rows": "3000 sampled from all rows with split == train, seed 20260901",
+      "pressure_and_depth_input_rows": "split == train and real != nom"
+    }
+  }
+}
