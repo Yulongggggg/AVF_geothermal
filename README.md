@@ -10,5 +10,7 @@ the saved forecasts, scores and diagnostics. Each archive contains 20 files; the
 individual chain arrays provide the complete draws. The original test_16 diagnostics
 are retained with its reported convergence flag.
 
+The prior-fit archive contains the 1,024 training fields, original covariance factor and fit records.
+
 Use Git LFS to download this branch, then `geouno download --from-dir /path/to/this/checkout`.
 The code and detailed manifest are on the release-v1.0.0 branch. Weights and data: CC BY 4.0.
