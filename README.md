@@ -8,28 +8,34 @@
 GeoUNO jointly predicts transient temperature and pressure in geothermal reservoirs. Its differentiable
 operator connects ensemble forecasting, permeability inference and monitoring design.
 
+![GeoUNO overview](docs/images/overview.png)
+
 > Yulong Liu, Jonah Botvinick-Greenhouse, Yunan Yang and Chloé Arson.
 > *Joint operator learning for geothermal forecasting and inference under uncertainty.* Manuscript, 2026.
 
-GeoUNO uses **3,520,755 parameters**, 1,024 fixed training-fitted POD functions and
-64 learned functions per field. Under the common 99-epoch protocol, three independent seeds achieve
-**0.368 ± 0.008 K** and **0.430 ± 0.006 MPa** paired field RMSE over 618 test scenarios and eleven times.
-One realization's joint trajectory takes **0.015 s**
-on the measured GPU setup. Across 24 reservoirs, ES-MDA reduces pressure and temperature field errors by
-**97% and 48%** relative to prior forecasts; guided nine-location multiwell placement reduces near-producer
-error by **37%** relative to space-filling placement.
+## Highlights
 
-![GeoUNO overview](docs/images/overview.png)
+- **Compact operator** — 3,520,755 parameters, 1,024 fixed training-fitted POD functions and
+  64 learned functions per field.
+- **Accurate forecasts** — under the common 99-epoch protocol, three independent seeds achieve
+  **0.368 ± 0.008 K** and **0.430 ± 0.006 MPa** paired field RMSE over 618 test scenarios and eleven times.
+- **Fast** — one realization's joint trajectory takes **0.015 s** on the measured GPU setup.
+- **History matching** — across 24 reservoirs, ES-MDA reduces pressure and temperature field errors by
+  **97% and 48%** relative to prior forecasts.
+- **Monitoring design** — guided nine-location multiwell placement reduces near-producer error by
+  **37%** relative to space-filling placement.
 
-The application checkpoint is the refined seed-20260915 model in Supplementary Table 1:
-`f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb`.
-This release includes that model, updated observation layouts and calibration, 24 test reservoirs,
-1,560 saved task/reference score records, and the paper's numerical Source Data.
-NUTS forecasts and diagnostics cover all 24 reservoirs (96 completed chains): 23 pass convergence
-criteria; `test_16` remains included with its diagnostic flag. Mean NUTS permeability, temperature-field
-and pressure-field RMSEs are **0.645 dec, 6.631 K and 0.474 MPa**. The downloadable raw-chain bundles
-cover all 24 reservoirs; their scores and diagnostic summaries are bundled
-in [Source Data](geouno/resources/source_data/final_model_20261015).
+## What is in this release
+
+- The application checkpoint: the refined seed-20260915 model in Supplementary Table 1, SHA-256
+  `f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb`.
+- Updated observation layouts and calibration, 24 test reservoirs, 1,560 saved task/reference score
+  records, and the paper's numerical [Source Data](geouno/resources/source_data/final_model_20261015).
+- NUTS forecasts and diagnostics for all 24 reservoirs (96 completed chains): 23 pass convergence
+  criteria; `test_16` remains included with its diagnostic flag. Mean NUTS permeability,
+  temperature-field and pressure-field RMSEs are **0.645 dec, 6.631 K and 0.474 MPa**.
+  The downloadable raw-chain bundles cover all 24 reservoirs; their scores and diagnostic summaries
+  are bundled in the Source Data.
 
 ## Quick start
 
@@ -41,6 +47,8 @@ geouno paper-numbers                   # recompute tables from packaged Source D
 geouno download                        # checkpoint, prior factor and reservoir cases
 geouno verify                          # hashes and strict checkpoint loading; no prediction
 ```
+
+### Model and data assets
 
 Large final-model assets are on the [`artifacts-final-20261101`](https://github.com/Yulongggggg/AVF_geothermal/tree/artifacts-final-20261101)
 Git LFS branch. Each asset has a URL and SHA-256 in
@@ -100,7 +108,7 @@ Data preparation, training and evaluation commands are in the [CO₂ guide](docs
 
 ![CO2 field gallery](docs/images/co2.png)
 
-## Development and citation
+## Development
 
 ```bash
 python -m pip install -e ".[all,dev]"
@@ -110,6 +118,8 @@ pytest -q -m "not slow and not release and not model_execution"
 
 The [source map](docs/PROVENANCE.md) identifies the archived implementations and numerical verification
 commands. The [reproduction guide](docs/REPRODUCIBILITY.md) gives expected results and execution costs.
+
+## Licences and citation
 
 The GeoUNO Python package is MIT licensed, with component-specific licences listed in
 [THIRD_PARTY.md](THIRD_PARTY.md). The authors' geothermal weights and data are CC BY 4.0;
