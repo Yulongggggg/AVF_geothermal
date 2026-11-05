@@ -52,6 +52,10 @@ geouno = ["resources/*.json", "resources/training_final_20261015/*", "resources/
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# The test suite imports repository-level packages that are not shipped in the
+# wheel (e.g. comparisons/), so put the repository root on sys.path regardless
+# of how pytest is invoked.
+pythonpath = ["."]
 markers = [
     "release: needs the downloaded release artifacts (geouno download)",
     "slow: takes minutes on a CPU",
