@@ -8,7 +8,7 @@
     },
     "figure3": {
       "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dp.pdf",
-      "sha256": "87c7318edb21672dfac5dc984c75546b58f6c88c34a5c1b1cee2fb889b68b73f"
+      "sha256": "7d645217f714077f236c38da5e973ca73c186ad85b29985191c0731e563af70c"
     },
     "figure4": {
       "manuscript_asset": "figures/panel_labels/fig_design_operator_final_20260930.pdf",
@@ -46,7 +46,7 @@
     "eligible_scenarios": 532,
     "actual_members": 8621,
     "selected_scenarios": 8,
-    "member_history_rows": 1474,
+    "member_history_rows": 1441,
     "scenario_time_score_rows": 11704,
     "figure4_location_configurations": 164,
     "figure4_location_ensembles": 6,
@@ -119,13 +119,13 @@
     },
     "fig2_3_display_fields_histories_20261105.npz": {
       "source": "Figure 2/3 reselection from the unchanged operator_final_20261015 full-cohort cache",
-      "sha256": "7350cc2665984fa2e51b375a8a9940eafc42c5d88e9cedbf682ecb3673ef0af7"
+      "sha256": "fd8df244d6df42aac0973282eb28415d5fd6becb28e21efbf0cf8fd6fcf6ff20"
     }
   },
   "files": {
     "README.md": {
-      "bytes": 12169,
-      "sha256": "88ab0777e94b92878ae49ad29d25dba23131433ff6b54c422a4828a8e2a711fe"
+      "bytes": 12203,
+      "sha256": "a3c4781c8261dcd1f40e81c0034df9013478fe39066dfe7e12158f52dcc8ef7c"
     },
     "display_fields_histories.npz": {
       "bytes": 3747393,
@@ -157,31 +157,31 @@
     },
     "fig2_3_array_index.json": {
       "bytes": 19274,
-      "sha256": "5167d37a2e06db4d1d13149417069f08eca67c9b4f720833cf315c696a7b44a4"
+      "sha256": "3433a65d1d64d6e112cc98905e00a32f412336f577e957dd684176df58581907"
     },
     "fig2_3_display_fields_histories_20261105.npz": {
-      "bytes": 3654015,
-      "sha256": "7350cc2665984fa2e51b375a8a9940eafc42c5d88e9cedbf682ecb3673ef0af7"
+      "bytes": 3701251,
+      "sha256": "fd8df244d6df42aac0973282eb28415d5fd6becb28e21efbf0cf8fd6fcf6ff20"
     },
     "fig2_3_map_panels.json": {
-      "bytes": 12852,
-      "sha256": "bc71f74b7da7bfeae6eae872a209bd9029549e425e8af6f9574dd2c745fbf129"
+      "bytes": 12850,
+      "sha256": "6fb86f1c22f54542d37ee2e57fb03c3d35f4cec65a1b570e740b4f2ae78b4e7f"
     },
     "fig2_3_plot_arrays.npz": {
-      "bytes": 3318871,
-      "sha256": "e038350fa7c9a039167fcefda3556f577c2e2e01ab8defbd2638e647b46a10a5"
+      "bytes": 3358510,
+      "sha256": "7fd13acb90899393ec3414d1f888e9db7cbb06a53a97c7469ef3f8684629e8c4"
     },
     "fig2_3_scenario_time_scores.csv.gz": {
       "bytes": 360943,
       "sha256": "204e6e38703efd6dc0dd804b5ce970fb6b76e3727edd952f362ff68ab5c3cefc"
     },
     "fig2_3_selected_member_histories.csv.gz": {
-      "bytes": 45296,
-      "sha256": "2cc0e9c5107dfa51049acd093f70e5324c0caddf89e593d1b16c04ad9ade890f"
+      "bytes": 44230,
+      "sha256": "431630f7b59728966727acc55aae97fd54cede527247ecf29214d32d0c48c49c"
     },
     "fig2_3_selection.json": {
-      "bytes": 6339,
-      "sha256": "2d0390f915dc1904b55d53a12e42d04b20a15e892efaceb4012a5c11af26e620"
+      "bytes": 6320,
+      "sha256": "c008796b986ee75210621e90bfcaa04268c4fd0d40bfa61544f5e6e8b081ef2e"
     },
     "fig2_3_summary_curves.csv.gz": {
       "bytes": 1903,
@@ -804,5 +804,326 @@
     "axes_compared": 32,
     "other_text_changes": [],
     "verification_sha256": "ab355cc581c68ee97d0bfd8a2a224ec50910409fb0cf23d0e0d0f41f641b0515"
+  },
+  "figure3_reselection": {
+    "date": "2026-11-05",
+    "figure2_unchanged": true,
+    "source_display_filename": "fig2_3_display_fields_histories_20261105.npz",
+    "source_display_sha256": "fd8df244d6df42aac0973282eb28415d5fd6becb28e21efbf0cf8fd6fcf6ff20",
+    "original_shared_display_filename": "display_fields_histories.npz",
+    "original_shared_display_sha256": "e3bf8e2bdd011145dd2868c24f26c041ef16e66f235a03e78e73dd81e9facf2c",
+    "original_source_manifest_sha256": "3f34daf841225059d8be144fa560fdf34f8bb4f5d653cb7c34f8f8fc85ab0434",
+    "selection_window_percentage_points": 1.0,
+    "selection_metadata": {
+      "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+      "old_cache_sha256": "e3bf8e2bdd011145dd2868c24f26c041ef16e66f235a03e78e73dd81e9facf2c",
+      "new_cache_sha256": "fd8df244d6df42aac0973282eb28415d5fd6becb28e21efbf0cf8fd6fcf6ff20",
+      "rank_definition": "100 * (one-based rank - 1) / (532 - 1)",
+      "selected": [
+        {
+          "figure": 2,
+          "row_zero_based": 0,
+          "target_percentile": 25,
+          "rank_one_based": 135,
+          "actual_percentile": 25.235404896421844,
+          "scenario": "v4s02343",
+          "member_count": 20,
+          "pack_rows": [
+            79376,
+            79377,
+            79378,
+            79379,
+            79380,
+            79381,
+            79382,
+            79383,
+            79384,
+            79385,
+            79386,
+            79387,
+            79388,
+            79389,
+            79390,
+            79391,
+            79392,
+            79393,
+            79394,
+            79395
+          ],
+          "field_rmse": 0.4045955538749695,
+          "unit": "K",
+          "displayed_FE_cooling_min_K": -0.9356018304824829,
+          "displayed_predicted_cooling_min_K": -0.7900979518890381,
+          "displayed_predicted_P5_cooling_min_K": -0.7782390117645264,
+          "displayed_FE_min_time_increment_K": -0.81500244140625,
+          "displayed_predicted_median_min_time_increment_K": -0.38251179456710815
+        },
+        {
+          "figure": 2,
+          "row_zero_based": 1,
+          "target_percentile": 50,
+          "rank_one_based": 265,
+          "actual_percentile": 49.717514124293785,
+          "scenario": "v4s00003",
+          "member_count": 20,
+          "pack_rows": [
+            57102,
+            57103,
+            57104,
+            57105,
+            57106,
+            57107,
+            57108,
+            57109,
+            57110,
+            57111,
+            57112,
+            57113,
+            57114,
+            57115,
+            57116,
+            57117,
+            57118,
+            57119,
+            57120,
+            57121
+          ],
+          "field_rmse": 0.5057151913642883,
+          "unit": "K",
+          "displayed_FE_cooling_min_K": -1.4364410638809204,
+          "displayed_predicted_cooling_min_K": -1.3850528001785278,
+          "displayed_predicted_P5_cooling_min_K": -1.3579354286193848,
+          "displayed_FE_min_time_increment_K": -0.9067306518554688,
+          "displayed_predicted_median_min_time_increment_K": -0.7336037755012512
+        },
+        {
+          "figure": 2,
+          "row_zero_based": 2,
+          "target_percentile": 75,
+          "rank_one_based": 403,
+          "actual_percentile": 75.70621468926554,
+          "scenario": "v4s00773",
+          "member_count": 20,
+          "pack_rows": [
+            65102,
+            65103,
+            65104,
+            65105,
+            65106,
+            65107,
+            65108,
+            65109,
+            65110,
+            65111,
+            65112,
+            65113,
+            65114,
+            65115,
+            65116,
+            65117,
+            65118,
+            65119,
+            65120,
+            65121
+          ],
+          "field_rmse": 0.7254820466041565,
+          "unit": "K",
+          "displayed_FE_cooling_min_K": -1.679612398147583,
+          "displayed_predicted_cooling_min_K": -1.6419379711151123,
+          "displayed_predicted_P5_cooling_min_K": -1.5571470260620117,
+          "displayed_FE_min_time_increment_K": -1.24822998046875,
+          "displayed_predicted_median_min_time_increment_K": -1.0983097553253174
+        },
+        {
+          "figure": 2,
+          "row_zero_based": 3,
+          "target_percentile": 90,
+          "rank_one_based": 480,
+          "actual_percentile": 90.20715630885122,
+          "scenario": "v4n00301",
+          "member_count": 7,
+          "pack_rows": [
+            49543,
+            49544,
+            49545,
+            49546,
+            49547,
+            49548,
+            49549
+          ],
+          "field_rmse": 1.01822829246521,
+          "unit": "K",
+          "displayed_FE_cooling_min_K": -3.456284523010254,
+          "displayed_predicted_cooling_min_K": -3.3468408584594727,
+          "displayed_predicted_P5_cooling_min_K": -3.12542462348938,
+          "displayed_FE_min_time_increment_K": -2.5621540546417236,
+          "displayed_predicted_median_min_time_increment_K": -2.250887155532837
+        },
+        {
+          "figure": 3,
+          "row_zero_based": 0,
+          "target_percentile": 25,
+          "rank_one_based": 133,
+          "actual_percentile": 24.858757062146893,
+          "scenario": "v4s02368",
+          "member_count": 20,
+          "pack_rows": [
+            79796,
+            79797,
+            79798,
+            79799,
+            79800,
+            79801,
+            79802,
+            79803,
+            79804,
+            79805,
+            79806,
+            79807,
+            79808,
+            79809,
+            79810,
+            79811,
+            79812,
+            79813,
+            79814,
+            79815
+          ],
+          "field_rmse": 0.10594115406274796,
+          "unit": "MPa"
+        },
+        {
+          "figure": 3,
+          "row_zero_based": 1,
+          "target_percentile": 50,
+          "rank_one_based": 267,
+          "actual_percentile": 50.09416195856874,
+          "scenario": "v4n00283",
+          "member_count": 7,
+          "pack_rows": [
+            49401,
+            49402,
+            49403,
+            49404,
+            49405,
+            49406,
+            49407
+          ],
+          "field_rmse": 0.2845536470413208,
+          "unit": "MPa"
+        },
+        {
+          "figure": 3,
+          "row_zero_based": 2,
+          "target_percentile": 75,
+          "rank_one_based": 397,
+          "actual_percentile": 74.57627118644068,
+          "scenario": "v4m02894",
+          "member_count": 20,
+          "pack_rows": [
+            41356,
+            41357,
+            41358,
+            41359,
+            41360,
+            41361,
+            41362,
+            41363,
+            41364,
+            41365,
+            41366,
+            41367,
+            41368,
+            41369,
+            41370,
+            41371,
+            41372,
+            41373,
+            41374,
+            41375
+          ],
+          "field_rmse": 0.624169111251831,
+          "unit": "MPa"
+        },
+        {
+          "figure": 3,
+          "row_zero_based": 3,
+          "target_percentile": 90,
+          "rank_one_based": 480,
+          "actual_percentile": 90.20715630885122,
+          "scenario": "v4m02082",
+          "member_count": 17,
+          "pack_rows": [
+            34944,
+            34945,
+            34946,
+            34947,
+            34948,
+            34949,
+            34950,
+            34951,
+            34952,
+            34953,
+            34954,
+            34955,
+            34956,
+            34957,
+            34958,
+            34959,
+            34960
+          ],
+          "field_rmse": 1.1885002851486206,
+          "unit": "MPa"
+        }
+      ],
+      "unchanged_global_arrays": [
+        "film_ti",
+        "rmse_dT",
+        "rmse_dp",
+        "rmse_well_dT",
+        "rmse_well_dp",
+        "scen_ok",
+        "sigcorr_dT",
+        "sigcorr_dp",
+        "sr_dT",
+        "sr_dp",
+        "tags",
+        "ty"
+      ],
+      "source": "Previously archived model predictions and FE responses; no new network inference."
+    },
+    "previous_figures": {
+      "figure2": {
+        "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dT.pdf",
+        "sha256": "b3a4159407df6c1fdc07ff5d6d731aecf2a8a468edae60228909b23e749b4892"
+      },
+      "figure3": {
+        "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dp.pdf",
+        "sha256": "87c7318edb21672dfac5dc984c75546b58f6c88c34a5c1b1cee2fb889b68b73f"
+      }
+    },
+    "new_figures": {
+      "figure2": {
+        "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dT.pdf",
+        "sha256": "b3a4159407df6c1fdc07ff5d6d731aecf2a8a468edae60228909b23e749b4892"
+      },
+      "figure3": {
+        "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dp.pdf",
+        "sha256": "7d645217f714077f236c38da5e973ca73c186ad85b29985191c0731e563af70c"
+      }
+    },
+    "layout_sha256": {
+      "figure2": "7fea2672f6cf44f8332b91e3e5023f2098ff5f589c6aed77ee22144792145308",
+      "figure3": "68931357166f2c026491a7a6a99747ccfbb6cf68cf0614820c83db07f4516277"
+    },
+    "source_cache_hashes": {
+      "manifest.json": "9a3af74cad68a8073b7b6d76135fa0c3b83c3ef9b85bbbd1a52d6d24bd068a7d",
+      "metrics.json": "255a8b2a4d52ad3390669044dbf9a3dfa68b9f6f5dd957dc96cc46a57ef2950a",
+      "wells.npz": "c88d8ae51dfa4a52a31dcbf47bdc4e620de8007aea0738169e2ea6e88e5850e5"
+    },
+    "export_script_sha256": "b37dfe3479fdc358e7eeefbca90fc0c4a22427eb21aacd981f30fda0277952ea",
+    "aggregate_panels_d_e_unchanged": true,
+    "other_figure_files_unchanged": true,
+    "original_renderer_and_figure1_provenance_retained": true
   }
 }

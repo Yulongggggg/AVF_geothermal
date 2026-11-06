@@ -51,7 +51,7 @@ to 4,096 whitened latent coordinates, reshaped to 64 × 64 for display.
 | `scenario_cohort.json` | All 618 scenarios, pack-row IDs, member slices, stored times and the 532-scenario distribution subset |
 
 
-The gallery cases lie within one percentage point of P25, P50, P75 and P90 of ten-year ensemble-mean field RMSE. Within these windows, examples were chosen for clearer injector–producer pathways in `M`; temperature examples additionally require positive producer cooling at ten years for every FE and predicted member. Full time histories, including early times, are retained. The selection file records the exact ranks and percentiles. Panels d and e retain the full 532-scenario cohort.
+The gallery cases lie within one percentage point of P25, P50, P75 and P90 of ten-year ensemble-mean field RMSE. Within these windows, examples were chosen to show clear permeability structure and spatial and temporal reservoir responses. Temperature examples additionally require positive producer cooling at ten years for every FE and predicted member. Full time histories, including early times, are retained. The selection file records the exact ranks and percentiles. Panels d and e retain the full 532-scenario cohort.
 
 The `fig2_3_plot_arrays.npz` keys use `figure2` for temperature and `figure3` for
 pressure. Rows are zero based, in P25/P50/P75/P90 order:
