@@ -40,14 +40,18 @@ to 4,096 whitened latent coordinates, reshaped to 64 × 64 for display.
 | `fig2_3_plot_arrays.npz` | Displayed arrays for panels a–e, with keys listed below |
 | `fig2_3_map_panels.json` | Panel a array names, scenarios, units and colour limits |
 | `fig2_3_array_index.json` | Shape, dtype and SHA-256 of each displayed array |
-| `fig2_3_selection.json` | P25/P50/P75/P90 scenario IDs, ranks, members, well coordinates and operating parameters |
+| `fig2_3_selection.json` | Scenario IDs, exact ranks/percentiles within one percentage point of P25/P50/P75/P90, members, well coordinates and operating parameters |
 | `fig2_3_selected_member_histories.csv.gz` | Individual FE and GeoUNO responses and derived power/integral for panel c |
 | `fig2_3_scenario_time_scores.csv.gz` | All 532 eligible scenarios at eleven times for panels d and e |
 | `fig2_3_summary_curves.csv.gz` | Medians and interquartile limits displayed in panels d and e |
-| `display_fields_histories.npz` | Unmodified saved input to the original renderer: selected fields, member histories and scenario metrics |
+| `fig2_3_display_fields_histories_20261105.npz` | Current Figure 2/3 renderer input, selected from the unchanged full-cohort cache |
+| `display_fields_histories.npz` | Original renderer input retained for Figure 1 and the previous Figure 2/3 provenance |
 | `well_distribution_w1.npz` | Unmodified saved well-response Wasserstein-1 arrays, in `distribution_scenarios` order |
 | `paired_well_members.npz` | FE and GeoUNO well responses for all 8,621 members at eleven times |
 | `scenario_cohort.json` | All 618 scenarios, pack-row IDs, member slices, stored times and the 532-scenario distribution subset |
+
+
+The gallery cases lie within one percentage point of P25, P50, P75 and P90 of ten-year ensemble-mean field RMSE. Within these windows, examples were chosen for clearer injector–producer pathways in `M`; temperature examples additionally require positive producer cooling at ten years for every FE and predicted member. Full time histories, including early times, are retained. The selection file records the exact ranks and percentiles. Panels d and e retain the full 532-scenario cohort.
 
 The `fig2_3_plot_arrays.npz` keys use `figure2` for temperature and `figure3` for
 pressure. Rows are zero based, in P25/P50/P75/P90 order:

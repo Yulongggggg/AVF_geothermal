@@ -4,15 +4,15 @@
   "figures": {
     "figure2": {
       "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dT.pdf",
-      "sha256": "dcd8f4ea2edbe958ff517b9c0b92abde65cf506a95e47b6cabc0dfb85d63502b"
+      "sha256": "b3a4159407df6c1fdc07ff5d6d731aecf2a8a468edae60228909b23e749b4892"
     },
     "figure3": {
       "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dp.pdf",
-      "sha256": "ccdecc6b50271d83f1fbecb9271ce9551106ddfc9aee2f2e37442be33bfed75b"
+      "sha256": "87c7318edb21672dfac5dc984c75546b58f6c88c34a5c1b1cee2fb889b68b73f"
     },
     "figure4": {
       "manuscript_asset": "figures/panel_labels/fig_design_operator_final_20260930.pdf",
-      "sha256": "011a1db29f88a6b24b7f9d848b9a75880ece72a13d7804a7a90970fe4ec9c87d"
+      "sha256": "d72875e73f4f6075ddd17852081244da7f81ed70062aa1d1dc06d872a2e34c99"
     },
     "figure5": {
       "manuscript_asset": "figures/scientific_audit_20261002/fig_inverse_raw.pdf",
@@ -46,7 +46,7 @@
     "eligible_scenarios": 532,
     "actual_members": 8621,
     "selected_scenarios": 8,
-    "member_history_rows": 1188,
+    "member_history_rows": 1474,
     "scenario_time_score_rows": 11704,
     "figure4_location_configurations": 164,
     "figure4_location_ensembles": 6,
@@ -116,12 +116,16 @@
     "fig4_location_group_5.npz": {
       "source": "forward_evidence/location_group_5.npz",
       "sha256": "5800834b635beea6c650546a2d70e386e8c8b43c7f87dcfcebd5884dceba05ad"
+    },
+    "fig2_3_display_fields_histories_20261105.npz": {
+      "source": "Figure 2/3 reselection from the unchanged operator_final_20261015 full-cohort cache",
+      "sha256": "7350cc2665984fa2e51b375a8a9940eafc42c5d88e9cedbf682ecb3673ef0af7"
     }
   },
   "files": {
     "README.md": {
-      "bytes": 11512,
-      "sha256": "b010433f4c36e4de5c49bca109890d24031c093e4248201383c751272737a8c7"
+      "bytes": 12169,
+      "sha256": "88ab0777e94b92878ae49ad29d25dba23131433ff6b54c422a4828a8e2a711fe"
     },
     "display_fields_histories.npz": {
       "bytes": 3747393,
@@ -152,28 +156,32 @@
       "sha256": "3b365c5f116bafafbb11dbdbf2aa40a68e32fddd686fa760aca73bbb192e5070"
     },
     "fig2_3_array_index.json": {
-      "bytes": 19266,
-      "sha256": "332841cf4f895dd7e1b2c176abccffc8405e49a9e0d1dbd5750060eed233ff02"
+      "bytes": 19274,
+      "sha256": "5167d37a2e06db4d1d13149417069f08eca67c9b4f720833cf315c696a7b44a4"
+    },
+    "fig2_3_display_fields_histories_20261105.npz": {
+      "bytes": 3654015,
+      "sha256": "7350cc2665984fa2e51b375a8a9940eafc42c5d88e9cedbf682ecb3673ef0af7"
     },
     "fig2_3_map_panels.json": {
-      "bytes": 12850,
-      "sha256": "ca728b1f31c6d2e9f2b74f3ce6ce22b67d614eb8aaf9d4fb2f6edd2c977b6c39"
+      "bytes": 12852,
+      "sha256": "bc71f74b7da7bfeae6eae872a209bd9029549e425e8af6f9574dd2c745fbf129"
     },
     "fig2_3_plot_arrays.npz": {
-      "bytes": 3406156,
-      "sha256": "59b913191a10caf3cdada87d06ec039a368c34550211e0b616749c51970ce8a9"
+      "bytes": 3318871,
+      "sha256": "e038350fa7c9a039167fcefda3556f577c2e2e01ab8defbd2638e647b46a10a5"
     },
     "fig2_3_scenario_time_scores.csv.gz": {
       "bytes": 360943,
       "sha256": "204e6e38703efd6dc0dd804b5ce970fb6b76e3727edd952f362ff68ab5c3cefc"
     },
     "fig2_3_selected_member_histories.csv.gz": {
-      "bytes": 36303,
-      "sha256": "4f4c0adabc2646cf10f2b04b3b1384dcb3015620ec836bafd3bdacfc1112b9cd"
+      "bytes": 45296,
+      "sha256": "2cc0e9c5107dfa51049acd093f70e5324c0caddf89e593d1b16c04ad9ade890f"
     },
     "fig2_3_selection.json": {
-      "bytes": 5323,
-      "sha256": "3967ed1d5ef97ed77a1d1645001847a19353cd31b0aa0ede25ef96e1168321d2"
+      "bytes": 6339,
+      "sha256": "2d0390f915dc1904b55d53a12e42d04b20a15e892efaceb4012a5c11af26e620"
     },
     "fig2_3_summary_curves.csv.gz": {
       "bytes": 1903,
@@ -447,5 +455,354 @@
         "nontext_changed_pixel_count": 0
       }
     ]
+  },
+  "figure23_reselection": {
+    "date": "2026-11-05",
+    "source_display_filename": "fig2_3_display_fields_histories_20261105.npz",
+    "source_display_sha256": "7350cc2665984fa2e51b375a8a9940eafc42c5d88e9cedbf682ecb3673ef0af7",
+    "original_shared_display_filename": "display_fields_histories.npz",
+    "original_shared_display_sha256": "e3bf8e2bdd011145dd2868c24f26c041ef16e66f235a03e78e73dd81e9facf2c",
+    "original_source_manifest_sha256": "4ab1e788c228972e4e4b796a012f8135143799a43ee2b3abf49cbf0078dd4692",
+    "selection_window_percentage_points": 1.0,
+    "selection_metadata": {
+      "checkpoint_sha256": "f39894ff83e04f47b2a9098f0e387540e1390cf12b9d7f8726dc815dffd16dbb",
+      "old_cache_sha256": "e3bf8e2bdd011145dd2868c24f26c041ef16e66f235a03e78e73dd81e9facf2c",
+      "new_cache_sha256": "7350cc2665984fa2e51b375a8a9940eafc42c5d88e9cedbf682ecb3673ef0af7",
+      "rank_definition": "100 * (one-based rank - 1) / (532 - 1)",
+      "selected": [
+        {
+          "figure": 2,
+          "row_zero_based": 0,
+          "target_percentile": 25,
+          "rank_one_based": 135,
+          "actual_percentile": 25.235404896421844,
+          "scenario": "v4s02343",
+          "member_count": 20,
+          "pack_rows": [
+            79376,
+            79377,
+            79378,
+            79379,
+            79380,
+            79381,
+            79382,
+            79383,
+            79384,
+            79385,
+            79386,
+            79387,
+            79388,
+            79389,
+            79390,
+            79391,
+            79392,
+            79393,
+            79394,
+            79395
+          ],
+          "field_rmse": 0.4045955538749695,
+          "unit": "K",
+          "displayed_FE_cooling_min_K": -0.9356018304824829,
+          "displayed_predicted_cooling_min_K": -0.7900979518890381,
+          "displayed_predicted_P5_cooling_min_K": -0.7782390117645264,
+          "displayed_FE_min_time_increment_K": -0.81500244140625,
+          "displayed_predicted_median_min_time_increment_K": -0.38251179456710815
+        },
+        {
+          "figure": 2,
+          "row_zero_based": 1,
+          "target_percentile": 50,
+          "rank_one_based": 265,
+          "actual_percentile": 49.717514124293785,
+          "scenario": "v4s00003",
+          "member_count": 20,
+          "pack_rows": [
+            57102,
+            57103,
+            57104,
+            57105,
+            57106,
+            57107,
+            57108,
+            57109,
+            57110,
+            57111,
+            57112,
+            57113,
+            57114,
+            57115,
+            57116,
+            57117,
+            57118,
+            57119,
+            57120,
+            57121
+          ],
+          "field_rmse": 0.5057151913642883,
+          "unit": "K",
+          "displayed_FE_cooling_min_K": -1.4364410638809204,
+          "displayed_predicted_cooling_min_K": -1.3850528001785278,
+          "displayed_predicted_P5_cooling_min_K": -1.3579354286193848,
+          "displayed_FE_min_time_increment_K": -0.9067306518554688,
+          "displayed_predicted_median_min_time_increment_K": -0.7336037755012512
+        },
+        {
+          "figure": 2,
+          "row_zero_based": 2,
+          "target_percentile": 75,
+          "rank_one_based": 403,
+          "actual_percentile": 75.70621468926554,
+          "scenario": "v4s00773",
+          "member_count": 20,
+          "pack_rows": [
+            65102,
+            65103,
+            65104,
+            65105,
+            65106,
+            65107,
+            65108,
+            65109,
+            65110,
+            65111,
+            65112,
+            65113,
+            65114,
+            65115,
+            65116,
+            65117,
+            65118,
+            65119,
+            65120,
+            65121
+          ],
+          "field_rmse": 0.7254820466041565,
+          "unit": "K",
+          "displayed_FE_cooling_min_K": -1.679612398147583,
+          "displayed_predicted_cooling_min_K": -1.6419379711151123,
+          "displayed_predicted_P5_cooling_min_K": -1.5571470260620117,
+          "displayed_FE_min_time_increment_K": -1.24822998046875,
+          "displayed_predicted_median_min_time_increment_K": -1.0983097553253174
+        },
+        {
+          "figure": 2,
+          "row_zero_based": 3,
+          "target_percentile": 90,
+          "rank_one_based": 480,
+          "actual_percentile": 90.20715630885122,
+          "scenario": "v4n00301",
+          "member_count": 7,
+          "pack_rows": [
+            49543,
+            49544,
+            49545,
+            49546,
+            49547,
+            49548,
+            49549
+          ],
+          "field_rmse": 1.01822829246521,
+          "unit": "K",
+          "displayed_FE_cooling_min_K": -3.456284523010254,
+          "displayed_predicted_cooling_min_K": -3.3468408584594727,
+          "displayed_predicted_P5_cooling_min_K": -3.12542462348938,
+          "displayed_FE_min_time_increment_K": -2.5621540546417236,
+          "displayed_predicted_median_min_time_increment_K": -2.250887155532837
+        },
+        {
+          "figure": 3,
+          "row_zero_based": 0,
+          "target_percentile": 25,
+          "rank_one_based": 129,
+          "actual_percentile": 24.105461393596986,
+          "scenario": "v4m03952",
+          "member_count": 20,
+          "pack_rows": [
+            46879,
+            46880,
+            46881,
+            46882,
+            46883,
+            46884,
+            46885,
+            46886,
+            46887,
+            46888,
+            46889,
+            46890,
+            46891,
+            46892,
+            46893,
+            46894,
+            46895,
+            46896,
+            46897,
+            46898
+          ],
+          "field_rmse": 0.10238967835903168,
+          "unit": "MPa"
+        },
+        {
+          "figure": 3,
+          "row_zero_based": 1,
+          "target_percentile": 50,
+          "rank_one_based": 269,
+          "actual_percentile": 50.47080979284369,
+          "scenario": "v4n00303",
+          "member_count": 7,
+          "pack_rows": [
+            49559,
+            49560,
+            49561,
+            49562,
+            49563,
+            49564,
+            49565
+          ],
+          "field_rmse": 0.2915448248386383,
+          "unit": "MPa"
+        },
+        {
+          "figure": 3,
+          "row_zero_based": 2,
+          "target_percentile": 75,
+          "rank_one_based": 403,
+          "actual_percentile": 75.70621468926554,
+          "scenario": "v4s00002",
+          "member_count": 20,
+          "pack_rows": [
+            57081,
+            57082,
+            57083,
+            57084,
+            57085,
+            57086,
+            57087,
+            57088,
+            57089,
+            57090,
+            57091,
+            57092,
+            57093,
+            57094,
+            57095,
+            57096,
+            57097,
+            57098,
+            57099,
+            57100
+          ],
+          "field_rmse": 0.6576417684555054,
+          "unit": "MPa"
+        },
+        {
+          "figure": 3,
+          "row_zero_based": 3,
+          "target_percentile": 90,
+          "rank_one_based": 477,
+          "actual_percentile": 89.6421845574388,
+          "scenario": "v4m02361",
+          "member_count": 20,
+          "pack_rows": [
+            37156,
+            37157,
+            37158,
+            37159,
+            37160,
+            37161,
+            37162,
+            37163,
+            37164,
+            37165,
+            37166,
+            37167,
+            37168,
+            37169,
+            37170,
+            37171,
+            37172,
+            37173,
+            37174,
+            37175
+          ],
+          "field_rmse": 1.1658923625946045,
+          "unit": "MPa"
+        }
+      ],
+      "unchanged_global_arrays": [
+        "film_ti",
+        "rmse_dT",
+        "rmse_dp",
+        "rmse_well_dT",
+        "rmse_well_dp",
+        "scen_ok",
+        "sigcorr_dT",
+        "sigcorr_dp",
+        "sr_dT",
+        "sr_dp",
+        "tags",
+        "ty"
+      ],
+      "source": "Previously archived model predictions and FE responses; no new network inference."
+    },
+    "previous_figures": {
+      "figure2": {
+        "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dT.pdf",
+        "sha256": "dcd8f4ea2edbe958ff517b9c0b92abde65cf506a95e47b6cabc0dfb85d63502b"
+      },
+      "figure3": {
+        "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dp.pdf",
+        "sha256": "ccdecc6b50271d83f1fbecb9271ce9551106ddfc9aee2f2e37442be33bfed75b"
+      }
+    },
+    "new_figures": {
+      "figure2": {
+        "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dT.pdf",
+        "sha256": "b3a4159407df6c1fdc07ff5d6d731aecf2a8a468edae60228909b23e749b4892"
+      },
+      "figure3": {
+        "manuscript_asset": "figures/panel_labels/fig_pred_time_operator_final_20260930_dp.pdf",
+        "sha256": "87c7318edb21672dfac5dc984c75546b58f6c88c34a5c1b1cee2fb889b68b73f"
+      }
+    },
+    "layout_sha256": {
+      "figure2": "7fea2672f6cf44f8332b91e3e5023f2098ff5f589c6aed77ee22144792145308",
+      "figure3": "afcfe949a2bfbc9924e6bfbd536667124d66a72702842c7169c6fc65ead3df28"
+    },
+    "source_cache_hashes": {
+      "manifest.json": "9a3af74cad68a8073b7b6d76135fa0c3b83c3ef9b85bbbd1a52d6d24bd068a7d",
+      "metrics.json": "255a8b2a4d52ad3390669044dbf9a3dfa68b9f6f5dd957dc96cc46a57ef2950a",
+      "wells.npz": "c88d8ae51dfa4a52a31dcbf47bdc4e620de8007aea0738169e2ea6e88e5850e5"
+    },
+    "export_script_sha256": "90fc200226ed37ce6e832903c9007e03636cc2d86c3e18fbba517ae2dd51f98f",
+    "aggregate_panels_d_e_unchanged": true,
+    "other_figure_files_unchanged": true,
+    "original_renderer_and_figure1_provenance_retained": true
+  },
+  "figure4_label_revision_20261105": {
+    "date": "2026-11-05",
+    "before_pdf_sha256": "011a1db29f88a6b24b7f9d848b9a75880ece72a13d7804a7a90970fe4ec9c87d",
+    "after_pdf_sha256": "d72875e73f4f6075ddd17852081244da7f81ed70062aa1d1dc06d872a2e34c99",
+    "text_changes": [
+      {
+        "index": 9,
+        "old": "median $\\Delta T$ at 10 y (K) \u2014 operator",
+        "new": "median $\\Delta T$ at 10 y (K)"
+      },
+      {
+        "index": 73,
+        "old": "median $\\Delta p$ at 10 y (MPa) \u2014 operator",
+        "new": "median $\\Delta p$ at 10 y (MPa)"
+      },
+      {
+        "index": 127,
+        "old": "P90 $\\Delta p$ at 10 y (MPa) \u2014 operator",
+        "new": "P90 $\\Delta p$ at 10 y (MPa)"
+      }
+    ],
+    "scientific_data_axes_positions_colors_unchanged": true,
+    "axes_compared": 32,
+    "other_text_changes": [],
+    "verification_sha256": "ab355cc581c68ee97d0bfd8a2a224ec50910409fb0cf23d0e0d0f41f641b0515"
   }
 }

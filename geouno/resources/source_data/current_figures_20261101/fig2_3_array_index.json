@@ -5,7 +5,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "f3ed6723e66e98d3373bbc61d44e9fa689f356cd48c40c105af2803ec64a5955"
+    "sha256": "a9be5bb456848d71538d0a9d5cc1b65a63a78a33f774a3962d150f12bdd5dfdd"
   },
   "figure2_a_row0_fe_ensemble_mean": {
     "shape": [
@@ -13,7 +13,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "2722fe0ef3c533f3592d2049f7be49b33640c9794712382fb6271746207ca59d"
+    "sha256": "00a7724a57bbc9765ac13976712b5342b8fe8b4edccd620ee65c95dad89df8e0"
   },
   "figure2_a_row0_geouno_ensemble_mean": {
     "shape": [
@@ -21,7 +21,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "eb653a3369e81a11786bf8286ae66f8a8e6a800e8385ffa2e12b884493fc22c6"
+    "sha256": "43f0190da27665c2883ad22a5114ede5b09d73dbb9aaa22eddb8d311652f4292"
   },
   "figure2_a_row0_error": {
     "shape": [
@@ -29,7 +29,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "4569cd2683f5c41fcdabdc9b2a9b62b29f3d9106c5247c1034b83442b0bf2baf"
+    "sha256": "b6612583c77bb2f9fc3745b78ab5eff5f697df5d11d7c8841ec6078c1a604ff9"
   },
   "figure2_a_row0_geouno_standard_deviation": {
     "shape": [
@@ -37,7 +37,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "0f1c126c978a7601271d999565a737434b8c812550a99299a63714eaba6115b5"
+    "sha256": "1c7497939804039a95fd70337d1c3a723644669e62096e4a5943205cefd2534d"
   },
   "figure2_c_row0_fe_response": {
     "shape": [
@@ -45,7 +45,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "8f3a9a65542b9470038ae3361e04a56c9eeeb6ddc317f2b48da25a49b0b7208a"
+    "sha256": "615afaac09e0987522bdf5709af7a647c8e289416cb258822e354b15ae340758"
   },
   "figure2_c_row0_fe_lower": {
     "shape": [
@@ -53,7 +53,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "6ede04f2954c9c31e83d085767b8d11ece630b538febba00fad840277fa03093"
+    "sha256": "179919d6a87b65fbe5cfdfe08a8a616772116c5594a7e4265845c063a60e812e"
   },
   "figure2_c_row0_geouno_response": {
     "shape": [
@@ -61,7 +61,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "c9eee47826ba04c0d798e531fd334a5c416463952820e7321241e33dea2f4ece"
+    "sha256": "29e695ec5a0a66714c41a0a44e96ec8147304ed423a655ee5cc486dd54208c70"
   },
   "figure2_c_row0_geouno_lower": {
     "shape": [
@@ -69,7 +69,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "6c4979e131b06fbb970d7478187d528f921070b15efa394a21985ab6f064db47"
+    "sha256": "8db5e4d9b221af6838287c37ceb849894f33fb243d75b4d1ce4ba7ba6f938ed9"
   },
   "figure2_c_row0_geouno_response_quantiles": {
     "shape": [
@@ -77,7 +77,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "0f27cf659fdc2dec71f44bd042d1942f316b955fce62070e7761c27e3b7ce751"
+    "sha256": "607214badf9a3a513514bb9ae5df5dace1097ca460735faf7a271713c10fb4f6"
   },
   "figure2_c_row0_geouno_lower_quantiles": {
     "shape": [
@@ -85,7 +85,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "b8bf0f65ca92f148319ddb8e2be68b0686617458113a2b9dc58801c3baa1c560"
+    "sha256": "8f457c3c6b3f69f0e01aace8bf47c1c2681e7d6c129e1fe07434a7746aed81ea"
   },
   "figure2_a_row1_mean_log10_permeability": {
     "shape": [
@@ -93,7 +93,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "82fdf104c35220b45c9f159d8f6f548c5846afa35656158e2cb2f98cf4a3b3c4"
+    "sha256": "c2a399818cd939115858fcb719b44995ae1bf3e67e6226fdd8bd2891acf7a52f"
   },
   "figure2_a_row1_fe_ensemble_mean": {
     "shape": [
@@ -101,7 +101,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "11ccb4cbb28241b4b4c3bddd10decf25b65281c4dfc91660360d5b49b18f729a"
+    "sha256": "4de8a82c9b197d896a9b1d08e8ef8be126d2c4397a508918dea8fca7dd806fe1"
   },
   "figure2_a_row1_geouno_ensemble_mean": {
     "shape": [
@@ -109,7 +109,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "00edbb97f759f73d5542557cc78e17c2e889282053a514ba7179baf428dfcdf1"
+    "sha256": "468be307cfd15b39c05453fb7bf19127b8f230cc3191cbb316a4b533ee2e7661"
   },
   "figure2_a_row1_error": {
     "shape": [
@@ -117,7 +117,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "8fdd038463c282a5f894d131b8a8c7ada19dc027b73352e1f25cb404cc16e744"
+    "sha256": "196886488a6af0dc425c8c1eeb0bc268ec9683791135f824c77b97b55142d9e3"
   },
   "figure2_a_row1_geouno_standard_deviation": {
     "shape": [
@@ -125,39 +125,39 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "41b8c35b06ab7c501966a2273d9fb2751353473424c7b1a558f313bd8d4a7ed4"
+    "sha256": "effca128d8b08f9900c9c7e8ef96717eaa3e20f18b385287a5032d127a9dc9e2"
   },
   "figure2_c_row1_fe_response": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "48dd0d7e5003846671d3a761c97a7deb55cc3eb27f654247aefe1f58090b450b"
+    "sha256": "044a3fad4f597e3122201587db328654b71d692b08d2bf2b3b3a529a9b986c9e"
   },
   "figure2_c_row1_fe_lower": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "e2b45f1a381ac36ea896e74a77b32aeb9ba07487d48a0bf663178c977999ef83"
+    "sha256": "216f28a995133cc15f6626ac0a90a9d68f19ab90a7f0753826ede03e91abc8b5"
   },
   "figure2_c_row1_geouno_response": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "4fc3890b9c9732255f52d5b6cc95f8be5355a684f823ddac4d3aea708d681832"
+    "sha256": "746cbd079d408572101b111e1c2a47a96469d45dd04163b44a5538f9879df1c0"
   },
   "figure2_c_row1_geouno_lower": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "4f4ac50b3adfdf78cd4c5ad5aa3666d31cb76501bde9a354fb008cb89b19ee22"
+    "sha256": "da706919c4d525a67eea06770315fd5f42656495f42db0629aa896a92ef51f20"
   },
   "figure2_c_row1_geouno_response_quantiles": {
     "shape": [
@@ -165,7 +165,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "7930784012d8327d073310b91376309b4d4ee2862cc39e93853da85d8b14b640"
+    "sha256": "4b8881f5025b6235912baa1bbdcbe442bad24968e25074f0f6163a7e119ba08a"
   },
   "figure2_c_row1_geouno_lower_quantiles": {
     "shape": [
@@ -173,7 +173,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "68b1eedb762fd3c3a911572821b9e576b8b3026e2ec1ccb814b87fe785f3e3ce"
+    "sha256": "7989b64ec7d6ec83b0b44c5f60c8a3242df1cf12ab80112145fc1e9e4ab31d0e"
   },
   "figure2_a_row2_mean_log10_permeability": {
     "shape": [
@@ -181,7 +181,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "c752073b14c027b6a7f8187f03caaac0fc24aa21d354c74dc0a6ae6417d445a4"
+    "sha256": "18fa6308e1ca1c1f2bfd6e0c373add524dd061628617f39e874f1ee32b1f76d0"
   },
   "figure2_a_row2_fe_ensemble_mean": {
     "shape": [
@@ -189,7 +189,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "e91b4e6778369d97600d509f259b905ba1ade987a8ff9126313b04fb12695022"
+    "sha256": "2c6a6fe30ffabaaf30db18bd57c08e6e7df36e8f60c2720efcc385bea4b0a7bd"
   },
   "figure2_a_row2_geouno_ensemble_mean": {
     "shape": [
@@ -197,7 +197,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "cde7536f067670fef037d2aaa9c0d1dfc321c9a772305dc7bd5d18266c7f7345"
+    "sha256": "6fc6f818b0e30a50773e2cff3b21c1d370a2053f7df9b9ab53f76e4220f54fb5"
   },
   "figure2_a_row2_error": {
     "shape": [
@@ -205,7 +205,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "56509372fd7cc5b1960570f90133a63219f8645f9765a0fa79d60d093eb95d1b"
+    "sha256": "03b1534fcea44bcee8a3a1a5fb38dbd9c7cbaf020d552c78f871a7f3ac021376"
   },
   "figure2_a_row2_geouno_standard_deviation": {
     "shape": [
@@ -213,39 +213,39 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "13d5dac52c968e1d5e82042902bb5c8aabfdae478e2606e5be437c32cdcc627e"
+    "sha256": "7f2f3f7a5cd04f534036494b392e44689474a32b381febf5c4ee9ffd89c4e561"
   },
   "figure2_c_row2_fe_response": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "eed33b49d9aea5b83eb10301f41cbb7f0320e739d1c6af022c13a9a6231c5864"
+    "sha256": "e9ee589c27181e5ecfb2a6945cbc3bcddf95e54253d9c5fb9511348dee3420f4"
   },
   "figure2_c_row2_fe_lower": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "37fce212931bd99634ab8e46508e870c32d1b4ac844f8895525dcec50df63938"
+    "sha256": "d507932c55baa27e301ffd99432af1b60c38c43ae13de0ad3ed22e823c0f7284"
   },
   "figure2_c_row2_geouno_response": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "f96d4923036a19283c46dfb3de431f89ccd5d58a307cc634a108c062a0530f2a"
+    "sha256": "11590cc2c540589b4b5e4f7591161cbfb6ab6954d46946ca044afc50ba69a52d"
   },
   "figure2_c_row2_geouno_lower": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "b46417fca5bdf819efefa6c2503d5e861165803c1d4a9dcff90ac56009d10a4b"
+    "sha256": "48bc67f7dd44935d536941966a8ef0bfc83cd1080970ca3bf8cf080e653fa834"
   },
   "figure2_c_row2_geouno_response_quantiles": {
     "shape": [
@@ -253,7 +253,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "63a73cc33a08e0c76923aebf1488f71f777e12370be115c1a07bfe1a5d825c9e"
+    "sha256": "e3e6384fd90f5a5b4b1b817ad227d74cad64f17142d8b36a8287c127b861e22d"
   },
   "figure2_c_row2_geouno_lower_quantiles": {
     "shape": [
@@ -261,7 +261,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "7dd15e949c04deab407dea5f986bcbe572967b9ecd613d6b1c0115599455a43c"
+    "sha256": "043e37e26eca8d0c4bc0b6dd4e4986cee23ee0ee23e7293a4413902afde6ea3c"
   },
   "figure2_a_row3_mean_log10_permeability": {
     "shape": [
@@ -269,7 +269,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "0f5c4d46c8b7d4103ad423b62d2cb42734b950dc3b5dff2e3aeaa8364bd2e0f1"
+    "sha256": "64469ecd63aadae3b22092c0ffd5183cc4f3dae0961cecd0448c051d1f2449a4"
   },
   "figure2_a_row3_fe_ensemble_mean": {
     "shape": [
@@ -277,7 +277,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "e786dd7d046ce1562c2f6efe0969f1d317f45c950dd7752eda5dbe9b653d75dc"
+    "sha256": "c05b7792b0779844cd8a8f1b38e56a6354ee5c73e1c5827af13f1946f50ddce6"
   },
   "figure2_a_row3_geouno_ensemble_mean": {
     "shape": [
@@ -285,7 +285,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "5502444606a31e033101cd6e33200d796972c1cb8fd06ec5fd54d3b667b98b26"
+    "sha256": "cce5031899f1e070448e19bd1b45484a45db44ed9c14db572a8d5cff60729c40"
   },
   "figure2_a_row3_error": {
     "shape": [
@@ -293,7 +293,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "da9e67b12e112fed139429d2630fe76654fe4cc9c0e57070c8e94bbb31bb0762"
+    "sha256": "84dd2e2026b0560a965c0510e30eea4c262e091ffe6d07e3787e48d4339ebf31"
   },
   "figure2_a_row3_geouno_standard_deviation": {
     "shape": [
@@ -301,39 +301,39 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "dd0a5ec12ce3b4686ee7cd88d6d578e3d544a0fd023e429ec2db9c77901780fb"
+    "sha256": "95f2dd0b08b4ed9c2741822bf33e90e4c4c08d741f2573086e5c7a7e7dbb4d54"
   },
   "figure2_c_row3_fe_response": {
     "shape": [
-      20,
+      7,
       9
     ],
     "dtype": "float32",
-    "sha256": "854b24ffa621fa3a59b6dfce0cd0d01f735caa1811eed6331c5ba8869778892b"
+    "sha256": "7ca2016fbd9435b556a245e0ae1d7239ca6b4473f8482979972b3ab6626a09c7"
   },
   "figure2_c_row3_fe_lower": {
     "shape": [
-      20,
+      7,
       9
     ],
     "dtype": "float32",
-    "sha256": "612931da8bd80c916c770fe03b5b4326f08a9173124f0688e4ad78c3149fc649"
+    "sha256": "62bb9f0952ca77aafce992e8b86b81eb45186fc022d6022946fb1a7a8c830398"
   },
   "figure2_c_row3_geouno_response": {
     "shape": [
-      20,
+      7,
       9
     ],
     "dtype": "float32",
-    "sha256": "4b2d498b6200eeba639eb3d4be3f5d1339e659daa53d3aecabeed9a6d2b568d0"
+    "sha256": "10c6889102cc875fe8fd9911ed931c129bbd33b76fd3d7df48a04ba4288a51ae"
   },
   "figure2_c_row3_geouno_lower": {
     "shape": [
-      20,
+      7,
       9
     ],
     "dtype": "float32",
-    "sha256": "4e017ca9228eddc08d7fcc85d7b91fe45bdcb855c9b101b6d80ef3a83496e78e"
+    "sha256": "f533b8fba42bf5e6d76c4db68b8aa1d290dacc926275f8a9ef18b85334063996"
   },
   "figure2_c_row3_geouno_response_quantiles": {
     "shape": [
@@ -341,7 +341,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "27f2516018c59810cc5d81daac4f6c8b22f9d032219e156f38210be1d597d23d"
+    "sha256": "07c32b63787caa049cbe931ccd518e1087570ef5b9bbacbc5e3d8d2e91922cf8"
   },
   "figure2_c_row3_geouno_lower_quantiles": {
     "shape": [
@@ -349,7 +349,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "b3e7d976da259c4dd5ed71b14eea3ede566cc9aa2bae996bf1833d660ecc516a"
+    "sha256": "3634a80a62b7c071365bfe7bbdb372f7edcf1ab793dc6d66c7bc67ae76e1ef01"
   },
   "figure2_b_fe_fields": {
     "shape": [
@@ -358,7 +358,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "7b06d8e01fbf0b6caa8b5b8f6a10d18770ebcd8e369ce6ed4b17a326cec8ba93"
+    "sha256": "db0884da719d1171b22447145e3f94882d75048b5ab4a0c84374d0a654c79bcc"
   },
   "figure2_b_geouno_fields": {
     "shape": [
@@ -367,7 +367,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "212e600436e19f4edaa721bb282df39779eee71211f27753d61b1fb0598c2818"
+    "sha256": "93870d7f61a9e9985782ffa8a29dc511b4591d3afc79ad51734fd2e8da41c131"
   },
   "figure2_d_field_rmse_quantiles": {
     "shape": [
@@ -398,7 +398,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "bdc6e27ba32f4722fa655debb958a6a228173f660a20bf6a140b1ceacb019820"
+    "sha256": "5265f29e53849ec34656a63f40eee7ccb54e21e2724d550ca5425652d6f72cdc"
   },
   "figure3_a_row0_fe_ensemble_mean": {
     "shape": [
@@ -406,7 +406,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "d94720f41cf2b054bb620c90b541850265348b31328d280382e112149ccd4981"
+    "sha256": "6af8bfa902f76452f81e012d3fe20d0bafc2d9163af7fca8e551c58391bfb797"
   },
   "figure3_a_row0_geouno_ensemble_mean": {
     "shape": [
@@ -414,7 +414,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "f547759a990a5ddef696d2e576272370c3439717d0fb40a49e1748476c4bb40b"
+    "sha256": "2ecaed29bd03b56a4069e2f7411c334c5866d8134abb221d760cacdc967fb815"
   },
   "figure3_a_row0_error": {
     "shape": [
@@ -422,7 +422,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "ae8c07466b25a1b27c7035822bb0d37fc7a53cd546e1e8037c95a67b1dea5462"
+    "sha256": "bab05cd6b5cf88411c05ad2a3e16b91570f125cfea4dff00a554e8817a86c0f8"
   },
   "figure3_a_row0_geouno_standard_deviation": {
     "shape": [
@@ -430,7 +430,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "9ad47485ecd023fb4778d31b49c5e13d6e571ca1def168b50761410131243ac4"
+    "sha256": "411f606ac988892e82952ba143b1155446ca259feaea13a610897de36056d464"
   },
   "figure3_c_row0_fe_response": {
     "shape": [
@@ -438,7 +438,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "389189a700e68d83e347aba7915fc408e56fb13faabf46fb5b687d4b76c44036"
+    "sha256": "79fba51c9d7782051c5d039a4ce7bb41b679d676f55535d0fb87d7de47c786fe"
   },
   "figure3_c_row0_fe_lower": {
     "shape": [
@@ -446,7 +446,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "a01fdd28c27e39042a97e6e93e412772fbbc0dad28f27e91990037c8a661b0eb"
+    "sha256": "31938565b595c44ea5086324642a63a9e378c77a756f6580e4dbe6a83d3f87e4"
   },
   "figure3_c_row0_geouno_response": {
     "shape": [
@@ -454,7 +454,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "4d14ce9a7d999b76bd27c5571f3343e63d006f63a78e4c719202fde8c21e6a71"
+    "sha256": "2e7c23fd9a356cf22a60eb32efba4bd64dd082b482ca133f8d485e8895e2014e"
   },
   "figure3_c_row0_geouno_lower": {
     "shape": [
@@ -462,7 +462,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "a28fa62e521a6e864272a51e5185a6ce4bb761d50cd843d57bd98dbdca6f84f6"
+    "sha256": "595ecb27b7ae17a68c32930c3e98d7a43a11a8f45db22d5075f273a478e6d35e"
   },
   "figure3_c_row0_geouno_response_quantiles": {
     "shape": [
@@ -470,7 +470,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "0b6644a291eab5addce907bb05fdb45c25c2e77432c796dab77e9e95de885856"
+    "sha256": "3d41fc587607e19a83b6d22f4b5b0fc8aff15f20275185145f8d552faf1d1c7f"
   },
   "figure3_c_row0_geouno_lower_quantiles": {
     "shape": [
@@ -478,7 +478,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "05f56c571f2d60415f138c767f3a126752d916d73cbfe43f522e1430c3446c5c"
+    "sha256": "18c316e72f17bca85b60cc2c8cfce91ac6ec16daffa0838fd94a93b443d5e7f2"
   },
   "figure3_a_row1_mean_log10_permeability": {
     "shape": [
@@ -486,7 +486,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "2db7540eee48af03245383467e36167111b8ba93217e23b813077b869fed1003"
+    "sha256": "27058d1df78ecf5edd0518bd3a26efef6497f7c954674e029e994631d3194334"
   },
   "figure3_a_row1_fe_ensemble_mean": {
     "shape": [
@@ -494,7 +494,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "6af68afd6c7c32aba911e76bb313d411bb59949d309ca3f270d5a8ff16fab9d0"
+    "sha256": "236ef1b4ecc9042771721b642c36c2525476c63c3333198d7d67122c7db53244"
   },
   "figure3_a_row1_geouno_ensemble_mean": {
     "shape": [
@@ -502,7 +502,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "5afe12305373f4fd143e90d856fc3c3bb3a33b72b2fa5aeeda9caf7ccbe5b450"
+    "sha256": "b931df9dbe30ea79c592cd26d98fb8ad6108cf7aaea8852f794b5b729a7a8542"
   },
   "figure3_a_row1_error": {
     "shape": [
@@ -510,7 +510,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "4a9a47019b488fab2b9620b7d0a43a4cede7fa6c1cca21e13fea320886fe1d68"
+    "sha256": "5ef2eb718bac8088881f149221b6f193e59190a6d7946a102586d86efb29878a"
   },
   "figure3_a_row1_geouno_standard_deviation": {
     "shape": [
@@ -518,7 +518,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "9886049d581daf5e781f777741b12b6687a91cd0b7cdebb5826cdf5a518490c3"
+    "sha256": "f205a0c8c10a16d8f0fc5989888886a3e70877d0aaf4cc0a725e0ff3a09c2db8"
   },
   "figure3_c_row1_fe_response": {
     "shape": [
@@ -526,7 +526,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "e45e3908788e33c4818aae3ad74bc98abda928895cf4f123b642e6dffe4ba48d"
+    "sha256": "22d133819ea37f2e06ec6e4bac72d313e9f90d92c47567c99705ee1c83111479"
   },
   "figure3_c_row1_fe_lower": {
     "shape": [
@@ -534,7 +534,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "8f0077ae5b875b9e2cc7c0691cce4aab2148668ef5b9d8712f785cb95f837621"
+    "sha256": "b8fb01009ccbaf6392fe0d428fd34b44075c16c7d2b538f4cd5bd4236fa94524"
   },
   "figure3_c_row1_geouno_response": {
     "shape": [
@@ -542,7 +542,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "384eefb50401cadeec004c39cc94353b76bec85ef8f54019c841d481a1de4217"
+    "sha256": "99b39668dff0fea6c24e214b43434e3059a7613d422c2b7b4e66804eadfa8db5"
   },
   "figure3_c_row1_geouno_lower": {
     "shape": [
@@ -550,7 +550,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "e66267b24e66cda55239a20e72a2954f19cdfdc454dcd2da1d88a6af0c585243"
+    "sha256": "b17871aca44790c77fc747fa495e039702542b5e1160d052a16cf798d006f670"
   },
   "figure3_c_row1_geouno_response_quantiles": {
     "shape": [
@@ -558,7 +558,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "f9953d085c7d260e51a56b8427e2c108e48274b61aa7ab1bf310a4b2d0160378"
+    "sha256": "6a3396dc626c980cd0596643151ae642d8b8d200201f839905bb4ec51a80ae55"
   },
   "figure3_c_row1_geouno_lower_quantiles": {
     "shape": [
@@ -566,7 +566,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "7138c7562325fde44f12fd170081c3c6fd3802f8c326fe43fda9336814b6d910"
+    "sha256": "ecd48e122207d2af7006f40cbe1dc47db09c19322f730409eed7b029094d6ed3"
   },
   "figure3_a_row2_mean_log10_permeability": {
     "shape": [
@@ -574,7 +574,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "02203738dd10f1b45fe8d831b5f299b3dcfae26f80d7a55e091d1e5af440bb57"
+    "sha256": "c2a399818cd939115858fcb719b44995ae1bf3e67e6226fdd8bd2891acf7a52f"
   },
   "figure3_a_row2_fe_ensemble_mean": {
     "shape": [
@@ -582,7 +582,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "8df139be9d372c10a4da072f217561936775cea012bf0efd7bb61dde4bf6eff4"
+    "sha256": "0099e41717edf24ea37d3a4ed4b2c37c13a2691f806725b1731e0d4bb44c67f8"
   },
   "figure3_a_row2_geouno_ensemble_mean": {
     "shape": [
@@ -590,7 +590,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "21ff59ba16ee01155077fcfbf00c17f8768324caf0b93c466dcae407144e1974"
+    "sha256": "2b245e45ea990b228d6cad871f1d8299a076f0a04cd671c07411c10f85eedd11"
   },
   "figure3_a_row2_error": {
     "shape": [
@@ -598,7 +598,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "2447d62c954174e2b465d8178aa9fd453f3ce64dc4b0086d2e0226eb4dba90b3"
+    "sha256": "86af0cdfc27f4b30dba77200b36d9f610a512a3da67e74c1d29fd6c507a8f67c"
   },
   "figure3_a_row2_geouno_standard_deviation": {
     "shape": [
@@ -606,39 +606,39 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "80560ccb5282b12d6603f29082e3208bf413ef739bcb3f576be33022f40ce080"
+    "sha256": "3e8d1f85906e15104c60fe896bf8b42cd4e4ed77fefbecb8b6348ee63ca108ed"
   },
   "figure3_c_row2_fe_response": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "ddc48106f83e0e4a6fd2b51663e337b98412137ba14fa3d44c0e95e299b47388"
+    "sha256": "7edb0795221f7de97e29e1ab203d9c0ecabd946da47b6e2edc7e14d184dcb35c"
   },
   "figure3_c_row2_fe_lower": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float64",
-    "sha256": "e4d63f10a2ea006777ddae06d20859f083181a344d329b4fd36be329c055c236"
+    "sha256": "110d3073f6d88f8e473b311968254d3f059cd48e1f675a0dbb5231e2581c4a97"
   },
   "figure3_c_row2_geouno_response": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float32",
-    "sha256": "6875b44087e55f974cce92ebccd0b53a1354b2d429159a53e6a34e3be64c6d1d"
+    "sha256": "ef818c6ee6afb3dc659e0d732bd1477a0c9cf12c93c88db39a61b59975836965"
   },
   "figure3_c_row2_geouno_lower": {
     "shape": [
-      7,
+      20,
       9
     ],
     "dtype": "float64",
-    "sha256": "f00fa30b1a4e323e73a9c22b50728a976d932bafee3469992f87ead3c49aa5dd"
+    "sha256": "06c374be489e633853c7fa943fa2becb45664bc39908b8d26dd7f1303c0b5472"
   },
   "figure3_c_row2_geouno_response_quantiles": {
     "shape": [
@@ -646,7 +646,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "5dd04b947b6c646c1a18523e2c092cd52b16c23568f3aecf76ea08b65ea69fca"
+    "sha256": "411dd6cb165ef91603b621040ff15266dd0a076e7f4c60b52a371c25a9d0e80d"
   },
   "figure3_c_row2_geouno_lower_quantiles": {
     "shape": [
@@ -654,7 +654,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "2473b1f82b09dffc6e9284b4e16959d36333440a8452ddd9b4ba4bf0dadafe9b"
+    "sha256": "155767a2bcefc4279042193445349696dbf29e3fe41c8a3984d9629930a08cd8"
   },
   "figure3_a_row3_mean_log10_permeability": {
     "shape": [
@@ -662,7 +662,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "53cc19b6464f6f1bbf1d52d578e64e17a4bb7abce4f7c0eef816e364edd1c51a"
+    "sha256": "8d735059049f48534e6b2eeeb13fb75ea9e83487c06df48886d85e455a82dba1"
   },
   "figure3_a_row3_fe_ensemble_mean": {
     "shape": [
@@ -670,7 +670,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "68a65e2d127208863a10d8e722b46861bd7739d93ed8e092de5bf9236a645dfd"
+    "sha256": "10d7f8eeadd97f51629ed6bc0e4706dd85b493d3e4819d6ba73548db012f5867"
   },
   "figure3_a_row3_geouno_ensemble_mean": {
     "shape": [
@@ -678,7 +678,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "d564389c5b03feec3f86b87995f6380b280fdda209612f5524371b119e58d772"
+    "sha256": "942e3c600a569f704763a3d78ade59ec9223c247f2f0ce9b21ca20a96ee9080d"
   },
   "figure3_a_row3_error": {
     "shape": [
@@ -686,7 +686,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "7d1711e86bfdcad67a21c467d7f6d4f0eab0f149d725623d54bf03f20411c304"
+    "sha256": "0e8860ba77bea5f79b31138656a7f74e33de8fe312066453a5cad3cf6053eff0"
   },
   "figure3_a_row3_geouno_standard_deviation": {
     "shape": [
@@ -694,7 +694,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "fcaece1816ba0d7774293c3b128acf1ba1251d20b89780c7a3862fa058a3afe2"
+    "sha256": "df702e785b238761301c2c54b2a80cfed576a3469857c364bdac11998d8bdc57"
   },
   "figure3_c_row3_fe_response": {
     "shape": [
@@ -702,7 +702,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "83b11e22b27a199d194cb54ff7a5c29721186a73c4892c3592aac066bc5105c3"
+    "sha256": "c80b28df3d2ed7ad0f6ad6943bdb39fd34485b9fcd28683067c67a626a5f69ac"
   },
   "figure3_c_row3_fe_lower": {
     "shape": [
@@ -710,7 +710,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "83b2dc443bb2f8a18f9d5651bcfc4e34638f67150a326dcb093e75aeec618532"
+    "sha256": "74dd2b767626077135e5cb2bc190e72049fc23897c4e2d5b615facd24cce97fa"
   },
   "figure3_c_row3_geouno_response": {
     "shape": [
@@ -718,7 +718,7 @@
       9
     ],
     "dtype": "float32",
-    "sha256": "98375c8847c16e5034f5741b10db7aecf1ed641b7de9a29063697fd3b0b48b7d"
+    "sha256": "20e923bcb0ca660ca58fe0feaed77182907a88d99c40419f234771cd2e0cbbfb"
   },
   "figure3_c_row3_geouno_lower": {
     "shape": [
@@ -726,7 +726,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "b7ceba8351167a711284f7a524867a8cff9a3d4ddd6505b02a4031ebc70c960d"
+    "sha256": "0ca0fc20f93776e7d03f2ceb8c11e2ba32949a7fd197c77d6e7b240c5470b2b5"
   },
   "figure3_c_row3_geouno_response_quantiles": {
     "shape": [
@@ -734,7 +734,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "51b05ec2a9757900960131eb73cd14f4cf805f7b5b61204a75bb7956291633ed"
+    "sha256": "1ac6183a205182a0e510dd8114b1a3e4681c1f4858955f62adc814e114bce8a6"
   },
   "figure3_c_row3_geouno_lower_quantiles": {
     "shape": [
@@ -742,7 +742,7 @@
       9
     ],
     "dtype": "float64",
-    "sha256": "68d9be79fd622682f153128216d1ec863e08b748c297e7655477051c618c9899"
+    "sha256": "bbcc192267e1e1c8aaf2f64d4de861d8fbf4a54167bd64e788fdfd2e06572335"
   },
   "figure3_b_fe_fields": {
     "shape": [
@@ -751,7 +751,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "343f14b1aec85e673446ab0ac54b0b1195c85c76438e191e2a552b4433d95420"
+    "sha256": "d15749af73378ea5751db287693addfb19ab99342794322022b2970e4794c41d"
   },
   "figure3_b_geouno_fields": {
     "shape": [
@@ -760,7 +760,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "71a33845415703bc20226facb73973a39ad9e3df64a9bd9889fc49e507662732"
+    "sha256": "43406140b2bad2a9acde39fbde83d1b6e5ff6cd6bb2b9bc2aa99b47fd46586a4"
   },
   "figure3_d_field_rmse_quantiles": {
     "shape": [
