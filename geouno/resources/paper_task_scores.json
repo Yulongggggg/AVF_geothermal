@@ -16278,19 +16278,19 @@
   "multiwell_opt17/test_01/map": {
     "members": 1,
     "field_rmse": [
-      7.905551729317185,
-      1.4431499074551415
+      8.040080651250028,
+      1.434368005031159
     ],
-    "permeability_rmse": 0.9331846833229065,
+    "permeability_rmse": 0.9327326416969299,
     "blocks": {
       "temperature": {
-        "absolute_error": 0.8417474627494812,
-        "point_prediction": -4.204613447189331,
+        "absolute_error": 0.8656590580940247,
+        "point_prediction": -4.180701851844788,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.28139400482177734,
-        "point_prediction": 36.09843158721924,
+        "absolute_error": 0.2591686248779297,
+        "point_prediction": 36.07620620727539,
         "posterior_interval": null
       }
     }
@@ -16350,19 +16350,19 @@
   "multiwell_opt17/test_02/map": {
     "members": 1,
     "field_rmse": [
-      5.8526519314558145,
-      0.345143321756255
+      5.8713695413737,
+      0.337357996277854
     ],
-    "permeability_rmse": 0.5927579998970032,
+    "permeability_rmse": 0.5924622416496277,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.4322783152262346,
-        "point_prediction": 25.723018646240234,
+        "absolute_error": 1.3678557078043596,
+        "point_prediction": 25.78744125366211,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.324942946434021,
-        "point_prediction": -6.384318947792053,
+        "absolute_error": 0.31627869606018066,
+        "point_prediction": -6.375654697418213,
         "posterior_interval": null
       }
     }
@@ -16422,19 +16422,19 @@
   "multiwell_opt17/test_03/map": {
     "members": 1,
     "field_rmse": [
-      9.099382307639072,
-      0.5085329402558006
+      9.080185553426288,
+      0.5061296812779563
     ],
-    "permeability_rmse": 0.5437650680541992,
+    "permeability_rmse": 0.5450003147125244,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.1454429626464844,
-        "point_prediction": -3.3743886947631836,
+        "absolute_error": 1.1456036567687988,
+        "point_prediction": -3.374228000640869,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.30289363861083984,
-        "point_prediction": 17.56890869140625,
+        "absolute_error": 0.3013315200805664,
+        "point_prediction": 17.567346572875977,
         "posterior_interval": null
       }
     }
@@ -16494,19 +16494,19 @@
   "multiwell_opt17/test_04/map": {
     "members": 1,
     "field_rmse": [
-      8.748364623313202,
-      0.550293051497811
+      9.058568431719321,
+      0.5792362599248619
     ],
-    "permeability_rmse": 0.7037574648857117,
+    "permeability_rmse": 0.7101016044616699,
     "blocks": {
       "temperature": {
-        "absolute_error": 0.025833765665689512,
-        "point_prediction": -6.908412933349609,
+        "absolute_error": 0.006637891133626006,
+        "point_prediction": -6.927608807881673,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.6811485290527344,
-        "point_prediction": 18.66018009185791,
+        "absolute_error": 0.7247390747070312,
+        "point_prediction": 18.616589546203613,
         "posterior_interval": null
       }
     }
@@ -16566,19 +16566,19 @@
   "multiwell_opt17/test_05/map": {
     "members": 1,
     "field_rmse": [
-      8.06221387495101,
-      0.14654613305519942
+      8.083212730366547,
+      0.14677654489036962
     ],
-    "permeability_rmse": 0.5426626801490784,
+    "permeability_rmse": 0.5429121851921082,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.6145105361938477,
-        "point_prediction": -5.757133801778157,
+        "absolute_error": 1.603424708048503,
+        "point_prediction": -5.768219629923502,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.2099253535270691,
-        "point_prediction": -3.4778666496276855,
+        "absolute_error": 0.214413583278656,
+        "point_prediction": -3.4733784198760986,
         "posterior_interval": null
       }
     }
@@ -16638,19 +16638,19 @@
   "multiwell_opt17/test_06/map": {
     "members": 1,
     "field_rmse": [
-      6.413293781225713,
-      0.39209841784096156
+      6.426741155894092,
+      0.39169231892777223
     ],
-    "permeability_rmse": 0.8955508470535278,
+    "permeability_rmse": 0.8967369198799133,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.2795593738555908,
-        "point_prediction": -6.097162246704102,
+        "absolute_error": 1.255380392074585,
+        "point_prediction": -6.072983264923096,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.27133327163755894,
-        "point_prediction": 0.3142332434654236,
+        "absolute_error": 0.2777417842298746,
+        "point_prediction": 0.32064175605773926,
         "posterior_interval": null
       }
     }
@@ -16710,19 +16710,19 @@
   "multiwell_opt17/test_07/map": {
     "members": 1,
     "field_rmse": [
-      4.677452902318435,
-      0.3299885011286838
+      4.688652235692644,
+      0.330436790298584
     ],
-    "permeability_rmse": 0.7246367335319519,
+    "permeability_rmse": 0.7243994474411011,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.2070337136586509,
-        "point_prediction": -3.256370703379313,
+        "absolute_error": 1.2105542023976645,
+        "point_prediction": -3.2598911921183267,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.17622464895248413,
-        "point_prediction": -3.2421518564224243,
+        "absolute_error": 0.17666321992874146,
+        "point_prediction": -3.241713285446167,
         "posterior_interval": null
       }
     }
@@ -16782,19 +16782,19 @@
   "multiwell_opt17/test_08/map": {
     "members": 1,
     "field_rmse": [
-      6.795796683488705,
-      0.17414556694692754
+      6.768824810138328,
+      0.1775700669940159
     ],
-    "permeability_rmse": 0.5732572674751282,
+    "permeability_rmse": 0.5741438269615173,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.6767155329386396,
-        "point_prediction": -4.52710747718811,
+        "absolute_error": 1.6680212020874023,
+        "point_prediction": -4.518413146336873,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.23042261600494385,
-        "point_prediction": -6.30763053894043,
+        "absolute_error": 0.23344647884368896,
+        "point_prediction": -6.310654401779175,
         "posterior_interval": null
       }
     }
@@ -16854,19 +16854,19 @@
   "multiwell_opt17/test_09/map": {
     "members": 1,
     "field_rmse": [
-      6.528573468833445,
-      0.32180195098931025
+      6.573811313386876,
+      0.31862277530501815
     ],
-    "permeability_rmse": 0.6185877919197083,
+    "permeability_rmse": 0.6172187328338623,
     "blocks": {
       "temperature": {
-        "absolute_error": 0.6354842185974121,
-        "point_prediction": -3.01370366414388,
+        "absolute_error": 0.6329558690388994,
+        "point_prediction": -3.0162320137023926,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.37756991386413574,
-        "point_prediction": 14.317398309707642,
+        "absolute_error": 0.37282371520996094,
+        "point_prediction": 14.312652111053467,
         "posterior_interval": null
       }
     }
@@ -16926,19 +16926,19 @@
   "multiwell_opt17/test_10/map": {
     "members": 1,
     "field_rmse": [
-      7.130755323530491,
-      1.9562799349434394
+      7.168710264481624,
+      1.98252964387293
     ],
-    "permeability_rmse": 0.658408522605896,
+    "permeability_rmse": 0.6589874029159546,
     "blocks": {
       "temperature": {
-        "absolute_error": 6.518186887105307,
-        "point_prediction": 15.03731632232666,
+        "absolute_error": 6.61790911356608,
+        "point_prediction": 15.137038548787434,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 2.012242555618286,
-        "point_prediction": 12.888211250305176,
+        "absolute_error": 2.038156032562256,
+        "point_prediction": 12.914124727249146,
         "posterior_interval": null
       }
     }
@@ -16998,19 +16998,19 @@
   "multiwell_opt17/test_11/map": {
     "members": 1,
     "field_rmse": [
-      6.781820184459583,
-      0.3474350993621656
+      6.779413203142832,
+      0.35058848095690126
     ],
-    "permeability_rmse": 0.49631959199905396,
+    "permeability_rmse": 0.4962908923625946,
     "blocks": {
       "temperature": {
-        "absolute_error": 0.05866177876790335,
-        "point_prediction": -4.316413640975952,
+        "absolute_error": 0.05985450744628906,
+        "point_prediction": -4.315220912297566,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.3367753028869629,
-        "point_prediction": 16.299721717834473,
+        "absolute_error": 0.3393383026123047,
+        "point_prediction": 16.29715871810913,
         "posterior_interval": null
       }
     }
@@ -17070,19 +17070,19 @@
   "multiwell_opt17/test_12/map": {
     "members": 1,
     "field_rmse": [
-      7.20141166945743,
-      0.5546009604299846
+      7.202528550220695,
+      0.5491816760924555
     ],
-    "permeability_rmse": 0.5305955410003662,
+    "permeability_rmse": 0.5299909710884094,
     "blocks": {
       "temperature": {
-        "absolute_error": 3.18955135345459,
-        "point_prediction": -2.9842514991760254,
+        "absolute_error": 3.1731040477752686,
+        "point_prediction": -3.0006988048553467,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.2291819453239441,
-        "point_prediction": -1.8208876252174377,
+        "absolute_error": 0.23145997524261475,
+        "point_prediction": -1.818609595298767,
         "posterior_interval": null
       }
     }
@@ -17142,19 +17142,19 @@
   "multiwell_opt17/test_13/map": {
     "members": 1,
     "field_rmse": [
-      6.071671246525033,
-      0.17890014022930445
+      6.080051360673072,
+      0.1812196344193424
     ],
-    "permeability_rmse": 0.526068389415741,
+    "permeability_rmse": 0.5283082127571106,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.2982578277587888,
-        "point_prediction": -0.670527458190918,
+        "absolute_error": 1.3376561800638833,
+        "point_prediction": -0.6311291058858235,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.2241297960281372,
-        "point_prediction": 1.4804567098617554,
+        "absolute_error": 0.22617566585540771,
+        "point_prediction": 1.4784108400344849,
         "posterior_interval": null
       }
     }
@@ -17214,19 +17214,19 @@
   "multiwell_opt17/test_14/map": {
     "members": 1,
     "field_rmse": [
-      9.518447060583195,
-      0.3165526297579541
+      9.516627265914822,
+      0.3184223639936397
     ],
-    "permeability_rmse": 0.8015274405479431,
+    "permeability_rmse": 0.8027631640434265,
     "blocks": {
       "temperature": {
-        "absolute_error": 2.0472946166992188,
-        "point_prediction": 40.280452728271484,
+        "absolute_error": 2.0960235595703125,
+        "point_prediction": 40.23172378540039,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.07699644565582275,
-        "point_prediction": -4.585061550140381,
+        "absolute_error": 0.07993555068969727,
+        "point_prediction": -4.582122445106506,
         "posterior_interval": null
       }
     }
@@ -17286,19 +17286,19 @@
   "multiwell_opt17/test_15/map": {
     "members": 1,
     "field_rmse": [
-      5.003689100244369,
-      0.43631218867117927
+      5.032614569954995,
+      0.42122865307202084
     ],
-    "permeability_rmse": 0.6740099191665649,
+    "permeability_rmse": 0.6725848317146301,
     "blocks": {
       "temperature": {
-        "absolute_error": 0.22605999310811375,
-        "point_prediction": -2.717759052912394,
+        "absolute_error": 0.2656754652659101,
+        "point_prediction": -2.6781435807545977,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.46790027618408203,
-        "point_prediction": 5.442596793174744,
+        "absolute_error": 0.45191919803619385,
+        "point_prediction": 5.4266157150268555,
         "posterior_interval": null
       }
     }
@@ -17358,19 +17358,19 @@
   "multiwell_opt17/test_16/map": {
     "members": 1,
     "field_rmse": [
-      9.305184211510577,
-      0.10415504966688628
+      9.281565830628082,
+      0.10438454149357985
     ],
-    "permeability_rmse": 0.5794838070869446,
+    "permeability_rmse": 0.5798972249031067,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.0173617899417877,
-        "point_prediction": 1.0948031544685364,
+        "absolute_error": 1.0132016241550446,
+        "point_prediction": 1.0906429886817932,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.15399861335754395,
-        "point_prediction": -5.2138330936431885,
+        "absolute_error": 0.15365982055664062,
+        "point_prediction": -5.213494300842285,
         "posterior_interval": null
       }
     }
@@ -17430,19 +17430,19 @@
   "multiwell_opt17/test_17/map": {
     "members": 1,
     "field_rmse": [
-      9.197760918137599,
-      0.37352870130829335
+      9.212029174393813,
+      0.37208442018837184
     ],
-    "permeability_rmse": 0.6288632154464722,
+    "permeability_rmse": 0.6276980042457581,
     "blocks": {
       "temperature": {
-        "absolute_error": 0.7548731168111162,
-        "point_prediction": -7.0071976979573565,
+        "absolute_error": 0.7501114209492998,
+        "point_prediction": -7.011959393819173,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.00054168701171875,
-        "point_prediction": 6.07038414478302,
+        "absolute_error": 0.0007361173629760742,
+        "point_prediction": 6.069106340408325,
         "posterior_interval": null
       }
     }
@@ -17574,19 +17574,19 @@
   "multiwell_opt17/test_19/map": {
     "members": 1,
     "field_rmse": [
-      6.2840382354624404,
-      0.3713373039252778
+      6.354863128063537,
+      0.3713846984300686
     ],
-    "permeability_rmse": 0.5415483117103577,
+    "permeability_rmse": 0.5424652695655823,
     "blocks": {
       "temperature": {
-        "absolute_error": 2.707660675048828,
-        "point_prediction": 39.17523956298828,
+        "absolute_error": 2.6586456298828125,
+        "point_prediction": 39.126224517822266,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.31896099355071783,
-        "point_prediction": -0.3485725224018097,
+        "absolute_error": 0.32046696450561285,
+        "point_prediction": -0.3500784933567047,
         "posterior_interval": null
       }
     }
@@ -17646,19 +17646,19 @@
   "multiwell_opt17/test_20/map": {
     "members": 1,
     "field_rmse": [
-      7.029350992012916,
-      0.5955472112114089
+      7.041498835984998,
+      0.592144488270554
     ],
-    "permeability_rmse": 0.9778139591217041,
+    "permeability_rmse": 0.9784365892410278,
     "blocks": {
       "temperature": {
-        "absolute_error": 0.1345677375793457,
-        "point_prediction": 5.193387746810913,
+        "absolute_error": 0.17981481552124023,
+        "point_prediction": 5.238634824752808,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.6606290340423584,
-        "point_prediction": 6.957480430603027,
+        "absolute_error": 0.6569923162460327,
+        "point_prediction": 6.953843712806702,
         "posterior_interval": null
       }
     }
@@ -17718,19 +17718,19 @@
   "multiwell_opt17/test_21/map": {
     "members": 1,
     "field_rmse": [
-      5.842023318030321,
-      0.7872206361086445
+      5.842957593555027,
+      0.7932412708741077
     ],
-    "permeability_rmse": 0.7505442500114441,
+    "permeability_rmse": 0.7506585717201233,
     "blocks": {
       "temperature": {
-        "absolute_error": 0.16069293022155762,
-        "point_prediction": -3.974627137184143,
+        "absolute_error": 0.15750861167907715,
+        "point_prediction": -3.9778114557266235,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.35434722900390625,
-        "point_prediction": 35.760268211364746,
+        "absolute_error": 0.3755512237548828,
+        "point_prediction": 35.73906421661377,
         "posterior_interval": null
       }
     }
@@ -17790,19 +17790,19 @@
   "multiwell_opt17/test_22/map": {
     "members": 1,
     "field_rmse": [
-      6.510496390886115,
-      0.30307439319323604
+      6.509710800408326,
+      0.3105233903300631
     ],
-    "permeability_rmse": 0.6323898434638977,
+    "permeability_rmse": 0.6320959329605103,
     "blocks": {
       "temperature": {
-        "absolute_error": 2.120255410671234,
-        "point_prediction": 10.736100673675537,
+        "absolute_error": 2.1412546038627625,
+        "point_prediction": 10.757099866867065,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.2816532850265503,
-        "point_prediction": 5.205029726028442,
+        "absolute_error": 0.28980720043182373,
+        "point_prediction": 5.213183641433716,
         "posterior_interval": null
       }
     }
@@ -17862,19 +17862,19 @@
   "multiwell_opt17/test_23/map": {
     "members": 1,
     "field_rmse": [
-      7.011430299755751,
-      0.4022808580566747
+      7.0890112074401666,
+      0.398253362552426
     ],
-    "permeability_rmse": 0.4710567593574524,
+    "permeability_rmse": 0.4715620279312134,
     "blocks": {
       "temperature": {
-        "absolute_error": 1.863877296447754,
-        "point_prediction": 20.35362720489502,
+        "absolute_error": 1.9206857681274414,
+        "point_prediction": 20.296818733215332,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.35231882333755493,
-        "point_prediction": 3.4296756386756897,
+        "absolute_error": 0.34684252738952637,
+        "point_prediction": 3.4351519346237183,
         "posterior_interval": null
       }
     }
@@ -17934,19 +17934,19 @@
   "multiwell_opt17/test_24/map": {
     "members": 1,
     "field_rmse": [
-      7.547783056466982,
-      0.4539332690372389
+      7.542203571156879,
+      0.4511697285886863
     ],
-    "permeability_rmse": 0.6538862586021423,
+    "permeability_rmse": 0.6538870930671692,
     "blocks": {
       "temperature": {
-        "absolute_error": 4.192416191101074,
-        "point_prediction": 7.365677356719971,
+        "absolute_error": 4.183605432510376,
+        "point_prediction": 7.374488115310669,
         "posterior_interval": null
       },
       "pressure": {
-        "absolute_error": 0.4243820756673813,
-        "point_prediction": -1.3673151135444641,
+        "absolute_error": 0.4209871143102646,
+        "point_prediction": -1.3639201521873474,
         "posterior_interval": null
       }
     }

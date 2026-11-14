@@ -61,7 +61,7 @@
       128
     ],
     "dtype": "float32",
-    "sha256": "f123d10c9c2d2b9733d8bae5c9f7db9f0ff28f0edb4aa29d10e55206aab80ce5"
+    "sha256": "9f217ec9593de9801dac879a8c7f3db038105030e38fd3afbbfe6b7930b0af93"
   },
   "c_inference_truth_log10_permeability": {
     "shape": [

@@ -3,132 +3,132 @@
     "rows": [
       {
         "case": "test_01",
-        "seconds": 455.0688951257616,
-        "evaluations": 746
+        "seconds": 456.0439423583448,
+        "evaluations": 631
       },
       {
         "case": "test_02",
-        "seconds": 446.0243463255465,
-        "evaluations": 711
+        "seconds": 490.954731810838,
+        "evaluations": 630
       },
       {
         "case": "test_03",
-        "seconds": 545.6331694573164,
-        "evaluations": 752
+        "seconds": 673.3007610365748,
+        "evaluations": 865
       },
       {
         "case": "test_04",
-        "seconds": 361.29737367480993,
-        "evaluations": 519
+        "seconds": 474.56155199185014,
+        "evaluations": 614
       },
       {
         "case": "test_05",
-        "seconds": 467.96286142617464,
-        "evaluations": 669
+        "seconds": 497.799171525985,
+        "evaluations": 630
       },
       {
         "case": "test_06",
-        "seconds": 326.9766789171845,
-        "evaluations": 510
+        "seconds": 327.89603432267904,
+        "evaluations": 522
       },
       {
         "case": "test_07",
-        "seconds": 391.42965484037995,
-        "evaluations": 503
+        "seconds": 312.4795971047133,
+        "evaluations": 509
       },
       {
         "case": "test_08",
-        "seconds": 407.54925049468875,
-        "evaluations": 539
+        "seconds": 263.59325877949595,
+        "evaluations": 431
       },
       {
         "case": "test_09",
-        "seconds": 342.5925323013216,
-        "evaluations": 440
+        "seconds": 284.2401904053986,
+        "evaluations": 456
       },
       {
         "case": "test_10",
-        "seconds": 460.2650158293545,
-        "evaluations": 609
+        "seconds": 464.92620948702097,
+        "evaluations": 719
       },
       {
         "case": "test_11",
-        "seconds": 299.66740630567074,
-        "evaluations": 396
+        "seconds": 232.23284772783518,
+        "evaluations": 397
       },
       {
         "case": "test_12",
-        "seconds": 473.0047866757959,
-        "evaluations": 710
+        "seconds": 442.3329196199775,
+        "evaluations": 675
       },
       {
         "case": "test_13",
-        "seconds": 327.71652431599796,
-        "evaluations": 536
+        "seconds": 368.34380905516446,
+        "evaluations": 573
       },
       {
         "case": "test_14",
-        "seconds": 850.119026850909,
-        "evaluations": 1176
+        "seconds": 645.148348454386,
+        "evaluations": 986
       },
       {
         "case": "test_15",
-        "seconds": 270.81785316579044,
-        "evaluations": 464
+        "seconds": 423.15622545965016,
+        "evaluations": 579
       },
       {
         "case": "test_16",
-        "seconds": 297.2865141890943,
-        "evaluations": 500
+        "seconds": 360.18046699650586,
+        "evaluations": 489
       },
       {
         "case": "test_17",
-        "seconds": 359.60938686318696,
-        "evaluations": 604
+        "seconds": 356.37483256682754,
+        "evaluations": 566
       },
       {
         "case": "test_18",
-        "seconds": 359.80405953526497,
-        "evaluations": 475
+        "seconds": 356.6855044141412,
+        "evaluations": 488
       },
       {
         "case": "test_19",
-        "seconds": 404.50420538149774,
-        "evaluations": 583
+        "seconds": 358.05402926169336,
+        "evaluations": 541
       },
       {
         "case": "test_20",
-        "seconds": 296.256784170866,
-        "evaluations": 454
+        "seconds": 258.6842647809535,
+        "evaluations": 402
       },
       {
         "case": "test_21",
-        "seconds": 342.45992552116513,
-        "evaluations": 568
+        "seconds": 388.0302113648504,
+        "evaluations": 614
       },
       {
         "case": "test_22",
-        "seconds": 201.5549242142588,
-        "evaluations": 322
+        "seconds": 250.14667579345405,
+        "evaluations": 338
       },
       {
         "case": "test_23",
-        "seconds": 546.5685762129724,
-        "evaluations": 736
+        "seconds": 457.1554143410176,
+        "evaluations": 753
       },
       {
         "case": "test_24",
-        "seconds": 422.34040677919984,
-        "evaluations": 672
+        "seconds": 503.83913354203105,
+        "evaluations": 721
       }
     ],
     "seconds": {
-      "mean": 402.354589940592,
-      "sample_sd": 127.50161608044283
+      "mean": 401.9233388417245,
+      "sample_sd": 115.25787583619436
     },
     "evaluations": {
-      "mean": 591.4166666666666,
-      "sample_sd": 170.74311155922965
+      "mean": 588.7083333333334,
+      "sample_sd": 150.4400730513986
     }
   },
   "esmda": {

@@ -16,7 +16,7 @@
     },
     "figure5": {
       "manuscript_asset": "figures/scientific_audit_20261002/fig_inverse_raw.pdf",
-      "sha256": "c29b893598d58d5ec13305b431a33c3d2b6bdf78f1299ee6fec173f142a6b24e"
+      "sha256": "413c23324d5829d8c2a811929d11f2666f3a3ff5f2f421aff24a4d1881aac67b"
     },
     "figure6": {
       "manuscript_asset": "figures/scientific_audit_20261002/fig_monitoring_consistent.pdf",
@@ -24,7 +24,7 @@
     },
     "figure1": {
       "manuscript_asset": "figures/panel_labels/fig_study_overview_operator_final_20260930.pdf",
-      "sha256": "b8e12b4312e286b42206939b735a0bf729c8ea82998d287cc82d0a5e7e8b3ce7"
+      "sha256": "f8d42ca1a45197cc1241ae0a654fda575a4c85c3f425338e61f0046c97b22aaf"
     }
   },
   "original_rendered_input_sha256": {
@@ -133,7 +133,7 @@
     },
     "fig1_array_index.json": {
       "bytes": 4354,
-      "sha256": "cb65a98556f0b5f09874d9321daec8b9bcf4cacc9428e75fdd9804b65118fe89"
+      "sha256": "b84e1e2c975a12096b92b7fdce47ded95798ce071586606540cd9c4751eacab8"
     },
     "fig1_inference_cooling_curves.csv": {
       "bytes": 1947,
@@ -152,8 +152,8 @@
       "sha256": "cd4e35ffb98eaeb39afdc067ed00902b8bfee4325b7b1cb4b681aecdf9ba2c35"
     },
     "fig1_workflow_arrays.npz": {
-      "bytes": 2281045,
-      "sha256": "3b365c5f116bafafbb11dbdbf2aa40a68e32fddd686fa760aca73bbb192e5070"
+      "bytes": 2281027,
+      "sha256": "21628aa3dc10623bd8669925f276ffac36012c83b0f4f681e61f398d98cdf1cb"
     },
     "fig2_3_array_index.json": {
       "bytes": 19274,
@@ -241,31 +241,31 @@
     },
     "fig5_array_index.json": {
       "bytes": 5151,
-      "sha256": "c4f5ef89529d5a9ea3cb4e8d9fb2865f0a88b12798261e9bb601871cd22cfa68"
+      "sha256": "25dd0284a4c45f01397795608fc8055794ce3e8fef186591fcca8eb4dde49bc1"
     },
     "fig5_fields_and_pressure_members.npz": {
-      "bytes": 1083321,
-      "sha256": "e59d5d583ab65b1916175b3099c551a0b2367a77876da5197005017c34796305"
+      "bytes": 1083270,
+      "sha256": "e84bb2a099024f88f24530f57c7e164f1366751d7d635499f71113b4ad0801bc"
     },
     "fig5_inference_times.csv": {
-      "bytes": 3673,
-      "sha256": "f31d4329cf28001ab4734ef412ac344b4af16fe27f76f4ad1919087a66db7f82"
+      "bytes": 3677,
+      "sha256": "006d559929dc1a015f3ca09ba1fcef6969b46c7b521d9f66cb9dd4ec8bfbf3b1"
     },
     "fig5_map_panels.json": {
       "bytes": 4113,
-      "sha256": "effe82031f19d24f886fcb5b94ad766530a7877b9c7c772db53caf968c12361e"
+      "sha256": "c9a786d40353da0ce9c314b39685a19eabcf410cd859c142f9197982eb49e831"
     },
     "fig5_pressure_curves.csv": {
-      "bytes": 6686,
-      "sha256": "81d9d5ba9b0bfb7223e1fddeef038e5dd53cc6fb5bb2d8cba9752b18c1734a97"
+      "bytes": 6685,
+      "sha256": "5f99933871149d047d32ec0c72b81f717ec05424ebdbfa4412ce5fd9e5a1f207"
     },
     "fig5_reservoir_errors.csv": {
-      "bytes": 17095,
-      "sha256": "ca576a6ffba128a1146642ad450e304aef9948b80b42220b16972339cb3930e0"
+      "bytes": 17093,
+      "sha256": "8fddab521725dcd58247036d74241f0e99f4b7b1e081111e5ca968b30260f480"
     },
     "fig5_summary.json": {
-      "bytes": 20185,
-      "sha256": "a6ec73ad415780c50ab4a0c49a906f4c491fcab9789af5caa97d70ef3dd9c78c"
+      "bytes": 20182,
+      "sha256": "3f02fb6dd42ab5b927dd736a833e73f0cc09132789a3769173499bd186c0c672"
     },
     "fig6_budget_curves.csv": {
       "bytes": 9750,
@@ -321,14 +321,16 @@
     "inverse_evidence/primary/test_01/prior/well_curves.npz": "8780e31b66daf0823ccd71e9eba7ddf9b1bf119554e53b14d523379f774897f6",
     "monitoring/formal/references/test_01/static_prior/forecast.npz": "d45102905f6ebaae2788b8e289a567e2262ae6f98fc0eec020c404ced40f6aa6",
     "inverse_evidence/primary/test_01/static_prior/well_curves.npz": "32de32ef02cfc352a8ad0c7a3c2a6a1ab1dd3842d91aa62bb950b88887d2e33d",
-    "monitoring/formal/multiwell_opt17/test_01/map/forecast.npz": "6dff111ed5552b7c14baf1c3937c10d8176d067b9d53522d977cbb7a2bbce2e3",
-    "inverse_evidence/primary/test_01/map/well_curves.npz": "6ed2adc8904f8c38aa59aba222bda5a0721260eb233f4e994ee86250a9e0c221",
     "monitoring/formal/multiwell_opt17/test_01/esmda/forecast.npz": "7a6edcab6568f7344aff14c50d484a7e4955bcbbdf6fe855a5fa8eb7619ff71a",
     "inverse_evidence/primary/test_01/esmda/well_curves.npz": "cb3d9d365b83588cce3ba8cb5ac6ce1807c3ca08742d08edb359de1451c4083b",
     "hamiltonian/test_01/forecast.npz": "3b7e763cce349716907b7cf892bb400a21bd60c84f9e5dd3bc675308f9c95455",
-    "inverse_evidence/nuts/test_01/nuts/well_curves.npz": "f63a4c75306f9679d0a6c1085f4b6c4509a995b6e39dc2faae6f0a218859fc48"
+    "inverse_evidence/nuts/test_01/nuts/well_curves.npz": "f63a4c75306f9679d0a6c1085f4b6c4509a995b6e39dc2faae6f0a218859fc48",
+    "map_paper_update_20261113/cases/test_01/map/forecast.npz": "9c8d846292757b434402ab5731287f7ecd73e7f5dfe6f9994784bdebfd8f12cf",
+    "map_paper_update_20261113/cases/test_01/map/physical_well_history_11.npz": "d71272e2724c906c8f5373109599a93880b552728344624bf32d6348675deac1",
+    "map_paper_update_20261113/aggregate/inference_numbers_24.json": "8537007d1612271ca2eccade38f47d5949c56564826a5b20921c17900368c22f",
+    "map_paper_update_20261113/aggregate/inference_cost_24.json": "eef1513c1801153f67d365e39a33026067deabe91dc203bb62bb2180d5c4701e"
   },
-  "figure5_render_record_sha256": "73ba38587599e0de941f9372b5bb1da5014048a7ca246fd6e4ed1466e3d732c0",
+  "figure5_render_record_sha256": "045f7d52b6d0c7f90d988fbc1252aad7b66f09277f97688c99059b98c2626a0a",
   "figure6_source_inputs_sha256": {
     "paper_update_20261015/figures/fig6/main6/fig6_polish.json": "ca9628d574d64743f7fdf8ac681857b68e4308880db9d06289d270fd97e54a28",
     "paper_update_20261015/data/fig6_data.json": "8b734b267f6b6b804344e91ba4574ce8a3d7812ceebecece05340ad56e7d393f",
@@ -377,14 +379,14 @@
     "monitoring/cases/multiwell_opt17/test_01.npz": "6773bceade73b308a340b0b48820f95dc051904fb6d04d26fb75a6152dd178c9",
     "monitoring/formal/multiwell_opt17/test_01/esmda/forecast.npz": "7a6edcab6568f7344aff14c50d484a7e4955bcbbdf6fe855a5fa8eb7619ff71a",
     "monitoring/formal/references/test_01/prior/forecast.npz": "4dfcc3b574908746318b5a1af39ad602be43d06fd8f88c1ddf7bfc567c79cec9",
-    "monitoring/formal/multiwell_opt17/test_01/map/forecast.npz": "6dff111ed5552b7c14baf1c3937c10d8176d067b9d53522d977cbb7a2bbce2e3",
     "sensitivities/test_01/multiwell_opt9/unconditioned_prior_mean/jacobians.npz": "de8817c1b976e53426541ab0c6504e692a32c63578d41c91d24c6c67e8f1adb0",
     "deployment/propagation_data.npz": "cbd2a60c5ecafbd40a5d71380666688c5b2408edc83cd16ecc0980e1724c876c",
     "deployment/propagation_provenance.json": "d0dd179688f42e5f06230a64c4259f710e91e80fa8c01ca22dd1c175c7e52c85",
     "inverse_evidence/primary/test_01/prior/well_curves.npz": "8780e31b66daf0823ccd71e9eba7ddf9b1bf119554e53b14d523379f774897f6",
     "inverse_evidence/primary/test_01/esmda/well_curves.npz": "cb3d9d365b83588cce3ba8cb5ac6ce1807c3ca08742d08edb359de1451c4083b",
     "figure1/stage_fe_fields.npz": "cd4e35ffb98eaeb39afdc067ed00902b8bfee4325b7b1cb4b681aecdf9ba2c35",
-    "figure1/final_a.png": "f918bf4146e34dbb0d08883d9df8369552fef0e75a10dc73f2020314a1eafd43"
+    "figure1/final_a.png": "f918bf4146e34dbb0d08883d9df8369552fef0e75a10dc73f2020314a1eafd43",
+    "map_paper_update_20261113/cases/test_01/map/forecast.npz": "9c8d846292757b434402ab5731287f7ecd73e7f5dfe6f9994784bdebfd8f12cf"
   },
   "figure1_pack_array_slices": {
     "inputs": {
@@ -405,7 +407,7 @@
       ]
     }
   },
-  "figure1_render_record_sha256": "7a065dc65b51d9dfba1dbb07d21832ae1dc2b8d95ecc8abbd6579969eaa03c93",
+  "figure1_render_record_sha256": "f864a5dc86dbf571e0f0e6ad5d924bdac06b3c65d01601fe47b3cbecc57c1547",
   "figure_text_readability_revision": {
     "date": "2026-11-01",
     "purpose": "Improve text legibility at publication width while retaining scientific content and panel geometry.",
@@ -1131,5 +1133,50 @@
     "previous_pdf_sha256": "e9cd2b8eb5860ed78160e4846c4fff840756fb2a444ac32c7fc8e7a2d5243812",
     "new_pdf_sha256": "c29b893598d58d5ec13305b431a33c3d2b6bdf78f1299ee6fec173f142a6b24e",
     "change": "Increased bottom legend column spacing; figure data and all other plotted content unchanged."
+  },
+  "map_revision_20261113": {
+    "scope": "MAP values only; original labels, axes, colour scales, other methods and annotations retained",
+    "code_commit": "1df32f4",
+    "cases": [
+      "test_01",
+      "test_02",
+      "test_03",
+      "test_04",
+      "test_05",
+      "test_06",
+      "test_07",
+      "test_08",
+      "test_09",
+      "test_10",
+      "test_11",
+      "test_12",
+      "test_13",
+      "test_14",
+      "test_15",
+      "test_16",
+      "test_17",
+      "test_18",
+      "test_19",
+      "test_20",
+      "test_21",
+      "test_22",
+      "test_23",
+      "test_24"
+    ],
+    "superseded_map_sources": {
+      "figure1_source_inputs_sha256": {
+        "monitoring/formal/multiwell_opt17/test_01/map/forecast.npz": "6dff111ed5552b7c14baf1c3937c10d8176d067b9d53522d977cbb7a2bbce2e3"
+      },
+      "figure5_source_inputs_sha256": {
+        "monitoring/formal/multiwell_opt17/test_01/map/forecast.npz": "6dff111ed5552b7c14baf1c3937c10d8176d067b9d53522d977cbb7a2bbce2e3",
+        "inverse_evidence/primary/test_01/map/well_curves.npz": "6ed2adc8904f8c38aa59aba222bda5a0721260eb233f4e994ee86250a9e0c221"
+      }
+    },
+    "fig1_updated_array": "c_inference_map_log10_permeability",
+    "fig5_updated_methods": [
+      "map"
+    ],
+    "figure1_non_map_verification_sha256": "f864a5dc86dbf571e0f0e6ad5d924bdac06b3c65d01601fe47b3cbecc57c1547",
+    "figure5_non_map_verification_sha256": "9ed5a24188a1cbeb75099011530c5d108f3dfbd5bbfab17937ee94d66436641b"
   }
 }
