@@ -68,14 +68,16 @@ geouno download --group nuts
 ```
 
 Prediction and inverse commands run the model. The paper-number and artifact-verification commands operate
-on saved results and model weights. See [reproduction instructions](docs/REPRODUCIBILITY.md) for batch tasks,
-NUTS and training, and [data formats](docs/DATA.md) for units and array layouts.
+on saved results and model weights. The [inverse-problem guide](docs/INVERSE.md) maps the paper's
+`xi`, `g`, `d` and `R` to the code, including static conditioning and the physical-covariance ES-MDA update.
+See [reproduction instructions](docs/REPRODUCIBILITY.md) for batch tasks, NUTS and training, and
+[data formats](docs/DATA.md) for units and array layouts.
 
 | Component | Implementation |
 |---|---|
 | Final `resid64_p1` architecture | [`geouno/model/final.py`](geouno/model/final.py), [model description](docs/MODEL.md) |
 | Main / temperature / joint training, 99 / 44 / 22 epochs | [`geouno/training`](geouno/training), [training instructions](docs/TRAINING.md) |
-| Gaussian conditioning, MAP, ES-MDA, NUTS | [`geouno/inverse`](geouno/inverse) |
+| Gaussian conditioning, MAP, ES-MDA, NUTS | [`geouno/inverse`](geouno/inverse), [equations and API](docs/INVERSE.md) |
 | 64 monitoring configurations and new optimized layouts | [`geouno/monitoring`](geouno/monitoring) |
 | Tables and abstract numbers | [`geouno/paper.py`](geouno/paper.py), [Source Data](geouno/resources/source_data/final_model_20261015) |
 | Exact original final-model source and implementation notes | [`provenance`](provenance), [source map](docs/PROVENANCE.md) |

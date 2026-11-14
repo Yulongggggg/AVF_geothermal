@@ -23,6 +23,8 @@ new optimized layouts and coordinate-keyed noise; it does not run the operator.
 
 ## Inference and monitoring experiments
 
+The [inverse-problem guide](INVERSE.md) maps the paper's symbols and covariance-weighted updates to the code.
+
 There are 64 monitoring configurations: 60 over 24 reservoirs and four noise variants over six reservoirs,
 giving 1,464 monitoring tasks. The 24 MAP tasks bring the total to 1,488. The score package also contains
 48 prior/static-reference tasks and 24 NUTS forecasts, for 1,560 records.

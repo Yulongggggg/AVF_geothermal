@@ -1,20 +1,19 @@
-"""Latent Gaussian permeability prior and exact static conditioning (Methods Eq. 4).
+"""Gaussian permeability prior and analytic static conditioning.
 
-Source: ``history_matching_dense/conditioning.py`` (``condition``, ``transform``,
-``common_mode_quadratic``).
+The manuscript first defines ``m(z) = M0 + I L_* z`` with ``z ~ N(0, I)``.
+Static measurements ``y = A_k m + e`` condition these latent coordinates,
+denoted ``x`` in the Gaussian conditioning equations. With ``A = A_k I L_*``::
 
-Permeability is ``m(z) = M0 + I(L z)`` with ``z`` standard normal on a 64 x 64 latent grid,
-``L`` the training-fitted prior factor (``prior_factor.npy``, 4096 x 4096) and ``I``
-bilinear interpolation to the 128 x 128 reservoir grid. Local log-permeability data
-``d_k = A_k m + e``, ``e ~ N(0, sigma_k^2 I)``, are assimilated once, analytically::
+    mu_{x|y} = A.T (A A.T + sigma_k^2 I)^{-1} (y - A_k M0)
+    Sigma_{x|y} = I - A.T (A A.T + sigma_k^2 I)^{-1} A
+    x = mu_{x|y} + S_k xi,  xi ~ N(0, I),  S_k S_k.T = Sigma_{x|y}
 
-    z_bar = H^T (H H^T + sigma^2 I)^{-1} (d_k - A_k M0),     H = A_k I L
-    S S^T = I - H^T (H H^T + sigma^2 I)^{-1} H
-
-and ``z = z_bar + S y`` with ``y ~ N(0, I)``. The symmetric root ``S = I - R R^T`` uses
-``R = H^T Q diag(c)^{1/2}``, ``H H^T = Q diag(lambda) Q^T`` and
-``c = 1 / (s (s + sigma))``, ``s = sqrt(lambda + sigma^2)``; one checks that
-``2c - c^2 lambda = 1 / (lambda + sigma^2)``, so ``S S^T`` equals the posterior covariance.
+We apply the symmetric root as ``S_k = I - U U.T`` without storing a dense
+4096 x 4096 matrix. For ``A A.T = Q diag(lambda) Q.T``,
+``U = A.T Q diag(sqrt(c))``, where ``s = sqrt(lambda + sigma_k^2)`` and
+``c = 1 / (s (s + sigma_k))``. The identity
+``2c - c^2 lambda = 1 / (lambda + sigma_k^2)`` gives the required covariance.
+The returned dictionary retains its existing storage keys (``mean``, ``root``, ``H``).
 """
 import torch
 import torch.nn.functional as F
@@ -31,35 +30,36 @@ def condition(mean128, factor, masks, observed, sigma=.1, amplitude=1.):
 
     ``mean128`` is the prior mean ``M0`` (128 x 128), ``factor`` the 4096 x 4096 prior factor,
     ``masks`` the ``[P, 128, 128]`` averaging blocks of the ``P`` local permeability data and
-    ``observed`` their values. Sampling: ``z = mean + y - (y @ root) @ root.T``,
-    ``y ~ N(0, I)``. Each static datum is used once; dynamic inversion then works with the
+    ``observed`` their values. Sampling: ``x = mean + xi - (xi @ root) @ root.T``,
+    ``xi ~ N(0, I)``; ``mean = mu_{x|y}``, ``root = U``, ``H = A``.
+    Each static datum is used once; dynamic inversion then works with the
     conditional prior and does not repeat this likelihood.
     """
     device = factor.device
     dtype = torch.float64
     masks = masks.to(device=device, dtype=dtype)
     weights = masks / masks.sum((-2, -1), keepdim=True)
-    B = interpolation_matrix(device, dtype)
-    A = torch.einsum('pxy,xi,yj->pij', weights, B, B).reshape(len(masks), 4096)
-    H = amplitude * (A @ factor.double())
+    interpolation = interpolation_matrix(device, dtype)
+    projected_blocks = torch.einsum('pxy,xi,yj->pij', weights, interpolation, interpolation).reshape(len(masks), 4096)
+    A = amplitude * (projected_blocks @ factor.double())
     offset = (weights * mean128.to(device=device, dtype=dtype)).sum((-2, -1))
-    gram = H @ H.T
+    gram = A @ A.T
     ev, Q = torch.linalg.eigh(gram)
     ev = ev.clamp_min(0)
     rhs = observed.to(device=device, dtype=dtype) - offset
-    latent_mean = H.T @ torch.linalg.solve(gram + sigma ** 2 * torch.eye(len(masks), device=device, dtype=dtype), rhs)
+    latent_mean = A.T @ torch.linalg.solve(gram + sigma ** 2 * torch.eye(len(masks), device=device, dtype=dtype), rhs)
     s = torch.sqrt(ev + sigma ** 2)
     coefficient = 1 / (s * (s + sigma))
-    root = (H.T @ Q) * torch.sqrt(coefficient)[None]
-    return dict(mean=latent_mean.float(), root=root.float(), H=H.float(), offset=offset.float(), sigma=float(sigma))
+    root = (A.T @ Q) * torch.sqrt(coefficient)[None]
+    return dict(mean=latent_mean.float(), root=root.float(), H=A.float(), offset=offset.float(), sigma=float(sigma))
 
 
-def transform(y, posterior):
-    """Map whitened coordinates ``y`` (rows) to prior latent coordinates ``z``."""
+def transform(xi, posterior):
+    """Apply ``x = mu_{x|y} + S_k xi`` to row vectors; without static data, ``x = xi``."""
     if posterior is None:
-        return y
+        return xi
     root = posterior['root']
-    return posterior['mean'][None] + y - (y @ root) @ root.T
+    return posterior['mean'][None] + xi - (xi @ root) @ root.T
 
 
 def common_mode_quadratic(error, diagonal_sigma, common_sigma):

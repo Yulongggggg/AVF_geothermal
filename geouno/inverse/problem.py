@@ -1,20 +1,16 @@
-"""Whitened permeability posterior shared by every inference algorithm (Methods Eq. 5).
+"""The permeability posterior in the manuscript's coordinates ``xi``.
 
-Sources: ``inference_comparison/geothermal.py`` (``Problem``) and
-``operator_final_20260930/inverse_backend.py`` (``Problem`` subclass with configurable
-channels, times, noise and static conditioning). The two constructors are merged here;
-the final state and every arithmetic operation are unchanged.
+``d`` and ``forward(xi) = g(xi)`` contain physical observations (K, MPa),
+ordered by time, then channel, then observation location. ``R`` is their
+fixed measurement-plus-surrogate error covariance. All methods use::
 
-The negative log posterior in whitened coordinates ``y`` is::
+    J(xi) = 0.5 * xi.T @ xi + 0.5 * (g(xi) - d).T @ R^{-1} @ (g(xi) - d)
 
-    J(y) = 0.5 ||y||^2 + 0.5 || C^{-1} (g(y) - d) ||^2,     R = C C^T,
-
-where ``g`` stacks predicted block temperatures/pressures at the observation times and
-``R`` is block diagonal over (time, channel). Each block is
-``(s_local^2 + sigma^2) I`` plus, for pressure, a rank-one common component
-``s_common^2 1 1^T``; ``s_local`` and ``s_common`` are validation-fitted surrogate-error
-standard deviations (their squared values are stored in ``calibration.json``), and
-``sigma`` is 0.5 K or 0.25 MPa.
+Static permeability data are assimilated once in the conditional prior:
+``x = mu_{x|y} + S_k xi``, ``m = mu_k + B_k xi``, ``xi ~ N(0, I)``.
+The likelihood is evaluated directly as ``(g-d).T @ solve(R, g-d)`` using
+PyTorch. Observations and predictions are never pre-whitened.
+See ``docs/INVERSE.md`` for the equation-to-code mapping.
 """
 import hashlib
 import json
@@ -64,18 +60,22 @@ class Problem:
         self.sigma_p = sigma_p
         self.projected = backend.observation_basis(self.weights)
         n = len(self.weights)
-        covs = []
+        covariance_blocks = []
         for ti in self.times:
             for ch in self.channels:
-                variance = self.cal['block_local_variance'][ti][ch] + (sigma_t if ch == 0 else sigma_p) ** 2
-                cov = variance * torch.eye(n, dtype=torch.float64, device=self.device)
+                # R_{T,t} = (sigma_T^2 + v_{T,t}) I
+                # R_{p,t} = (sigma_p^2 + v_{p,t}) I + q_t 1 1^T
+                sigma_c = sigma_t if ch == 0 else sigma_p
+                v_c_t = self.cal['block_local_variance'][ti][ch]
+                R_c_t = (sigma_c ** 2 + v_c_t) * torch.eye(n, dtype=torch.float64, device=self.device)
                 if ch == 1:
-                    cov = cov + self.cal['pressure_common_variance'][ti] * torch.ones_like(cov)
-                covs.append(cov)
-        self.cholesky = torch.linalg.cholesky(torch.block_diag(*covs)) if covs else self.tensor(np.empty((0, 0)))
+                    q_t = self.cal['pressure_common_variance'][ti]
+                    R_c_t = R_c_t + q_t * torch.ones_like(R_c_t)
+                covariance_blocks.append(R_c_t)
+        self.R = torch.block_diag(*covariance_blocks) if covariance_blocks else self.tensor(np.empty((0, 0)))
         observed = self.tensor(case['observed'])[self.times][:, self.channels]
-        self.data = self.whiten(observed.flatten()[None])[0].detach() if covs else self.tensor([])
-        self.nobs = len(self.data)
+        self.d = observed.flatten().detach()
+        self.nobs = len(self.d)
         self.qoi_weights = self.tensor(case['qoi_weights'])
         self.calls = 0
 
@@ -99,7 +99,7 @@ class Problem:
 
         add(dict(channels=self.channels, times=self.times, device=str(self.device),
                  torch=str(torch.__version__), stats=self.backend.stats))
-        for value in (self.base, self.mean, self.weights, self.data, self.cholesky,
+        for value in (self.base, self.mean, self.weights, self.d, self.R,
                       self.conditional, self.backend.factor, self.backend.operator.state_dict()):
             add(value)
         package = Path(__file__).resolve().parents[1]
@@ -111,26 +111,46 @@ class Problem:
     def tensor(self, x):
         return torch.as_tensor(x, device=self.device, dtype=torch.float64)
 
-    def whiten(self, predictions):
-        return torch.linalg.solve_triangular(self.cholesky, predictions.T, upper=False).T
+    def data_misfit(self, predictions):
+        """Paper's quadratic form ``(g-d).T R^{-1} (g-d)`` for each member.
 
-    def permeability(self, y):
-        """Whitened coordinates ``[B, 4096]`` -> log10 permeability ``[B, 128, 128]``."""
-        z = transform(y, self.conditional)
-        dev = (z.float() @ self.backend.factor.T).reshape(-1, 1, 64, 64)
-        return self.mean + F.interpolate(dev, (128, 128), mode='bilinear', align_corners=True)[:, 0]
+        ``solve(R, residual)`` evaluates ``R^{-1} residual`` using PyTorch's
+        linear algebra. The extra last axis supports single vectors and batches.
+        """
+        residual = predictions - self.d
+        weighted_residual = torch.linalg.solve(self.R, residual.unsqueeze(-1)).squeeze(-1)
+        return (residual * weighted_residual).sum(-1)
 
-    def forward(self, y):
-        """Whitened predicted observations ``C^{-1} g(y)`` for ``y`` of shape ``[B, 4096]``."""
+    def permeability(self, xi):
+        """``xi [B, 4096]`` -> ``m = mu_k + B_k xi [B, 128, 128]`` in log10(m²).
+
+        ``transform`` applies ``x = mu_{x|y} + S_k xi`` without forming the
+        dense conditional covariance root. Without static data, ``x = xi``.
+        """
+        x = transform(xi, self.conditional)
+        deviation = (x.float() @ self.backend.factor.T).reshape(-1, 1, 64, 64)
+        return self.mean + F.interpolate(deviation, (128, 128), mode='bilinear', align_corners=True)[:, 0]
+
+    def forward(self, xi):
+        """Physical predicted observations ``g(xi) [B, nobs]`` for ``xi [B, 4096]``.
+
+        Temperature is in K and pressure in MPa; ordering matches ``d`` and ``R``.
+        """
+        if self.nobs == 0:
+            return xi.new_empty((len(xi), 0))
         self.calls += 1
-        values = self.backend.blocks(self.base, self.times, self.permeability(y), self.weights, self.projected)
-        return self.whiten(values[:, :, self.channels].flatten(1))
+        values = self.backend.blocks(self.base, self.times, self.permeability(xi), self.weights, self.projected)
+        return values[:, :, self.channels].flatten(1)
 
-    def forward_numpy(self, y, chunk=4):
+    def forward_numpy(self, xi, chunk=4):
+        """Batched physical ``g(xi)`` as a NumPy array, with members in rows."""
         return np.concatenate([self.forward(self.tensor(batch)).detach().cpu().numpy()
-                               for batch in np.array_split(y, max(1, int(np.ceil(len(y) / chunk))))])
+                               for batch in np.array_split(xi, max(1, int(np.ceil(len(xi) / chunk))))])
 
-    def potential(self, y):
-        """``J(y)`` for a single ``[4096]`` vector (differentiable)."""
-        residual = self.forward(y[None])[0] - self.data
-        return .5 * (y.square().sum() + residual.square().sum())
+    def potential(self, xi):
+        """Differentiable ``J(xi)`` for a single latent vector; shared by MAP and NUTS.
+
+        The log determinant is constant because ``R`` is fixed.
+        """
+        g = self.forward(xi[None])[0]
+        return .5 * (xi.square().sum() + self.data_misfit(g))

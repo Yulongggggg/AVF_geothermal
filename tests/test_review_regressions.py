@@ -130,8 +130,8 @@ def test_map_restart_checks_posterior_seed_and_options(tmp_path, monkeypatch):
         def tensor(self, x):
             return torch.as_tensor(x, dtype=torch.float64)
 
-        def forward(self, y):
-            return y[:, :1]
+        def potential(self, xi):
+            return .5 * (xi.square().sum() + (xi[:1] - self.data).square().sum())
 
     problem = Quadratic()
     options = {'maxiter': 10}

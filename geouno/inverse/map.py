@@ -18,7 +18,7 @@ PAPER_OPTIONS = dict(maxiter=1000, maxfun=20000, maxls=40, gtol=.0001, ftol=1e-1
 
 
 def map_optimize(problem, seed, options=None, dest=None):
-    """Return ``(y [1, 4096], info)``.
+    """Return ``(xi [1, 4096], info)``; minimize the shared ``problem.potential``.
 
     If ``dest`` is given, each finished start is stored there (``start_<i>.npz`` and
     ``start_<i>.json``) and reused only when the posterior, seed and optimizer options match.
@@ -47,22 +47,21 @@ def map_optimize(problem, seed, options=None, dest=None):
             file, meta = Path(dest) / f'start_{i}.npz', Path(dest) / f'start_{i}.json'
             if file.exists() and meta.exists():
                 with np.load(file, allow_pickle=False) as saved:
-                    y = saved['y'].copy()
+                    xi = saved['y'].copy()  # Historical archive key: y stores the paper's xi.
                 info = json.loads(meta.read_text())
-                if y.shape != (4096,) or not np.isfinite(y).all() or not np.isfinite(info['objective']):
+                if xi.shape != (4096,) or not np.isfinite(xi).all() or not np.isfinite(info['objective']):
                     raise ValueError(f'Invalid cached MAP start: {file}')
-                solutions.append(y)
+                solutions.append(xi)
                 summaries.append(info)
                 continue
         begin = time.monotonic()
 
-        def objective(z):
-            y = problem.tensor(z).requires_grad_(True)
-            r = problem.forward(y[None])[0] - problem.data
-            u = .5 * (y.square().sum() + r.square().sum())
-            g, = torch.autograd.grad(u, y)
-            assert torch.isfinite(u) and torch.isfinite(g).all()
-            return u.item(), g.detach().cpu().numpy()
+        def objective(coordinates):
+            xi = problem.tensor(coordinates).requires_grad_(True)
+            J = problem.potential(xi)
+            gradient, = torch.autograd.grad(J, xi)
+            assert torch.isfinite(J) and torch.isfinite(gradient).all()
+            return J.item(), gradient.detach().cpu().numpy()
 
         r = minimize(objective, initial, jac=True, method='L-BFGS-B', options=options)
         info = dict(start=i, success=bool(r.success), message=str(r.message), objective=float(r.fun),
@@ -71,7 +70,7 @@ def map_optimize(problem, seed, options=None, dest=None):
         if dest is not None:
             Path(dest).mkdir(parents=True, exist_ok=True)
             tmp = file.with_suffix('.tmp.npz')
-            np.savez_compressed(tmp, y=r.x)
+            np.savez_compressed(tmp, y=r.x)  # Keep the released archive schema: y = xi.
             os.replace(tmp, file)
             meta.write_text(json.dumps(info, indent=2) + '\n')
         solutions.append(r.x)

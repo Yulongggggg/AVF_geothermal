@@ -107,22 +107,22 @@ def run(config_key, label, method, out=None, device='cpu', threads=None, root=No
     initial_evaluations = backend.evaluations
     point = False
     if method == 'esmda':
-        y, info = esmda(problem, **ESMDA, seed=seed, progress=lambda r: log(json.dumps(r)))
+        xi, info = esmda(problem, **ESMDA, seed=seed, progress=lambda r: log(json.dumps(r)))
     elif method == 'static':
-        y, info = static_members(problem, ESMDA['samples'], seed), dict(method='analytic static conditioning')
+        xi, info = static_members(problem, ESMDA['samples'], seed), dict(method='analytic static conditioning')
     elif method == 'map':
-        y, info = map_optimize(problem, entry['observation_seed'] + MAP_SEED_OFFSET,
+        xi, info = map_optimize(problem, entry['observation_seed'] + MAP_SEED_OFFSET,
                                dest=None if out is None else Path(out) / 'map_starts')
         point = True
     else:
-        y = np.random.default_rng(PRIOR_REFERENCE_SEED).normal(size=(PRIOR_REFERENCE_SAMPLES, 4096))
+        xi = np.random.default_rng(PRIOR_REFERENCE_SEED).normal(size=(PRIOR_REFERENCE_SAMPLES, 4096))
         if method == 'prior':
             problem.conditional = None
         info = dict(method=f'{method} reference ensemble')
     inference_elapsed = time.monotonic() - began
     inference_evaluations = backend.evaluations - initial_evaluations
     forecast_started = time.monotonic()
-    result, arrays = forecast(problem, y, save_members=False, point_estimate=point)
+    result, arrays = forecast(problem, xi, save_members=False, point_estimate=point)
     # Keep algorithm timing (including all MAP starts) separate from forecast generation.
     info.setdefault('seconds', inference_elapsed)
     info.update(inference_wall_seconds=inference_elapsed, forecast_seconds=time.monotonic() - forecast_started,
@@ -132,7 +132,7 @@ def run(config_key, label, method, out=None, device='cpu', threads=None, root=No
     if out is not None:
         out = Path(out)
         write_forecast(out, result, arrays)
-        np.savez_compressed(out / 'latent_samples.npz', y=np.asarray(y))
+        np.savez_compressed(out / 'latent_samples.npz', y=np.asarray(xi))  # Archive key y stores xi.
         (out / 'diagnostics.json').write_text(json.dumps(_finite(info), indent=2) + '\n')
         record = dict(format_version=1, task=dict(config=config_key, case=label, method=method),
                       files={name: artifacts.sha256(out / name) for name in TASK_FILES})

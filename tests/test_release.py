@@ -102,5 +102,5 @@ def test_map_cache_identity_changes_with_observations(backend):
     problem, _ = problem_for(backend, artifacts.Reservoirs(), 'pilot_01', 'multiwell_opt17')
     key = problem.cache_key()
     assert problem.cache_key() == key
-    problem.data[0] += .01
+    problem.d[0] += .01
     assert problem.cache_key() != key

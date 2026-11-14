@@ -21,7 +21,7 @@ FORECAST_TIME_INDEX = 10
 
 
 def forecast(problem, latent, save_members=False, point_estimate=False, time_index=FORECAST_TIME_INDEX):
-    """Return ``(scores, arrays)`` for whitened latent members ``latent`` (``[N, 4096]``)."""
+    """Return ``(scores, arrays)`` for conditioned-prior coordinates ``latent = xi [N, 4096]``."""
     latent = np.asarray(latent).reshape(-1, 4096)
     fields = []
     geology = []

@@ -79,7 +79,8 @@ Nested candidate indices for each geometry (`multiwell`, `vertical`, `inclined`)
 
 ## NUTS results (`nuts/test_01/` through `nuts/test_24/`)
 
-`chain_c/latent_samples.npz` (`y`: 1 x 1024 x 4096 whitened coordinates), `chain_c/diagnostics.json`
+`chain_c/latent_samples.npz` (`y`: 1 x 1024 x 4096 inference coordinates `xi` from the paper;
+the legacy key is retained, see [inverse notation](INVERSE.md#api-migration-and-saved-results)), `chain_c/diagnostics.json`
 (Pyro diagnostics, step sizes, timings), `diagnostics.json` (four-chain R-hat/ESS gate), `forecast.npz` and
 `scores.json` (256 balanced draws at ten years). The merged `latent_samples.npz` of the original return is omitted
 because it is the concatenation of the four chain files.

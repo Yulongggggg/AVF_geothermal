@@ -39,13 +39,13 @@ def run_chain(label, chain, out, device='cuda:0', threads=None, root=None, backe
         if record['iteration'] % 64 == 0:
             log(json.dumps(record | dict(seconds=time.monotonic() - began)))
     protocol = {k: PAPER_PROTOCOL[k] for k in ('samples', 'warmup', 'max_depth', 'target_accept')}
-    y, info = nuts(problem, **protocol, chains=1, seed=seed, progress=progress)
-    if y.shape != (1, PAPER_PROTOCOL['samples'], 4096) or not np.isfinite(y).all():
+    xi, info = nuts(problem, **protocol, chains=1, seed=seed, progress=progress)
+    if xi.shape != (1, PAPER_PROTOCOL['samples'], 4096) or not np.isfinite(xi).all():
         raise ValueError('NUTS returned incomplete or non-finite samples')
     samples = out / 'latent_samples.npz'
     temporary = out / f'latent_samples.{os.getpid()}.tmp'
     with temporary.open('wb') as handle:
-        np.savez_compressed(handle, y=y)
+        np.savez_compressed(handle, y=xi)  # Archive key y stores xi.
     temporary.replace(samples)
     info.update(format_version=1, case=label, chain=chain, seed=seed, protocol=protocol,
                 potential_evaluations=problem.calls - calls, device=str(backend.device),
@@ -89,10 +89,10 @@ def _read_chain(label, chain, folder, reservoirs):
             if files.get(f'nuts/{label}/chain_{chain}/{name}') != actual:
                 raise ValueError(f'{folder}: legacy chain identity is not in the release manifest')
     with np.load(sample_path, allow_pickle=False) as archive:
-        y = archive['y'].copy()
-    if y.shape != (1, PAPER_PROTOCOL['samples'], 4096) or not np.isfinite(y).all():
+        xi = archive['y'].copy()
+    if xi.shape != (1, PAPER_PROTOCOL['samples'], 4096) or not np.isfinite(xi).all():
         raise ValueError(f'{folder}: incomplete or non-finite NUTS samples')
-    return y, info, digest
+    return xi, info, digest
 
 
 def merge(label, run_dir, out=None, device='cpu', threads=None, root=None, backend=None):
@@ -101,19 +101,19 @@ def merge(label, run_dir, out=None, device='cpu', threads=None, root=None, backe
         raise ValueError('NUTS was registered for test_01..test_24')
     run_dir = Path(run_dir)
     reservoirs = artifacts.Reservoirs(root)
-    ys, infos, digests = [], [], set()
+    chain_samples, infos, digests = [], [], set()
     for c in range(4):
-        y, info, digest = _read_chain(label, c, run_dir / f'chain_{c}', reservoirs)
+        xi, info, digest = _read_chain(label, c, run_dir / f'chain_{c}', reservoirs)
         if digest in digests:
             raise ValueError('The four NUTS chains must contain independently generated samples')
-        ys.append(y)
+        chain_samples.append(xi)
         infos.append(info)
         digests.add(digest)
-    y = np.concatenate(ys)
-    diagnostics, _ = convergence(y, infos)
+    xi = np.concatenate(chain_samples)
+    diagnostics, _ = convergence(xi, infos)
     backend = backend or load_backend(device, threads, root)
     problem, _ = problem_for(backend, reservoirs, label, 'multiwell_opt17')
-    selected, index = balanced_draws(y)
+    selected, index = balanced_draws(xi)
     result, arrays = forecast(problem, selected, save_members=True)
     if out is not None:
         write_forecast(out, result, arrays)
